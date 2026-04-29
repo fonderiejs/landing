@@ -1,0 +1,54 @@
+version: '3'
+
+networks:
+  fonderie-net:
+    driver: bridge
+
+services:
+  ms-auth:
+    user: node
+    restart: always
+    hostname: ms-fonderie-auth
+    container_name: ms-fonderie-auth
+    build:
+      context: ./auth
+    volumes:
+      - ./auth:/home/node:cached
+    networks:
+      - fonderie-net
+    ports:
+      - 3001:3001
+    expose:
+      - 3001
+
+  ms-platform:
+    user: node
+    restart: always
+    hostname: ms-fonderie-platform
+    container_name: ms-fonderie-platform
+    build:
+      context: ./app
+    volumes:
+      - ./app:/home/node:cached
+    networks:
+      - fonderie-net
+    ports:
+      - 3000:3000
+    expose:
+      - 3000
+
+  ms-api:
+    user: node
+    restart: always
+    hostname: ms-fonderie-api
+    container_name: ms-fonderie-api
+    build:
+      context: ../api
+    volumes:
+      - ../api:/home/node:cached
+    networks:
+      - fonderie-net
+    ports:
+      - 4000:4000
+    expose:
+      - 4000
