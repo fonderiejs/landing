@@ -139,6 +139,13 @@
     color: var(--color-foreground);
   }
 
+  .nav__wordmark {
+    font-size: 17px;
+    font-weight: var(--weight-semibold);
+    letter-spacing: var(--tracking-display);
+    color: var(--color-foreground);
+  }
+
   .nav__links {
     display: none;
     align-items: center;
