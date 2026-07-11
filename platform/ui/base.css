@@ -1,5 +1,35 @@
 @layer reset, base;
 
+/* Inter — shared with platform/landing (variable-weight unicode-range subsets) */
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(../landing/fonts/83afe278b6a6bb3c.woff2) format("woff2");
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304,
+    U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD; /* latin */
+}
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(../landing/fonts/1bffadaabf893a1e.woff2) format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304,
+    U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; /* latin-ext */
+}
+@font-face {
+  font-family: "Inter Fallback";
+  src: local(Arial);
+  ascent-override: 90.44%;
+  descent-override: 22.52%;
+  line-gap-override: 0%;
+  size-adjust: 107.12%;
+}
+
 /* ═══════════════════════════════════════════════════════════
    RESET LAYER
    ═══════════════════════════════════════════════════════════ */
@@ -71,34 +101,38 @@
     --color-primary-hover: #000000;
     --color-secondary: #171717;
     --color-secondary-hover: #000000;
-    --color-accent: #0070f3;
-    --color-success: #0070f3;
-    --color-success-hover: #0060d3;
+    --color-accent: #00d294;
+    --color-success: #00d294;
+    --color-success-hover: #009767;
     --color-warning: #f5a623;
     --color-warning-hover: #d48f1e;
     --color-danger: #e00;
     --color-danger-hover: #c00;
-    --color-info: #0070f3;
-    --color-info-hover: #0060d3;
+    --color-info: #00d294;
+    --color-info-hover: #009767;
     --color-dark: #171717;
-    --color-light: #666666;
+    --color-light: #5c5c5c;
     --color-bg: #fafafa;
     --color-surface: #ffffff;
     --color-surface-alt: #fafafa;
-    --color-border: #eaeaea;
+    --color-border: #e0e0e0;
     --color-border-alt: #d4d4d4;
     --color-border-light: #f5f5f5;
     --color-text: #171717;
-    --color-text-muted: #666666;
-    --color-text-link: #0070f3;
-    --color-text-link-hover: #0050c3;
+    --color-text-muted: #5c5c5c;
+    --color-text-link: #009767;
+    --color-text-link-hover: #00d294;
     --color-topbar: #000000;
     --color-gradient-start: #000000;
     --color-gradient-end: #171717;
 
-    /* Typography */
-    --font-sans: 'Manrope', sans-serif;
-    --font-mono: 'SFMono-Regular', Consolas, monospace;
+    /* Typography — shared with platform/landing */
+    --font-sans: Inter, "Inter Fallback", -apple-system, BlinkMacSystemFont,
+      "Helvetica Neue", system-ui, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+    --tracking-display: -0.05em;
+    --tracking-body: -0.02em;
     --text-xs: 0.75rem;
     --text-sm: 0.875rem;
     --text-base: 14px;
@@ -139,22 +173,24 @@
     --transition-fast: all 0.2s ease;
   }
 
+  /* Dark palette — follows the OS scheme automatically; data-theme forces
+     either mode explicitly. Values shared with platform/landing. */
   [data-theme="dark"] {
       --color-primary: #ededed;
       --color-primary-hover: #ffffff;
       --color-secondary: #ededed;
       --color-secondary-hover: #ffffff;
-      --color-accent: #0070f3;
-      --color-success: #0070f3;
-      --color-success-hover: #3291ff;
+      --color-accent: #00d294;
+      --color-success: #00d294;
+      --color-success-hover: #00e6a2;
       --color-warning: #f5a623;
       --color-warning-hover: #f7b955;
       --color-danger: #f33;
       --color-danger-hover: #f55;
-      --color-info: #0070f3;
-      --color-info-hover: #3291ff;
+      --color-info: #00d294;
+      --color-info-hover: #00e6a2;
       --color-dark: #ededed;
-      --color-light: #888888;
+      --color-light: #a1a1aa;
       --color-bg: #0a0a0a;
       --color-surface: #111111;
       --color-surface-alt: #1a1a1a;
@@ -163,8 +199,8 @@
       --color-border-light: #1c1c1e;
       --color-text: #ededed;
       --color-text-muted: #a1a1aa;
-      --color-text-link: #3291ff;
-      --color-text-link-hover: #0070f3;
+      --color-text-link: #00d294;
+      --color-text-link-hover: #00e6a2;
       --color-topbar: #0a0a0a;
       --color-gradient-start: #111111;
       --color-gradient-end: #0a0a0a;
@@ -175,10 +211,49 @@
       --shadow-navbar: 0 4px 35px 0 rgba(0, 0, 0, 0.3);
   }
 
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --color-primary: #ededed;
+      --color-primary-hover: #ffffff;
+      --color-secondary: #ededed;
+      --color-secondary-hover: #ffffff;
+      --color-accent: #00d294;
+      --color-success: #00d294;
+      --color-success-hover: #00e6a2;
+      --color-warning: #f5a623;
+      --color-warning-hover: #f7b955;
+      --color-danger: #f33;
+      --color-danger-hover: #f55;
+      --color-info: #00d294;
+      --color-info-hover: #00e6a2;
+      --color-dark: #ededed;
+      --color-light: #a1a1aa;
+      --color-bg: #0a0a0a;
+      --color-surface: #111111;
+      --color-surface-alt: #1a1a1a;
+      --color-border: #27272a;
+      --color-border-alt: #3f3f46;
+      --color-border-light: #1c1c1e;
+      --color-text: #ededed;
+      --color-text-muted: #a1a1aa;
+      --color-text-link: #00d294;
+      --color-text-link-hover: #00e6a2;
+      --color-topbar: #0a0a0a;
+      --color-gradient-start: #111111;
+      --color-gradient-end: #0a0a0a;
+      --shadow-card: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+      --shadow-card-hover: 0 15px 50px 0 rgba(0, 0, 0, 0.4);
+      --shadow-modal: 0 10px 55px 0 rgba(0, 0, 0, 0.5);
+      --shadow-dropdown: 0 0 35px 0 rgba(0, 0, 0, 0.5);
+      --shadow-navbar: 0 4px 35px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+
   body {
     font-family: var(--font-sans);
     font-size: var(--text-base);
     line-height: var(--leading);
+    letter-spacing: var(--tracking-body);
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -207,8 +282,12 @@
   }
 
   h1, h2, h3, h4, h5, h6, label {
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.3;
+  }
+
+  h1, h2, h3 {
+    letter-spacing: var(--tracking-display);
   }
 
   h1, h2, h4, h5 {

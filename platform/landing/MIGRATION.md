@@ -57,6 +57,22 @@ which shows `.nav__menu` (mobile-only dropdown, scoped under a max-width query
 and when the viewport crosses the md breakpoint. `aria-expanded` is kept in
 sync. Loaded with `defer`.
 
+## Shared design system with platform/ui
+
+Both themes now share typography and palette:
+
+- **Font**: Inter everywhere (`platform/ui` references `../landing/fonts/`);
+  tracking tokens `--tracking-display:-0.05em`, `--tracking-body:-0.02em`.
+- **Light**: bg `#fafafa`, surface `#fff`, text `#171717`, muted `#5c5c5c`,
+  borders `#e0e0e0`/`#d4d4d4`. **Dark**: bg `#0a0a0a`, surface `#111`,
+  text `#ededed`, muted `#a1a1aa`, borders `#27272a`/`#3f3f46`.
+  Accent: emerald `#00d294`/`#009767` (replaces ui's old blue).
+- **Day/night**: automatic via `prefers-color-scheme` in both (no toggle);
+  ui additionally honors an explicit `data-theme` attribute. Component
+  surfaces in `theme.css` use `--color-surface(-hover)` and `color-mix()`
+  translucency so dark mode reaches every element; the spend card and
+  device tile stay dark by design in both modes.
+
 ## Remaining
 
 - `styles.css` deleted after QA — the page runs entirely on `base.css` + `theme.css`.
