@@ -407,6 +407,7 @@
 
   .feature__body--intro {
     gap: 16px;
+    margin-block: auto;
   }
 
   .feature__title {
@@ -474,6 +475,7 @@
 
     .feature {
       padding: 40px;
+      min-height: 380px;
     }
 
     .feature--divide {
@@ -714,7 +716,7 @@
     padding: 32px;
     display: flex;
     flex-direction: column;
-    min-height: 300px;
+    min-height: 340px;
   }
 
   .duo__panel--wide {
@@ -863,7 +865,7 @@
 
   @media (min-width: 768px) {
     .duo {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr;
     }
 
     .duo__panel {
@@ -873,9 +875,9 @@
     }
 
     .duo__panel--wide {
-      grid-column: span 2;
       border-right: 0;
       gap: 40px;
+      justify-content: center;
     }
 
     .notif-stack {
@@ -883,8 +885,8 @@
     }
 
     .device-tile {
-      width: 200px;
-      height: 200px;
+      width: 160px;
+      height: 160px;
       border-radius: 28px;
     }
   }
