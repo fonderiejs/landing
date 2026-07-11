@@ -15,3 +15,7 @@ app/
 *.log
 npm-debug.log*
 .idea/
+
+# Scraped reference mirrors of myotto.ai — not source
+platform/myotto.ai/
+platform/myotto.ai-mirror/
