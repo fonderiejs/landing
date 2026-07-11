@@ -75,9 +75,7 @@
       </nav>
       <div class="container">
         <section class="hero">
-          <div class="hero__spectrum" aria-hidden="true"></div>
-          <div class="hero__grid hero__grid--top" aria-hidden="true"></div>
-          <div class="hero__grid hero__grid--bottom" aria-hidden="true"></div>
+          <div class="hero__melt" aria-hidden="true"></div>
           <div class="hero__content">
             <svg class="hero__mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="32" height="32" rx="8" fill="currentColor"/><path d="M11 8h12v3h-9v4h8v3h-8v6h-3z" fill="var(--color-background)"/>
@@ -87,6 +85,55 @@
             <a class="btn" href="/platform">See the platform</a>
           </div>
         </section>
+        <div class="duo">
+          <div class="duo__panel">
+            <div class="duo__body">
+              <h2 class="feature__title">One cockpit for it all.</h2>
+              <p class="feature__text">Deploy, brief, steer. The fleet runs the work.</p>
+              <a class="arrow-btn" href="/products#cockpit">
+                <svg viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M9 4.5l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+            <div class="notif-stack" aria-hidden="true">
+              <div class="notif">
+                <div class="notif__icon">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="8" fill="currentColor"/><path d="M11 8h12v3h-9v4h8v3h-8v6h-3z" fill="var(--color-background)"/>
+                  </svg>
+                </div>
+                <div class="notif__content">
+                  <div class="notif__meta">
+                    <span class="notif__app">fonderie</span>
+                    <span class="notif__time">now</span>
+                  </div>
+                  <p class="notif__body">casting-02 · poured<br/>Deployed to staging in 4m 12s.</p>
+                </div>
+              </div>
+              <div class="notif-stack__ghost"></div>
+              <div class="notif-stack__ghost notif-stack__ghost--far"></div>
+            </div>
+          </div>
+          <div class="duo__panel duo__panel--wide">
+            <div class="device-tile">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="8" fill="currentColor"/><path d="M11 8h12v3h-9v4h8v3h-8v6h-3z" fill="var(--color-background)"/>
+              </svg>
+            </div>
+            <div class="duo__body duo__body--device">
+              <h2 class="feature__title">Proof, not promises.</h2>
+              <p class="feature__text duo__text--narrow">The first casting is already in production. Delivered, not demoed.</p>
+              <a class="arrow-btn" href="/products#sdk">
+                <svg viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M9 4.5l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
         <div class="features">
           <div class="feature feature--divide">
             <div class="feature__body feature__body--intro">
@@ -128,23 +175,23 @@
               <div class="model-row">
                 <div class="model-row__id">
                   <span class="dot dot--on"></span>
-                  <span class="model-row__name">claude-3.7</span>
+                  <span class="model-row__name">crewfinding</span>
                 </div>
-                <span class="model-row__kind">reasoning</span>
+                <span class="model-row__kind">production</span>
               </div>
               <div class="model-row">
                 <div class="model-row__id">
                   <span class="dot dot--on"></span>
-                  <span class="model-row__name">llama-3.3</span>
+                  <span class="model-row__name">casting-02</span>
                 </div>
-                <span class="model-row__kind">local · on-device</span>
+                <span class="model-row__kind">pouring</span>
               </div>
               <div class="model-row">
                 <div class="model-row__id">
                   <span class="dot"></span>
-                  <span class="model-row__name">gpt-4o</span>
+                  <span class="model-row__name">casting-03</span>
                 </div>
-                <span class="model-row__kind">vision</span>
+                <span class="model-row__kind">queued</span>
               </div>
             </div>
           </div>
@@ -163,10 +210,10 @@
               <div class="conn-grid">
                 <div class="conn"><span class="conn__name">GitHub</span><span class="dot dot--on"></span></div>
                 <div class="conn"><span class="conn__name">Slack</span><span class="dot dot--on"></span></div>
-                <div class="conn"><span class="conn__name">Gmail</span><span class="dot"></span></div>
+                <div class="conn"><span class="conn__name">Stripe</span><span class="dot"></span></div>
                 <div class="conn"><span class="conn__name">Linear</span><span class="dot dot--on"></span></div>
                 <div class="conn"><span class="conn__name">Notion</span><span class="dot"></span></div>
-                <div class="conn"><span class="conn__name">Drive</span><span class="dot dot--on"></span></div>
+                <div class="conn"><span class="conn__name">Postgres</span><span class="dot dot--on"></span></div>
               </div>
             </div>
           </div>
@@ -180,7 +227,7 @@
               <div class="id-card">
                 <div class="id-card__head">
                   <div class="id-card__avatar"></div>
-                  <span class="id-card__name">researcher</span>
+                  <span class="id-card__name">dispatcher</span>
                   <span class="id-card__status">● active</span>
                 </div>
                 <div class="id-card__rule"></div>
@@ -189,13 +236,13 @@
                     <rect x="1" y="3" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/>
                     <path d="M1 6l7 4 7-4" stroke="currentColor" stroke-width="1.5"/>
                   </svg>
-                  <span class="id-card__value">researcher@agents.fonderie.ai</span>
+                  <span class="id-card__value">dispatcher@agents.fonderie.ai</span>
                 </div>
                 <div class="id-card__row">
                   <svg viewBox="0 0 16 16" fill="none">
                     <path d="M3 2a1 1 0 0 1 1-1h2.5a1 1 0 0 1 .97.757l.7 2.8a1 1 0 0 1-.292.99l-1.2 1.08a9 9 0 0 0 3.696 3.695l1.08-1.2a1 1 0 0 1 .99-.291l2.8.7A1 1 0 0 1 16 10.5V13a1 1 0 0 1-1 1C7.163 14 2 8.837 2 3a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.3"/>
                   </svg>
-                  <span class="id-card__value">+1 (415) 555-0192</span>
+                  <span class="id-card__value">+1 (628) 555-0136</span>
                 </div>
               </div>
             </div>
@@ -209,70 +256,21 @@
             <div class="feature__deco feature__deco--pad" aria-hidden="true">
               <div class="spend-card">
                 <div class="spend-card__head">
-                  <span class="spend-card__number">FONDERIE •••• 4821</span>
+                  <span class="spend-card__number">FONDERIE •••• 2140</span>
                   <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="32" height="32" rx="8" fill="currentColor"/><path d="M11 8h12v3h-9v4h8v3h-8v6h-3z" fill="var(--color-background)"/>
                   </svg>
                 </div>
                 <div class="spend-card__meter">
                   <div class="spend-card__amounts">
-                    <span class="spend-card__spent">$124.50</span>
-                    <span class="spend-card__limit">/ $500</span>
+                    <span class="spend-card__spent">$86.20</span>
+                    <span class="spend-card__limit">/ $400</span>
                   </div>
                   <div class="spend-card__track">
                     <div class="spend-card__fill"></div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="duo">
-          <div class="duo__panel">
-            <div class="duo__body">
-              <h2 class="feature__title">One cockpit for it all.</h2>
-              <p class="feature__text">Deploy, brief, steer. The fleet runs the work.</p>
-              <a class="arrow-btn" href="/products#cockpit">
-                <svg viewBox="0 0 16 16" fill="none">
-                  <path d="M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                  <path d="M9 4.5l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </div>
-            <div class="notif-stack" aria-hidden="true">
-              <div class="notif">
-                <div class="notif__icon">
-                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="32" height="32" rx="8" fill="currentColor"/><path d="M11 8h12v3h-9v4h8v3h-8v6h-3z" fill="var(--color-background)"/>
-                  </svg>
-                </div>
-                <div class="notif__content">
-                  <div class="notif__meta">
-                    <span class="notif__app">fonderie</span>
-                    <span class="notif__time">now</span>
-                  </div>
-                  <p class="notif__body">researcher · task complete<br/>Shipped 47 fixes to staging.</p>
-                </div>
-              </div>
-              <div class="notif-stack__ghost"></div>
-              <div class="notif-stack__ghost notif-stack__ghost--far"></div>
-            </div>
-          </div>
-          <div class="duo__panel duo__panel--wide">
-            <div class="device-tile">
-              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="32" height="32" rx="8" fill="currentColor"/><path d="M11 8h12v3h-9v4h8v3h-8v6h-3z" fill="var(--color-background)"/>
-              </svg>
-            </div>
-            <div class="duo__body duo__body--device">
-              <h2 class="feature__title">Proof, not promises.</h2>
-              <p class="feature__text duo__text--narrow">The first casting is already in production. Delivered, not demoed.</p>
-              <a class="arrow-btn" href="/products#sdk">
-                <svg viewBox="0 0 16 16" fill="none">
-                  <path d="M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                  <path d="M9 4.5l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
             </div>
           </div>
         </div>

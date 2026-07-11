@@ -258,56 +258,31 @@
     gap: 24px;
   }
 
-  .hero__spectrum {
+  /* molten glow rising from the bottom edge — the foundry at work */
+  .hero__melt {
     pointer-events: none;
     position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to right,
-      #ffe5bc,
-      #deffbc 16%,
-      #bcfff8 33%,
-      #bccdff 50%,
-      #dfbcff 65%,
-      #ffbce6 80%,
-      #ffbcbd 98%
-    );
-    mask-image: linear-gradient(to top, black 0%, black 25%, transparent 70%);
-    -webkit-mask-image: linear-gradient(to top, black 0%, black 25%, transparent 70%);
-    opacity: 0.125;
+    inset-inline: 0;
+    bottom: 0;
+    height: 70%;
+    background:
+      radial-gradient(
+        60% 55% at 50% 100%,
+        color-mix(in srgb, #ff9d47 30%, transparent),
+        transparent 70%
+      ),
+      radial-gradient(
+        120% 85% at 50% 100%,
+        color-mix(in srgb, var(--color-emerald-400) 22%, transparent),
+        transparent 62%
+      );
+    opacity: 0.5;
   }
 
   @media (prefers-color-scheme: dark) {
-    .hero__spectrum {
-      opacity: 0.07;
+    .hero__melt {
+      opacity: 0.75;
     }
-  }
-
-  .hero__grid {
-    pointer-events: none;
-    position: absolute;
-    inset-inline: -20%;
-    height: 85%;
-    background-image: linear-gradient(to right, var(--color-border-strong) 1px, transparent 1px),
-      linear-gradient(to bottom, var(--color-border-strong) 1px, transparent 1px);
-    background-size: 64px 64px;
-    opacity: 0.8;
-  }
-
-  .hero__grid--top {
-    top: 0;
-    transform: perspective(480px) rotateX(-62deg);
-    transform-origin: 50% 0%;
-    mask-image: linear-gradient(to bottom, black 0%, transparent 72%);
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 72%);
-  }
-
-  .hero__grid--bottom {
-    bottom: 0;
-    transform: perspective(480px) rotateX(62deg);
-    transform-origin: 50% 100%;
-    mask-image: linear-gradient(to top, black 0%, transparent 72%);
-    -webkit-mask-image: linear-gradient(to top, black 0%, transparent 72%);
   }
 
   .hero__content {
@@ -719,7 +694,7 @@
 
   .spend-card__fill {
     height: 100%;
-    width: 25%;
+    width: 22%;
     border-radius: var(--radius-full);
     background: var(--color-emerald-400);
   }
