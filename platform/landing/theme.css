@@ -970,11 +970,27 @@
     gap: 16px;
   }
 
+  .footer__meta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
   .footer__copy {
     font-size: 11px;
     letter-spacing: var(--tracking-body);
     color: var(--color-muted);
     text-align: center;
+  }
+
+  .footer__social {
+    display: inline-flex;
+    color: var(--color-muted);
+    transition: color var(--duration-fast);
+  }
+
+  .footer__social:hover {
+    color: var(--color-foreground);
   }
 
   /* theme switcher — same component as platform/ui */
