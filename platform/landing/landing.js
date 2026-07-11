@@ -17,3 +17,22 @@
     if (e.matches) nav.classList.remove('nav--open');
   });
 })();
+
+// Theme switcher — same behavior as platform/ui. "System" clears the
+// override so prefers-color-scheme takes back over.
+(function () {
+  var stored = localStorage.getItem('theme');
+  var active = stored === 'light' || stored === 'dark' ? stored : 'system';
+  document.querySelectorAll('.theme-switch input[name="theme"]').forEach(function (radio) {
+    if (radio.value === active) radio.checked = true;
+    radio.addEventListener('change', function () {
+      if (this.value === 'system') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', this.value);
+        document.documentElement.setAttribute('data-theme', this.value);
+      }
+    });
+  });
+})();

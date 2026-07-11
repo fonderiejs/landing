@@ -279,8 +279,12 @@
     opacity: 0.5;
   }
 
+  :root[data-theme="dark"] .hero__melt {
+    opacity: 0.75;
+  }
+
   @media (prefers-color-scheme: dark) {
-    .hero__melt {
+    :root:not([data-theme="light"]) .hero__melt {
       opacity: 0.75;
     }
   }
@@ -933,12 +937,74 @@
     color: var(--color-foreground);
   }
 
-  .footer__copy {
+  .footer__bottom {
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .footer__copy {
     font-size: 11px;
     letter-spacing: var(--tracking-body);
     color: var(--color-muted);
     text-align: center;
+  }
+
+  /* theme switcher — same component as platform/ui */
+  .theme-switch {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    padding: 3px;
+    margin: 0;
+    background: var(--color-background);
+  }
+
+  .theme-switch__option {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    font-size: 12px;
+    color: var(--color-muted);
+    transition: background var(--duration-base), color var(--duration-base);
+    white-space: nowrap;
+  }
+
+  .theme-switch__option input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+  }
+
+  .theme-switch__option:has(input:checked) {
+    background: var(--color-surface);
+    color: var(--color-foreground);
+    box-shadow: var(--shadow-button);
+  }
+
+  .theme-switch__option svg {
+    flex-shrink: 0;
+  }
+
+  .theme-switch__option span {
+    line-height: 1;
+  }
+
+  @media (min-width: 640px) {
+    .footer__bottom {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 24px;
+    }
   }
 
   @media (min-width: 768px) {

@@ -196,9 +196,27 @@
     --duration-slow: 200ms;
   }
 
-  /* Dark palette — follows the OS scheme; values shared with platform/ui. */
+  /* Dark palette — follows the OS scheme by default; an explicit
+     data-theme attribute (footer switcher) overrides it either way.
+     Values shared with platform/ui. */
+  :root[data-theme="dark"] {
+    --color-background: #0a0a0a;
+    --color-foreground: #ededed;
+    --color-muted: #a1a1aa;
+    --color-border: #27272a;
+    --color-border-strong: #3f3f46;
+    --color-surface: #111111;
+    --color-surface-hover: #1c1c1e;
+    --shadow-button: 0 1px 2px #00000066;
+    color-scheme: dark;
+  }
+
+  :root[data-theme="light"] {
+    color-scheme: light;
+  }
+
   @media (prefers-color-scheme: dark) {
-    :root {
+    :root:not([data-theme="light"]) {
       --color-background: #0a0a0a;
       --color-foreground: #ededed;
       --color-muted: #a1a1aa;
