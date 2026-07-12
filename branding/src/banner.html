@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+@font-face { font-family: Inter; src: url(inter-latin.woff2) format("woff2"); font-weight: 300 600; }
+* { margin: 0; }
+body { width: 1500px; height: 500px; background: #0a0a0a; overflow: hidden;
+  font-family: Inter, sans-serif; position: relative; }
+.melt { position: absolute; inset: 0;
+  background: radial-gradient(75% 70% at 50% 130%, rgba(255,157,71,.32), transparent 65%),
+              radial-gradient(120% 90% at 50% 130%, rgba(0,210,148,.16), transparent 60%); }
+.wrap { position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 28px; padding-bottom: 20px; }
+h1 { color: #ededed; font-size: 74px; font-weight: 600; letter-spacing: -0.05em; }
+code { color: #a1a1aa; font-size: 27px; font-family: Menlo, monospace; }
+</style></head><body>
+<div class="melt"></div>
+<div class="wrap">
+  <h1>Stop renting your own software.</h1>
+  <code>$ npm install @fonderie/core</code>
+</div>
+</body></html>
