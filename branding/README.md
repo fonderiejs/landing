@@ -12,6 +12,18 @@
 Assets and guidelines for [Fonderie](https://fonderiejs.com) — the open
 foundry for casting SaaS you own.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="export/x-banner.png">
+  <img alt="Stop renting your own software — npm install @fonderie/core" src="export/x-banner-light.png">
+</picture>
+
+<p>
+  <img alt="Monogram, dark tile (primary)" src="export/x-avatar.png" width="96">
+  &nbsp;
+  <img alt="Monogram, light tile" src="export/x-avatar-light.png" width="96">
+</p>
+
+
 ## Wordmark & monogram
 
 - Wordmark: **fonderie**, always lowercase, set in Inter Semibold with
