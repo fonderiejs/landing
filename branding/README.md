@@ -18,20 +18,34 @@ foundry for casting SaaS you own.
 </picture>
 
 <p>
-  <img alt="Monogram, dark tile (primary)" src="export/x-avatar.png" width="96">
+  <img alt="Mark, dark tile (primary)" src="export/x-avatar.png" width="96">
   &nbsp;
-  <img alt="Monogram, light tile" src="export/x-avatar-light.png" width="96">
+  <img alt="Mark, light tile" src="export/x-avatar-light.png" width="96">
+</p>
+
+<p>
+  <img alt="Lockup, dark" src="src/fonderie-lockup-dark.svg" height="32">
 </p>
 
 
-## Wordmark & monogram
+## Wordmark & mark
 
-- Wordmark: **fonderie**, always lowercase, set in Inter Semibold with
-  display tracking (−0.05em).
-- Monogram: the block **F** in a rounded square. Dark tile (`#171717`,
-  radius 25%) with the F in `#fafafa` is the primary mark and works on any
-  background — use it for avatars everywhere. The light tile is for
-  print-like contexts only.
+- Wordmark: **fonderie.js**, always lowercase, set in Manrope Extrabold
+  with tight tracking (−1.2 at display size). The `.js` renders in a muted
+  tone against the solid-color `fonderie`.
+- Mark: a 3×3 grid of dots in a soft light-to-dark gradient — the melt,
+  cast in a lattice. `fonderie-icon-*.svg` is the bare mark (transparent
+  background) for use on any surface; `favicon-dark.svg` / `favicon-light.svg`
+  add the rounded-square tile for avatars, favicons, and app icons.
+  `fonderie-lockup-*.svg` pairs the mark with the wordmark for headers and
+  nav bars. Dark-tile favicon is primary and works on any background; the
+  light tile is for print-like contexts only.
+
+> The X banner (`export/x-banner*.png`, `export/banner-plain*.png`) still
+> renders from the older Inter/melt-gradient HTML sources
+> (`src/banner*.html`) — there's no SVG replacement for it yet, so it's
+> temporarily out of step with the mark above. Superseding it is tracked
+> as follow-up work, not an oversight.
 
 ## Color
 
@@ -55,12 +69,26 @@ it exists only inside the melt.
 
 ## Typography
 
+- **Manrope** Extrabold for the wordmark lockup (`fonderie-lockup-*.svg`).
 - **Inter** (300–600), tracking −0.05em for display sizes, −0.02em for
-  body. The latin subset used to render these assets is in
-  `src/inter-latin.woff2` — the same file fonderiejs.com serves.
+  body, still drives the X banner and fonderiejs.com body copy. The latin
+  subset used to render the banner is in `src/inter-latin.woff2` — the
+  same file fonderiejs.com serves.
 - Code and terminal lines: Menlo / system monospace.
 
-## Assets (`export/`)
+## Assets
+
+### Source (`src/`)
+
+| File | Use |
+|---|---|
+| `favicon-dark.svg` / `favicon-light.svg` | Mark on a rounded-square tile — favicons, app icons, avatars |
+| `fonderie-icon-dark.svg` / `fonderie-icon-light.svg` | Bare mark, transparent background — any surface |
+| `fonderie-lockup-dark.svg` / `fonderie-lockup-light.svg` | Mark + wordmark — headers, nav bars |
+| `banner.html` / `banner-light.html` | X banner with tagline (1500×500, transitional — see above) |
+| `banner-plain.html` / `banner-plain-light.html` | Text-free melt banner (1500×500, transitional) |
+
+### Rendered (`export/`)
 
 | File | Size | Use |
 |---|---|---|
@@ -70,12 +98,24 @@ it exists only inside the melt.
 
 ## Rebuilding
 
-Assets render deterministically from the HTML sources in `src/` with
+`favicon-*.svg`, `fonderie-icon-*.svg`, and `fonderie-lockup-*.svg` are
+the source of truth — use them directly, no build step required.
+
+The X banner PNGs still render from the HTML sources in `src/` with
 headless Chrome:
 
 ```sh
 chrome --headless --screenshot=export/x-banner.png \
   --window-size=1500,500 --hide-scrollbars src/banner.html
+```
+
+`x-avatar.png` / `x-avatar-light.png` are a plain raster of
+`favicon-dark.svg` / `favicon-light.svg` at 800×800, same method:
+
+```sh
+chrome --headless --screenshot=export/x-avatar.png \
+  --window-size=800,800 --hide-scrollbars \
+  --default-background-color=00000000 src/favicon-dark.svg
 ```
 
 ## Usage
