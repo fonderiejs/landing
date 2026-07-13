@@ -15,7 +15,7 @@
     <meta name="robots" content="index, follow"/>
     <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"/>
     <meta name="category" content="technology"/>
-    <link rel="canonical" href="/"/>
+    <link rel="canonical" href="https://fonderiejs.com/"/>
     <meta name="format-detection" content="telephone=no, address=no, email=no"/>
     <meta name="mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-title" content="Fonderie"/>
@@ -46,6 +46,74 @@
       })();
     </script>
     <script src="/assets/js/landing.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://fonderiejs.com/#organization",
+          "name": "Fonderie",
+          "url": "https://fonderiejs.com/",
+          "logo": "https://fonderiejs.com/assets/img/icon.svg",
+          "sameAs": [
+            "https://github.com/fonderie-js/sdk",
+            "https://x.com/fonderiejs"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://fonderiejs.com/#website",
+          "url": "https://fonderiejs.com/",
+          "name": "Fonderie",
+          "publisher": { "@id": "https://fonderiejs.com/#organization" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://fonderiejs.com/#software",
+          "name": "Fonderie",
+          "url": "https://fonderiejs.com/",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Any",
+          "description": "Fonderie is an open-source skill and TypeScript SDK that lets AI coding assistants build SaaS products from proven, production-tested modules — login, payments, teams, permissions — instead of re-solving the same problems every session.",
+          "downloadUrl": "https://github.com/fonderie-js/sdk",
+          "isAccessibleForFree": true,
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "publisher": { "@id": "https://fonderiejs.com/#organization" }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://fonderiejs.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is Fonderie?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Fonderie is an open-source skill and TypeScript SDK that lets AI coding assistants build SaaS products from pre-made, production-tested modules — login, billing, teams, and permissions — instead of regenerating that code from scratch each session. It runs on your own server, and the source is on GitHub."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which AI coding assistants work with Fonderie?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Fonderie works with Claude Code natively, with Cursor via rules, and with Codex via AGENTS.md. Because the skill is plain instructions plus a TypeScript SDK, any model that can read a repository can use it. Install once with npm install @fonderie/core."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Fonderie open source?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Fonderie Core is seventeen open-source building blocks — auth, billing, workspaces, permissions, and more — written in plain TypeScript and self-hosted on your own infrastructure, with no vendor lock-in. You can read, audit, and modify every module at github.com/fonderie-js/sdk."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div class="page">
@@ -80,7 +148,7 @@
           <a class="nav__link" href="/contact">Contact</a>
         </div>
       </nav>
-      <div class="container">
+      <main class="container">
         <section class="hero">
           <div class="hero__melt" aria-hidden="true"></div>
           <div class="hero__content">
@@ -285,6 +353,26 @@
             </div>
           </div>
         </div>
+        <section class="features" id="faq" aria-label="Frequently asked questions">
+          <div class="feature feature--divide">
+            <div class="feature__body">
+              <h2 class="feature__title">What is Fonderie?</h2>
+              <p class="feature__text">Fonderie is an open-source skill and TypeScript SDK that lets AI coding assistants build SaaS products from pre-made, production-tested modules — login, billing, teams, and permissions — instead of regenerating that code from scratch each session. It runs on your own server, and the source is on GitHub.</p>
+            </div>
+          </div>
+          <div class="feature feature--divide">
+            <div class="feature__body">
+              <h2 class="feature__title">Which AI coding assistants work with Fonderie?</h2>
+              <p class="feature__text">Fonderie works with Claude Code natively, with Cursor via rules, and with Codex via AGENTS.md. Because the skill is plain instructions plus a TypeScript SDK, any model that can read a repository can use it. Install once with <code>npm install @fonderie/core</code>.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__body">
+              <h2 class="feature__title">Is Fonderie open source?</h2>
+              <p class="feature__text">Yes. Fonderie Core is seventeen open-source building blocks — auth, billing, workspaces, permissions, and more — written in plain TypeScript and self-hosted on your own infrastructure, with no vendor lock-in. You can read, audit, and modify every module at <a href="https://github.com/fonderie-js/sdk">github.com/fonderie-js/sdk</a>.</p>
+            </div>
+          </div>
+        </section>
         <footer class="footer">
           <div class="footer__grid">
             <div class="footer__col">
@@ -341,7 +429,7 @@
             </fieldset>
           </div>
         </footer>
-      </div>
+      </main>
     </div>
   </body>
 </html>

@@ -1,0 +1,24 @@
+# Fonderie
+
+> Fonderie is an open-source skill and TypeScript SDK that lets AI coding assistants build SaaS products from proven, production-tested modules — login, payments, teams, permissions — instead of re-solving the same solved problems every session. Tokens go to the product, not plumbing.
+
+Key facts:
+
+- Fonderie Core is seventeen open-source building blocks (auth, billing, workspaces, permissions, and more) written in plain TypeScript.
+- Self-hosted: the code runs on your server, with your data, and no vendor lock-in. Every module can be read, audited, and modified.
+- Works with Claude Code natively, Cursor via rules, and Codex via AGENTS.md — any model that can read a repository can use the skill.
+- Install: `npm install @fonderie/core`. Source: https://github.com/fonderie-js/sdk
+- Connectors wire in external tools such as GitHub, Slack, Stripe, Linear, Notion, and Postgres.
+- Identity (a real email and phone per agent) and Spend (per-agent, per-task budgets) are in development.
+
+## Pages
+
+- [Home](https://fonderiejs.com/): What Fonderie is and how it works, with FAQ
+- [Platform](https://fonderiejs.com/platform): Platform overview — Core, Gateway, Connectors, Identity, Spend
+- [Products](https://fonderiejs.com/products): The SDK and the cockpit
+- [Resources](https://fonderiejs.com/help): Documentation, status, and support
+- [Contact](https://fonderiejs.com/contact): Contact, press, and investors
+
+## Code
+
+- [Fonderie SDK on GitHub](https://github.com/fonderie-js/sdk): Open-source repository — the skill and the seventeen Core modules
