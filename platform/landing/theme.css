@@ -321,7 +321,7 @@
   }
 
   .hero__mark {
-    width: 44px;
+    width: 64px;
     height: auto;
     color: var(--color-foreground);
   }
@@ -898,7 +898,7 @@
   }
 
   .device-tile svg {
-    width: 40px;
+    width: 72px;
     height: auto;
     color: #444;
   }
