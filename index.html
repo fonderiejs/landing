@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+    <link rel="stylesheet" href="/assets/css/base.css"/>
+    <link rel="stylesheet" href="/assets/css/theme.css"/>
+    <title>Fonderie — Stop renting your own software.</title>
+    <meta name="description" content="The software foundry: an open core, SDK, and design system that casts apps you own — run by agents you command. Priced by work done, never by seats."/>
+    <meta name="application-name" content="Fonderie"/>
+    <meta name="author" content="Fonderie"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <meta name="creator" content="Fonderie"/>
+    <meta name="publisher" content="Fonderie"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"/>
+    <meta name="category" content="technology"/>
+    <link rel="canonical" href="/"/>
+    <meta name="format-detection" content="telephone=no, address=no, email=no"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-title" content="Fonderie"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta property="og:title" content="Fonderie — Stop renting your own software."/>
+    <meta property="og:description" content="The software foundry: an open core, SDK, and design system that casts apps you own — run by agents you command. Priced by work done, never by seats."/>
+    <meta property="og:url" content="https://fonderiejs.com"/>
+    <meta property="og:site_name" content="Fonderie"/>
+    <meta property="og:image" content="https://fonderiejs.com/opengraph-image?ad27781c8179c966"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:alt" content="Fonderie — Stop renting your own software."/>
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Fonderie — Stop renting your own software."/>
+    <meta name="twitter:description" content="The software foundry: an open core, SDK, and design system that casts apps you own — run by agents you command. Priced by work done, never by seats."/>
+    <meta name="twitter:image" content="https://fonderiejs.com/twitter-image?3036db2ffb5530a4"/>
+    <meta name="twitter:image:alt" content="Fonderie — Stop renting your own software."/>
+    <meta name="twitter:image:type" content="image/png"/>
+    <meta name="twitter:image:width" content="1200"/>
+    <meta name="twitter:image:height" content="630"/>
+    <link rel="icon" href="/assets/img/icon.svg" sizes="any" type="image/svg+xml"/>
+    <script>
+      (function () {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+    <script src="/assets/js/landing.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <nav class="nav">
+        <div class="nav__inner">
+          <a class="nav__logo" aria-label="Fonderie" href="/">
+            <img class="nav__logo-mark nav__logo-mark--dark" src="/assets/img/fonderie-lockup-dark.svg" alt="fonderie.js" height="18"/>
+            <img class="nav__logo-mark nav__logo-mark--light" src="/assets/img/fonderie-lockup-light.svg" alt="fonderie.js" height="18"/>
+          </a>
+          <div class="nav__links">
+            <a class="nav__link" href="/platform">Platform</a>
+            <a class="nav__link" href="/products">Products</a>
+            <a class="nav__link" href="/help">Resources</a>
+            <a class="nav__link" href="/contact">Contact</a>
+          </div>
+          <div class="nav__actions">
+            <a class="btn btn--nav" href="/contact">Start casting</a>
+          </div>
+          <div class="nav__mobile">
+            <a class="btn btn--nav" href="/contact">Start casting</a>
+            <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+        <div class="nav__menu">
+          <a class="nav__link" href="/platform">Platform</a>
+          <a class="nav__link" href="/products">Products</a>
+          <a class="nav__link" href="/help">Resources</a>
+          <a class="nav__link" href="/contact">Contact</a>
+        </div>
+      </nav>
+      <div class="container">
+        <section class="hero">
+          <div class="hero__melt" aria-hidden="true"></div>
+          <div class="hero__content">
+            <svg class="hero__mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7.5" cy="7.5" r="3.3" fill="currentColor"/><circle cx="16" cy="7.5" r="3.3" fill="currentColor" fill-opacity="0.85"/><circle cx="24.5" cy="7.5" r="3.3" fill="currentColor" fill-opacity="0.65"/><circle cx="7.5" cy="16" r="3.3" fill="currentColor" fill-opacity="0.75"/><circle cx="16" cy="16" r="3.3" fill="currentColor" fill-opacity="0.5"/><circle cx="24.5" cy="16" r="3.3" fill="currentColor" fill-opacity="0.2"/><circle cx="7.5" cy="24.5" r="3.3" fill="currentColor" fill-opacity="0.4"/><circle cx="16" cy="24.5" r="3.3" fill="currentColor" fill-opacity="0.2"/><circle cx="24.5" cy="24.5" r="3.3" fill="currentColor" fill-opacity="0.2"/>
+            </svg>
+            <h1 class="hero__title">Stop renting<br/>your own software.</h1>
+            <p class="hero__lede">Fonderie casts software you own, staffed by agents you command. No seats, no rent.</p>
+            <div class="hero__actions">
+              <a class="btn" href="/platform">See the platform</a>
+              <a class="code-pill" href="https://github.com/fonderie-js/sdk">$ npm install @fonderie/core</a>
+            </div>
+          </div>
+        </section>
+        <div class="features">
+          <div class="feature feature--divide">
+            <div class="feature__body feature__body--intro">
+              <h2 class="feature__title feature__title--lead">The foundry<br/>for apps.</h2>
+              <p class="feature__text feature__text--lead">Every app starts from the same core. What leaves the foundry is yours.</p>
+            </div>
+          </div>
+          <div class="feature feature--divide">
+            <div class="feature__body">
+              <h2 class="feature__title">Core</h2>
+              <p class="feature__text">API, auth, workspaces. Self-hostable, answerable to no vendor.</p>
+              <span class="tag">Open source</span>
+              <a class="arrow-btn" href="https://github.com/fonderie-js/sdk" aria-label="Fonderie SDK on GitHub">
+                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </a>
+            </div>
+            <div class="feature__deco feature__deco--fade-55" aria-hidden="true">
+              <div class="filetree">├─ api/</div>
+              <div class="filetree">├─ auth/</div>
+              <div class="filetree">├─ sdk/</div>
+              <div class="filetree">└─ ui/</div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__body">
+              <h2 class="feature__title">Gateway</h2>
+              <p class="feature__text">One door to every model. Spend caps per agent, costs to the dollar.</p>
+              <a class="arrow-btn" href="/platform#gateway">
+                <svg viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M9 4.5l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+            <div class="feature__deco feature__deco--fade-45" aria-hidden="true">
+              <div class="model-row">
+                <div class="model-row__id">
+                  <span class="dot dot--on"></span>
+                  <span class="model-row__name">crewfinding</span>
+                </div>
+                <span class="model-row__kind">production</span>
+              </div>
+              <div class="model-row">
+                <div class="model-row__id">
+                  <span class="dot dot--on"></span>
+                  <span class="model-row__name">casting-02</span>
+                </div>
+                <span class="model-row__kind">pouring</span>
+              </div>
+              <div class="model-row">
+                <div class="model-row__id">
+                  <span class="dot"></span>
+                  <span class="model-row__name">casting-03</span>
+                </div>
+                <span class="model-row__kind">queued</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="duo">
+          <div class="duo__panel">
+            <div class="duo__body">
+              <h2 class="feature__title">One cockpit for it all.</h2>
+              <p class="feature__text">Deploy, brief, steer. The fleet runs the work.</p>
+              <a class="arrow-btn" href="/products#cockpit">
+                <svg viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M9 4.5l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+            <div class="notif-stack" aria-hidden="true">
+              <div class="notif">
+                <div class="notif__icon">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="8" fill="currentColor"/><circle cx="7.5" cy="7.5" r="3.3" fill="var(--color-background)"/><circle cx="16" cy="7.5" r="3.3" fill="var(--color-background)" fill-opacity="0.85"/><circle cx="24.5" cy="7.5" r="3.3" fill="var(--color-background)" fill-opacity="0.65"/><circle cx="7.5" cy="16" r="3.3" fill="var(--color-background)" fill-opacity="0.75"/><circle cx="16" cy="16" r="3.3" fill="var(--color-background)" fill-opacity="0.5"/><circle cx="24.5" cy="16" r="3.3" fill="var(--color-background)" fill-opacity="0.2"/><circle cx="7.5" cy="24.5" r="3.3" fill="var(--color-background)" fill-opacity="0.4"/><circle cx="16" cy="24.5" r="3.3" fill="var(--color-background)" fill-opacity="0.2"/><circle cx="24.5" cy="24.5" r="3.3" fill="var(--color-background)" fill-opacity="0.2"/>
+                  </svg>
+                </div>
+                <div class="notif__content">
+                  <div class="notif__meta">
+                    <span class="notif__app">fonderie</span>
+                    <span class="notif__time">now</span>
+                  </div>
+                  <p class="notif__body">casting-02 · poured<br/>Deployed to staging in 4m 12s.</p>
+                </div>
+              </div>
+              <div class="notif-stack__ghost"></div>
+              <div class="notif-stack__ghost notif-stack__ghost--far"></div>
+            </div>
+          </div>
+          <div class="duo__panel duo__panel--wide">
+            <div class="device-tile">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="8" fill="currentColor"/><circle cx="7.5" cy="7.5" r="3.3" fill="var(--color-background)"/><circle cx="16" cy="7.5" r="3.3" fill="var(--color-background)" fill-opacity="0.85"/><circle cx="24.5" cy="7.5" r="3.3" fill="var(--color-background)" fill-opacity="0.65"/><circle cx="7.5" cy="16" r="3.3" fill="var(--color-background)" fill-opacity="0.75"/><circle cx="16" cy="16" r="3.3" fill="var(--color-background)" fill-opacity="0.5"/><circle cx="24.5" cy="16" r="3.3" fill="var(--color-background)" fill-opacity="0.2"/><circle cx="7.5" cy="24.5" r="3.3" fill="var(--color-background)" fill-opacity="0.4"/><circle cx="16" cy="24.5" r="3.3" fill="var(--color-background)" fill-opacity="0.2"/><circle cx="24.5" cy="24.5" r="3.3" fill="var(--color-background)" fill-opacity="0.2"/>
+              </svg>
+            </div>
+            <div class="duo__body duo__body--device">
+              <h2 class="feature__title">Proof, not promises.</h2>
+              <p class="feature__text duo__text--narrow">The first casting is already in production. Delivered, not demoed.</p>
+              <a class="arrow-btn" href="/products#sdk">
+                <svg viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M9 4.5l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="features">
+          <div class="feature feature--divide">
+            <div class="feature__body">
+              <h2 class="feature__title">Connectors</h2>
+              <p class="feature__text">Your clients’ tools, wired in on day one.</p>
+              <a class="arrow-btn" href="/platform#connectors">
+                <svg viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M9 4.5l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+            <div class="feature__deco feature__deco--pad" aria-hidden="true">
+              <div class="conn-grid">
+                <div class="conn"><span class="conn__name">GitHub</span><span class="dot dot--on"></span></div>
+                <div class="conn"><span class="conn__name">Slack</span><span class="dot dot--on"></span></div>
+                <div class="conn"><span class="conn__name">Stripe</span><span class="dot"></span></div>
+                <div class="conn"><span class="conn__name">Linear</span><span class="dot dot--on"></span></div>
+                <div class="conn"><span class="conn__name">Notion</span><span class="dot"></span></div>
+                <div class="conn"><span class="conn__name">Postgres</span><span class="dot dot--on"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="feature feature--divide">
+            <div class="feature__body">
+              <h2 class="feature__title">Identity</h2>
+              <p class="feature__text">A real email and phone for every agent. Your studio answers like a staffed company.</p>
+              <span class="tag">Coming soon</span>
+            </div>
+            <div class="feature__deco feature__deco--fade-40" aria-hidden="true">
+              <div class="id-card">
+                <div class="id-card__head">
+                  <div class="id-card__avatar"></div>
+                  <span class="id-card__name">dispatcher</span>
+                  <span class="id-card__status">● active</span>
+                </div>
+                <div class="id-card__rule"></div>
+                <div class="id-card__row">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <rect x="1" y="3" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M1 6l7 4 7-4" stroke="currentColor" stroke-width="1.5"/>
+                  </svg>
+                  <span class="id-card__value">dispatcher@agents.fonderiejs.com</span>
+                </div>
+                <div class="id-card__row">
+                  <svg viewBox="0 0 16 16" fill="none">
+                    <path d="M3 2a1 1 0 0 1 1-1h2.5a1 1 0 0 1 .97.757l.7 2.8a1 1 0 0 1-.292.99l-1.2 1.08a9 9 0 0 0 3.696 3.695l1.08-1.2a1 1 0 0 1 .99-.291l2.8.7A1 1 0 0 1 16 10.5V13a1 1 0 0 1-1 1C7.163 14 2 8.837 2 3a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.3"/>
+                  </svg>
+                  <span class="id-card__value">+1 (628) 555-0136</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__body">
+              <h2 class="feature__title">Spend</h2>
+              <p class="feature__text">Budgets per agent, per task. A task costs less than the seat it replaces.</p>
+              <span class="tag">Coming soon</span>
+            </div>
+            <div class="feature__deco feature__deco--pad" aria-hidden="true">
+              <div class="spend-card">
+                <div class="spend-card__head">
+                  <span class="spend-card__number">FONDERIE •••• 2140</span>
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="8" fill="currentColor"/><circle cx="7.5" cy="7.5" r="3.3" fill="var(--color-background)"/><circle cx="16" cy="7.5" r="3.3" fill="var(--color-background)" fill-opacity="0.85"/><circle cx="24.5" cy="7.5" r="3.3" fill="var(--color-background)" fill-opacity="0.65"/><circle cx="7.5" cy="16" r="3.3" fill="var(--color-background)" fill-opacity="0.75"/><circle cx="16" cy="16" r="3.3" fill="var(--color-background)" fill-opacity="0.5"/><circle cx="24.5" cy="16" r="3.3" fill="var(--color-background)" fill-opacity="0.2"/><circle cx="7.5" cy="24.5" r="3.3" fill="var(--color-background)" fill-opacity="0.4"/><circle cx="16" cy="24.5" r="3.3" fill="var(--color-background)" fill-opacity="0.2"/><circle cx="24.5" cy="24.5" r="3.3" fill="var(--color-background)" fill-opacity="0.2"/>
+                  </svg>
+                </div>
+                <div class="spend-card__meter">
+                  <div class="spend-card__amounts">
+                    <span class="spend-card__spent">$86.20</span>
+                    <span class="spend-card__limit">/ $400</span>
+                  </div>
+                  <div class="spend-card__track">
+                    <div class="spend-card__fill"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer__grid">
+            <div class="footer__col">
+              <a class="footer__heading" href="/platform">Platform</a>
+              <a class="footer__link" href="/platform#core">Core</a>
+              <a class="footer__link" href="/platform#gateway">Gateway</a>
+              <a class="footer__link" href="/platform#connectors">Connectors</a>
+              <a class="footer__link" href="/platform#identity">Identity</a>
+              <a class="footer__link" href="/platform#spend">Spend</a>
+            </div>
+            <div class="footer__col">
+              <a class="footer__heading" href="/products">Products</a>
+              <a class="footer__link" href="/products#sdk">The SDK</a>
+              <a class="footer__link" href="/products#cockpit">The cockpit</a>
+            </div>
+            <div class="footer__col">
+              <a class="footer__heading" href="/help">Help</a>
+              <a class="footer__link" href="/help">Help Center</a>
+              <a class="footer__link" href="/help#status">Status</a>
+            </div>
+            <div class="footer__col">
+              <p class="footer__heading">Company</p>
+              <a class="footer__link" href="/contact">Contact</a>
+              <a class="footer__link" href="/contact">Press</a>
+              <a class="footer__link" href="/contact">Investors</a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__meta">
+              <p class="footer__copy">© 2026 | Fonderie, Inc.</p>
+              <a class="footer__social" href="https://github.com/fonderie-js/sdk" aria-label="GitHub">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              </a>
+              <a class="footer__social" href="https://x.com/fonderiejs" aria-label="Fonderie on X">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
+            <fieldset class="theme-switch" aria-label="Theme switcher">
+              <label class="theme-switch__option" data-theme-value="system">
+                <input type="radio" name="theme" value="system"/>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+                <span>System</span>
+              </label>
+              <label class="theme-switch__option" data-theme-value="light">
+                <input type="radio" name="theme" value="light"/>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                <span>Light</span>
+              </label>
+              <label class="theme-switch__option" data-theme-value="dark">
+                <input type="radio" name="theme" value="dark"/>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                <span>Dark</span>
+              </label>
+            </fieldset>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
