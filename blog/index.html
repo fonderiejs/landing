@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
     <link rel="stylesheet" href="/assets/css/base.css"/>
     <link rel="stylesheet" href="/assets/css/theme.css"/>
-    <title>Contact — Fonderie</title>
-    <meta name="description" content="Start casting: tell us what you want to own."/>
+    <title>Blog — Fonderie</title>
+    <meta name="description" content="Notes from the foundry: measurements, molds, and the economics of AI-built SaaS."/>
+    <link rel="canonical" href="https://fonderiejs.com/blog"/>
+    <meta property="og:title" content="Blog — Fonderie"/>
+    <meta property="og:description" content="Notes from the foundry: measurements, molds, and the economics of AI-built SaaS."/>
+    <meta property="og:url" content="https://fonderiejs.com/blog"/>
+    <meta property="og:site_name" content="Fonderie"/>
+    <meta property="og:type" content="website"/>
     <link rel="icon" href="/assets/img/icon.svg" sizes="any" type="image/svg+xml"/>
     <script>
       (function () {
@@ -15,6 +21,17 @@
       })();
     </script>
     <script src="/assets/js/landing.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "@id": "https://fonderiejs.com/blog#blog",
+      "name": "Fonderie Blog",
+      "url": "https://fonderiejs.com/blog",
+      "description": "Notes from the foundry: measurements, molds, and the economics of AI-built SaaS.",
+      "publisher": { "@id": "https://fonderiejs.com/#organization" }
+    }
+    </script>
   </head>
   <body>
     <div class="page">
@@ -53,28 +70,19 @@
       </nav>
       <div class="container">
         <section class="subhero">
-          <h1 class="subhero__title">Start casting.</h1>
-          <p class="hero__lede">Tell us what you want to own. We’ll tell you how fast it can be poured.</p>
+          <h1 class="subhero__title">From the foundry.</h1>
+          <p class="hero__lede">Measurements, molds, and the economics of AI-built SaaS.</p>
         </section>
-        <div class="features">
-          <div class="feature feature--divide" id="email">
-            <div class="feature__body">
-              <h2 class="feature__title">Email</h2>
-              <p class="feature__text"><a class="footer__link" href="mailto:hello@fonderiejs.com">hello@fonderiejs.com</a></p>
+        <div class="postlist">
+          <a class="postrow" href="/blog/token-cost-experiment">
+            <div class="postrow__meta">
+              <time datetime="2026-07-13">July 2026</time>
+              <span class="dot"></span>
+              <span>Experiment</span>
             </div>
-          </div>
-          <div class="feature feature--divide">
-            <div class="feature__body">
-              <h2 class="feature__title">Fit</h2>
-              <p class="feature__text">Agencies, studios, and teams done paying rent.</p>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="feature__body">
-              <h2 class="feature__title">Response</h2>
-              <p class="feature__text">Within one business day. A human, not a funnel.</p>
-            </div>
-          </div>
+            <h2 class="postrow__title">How much does it cost when Claude Code builds auth from scratch? We measured.</h2>
+            <p class="postrow__excerpt">The same auth task, run repeatedly in fresh sessions — once from nothing, once from a Fonderie mold. Token counts, dollar costs, and a 12-point security checklist, with a fully reproducible protocol.</p>
+          </a>
         </div>
         <footer class="footer">
           <div class="footer__grid">

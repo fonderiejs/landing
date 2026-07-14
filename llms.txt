@@ -16,6 +16,7 @@ Key facts:
 - [Home](https://fonderiejs.com/): What Fonderie is and how it works, with FAQ
 - [Platform](https://fonderiejs.com/platform): Platform overview — Core, Gateway, Connectors, Identity, Spend
 - [Products](https://fonderiejs.com/products): The SDK and the cockpit
+- [Blog](https://fonderiejs.com/blog): Notes from the foundry — measurements, molds, and the economics of AI-built SaaS
 - [Resources](https://fonderiejs.com/help): Documentation, status, and support
 - [Contact](https://fonderiejs.com/contact): Contact, press, and investors
 
