@@ -20,4 +20,10 @@
     <loc>https://fonderiejs.com/contact</loc>
     <lastmod>2026-07-13</lastmod>
   </url>
+  <url>
+    <loc>https://fonderiejs.com/blog</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <!-- Add https://fonderiejs.com/blog/token-cost-experiment here once the
+       post's measurement placeholders are filled in and it's published. -->
 </urlset>

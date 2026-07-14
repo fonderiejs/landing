@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--
+  DRAFT — DO NOT PUSH TO MAIN AS-IS.
+  Every ⟦DOUBLE-BRACKET⟧ value is a placeholder for a real measurement.
+  Run the protocol in the Methodology section, fill in the numbers
+  (grep this file for "⟦"), update datePublished/dateModified if needed,
+  add this URL to sitemap.xml, then delete this comment.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+    <link rel="stylesheet" href="/assets/css/base.css"/>
+    <link rel="stylesheet" href="/assets/css/theme.css"/>
+    <title>How much does it cost when Claude Code builds auth from scratch? We measured. — Fonderie</title>
+    <meta name="description" content="The same auth-build task, run in fresh Claude Code sessions — from scratch versus from a Fonderie module. Token counts, dollar costs, a 12-point security checklist, and a fully reproducible protocol."/>
+    <link rel="canonical" href="https://fonderiejs.com/blog/token-cost-experiment"/>
+    <meta property="og:title" content="How much does it cost when Claude Code builds auth from scratch? We measured."/>
+    <meta property="og:description" content="The same auth-build task, run in fresh Claude Code sessions — from scratch versus from a Fonderie module. Token counts, dollar costs, and a reproducible protocol."/>
+    <meta property="og:url" content="https://fonderiejs.com/blog/token-cost-experiment"/>
+    <meta property="og:site_name" content="Fonderie"/>
+    <meta property="og:type" content="article"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="How much does it cost when Claude Code builds auth from scratch? We measured."/>
+    <meta name="twitter:description" content="Token counts, dollar costs, and a reproducible protocol: building auth from scratch versus from a Fonderie module."/>
+    <link rel="icon" href="/assets/img/icon.svg" sizes="any" type="image/svg+xml"/>
+    <script>
+      (function () {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+    <script src="/assets/js/landing.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "@id": "https://fonderiejs.com/blog/token-cost-experiment#post",
+      "headline": "How much does it cost when Claude Code builds auth from scratch? We measured.",
+      "description": "The same auth-build task, run in fresh Claude Code sessions — from scratch versus from a Fonderie module. Token counts, dollar costs, a 12-point security checklist, and a fully reproducible protocol.",
+      "url": "https://fonderiejs.com/blog/token-cost-experiment",
+      "datePublished": "2026-07-13",
+      "dateModified": "2026-07-13",
+      "author": { "@id": "https://fonderiejs.com/#organization" },
+      "publisher": { "@id": "https://fonderiejs.com/#organization" },
+      "isPartOf": { "@id": "https://fonderiejs.com/blog#blog" },
+      "mainEntityOfPage": "https://fonderiejs.com/blog/token-cost-experiment"
+    }
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <nav class="nav">
+        <div class="nav__inner">
+          <a class="nav__logo" aria-label="Fonderie" href="/">
+            <img class="nav__logo-mark nav__logo-mark--dark" src="/assets/img/fonderie-lockup-dark.svg" alt="fonderie.js" height="18"/>
+            <img class="nav__logo-mark nav__logo-mark--light" src="/assets/img/fonderie-lockup-light.svg" alt="fonderie.js" height="18"/>
+          </a>
+          <div class="nav__links">
+            <a class="nav__link" href="/platform">Platform</a>
+            <a class="nav__link" href="/products">Products</a>
+            <a class="nav__link" href="/blog">Blog</a>
+            <a class="nav__link" href="/help">Resources</a>
+            <a class="nav__link" href="/contact">Contact</a>
+          </div>
+          <div class="nav__actions">
+            <a class="btn btn--nav" href="/contact">Start casting</a>
+          </div>
+          <div class="nav__mobile">
+            <a class="btn btn--nav" href="/contact">Start casting</a>
+            <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+        <div class="nav__menu">
+          <a class="nav__link" href="/platform">Platform</a>
+          <a class="nav__link" href="/products">Products</a>
+          <a class="nav__link" href="/blog">Blog</a>
+          <a class="nav__link" href="/help">Resources</a>
+          <a class="nav__link" href="/contact">Contact</a>
+        </div>
+      </nav>
+      <div class="container">
+        <article class="article">
+          <div class="article__meta">
+            <time datetime="2026-07-13">July 2026</time>
+            <span class="dot"></span>
+            <span>Experiment</span>
+            <span class="dot"></span>
+            <span>8 min read</span>
+          </div>
+          <h1 class="article__title">How much does it cost when Claude Code builds auth from scratch? We measured.</h1>
+          <p class="article__lede">The same auth task, run repeatedly in fresh sessions — once from nothing, once from a Fonderie mold. Token counts, dollar costs, and a 12-point security checklist, with a fully reproducible protocol.</p>
+
+          <p>Every founder vibe-coding a SaaS has lived this moment: you open a fresh Claude Code session, type “add login to my app,” and watch the assistant do genuinely impressive work — schema, password hashing, session middleware, reset emails, the lot. Twenty minutes later you have auth.</p>
+          <p>Here’s the part nobody prices in: your assistant just re-derived, from first principles, a problem that was solved before you were born into this industry. And it will re-derive it again in the next project. And again after the refactor. Every token it spent reasoning about bcrypt rounds and cookie flags is a token it didn’t spend on the product only you can build.</p>
+          <p>We kept saying this in the abstract. Then we decided to measure it.</p>
+
+          <h2>The experiment</h2>
+          <p>We gave Claude Code the same task under two conditions and measured what it burned.</p>
+          <p><strong>The task</strong> — one fixed prompt, identical in every run:</p>
+          <blockquote>
+            <p>Add email/password authentication to this app: signup, login, logout, server-side sessions, password reset by email, input validation, and rate limiting on the login endpoint. Production quality.</p>
+          </blockquote>
+          <p><strong>Condition A — from scratch.</strong> A fresh TypeScript app skeleton with no auth dependencies. Claude Code builds everything itself.</p>
+          <p><strong>Condition B — from the mold.</strong> The same skeleton with <code>@fonderie/core</code> installed and the Fonderie skill loaded. Claude Code wires in the <code>auth</code> module instead of writing one.</p>
+          <p>Each condition ran ⟦N⟧ times, each in a brand-new session (fresh context, no memory of prior runs), on the same model at the same settings. After each run we recorded token usage from Claude Code’s <code>/cost</code> report, wall-clock time, and scored the result against a fixed 12-point security checklist. Full protocol at the bottom.</p>
+
+          <h2>Results</h2>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>From scratch (avg of ⟦N⟧)</th>
+                <th>With Fonderie (avg of ⟦N⟧)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Input tokens</td><td>⟦A_INPUT⟧</td><td>⟦B_INPUT⟧</td></tr>
+              <tr><td>Output tokens</td><td>⟦A_OUTPUT⟧</td><td>⟦B_OUTPUT⟧</td></tr>
+              <tr><td><strong>Total tokens</strong></td><td><strong>⟦A_TOTAL⟧</strong></td><td><strong>⟦B_TOTAL⟧</strong></td></tr>
+              <tr><td>Wall-clock time</td><td>⟦A_TIME⟧</td><td>⟦B_TIME⟧</td></tr>
+              <tr><td>Security checklist (of 12)</td><td>⟦A_SCORE⟧</td><td>⟦B_SCORE⟧</td></tr>
+              <tr><td>Lines of code written</td><td>⟦A_LOC⟧</td><td>⟦B_LOC⟧</td></tr>
+            </tbody>
+          </table>
+          <p>⟦One-paragraph narrative of what actually happened in the from-scratch runs: what the model spent its longest stretches on, where runs diverged from each other, anything it got wrong or handled inconsistently across runs — e.g. differences in session storage, reset-token handling, rate-limiter choice.⟧</p>
+          <p>⟦One-paragraph narrative of the Fonderie runs: what the model actually did — read the skill, installed/imported the module, wired routes — and where the residual tokens went.⟧</p>
+
+          <h2>Turning tokens into dollars</h2>
+          <p>At current API pricing for Claude Fable 5 — the model our Claude Code sessions run on — input tokens cost $10 per million and output tokens $50 per million.</p>
+          <p>That makes the from-scratch build <strong>$⟦A_COST⟧ per run</strong>, against <strong>$⟦B_COST⟧ with Fonderie</strong> — a difference of <strong>$⟦DIFF_COST⟧, or ⟦MULTIPLE⟧× the cost, every time an assistant builds auth from nothing</strong>.</p>
+          <p>If you’re on a Claude subscription rather than the API, you don’t see dollars — you see your usage limit. The exchange rate is different; the waste is identical. Those ⟦A_TOTAL⟧ tokens come out of the same budget that was supposed to build your actual product this session.</p>
+          <p>And auth is one module. The same tax applies to billing, teams, permissions, settings, email — every piece of plumbing your assistant regenerates instead of reusing. Multiply by the number of modules, then by the number of sessions that touch them over a product’s life, and “the AI writes it fresh each time” stops being a workflow and starts being a line item.</p>
+
+          <h2>Why assistants re-solve solved problems</h2>
+          <p>None of this is a model deficiency. It’s structural:</p>
+          <ol>
+            <li><strong>Sessions don’t share memory.</strong> A fresh session knows nothing about what the last one built. The context window starts empty; the plumbing gets re-reasoned from zero.</li>
+            <li><strong>Generation is priced per token, not per novel token.</strong> The model pays the same to write its ten-thousandth session middleware as its first. Nothing in the loop distinguishes solved problems from open ones.</li>
+            <li><strong>Plumbing is high-token, low-novelty.</strong> Auth, billing, and permissions are exactly the code with the worst ratio of tokens-required to decisions-that-are-actually-yours. There is no product insight in a password-reset flow. There are, however, a lot of tokens in one.</li>
+          </ol>
+          <p>The industry’s first answer to this was the boilerplate: buy a hardened starter kit, let the AI build features on top. That’s directionally right, and it’s why kits like MakerKit and ShipFast are now marketing “AI-agent readiness.” But boilerplates were designed for humans to read once and modify. What an agent needs is different: modules it can <em>reference without regenerating</em>, plus instructions — a skill — telling it those modules exist, what they guarantee, and how to wire them.</p>
+          <p>That’s the bet Fonderie makes: seventeen production-tested TypeScript modules and a skill that teaches any assistant — Claude Code natively, Cursor via rules, Codex via AGENTS.md — to reach for the finished part instead of re-casting it. The measurement above is what that bet is worth on a single module, in a single session.</p>
+
+          <h2>Caveats, honestly</h2>
+          <ul>
+            <li>⟦N⟧ runs per condition is a measurement, not a benchmark suite. Variance across runs was ⟦VARIANCE_NOTE⟧.</li>
+            <li>Results depend on model and settings; ours are pinned in the methodology below. Different models will shift the absolute numbers, not the shape of them.</li>
+            <li>Condition B isn’t free: the module and skill still occupy context, and someone (us) paid the engineering cost of hardening the modules once. That’s rather the point — pay for auth once, industry-wide, instead of per-session.</li>
+            <li>We wrote the modules being tested. The protocol below is fully reproducible precisely so you don’t have to take our word for it.</li>
+          </ul>
+
+          <h2>Methodology</h2>
+          <p>Everything needed to reproduce or audit the numbers:</p>
+          <p><strong>Environment.</strong> Claude Code v⟦VERSION⟧, model <code>claude-fable-5</code> at default settings, on ⟦MACHINE/OS⟧. Node ⟦NODE_VERSION⟧.</p>
+          <p><strong>Base repository.</strong> ⟦Link to the public repo containing the starting skeleton, tagged at the exact commit used.⟧ Condition B adds one commit: <code>npm install @fonderie/core</code> plus the skill file, nothing else.</p>
+          <p><strong>Prompt.</strong> The exact task text quoted above, pasted as the first and only user message. No follow-up steering; if a run stalled and required intervention, it was recorded as such.</p>
+          <p><strong>Token measurement.</strong> After each run, <code>/cost</code> in the same Claude Code session, recording the input/output token split it reports. (For continuous measurement across many runs, Claude Code’s OpenTelemetry metrics export the same counters — we used <code>/cost</code> for simplicity.) Dollar figures are computed from the token counts at published API rates, so they hold regardless of whether a session runs on API billing or a subscription.</p>
+          <p><strong>Runs.</strong> ⟦N⟧ per condition, fresh session each, alternating A/B to spread any time-of-day variance. No cherry-picking: every completed run is included in the averages; aborted runs (if any) are listed here: ⟦list or “none”⟧.</p>
+          <p><strong>Security checklist (12 points, pass/fail per run).</strong> Password hashing with a modern KDF (bcrypt/argon2/scrypt) at sane cost parameters; no plaintext or reversible password storage; timing-safe credential comparison; server-side session with expiry; <code>HttpOnly</code> + <code>Secure</code> + <code>SameSite</code> on the session cookie; session rotation on login; CSRF protection on state-changing routes; single-use, expiring password-reset tokens; reset flow that doesn’t leak account existence; rate limiting actually enforced on login; input validation on all auth endpoints; no secrets committed to the repo.</p>
+          <p><strong>Raw data.</strong> Per-run numbers: ⟦link to CSV/gist⟧.</p>
+
+          <hr/>
+          <p class="article__footnote"><em>Fonderie is the open foundry for AI-built SaaS — seventeen open-source modules and a skill, self-hosted, no lock-in. <code>npm install @fonderie/core</code>, source at <a href="https://github.com/fonderie-js/sdk">github.com/fonderie-js/sdk</a>.</em></p>
+        </article>
+        <footer class="footer">
+          <div class="footer__grid">
+            <div class="footer__col">
+              <a class="footer__heading" href="/platform">Platform</a>
+              <a class="footer__link" href="/platform#core">Core</a>
+              <a class="footer__link" href="/platform#gateway">Gateway</a>
+              <a class="footer__link" href="/platform#connectors">Connectors</a>
+              <a class="footer__link" href="/platform#identity">Identity</a>
+              <a class="footer__link" href="/platform#spend">Spend</a>
+            </div>
+            <div class="footer__col">
+              <a class="footer__heading" href="/products">Products</a>
+              <a class="footer__link" href="/products#sdk">The SDK</a>
+              <a class="footer__link" href="/products#cockpit">The cockpit</a>
+            </div>
+            <div class="footer__col">
+              <a class="footer__heading" href="/help">Resources</a>
+              <a class="footer__link" href="/help#docs">Documentation</a>
+              <a class="footer__link" href="/help#status">Status</a>
+              <a class="footer__link" href="/blog">Blog</a>
+            </div>
+            <div class="footer__col">
+              <p class="footer__heading">Company</p>
+              <a class="footer__link" href="/contact">Contact</a>
+              <a class="footer__link" href="/contact">Press</a>
+              <a class="footer__link" href="/contact">Investors</a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__meta">
+              <p class="footer__copy">© 2026 | Fonderie, Inc.</p>
+              <a class="footer__social" href="https://github.com/fonderie-js/sdk" aria-label="GitHub">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              </a>
+              <a class="footer__social" href="https://x.com/fonderiejs" aria-label="Fonderie on X">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+            </div>
+            <fieldset class="theme-switch" aria-label="Theme switcher">
+              <label class="theme-switch__option" data-theme-value="system">
+                <input type="radio" name="theme" value="system"/>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+                <span>System</span>
+              </label>
+              <label class="theme-switch__option" data-theme-value="light">
+                <input type="radio" name="theme" value="light"/>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                <span>Light</span>
+              </label>
+              <label class="theme-switch__option" data-theme-value="dark">
+                <input type="radio" name="theme" value="dark"/>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                <span>Dark</span>
+              </label>
+            </fieldset>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
