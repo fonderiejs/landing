@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <!--
   DRAFT — DO NOT PUSH TO MAIN AS-IS.
-  Every ⟦DOUBLE-BRACKET⟧ value is a placeholder for a real measurement.
-  Run the protocol in the Methodology section, fill in the numbers
-  (grep this file for "⟦"), update datePublished/dateModified if needed,
-  add this URL to sitemap.xml, then delete this comment.
+  Round-one numbers are real (pilot runs a1/b1, 2026-07-13, tally in the
+  experiment scratchpad). Remaining ⟦DOUBLE-BRACKET⟧ placeholders are the
+  ROUND-TWO rerun values, pending the npm publish of the fixed packages.
+  Before shipping: run round two, fill the placeholders, publish the
+  reproducibility repo + raw-data gist the methodology promises, add this
+  URL to sitemap.xml, and delete this comment.
 -->
 <html lang="en">
   <head>
@@ -12,17 +14,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
     <link rel="stylesheet" href="/assets/css/base.css"/>
     <link rel="stylesheet" href="/assets/css/theme.css"/>
-    <title>How much does it cost when Claude Code builds auth from scratch? We measured. — Fonderie</title>
-    <meta name="description" content="The same auth-build task, run in fresh Claude Code sessions — from scratch versus from a Fonderie module. Token counts, dollar costs, a 12-point security checklist, and a fully reproducible protocol."/>
+    <title>We measured our own product against Claude Code building auth from scratch. It lost. — Fonderie</title>
+    <meta name="description" content="The same auth task in fresh Claude Code sessions: from scratch versus from a Fonderie module. Our module lost round one — 2.3× the cost. Here's the data, why it happened, what we fixed, and the rerun."/>
     <link rel="canonical" href="https://fonderiejs.com/blog/token-cost-experiment"/>
-    <meta property="og:title" content="How much does it cost when Claude Code builds auth from scratch? We measured."/>
-    <meta property="og:description" content="The same auth-build task, run in fresh Claude Code sessions — from scratch versus from a Fonderie module. Token counts, dollar costs, and a reproducible protocol."/>
+    <meta property="og:title" content="We measured our own product against Claude Code building auth from scratch. It lost."/>
+    <meta property="og:description" content="Token counts, dollar costs, a 12-point security checklist — and the three bugs the measurement exposed in our own SDK."/>
     <meta property="og:url" content="https://fonderiejs.com/blog/token-cost-experiment"/>
     <meta property="og:site_name" content="Fonderie"/>
     <meta property="og:type" content="article"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="How much does it cost when Claude Code builds auth from scratch? We measured."/>
-    <meta name="twitter:description" content="Token counts, dollar costs, and a reproducible protocol: building auth from scratch versus from a Fonderie module."/>
+    <meta name="twitter:title" content="We measured our own product against Claude Code building auth from scratch. It lost."/>
+    <meta name="twitter:description" content="Token counts, dollar costs, a 12-point security checklist — and the three bugs the measurement exposed in our own SDK."/>
     <link rel="icon" href="/assets/img/icon.svg" sizes="any" type="image/svg+xml"/>
     <script>
       (function () {
@@ -36,11 +38,11 @@
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "@id": "https://fonderiejs.com/blog/token-cost-experiment#post",
-      "headline": "How much does it cost when Claude Code builds auth from scratch? We measured.",
-      "description": "The same auth-build task, run in fresh Claude Code sessions — from scratch versus from a Fonderie module. Token counts, dollar costs, a 12-point security checklist, and a fully reproducible protocol.",
+      "headline": "We measured our own product against Claude Code building auth from scratch. It lost.",
+      "description": "The same auth task in fresh Claude Code sessions: from scratch versus from a Fonderie module. Our module lost round one — 2.3× the cost. The data, the three bugs it exposed, what we fixed, and the rerun.",
       "url": "https://fonderiejs.com/blog/token-cost-experiment",
-      "datePublished": "2026-07-13",
-      "dateModified": "2026-07-13",
+      "datePublished": "2026-07-14",
+      "dateModified": "2026-07-14",
       "author": { "@id": "https://fonderiejs.com/#organization" },
       "publisher": { "@id": "https://fonderiejs.com/#organization" },
       "isPartOf": { "@id": "https://fonderiejs.com/blog#blog" },
@@ -86,18 +88,18 @@
       <div class="container">
         <article class="article">
           <div class="article__meta">
-            <time datetime="2026-07-13">July 2026</time>
+            <time datetime="2026-07-14">July 2026</time>
             <span class="dot"></span>
             <span>Experiment</span>
             <span class="dot"></span>
-            <span>8 min read</span>
+            <span>10 min read</span>
           </div>
-          <h1 class="article__title">How much does it cost when Claude Code builds auth from scratch? We measured.</h1>
-          <p class="article__lede">The same auth task, run repeatedly in fresh sessions — once from nothing, once from a Fonderie mold. Token counts, dollar costs, and a 12-point security checklist, with a fully reproducible protocol.</p>
+          <h1 class="article__title">We measured our own product against Claude Code building auth from scratch. It lost.</h1>
+          <p class="article__lede">The same auth task, run in fresh sessions — once from nothing, once from a Fonderie mold. Our module cost 2.3× more. Here’s the data, the three bugs it exposed, what we fixed, and the rerun.</p>
 
           <p>Every founder vibe-coding a SaaS has lived this moment: you open a fresh Claude Code session, type “add login to my app,” and watch the assistant do genuinely impressive work — schema, password hashing, session middleware, reset emails, the lot. Twenty minutes later you have auth.</p>
           <p>Here’s the part nobody prices in: your assistant just re-derived, from first principles, a problem that was solved before you were born into this industry. And it will re-derive it again in the next project. And again after the refactor. Every token it spent reasoning about bcrypt rounds and cookie flags is a token it didn’t spend on the product only you can build.</p>
-          <p>We kept saying this in the abstract. Then we decided to measure it.</p>
+          <p>That’s the thesis Fonderie is built on. We decided to measure it — and the measurement did not go the way we expected. This post has the numbers from both rounds: the one we lost, and what it took to change the outcome.</p>
 
           <h2>The experiment</h2>
           <p>We gave Claude Code the same task under two conditions and measured what it burned.</p>
@@ -105,63 +107,105 @@
           <blockquote>
             <p>Add email/password authentication to this app: signup, login, logout, server-side sessions, password reset by email, input validation, and rate limiting on the login endpoint. Production quality.</p>
           </blockquote>
-          <p><strong>Condition A — from scratch.</strong> A fresh TypeScript app skeleton with no auth dependencies. Claude Code builds everything itself.</p>
+          <p><strong>Condition A — from scratch.</strong> A fresh TypeScript/Express skeleton with no auth dependencies. Claude Code builds everything itself.</p>
           <p><strong>Condition B — from the mold.</strong> The same skeleton with <code>@fonderie/core</code> installed and the Fonderie skill loaded. Claude Code wires in the <code>auth</code> module instead of writing one.</p>
-          <p>Each condition ran ⟦N⟧ times, each in a brand-new session (fresh context, no memory of prior runs), on the same model at the same settings. After each run we recorded token usage from Claude Code’s <code>/cost</code> report, wall-clock time, and scored the result against a fixed 12-point security checklist. Full protocol at the bottom.</p>
+          <p>Every run starts a brand-new headless session (fresh context, no memory of prior runs) on the same model at the same settings; token usage and cost come from Claude Code’s own JSON output. Each result is scored against a fixed 12-point security checklist. Full protocol at the bottom.</p>
 
-          <h2>Results</h2>
+          <h2>Round one: we lost</h2>
+          <p>One pilot run per condition, before we changed anything:</p>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>From scratch</th>
+                <th>With Fonderie (v0.1.0)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Cost (reported)</td><td><strong>$2.51</strong></td><td><strong>$5.84</strong></td></tr>
+              <tr><td>Agent turns</td><td>31</td><td>77</td></tr>
+              <tr><td>Wall-clock</td><td>6m 17s</td><td>11m 39s</td></tr>
+              <tr><td>Output tokens</td><td>22,196</td><td>32,157</td></tr>
+              <tr><td>Tokens read (incl. cache)</td><td>~757K</td><td>~2.86M</td></tr>
+              <tr><td>Lines of code written</td><td>557</td><td>147</td></tr>
+              <tr><td>Typecheck</td><td>clean</td><td>clean</td></tr>
+              <tr><td>Security checklist (of 12)</td><td>11</td><td>8</td></tr>
+            </tbody>
+          </table>
+          <p>The mold wrote a quarter of the code at 2.3× the price — and scored <em>worse</em> on security. The from-scratch run was genuinely good: scrypt at OWASP parameters with the cost factors stored alongside each hash, timing-safe comparison, database-backed sessions with rotation on login, hashed single-use reset tokens, an enumeration-safe reset flow, dual rate limiting, zod validation on every endpoint. Modern assistants are not bad at auth. That’s the honest baseline any “stop letting the LLM write auth” pitch has to beat.</p>
+
+          <h2>Why we lost: the bill for our own bugs</h2>
+          <p>The transcript of the Fonderie run reads like an invoice, line by line, for problems in our packages — none of which we knew about until we watched an agent pay for them:</p>
+          <ol>
+            <li><strong>A packaging bug taxed every consumer.</strong> Our <code>@fonderie/*/migrations</code> subpaths declared TypeScript types that weren’t in the published tarballs (two parallel build passes raced over the output directory). The agent diagnosed this and wrote a local type-shim to work around it — tokens spent fixing <em>our</em> build.</li>
+            <li><strong>“Optional” dependencies weren’t.</strong> The Express adapter statically imported its optional peers, so the agent was forced to install three packages it never used just to make module resolution succeed.</li>
+            <li><strong>The skill said <em>what</em>, not <em>how</em>.</strong> Our skill told the assistant to use <code>AuthModule</code> — but not its constructor signature, its config shape, or how the event bus threads through. So the agent did the only thing it could: it excavated <code>node_modules</code>, streaming ~2.8M tokens of package source through its context to reverse-engineer APIs we had simply never written down for it.</li>
+            <li><strong>And the checklist gap was real.</strong> The prompt asked for server-side sessions; our auth module is stateless-JWT, and its input validation at the time was a bare length check. An assistant writing from scratch shipped better validation than our hardened module. For a security-positioned framework, that one stung.</li>
+          </ol>
+          <p>None of this is the model’s fault. It’s the product’s. A module library for AI agents lives or dies on whether the agent can wire it <em>cheaply</em> — and we had never measured that.</p>
+
+          <h2>What we fixed</h2>
+          <p>Everything above, at the root:</p>
+          <ul>
+            <li><strong>Packaging:</strong> migrations types now build as a separate sequential pass; a CI check verifies every declared export target exists in every tarball.</li>
+            <li><strong>Adapters:</strong> optional peers are now loaded lazily on first use, with a targeted install message if one is genuinely missing. Installing an adapter pulls in nothing you don’t use.</li>
+            <li><strong>The skill got an exact API surface:</strong> a curated wiring guide with a copy-paste, typecheck-verified composition example, plus a <em>generated</em> signatures reference — extracted from source by the TypeScript compiler on every release, so it can’t drift. The skill now explicitly forbids reading <code>node_modules</code> to discover APIs.</li>
+            <li><strong>Validation became a first-class layer:</strong> every body-taking route across every package is now guarded by zod schemas through one shared middleware — 43 routes validated, the rest individually verified as no-body or signature-gated, enforced by a repo-level audit that fails CI if a new route ships unvalidated. The schemas are exported, so the docs and any typed client read the same contract the runtime enforces.</li>
+          </ul>
+          <p>The measurement forced all of it. That is, retroactively, the strongest argument for having run the experiment.</p>
+
+          <h2>Round two: the rerun</h2>
+          <p>Same task, same protocol, ⟦N⟧ runs per condition, against the fixed packages and the upgraded skill:</p>
           <table>
             <thead>
               <tr>
                 <th></th>
                 <th>From scratch (avg of ⟦N⟧)</th>
-                <th>With Fonderie (avg of ⟦N⟧)</th>
+                <th>With Fonderie ⟦VERSION⟧ (avg of ⟦N⟧)</th>
               </tr>
             </thead>
             <tbody>
-              <tr><td>Input tokens</td><td>⟦A_INPUT⟧</td><td>⟦B_INPUT⟧</td></tr>
-              <tr><td>Output tokens</td><td>⟦A_OUTPUT⟧</td><td>⟦B_OUTPUT⟧</td></tr>
-              <tr><td><strong>Total tokens</strong></td><td><strong>⟦A_TOTAL⟧</strong></td><td><strong>⟦B_TOTAL⟧</strong></td></tr>
-              <tr><td>Wall-clock time</td><td>⟦A_TIME⟧</td><td>⟦B_TIME⟧</td></tr>
-              <tr><td>Security checklist (of 12)</td><td>⟦A_SCORE⟧</td><td>⟦B_SCORE⟧</td></tr>
-              <tr><td>Lines of code written</td><td>⟦A_LOC⟧</td><td>⟦B_LOC⟧</td></tr>
+              <tr><td>Cost (reported)</td><td><strong>$⟦A2_COST⟧</strong></td><td><strong>$⟦B2_COST⟧</strong></td></tr>
+              <tr><td>Agent turns</td><td>⟦A2_TURNS⟧</td><td>⟦B2_TURNS⟧</td></tr>
+              <tr><td>Wall-clock</td><td>⟦A2_TIME⟧</td><td>⟦B2_TIME⟧</td></tr>
+              <tr><td>Output tokens</td><td>⟦A2_OUTPUT⟧</td><td>⟦B2_OUTPUT⟧</td></tr>
+              <tr><td>Tokens read (incl. cache)</td><td>⟦A2_READ⟧</td><td>⟦B2_READ⟧</td></tr>
+              <tr><td>Lines of code written</td><td>⟦A2_LOC⟧</td><td>⟦B2_LOC⟧</td></tr>
+              <tr><td>Security checklist (of 12)</td><td>⟦A2_SCORE⟧</td><td>⟦B2_SCORE⟧</td></tr>
             </tbody>
           </table>
-          <p>⟦One-paragraph narrative of what actually happened in the from-scratch runs: what the model spent its longest stretches on, where runs diverged from each other, anything it got wrong or handled inconsistently across runs — e.g. differences in session storage, reset-token handling, rate-limiter choice.⟧</p>
-          <p>⟦One-paragraph narrative of the Fonderie runs: what the model actually did — read the skill, installed/imported the module, wired routes — and where the residual tokens went.⟧</p>
+          <p>⟦One-paragraph narrative of the round-two Fonderie runs: what the agent did differently with the API reference available — did the node_modules excavation disappear, where did the residual tokens go, what the checklist deltas were.⟧</p>
 
-          <h2>Turning tokens into dollars</h2>
-          <p>At current API pricing for Claude Fable 5 — the model our Claude Code sessions run on — input tokens cost $10 per million and output tokens $50 per million.</p>
-          <p>That makes the from-scratch build <strong>$⟦A_COST⟧ per run</strong>, against <strong>$⟦B_COST⟧ with Fonderie</strong> — a difference of <strong>$⟦DIFF_COST⟧, or ⟦MULTIPLE⟧× the cost, every time an assistant builds auth from nothing</strong>.</p>
-          <p>If you’re on a Claude subscription rather than the API, you don’t see dollars — you see your usage limit. The exchange rate is different; the waste is identical. Those ⟦A_TOTAL⟧ tokens come out of the same budget that was supposed to build your actual product this session.</p>
-          <p>And auth is one module. The same tax applies to billing, teams, permissions, settings, email — every piece of plumbing your assistant regenerates instead of reusing. Multiply by the number of modules, then by the number of sessions that touch them over a product’s life, and “the AI writes it fresh each time” stops being a workflow and starts being a line item.</p>
+          <h2>What the tokens cost in dollars</h2>
+          <p>At current API pricing for Claude Fable 5 — the model these sessions ran on — input tokens cost $10 per million and output tokens $50 per million, with cached reads at a fraction of that; the costs above are what Claude Code itself reports per session. If you’re on a subscription rather than the API, you don’t see dollars — you see your usage limit. The exchange rate differs; the waste is identical.</p>
+          <p>And auth is one module. The same economics apply to billing, teams, permissions, settings, email — every piece of plumbing an assistant either regenerates from scratch or wires from a mold. Multiply by the number of modules, then by the number of sessions that touch them over a product’s life. That multiplication is the entire reason this product category exists — which is exactly why we think it should be measured rather than asserted.</p>
 
           <h2>Why assistants re-solve solved problems</h2>
           <p>None of this is a model deficiency. It’s structural:</p>
           <ol>
             <li><strong>Sessions don’t share memory.</strong> A fresh session knows nothing about what the last one built. The context window starts empty; the plumbing gets re-reasoned from zero.</li>
             <li><strong>Generation is priced per token, not per novel token.</strong> The model pays the same to write its ten-thousandth session middleware as its first. Nothing in the loop distinguishes solved problems from open ones.</li>
-            <li><strong>Plumbing is high-token, low-novelty.</strong> Auth, billing, and permissions are exactly the code with the worst ratio of tokens-required to decisions-that-are-actually-yours. There is no product insight in a password-reset flow. There are, however, a lot of tokens in one.</li>
+            <li><strong>Plumbing is high-token, low-novelty.</strong> Auth, billing, and permissions are exactly the code with the worst ratio of tokens-required to decisions-that-are-actually-yours.</li>
           </ol>
-          <p>The industry’s first answer to this was the boilerplate: buy a hardened starter kit, let the AI build features on top. That’s directionally right, and it’s why kits like MakerKit and ShipFast are now marketing “AI-agent readiness.” But boilerplates were designed for humans to read once and modify. What an agent needs is different: modules it can <em>reference without regenerating</em>, plus instructions — a skill — telling it those modules exist, what they guarantee, and how to wire them.</p>
-          <p>That’s the bet Fonderie makes: seventeen production-tested TypeScript modules and a skill that teaches any assistant — Claude Code natively, Cursor via rules, Codex via AGENTS.md — to reach for the finished part instead of re-casting it. The measurement above is what that bet is worth on a single module, in a single session.</p>
+          <p>The industry’s first answer was the boilerplate: buy a hardened starter kit, let the AI build features on top. Directionally right — but boilerplates were designed for humans to read once and modify. What an agent needs is different: modules it can <em>reference without regenerating</em>, plus instructions that carry the exact API surface, so wiring costs pennies instead of a research project. Round one is what happens when you ship the modules without the second half. Round two is what the second half is worth.</p>
 
           <h2>Caveats, honestly</h2>
           <ul>
-            <li>⟦N⟧ runs per condition is a measurement, not a benchmark suite. Variance across runs was ⟦VARIANCE_NOTE⟧.</li>
-            <li>Results depend on model and settings; ours are pinned in the methodology below. Different models will shift the absolute numbers, not the shape of them.</li>
-            <li>Condition B isn’t free: the module and skill still occupy context, and someone (us) paid the engineering cost of hardening the modules once. That’s rather the point — pay for auth once, industry-wide, instead of per-session.</li>
-            <li>We wrote the modules being tested. The protocol below is fully reproducible precisely so you don’t have to take our word for it.</li>
+            <li>Round one is a single pilot pair — a measurement, not a benchmark suite. Round two runs ⟦N⟧ per condition; variance was ⟦VARIANCE_NOTE⟧.</li>
+            <li>We wrote the modules being tested, and we fixed them between rounds. That’s the point of the post, but weigh it accordingly — the protocol below is fully reproducible so you don’t have to take our word for anything.</li>
+            <li>Results depend on model and settings (pinned below). Different models shift the absolute numbers, not the structure of the comparison.</li>
+            <li>The from-scratch condition isn’t free of hidden costs either: its 557 lines are yours to maintain, audit, and patch forever. This experiment measures build cost only.</li>
+            <li>Fonderie’s auth is stateless-JWT; the prompt asked for server-side sessions. Part of round one’s checklist gap is that architectural mismatch rather than a defect — but a mismatch an agent can’t bridge cheaply is still a real cost, so we count it.</li>
           </ul>
 
           <h2>Methodology</h2>
           <p>Everything needed to reproduce or audit the numbers:</p>
-          <p><strong>Environment.</strong> Claude Code v⟦VERSION⟧, model <code>claude-fable-5</code> at default settings, on ⟦MACHINE/OS⟧. Node ⟦NODE_VERSION⟧.</p>
-          <p><strong>Base repository.</strong> ⟦Link to the public repo containing the starting skeleton, tagged at the exact commit used.⟧ Condition B adds one commit: <code>npm install @fonderie/core</code> plus the skill file, nothing else.</p>
-          <p><strong>Prompt.</strong> The exact task text quoted above, pasted as the first and only user message. No follow-up steering; if a run stalled and required intervention, it was recorded as such.</p>
-          <p><strong>Token measurement.</strong> After each run, <code>/cost</code> in the same Claude Code session, recording the input/output token split it reports. (For continuous measurement across many runs, Claude Code’s OpenTelemetry metrics export the same counters — we used <code>/cost</code> for simplicity.) Dollar figures are computed from the token counts at published API rates, so they hold regardless of whether a session runs on API billing or a subscription.</p>
-          <p><strong>Runs.</strong> ⟦N⟧ per condition, fresh session each, alternating A/B to spread any time-of-day variance. No cherry-picking: every completed run is included in the averages; aborted runs (if any) are listed here: ⟦list or “none”⟧.</p>
-          <p><strong>Security checklist (12 points, pass/fail per run).</strong> Password hashing with a modern KDF (bcrypt/argon2/scrypt) at sane cost parameters; no plaintext or reversible password storage; timing-safe credential comparison; server-side session with expiry; <code>HttpOnly</code> + <code>Secure</code> + <code>SameSite</code> on the session cookie; session rotation on login; CSRF protection on state-changing routes; single-use, expiring password-reset tokens; reset flow that doesn’t leak account existence; rate limiting actually enforced on login; input validation on all auth endpoints; no secrets committed to the repo.</p>
+          <p><strong>Environment.</strong> Claude Code v2.1.197, model <code>claude-fable-5</code> at default settings, headless. macOS, Node 24. One run at a time, alternating conditions.</p>
+          <p><strong>Invocation.</strong> Each run copies a pristine skeleton to a fresh directory and executes <code>claude -p "&lt;task&gt;" --model claude-fable-5 --output-format json</code> with permissions pre-granted. No follow-up steering; a run that stalls or hits a usage limit is discarded and disclosed, never averaged in.</p>
+          <p><strong>Token measurement.</strong> The <code>usage</code> block of Claude Code’s JSON result (input, output, cache-write, cache-read) and its reported <code>total_cost_usd</code>. Interactive sessions expose the same numbers via <code>/cost</code>.</p>
+          <p><strong>Base repository.</strong> ⟦Link to the public repo with the tagged skeletons — condition B differs by exactly: <code>npm install @fonderie/core</code> plus the skill directory.⟧</p>
+          <p><strong>Runs.</strong> Round one: one pilot per condition (2026-07-13, Fonderie v0.1.0, pre-fix skill). Round two: ⟦N⟧ per condition against Fonderie ⟦VERSION⟧. Aborted runs: two round-one attempts were invalidated by a subscription usage limit mid-run and rerun from scratch; ⟦round-two aborts or “none”⟧.</p>
+          <p><strong>Security checklist (12 points, pass/fail per run).</strong> Password hashing with a modern KDF (bcrypt/argon2/scrypt) at sane cost parameters; no plaintext or reversible password storage; timing-safe credential comparison; server-side session (or equivalent revocable token mechanism) with expiry; <code>HttpOnly</code> + <code>Secure</code> + <code>SameSite</code> on auth cookies; session rotation on login; CSRF protection on state-changing routes; single-use, expiring password-reset tokens; reset flow that doesn’t leak account existence; rate limiting actually enforced on login; input validation on all auth endpoints; no secrets committed to the repo.</p>
           <p><strong>Raw data.</strong> Per-run numbers: ⟦link to CSV/gist⟧.</p>
 
           <hr/>
