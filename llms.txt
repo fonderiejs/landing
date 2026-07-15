@@ -17,6 +17,7 @@ Key facts:
 - [Platform](https://fonderiejs.com/platform): Platform overview — Core, Gateway, Connectors, Identity, Spend
 - [Products](https://fonderiejs.com/products): The SDK and the cockpit
 - [Blog](https://fonderiejs.com/blog): Notes from the foundry — measurements, molds, and the economics of AI-built SaaS
+- [Token-cost experiment](https://fonderiejs.com/blog/token-cost-experiment): We measured Claude Code building auth from scratch vs from a Fonderie module — round one our module lost 2.3×; after fixing the three defects the measurement exposed, it won the rerun (cheaper, faster, 6× less code)
 - [Resources](https://fonderiejs.com/help): Documentation, status, and support
 - [Contact](https://fonderiejs.com/contact): Contact, press, and investors
 
