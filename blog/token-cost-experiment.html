@@ -1,11 +1,4 @@
 <!DOCTYPE html>
-<!--
-  DRAFT — nearly ready. All measurements are real (round one 2026-07-13,
-  round two 2026-07-15; tally in the experiment scratchpad). The only
-  remaining ⟦placeholders⟧ are the two reproducibility links (public
-  skeleton repo + raw-data gist) — publish those, add this URL to
-  sitemap.xml, and delete this comment.
--->
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
@@ -173,7 +166,7 @@
               <tr><td>Security checklist (of 12)</td><td>11</td><td>10</td></tr>
             </tbody>
           </table>
-          <p>The round-one failure modes are simply gone from the transcript. No type-shim workaround — the published packages carry their declarations. No forced installs — the app ships six dependencies instead of nine. And no <code>node_modules</code> excavation: the agent read the skill’s wiring guide and reproduced the composition almost verbatim, spending its reads on the API reference instead of reverse-engineering package source. Cache reads fell from 2.79M to 1.05M tokens, turns from 77 to 36, cost from $5.84 to <strong>$2.72 — now cheaper than building from scratch, in two-thirds of the wall-clock time, with 6× less code to own</strong>. The checklist closed from 8 to 10 of 12 (the new validation layer accounts for most of that); the two remaining misses — no <code>Secure</code> attribute on auth cookies, and a reset-cooldown response that can hint at account existence — are module-level defects this run put on our tracker, which is the experiment doing its job.</p>
+          <p>The round-one failure modes are simply gone from the transcript. No type-shim workaround — the published packages carry their declarations. No forced installs — the app ships six dependencies instead of nine. And no <code>node_modules</code> excavation: the agent read the skill’s wiring guide and reproduced the composition almost verbatim, spending its reads on the API reference instead of reverse-engineering package source. Cache reads fell from 2.79M to 1.05M tokens, turns from 77 to 36, cost from $5.84 to <strong>$2.72 — now cheaper than building from scratch, in two-thirds of the wall-clock time, with 6× less code to own</strong>. The checklist closed from 8 to 10 of 12 (the new validation layer accounts for most of that); the two remaining misses — no <code>Secure</code> attribute on auth cookies, and a reset-cooldown response that could hint at account existence — were module-level defects the run surfaced. Both were fixed and published as <code>@fonderie/auth@1.1.1</code> before this post went live: every login path now sets cookies through one serializer that carries <code>Secure</code> by default in production, and the cooldown response is byte-identical to the unknown-email branch. That’s the experiment doing its job twice.</p>
 
           <h2>What the tokens cost in dollars</h2>
           <p>At current API pricing for Claude Fable 5 — the model these sessions ran on — input tokens cost $10 per million and output tokens $50 per million, with cached reads at a fraction of that; the costs above are what Claude Code itself reports per session. If you’re on a subscription rather than the API, you don’t see dollars — you see your usage limit. The exchange rate differs; the waste is identical.</p>
@@ -202,10 +195,10 @@
           <p><strong>Environment.</strong> Claude Code v2.1.197, model <code>claude-fable-5</code> at default settings, headless. macOS, Node 24. One run at a time, alternating conditions.</p>
           <p><strong>Invocation.</strong> Each run copies a pristine skeleton to a fresh directory and executes <code>claude -p "&lt;task&gt;" --model claude-fable-5 --output-format json</code> with permissions pre-granted. No follow-up steering; a run that stalls or hits a usage limit is discarded and disclosed, never averaged in.</p>
           <p><strong>Token measurement.</strong> The <code>usage</code> block of Claude Code’s JSON result (input, output, cache-write, cache-read) and its reported <code>total_cost_usd</code>. Interactive sessions expose the same numbers via <code>/cost</code>.</p>
-          <p><strong>Base repository.</strong> ⟦Link to the public repo with the tagged skeletons — condition B differs by exactly: <code>npm install @fonderie/core</code> plus the skill directory.⟧</p>
+          <p><strong>Base repository.</strong> <a href="https://github.com/fonderie-js/sdk/tree/main/experiments/token-cost-2026-07">github.com/fonderie-js/sdk → experiments/token-cost-2026-07</a> — both skeletons, the fixed prompt, and the runner. Condition B differs from A by exactly <code>npm install @fonderie/core</code> plus the skill directory.</p>
           <p><strong>Runs.</strong> Round one: one pilot per condition (2026-07-13, Fonderie v0.1.0, pre-fix skill). Round two: one pair per condition (2026-07-15, Fonderie auth 1.1.0 / core 0.1.2 from the public npm registry, current skill). Aborted runs, all disclosed and never averaged: two round-one attempts invalidated by a session usage limit and rerun from scratch; one round-two from-scratch attempt cut off by a monthly spend limit after 12 turns and discarded.</p>
           <p><strong>Security checklist (12 points, pass/fail per run).</strong> Password hashing with a modern KDF (bcrypt/argon2/scrypt) at sane cost parameters; no plaintext or reversible password storage; timing-safe credential comparison; server-side session (or equivalent revocable token mechanism) with expiry; <code>HttpOnly</code> + <code>Secure</code> + <code>SameSite</code> on auth cookies; session rotation on login; CSRF protection on state-changing routes; single-use, expiring password-reset tokens; reset flow that doesn’t leak account existence; rate limiting actually enforced on login; input validation on all auth endpoints; no secrets committed to the repo.</p>
-          <p><strong>Raw data.</strong> Per-run numbers: ⟦link to CSV/gist⟧.</p>
+          <p><strong>Raw data.</strong> Per-run numbers, including the disclosed aborted runs: <a href="https://github.com/fonderie-js/sdk/blob/main/experiments/token-cost-2026-07/results.csv">results.csv in the same directory</a>.</p>
 
           <hr/>
           <p class="article__footnote"><em>Fonderie is the open foundry for AI-built SaaS — seventeen open-source modules and a skill, self-hosted, no lock-in. <code>npm install @fonderie/core</code>, source at <a href="https://github.com/fonderie-js/sdk">github.com/fonderie-js/sdk</a>.</em></p>
