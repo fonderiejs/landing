@@ -105,7 +105,7 @@ where it's tracked:
 | 1 | **npm can't bootstrap new packages from CI** — granular tokens update but never create; first publish fails with E404 | Solved (process) | One manual local publish per new package (`npx changeset publish --otp=…` as the `fonderie` account); CI owns every release after | `DEPLOYMENT.md` § "Hard-learned rules" |
 | 2 | **Retrieval quality** — naive phrasing ("let people pay") misses the right nodes; keyword search alone scores ~50–76% on public benchmarks | Merged to SDK main (PR #12); first real-data signal in; official gate still pending live-client corpus | Replaced free-text queries with a closed enum of language-less concept IDs (`billing.subscriptions`, …) — the LLM maps intent to concept in the tool call, so it works identically in every language. Generated + translated pilot scored **96/96** across EN + FR + Romanian; then **24 real developer phrasings** (Stack Overflow titles, not ours) scored **23/24** — the first evidence it holds on language we didn't write, above the 90% bar with a below-spec model | `fonderie-js/BRAIN_PLAN.md` § "Pilot run" + "First real-data signal"; merged in fonderiejs/sdk#12 |
 | 3 | **Triggering** — the model ignores the knowledge layer and answers from priors | Solved in prior art | PreToolUse hooks intercept file reads *before* they happen — deterministic, not instruction-dependent | `BRAIN_PLAN.md` risk R1; graphify (Graphify-Labs/graphify) |
-| 4 | **Version skew** — brain serves 1.3.0 knowledge against an installed 1.1.0 | Merged to SDK main (PR #12); skew-proof test passing; broad rollout pending Phase 3 | Don't reconcile — co-locate. Each package ships its own brain fragment in its tarball (the `.d.ts` pattern), and the project brain is compiled from `node_modules`, so knowledge travels with the installed version and skew is impossible by construction. Working across all 18 packages; a negative test proves the co-located fragment wins even at a version the repo has never seen (no "latest" leak), with a loud flag on the legacy fallback. Central brain kept only for discovering not-yet-installed packages (where "latest" is correct). Rolling release rejected — it would break pinning/rollback/audit | `fonderie-js/BRAIN_PLAN.md` § "R3 update"; merged in fonderiejs/sdk#12 |
+| 4 | **Version skew** — brain serves 1.3.0 knowledge against an installed 1.1.0 | **Shipped to npm** — fragments live in the published tarballs; skew impossible on the installed path; only Phase-3 wiring remains | Don't reconcile — co-locate. Each package ships its own brain fragment in its tarball (the `.d.ts` pattern), and the project brain is compiled from `node_modules`, so knowledge travels with the installed version and skew is impossible by construction. **Now published and verified** — `brain/{signatures,outcomes}.md` ships inside the tarball (confirmed in `@fonderie/auth@1.3.1`), and CI freshness-gates every fragment so it can't drift from the code it ships with. A negative test proves the co-located fragment wins even at a version the repo has never seen (no "latest" leak); central brain kept only for discovering not-yet-installed packages. Rolling release rejected — it would break pinning/rollback/audit. **Remaining (Phase 3):** the `init`/postinstall regenerate trigger and one real mixed-version install test | `fonderie-js/BRAIN_PLAN.md` § "R3 update"; merged in fonderiejs/sdk#12, published via #15–#18 |
 | 5 | **Credibility** — self-scored benchmarks at N=3 read as grading our own homework | Open, owned by Phase 4 gate | External anchors (public benchmarks), N≥5, published recall@k; no claim ships without passing its gate | `BRAIN_PLAN.md` risk R4 |
 | 6 | **The clock** — 3 live clients and $3k+ MRR by Nov 2026; one archetype in flight, three remain | In progress | One real paying project per archetype, in strict order A→C→B→D; each phase gated, a gate that fails twice ends the phase | `fonderie-js/ROADMAP.md` |
 
@@ -121,6 +121,38 @@ May ─────── Jul ─────── Sep ─────── No
                          D ░░░░░░ freemium + guest migration
                                      ▲ gate: 3 live clients, $3k+ MRR
 ```
+
+## Release & versioning — the dev lifecycle
+
+The bricks are libraries other people pin, so the version number is a
+promise. We follow semver strictly, judged **from the consumer's side** —
+"would someone who installed us have to change their code?"
+
+| Bump | When | Examples |
+|---|---|---|
+| **major** | A breaking change to anything public — a consumer must react | removed/renamed export, changed function signature or return shape, changed route contract or config shape, a non-backward-compatible migration |
+| **minor** | A backward-compatible new capability — safe to upgrade into | new export, new *optional* parameter, new route, new recipe |
+| **patch** | A backward-compatible fix or internal change — no API change | bug fix, security fix, docs, shipping the co-located brain fragment |
+
+Rule of thumb: if a consumer's existing code could break or behave
+differently, it's **major**; if they gain something without touching their
+code, **minor**; if nothing about the public surface moved, **patch**. When
+unsure, size up, not down — a needless major is annoying, a hidden breaking
+change under a patch is a betrayal.
+
+**How a release actually ships** (changesets + GitHub Actions, no manual
+`npm publish`):
+
+1. **Author.** Branch, make the change, run `npm run docs:signatures` (regenerates the API signatures *and* each package's co-located `brain/` fragment) — then `npx changeset`: pick the affected packages, choose major/minor/patch by the table above, write one changelog line. Commit the `.changeset/*.md` with the code.
+2. **PR gates (`ci.yml`).** Build, then freshness gates that fail if generated artifacts drift from source — the central signatures, **each package's `brain/` fragment**, and `brain.json` — plus the brain tests. Nothing merges with stale generated knowledge.
+3. **Merge to `main`.** CI opens/updates a **"Version Packages"** PR that applies the bumps, writes CHANGELOGs, and regenerates `brain.json` for the new versions (wired into the version step so it can't go stale).
+4. **Merge the Version Packages PR — that is the publish.** CI runs `changeset publish`, ships every bumped package to npm with its `brain/` fragment inside the tarball, and pushes one git tag per package. Nothing reaches npm without that deliberate second merge.
+
+**Hard-won rules, paid for in failed runs:**
+
+- **`repository.url` must match the real repo** — npm provenance (sigstore) rejects the publish with a 422 otherwise. A stale org name (`fonderie-js` vs `fonderiejs`) blocked an entire release until fixed everywhere.
+- **Generated artifacts are gated, not trusted.** Version bumps change `brain.json`; API changes change the co-located fragments. Both are CI freshness-gated so a drifted artifact can't publish inside a tarball — which is what keeps the brain *version-matched by construction*.
+- **New packages need one manual first publish** (npm tokens can't create a package, only update it); CI owns every release after.
 
 ## Where this leaves us
 
