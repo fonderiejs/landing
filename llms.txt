@@ -17,7 +17,7 @@ Key facts:
 - [Platform](https://fonderiejs.com/platform): Platform overview — Core, Gateway, Connectors, Identity, Spend
 - [Products](https://fonderiejs.com/products): The SDK and the cockpit
 - [Blog](https://fonderiejs.com/blog): Notes from the foundry — measurements, molds, and the economics of AI-built SaaS
-- [Token-cost experiment](https://fonderiejs.com/blog/token-cost-experiment): We measured Claude Code building auth from scratch vs from a Fonderie module — round one our module lost 2.3×; after fixing the defects the measurement exposed, it won the rerun (cheaper, faster, 6× less code); with a naive prompt ("add user accounts") the gap widens to 4/12 vs 11/12 on a security checklist — the module is the spec the user didn't know to write
+- [Token-cost experiment](https://fonderiejs.com/blog/token-cost-experiment): Four rounds measuring Claude Code from scratch vs from Fonderie modules — round one lost 2.3×, the fixed rerun won, naive prompts gap 4/12 vs 11/12 on security (the module is the spec the user didn't know to write), and a pre-registered multi-module round lost 2.2× because agents excavate compiled packages while their own source is free to read; that round found a privilege escalation in @fonderie/workspaces, fixed same-day as 1.1.1
 - [Resources](https://fonderiejs.com/help): Documentation, status, and support
 - [Contact](https://fonderiejs.com/contact): Contact, press, and investors
 
