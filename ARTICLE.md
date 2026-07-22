@@ -199,6 +199,14 @@ Codex, Copilot, or Cursor — the agent doesn't care which. (The MCP server is
 still there for the stateful, long-running case; the CLI is the leaner default
 for building.)
 
+We tried the obvious fix first, and it's worth admitting it failed. The loud
+complaint about MCP is its token tax — a server's tool definitions sit in the
+agent's context before it does anything. So we swapped the MCP tool for a plain
+CLI command and measured: a **wash** (0.29 vs 0.28). The schema tax turned out to
+be a rounding error next to the knowledge we were loading every turn regardless.
+That negative result is what pointed us at the real lever — not *how* the agent
+fetches knowledge, but *when* it loads. Lazy loading, not the shell.
+
 **The pillars we lean on, each measured, each doing one job:**
 
 1. **Deterministic micro-backend bricks** — audited `@fonderie/*` that make a
