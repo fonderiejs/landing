@@ -33,7 +33,7 @@
       "description": "Five rounds measuring Claude Code building SaaS plumbing from scratch versus from Fonderie modules. Two losses, two wins — then the rerun that fixed what the biggest loss exposed. Every number published, including the privilege-escalation bug the experiment found and fixed.",
       "url": "https://fonderiejs.com/blog/token-cost-experiment",
       "datePublished": "2026-07-14",
-      "dateModified": "2026-07-22",
+      "dateModified": "2026-07-23",
       "author": { "@id": "https://fonderiejs.com/#organization" },
       "publisher": { "@id": "https://fonderiejs.com/#organization" },
       "isPartOf": { "@id": "https://fonderiejs.com/blog#blog" },
@@ -255,7 +255,7 @@
           <ul>
             <li>Rounds one and two are a single completed pair each — a measurement, not a benchmark suite. (We attempted a second round-two pair; it was cut off mid-run by our subscription’s monthly spend limit and discarded.) Round three runs three pairs, and the per-run scores were identical across all six runs — 4, 4, 4 versus 11, 11, 11.</li>
             <li>Round three changes two variables at once — the prompt and the model — because it asks a different question: not “which condition is cheaper on a fixed spec” but “what does each condition produce for the median real prompt on the default model.” Its numbers are not directly comparable to rounds one and two, and no comparison across rounds is made above.</li>
-            <li>Round three’s Fonderie apps need <code>DATABASE_URL</code> pointing at Postgres to run, while the from-scratch apps start standalone (against an in-memory store that loses every account on restart). One is a setup step; the other is a production incident waiting to be discovered.</li>
+            <li>Round three’s Fonderie apps need <code>DATABASE_URL</code> pointing at Postgres to <em>run</em>, while the from-scratch apps start standalone (against an in-memory store that loses every account on restart). One is a setup step; the other is a production incident waiting to be discovered. Worth noting since: you do <em>not</em> need a database to <em>build</em> a Fonderie app — the bricks own their schema (migrations ship in-package and run on boot, routes are guaranteed by the package), so an app is done when it typechecks and is wired; the database is only for actually running it. We confirmed a typecheck-clean, auth-wired app boots, self-applies its migrations, and serves <code>POST /auth/register</code> → 201 with real JWTs, with no hand-written glue (<code>experiments/phase41-2026-07/DECISION-DB-FREE-AUTHORING.md</code>).</li>
             <li>We wrote the modules being tested, and we fixed them between rounds. That’s the point of the post, but weigh it accordingly — the protocol below is fully reproducible so you don’t have to take our word for anything.</li>
             <li>Results depend on model and settings (pinned below). Different models shift the absolute numbers, not the structure of the comparison.</li>
             <li>The from-scratch condition isn’t free of hidden costs either: its 557 lines are yours to maintain, audit, and patch forever. This experiment measures build cost only.</li>
