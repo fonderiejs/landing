@@ -106,7 +106,7 @@ where it's tracked:
 | 2 | **Retrieval quality** — naive phrasing ("let people pay") misses the right nodes; keyword search alone scores ~50–76% on public benchmarks | Merged to SDK main (PR #12); first real-data signal in; official gate still pending live-client corpus | Replaced free-text queries with a closed enum of language-less concept IDs (`billing.subscriptions`, …) — the LLM maps intent to concept in the tool call, so it works identically in every language. Generated + translated pilot scored **96/96** across EN + FR + Romanian; then **24 real developer phrasings** (Stack Overflow titles, not ours) scored **23/24** — the first evidence it holds on language we didn't write, above the 90% bar with a below-spec model | `fonderie-js/BRAIN_PLAN.md` § "Pilot run" + "First real-data signal"; merged in fonderiejs/sdk#12 |
 | 3 | **Triggering** — the model ignores the knowledge layer and answers from priors | Solved in prior art | PreToolUse hooks intercept file reads *before* they happen — deterministic, not instruction-dependent | `BRAIN_PLAN.md` risk R1; graphify (Graphify-Labs/graphify) |
 | 4 | **Version skew** — brain serves 1.3.0 knowledge against an installed 1.1.0 | **Shipped to npm** — fragments live in the published tarballs; skew impossible on the installed path; only Phase-3 wiring remains | Don't reconcile — co-locate. Each package ships its own brain fragment in its tarball (the `.d.ts` pattern), and the project brain is compiled from `node_modules`, so knowledge travels with the installed version and skew is impossible by construction. **Now published and verified** — `brain/{signatures,outcomes}.md` ships inside the tarball (confirmed in `@fonderie/auth@1.3.1`), and CI freshness-gates every fragment so it can't drift from the code it ships with. A negative test proves the co-located fragment wins even at a version the repo has never seen (no "latest" leak); central brain kept only for discovering not-yet-installed packages. Rolling release rejected — it would break pinning/rollback/audit. **Remaining (Phase 3):** the `init`/postinstall regenerate trigger and one real mixed-version install test | `fonderie-js/BRAIN_PLAN.md` § "R3 update"; merged in fonderiejs/sdk#12, published via #15–#18 |
-| 5 | **The cost thesis & credibility** — is Fonderie *cheaper* in tokens, and does the brain reliably drive the build? | **Cost goal met in the regime where it is winnable (N=3); the one quality gap found is covered & production-confirmed** | Pre-registered benchmark, 36 clean sessions. The honest arc, in the open: a single small task runs at **~parity** (Fonderie carries its weight but does not undercut from-scratch on one build) — the win lives in *repeated* sessions on a growing app, where the mold is re-paid every turn. There, transcript-measured **Fonderie-knowledge overhead is 0.24 → a fraction (≤⅓)** of the full skill, stable as N grew (0.13→0.22→0.24). That number is the knowledge the mold is responsible for, isolated from product code and turn count — the quantity the thesis was ever about — **not** a blanket cheaper-than-scratch claim. A parity-plus scare was traced (for $0, by instrumenting transcripts) to turn-count noise that averaged out at N=3. Quality held equal between the Fonderie conditions (delegation-aware 8.0 vs 7.7); from-scratch shipped an insecure hard-coded secret in **2 of 3** runs, in ~3× the code. The one weakness the full rubric found — a 1/3 discovery stall — is covered by defense-in-depth and confirmed by a 12/12 re-run. Nothing claimed beyond the measurement | `fonderie-js/experiments/phase41-2026-07/BATCH-RESULTS.md`; the [round-five write-up](https://fonderiejs.com/blog/token-cost-experiment); `BRAIN_PLAN.md` § Phase 4.1 |
+| 5 | **The cost thesis & credibility** — is Fonderie *cheaper* in tokens, and does the brain reliably drive the build? | **Cost goal met in the regime where it is winnable (N=3); the one quality gap found is covered & production-confirmed** | Pre-registered benchmark, 36 clean sessions. The honest arc, in the open: a single small task runs at **~parity** (Fonderie carries its weight but does not undercut from-scratch on one build) — the win lives in *repeated* sessions on a growing app, where the mold is re-paid every turn. There, transcript-measured **Fonderie-knowledge overhead is a fraction (≤⅓) of the full skill — 0.14× — in the shape we ship: a *lazy* skill that pulls a brick's knowledge in only when the task touches it.** The first, *eager* design (load every package every turn) lands at **~0.38 — parity-plus, not a fraction**: it carries its weight but does not undercut the full skill. Our earlier 0.24 for the eager brain was an honest under-count corrected in the open — it predated charging the MCP tool-schema tax (+752 tok/turn resident) and the fair "resident-after-read" metric, and a discovery re-run had contaminated the mean (0.395→0.383 canonical). Swapping MCP for a plain CLI moved nothing (0.38 vs 0.34 — a wash): transport is not the lever, *when knowledge loads* is. That number is the knowledge the mold is responsible for, isolated from product code and turn count — the quantity the thesis was ever about — **not** a blanket cheaper-than-scratch claim. Quality held equal between the Fonderie conditions (delegation-aware 8.0 vs 7.7); from-scratch shipped an insecure hard-coded secret in **2 of 3** runs, in ~3× the code. The one weakness the full rubric found — a 1/3 discovery stall — is covered by defense-in-depth and confirmed by a 12/12 re-run. Nothing claimed beyond the measurement | `fonderie-js/experiments/phase41-2026-07/BATCH-RESULTS.md`; the [round-five write-up](https://fonderiejs.com/blog/token-cost-experiment); `BRAIN_PLAN.md` § Phase 4.1 |
 | 6 | **The clock** — 3 live clients and $3k+ MRR by Nov 2026; one archetype in flight, three remain | In progress | One real paying project per archetype, in strict order A→C→B→D; each phase gated, a gate that fails twice ends the phase | `fonderie-js/ROADMAP.md` |
 
 Rule of the program: a failed exit gate gets exactly one retry. Gates are
@@ -183,9 +183,10 @@ PROJECT BRAIN ~6-13k           router ~1.4k       0 schema tax, pipe->grep
 Measured: the router sits at ~1,400 resident tokens versus the eager brain's
 ~6,400 — the per-package bodies load on demand, not every turn. Across an N=3
 run on a growing app (add auth, then billing, then teams, then a security pass),
-the lazy skill carried **0.14× the eager skill's per-turn knowledge cost** — a
-seventh — at equal completion and every task built. Same knowledge, same
-guarantees, a fraction of the tokens.
+the lazy skill carried **0.14× the full eager skill's per-turn knowledge cost** — a
+seventh — at equal completion and every task built. (The *compiled project brain*,
+eager but selective, sits at 0.38 — parity-plus; the win is lazy loading, not the
+brain.) Same knowledge, same guarantees, a fraction of the tokens.
 
 It ships today:
 
@@ -202,8 +203,8 @@ for building.)
 We tried the obvious fix first, and it's worth admitting it failed. The loud
 complaint about MCP is its token tax — a server's tool definitions sit in the
 agent's context before it does anything. So we swapped the MCP tool for a plain
-CLI command and measured: a **wash** (0.29 vs 0.28). The schema tax turned out to
-be a rounding error next to the knowledge we were loading every turn regardless.
+CLI command and measured: a **wash** (0.34 vs 0.38, canonical N=3). The schema tax
+turned out to be a rounding error next to the knowledge we were loading every turn regardless.
 That negative result is what pointed us at the real lever — not *how* the agent
 fetches knowledge, but *when* it loads. Lazy loading, not the shell.
 
@@ -216,8 +217,8 @@ fetches knowledge, but *when* it loads. Lazy loading, not the shell.
 2. **Lazy skill layering** — a small router that pulls one brick's body in only
    when the task touches it. Load scales with what the agent does.
 3. **CLI for retrieval** — zero schema tax, output into a pipe, runs anywhere;
-   the lazy skill it feeds measured 0.14× the eager cost, so it shipped as the
-   default (`@fonderie/cli`). MCP stays for stateful, long-running loops.
+   the lazy skill it feeds measured 0.14× the full skill (the eager brain: 0.38),
+   so it shipped as the default (`@fonderie/cli`). MCP stays for stateful loops.
 4. **Co-located version-matched knowledge** — each package ships its own brain
    fragment in its tarball, so knowledge travels with the installed version.
 5. **Concept-enum routing** — 17 language-less concepts map intent to the one
