@@ -181,8 +181,23 @@ PROJECT BRAIN ~6-13k           router ~1.4k       0 schema tax, pipe->grep
 ```
 
 Measured: the router sits at ~1,400 resident tokens versus the eager brain's
-~6,400 — the per-package bodies load on demand, not every turn. Same knowledge,
-same guarantees, a fraction of the resident cost.
+~6,400 — the per-package bodies load on demand, not every turn. Across an N=3
+run on a growing app (add auth, then billing, then teams, then a security pass),
+the lazy skill carried **0.14× the eager skill's per-turn knowledge cost** — a
+seventh — at equal completion and every task built. Same knowledge, same
+guarantees, a fraction of the tokens.
+
+It ships today:
+
+```
+npx @fonderie/cli init
+```
+
+That writes the router and wires it to refresh whenever your packages change, so
+the skill always matches what you actually installed. It reads in Claude Code,
+Codex, Copilot, or Cursor — the agent doesn't care which. (The MCP server is
+still there for the stateful, long-running case; the CLI is the leaner default
+for building.)
 
 **The pillars we lean on, each measured, each doing one job:**
 
@@ -193,7 +208,8 @@ same guarantees, a fraction of the resident cost.
 2. **Lazy skill layering** — a small router that pulls one brick's body in only
    when the task touches it. Load scales with what the agent does.
 3. **CLI for retrieval** — zero schema tax, output into a pipe, runs anywhere;
-   measured at parity with MCP, so it's a viable default.
+   the lazy skill it feeds measured 0.14× the eager cost, so it shipped as the
+   default (`@fonderie/cli`). MCP stays for stateful, long-running loops.
 4. **Co-located version-matched knowledge** — each package ships its own brain
    fragment in its tarball, so knowledge travels with the installed version.
 5. **Concept-enum routing** — 17 language-less concepts map intent to the one
