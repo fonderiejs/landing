@@ -154,6 +154,60 @@ change under a patch is a betrayal.
 - **Generated artifacts are gated, not trusted.** Version bumps change `brain.json`; API changes change the co-located fragments. Both are CI freshness-gated so a drifted artifact can't publish inside a tarball — which is what keeps the brain *version-matched by construction*.
 - **New packages need one manual first publish** (npm tokens can't create a package, only update it); CI owns every release after.
 
+## Architecture evolution — eager knowledge to a lazy pyramid
+
+The benchmark taught us where the tokens actually go, and it changed the shape
+of the thing. The first design loaded everything Fonderie knows into the agent
+every turn — the full skill (~28,000 tokens) or, later, a compiled project brain
+(~6,000–13,000) — whether the task used it or not. A billing-only session still
+carried auth, teams, webhooks, audit, every turn.
+
+The new design is the three-layer pattern the industry converged on (Cloudflare
+Wrangler, Anthropic skills, Playwright's CLI/MCP split): **CLI + lazy skills +
+LLM**, on top of the unchanged bricks.
+
+```
+BEFORE (eager)                     AFTER (lazy pyramid)
+──────────────                     ────────────────────
+LLM                                LLM            <- reasoning ONLY
+ ^ resident every turn              |
+FAT SKILL ~28k  /  MCP ~55k    SKILLS (lazy)     CLI (deterministic)
+PROJECT BRAIN ~6-13k           router ~1.4k       0 schema tax, pipe->grep
+(all 17 packages, always)      + per-package bodies read ONLY when touched
+                                   |
+                                   v  on the unchanged foundation:
+                          DETERMINISTIC MICRO-BACKEND BRICKS (@fonderie/*)
+                          audited, version-matched -> consistent LLM output
+```
+
+Measured: the router sits at ~1,400 resident tokens versus the eager brain's
+~6,400 — the per-package bodies load on demand, not every turn. Same knowledge,
+same guarantees, a fraction of the resident cost.
+
+**The pillars we lean on, each measured, each doing one job:**
+
+1. **Deterministic micro-backend bricks** — audited `@fonderie/*` that make a
+   non-deterministic LLM ship *consistent, secure* code (from-scratch shipped an
+   insecure secret 2 of 3 times; Fonderie never, in ~⅓ the code). This is the
+   product; it does not change.
+2. **Lazy skill layering** — a small router that pulls one brick's body in only
+   when the task touches it. Load scales with what the agent does.
+3. **CLI for retrieval** — zero schema tax, output into a pipe, runs anywhere;
+   measured at parity with MCP, so it's a viable default.
+4. **Co-located version-matched knowledge** — each package ships its own brain
+   fragment in its tarball, so knowledge travels with the installed version.
+5. **Concept-enum routing** — 17 language-less concepts map intent to the one
+   body to load (96/96 across EN/FR/Romanian).
+6. **Cross-vendor skill format** — one artifact reads in every agent harness, no
+   server to keep alive.
+7. **Two-axis honesty** — measure tokens *and* wall-clock; CLI trades latency
+   for tokens, so MCP stays the option for stateful, long-running loops.
+
+The one-line difference: before, load everything every turn in case; after, keep
+a tiny router resident and pull the one brick's knowledge in only when the task
+reaches for it — on bricks that keep the output consistent. Full chart and
+numbers in `fonderie-js/ARCHITECTURE-EVOLUTION.md`.
+
 ## Where this leaves us
 
 The bet is the one HTTP made: standardize the boring parts so nobody
