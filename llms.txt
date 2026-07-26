@@ -5,19 +5,16 @@
 Key facts:
 
 - Fonderie Core is seventeen open-source building blocks (auth, billing, workspaces, permissions, and more) written in plain TypeScript.
-- Self-hosted: the code runs on your server, with your data, and no vendor lock-in. Every module can be read, audited, and modified.
+- Self-hosted: the code runs on your server, with your data, and no vendor lock-in. It is MIT-licensed — every module can be read, audited, and modified.
 - Works with Claude Code natively, Cursor via rules, and Codex via AGENTS.md — any model that can read a repository can use the skill.
 - Install: `npm install @fonderie/core`. Source: https://github.com/fonderie-js/sdk
 - Connectors wire in external tools such as GitHub, Slack, Stripe, Linear, Notion, and Postgres.
-- Identity (a real email and phone per agent) and Spend (per-agent, per-task budgets) are in development.
+- The first SaaS cast on Fonderie is already in production.
 
 ## Pages
 
 - [Home](https://fonderiejs.com/): What Fonderie is and how it works, with FAQ
-- [Platform](https://fonderiejs.com/platform): Platform overview — Core, Gateway, Connectors, Identity, Spend
-- [Products](https://fonderiejs.com/products): The SDK and the cockpit
-- [Blog](https://fonderiejs.com/blog): Notes from the foundry — measurements, molds, and the economics of AI-built SaaS
-- [Token-cost experiment](https://fonderiejs.com/blog/token-cost-experiment): Four rounds measuring Claude Code from scratch vs from Fonderie modules — round one lost 2.3×, the fixed rerun won, naive prompts gap 4/12 vs 11/12 on security (the module is the spec the user didn't know to write), and a pre-registered multi-module round lost 2.2× because agents excavate compiled packages while their own source is free to read; that round found a privilege escalation in @fonderie/workspaces, fixed same-day as 1.1.1
+- [Product](https://fonderiejs.com/products): The SDK, Core, Connectors, and the app already in production
 - [Resources](https://fonderiejs.com/help): Documentation, status, and support
 - [Contact](https://fonderiejs.com/contact): Contact, press, and investors
 
