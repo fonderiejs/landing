@@ -7,7 +7,7 @@ Key facts:
 - Fonderie Core is seventeen open-source building blocks (auth, billing, workspaces, permissions, and more) written in plain TypeScript.
 - Self-hosted: the code runs on your server, with your data, and no vendor lock-in. It is MIT-licensed — every module can be read, audited, and modified.
 - Works with Claude Code natively, Cursor via rules, and Codex via AGENTS.md — any model that can read a repository can use the skill.
-- Install: `npm install @fonderie/core`. Source: https://github.com/fonderiejs/sdk
+- Install: `npm install @fonderie/core`. Source: https://github.com/fonderiejs/fonderie
 - Connectors wire in external tools such as GitHub, Slack, Stripe, Linear, Notion, and Postgres.
 - The first SaaS cast on Fonderie is already in production.
 
@@ -20,4 +20,4 @@ Key facts:
 
 ## Code
 
-- [Fonderie SDK on GitHub](https://github.com/fonderiejs/sdk): Open-source repository — the skill and the seventeen Core modules
+- [Fonderie SDK on GitHub](https://github.com/fonderiejs/fonderie): Open-source repository — the skill and the seventeen Core modules
