@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
     <link rel="stylesheet" href="/assets/css/base.css"/>
     <link rel="stylesheet" href="/assets/css/theme.css"/>
-    <title>Product — Fonderie</title>
-    <meta name="description" content="The backend suite for AI-built SaaS. Production-tested @fonderie/* modules your assistant composes instead of regenerating — open-source core, with managed cloud coming soon."/>
+    <title>Resources — Fonderie</title>
+    <meta name="description" content="Documentation, status, and support for building SaaS with AI on Fonderie."/>
     <meta name="robots" content="index, follow"/>
-    <link rel="canonical" href="https://fonderiejs.com/products"/>
-    <meta property="og:title" content="Product — Fonderie"/>
-    <meta property="og:description" content="The backend suite for AI-built SaaS. Production-tested @fonderie/* modules your assistant composes instead of regenerating."/>
-    <meta property="og:url" content="https://fonderiejs.com/products"/>
+    <link rel="canonical" href="https://fonderiejs.com/resources"/>
+    <meta property="og:title" content="Resources — Fonderie"/>
+    <meta property="og:description" content="Documentation, status, and support for building SaaS with AI on Fonderie."/>
+    <meta property="og:url" content="https://fonderiejs.com/resources"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="https://fonderiejs.com/assets/img/og-image.png"/>
     <meta property="og:image:width" content="1200"/>
@@ -36,8 +36,8 @@
             <img class="nav__logo-mark nav__logo-mark--dark" src="/assets/img/fonderie-lockup-dark.svg" alt="Fonderie" style="height:18px;width:auto"/>
           </a>
           <div class="lp-nav__links">
-            <a class="lp-link" href="/products" aria-current="page">Product</a>
-            <a class="lp-link" href="/resources">Resources</a>
+            <a class="lp-link" href="/products">Product</a>
+            <a class="lp-link" href="/resources" aria-current="page">Resources</a>
             <a class="lp-link" href="/contact">Contact</a>
           </div>
           <a class="lp-cta" href="/contact">Get started</a>
@@ -53,60 +53,25 @@
       <main class="lp__wrap">
 
         <section class="lp-subhero">
-          <h1 class="lp-subhero__title">The suite.</h1>
-          <p class="lp-subhero__lede">The backend suite for AI-built SaaS. Production-tested backend modules your assistant composes instead of regenerating — open-source core, with managed cloud coming soon.</p>
+          <h1 class="lp-subhero__title">Resources.</h1>
+          <p class="lp-subhero__lede">Documentation, status, and support for building SaaS with AI.</p>
         </section>
 
-        <section style="padding-bottom:56px">
-          <div class="lp-cardgrid" data-reveal>
-            <div class="lp-cell" id="sdk">
-              <h2 class="lp-cell__title">The SDK</h2>
-              <p class="lp-cell__text">@fonderie/core. Open-source backend modules in plain TypeScript, on your server. Install once; your AI composes from them instead of regenerating them.</p>
-              <span class="lp-pill-tag">Open source</span>
-              <code class="lp-pill-code">$ npm install @fonderie/core</code>
+        <section style="padding-bottom:clamp(48px,7vw,72px)">
+          <div class="lp-cardgrid lp-cardgrid--tight" data-reveal>
+            <div class="lp-cell lp-cell--sm" id="docs">
+              <h2 class="lp-cell__title">Documentation</h2>
+              <p class="lp-cell__text">Guides and reference for the core and SDK.</p>
+              <span class="lp-pill-tag">Coming soon</span>
             </div>
-            <div class="lp-cell" id="core">
-              <h2 class="lp-cell__title">Core</h2>
-              <p class="lp-cell__text">Login, teams, payments, permissions — the backend every SaaS needs, composed from proven modules. Your data, your database. No vendor lock-in.</p>
+            <div class="lp-cell lp-cell--sm" id="status">
+              <h2 class="lp-cell__title">Status</h2>
+              <p class="lp-cell__text">Every service, live. Green means go.</p>
+              <span class="lp-pill-tag">Coming soon</span>
             </div>
-            <div class="lp-cell" id="connectors">
-              <h2 class="lp-cell__title">Connectors</h2>
-              <p class="lp-cell__text">GitHub, Slack, Stripe, Linear, Notion, Postgres — your clients’ tools, integrated on day one.</p>
-            </div>
-            <div class="lp-cell" id="production">
-              <h2 class="lp-cell__title">In production</h2>
-              <p class="lp-cell__text">The first SaaS built on Fonderie is live — delivered, not demoed. We built the same SaaS three times from scratch to compare: two of the three shipped a real security hole. The Fonderie build didn’t — in about a third of the code.</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="modules" style="padding-bottom:clamp(48px,7vw,72px)">
-          <p class="lp-eyebrow" data-reveal>Every module</p>
-          <h2 class="lp-h2" data-reveal data-delay="60" style="max-width:28ch">Open-source @fonderie/* packages your assistant composes.</h2>
-          <div class="lp-cardgrid lp-cardgrid--wide" data-reveal>
-            <div class="lp-cell lp-cell--mod">
-              <h3 class="lp-cell__title">Foundation</h3>
-              <p class="lp-cell__text">core — request router, middleware pipeline, and module system every package depends on. store — database layer: Postgres driver, migration runner, and SQL helpers.</p>
-            </div>
-            <div class="lp-cell lp-cell--mod">
-              <h3 class="lp-cell__title">Identity &amp; access</h3>
-              <p class="lp-cell__text">auth — email/password, phone OTP, Google OAuth, JWT sessions, TOTP MFA, password recovery. permissions — role-based access control. workspaces — multi-tenant teams, members, roles.</p>
-            </div>
-            <div class="lp-cell lp-cell--mod">
-              <h3 class="lp-cell__title">Money</h3>
-              <p class="lp-cell__text">billing — plan catalogue, Stripe subscriptions, per-user and per-workspace billing, usage metering, and webhook handling.</p>
-            </div>
-            <div class="lp-cell lp-cell--mod">
-              <h3 class="lp-cell__title">Messaging &amp; events</h3>
-              <p class="lp-cell__text">courier — transactional email, SMS, and push. webhooks — register endpoints, fan out events, retry on failure. events — event bus with memory and Postgres transports.</p>
-            </div>
-            <div class="lp-cell lp-cell--mod">
-              <h3 class="lp-cell__title">Operations</h3>
-              <p class="lp-cell__text">logger — structured logging. audit — workspace-scoped activity trail. rate-limit — distributed token bucket. config — DB-backed feature flags with hot reload.</p>
-            </div>
-            <div class="lp-cell lp-cell--mod">
-              <h3 class="lp-cell__title">Framework adapters</h3>
-              <p class="lp-cell__text">adapter-express, adapter-hono, adapter-koa — mount Fonderie middleware inside native Express, Hono, or Koa routes.</p>
+            <div class="lp-cell lp-cell--sm" id="support">
+              <h2 class="lp-cell__title">Support</h2>
+              <p class="lp-cell__text">A human answers. Usually the founder.</p>
             </div>
           </div>
         </section>
