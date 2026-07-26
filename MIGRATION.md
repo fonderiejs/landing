@@ -125,7 +125,7 @@ price-by-contrast, Vercel-grade terseness):
 
 - All 17 SDK packages published under the **@fonderie** scope
   (core/client/store/logger at 0.1.0, the rest at 1.0.0); release tags on
-  [fonderiejs/sdk](https://github.com/fonderiejs/sdk). The GitHub org is
+  [fonderiejs/sdk](https://github.com/fonderiejs/fonderie). The GitHub org is
   `fonderiejs`; the npm scope is `@fonderie` (`fonderie-js` on npm is a
   defensive registration).
 - Landing hero and `/platform` Core card carry a verified
