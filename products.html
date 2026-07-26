@@ -80,6 +80,56 @@
             </div>
           </div>
         </div>
+        <section class="features" id="modules" aria-label="Modules">
+          <div class="feature feature--divide">
+            <div class="feature__body feature__body--intro">
+              <h2 class="feature__title feature__title--lead">Every module.</h2>
+              <p class="feature__text feature__text--lead">Nineteen open-source <code>@fonderie/*</code> packages — two foundations everything builds on, and seventeen feature modules your assistant composes. Plain TypeScript, on your server.</p>
+            </div>
+          </div>
+          <div class="feature feature--divide">
+            <div class="feature__body">
+              <h2 class="feature__title">Foundation</h2>
+              <p class="feature__text"><strong>core</strong> — request router, middleware pipeline, and module system every package depends on.<br/><strong>store</strong> — database layer: Postgres driver, migration runner, and SQL helpers.</p>
+            </div>
+          </div>
+          <div class="feature feature--divide">
+            <div class="feature__body">
+              <h2 class="feature__title">Identity &amp; access</h2>
+              <p class="feature__text"><strong>auth</strong> — email/password, phone OTP, Google OAuth, JWT sessions, TOTP MFA, password recovery.<br/><strong>permissions</strong> — role-based access control; gate any route with requirePermission.<br/><strong>workspaces</strong> — multi-tenant teams, members, custom roles, and invitations.<br/><strong>customers</strong> — workspace-scoped records for people and businesses.</p>
+            </div>
+          </div>
+          <div class="feature feature--divide">
+            <div class="feature__body">
+              <h2 class="feature__title">Money</h2>
+              <p class="feature__text"><strong>billing</strong> — plan catalogue, Stripe subscriptions, per-user and per-workspace billing, usage metering, and webhook handling.</p>
+            </div>
+          </div>
+          <div class="feature feature--divide">
+            <div class="feature__body">
+              <h2 class="feature__title">Messaging &amp; events</h2>
+              <p class="feature__text"><strong>courier</strong> — transactional email, SMS, and push with templates and a message log.<br/><strong>webhooks</strong> — register endpoints, fan out events, track delivery, retry on failure.<br/><strong>events</strong> — event bus with memory and Postgres transports (Redis/Kafka/RabbitMQ adapters).</p>
+            </div>
+          </div>
+          <div class="feature feature--divide">
+            <div class="feature__body">
+              <h2 class="feature__title">Operations</h2>
+              <p class="feature__text"><strong>logger</strong> — structured logging with pluggable transports and request logging.<br/><strong>audit</strong> — workspace-scoped, human-readable activity trail.<br/><strong>rate-limit</strong> — distributed token bucket over memory, Postgres, or Redis.<br/><strong>config</strong> — DB-backed feature flags and remote config with hot reload.</p>
+            </div>
+          </div>
+          <div class="feature feature--divide">
+            <div class="feature__body">
+              <h2 class="feature__title">Framework adapters</h2>
+              <p class="feature__text"><strong>adapter-express</strong>, <strong>adapter-hono</strong>, <strong>adapter-koa</strong> — bridge, adapt, and mount Fonderie middleware inside native Express, Hono, or Koa routes.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__body">
+              <h2 class="feature__title">Developer tooling</h2>
+              <p class="feature__text"><strong>cli</strong> — teaches any coding agent the SDK; writes a lazy skill and answers what to install.<br/><strong>client</strong> — isomorphic, fully typed TypeScript client with zero runtime dependencies.</p>
+            </div>
+          </div>
+        </section>
         <footer class="footer">
           <div class="footer__grid">
             <div class="footer__col">
@@ -87,6 +137,7 @@
               <a class="footer__link" href="/products#sdk">The SDK</a>
               <a class="footer__link" href="/products#core">Core</a>
               <a class="footer__link" href="/products#connectors">Connectors</a>
+              <a class="footer__link" href="/products#modules">Modules</a>
             </div>
             <div class="footer__col">
               <a class="footer__heading" href="/help">Resources</a>
