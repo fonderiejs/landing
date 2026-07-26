@@ -3,6 +3,8 @@
 	"trailingSlash": false,
 	"redirects": [
 		{ "source": "/platform", "destination": "/products", "permanent": true },
+		{ "source": "/help", "destination": "/resources", "permanent": true },
+		{ "source": "/help/:path*", "destination": "/resources", "permanent": true },
 		{ "source": "/blog", "destination": "/", "permanent": true },
 		{ "source": "/blog/:path*", "destination": "/", "permanent": true }
 	],

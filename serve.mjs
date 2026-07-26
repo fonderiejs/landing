@@ -43,9 +43,19 @@ async function resolve(urlPath) {
 createServer(async (req, res) => {
   const file = await resolve(new URL(req.url, 'http://x').pathname);
   if (!file) {
-    res.writeHead(404, { 'content-type': 'text/plain' }).end('404');
+    // Mirror Vercel: serve the styled 404.html with a 404 status.
+    try {
+      const body = await readFile(join(root, '404.html'));
+      res.writeHead(404, { 'content-type': types['.html'], 'cache-control': 'no-store' });
+      res.end(body);
+    } catch {
+      res.writeHead(404, { 'content-type': 'text/plain' }).end('404');
+    }
     return;
   }
-  res.writeHead(200, { 'content-type': types[extname(file)] ?? 'application/octet-stream' });
+  res.writeHead(200, {
+    'content-type': types[extname(file)] ?? 'application/octet-stream',
+    'cache-control': 'no-store',
+  });
   res.end(await readFile(file));
 }).listen(port, () => console.log(`http://localhost:${port}/`));
