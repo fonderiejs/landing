@@ -57,6 +57,44 @@
   });
 })();
 
+// Solution section: scroll-synced code reveal. Each AI message carries
+// [data-phase-trigger="n"]; when it crosses the viewport center, phase n
+// (and any earlier phase not yet shown) reveals in the sticky code panel.
+// Phase 1 ships pre-shown in the markup so the panel isn't empty pre-JS.
+(function () {
+  var triggers = document.querySelectorAll('[data-phase-trigger]');
+  var phases = document.querySelectorAll('.lp-codepanel__phase');
+  if (!triggers.length || !phases.length) return;
+
+  function showPhase(n) {
+    phases.forEach(function (p) {
+      var pn = parseInt(p.getAttribute('data-phase'), 10);
+      if (pn <= n && !p.hasAttribute('data-shown')) {
+        p.classList.add('lp-codepanel__phase--enter');
+        p.setAttribute('data-shown', '');
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () { p.classList.remove('lp-codepanel__phase--enter'); });
+        });
+      }
+      if (pn === n) p.setAttribute('data-active', '');
+      else p.removeAttribute('data-active');
+    });
+  }
+
+  if (!('IntersectionObserver' in window)) {
+    phases.forEach(function (p) { p.setAttribute('data-shown', ''); });
+    return;
+  }
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) showPhase(parseInt(entry.target.getAttribute('data-phase-trigger'), 10));
+    });
+  }, { threshold: 0, rootMargin: '-40% 0px -40% 0px' });
+
+  triggers.forEach(function (t) { io.observe(t); });
+})();
+
 // Theme switcher — same behavior as platform/ui. "System" clears the
 // override so prefers-color-scheme takes back over.
 (function () {
