@@ -1912,7 +1912,7 @@
 
 /* ---- ledger: Without / With Fonderie (the 9-week vs day-one ASCII) ---- */
 .lp-ledger { display: grid; grid-template-columns: 1fr; gap: 1px; background: var(--color-border); border: 1px solid var(--color-border); border-radius: 10px; overflow: hidden; font-family: var(--font-mono); }
-.lp-ledger__col { background: var(--color-background); padding: 24px 22px; }
+.lp-ledger__col { display: flex; flex-direction: column; background: var(--color-background); padding: 24px 22px; }
 .lp-ledger__col--with { background: var(--color-surface); }
 .lp-ledger__head { display: flex; align-items: baseline; justify-content: space-between; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-muted); margin: 0 0 18px; }
 .lp-ledger__head b { font-weight: 600; color: var(--color-foreground); text-transform: none; letter-spacing: -0.01em; }
@@ -1921,10 +1921,20 @@
 .lp-ledger__row span:first-child { color: var(--color-muted-faint); flex-shrink: 0; width: 5.5em; }
 .lp-ledger__row--go { color: var(--color-foreground); }
 .lp-ledger__row--go span:first-child { color: var(--color-accent); }
-.lp-ledger__tally { margin: 16px 0 0; padding-top: 14px; border-top: 1px dashed var(--color-border-strong); font-size: 12.5px; color: var(--color-muted); }
+.lp-ledger__tally { margin-top: 16px; padding-top: 14px; border-top: 1px dashed var(--color-border-strong); font-size: 12.5px; color: var(--color-muted); }
 .lp-ledger__tally b { color: var(--color-foreground); font-weight: 600; }
 .lp-ledger__col--with .lp-ledger__tally b { color: var(--color-accent); }
 @media (min-width: 640px) { .lp-ledger { grid-template-columns: 1fr 1fr; } }
+
+/* right column: You → Fonderie → You loop */
+.lp-ledger__flow { display: flex; flex-direction: column; gap: 12px; margin-top: auto; padding-bottom: 4px; }
+.lp-ledger__step { display: flex; flex-direction: column; gap: 3px; }
+.lp-ledger__step-label { font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-muted-faint); }
+.lp-ledger__step-text { font-size: 13.5px; line-height: 1.5; color: var(--color-foreground); margin: 0; }
+.lp-ledger__step--fonderie { border-left: 2px solid var(--color-accent); background: color-mix(in srgb, var(--color-accent) 6%, transparent); border-radius: 0 6px 6px 0; padding: 8px 12px; gap: 2px; }
+.lp-ledger__step--fonderie .lp-ledger__step-label { color: var(--color-accent); }
+.lp-ledger__step--fonderie .lp-ledger__step-text { font-size: 12px; color: var(--color-muted); }
+.lp-ledger__step--go .lp-ledger__step-text { font-weight: 500; }
 
 /* ---- pullquote (faster horses / http standard) ---- */
 .lp-pullquote { margin: 0; border-left: 2px solid var(--color-accent); padding: 4px 0 4px 22px; }
