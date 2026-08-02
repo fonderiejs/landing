@@ -2114,3 +2114,31 @@
 .lp-pricing-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; padding-top: 32px; padding-bottom: 32px; }
 .lp-pricing-line__text { font-size: 16px; color: var(--color-muted); margin: 0; }
 .lp-pricing-line__text a { color: var(--color-accent); font-weight: 600; }
+
+/* ---- solution: split-screen scroll-synced conversation → code ---- */
+.lp-split { display: flex; flex-direction: column; gap: 32px; align-items: flex-start; }
+.lp-split__convo { width: 100%; min-width: 0; }
+.lp-split__convo .lp-chat__msg--ai { max-width: 92%; }
+.lp-split__code { width: 100%; min-width: 0; }
+@media (min-width: 900px) {
+  .lp-split { flex-direction: row; gap: 44px; }
+  .lp-split__convo { flex: 1 1 0; }
+  .lp-split__code { flex: 1 1 0; position: sticky; top: 84px; align-self: flex-start; }
+}
+
+.lp-chat__label { display: block; font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 6px; }
+
+.lp-codepanel { position: relative; background: #0d0d0d; border-radius: 16px; padding: 24px; overflow: hidden; box-shadow: 0 12px 32px -12px rgba(0,0,0,.35); }
+.lp-codepanel__label { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #6b6b6b; margin: 0 0 18px; }
+.lp-codepanel__phase { display: none; font-family: var(--font-mono); font-size: 13px; line-height: 1.8; color: #d4d4d4; margin-bottom: 20px; transition: opacity .4s ease-out, transform .4s ease-out; }
+.lp-codepanel__phase:last-child { margin-bottom: 0; }
+.lp-codepanel__phase pre { margin: 0; white-space: pre; overflow-x: auto; }
+.lp-codepanel__phase .cmt { color: #6b6b6b; }
+.lp-codepanel__phase .kw { color: #f0a35e; }
+.lp-codepanel__phase .fn { color: #7ec4dc; }
+.lp-codepanel__phase[data-shown] { display: block; opacity: .55; transform: translateY(0); }
+.lp-codepanel__phase[data-active] { opacity: 1; }
+.lp-codepanel__phase--enter { opacity: 0 !important; transform: translateY(10px) !important; }
+@media (prefers-reduced-motion: reduce) {
+  .lp-codepanel__phase { transition: none; }
+}
