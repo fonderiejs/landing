@@ -2099,3 +2099,8 @@
 .lp-flow__box--go { border-color: color-mix(in srgb, var(--color-accent) 55%, var(--color-border)); background: color-mix(in srgb, var(--color-accent) 6%, var(--color-surface)); color: var(--color-accent); }
 .lp-flow__arrow { display: flex; align-items: center; color: var(--color-muted); font-family: var(--font-mono); }
 @media (max-width: 560px) { .lp-flow { flex-direction: column; } .lp-flow__arrow { transform: rotate(90deg); justify-content: center; } }
+
+/* pricing — single-line variant (trim, don't delete) */
+.lp-pricing-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; padding-top: 32px; padding-bottom: 32px; }
+.lp-pricing-line__text { font-size: 16px; color: var(--color-muted); margin: 0; }
+.lp-pricing-line__text a { color: var(--color-accent); font-weight: 600; }
