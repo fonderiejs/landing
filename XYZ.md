@@ -39,12 +39,11 @@ Source: `http://localhost:8080/` (HTTP 200) — reflects committed state `73845d
     - Week 8 — Remote config
     - Week 9 — Finally write product
     - Tally: Two months of code the world already wrote — re-shipping the same security flaws.
-  - **Column 2 heading:** With Fonderie · 2 days
+  - **Column 2 heading:** With Fonderie · Day 1
     - Day 1 — npx @fonderie/create
     - Day 1 — Register the modules you need
-    - Day 1 — Write product logic
-    - Day 2 — Ship to users
-    - Tally: One open, audited standard for the shared parts — so you spend yourself on what's actually yours.
+    - Day 1 — Start writing product logic
+    - Tally: Skip the first 9 weeks. The infrastructure is done before you finish your coffee.
   - **Value anchor (below ledger):** Hiring a backend engineer for 3 months: ~~$30–60k~~.  Starting with Fonderie: free and open source.
 
 ## AI-COMPATIBILITY BADGE STRIP (below hero)
