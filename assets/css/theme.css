@@ -2053,12 +2053,12 @@
 :root[data-theme="dark"] .lp::before { background: radial-gradient(120% 100% at 50% 0%, color-mix(in srgb, var(--color-accent) 13%, transparent), transparent 60%); }
 .lp-nav, .lp__wrap, .lp-footer { position: relative; z-index: 1; }
 
-/* vertical rhythm — give sections room to breathe (Fix 2) */
-.lp-section { padding: clamp(64px, 9vw, 104px) 0; }
+/* vertical rhythm — dense and intentional, not a slide deck (Part 1) */
+.lp-section { padding: clamp(48px, 5.5vw, 72px) 0; }
 .lp-h2 { font-size: clamp(26px, 4.2vw, 34px); }
 
 /* hero weight (Fix 3) */
-.lp-hero { max-width: 720px; gap: 24px; padding-top: clamp(56px, 9vw, 104px); }
+.lp-hero { max-width: 720px; gap: 22px; padding-top: clamp(48px, 6vw, 80px); padding-bottom: 8px; }
 .lp-hero__title { font-size: clamp(38px, 6.4vw, 60px); line-height: 1.04; }
 .lp-hero__lede { font-size: clamp(17px, 2vw, 20px); line-height: 1.6; }
 
@@ -2083,7 +2083,7 @@
 .lp-compare--reasons .lp-compare__card--hosted { box-shadow: inset 3px 0 0 color-mix(in srgb, #d0563b 45%, transparent); }
 
 /* FAQ — hover affordance + roomier rows (Fix 9) */
-.lp-faq summary { padding: 22px 0; transition: color .15s; }
+.lp-faq summary { padding: 18px 0; transition: color .15s; }
 .lp-faq summary:hover { color: var(--color-accent); }
 
 /* package cards — clearer hover (Fix 7) */
@@ -2091,3 +2091,11 @@
 
 /* footer breathing room (Fix 10) */
 .lp-footer { padding-top: 56px; }
+
+/* how-it-works flow diagram (Part 3) */
+.lp-flow { display: flex; flex-wrap: wrap; align-items: stretch; gap: 10px; }
+.lp-flow__box { display: flex; align-items: center; justify-content: center; text-align: center; flex: 1 1 0; min-width: 140px; font-family: var(--font-mono); font-size: 13px; color: var(--color-foreground); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 16px 14px; }
+.lp-flow__box code { font-family: var(--font-mono); color: var(--color-accent); }
+.lp-flow__box--go { border-color: color-mix(in srgb, var(--color-accent) 55%, var(--color-border)); background: color-mix(in srgb, var(--color-accent) 6%, var(--color-surface)); color: var(--color-accent); }
+.lp-flow__arrow { display: flex; align-items: center; color: var(--color-muted); font-family: var(--font-mono); }
+@media (max-width: 560px) { .lp-flow { flex-direction: column; } .lp-flow__arrow { transform: rotate(90deg); justify-content: center; } }
