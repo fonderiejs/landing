@@ -152,12 +152,12 @@
 
         <!-- ============================== HERO ============================== -->
         <section class="lp-hero" style="max-width:720px">
-          <p class="lp-eyebrow" style="text-transform:none;letter-spacing:-0.01em;font-size:13px;margin:0">Open source · MIT · npm install @fonderie/core</p>
+          <p class="lp-eyebrow" style="text-transform:none;letter-spacing:-0.01em;font-size:13px;margin:0">Open source · MIT · npx @fonderie/create</p>
           <h1 class="lp-hero__title" style="max-width:16ch">The open standard for the SaaS backend.</h1>
           <p class="lp-hero__lede" style="max-width:38rem">Auth, billing, teams, permissions, multi-tenancy — two to three months of infrastructure before you write a single line of product code. Fonderie standardizes the parts every product shares, so you ship product on <strong style="color:var(--color-foreground)">day one</strong>, not week nine. <strong style="color:var(--color-foreground)">Your AI assistant composes the modules; you write what matters.</strong></p>
           <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:4px">
-            <button class="lp-btn lp-copy" type="button" data-copy="npm install @fonderie/core" style="cursor:pointer;font-family:var(--font-mono);gap:8px;color:var(--color-background);border:0">
-              <span style="opacity:.6">$</span> npm install @fonderie/core
+            <button class="lp-btn lp-copy" type="button" data-copy="npx @fonderie/create my-saas" style="cursor:pointer;font-family:var(--font-mono);gap:8px;color:var(--color-background);border:0">
+              <span style="opacity:.6">$</span> npx @fonderie/create my-saas
               <span data-copy-label style="opacity:.7">⧉</span>
             </button>
             <a class="lp-btn lp-btn--ghost" href="https://github.com/fonderiejs/fonderie">
@@ -215,19 +215,19 @@
         <section class="lp-section">
           <p class="lp-eyebrow" data-reveal>Built for vibe coders</p>
           <h2 class="lp-h2" data-reveal data-delay="60">Your AI already knows how to use this.</h2>
-          <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:56ch;margin:-24px 0 32px">Fonderie modules are plain TypeScript with explicit interfaces. Your AI assistant doesn't guess at auth logic or improvise a security model — it reads the module, understands the standard shape, and composes it correctly. No hallucinated endpoints. No re-derived schemas. Just proven modules, wired together.</p>
-          <div class="lp-compare" data-reveal data-delay="120">
+          <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:52ch;margin:-24px 0 32px">Your AI reads the module, understands the standard shape, and composes it correctly. No guessed auth. No hallucinated endpoints. Just proven modules, wired together.</p>
+          <div class="lp-compare lp-compare--reasons" data-reveal data-delay="120">
             <div class="lp-compare__card lp-compare__card--hosted">
               <h3 class="lp-compare__name">Without Fonderie</h3>
-              <div><p class="lp-compare__label">01</p><p class="lp-compare__value">AI regenerates auth from scratch</p></div>
-              <div><p class="lp-compare__label">02</p><p class="lp-compare__value">Different every session — no shared standard</p></div>
-              <div><p class="lp-compare__label">03</p><p class="lp-compare__value">Ships the same security holes, again</p></div>
+              <div><p class="lp-compare__value">AI regenerates auth from scratch</p></div>
+              <div><p class="lp-compare__value">Different every session — no shared standard</p></div>
+              <div><p class="lp-compare__value">Ships the same security holes, again</p></div>
             </div>
             <div class="lp-compare__card lp-compare__card--fonderie">
               <h3 class="lp-compare__name">With Fonderie</h3>
-              <div><p class="lp-compare__label">01</p><p class="lp-compare__value">AI reads <code style="font-family:var(--font-mono);font-size:.85em">@fonderie/auth</code></p></div>
-              <div><p class="lp-compare__label">02</p><p class="lp-compare__value">Composes the standard shape, the same way every time</p></div>
-              <div><p class="lp-compare__label">03</p><p class="lp-compare__value">Audited, consistent, secure — by default</p></div>
+              <div><p class="lp-compare__value">AI reads <code style="font-family:var(--font-mono);font-size:.85em">@fonderie/auth</code></p></div>
+              <div><p class="lp-compare__value">Composes the standard shape, the same way every time</p></div>
+              <div><p class="lp-compare__value">Audited, consistent, secure — by default</p></div>
             </div>
           </div>
         </section>
@@ -447,7 +447,7 @@ export const <span class="fn">createSchedule</span> = <span class="fn">workspace
               Star on GitHub
             </a>
           </div>
-          <p data-reveal data-delay="105" style="font-size:14px;color:var(--color-muted);margin:0"><strong style="color:var(--color-foreground)">Make your AI Fonderie-aware.</strong> <a href="https://github.com/fonderiejs/fonderie/tree/main/prompts" target="_blank" rel="noopener noreferrer" style="color:var(--color-accent)">Copy our system prompts for Claude Code and Cursor →</a></p>
+          <p data-reveal data-delay="105" style="font-size:14px;color:var(--color-muted);margin:0"><strong style="color:var(--color-foreground)">Make your AI Fonderie-aware.</strong> System prompts for Claude Code and Cursor ship with the repo — <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" style="color:var(--color-accent)">grab them on GitHub →</a></p>
           <div class="lp-ribbon" data-reveal data-delay="120" style="justify-content:center">
             <span>Vibe coders: your AI composes the backend, you write the product</span><span>Agencies: scaffold client SaaS in hours, not weeks</span><span>Solo founders: ship in a weekend</span><span>Teams: stop re-implementing org management</span>
           </div>
