@@ -1889,6 +1889,7 @@
 .lp-compare__card--hosted { background: var(--color-background); }
 .lp-compare__card--fonderie { background: var(--color-surface); }
 .lp-compare__name { font-size: 15px; font-weight: 600; margin: 0; }
+.lp-compare__card--fonderie .lp-compare__name { color: var(--color-accent); }
 .lp-compare__card--hosted .lp-compare__name { color: var(--color-muted); }
 .lp-compare__label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted-light); margin: 0 0 6px; }
 .lp-compare__value { font-size: 15px; line-height: 1.5; margin: 0; }
