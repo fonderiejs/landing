@@ -75,7 +75,7 @@
           "url": "https://fonderiejs.com/",
           "applicationCategory": "DeveloperApplication",
           "operatingSystem": "Any",
-          "description": "Fonderie is the open standard for the SaaS backend — the auth, billing, teams, permissions, and multi-tenancy that every SaaS rebuilds before writing product code. It's a library that lives in your repo, runs in your process, against your database. You own the source (MIT), self-host it, and swap any provider. Free until your first paying customer.",
+          "description": "Fonderie is the open standard for the SaaS backend — the auth, billing, teams, permissions, and multi-tenancy that every SaaS rebuilds before writing product code. It's a library that lives in your repo, runs in your process, against your database. You own the source (MIT), self-host it, and swap any provider. Free and open source — managed hosting is on the roadmap.",
           "downloadUrl": "https://github.com/fonderiejs/fonderie",
           "isAccessibleForFree": true,
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -90,7 +90,7 @@
               "name": "Is Fonderie a service? Do you host my data?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No. Fonderie is a library, not a service — the way Drizzle is not Supabase and Next.js is not Vercel. It lives in your node_modules, runs inside your process, against your database, on your server. No Fonderie server is ever in your request path. We never see or host your data."
+                "text": "No. Fonderie is a library that runs in your project — not a hosted service. Your code, your server, your database. No Fonderie server is ever in your request path, and we never host your data."
               }
             },
             {
@@ -114,7 +114,7 @@
               "name": "How much does Fonderie cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Free while you build and before you have revenue. $49/mo once you launch and are under $10k MRR, $149/mo as you grow with team features and priority support, and custom pricing for enterprise with SSO, compliance, and an SLA. Compare it to hiring a backend engineer for three months ($30–60k), not to a $29 dev tool. You pay the moment your SaaS goes live and starts generating revenue."
+                "text": "Fonderie is free and open source under the MIT license. Every module is self-hosted on your own infrastructure with no usage limits and no vendor lock-in. Compare it to hiring a backend engineer for three months ($30–60k). Managed hosting and commercial support are on the roadmap."
               }
             }
           ]
@@ -132,8 +132,8 @@
             <img class="nav__logo-mark nav__logo-mark--dark" src="/assets/img/fonderie-lockup-dark.svg" alt="Fonderie" style="height:18px;width:auto"/>
           </a>
           <div class="lp-nav__links">
-            <a class="lp-link" href="/products">Product</a>
             <a class="lp-link" href="#how">The solution</a>
+            <a class="lp-link" href="#packages">Packages</a>
             <a class="lp-link" href="https://github.com/fonderiejs/fonderie">GitHub</a>
           </div>
           <a class="lp-cta" href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer">Get started</a>
@@ -142,8 +142,8 @@
           </button>
         </div>
         <div class="nav__menu">
-          <a href="/products">Product</a>
           <a href="#how">The solution</a>
+          <a href="#packages">Packages</a>
           <a href="https://github.com/fonderiejs/fonderie">GitHub</a>
         </div>
       </nav>
@@ -166,7 +166,8 @@
             </a>
           </div>
 
-          <p style="font-family:var(--font-mono);font-size:12.5px;color:var(--color-muted);margin:2px 0 0">MIT-licensed · Open source on GitHub · Zero Fonderie servers in your request path</p>
+          <p style="font-family:var(--font-mono);font-size:12.5px;color:var(--color-muted);margin:2px 0 0">MIT-licensed · Open source on GitHub · Zero external servers in your stack</p>
+          <p style="font-family:var(--font-mono);font-size:12.5px;color:var(--color-muted);margin:-8px 0 0">Pre-1.0 and production-ready. MIT-licensed. Auditable end to end.</p>
 
           <!-- the 9-week vs day-one ledger -->
           <div class="lp-ledger" data-reveal style="margin-top:24px;width:100%">
@@ -191,23 +192,18 @@
               <p class="lp-ledger__tally">One open, audited standard for the shared parts — <b>so you spend yourself on what's actually yours.</b></p>
             </div>
           </div>
-          <p class="lp-anchor__big" data-reveal style="margin-top:20px;text-align:left;font-size:clamp(16px,2.4vw,20px)">Hiring a backend engineer for 3 months: <s>$30–60k</s>.&nbsp; Starting with Fonderie: <b>free until your first customer.</b></p>
+          <p class="lp-anchor__big" data-reveal style="margin-top:20px;text-align:left;font-size:clamp(16px,2.4vw,20px)">Hiring a backend engineer for 3 months: <s>$30–60k</s>.&nbsp; Starting with Fonderie: <b>free and open source.</b></p>
         </section>
 
         <section class="lp-strip">
-          <span>Library, not a service</span><span>Your server · your database</span><span>MIT-licensed</span><span class="lp-strip__hook">Free until your first customer</span>
+          <span>Library, not a service</span><span>Your server · your database</span><span>MIT-licensed</span><span class="lp-strip__hook">Free and open source</span>
         </section>
 
         <!-- ============================== PROBLEM (unnumbered) ============================== -->
         <section class="lp-section">
           <p class="lp-eyebrow" data-reveal>The problem</p>
           <h2 class="lp-h2" data-reveal data-delay="60" style="max-width:26ch">Every SaaS rebuilds the same infrastructure before writing a single line of product code.</h2>
-          <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:52ch;margin:0 0 40px">Whether it's a scheduling tool, an analytics platform, or a developer API, the first two to three months go to auth, billing, teams, permissions, and multi-tenancy — the same plumbing, re-derived from scratch, at startups and S&amp;P 500s alike. Customers compare that to <strong style="color:var(--color-foreground)">hiring a backend engineer for three months</strong>, not to a dev tool.</p>
-
-          <blockquote class="lp-pullquote" data-reveal data-delay="120">
-            <p>HTTP won because it standardized the boring parts — GET, POST, 2xx/4xx/5xx — and nobody has re-argued them since. The SaaS backend never got its standard. LLMs made this faster, not better: they're faster horses, improvising a new security model every session.</p>
-            <cite>Fonderie is the engine — a standard, not more horses.</cite>
-          </blockquote>
+          <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:56ch;margin:0">Whether you're building a scheduling tool or an analytics platform, you still have to build auth, billing, team management, and permissions before you can build your actual product. That's <strong style="color:var(--color-foreground)">two to three months</strong> spent on infrastructure that has nothing to do with why your customers will pay you.</p>
         </section>
 
         <!-- ============================== SOLUTION ============================== -->
@@ -290,66 +286,80 @@ export const <span class="fn">createSchedule</span> = <span class="fn">workspace
               </tbody>
             </table>
           </div>
-          <p style="font-size:13px;color:var(--color-muted);margin:16px 0 0"><a href="/blog/saas-build-benchmark" style="color:var(--color-accent)">Read the full methodology →</a></p>
+          <p style="font-size:13px;color:var(--color-muted);margin:16px 0 0">Internal benchmark. Results vary by project complexity.</p>
         </section>
 
-        <!-- ============================== WHAT YOU GET ============================== -->
-        <section class="lp-section">
-          <p class="lp-eyebrow" data-reveal>What you get</p>
-          <h2 class="lp-h2" data-reveal data-delay="60">The parts every product shares — done once, done right.</h2>
-          <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:50ch;margin:-24px 0 32px">The individual pieces are free and open everywhere. The wiring, the opinions, and the cohesion between them are the product. Each module is plain TypeScript you own, register, and can read end to end.</p>
-          <div class="lp-cardgrid lp-cardgrid--tight" data-reveal data-delay="120">
-            <div class="lp-cell lp-cell--mod"><span class="lp-modicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="m3 7 9 5 9-5M12 12v10"/></svg></span><h3 class="lp-cell__title">@fonderie/core</h3><p class="lp-cell__text">The app definition, module registry, and the standard shapes everything else composes into.</p></div>
-            <div class="lp-cell lp-cell--mod"><span class="lp-modicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><h3 class="lp-cell__title">Auth</h3><p class="lp-cell__text">Sessions, passkeys, OAuth, and password flows — the security model, decided once and audited.</p></div>
-            <div class="lp-cell lp-cell--mod"><span class="lp-modicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span><h3 class="lp-cell__title">Billing</h3><p class="lp-cell__text">Subscriptions, seats, usage, and webhooks. Stripe out of the box; swap the provider behind it.</p></div>
-            <div class="lp-cell lp-cell--mod"><span class="lp-modicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><h3 class="lp-cell__title">Workspaces</h3><p class="lp-cell__text">Teams, orgs, invites, and multi-tenancy. One agency, ten client tenants, zero re-implementation.</p></div>
-            <div class="lp-cell lp-cell--mod"><span class="lp-modicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span><h3 class="lp-cell__title">Permissions</h3><p class="lp-cell__text">Roles and <code style="font-family:var(--font-mono);font-size:.9em">ctx.can()</code> checks scoped to the current tenant, wired through every action.</p></div>
-            <div class="lp-cell lp-cell--mod"><span class="lp-modicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span><h3 class="lp-cell__title">Email &amp; config</h3><p class="lp-cell__text">Transactional email and remote configuration — the last two things you'd otherwise bolt on in week eight.</p></div>
+        <!-- ============================== PACKAGES ============================== -->
+        <section class="lp-section" id="packages">
+          <p class="lp-eyebrow" data-reveal>The packages</p>
+          <h2 class="lp-h2" data-reveal data-delay="60">Real packages, on the real registry.</h2>
+          <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:52ch;margin:-24px 0 32px">Every module is plain TypeScript. Install what you need. Own what you ship. Each one is open on npm — click through and read the code before you trust it.</p>
+          <div class="lp-pkgrid" data-reveal data-delay="120">
+            <a class="lp-pkg" href="https://www.npmjs.com/package/@fonderie/core" target="_blank" rel="noopener noreferrer">
+              <div class="lp-pkg__head"><h3 class="lp-pkg__name">@fonderie/core</h3><span class="lp-pkg__ver">v0.1.0</span></div>
+              <p class="lp-pkg__desc">App definition, module registry, and standard shapes.</p>
+              <div class="lp-pkg__tags"><span>core</span><span>registry</span></div>
+              <span class="lp-pkg__author">Fonderie Labs</span>
+            </a>
+            <a class="lp-pkg" href="https://www.npmjs.com/package/@fonderie/auth" target="_blank" rel="noopener noreferrer">
+              <div class="lp-pkg__head"><h3 class="lp-pkg__name">@fonderie/auth</h3><span class="lp-pkg__ver">v0.1.0</span></div>
+              <p class="lp-pkg__desc">Sessions, passkeys, OAuth, and password flows.</p>
+              <div class="lp-pkg__tags"><span>auth</span><span>security</span></div>
+              <span class="lp-pkg__author">Fonderie Labs</span>
+            </a>
+            <a class="lp-pkg" href="https://www.npmjs.com/package/@fonderie/billing" target="_blank" rel="noopener noreferrer">
+              <div class="lp-pkg__head"><h3 class="lp-pkg__name">@fonderie/billing</h3><span class="lp-pkg__ver">v0.1.0</span></div>
+              <p class="lp-pkg__desc">Subscriptions, seats, usage, and webhooks.</p>
+              <div class="lp-pkg__tags"><span>billing</span><span>stripe</span></div>
+              <span class="lp-pkg__author">Fonderie Labs</span>
+            </a>
+            <a class="lp-pkg" href="https://www.npmjs.com/package/@fonderie/workspaces" target="_blank" rel="noopener noreferrer">
+              <div class="lp-pkg__head"><h3 class="lp-pkg__name">@fonderie/workspaces</h3><span class="lp-pkg__ver">v0.1.0</span></div>
+              <p class="lp-pkg__desc">Teams, orgs, invites, and multi-tenancy.</p>
+              <div class="lp-pkg__tags"><span>teams</span><span>multi-tenant</span></div>
+              <span class="lp-pkg__author">Fonderie Labs</span>
+            </a>
+            <a class="lp-pkg" href="https://www.npmjs.com/package/@fonderie/permissions" target="_blank" rel="noopener noreferrer">
+              <div class="lp-pkg__head"><h3 class="lp-pkg__name">@fonderie/permissions</h3><span class="lp-pkg__ver">v0.1.0</span></div>
+              <p class="lp-pkg__desc">Roles and tenant-scoped access checks.</p>
+              <div class="lp-pkg__tags"><span>rbac</span><span>access</span></div>
+              <span class="lp-pkg__author">Fonderie Labs</span>
+            </a>
+            <a class="lp-pkg" href="https://www.npmjs.com/package/@fonderie/courier" target="_blank" rel="noopener noreferrer">
+              <div class="lp-pkg__head"><h3 class="lp-pkg__name">@fonderie/courier</h3><span class="lp-pkg__ver">v0.1.0</span></div>
+              <p class="lp-pkg__desc">Email, SMS, and push notification dispatch.</p>
+              <div class="lp-pkg__tags"><span>email</span><span>notifications</span></div>
+              <span class="lp-pkg__author">Fonderie Labs</span>
+            </a>
           </div>
           <p class="lp-eyebrow" data-reveal style="margin:28px 0 0;text-transform:none;letter-spacing:-0.01em">Dependencies point one way — modules depend on core, never on your product. Your code stays yours.</p>
         </section>
 
         <!-- ============================== PRICING ============================== -->
-        <section class="lp-section">
+        <section class="lp-section" id="pricing">
           <p class="lp-eyebrow" data-reveal>Pricing</p>
-          <h2 class="lp-h2" data-reveal data-delay="60">Free until your first paying customer.</h2>
-          <div class="lp-anchor" data-reveal data-delay="90">
-            <p class="lp-anchor__big"><s>Hire a backend engineer for 3 months — $30–60k</s> &nbsp;→&nbsp; <b>start with Fonderie today</b></p>
-            <p class="lp-anchor__sub">You pay the moment your SaaS goes live and generates revenue — with the same billing module you use to charge your own users.</p>
-          </div>
-          <div class="lp-pricing" data-reveal data-delay="120">
-            <div class="lp-price">
-              <p class="lp-price__tier">Free</p>
-              <p class="lp-price__amt">$0</p>
-              <p class="lp-price__when">Building, pre-revenue. One project.</p>
-              <ul class="lp-price__feats"><li>Full open-source core</li><li>Self-hosted, MIT</li><li>Every module</li></ul>
-            </div>
+          <h2 class="lp-h2" data-reveal data-delay="60">Free and open source.</h2>
+          <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:52ch;margin:-24px 0 32px">Every module is MIT-licensed and self-hosted. No credit card required. No usage limits. No vendor lock-in.</p>
+          <div class="lp-pricing" data-reveal data-delay="120" style="grid-template-columns:1fr;max-width:420px">
             <div class="lp-price lp-price--feature">
-              <p class="lp-price__tier">Launched</p>
-              <p class="lp-price__amt">$49<small>/mo</small></p>
-              <p class="lp-price__when">Live and earning, under $10k MRR.</p>
-              <ul class="lp-price__feats"><li>Everything in Free</li><li>Priority security patches</li><li>Community support</li></ul>
-            </div>
-            <div class="lp-price">
-              <p class="lp-price__tier">Growing</p>
-              <p class="lp-price__amt">$149<small>/mo</small></p>
-              <p class="lp-price__when">Scaling with a team behind you.</p>
-              <ul class="lp-price__feats"><li>Team features</li><li>Priority support</li><li>Multi-project</li></ul>
-            </div>
-            <div class="lp-price">
-              <p class="lp-price__tier">Enterprise</p>
-              <p class="lp-price__amt">Custom</p>
-              <p class="lp-price__when">SSO, compliance, and an SLA.</p>
-              <ul class="lp-price__feats"><li>SSO / SAML</li><li>Compliance &amp; SLA</li><li>Design partner access</li></ul>
+              <p class="lp-price__tier">Free · $0</p>
+              <ul class="lp-price__feats" style="margin-top:2px">
+                <li>Full open-source core</li>
+                <li>All modules: auth, billing, workspaces, permissions, courier, config</li>
+                <li>Self-hosted on your infrastructure</li>
+                <li>MIT license — read, fork, modify</li>
+              </ul>
+              <a class="lp-btn lp-btn--ghost" href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" style="margin-top:4px">Get started on GitHub →</a>
             </div>
           </div>
+          <p class="lp-eyebrow" data-reveal style="margin:24px 0 0;text-transform:none;letter-spacing:-0.01em">Managed hosting and commercial support are on the roadmap. <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" style="color:var(--color-accent)">Star us on GitHub</a> to be notified.</p>
         </section>
 
         <!-- ============================== THE DIFFERENCE ============================== -->
         <section class="lp-section">
           <p class="lp-eyebrow" data-reveal>The difference</p>
           <h2 class="lp-h2" data-reveal data-delay="60">A library, not a service.</h2>
-          <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:48ch;margin:-24px 0 32px">You are Drizzle, not Supabase. Next.js, not Vercel. Fonderie is code in your <code style="font-family:var(--font-mono);font-size:.85em">node_modules</code> — no Fonderie server is ever in your request path.</p>
+          <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:52ch;margin:-24px 0 32px">Fonderie is a library, not a service. It runs in your project, on your server, against your database. We never see your data, never touch your requests, and can't turn your app off.</p>
           <div class="lp-compare" data-reveal data-delay="120">
             <div class="lp-compare__card lp-compare__card--hosted">
               <h3 class="lp-compare__name">Hosted backends</h3>
@@ -375,7 +385,7 @@ export const <span class="fn">createSchedule</span> = <span class="fn">workspace
           <div class="lp-faq" data-reveal data-delay="90">
             <details>
               <summary>Is this a service? Do you host my data?</summary>
-              <p class="lp-faq__answer">No. Fonderie is a library — like Drizzle, not Supabase. It runs in your process, against your database. We never host your data, never see your requests, and can't turn your app off.</p>
+              <p class="lp-faq__answer">No. Fonderie is a library that runs in your project — not a hosted service. Your code, your server, your database. We never host your data.</p>
             </details>
             <details>
               <summary>Can I swap Stripe for PayPal — or anything else?</summary>
@@ -387,7 +397,7 @@ export const <span class="fn">createSchedule</span> = <span class="fn">workspace
             </details>
             <details>
               <summary>What do I actually own?</summary>
-              <p class="lp-faq__answer">All of it. Fonderie Core is MIT-licensed — read, fork, and modify every module. No dashboard to keep your app running, no per-MAU meter, no way for us to turn it off. You pay for the wiring and the cohesion; you own the code.</p>
+              <p class="lp-faq__answer">All of it. Fonderie Core is MIT-licensed — read, fork, and modify every module. No dashboard to keep your app running, no per-MAU meter, no way for us to turn it off. The value is the wiring and the cohesion between the pieces; the code is yours.</p>
             </details>
           </div>
         </section>
@@ -407,7 +417,7 @@ export const <span class="fn">createSchedule</span> = <span class="fn">workspace
             </a>
           </div>
           <div class="lp-ribbon" data-reveal data-delay="120" style="justify-content:center">
-            <span>Agencies: 10 client SaaS from one install</span><span>Solo founders: ship in a weekend</span><span>Teams: never re-implement orgs again</span>
+            <span>Agencies: scaffold client SaaS in hours, not weeks</span><span>Solo founders: ship in a weekend</span><span>Teams: stop re-implementing org management</span>
           </div>
         </section>
 
@@ -417,25 +427,14 @@ export const <span class="fn">createSchedule</span> = <span class="fn">workspace
         <div class="lp-footer__inner">
           <div class="lp-footer__grid">
             <div class="lp-footer__col">
-              <a class="lp-footer__head" href="/products">Product</a>
-              <a class="lp-footer__link" href="/products#sdk">The SDK</a>
-              <a class="lp-footer__link" href="/products#core">Core</a>
-              <a class="lp-footer__link" href="/products#connectors">Connectors</a>
-            </div>
-            <div class="lp-footer__col">
-              <a class="lp-footer__head" href="/resources">Resources</a>
-              <a class="lp-footer__link" href="/resources#docs">Documentation</a>
-              <a class="lp-footer__link" href="/resources#support">Support</a>
-            </div>
-            <div class="lp-footer__col">
               <a class="lp-footer__head" href="https://github.com/fonderiejs/fonderie">Open source</a>
               <a class="lp-footer__link" href="https://github.com/fonderiejs/fonderie">GitHub</a>
-              <a class="lp-footer__link" href="https://github.com/fonderiejs/fonderie">npm install @fonderie/core</a>
+              <a class="lp-footer__link" href="https://www.npmjs.com/package/@fonderie/core">npm install @fonderie/core</a>
             </div>
             <div class="lp-footer__col">
               <p class="lp-footer__head">Company</p>
               <a class="lp-footer__link" href="/contact">Contact</a>
-              <a class="lp-footer__link" href="https://github.com/fonderiejs/fonderie">GitHub</a>
+              <a class="lp-footer__link" href="https://x.com/fonderiejs">X / Twitter</a>
             </div>
           </div>
           <div class="lp-footer__bottom">
