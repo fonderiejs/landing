@@ -2032,3 +2032,62 @@
 .lp-footer__meta { display: flex; align-items: center; gap: 14px; }
 .lp-footer__social { color: var(--color-muted); transition: color .15s; }
 .lp-footer__social:hover { color: var(--color-foreground); }
+
+/* ================================================================
+   YC-polish pass — rhythm, hero weight, warm ground, table/ledger
+   refinement. Appended last so it overrides the base .lp rules. */
+
+/* subtle full-bleed warm ground behind the top of the page (Fix 11) */
+.lp { position: relative; }
+.lp::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 520px;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(120% 100% at 50% 0%,
+    color-mix(in srgb, var(--color-accent) 9%, transparent),
+    transparent 60%);
+}
+:root[data-theme="dark"] .lp::before { background: radial-gradient(120% 100% at 50% 0%, color-mix(in srgb, var(--color-accent) 13%, transparent), transparent 60%); }
+.lp-nav, .lp__wrap, .lp-footer { position: relative; z-index: 1; }
+
+/* vertical rhythm — give sections room to breathe (Fix 2) */
+.lp-section { padding: clamp(64px, 9vw, 104px) 0; }
+.lp-h2 { font-size: clamp(26px, 4.2vw, 34px); }
+
+/* hero weight (Fix 3) */
+.lp-hero { max-width: 720px; gap: 24px; padding-top: clamp(56px, 9vw, 104px); }
+.lp-hero__title { font-size: clamp(38px, 6.4vw, 60px); line-height: 1.04; }
+.lp-hero__lede { font-size: clamp(17px, 2vw, 20px); line-height: 1.6; }
+
+/* ledger — lift it off the page + warmer heads (Fix 4) */
+.lp-ledger { box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 12px 32px -12px rgba(0,0,0,.12); }
+.lp-ledger__col--with { box-shadow: inset 3px 0 0 color-mix(in srgb, var(--color-accent) 55%, transparent); }
+.lp-anchor__big { line-height: 1.4; }
+.lp-anchor__big s { color: var(--color-muted-light); }
+
+/* proof table — header ground + tidy caption (Fix 6) */
+.lp-metrics thead th { background: var(--color-surface); }
+.lp-metrics thead .col-fond { background: color-mix(in srgb, var(--color-accent) 12%, var(--color-surface)); }
+
+/* solution — real message bubble + generated-code label (Fix 5) */
+.lp-chat__msg--user { border-radius: 16px 16px 4px 16px; padding: 12px 16px; font-size: 14.5px; }
+.lp-codeblock { border-radius: 12px; padding: 18px 20px; }
+.lp-tstep__marker { width: 34px; height: 34px; font-size: 14px; }
+
+/* difference — accent edge on each card (Fix 8) */
+.lp-compare__card--hosted { box-shadow: inset 3px 0 0 color-mix(in srgb, #d0563b 45%, transparent); }
+.lp-compare__card--fonderie { box-shadow: inset 3px 0 0 color-mix(in srgb, var(--color-accent) 60%, transparent); }
+.lp-compare--reasons .lp-compare__card--hosted { box-shadow: inset 3px 0 0 color-mix(in srgb, #d0563b 45%, transparent); }
+
+/* FAQ — hover affordance + roomier rows (Fix 9) */
+.lp-faq summary { padding: 22px 0; transition: color .15s; }
+.lp-faq summary:hover { color: var(--color-accent); }
+
+/* package cards — clearer hover (Fix 7) */
+.lp-pkg:hover { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--color-accent) 40%, transparent); }
+
+/* footer breathing room (Fix 10) */
+.lp-footer { padding-top: 56px; }
