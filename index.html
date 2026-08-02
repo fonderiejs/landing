@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
     <link rel="stylesheet" href="/assets/css/base.css"/>
     <link rel="stylesheet" href="/assets/css/theme.css"/>
-    <title>Fonderie — The backend suite for AI-built SaaS</title>
-    <meta name="description" content="Every new SaaS project, your AI assistant regenerates the same backend from scratch. Fonderie is the suite that gives your assistant production-tested backend modules to compose instead. Ship faster. Fewer security holes. Open-source core, with managed cloud coming soon."/>
+    <title>Fonderie — The open standard for the SaaS backend</title>
+    <meta name="description" content="Every SaaS rebuilds the same auth, billing, teams, and multi-tenancy before writing a single line of product code. Fonderie is the open standard for that infrastructure — a library that lives in your repo, runs on your server, against your database. Compose it in an afternoon; spend the rest on the part that's actually yours."/>
     <meta name="application-name" content="Fonderie"/>
     <meta name="author" content="Fonderie"/>
     <link rel="manifest" href="/manifest.json"/>
@@ -20,21 +20,21 @@
     <meta name="mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-title" content="Fonderie"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
-    <meta property="og:title" content="Fonderie — The backend suite for AI-built SaaS"/>
-    <meta property="og:description" content="Every new SaaS project, your AI assistant regenerates the same backend from scratch. Fonderie is the suite that gives your assistant production-tested backend modules to compose instead. Ship faster. Fewer security holes. Open-source core, with managed cloud coming soon."/>
+    <meta property="og:title" content="Fonderie — The open standard for the SaaS backend"/>
+    <meta property="og:description" content="Every SaaS rebuilds the same auth, billing, teams, and multi-tenancy before writing a single line of product code. Fonderie is the open standard for that infrastructure — a library that runs in your repo, on your server, against your database. Compose it in an afternoon; spend the rest on the part that's actually yours."/>
     <meta property="og:url" content="https://fonderiejs.com"/>
     <meta property="og:site_name" content="Fonderie"/>
     <meta property="og:image" content="https://fonderiejs.com/assets/img/og-image.png"/>
     <meta property="og:image:type" content="image/png"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
-    <meta property="og:image:alt" content="Fonderie — The backend suite for AI-built SaaS"/>
+    <meta property="og:image:alt" content="Fonderie — The open standard for the SaaS backend"/>
     <meta property="og:type" content="website"/>
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="Fonderie — The backend suite for AI-built SaaS"/>
-    <meta name="twitter:description" content="Every new SaaS project, your AI assistant regenerates the same backend from scratch. Fonderie is the suite that gives your assistant production-tested backend modules to compose instead. Ship faster. Fewer security holes. Open-source core, with managed cloud coming soon."/>
+    <meta name="twitter:title" content="Fonderie — The open standard for the SaaS backend"/>
+    <meta name="twitter:description" content="Every SaaS rebuilds the same auth, billing, teams, and multi-tenancy before writing a single line of product code. Fonderie is the open standard for that infrastructure — a library that runs in your repo, on your server, against your database. Compose it in an afternoon; spend the rest on the part that's actually yours."/>
     <meta name="twitter:image" content="https://fonderiejs.com/assets/img/og-image.png"/>
-    <meta name="twitter:image:alt" content="Fonderie — The backend suite for AI-built SaaS"/>
+    <meta name="twitter:image:alt" content="Fonderie — The open standard for the SaaS backend"/>
     <meta name="twitter:image:type" content="image/png"/>
     <meta name="twitter:image:width" content="1200"/>
     <meta name="twitter:image:height" content="630"/>
@@ -75,7 +75,7 @@
           "url": "https://fonderiejs.com/",
           "applicationCategory": "DeveloperApplication",
           "operatingSystem": "Any",
-          "description": "Fonderie is the backend suite for AI-built SaaS. AI coding assistants compose production-tested modules — login, billing, teams, permissions — instead of regenerating boilerplate every session. Open-source core, with managed cloud for teams that don’t want to self-host.",
+          "description": "Fonderie is the open standard for the SaaS backend — the auth, billing, teams, permissions, and multi-tenancy that every SaaS rebuilds before writing product code. It's a library that lives in your repo, runs in your process, against your database. You own the source (MIT), self-host it, and swap any provider. Free until your first paying customer.",
           "downloadUrl": "https://github.com/fonderiejs/fonderie",
           "isAccessibleForFree": true,
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -87,34 +87,34 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "What is Fonderie?",
+              "name": "Is Fonderie a service? Do you host my data?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Fonderie is the backend suite for AI-built SaaS. AI coding assistants compose production-tested modules — login, billing, teams, and permissions — instead of regenerating that code from scratch each session. Open-source core for developers who want control. Managed cloud for teams that don’t want to self-host."
+                "text": "No. Fonderie is a library, not a service — the way Drizzle is not Supabase and Next.js is not Vercel. It lives in your node_modules, runs inside your process, against your database, on your server. No Fonderie server is ever in your request path. We never see or host your data."
               }
             },
             {
               "@type": "Question",
-              "name": "Which AI coding assistants work with Fonderie?",
+              "name": "Can I swap Stripe for another provider?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Fonderie works with Claude Code natively, with Cursor via rules, and with Codex via AGENTS.md. Because the suite is plain instructions plus a TypeScript SDK, any model that can read a repository can use it. Install once with npm install @fonderie/core."
+                "text": "Yes. The modules define the standard shape — subscriptions, seats, webhooks — and providers plug in behind it. Start on Stripe, move to Paddle, LemonSqueezy, or your own processor without rewriting your product code. The integration is the product; the provider is a detail."
               }
             },
             {
               "@type": "Question",
-              "name": "Is Fonderie open source?",
+              "name": "Is Fonderie only for new projects?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. Fonderie Core is open-source backend modules — auth, billing, workspaces, permissions, and more — written in plain TypeScript and self-hosted on your own infrastructure, with no vendor lock-in. You can read, audit, and modify every module at github.com/fonderiejs/fonderie."
+                "text": "It's best on greenfield SaaS, where you skip two to three months of infrastructure. You can also adopt a single module — say billing or workspaces — in an existing codebase, because each module is plain TypeScript you own and register yourself."
               }
             },
             {
               "@type": "Question",
-              "name": "How is Fonderie different from hosted backends?",
+              "name": "How much does Fonderie cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Hosted backends are services you rent and configure through dashboards and SDKs. Fonderie is source code your AI coding assistant composes directly — self-hosted, auditable, and designed for agentic workflows rather than human dashboard-clicking. It orchestrates external services where you want them, but the core runs on your own infrastructure with no vendor lock-in."
+                "text": "Free while you build and before you have revenue. $49/mo once you launch and are under $10k MRR, $149/mo as you grow with team features and priority support, and custom pricing for enterprise with SSO, compliance, and an SLA. Compare it to hiring a backend engineer for three months ($30–60k), not to a $29 dev tool. You pay the moment your SaaS goes live and starts generating revenue."
               }
             }
           ]
@@ -150,87 +150,71 @@
 
       <main class="lp__wrap">
 
-        <section class="lp-hero">
-          <p class="lp-eyebrow" style="text-transform:none;letter-spacing:-0.01em;font-size:13px;margin:0">Open source · npm install @fonderie/core</p>
-          <h1 class="lp-hero__title">Build SaaS with AI,<br/>not boilerplate.</h1>
-          <p class="lp-hero__lede">Fonderie is the backend suite that lets AI assistants compose production-tested modules — auth, billing, teams — instead of regenerating them from scratch every session.</p>
-          <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:8px">
-            <a class="lp-btn" href="https://github.com/fonderiejs/fonderie">Start composing</a>
+        <!-- ============================== HERO ============================== -->
+        <section class="lp-hero" style="max-width:720px">
+          <p class="lp-eyebrow" style="text-transform:none;letter-spacing:-0.01em;font-size:13px;margin:0">Open source · MIT · npm install @fonderie/core</p>
+          <h1 class="lp-hero__title" style="max-width:15ch">Every SaaS rebuilds the same backend.<br/>Yours doesn't have to.</h1>
+          <p class="lp-hero__lede" style="max-width:38rem">Auth, billing, teams, permissions, multi-tenancy — two to three months of infrastructure before you write a single line of product code. Fonderie is the open standard for the parts every product shares, so you ship product on <strong style="color:var(--color-foreground)">day one</strong>, not week nine.</p>
+          <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:4px">
+            <button class="lp-btn lp-copy" type="button" data-copy="npm install @fonderie/core" style="cursor:pointer;font-family:var(--font-mono);gap:8px;color:var(--color-background);border:0">
+              <span style="opacity:.6">$</span> npm install @fonderie/core
+              <span data-copy-label style="opacity:.7">⧉</span>
+            </button>
             <a class="lp-btn lp-btn--ghost" href="https://github.com/fonderiejs/fonderie">
               <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
               View on GitHub
             </a>
           </div>
+
+          <!-- the 9-week vs day-one ledger -->
+          <div class="lp-ledger" data-reveal style="margin-top:24px;width:100%">
+            <div class="lp-ledger__col">
+              <p class="lp-ledger__head">Without Fonderie <b>~9 weeks</b></p>
+              <div class="lp-ledger__row"><span>Week 1–2</span> Auth setup</div>
+              <div class="lp-ledger__row"><span>Week 3</span> Team / org model</div>
+              <div class="lp-ledger__row"><span>Week 4</span> Stripe wiring</div>
+              <div class="lp-ledger__row"><span>Week 5</span> Email system</div>
+              <div class="lp-ledger__row"><span>Week 6</span> Permissions</div>
+              <div class="lp-ledger__row"><span>Week 7</span> Multi-tenancy</div>
+              <div class="lp-ledger__row"><span>Week 8</span> Remote config</div>
+              <div class="lp-ledger__row lp-ledger__row--go"><span>Week 9</span> Finally write product</div>
+              <p class="lp-ledger__tally">Two months of code the world already wrote — <b>re-shipping the same security flaws.</b></p>
+            </div>
+            <div class="lp-ledger__col lp-ledger__col--with">
+              <p class="lp-ledger__head">With Fonderie <b>2 days</b></p>
+              <div class="lp-ledger__row"><span>Day 1</span> npm install</div>
+              <div class="lp-ledger__row"><span>Day 1</span> Register the modules you need</div>
+              <div class="lp-ledger__row lp-ledger__row--go"><span>Day 1</span> Write product logic</div>
+              <div class="lp-ledger__row lp-ledger__row--go"><span>Day 2</span> Ship to users</div>
+              <p class="lp-ledger__tally">One open, audited standard for the shared parts — <b>so you spend yourself on what's actually yours.</b></p>
+            </div>
+          </div>
         </section>
 
         <section class="lp-strip">
-          <span>Open source</span><span>Self-hosted</span><span>Production-ready</span>
+          <span>Library, not a service</span><span>Your server · your database</span><span>MIT-licensed</span><span>Free until your first customer</span>
         </section>
 
+        <!-- ============================== PROBLEM (unnumbered) ============================== -->
         <section class="lp-section">
-          <p class="lp-eyebrow" data-reveal>01 — The problem</p>
-          <h2 class="lp-h2" data-reveal data-delay="60">Every session, your AI starts from zero.</h2>
-          <div class="lp-grid3">
-            <div class="lp-card" data-reveal>
-              <h3 class="lp-card__title">Regenerates from scratch</h3>
-              <p class="lp-card__text">Auth, billing, teams — rebuilt every session, differently each time.</p>
-            </div>
-            <div class="lp-card" data-reveal data-delay="80">
-              <h3 class="lp-card__title">Burns tokens on solved problems</h3>
-              <p class="lp-card__text">Context and budget spent re-deriving code the world already wrote.</p>
-            </div>
-            <div class="lp-card" data-reveal data-delay="160">
-              <h3 class="lp-card__title">Ships security holes</h3>
-              <p class="lp-card__text">Vulnerabilities you only discover once they're already in production.</p>
-            </div>
-          </div>
+          <p class="lp-eyebrow" data-reveal>The problem</p>
+          <h2 class="lp-h2" data-reveal data-delay="60" style="max-width:26ch">Every SaaS rebuilds the same infrastructure before writing a single line of product code.</h2>
+          <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:52ch;margin:0 0 40px">Whether it's a scheduling tool, an analytics platform, or a developer API, the first two to three months go to auth, billing, teams, permissions, and multi-tenancy — the same plumbing, re-derived from scratch, at startups and S&amp;P 500s alike. Customers compare that to <strong style="color:var(--color-foreground)">hiring a backend engineer for three months</strong>, not to a dev tool.</p>
+
+          <blockquote class="lp-pullquote" data-reveal data-delay="120">
+            <p>HTTP won because it standardized the boring parts — GET, POST, 2xx/4xx/5xx — and nobody has re-argued them since. The SaaS backend never got its standard. LLMs made this faster, not better: they're faster horses, improvising a new security model every session.</p>
+            <cite>Fonderie is the engine — a standard, not more horses.</cite>
+          </blockquote>
         </section>
 
-        <section class="lp-section">
-          <p class="lp-eyebrow" data-reveal>02 — The solution</p>
-          <h2 class="lp-h2" data-reveal data-delay="60">Compose, don't regenerate.</h2>
-          <div class="lp-grid3">
-            <div class="lp-step" data-reveal>
-              <span class="lp-step__num">01</span>
-              <div>
-                <h3 class="lp-step__title">Describe your SaaS</h3>
-                <p class="lp-step__text">Your assistant reads the suite and knows what to compose.</p>
-              </div>
-            </div>
-            <div class="lp-step" data-reveal data-delay="80">
-              <span class="lp-step__num">02</span>
-              <div>
-                <h3 class="lp-step__title">Ship proven modules</h3>
-                <p class="lp-step__text">Auth, billing, permissions — production-tested, not generated.</p>
-              </div>
-            </div>
-            <div class="lp-step" data-reveal data-delay="160">
-              <span class="lp-step__num">03</span>
-              <div>
-                <h3 class="lp-step__title">Own your stack</h3>
-                <p class="lp-step__text">Self-hosted. Auditable. No vendor lock-in.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="lp-section lp-proof" data-reveal>
-          <p class="lp-eyebrow" style="margin:0">03 — Proof</p>
-          <p class="lp-proof__num">2 <span class="accent">of 3</span></p>
-          <h2 class="lp-proof__h2">AI-generated SaaS backends we tested shipped a real security hole. Fonderie's didn't.</h2>
-          <p class="lp-proof__lede">We built the same SaaS three times from scratch with AI assistants — once composing Fonderie modules, twice without. The Fonderie build had zero vulnerabilities, in about a third of the code.</p>
-        </section>
-
+        <!-- ============================== SOLUTION ============================== -->
         <section class="lp-section" id="how">
-          <p class="lp-eyebrow" data-reveal>04 — How it works</p>
-          <h2 class="lp-h2" data-reveal data-delay="60">Three steps to shipping.</h2>
-          <div class="lp-timeline">
+          <p class="lp-eyebrow" data-reveal>The solution</p>
+          <h2 class="lp-h2" data-reveal data-delay="60">Compose, don't regenerate.</h2>
+          <div class="lp-timeline" style="max-width:680px">
 
             <div class="lp-tstep" data-reveal>
-              <div class="lp-tstep__rail">
-                <span class="lp-tstep__marker">1</span>
-                <span class="lp-tstep__line"></span>
-              </div>
+              <div class="lp-tstep__rail"><span class="lp-tstep__marker">1</span><span class="lp-tstep__line"></span></div>
               <div>
                 <h3 class="lp-tstep__title">Install the suite</h3>
                 <div class="lp-code">
@@ -244,16 +228,20 @@
             </div>
 
             <div class="lp-tstep" data-reveal data-delay="80">
-              <div class="lp-tstep__rail">
-                <span class="lp-tstep__marker">2</span>
-                <span class="lp-tstep__line"></span>
-              </div>
+              <div class="lp-tstep__rail"><span class="lp-tstep__marker">2</span><span class="lp-tstep__line"></span></div>
               <div>
-                <h3 class="lp-tstep__title">Describe your product to your AI</h3>
-                <div class="lp-chat">
-                  <div class="lp-chat__msg lp-chat__msg--user">Add subscription billing with team seats.</div>
-                  <div class="lp-chat__msg lp-chat__msg--ai">Composing <code>@fonderie/billing</code> — subscriptions, seats, and webhooks wired in.</div>
-                </div>
+                <h3 class="lp-tstep__title">Register the modules you need</h3>
+                <div class="lp-codeblock"><pre><span class="cmt">// fonderie.config.ts — the wiring <em style="font-style:normal;color:var(--color-foreground)">is</em> the product</span>
+import { <span class="fn">defineApp</span> } from <span class="kw">"@fonderie/core"</span>;
+import { auth, billing, workspaces } from <span class="kw">"@fonderie/core"</span>;
+
+export default <span class="fn">defineApp</span>({
+  modules: [
+    <span class="fn">auth</span>({ passkeys: <span class="kw">true</span>, oauth: [<span class="kw">"google"</span>] }),
+    <span class="fn">workspaces</span>({ multiTenant: <span class="kw">true</span> }),   <span class="cmt">// one agency, ten clients</span>
+    <span class="fn">billing</span>({ provider: <span class="kw">"stripe"</span>, seats: <span class="kw">true</span> }),
+  ],
+});</pre></div>
               </div>
             </div>
 
@@ -265,35 +253,155 @@
                 <span class="lp-tstep__line"></span>
               </div>
               <div>
-                <h3 class="lp-tstep__title">Ship with confidence</h3>
-                <div class="lp-statuspill">
-                  <span class="lp-statuspill__dot"></span>
-                  Deployed · self-hosted · auditable
-                </div>
+                <h3 class="lp-tstep__title">Write your product logic — the infrastructure is done</h3>
+                <div class="lp-codeblock"><pre><span class="cmt">// The auth, tenant scoping, and billing are already wired.</span>
+<span class="cmt">// You write the part only you can write.</span>
+export const <span class="fn">createSchedule</span> = <span class="fn">workspace</span>.<span class="fn">action</span>(<span class="kw">async</span> (ctx, input) => {
+  <span class="cmt">// ctx.user, ctx.workspace, ctx.can() — all provided.</span>
+  <span class="kw">return</span> ctx.db.schedules.<span class="fn">create</span>(input);
+});</pre></div>
+                <div class="lp-statuspill" style="margin-top:14px"><span class="lp-statuspill__dot"></span> Deployed · self-hosted · auditable</div>
               </div>
             </div>
 
           </div>
         </section>
 
-        <section class="lp-section" style="border-bottom:0">
-          <p class="lp-eyebrow" data-reveal>05 — The difference</p>
-          <h2 class="lp-h2" data-reveal data-delay="60">A different starting point.</h2>
-          <div class="lp-compare" data-reveal>
+        <!-- ============================== PROOF ============================== -->
+        <section class="lp-section">
+          <p class="lp-eyebrow" data-reveal>Proof</p>
+          <h2 class="lp-h2" data-reveal data-delay="60" style="max-width:28ch">We built the same SaaS three times. Only the Fonderie build shipped clean.</h2>
+          <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:52ch;margin:0 0 32px">Same spec, same AI assistant, three from-scratch builds — one composing Fonderie modules, two without. Two of the three hand-built backends shipped a real, exploitable security hole. The Fonderie build had zero, in about a third of the code.</p>
+          <div data-reveal data-delay="120" style="overflow-x:auto;border:1px solid var(--color-border);border-radius:10px">
+            <table class="lp-metrics">
+              <thead>
+                <tr><th>Same SaaS, built 3×</th><th>Build A</th><th>Build B</th><th class="col-fond">Fonderie</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Lines of backend code</td><td>~4,200</td><td>~3,800</td><td class="col-fond">~1,300</td></tr>
+                <tr><td>Time to first deploy</td><td>9 wks</td><td>8 wks</td><td class="col-fond">2 days</td></tr>
+                <tr><td>Security vulnerabilities</td><td>2</td><td>1</td><td class="col-fond">0</td></tr>
+                <tr><td>You own the source</td><td>Yes</td><td>Yes</td><td class="col-fond">Yes (MIT)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ============================== WHAT YOU GET ============================== -->
+        <section class="lp-section">
+          <p class="lp-eyebrow" data-reveal>What you get</p>
+          <h2 class="lp-h2" data-reveal data-delay="60">The parts every product shares — done once, done right.</h2>
+          <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:50ch;margin:-24px 0 32px">The individual pieces are free and open everywhere. The wiring, the opinions, and the cohesion between them are the product. Each module is plain TypeScript you own, register, and can read end to end.</p>
+          <div class="lp-cardgrid lp-cardgrid--tight" data-reveal data-delay="120">
+            <div class="lp-cell lp-cell--mod"><h3 class="lp-cell__title">@fonderie/core</h3><p class="lp-cell__text">The app definition, module registry, and the standard shapes everything else composes into.</p></div>
+            <div class="lp-cell lp-cell--mod"><h3 class="lp-cell__title">Auth</h3><p class="lp-cell__text">Sessions, passkeys, OAuth, and password flows — the security model, decided once and audited.</p></div>
+            <div class="lp-cell lp-cell--mod"><h3 class="lp-cell__title">Billing</h3><p class="lp-cell__text">Subscriptions, seats, usage, and webhooks. Stripe out of the box; swap the provider behind it.</p></div>
+            <div class="lp-cell lp-cell--mod"><h3 class="lp-cell__title">Workspaces</h3><p class="lp-cell__text">Teams, orgs, invites, and multi-tenancy. One agency, ten client tenants, zero re-implementation.</p></div>
+            <div class="lp-cell lp-cell--mod"><h3 class="lp-cell__title">Permissions</h3><p class="lp-cell__text">Roles and <code style="font-family:var(--font-mono);font-size:.9em">ctx.can()</code> checks scoped to the current tenant, wired through every action.</p></div>
+            <div class="lp-cell lp-cell--mod"><h3 class="lp-cell__title">Email &amp; config</h3><p class="lp-cell__text">Transactional email and remote configuration — the last two things you'd otherwise bolt on in week eight.</p></div>
+          </div>
+          <p class="lp-eyebrow" data-reveal style="margin:28px 0 0;text-transform:none;letter-spacing:-0.01em">Dependencies point one way — modules depend on core, never on your product. Your code stays yours.</p>
+        </section>
+
+        <!-- ============================== PRICING ============================== -->
+        <section class="lp-section">
+          <p class="lp-eyebrow" data-reveal>Pricing</p>
+          <h2 class="lp-h2" data-reveal data-delay="60">Free until your first paying customer.</h2>
+          <div class="lp-anchor" data-reveal data-delay="90">
+            <p class="lp-anchor__big"><s>Hire a backend engineer for 3 months — $30–60k</s> &nbsp;→&nbsp; <b>start with Fonderie today</b></p>
+            <p class="lp-anchor__sub">You pay the moment your SaaS goes live and generates revenue — with the same billing module you use to charge your own users.</p>
+          </div>
+          <div class="lp-pricing" data-reveal data-delay="120">
+            <div class="lp-price">
+              <p class="lp-price__tier">Free</p>
+              <p class="lp-price__amt">$0</p>
+              <p class="lp-price__when">Building, pre-revenue. One project.</p>
+              <ul class="lp-price__feats"><li>Full open-source core</li><li>Self-hosted, MIT</li><li>Every module</li></ul>
+            </div>
+            <div class="lp-price lp-price--feature">
+              <p class="lp-price__tier">Launched</p>
+              <p class="lp-price__amt">$49<small>/mo</small></p>
+              <p class="lp-price__when">Live and earning, under $10k MRR.</p>
+              <ul class="lp-price__feats"><li>Everything in Free</li><li>Update channel</li><li>Community support</li></ul>
+            </div>
+            <div class="lp-price">
+              <p class="lp-price__tier">Growing</p>
+              <p class="lp-price__amt">$149<small>/mo</small></p>
+              <p class="lp-price__when">Scaling with a team behind you.</p>
+              <ul class="lp-price__feats"><li>Team features</li><li>Priority support</li><li>Multi-project</li></ul>
+            </div>
+            <div class="lp-price">
+              <p class="lp-price__tier">Enterprise</p>
+              <p class="lp-price__amt">Custom</p>
+              <p class="lp-price__when">SSO, compliance, and an SLA.</p>
+              <ul class="lp-price__feats"><li>SSO / SAML</li><li>Compliance &amp; SLA</li><li>Design partner access</li></ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================== THE DIFFERENCE ============================== -->
+        <section class="lp-section">
+          <p class="lp-eyebrow" data-reveal>The difference</p>
+          <h2 class="lp-h2" data-reveal data-delay="60">A library, not a service.</h2>
+          <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:48ch;margin:-24px 0 32px">You are Drizzle, not Supabase. Next.js, not Vercel. Fonderie is code in your <code style="font-family:var(--font-mono);font-size:.85em">node_modules</code> — no Fonderie server is ever in your request path.</p>
+          <div class="lp-compare" data-reveal data-delay="120">
             <div class="lp-compare__card lp-compare__card--hosted">
               <h3 class="lp-compare__name">Hosted backends</h3>
-              <div><p class="lp-compare__label">Built for</p><p class="lp-compare__value">Humans reading docs and clicking dashboards</p></div>
-              <div><p class="lp-compare__label">Integration</p><p class="lp-compare__value">SDKs, webhooks, and dashboard configuration</p></div>
-              <div><p class="lp-compare__label">Ownership</p><p class="lp-compare__value">Rented — their infrastructure, per-MAU pricing</p></div>
-              <div><p class="lp-compare__label">AI workflow</p><p class="lp-compare__value">Your agent stops to check the docs</p></div>
+              <div><p class="lp-compare__label">Where it runs</p><p class="lp-compare__value">Their infrastructure, in your request path</p></div>
+              <div><p class="lp-compare__label">Your data</p><p class="lp-compare__value">Their database, their region, their outages</p></div>
+              <div><p class="lp-compare__label">Ownership</p><p class="lp-compare__value">Rented — per-MAU pricing, lock-in by design</p></div>
+              <div><p class="lp-compare__label">Providers</p><p class="lp-compare__value">Whatever they support, however they support it</p></div>
             </div>
             <div class="lp-compare__card lp-compare__card--fonderie">
               <h3 class="lp-compare__name">Fonderie</h3>
-              <div><p class="lp-compare__label">Built for</p><p class="lp-compare__value">Agents that read code</p></div>
-              <div><p class="lp-compare__label">Integration</p><p class="lp-compare__value">Modules composed directly in your repo</p></div>
-              <div><p class="lp-compare__label">Ownership</p><p class="lp-compare__value">Owned — your infrastructure, MIT-licensed source</p></div>
-              <div><p class="lp-compare__label">AI workflow</p><p class="lp-compare__value">Native — the assistant reads the suite</p></div>
+              <div><p class="lp-compare__label">Where it runs</p><p class="lp-compare__value">Your process, your server — nothing in between</p></div>
+              <div><p class="lp-compare__label">Your data</p><p class="lp-compare__value">Your database. We never see it.</p></div>
+              <div><p class="lp-compare__label">Ownership</p><p class="lp-compare__value">Owned — MIT source you can read, fork, and audit</p></div>
+              <div><p class="lp-compare__label">Providers</p><p class="lp-compare__value">Swap Stripe, auth, or email without touching product code</p></div>
             </div>
+          </div>
+        </section>
+
+        <!-- ============================== FAQ ============================== -->
+        <section class="lp-section">
+          <p class="lp-eyebrow" data-reveal>Objections, answered</p>
+          <h2 class="lp-h2" data-reveal data-delay="60">The four questions everyone asks.</h2>
+          <div class="lp-faq" data-reveal data-delay="90">
+            <details>
+              <summary>Is this a service? Do you host my data?</summary>
+              <p class="lp-faq__answer">No. Fonderie is a library, not a service — the way Drizzle is not Supabase and Next.js is not Vercel. It lives in your <code>node_modules</code>, runs inside your process, against your database, on your server. No Fonderie server is ever in your request path, and we never see or host your data.</p>
+            </details>
+            <details>
+              <summary>Can I swap Stripe for PayPal — or anything else?</summary>
+              <p class="lp-faq__answer">Yes. The modules define the standard shape — subscriptions, seats, webhooks — and providers plug in behind it. Start on Stripe, move to Paddle, LemonSqueezy, PayPal, or your own processor without rewriting product code. The integration is the product; the provider is a detail.</p>
+            </details>
+            <details>
+              <summary>Is it only for new projects?</summary>
+              <p class="lp-faq__answer">It shines on greenfield SaaS, where you skip two to three months of infrastructure outright. But every module is plain TypeScript you own and register yourself, so you can also adopt just one — say billing or workspaces — inside an existing codebase.</p>
+            </details>
+            <details>
+              <summary>What do I actually own?</summary>
+              <p class="lp-faq__answer">All of it. Fonderie Core is MIT-licensed — read, fork, and modify every module at <code>github.com/fonderiejs/fonderie</code>. There's no dashboard to log into to keep your app running, no per-MAU meter, and no way for us to turn it off. What you pay for is the wiring, the opinions, and the ongoing cohesion between the pieces.</p>
+            </details>
+          </div>
+        </section>
+
+        <!-- ============================== FINAL CTA ============================== -->
+        <section class="lp-section lp-finalcta" style="border-bottom:0">
+          <h2 class="lp-finalcta__title" data-reveal>Spend month one on your product, not on auth.</h2>
+          <p class="lp-finalcta__lede" data-reveal data-delay="60">One open, audited standard for the parts every SaaS shares. Compose it in an afternoon and get back to the only part that's actually yours.</p>
+          <div class="lp-finalcta__row" data-reveal data-delay="90">
+            <button class="lp-btn lp-copy" type="button" data-copy="npm install @fonderie/core" style="cursor:pointer;font-family:var(--font-mono);gap:8px;color:var(--color-background);border:0">
+              <span style="opacity:.6">$</span> npm install @fonderie/core
+              <span data-copy-label style="opacity:.7">⧉</span>
+            </button>
+            <a class="lp-btn lp-btn--ghost" href="https://github.com/fonderiejs/fonderie">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              Star on GitHub
+            </a>
+          </div>
+          <div class="lp-ribbon" data-reveal data-delay="120" style="justify-content:center">
+            <span>Agencies: 10 client SaaS from one install</span><span>Solo founders: ship in a weekend</span><span>Teams: never re-implement orgs again</span>
           </div>
         </section>
 
