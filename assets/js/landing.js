@@ -42,18 +42,18 @@
   els.forEach(function (el) { io.observe(el); });
 })();
 
-// Copy-to-clipboard for the install command in the "How it works" timeline.
+// Copy-to-clipboard for any install command (hero + timeline + final CTA).
 (function () {
-  var btn = document.querySelector('[data-copy]');
-  if (!btn) return;
-  btn.addEventListener('click', function () {
-    var text = btn.getAttribute('data-copy');
-    if (navigator.clipboard) navigator.clipboard.writeText(text).catch(function () {});
-    var label = btn.querySelector('[data-copy-label]');
-    if (!label) return;
-    var prev = label.textContent;
-    label.textContent = 'Copied';
-    setTimeout(function () { label.textContent = prev; }, 1600);
+  document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.getAttribute('data-copy');
+      if (navigator.clipboard) navigator.clipboard.writeText(text).catch(function () {});
+      var label = btn.querySelector('[data-copy-label]');
+      if (!label) return;
+      var prev = label.textContent;
+      label.textContent = 'Copied';
+      setTimeout(function () { label.textContent = prev; }, 1600);
+    });
   });
 })();
 
