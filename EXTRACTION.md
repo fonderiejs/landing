@@ -125,7 +125,7 @@ Source: `http://localhost:8080/` (HTTP 200) — reflects committed state `73845d
   | Same SaaS, built 3× | Build A | Build B | Fonderie |
   |---|---|---|---|
   | Lines of backend code | ~4,200 | ~3,800 | ~1,300 |
-  | Time to first deploy | 9 wks | 8 wks | 2 days *(enlarged)* |
+  | Backend ready | 9 wks | 8 wks | Day 1 *(enlarged)* |
   | Security vulnerabilities | 2 *(red)* | 1 *(red)* | 0 *(enlarged, accent)* |
   | You own the source | Yes | Yes | Yes (MIT) |
 
