@@ -1893,6 +1893,11 @@
 .lp-compare__label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted-light); margin: 0 0 6px; }
 .lp-compare__value { font-size: 15px; line-height: 1.5; margin: 0; }
 
+/* reasons variant — dot markers instead of numbered labels */
+.lp-compare--reasons .lp-compare__value { position: relative; padding-left: 18px; }
+.lp-compare--reasons .lp-compare__value::before { content: ""; position: absolute; left: 0; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: var(--color-border-strong); }
+.lp-compare--reasons .lp-compare__card--fonderie .lp-compare__value::before { background: var(--color-accent); }
+
 /* generic card cell (product/resources/contact) */
 .lp-cell { background: var(--color-surface); padding: 28px; display: flex; flex-direction: column; gap: 12px; min-height: 160px; }
 .lp-cell--sm { min-height: 140px; }
