@@ -1925,10 +1925,13 @@
 .lp-metrics th, .lp-metrics td { text-align: right; padding: 14px 16px; border-bottom: 1px solid var(--color-border); }
 .lp-metrics thead th { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-muted); font-weight: 500; }
 .lp-metrics th:first-child, .lp-metrics td:first-child { text-align: left; color: var(--color-muted); }
-.lp-metrics .col-fond { color: var(--color-accent); font-weight: 600; }
+.lp-metrics .col-fond { color: var(--color-accent); font-weight: 600; background: color-mix(in srgb, var(--color-accent) 7%, transparent); }
 .lp-metrics thead .col-fond { color: var(--color-accent); }
 .lp-metrics td { font-family: var(--font-mono); color: var(--color-foreground); }
 .lp-metrics tbody tr:last-child td { border-bottom: 0; }
+.lp-metrics .big { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; }
+.lp-metrics .warn { color: #d0563b; }
+.lp-metrics .good { color: var(--color-accent); }
 
 /* ---- pricing ---- */
 .lp-anchor { display: flex; flex-direction: column; gap: 6px; align-items: center; text-align: center; border: 1px solid var(--color-border); border-radius: 12px; background: color-mix(in srgb, var(--color-accent) 6%, var(--color-surface)); padding: 22px; margin-bottom: 32px; }
@@ -1974,6 +1977,24 @@
 /* audience signal ribbon */
 .lp-ribbon { display: flex; flex-wrap: wrap; gap: 8px; }
 .lp-ribbon span { font-family: var(--font-mono); font-size: 12px; color: var(--color-muted); border: 1px solid var(--color-border); border-radius: 20px; padding: 6px 12px; }
+
+/* module card icons */
+.lp-modicon { display: inline-flex; color: var(--color-accent); margin-bottom: 4px; }
+.lp-modicon svg { width: 22px; height: 22px; }
+
+/* conversion hook in the meta strip */
+.lp-strip__hook { display: inline-flex; align-items: center; gap: 6px; color: var(--color-foreground); font-weight: 600; }
+.lp-strip__hook::before { content: "★"; color: var(--color-accent); font-size: 11px; }
+
+/* ---- micro-interactions ---- */
+.lp-link, .lp-cta, .lp-btn, .lp-btn--ghost, .lp-cell, .lp-copy, .lp-metrics tbody tr { transition: color .16s ease-out, background .16s ease-out, border-color .16s ease-out, transform .16s ease-out, box-shadow .16s ease-out, opacity .16s ease-out; }
+.lp-cta:hover, .lp-btn:hover { transform: translateY(-1px); box-shadow: 0 4px 14px color-mix(in srgb, var(--color-foreground) 18%, transparent); }
+.lp-btn--ghost:hover { transform: translateY(-1px); }
+.lp-cell:hover { background: var(--color-surface-hover); border-color: var(--color-border-strong); }
+.lp-metrics tbody tr:hover { background: color-mix(in srgb, var(--color-foreground) 3%, transparent); }
+@media (prefers-reduced-motion: reduce) {
+  .lp-cta:hover, .lp-btn:hover, .lp-btn--ghost:hover { transform: none; }
+}
 
 /* footer */
 .lp-footer { border-top: 1px solid var(--color-border); padding: 48px 20px; }
