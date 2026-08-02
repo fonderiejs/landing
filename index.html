@@ -154,7 +154,7 @@
         <section class="lp-hero" style="max-width:720px">
           <p class="lp-eyebrow" style="text-transform:none;letter-spacing:-0.01em;font-size:13px;margin:0">Open source · MIT · npm install @fonderie/core</p>
           <h1 class="lp-hero__title" style="max-width:16ch">The open standard for the SaaS backend.</h1>
-          <p class="lp-hero__lede" style="max-width:38rem">Auth, billing, teams, permissions, multi-tenancy — two to three months of infrastructure before you write a single line of product code. Fonderie standardizes the parts every product shares, so you ship product on <strong style="color:var(--color-foreground)">day one</strong>, not week nine.</p>
+          <p class="lp-hero__lede" style="max-width:38rem">Auth, billing, teams, permissions, multi-tenancy — two to three months of infrastructure before you write a single line of product code. Fonderie standardizes the parts every product shares, so you ship product on <strong style="color:var(--color-foreground)">day one</strong>, not week nine. <strong style="color:var(--color-foreground)">Your AI assistant composes the modules; you write what matters.</strong></p>
           <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:4px">
             <button class="lp-btn lp-copy" type="button" data-copy="npm install @fonderie/core" style="cursor:pointer;font-family:var(--font-mono);gap:8px;color:var(--color-background);border:0">
               <span style="opacity:.6">$</span> npm install @fonderie/core
@@ -195,8 +195,13 @@
           <p class="lp-anchor__big" data-reveal style="margin-top:20px;text-align:left;font-size:clamp(16px,2.4vw,20px)">Hiring a backend engineer for 3 months: <s>$30–60k</s>.&nbsp; Starting with Fonderie: <b>free and open source.</b></p>
         </section>
 
+        <section class="lp-aistrip" aria-label="Compatible AI assistants">
+          <span class="lp-aistrip__lead">Works with</span>
+          <span class="lp-aistrip__pill">Claude Code</span><span class="lp-aistrip__pill">Cursor</span><span class="lp-aistrip__pill">Codex</span><span class="lp-aistrip__pill">Windsurf</span><span class="lp-aistrip__pill">Any code-reading AI</span>
+        </section>
+
         <section class="lp-strip">
-          <span>Library, not a service</span><span>Your server · your database</span><span>MIT-licensed</span><span class="lp-strip__hook">Free and open source</span>
+          <span><code style="font-family:var(--font-mono)">npx @fonderie/create</code> scaffolding</span><span>Your server · your database</span><span>MIT-licensed</span><span class="lp-strip__hook">Free and open source</span>
         </section>
 
         <!-- ============================== PROBLEM (unnumbered) ============================== -->
@@ -204,6 +209,27 @@
           <p class="lp-eyebrow" data-reveal>The problem</p>
           <h2 class="lp-h2" data-reveal data-delay="60" style="max-width:26ch">Every SaaS rebuilds the same infrastructure before writing a single line of product code.</h2>
           <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:56ch;margin:0">Whether you're building a scheduling tool or an analytics platform, you still have to build auth, billing, team management, and permissions before you can build your actual product. That's <strong style="color:var(--color-foreground)">two to three months</strong> spent on infrastructure that has nothing to do with why your customers will pay you.</p>
+        </section>
+
+        <!-- ============================== WHY AI ============================== -->
+        <section class="lp-section">
+          <p class="lp-eyebrow" data-reveal>Built for vibe coders</p>
+          <h2 class="lp-h2" data-reveal data-delay="60">Your AI already knows how to use this.</h2>
+          <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:56ch;margin:-24px 0 32px">Fonderie modules are plain TypeScript with explicit interfaces. Your AI assistant doesn't guess at auth logic or improvise a security model — it reads the module, understands the standard shape, and composes it correctly. No hallucinated endpoints. No re-derived schemas. Just proven modules, wired together.</p>
+          <div class="lp-compare" data-reveal data-delay="120">
+            <div class="lp-compare__card lp-compare__card--hosted">
+              <h3 class="lp-compare__name">Without Fonderie</h3>
+              <div><p class="lp-compare__label">01</p><p class="lp-compare__value">AI regenerates auth from scratch</p></div>
+              <div><p class="lp-compare__label">02</p><p class="lp-compare__value">Different every session — no shared standard</p></div>
+              <div><p class="lp-compare__label">03</p><p class="lp-compare__value">Ships the same security holes, again</p></div>
+            </div>
+            <div class="lp-compare__card lp-compare__card--fonderie">
+              <h3 class="lp-compare__name">With Fonderie</h3>
+              <div><p class="lp-compare__label">01</p><p class="lp-compare__value">AI reads <code style="font-family:var(--font-mono);font-size:.85em">@fonderie/auth</code></p></div>
+              <div><p class="lp-compare__label">02</p><p class="lp-compare__value">Composes the standard shape, the same way every time</p></div>
+              <div><p class="lp-compare__label">03</p><p class="lp-compare__value">Audited, consistent, secure — by default</p></div>
+            </div>
+          </div>
         </section>
 
         <!-- ============================== SOLUTION ============================== -->
@@ -215,22 +241,27 @@
             <div class="lp-tstep" data-reveal>
               <div class="lp-tstep__rail"><span class="lp-tstep__marker">1</span><span class="lp-tstep__line"></span></div>
               <div>
-                <h3 class="lp-tstep__title">Install the suite</h3>
+                <h3 class="lp-tstep__title">Scaffold your project</h3>
                 <div class="lp-code">
-                  <code><span class="muted">$</span> npm install <span class="accent">@fonderie/core</span></code>
-                  <button class="lp-copy" type="button" data-copy="npm install @fonderie/core">
+                  <code><span class="muted">$</span> npx <span class="accent">@fonderie/create</span> my-saas</code>
+                  <button class="lp-copy" type="button" data-copy="npx @fonderie/create my-saas">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="13" height="13"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
                     <span data-copy-label>Copy</span>
                   </button>
                 </div>
+                <p class="lp-step__text" style="margin-top:10px">Select your modules. The CLI installs dependencies and wires a working project — auth, billing, workspaces — in one command.</p>
               </div>
             </div>
 
             <div class="lp-tstep" data-reveal data-delay="80">
               <div class="lp-tstep__rail"><span class="lp-tstep__marker">2</span><span class="lp-tstep__line"></span></div>
               <div>
-                <h3 class="lp-tstep__title">Register the modules you need</h3>
-                <div class="lp-codeblock"><pre><span class="cmt">// fonderie.config.ts — the wiring <em style="font-style:normal;color:var(--color-foreground)">is</em> the product</span>
+                <h3 class="lp-tstep__title">Let your AI compose the wiring</h3>
+                <p class="lp-step__text" style="margin:0 0 14px">Your assistant reads the module definitions and generates the config. You describe your product; it handles the plumbing.</p>
+                <div class="lp-chat">
+                  <div class="lp-chat__msg lp-chat__msg--user">Add auth with Google OAuth, team workspaces with multi-tenancy, and Stripe billing with per-seat pricing.</div>
+                </div>
+                <div class="lp-codeblock" style="margin-top:12px"><pre><span class="cmt">// fonderie.config.ts — generated by your AI</span>
 import { <span class="fn">defineApp</span> } from <span class="kw">"@fonderie/core"</span>;
 import { auth } from <span class="kw">"@fonderie/auth"</span>;
 import { billing } from <span class="kw">"@fonderie/billing"</span>;
@@ -238,8 +269,8 @@ import { workspaces } from <span class="kw">"@fonderie/workspaces"</span>;
 
 export default <span class="fn">defineApp</span>({
   modules: [
-    <span class="fn">auth</span>({ passkeys: <span class="kw">true</span>, oauth: [<span class="kw">"google"</span>] }),
-    <span class="fn">workspaces</span>({ multiTenant: <span class="kw">true</span> }),   <span class="cmt">// one agency, ten clients</span>
+    <span class="fn">auth</span>({ oauth: [<span class="kw">"google"</span>], passkeys: <span class="kw">true</span> }),
+    <span class="fn">workspaces</span>({ multiTenant: <span class="kw">true</span> }),
     <span class="fn">billing</span>({ provider: <span class="kw">"stripe"</span>, seats: <span class="kw">true</span> }),
   ],
 });</pre></div>
@@ -407,8 +438,8 @@ export const <span class="fn">createSchedule</span> = <span class="fn">workspace
           <h2 class="lp-finalcta__title" data-reveal>Spend month one on your product, not on auth.</h2>
           <p class="lp-finalcta__lede" data-reveal data-delay="60">One open, audited standard for the parts every SaaS shares. Compose it in an afternoon and get back to the only part that's actually yours.</p>
           <div class="lp-finalcta__row" data-reveal data-delay="90">
-            <button class="lp-btn lp-copy" type="button" data-copy="npm install @fonderie/core" style="cursor:pointer;font-family:var(--font-mono);gap:8px;color:var(--color-background);border:0">
-              <span style="opacity:.6">$</span> npm install @fonderie/core
+            <button class="lp-btn lp-copy" type="button" data-copy="npx @fonderie/create my-saas" style="cursor:pointer;font-family:var(--font-mono);gap:8px;color:var(--color-background);border:0">
+              <span style="opacity:.6">$</span> npx @fonderie/create my-saas
               <span data-copy-label style="opacity:.7">⧉</span>
             </button>
             <a class="lp-btn lp-btn--ghost" href="https://github.com/fonderiejs/fonderie">
@@ -416,8 +447,9 @@ export const <span class="fn">createSchedule</span> = <span class="fn">workspace
               Star on GitHub
             </a>
           </div>
+          <p data-reveal data-delay="105" style="font-size:14px;color:var(--color-muted);margin:0"><strong style="color:var(--color-foreground)">Make your AI Fonderie-aware.</strong> <a href="https://github.com/fonderiejs/fonderie/tree/main/prompts" target="_blank" rel="noopener noreferrer" style="color:var(--color-accent)">Copy our system prompts for Claude Code and Cursor →</a></p>
           <div class="lp-ribbon" data-reveal data-delay="120" style="justify-content:center">
-            <span>Agencies: scaffold client SaaS in hours, not weeks</span><span>Solo founders: ship in a weekend</span><span>Teams: stop re-implementing org management</span>
+            <span>Vibe coders: your AI composes the backend, you write the product</span><span>Agencies: scaffold client SaaS in hours, not weeks</span><span>Solo founders: ship in a weekend</span><span>Teams: stop re-implementing org management</span>
           </div>
         </section>
 
