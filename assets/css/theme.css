@@ -2201,3 +2201,44 @@
 @media (max-width: 560px) {
   .lp-hbento { grid-template-columns: 1fr; }
 }
+
+/* ================================================================
+   Phase 4 — Difference section visual elevation. Content/structure
+   unchanged from prior work; this is purely tint, contrast, motion. */
+
+/* section tint: subtle warm-grey step in light, elevated surface in
+   dark -- reuses the existing theme-reactive --color-surface-alt
+   token rather than hardcoding new colors */
+.lp-section--tint { background: var(--color-surface-alt); }
+
+/* Proprietary card: muted, fading -- blends into the section instead
+   of popping brighter than it */
+.lp-compare__card--hosted {
+  background: transparent;
+  box-shadow: inset 3px 0 0 color-mix(in srgb, #d0563b 22%, transparent);
+}
+.lp-compare__card--hosted .lp-compare__value { color: var(--color-muted); }
+
+/* Fonderie card: elevated -- lighter than the tinted section, crisp
+   amber edge, real drop shadow (not just the inset accent border) */
+.lp-compare__card--fonderie {
+  box-shadow:
+    inset 3px 0 0 var(--color-accent),
+    0 12px 32px -14px color-mix(in srgb, var(--color-accent) 35%, transparent),
+    0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* slide-in-from-side reveal (reuses the existing [data-reveal]/
+   [data-shown] IO mechanism in landing.js -- only the transform
+   differs from the default translateY) */
+[data-reveal][data-reveal-dir="left"] { transform: translateX(-30px); }
+[data-reveal][data-reveal-dir="left"][data-shown] { transform: none; }
+[data-reveal][data-reveal-dir="right"] { transform: translateX(30px); }
+[data-reveal][data-reveal-dir="right"][data-shown] { transform: none; }
+
+/* "Coming soon" badge: muted amber pill, amber text -- not white-on-amber */
+.lp-compare__badge--soon {
+  background: color-mix(in srgb, var(--color-accent) 14%, transparent);
+  color: var(--color-accent);
+  border-color: color-mix(in srgb, var(--color-accent) 30%, transparent);
+}
