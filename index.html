@@ -313,20 +313,63 @@ export const <span class="fn">createSchedule</span> = <span class="fn">workspace
           <p class="lp-eyebrow" data-reveal>Proof</p>
           <h2 class="lp-h2" data-reveal data-delay="60" style="max-width:28ch">We built the same SaaS three times. Only the Fonderie build shipped clean.</h2>
           <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:52ch;margin:0 0 32px">We built the same SaaS three ways. The Fonderie build shipped zero vulnerabilities in a third of the code.</p>
-          <div data-reveal data-delay="120" style="overflow-x:auto;border:1px solid var(--color-border);border-radius:10px">
-            <table class="lp-metrics">
-              <thead>
-                <tr><th>Same SaaS, built 3×</th><th>Build A</th><th>Build B</th><th class="col-fond">Fonderie</th></tr>
-              </thead>
-              <tbody>
-                <tr><td>Lines of backend code</td><td>~4,200</td><td>~3,800</td><td class="col-fond">~1,300</td></tr>
-                <tr><td>Backend ready</td><td>9 wks</td><td>8 wks</td><td class="col-fond"><span class="big">Day 1</span></td></tr>
-                <tr><td>Security vulnerabilities</td><td><span class="warn">2</span></td><td><span class="warn">1</span></td><td class="col-fond"><span class="big good">0</span></td></tr>
-                <tr><td>You own the source</td><td>Yes</td><td>Yes</td><td class="col-fond">Yes (MIT)</td></tr>
-              </tbody>
-            </table>
+
+          <div class="lp-bento" data-reveal data-delay="120">
+            <div class="lp-bento__card lp-bento__card--hero">
+              <p class="lp-bento__num">0</p>
+              <p class="lp-bento__label">Security vulnerabilities</p>
+              <p class="lp-bento__sub">Build A shipped <span class="warn">2</span>. Build B shipped <span class="warn">1</span>. Fonderie shipped zero — audited by default.</p>
+            </div>
+            <div class="lp-bento__card">
+              <p class="lp-bento__num">~1,300</p>
+              <p class="lp-bento__label">Lines of backend code</p>
+              <p class="lp-bento__sub">vs ~4,200 and ~3,800 for the hand-built runs</p>
+            </div>
+            <div class="lp-bento__card">
+              <p class="lp-bento__num">Day 1</p>
+              <p class="lp-bento__label">Backend ready</p>
+              <p class="lp-bento__sub">vs 9 weeks and 8 weeks</p>
+            </div>
+            <div class="lp-bento__card">
+              <p class="lp-bento__num">36</p>
+              <p class="lp-bento__label">Sessions, pre-registered</p>
+              <p class="lp-bento__sub">Thresholds locked before any data was collected</p>
+            </div>
+            <div class="lp-bento__card">
+              <p class="lp-bento__num">MIT</p>
+              <p class="lp-bento__label">You own the source</p>
+              <p class="lp-bento__sub">Every run. No exceptions.</p>
+            </div>
           </div>
-          <p style="font-size:13px;color:var(--color-muted);margin:16px 0 0;max-width:56ch">Reproducible and pre-registered. We ran 36 sessions on <code style="font-family:var(--font-mono)">claude-opus-4-8</code>, thresholds locked before any data was collected. The full harness, raw transcripts, and re-derivation scripts are in the repo: <a href="https://github.com/fonderiejs/fonderie/tree/main/experiments/phase41-2026-07" target="_blank" rel="noopener noreferrer" style="color:var(--color-accent)">experiments/phase41-2026-07 →</a> Re-run it and check.</p>
+
+          <div class="lp-before-after" data-reveal data-delay="160">
+            <div class="lp-before-after__side">
+              <p class="lp-before-after__label">Scattered infrastructure</p>
+              <div class="lp-before-after__bubbles">
+                <span class="lp-bubble" style="--r:-6deg">auth</span>
+                <span class="lp-bubble" style="--r:4deg">billing</span>
+                <span class="lp-bubble" style="--r:-3deg">permissions</span>
+                <span class="lp-bubble" style="--r:7deg">teams</span>
+                <span class="lp-bubble" style="--r:-8deg">webhooks</span>
+                <span class="lp-bubble" style="--r:5deg">email</span>
+              </div>
+            </div>
+            <div class="lp-before-after__arrow" aria-hidden="true">→</div>
+            <div class="lp-before-after__side lp-before-after__side--after">
+              <p class="lp-before-after__label">One composed stack</p>
+              <div class="lp-before-after__stack">
+                <span class="lp-stack-chip">auth</span>
+                <span class="lp-stack-chip">billing</span>
+                <span class="lp-stack-chip">permissions</span>
+                <span class="lp-stack-chip">workspaces</span>
+                <span class="lp-stack-chip">courier</span>
+                <span class="lp-stack-chip">core</span>
+              </div>
+            </div>
+          </div>
+          <p class="lp-before-after__caption" data-reveal data-delay="180">From scattered infrastructure to a composed backend.</p>
+
+          <p style="font-size:13px;color:var(--color-muted);margin:24px 0 0;max-width:56ch">Reproducible and pre-registered. We ran 36 sessions on <code style="font-family:var(--font-mono)">claude-opus-4-8</code>, thresholds locked before any data was collected. The full harness, raw transcripts, and re-derivation scripts are in the repo: <a href="https://github.com/fonderiejs/fonderie/tree/main/experiments/phase41-2026-07" target="_blank" rel="noopener noreferrer" style="color:var(--color-accent);text-decoration:underline;text-underline-offset:2px">experiments/phase41-2026-07 →</a> Re-run it and check.</p>
         </section>
 
         <!-- ============================== PACKAGES ============================== -->
