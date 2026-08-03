@@ -2005,9 +2005,6 @@
 .lp-cta:hover, .lp-btn:hover { transform: translateY(-1px); box-shadow: 0 4px 14px color-mix(in srgb, var(--color-foreground) 18%, transparent); }
 .lp-btn--ghost:hover { transform: translateY(-1px); }
 .lp-cell:hover { background: var(--color-surface-hover); border-color: var(--color-border-strong); }
-@media (prefers-reduced-motion: reduce) {
-  .lp-cta:hover, .lp-btn:hover, .lp-btn--ghost:hover { transform: none; }
-}
 
 /* footer */
 .lp-footer { border-top: 1px solid var(--color-border); padding: 48px 20px; }
@@ -2112,9 +2109,6 @@
 .lp-codepanel__phase[data-shown] { display: block; opacity: .55; transform: translateY(0); }
 .lp-codepanel__phase[data-active] { opacity: 1; }
 .lp-codepanel__phase--enter { opacity: 0 !important; transform: translateY(10px) !important; }
-@media (prefers-reduced-motion: reduce) {
-  .lp-codepanel__phase { transition: none; }
-}
 
 /* Difference section: Core/Cloud sub-badges inside the single Fonderie column */
 .lp-compare__badges { display: flex; flex-wrap: wrap; gap: 6px; margin: -10px 0 22px; }
@@ -2282,3 +2276,30 @@
 
 /* footer sits flush below the dark band, no extra gap */
 .lp-finalcta--dark + .lp-footer { margin-top: 0; }
+
+/* ================================================================
+   Phase 6 — global motion polish + final QA fixes. */
+
+/* 6D: one comprehensive reduced-motion kill-switch, replacing the
+   scattered per-component rules removed above. Non-negotiable. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* 6E-2: terminal snippet hover state (was missing entirely) */
+.lp-code { transition: border-color .15s ease-out, box-shadow .15s ease-out; }
+.lp-code:hover { border-color: color-mix(in srgb, var(--color-accent) 45%, var(--color-border)); box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-accent) 12%, transparent); }
+
+/* 6B: pricing divider — 32px -> 40px so it reads as a beat, not a hairline */
+.lp-pricing-line { padding-top: 40px; padding-bottom: 40px; }
+
+/* 6E-4: extra safety margin on the mobile hero clamp -- "AI-built SaaS."
+   in its nowrap span is close to the available width at ~375px; give
+   it more room to shrink into rather than risk overflow */
+@media (max-width: 640px) {
+  .lp-hero__title--big { font-size: clamp(30px, 10vw, 40px); }
+}
