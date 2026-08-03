@@ -2144,10 +2144,10 @@
   .lp-codepanel__phase { transition: none; }
 }
 
-/* Difference section: Fonderie Cloud card (third column, "coming soon") */
-.lp-compare__card--cloud { background: var(--color-surface-alt); }
-.lp-compare__card--cloud .lp-compare__name { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; color: var(--color-muted); }
-.lp-compare__soon { font-family: var(--font-mono); font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-muted); border: 1px solid var(--color-border); border-radius: 20px; padding: 2px 8px; }
+/* Difference section: Core/Cloud sub-badges inside the single Fonderie column */
+.lp-compare__badges { display: flex; flex-wrap: wrap; gap: 6px; margin: -10px 0 22px; }
+.lp-compare__badge { font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; letter-spacing: 0.04em; color: var(--color-muted); border: 1px solid var(--color-border); border-radius: 20px; padding: 3px 10px; }
+.lp-compare__badge--live { color: var(--color-accent); border-color: color-mix(in srgb, var(--color-accent) 50%, var(--color-border)); }
 
 /* packages: compact grouped list for the remaining 12 (not full cards) */
 .lp-pkgmore { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--color-border); }
