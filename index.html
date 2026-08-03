@@ -377,84 +377,40 @@ export const <span class="fn">createSchedule</span> = <span class="fn">workspace
           <p class="lp-eyebrow" data-reveal>The packages</p>
           <h2 class="lp-h2" data-reveal data-delay="60">Real packages, on the real registry.</h2>
           <p class="lp-hero__lede" data-reveal data-delay="90" style="max-width:52ch;margin:-24px 0 32px">Real packages on npm. Click through and read the code. Already running Express, Hono, or Koa? Mount Fonderie inside your existing app — no rewrite needed.</p>
-          <div class="lp-pkgrid" data-reveal data-delay="120">
-            <a class="lp-pkg" href="https://www.npmjs.com/package/@fonderie/core" target="_blank" rel="noopener noreferrer">
-              <div class="lp-pkg__head"><h3 class="lp-pkg__name">@fonderie/core</h3><span class="lp-pkg__ver">npm ↗</span></div>
-              <p class="lp-pkg__desc">App definition, module registry, and standard shapes.</p>
-              <div class="lp-pkg__tags"><span>core</span><span>registry</span></div>
-              <span class="lp-pkg__author">Fonderie Labs</span>
+          <div class="lp-hbento" data-reveal data-delay="120">
+            <a class="lp-hbento__card" href="https://www.npmjs.com/package/@fonderie/auth" target="_blank" rel="noopener noreferrer">
+              <span class="lp-hbento__tag">Business Logic</span>
+              <h3 class="lp-hbento__name">@fonderie/auth</h3>
+              <p class="lp-hbento__desc">Drop-in auth for SaaS</p>
             </a>
-            <a class="lp-pkg" href="https://www.npmjs.com/package/@fonderie/auth" target="_blank" rel="noopener noreferrer">
-              <div class="lp-pkg__head"><h3 class="lp-pkg__name">@fonderie/auth</h3><span class="lp-pkg__ver">npm ↗</span></div>
-              <p class="lp-pkg__desc">Sessions, passkeys, OAuth, and password flows.</p>
-              <div class="lp-pkg__tags"><span>auth</span><span>security</span></div>
-              <span class="lp-pkg__author">Fonderie Labs</span>
+            <a class="lp-hbento__card" href="https://www.npmjs.com/package/@fonderie/billing" target="_blank" rel="noopener noreferrer">
+              <span class="lp-hbento__tag">Business Logic</span>
+              <h3 class="lp-hbento__name">@fonderie/billing</h3>
+              <p class="lp-hbento__desc">Subscriptions, seats, usage, and webhooks</p>
             </a>
-            <a class="lp-pkg" href="https://www.npmjs.com/package/@fonderie/billing" target="_blank" rel="noopener noreferrer">
-              <div class="lp-pkg__head"><h3 class="lp-pkg__name">@fonderie/billing</h3><span class="lp-pkg__ver">npm ↗</span></div>
-              <p class="lp-pkg__desc">Subscriptions, seats, usage, and webhooks.</p>
-              <div class="lp-pkg__tags"><span>billing</span><span>stripe</span></div>
-              <span class="lp-pkg__author">Fonderie Labs</span>
+            <a class="lp-hbento__card" href="https://www.npmjs.com/package/@fonderie/workspaces" target="_blank" rel="noopener noreferrer">
+              <span class="lp-hbento__tag">Business Logic</span>
+              <h3 class="lp-hbento__name">@fonderie/workspaces</h3>
+              <p class="lp-hbento__desc">Teams, orgs, invites, and multi-tenancy</p>
             </a>
-            <a class="lp-pkg" href="https://www.npmjs.com/package/@fonderie/workspaces" target="_blank" rel="noopener noreferrer">
-              <div class="lp-pkg__head"><h3 class="lp-pkg__name">@fonderie/workspaces</h3><span class="lp-pkg__ver">npm ↗</span></div>
-              <p class="lp-pkg__desc">Teams, orgs, invites, and multi-tenancy.</p>
-              <div class="lp-pkg__tags"><span>teams</span><span>multi-tenant</span></div>
-              <span class="lp-pkg__author">Fonderie Labs</span>
+            <a class="lp-hbento__card" href="https://www.npmjs.com/package/@fonderie/permissions" target="_blank" rel="noopener noreferrer">
+              <span class="lp-hbento__tag">Business Logic</span>
+              <h3 class="lp-hbento__name">@fonderie/permissions</h3>
+              <p class="lp-hbento__desc">Role-based access control</p>
             </a>
-            <a class="lp-pkg" href="https://www.npmjs.com/package/@fonderie/permissions" target="_blank" rel="noopener noreferrer">
-              <div class="lp-pkg__head"><h3 class="lp-pkg__name">@fonderie/permissions</h3><span class="lp-pkg__ver">npm ↗</span></div>
-              <p class="lp-pkg__desc">Roles and tenant-scoped access checks.</p>
-              <div class="lp-pkg__tags"><span>rbac</span><span>access</span></div>
-              <span class="lp-pkg__author">Fonderie Labs</span>
+            <a class="lp-hbento__card" href="https://www.npmjs.com/package/@fonderie/courier" target="_blank" rel="noopener noreferrer">
+              <span class="lp-hbento__tag">Business Logic</span>
+              <h3 class="lp-hbento__name">@fonderie/courier</h3>
+              <p class="lp-hbento__desc">Email, SMS, and push notification dispatch</p>
             </a>
-            <a class="lp-pkg" href="https://www.npmjs.com/package/@fonderie/courier" target="_blank" rel="noopener noreferrer">
-              <div class="lp-pkg__head"><h3 class="lp-pkg__name">@fonderie/courier</h3><span class="lp-pkg__ver">npm ↗</span></div>
-              <p class="lp-pkg__desc">Email, SMS, and push notification dispatch.</p>
-              <div class="lp-pkg__tags"><span>email</span><span>notifications</span></div>
-              <span class="lp-pkg__author">Fonderie Labs</span>
+            <a class="lp-hbento__card lp-hbento__card--adapter" href="https://www.npmjs.com/package/@fonderie/adapter-express" target="_blank" rel="noopener noreferrer">
+              <span class="lp-hbento__tag">Adapters</span>
+              <h3 class="lp-hbento__name">@fonderie/adapter-express</h3>
+              <p class="lp-hbento__desc">Mount inside Express, Hono, or Koa — no rewrite needed</p>
             </a>
           </div>
-          <p class="lp-eyebrow" data-reveal style="margin:28px 0 0;text-transform:none;letter-spacing:-0.01em">Dependencies point one way — modules depend on core, never on your product. Your code stays yours.</p>
-          <p class="lp-eyebrow" data-reveal style="margin:6px 0 0;text-transform:none;letter-spacing:-0.01em;color:var(--color-muted-light)">Web today. More platforms on the roadmap.</p>
 
-          <div class="lp-pkgmore" data-reveal data-delay="140">
-            <p class="lp-pkgmore__lead">Plus 12 more — the full platform, not just the six above:</p>
-            <div class="lp-pkgmore__groups">
-              <div class="lp-pkgmore__group">
-                <p class="lp-pkgmore__label">Foundation</p>
-                <div class="lp-pkgmore__pills">
-                  <a href="https://www.npmjs.com/package/@fonderie/store" target="_blank" rel="noopener noreferrer">@fonderie/store</a>
-                  <a href="https://www.npmjs.com/package/@fonderie/client" target="_blank" rel="noopener noreferrer">@fonderie/client</a>
-                </div>
-              </div>
-              <div class="lp-pkgmore__group">
-                <p class="lp-pkgmore__label">Business logic</p>
-                <div class="lp-pkgmore__pills">
-                  <a href="https://www.npmjs.com/package/@fonderie/customers" target="_blank" rel="noopener noreferrer">@fonderie/customers</a>
-                </div>
-              </div>
-              <div class="lp-pkgmore__group">
-                <p class="lp-pkgmore__label">Operations</p>
-                <div class="lp-pkgmore__pills">
-                  <a href="https://www.npmjs.com/package/@fonderie/audit" target="_blank" rel="noopener noreferrer">@fonderie/audit</a>
-                  <a href="https://www.npmjs.com/package/@fonderie/events" target="_blank" rel="noopener noreferrer">@fonderie/events</a>
-                  <a href="https://www.npmjs.com/package/@fonderie/logger" target="_blank" rel="noopener noreferrer">@fonderie/logger</a>
-                  <a href="https://www.npmjs.com/package/@fonderie/rate-limit" target="_blank" rel="noopener noreferrer">@fonderie/rate-limit</a>
-                  <a href="https://www.npmjs.com/package/@fonderie/webhooks" target="_blank" rel="noopener noreferrer">@fonderie/webhooks</a>
-                  <a href="https://www.npmjs.com/package/@fonderie/config" target="_blank" rel="noopener noreferrer">@fonderie/config</a>
-                </div>
-              </div>
-              <div class="lp-pkgmore__group">
-                <p class="lp-pkgmore__label">Adapters — mount into what you already have</p>
-                <div class="lp-pkgmore__pills">
-                  <a href="https://www.npmjs.com/package/@fonderie/adapter-express" target="_blank" rel="noopener noreferrer">@fonderie/adapter-express</a>
-                  <a href="https://www.npmjs.com/package/@fonderie/adapter-hono" target="_blank" rel="noopener noreferrer">@fonderie/adapter-hono</a>
-                  <a href="https://www.npmjs.com/package/@fonderie/adapter-koa" target="_blank" rel="noopener noreferrer">@fonderie/adapter-koa</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <p class="lp-eyebrow" data-reveal data-delay="140" style="margin:24px 0 0;text-transform:none;letter-spacing:-0.01em">Plus 12 more modules — audit, events, rate-limit, webhooks, config, and more. All MIT-licensed. <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" style="color:var(--color-accent);text-decoration:underline;text-underline-offset:2px">See the full registry on GitHub →</a></p>
         </section>
 
         <!-- ============================== PRICING ============================== -->
