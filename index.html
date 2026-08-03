@@ -151,22 +151,27 @@
       <main class="lp__wrap">
 
         <!-- ============================== HERO ============================== -->
-        <section class="lp-hero" style="max-width:720px">
+        <section class="lp-hero lp-hero--big" style="max-width:760px">
           <p class="lp-eyebrow" style="text-transform:none;letter-spacing:-0.01em;font-size:13px;margin:0">AI skill · MIT · Works with Claude Code, Cursor, Codex</p>
-          <h1 class="lp-hero__title" style="max-width:15ch">The open standard for AI-built SaaS.</h1>
+          <h1 class="lp-hero__title lp-hero__title--big" style="max-width:15ch">The open standard for AI-built SaaS.</h1>
           <p class="lp-hero__lede" style="max-width:38rem">Every AI assistant asked to build a SaaS invents its own infrastructure — auth, billing, permissions, teams — different every session, security holes nobody audits. Fonderie gives every LLM one standard to compose from: pre-built, reviewable modules that snap into any stack. <strong style="color:var(--color-foreground)">Your AI stops improvising. You start shipping.</strong></p>
           <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:4px">
-            <button class="lp-btn lp-copy" type="button" data-copy="npx @fonderie/create my-saas" style="cursor:pointer;font-family:var(--font-mono);gap:8px;color:var(--color-background);border:0">
-              <span style="opacity:.6">$</span> npx @fonderie/create my-saas
-              <span data-copy-label style="opacity:.7">⧉</span>
-            </button>
+            <a class="lp-btn" href="https://github.com/fonderiejs/fonderie">Get started</a>
             <a class="lp-btn lp-btn--ghost" href="https://github.com/fonderiejs/fonderie">
               <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
               View on GitHub
             </a>
           </div>
 
-          <p style="font-family:var(--font-mono);font-size:12.5px;color:var(--color-muted);margin:2px 0 0">MIT-licensed · Open source on GitHub · Zero external servers in your stack</p>
+          <div class="lp-code" style="max-width:340px;margin-top:2px">
+            <code><span class="muted">$</span> npx <span class="accent">@fonderie/create</span> my-saas</code>
+            <button class="lp-copy" type="button" data-copy="npx @fonderie/create my-saas">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="13" height="13"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+              <span data-copy-label>Copy</span>
+            </button>
+          </div>
+
+          <p style="font-family:var(--font-mono);font-size:12.5px;color:var(--color-muted);margin:6px 0 0">MIT-licensed · Open source on GitHub · Zero external servers in your stack</p>
           <p style="font-family:var(--font-mono);font-size:12.5px;color:var(--color-muted);margin:-8px 0 0">Pre-1.0 and production-ready. MIT-licensed. Auditable end to end.</p>
 
           <!-- the 9-week vs day-one ledger -->
