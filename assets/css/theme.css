@@ -2242,3 +2242,43 @@
   color: var(--color-accent);
   border-color: color-mix(in srgb, var(--color-accent) 30%, transparent);
 }
+
+/* ================================================================
+   Phase 5A — FAQ elevation. Section reuses the Phase 4 tint class.
+   Solution section (chat + code) intentionally left untouched --
+   it's already the strongest visual element on the page. */
+
+.lp-faq summary { font-size: 17px; padding: 22px 4px; }
+.lp-faq__answer { padding: 0 4px 24px; }
+.lp-faq details { transition: box-shadow .2s ease-out; }
+.lp-faq details[open] { box-shadow: inset 3px 0 0 var(--color-accent); }
+.lp-faq details[open] summary { padding-left: 14px; color: var(--color-accent); }
+.lp-faq summary::after { display: inline-flex; transform: rotate(0deg); transition: transform .25s ease-out, color .15s; }
+.lp-faq details[open] summary::after { content: "+"; color: var(--color-accent); transform: rotate(45deg); }
+
+/* ================================================================
+   Phase 5B — Final CTA: fixed dark band, "end of the movie."
+   Deliberately NOT theme-reactive (unlike the hero/Difference, which
+   stayed theme-reactive per that earlier decision) -- this is one
+   closing bookend, same precedent as the Solution section's dark
+   code panel. Colors are literal copies of the site's own dark-theme
+   oklch values (base.css :root[data-theme="dark"]), not invented. */
+
+.lp-finalcta--dark {
+  background: oklch(17% 0.004 95);
+  border-radius: 16px;
+  margin: 8px 0 0;
+  padding: clamp(56px, 9vw, 96px) 24px;
+}
+.lp-finalcta--dark .lp-finalcta__title { color: oklch(94% 0.003 95); font-size: clamp(30px, 5vw, 56px); }
+.lp-finalcta--dark .lp-finalcta__lede { color: oklch(68% 0.01 95); }
+.lp-finalcta--dark .lp-finalcta__prompts { font-size: 14px; color: oklch(68% 0.01 95); margin: 0; }
+.lp-finalcta--dark .lp-finalcta__prompts a { color: oklch(68% 0.16 45); }
+.lp-finalcta--dark .lp-btn { background: oklch(68% 0.16 45); color: oklch(17% 0.004 95); border: 0; transition: box-shadow .2s ease-out, transform .16s ease-out; }
+.lp-finalcta--dark .lp-btn:hover { box-shadow: 0 0 0 1px oklch(68% 0.16 45), 0 8px 28px -6px oklch(68% 0.16 45 / 0.55); transform: translateY(-1px); }
+.lp-finalcta--dark .lp-btn--ghost { color: oklch(94% 0.003 95); border-color: oklch(36% 0.007 95); }
+.lp-finalcta--dark .lp-btn--ghost:hover { background: oklch(24% 0.005 95); border-color: oklch(68% 0.01 95); }
+.lp-finalcta--dark .lp-ribbon span { color: oklch(68% 0.01 95); border-color: oklch(30% 0.006 95); }
+
+/* footer sits flush below the dark band, no extra gap */
+.lp-finalcta--dark + .lp-footer { margin-top: 0; }
