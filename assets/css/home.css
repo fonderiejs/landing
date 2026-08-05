@@ -10,7 +10,9 @@
   --bg: #ffffff;
   --ink: oklch(20% 0.01 40);
   --muted: oklch(45% 0.015 40);
-  --muted2: oklch(62% 0.012 40);
+  /* darkened from oklch(62% 0.012 40) (#8d8481, 3.65:1 on white) to meet
+     WCAG AA 4.5:1 — used as text color for small uppercase labels */
+  --muted2: #7d7573;
   --line: oklch(90% 0.005 40);
   --tint: color-mix(in srgb, oklch(66% 0.21 41) 6%, #fff);
   /* darkened from oklch(60% 0.2 41) (#dc4500, 4.29:1 on white) to meet
