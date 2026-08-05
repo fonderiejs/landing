@@ -241,7 +241,11 @@ a:hover { color: var(--ink); }
 .mobile-menu__divider { border: 0; border-top: 1px solid #f0f0f0; margin: 4px 0 16px; }
 
 .mobile-menu__cta-wrap { margin-bottom: 8px; }
-.mobile-menu__cta { width: 100%; justify-content: center; }
+/* width:100% doesn't always compute correctly on this inline-flex .btn
+   nested inside the scrollable sheet on iOS Safari; -webkit-fill-available
+   is a known fallback there. Other browsers ignore the invalid value and
+   keep the width:100% declaration above it. */
+.mobile-menu__cta { width: 100%; width: -webkit-fill-available; justify-content: center; }
 
 @media (min-width: 768px) {
   .mobile-menu { display: none !important; }
