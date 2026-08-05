@@ -61,4 +61,17 @@
   } else {
     revealEls.forEach(function (el) { el.setAttribute('data-shown', ''); });
   }
+
+  // ---- pause the hero cloud animation once it's scrolled out of view ----
+  // it's `animation: ... infinite`, so without this it keeps compositing
+  // every frame for the entire session, adding constant background cost.
+  var heroBackdrop = document.querySelector('.hero__backdrop');
+  if (heroBackdrop && 'IntersectionObserver' in window) {
+    var bgIo = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        heroBackdrop.style.animationPlayState = entry.isIntersecting ? 'running' : 'paused';
+      });
+    }, { threshold: 0 });
+    bgIo.observe(heroBackdrop);
+  }
 })();
