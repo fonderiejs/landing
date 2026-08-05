@@ -3,10 +3,8 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
-    <link rel="stylesheet" href="/assets/css/base.css"/>
-    <link rel="stylesheet" href="/assets/css/theme.css"/>
-    <title>Fonderie — The backend suite for AI-built SaaS</title>
-    <meta name="description" content="Every new SaaS project, your AI assistant regenerates the same backend from scratch. Fonderie is the suite that gives your assistant production-tested backend modules to compose instead. Ship faster. Fewer security holes. Open-source core, with managed cloud coming soon."/>
+    <title>Fonderie — The open standard for AI-built SaaS</title>
+    <meta name="description" content="Every SaaS rebuilds the same auth, billing, teams, and multi-tenancy before writing a single line of product code. Fonderie is the open standard for that infrastructure — a skill wired into your repo, running on your server, against your database. Compose it in an afternoon; spend the rest on the part that's actually yours."/>
     <meta name="application-name" content="Fonderie"/>
     <meta name="author" content="Fonderie"/>
     <link rel="manifest" href="/manifest.json"/>
@@ -20,32 +18,28 @@
     <meta name="mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-title" content="Fonderie"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
-    <meta property="og:title" content="Fonderie — The backend suite for AI-built SaaS"/>
-    <meta property="og:description" content="Every new SaaS project, your AI assistant regenerates the same backend from scratch. Fonderie is the suite that gives your assistant production-tested backend modules to compose instead. Ship faster. Fewer security holes. Open-source core, with managed cloud coming soon."/>
+    <meta property="og:title" content="Fonderie — The open standard for AI-built SaaS"/>
+    <meta property="og:description" content="Every SaaS rebuilds the same auth, billing, teams, and multi-tenancy before writing a single line of product code. Fonderie is the open standard for that infrastructure — a skill wired into your repo, running on your server, against your database. Compose it in an afternoon; spend the rest on the part that's actually yours."/>
     <meta property="og:url" content="https://fonderiejs.com"/>
     <meta property="og:site_name" content="Fonderie"/>
     <meta property="og:image" content="https://fonderiejs.com/assets/img/og-image.png"/>
     <meta property="og:image:type" content="image/png"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
-    <meta property="og:image:alt" content="Fonderie — The backend suite for AI-built SaaS"/>
+    <meta property="og:image:alt" content="Fonderie — The open standard for AI-built SaaS"/>
     <meta property="og:type" content="website"/>
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="Fonderie — The backend suite for AI-built SaaS"/>
-    <meta name="twitter:description" content="Every new SaaS project, your AI assistant regenerates the same backend from scratch. Fonderie is the suite that gives your assistant production-tested backend modules to compose instead. Ship faster. Fewer security holes. Open-source core, with managed cloud coming soon."/>
+    <meta name="twitter:title" content="Fonderie — The open standard for AI-built SaaS"/>
+    <meta name="twitter:description" content="Every SaaS rebuilds the same auth, billing, teams, and multi-tenancy before writing a single line of product code. Fonderie is the open standard for that infrastructure — a skill wired into your repo, running on your server, against your database. Compose it in an afternoon; spend the rest on the part that's actually yours."/>
     <meta name="twitter:image" content="https://fonderiejs.com/assets/img/og-image.png"/>
-    <meta name="twitter:image:alt" content="Fonderie — The backend suite for AI-built SaaS"/>
+    <meta name="twitter:image:alt" content="Fonderie — The open standard for AI-built SaaS"/>
     <meta name="twitter:image:type" content="image/png"/>
     <meta name="twitter:image:width" content="1200"/>
     <meta name="twitter:image:height" content="630"/>
     <link rel="icon" href="/assets/img/icon.svg" sizes="any" type="image/svg+xml"/>
-    <script>
-      (function () {
-        var t = localStorage.getItem('theme');
-        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
-      })();
-    </script>
-    <script src="/assets/js/landing.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -75,7 +69,7 @@
           "url": "https://fonderiejs.com/",
           "applicationCategory": "DeveloperApplication",
           "operatingSystem": "Any",
-          "description": "Fonderie is the backend suite for AI-built SaaS. AI coding assistants compose production-tested modules — login, billing, teams, permissions — instead of regenerating boilerplate every session. Open-source core, with managed cloud for teams that don’t want to self-host.",
+          "description": "Fonderie is the open standard for the SaaS backend — the auth, billing, teams, permissions, and multi-tenancy that every SaaS rebuilds before writing product code. It's a skill wired into your repo, running in your process, against your database. You own the source (MIT), self-host it, and swap any provider. Free and open source — managed hosting is on the roadmap.",
           "downloadUrl": "https://github.com/fonderiejs/fonderie",
           "isAccessibleForFree": true,
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -87,34 +81,34 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "What is Fonderie?",
+              "name": "Is Fonderie a service? Do you host my data?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Fonderie is the backend suite for AI-built SaaS. AI coding assistants compose production-tested modules — login, billing, teams, and permissions — instead of regenerating that code from scratch each session. Open-source core for developers who want control. Managed cloud for teams that don’t want to self-host."
+                "text": "No. Fonderie is a skill wired into your project — not a hosted service. The skill files live in your repo; your AI reads them as project context, your server runs the generated code. No Fonderie server is ever in your request path, and we never host your data."
               }
             },
             {
               "@type": "Question",
-              "name": "Which AI coding assistants work with Fonderie?",
+              "name": "Can I swap Stripe for another provider?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Fonderie works with Claude Code natively, with Cursor via rules, and with Codex via AGENTS.md. Because the suite is plain instructions plus a TypeScript SDK, any model that can read a repository can use it. Install once with npm install @fonderie/core."
+                "text": "Yes. The modules define the standard shape — subscriptions, seats, webhooks — and providers plug in behind it. Start on Stripe, move to Paddle, LemonSqueezy, or your own processor without rewriting your product code. The integration is the product; the provider is a detail."
               }
             },
             {
               "@type": "Question",
-              "name": "Is Fonderie open source?",
+              "name": "Is Fonderie only for new projects?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. Fonderie Core is open-source backend modules — auth, billing, workspaces, permissions, and more — written in plain TypeScript and self-hosted on your own infrastructure, with no vendor lock-in. You can read, audit, and modify every module at github.com/fonderiejs/fonderie."
+                "text": "It's best on greenfield SaaS, where you skip two to three months of infrastructure. You can also adopt a single module — say billing or workspaces — in an existing codebase, because each module is plain TypeScript you own and register yourself."
               }
             },
             {
               "@type": "Question",
-              "name": "How is Fonderie different from hosted backends?",
+              "name": "How much does Fonderie cost?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Hosted backends are services you rent and configure through dashboards and SDKs. Fonderie is source code your AI coding assistant composes directly — self-hosted, auditable, and designed for agentic workflows rather than human dashboard-clicking. It orchestrates external services where you want them, but the core runs on your own infrastructure with no vendor lock-in."
+                "text": "Fonderie is free and open source under the MIT license. Every module is self-hosted on your own infrastructure with no usage limits and no vendor lock-in. Compare it to hiring a backend engineer for three months ($30–60k). Managed hosting and commercial support are on the roadmap."
               }
             }
           ]
@@ -122,239 +116,406 @@
       ]
     }
     </script>
+
+    <link rel="stylesheet" href="/assets/css/home.css"/>
   </head>
   <body>
-    <div class="lp">
-      <nav class="nav lp-nav">
-        <div class="lp-nav__inner">
-          <a href="/" aria-label="Fonderie" style="display:flex;align-items:center">
-            <img class="nav__logo-mark nav__logo-mark--light" src="/assets/img/fonderie-lockup-light.svg" alt="Fonderie" style="height:18px;width:auto"/>
-            <img class="nav__logo-mark nav__logo-mark--dark" src="/assets/img/fonderie-lockup-dark.svg" alt="Fonderie" style="height:18px;width:auto"/>
-          </a>
-          <div class="lp-nav__links">
-            <a class="lp-link" href="/products">Product</a>
-            <a class="lp-link" href="#how">How it works</a>
-            <a class="lp-link" href="https://github.com/fonderiejs/fonderie">GitHub</a>
+
+    <div class="page">
+    <div class="page__card">
+
+      <!-- nav -->
+      <nav class="nav">
+        <div class="nav__inner container">
+          <a href="/" class="nav__logo">Fonderie</a>
+          <div class="nav__links">
+            <a href="#how" class="nav__link">The solution</a>
+            <a href="#packages" class="nav__link">Packages</a>
+            <a href="#pricing" class="nav__link">Pricing</a>
+            <a href="https://github.com/fonderiejs/fonderie" class="nav__link">GitHub</a>
           </div>
-          <a class="lp-cta" href="/contact">Get started</a>
-          <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
-        <div class="nav__menu">
-          <a href="/products">Product</a>
-          <a href="#how">How it works</a>
-          <a href="https://github.com/fonderiejs/fonderie">GitHub</a>
+          <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" class="btn btn--dark-sm">Get started
+            <span class="btn__chip btn__chip--sm"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+          </a>
         </div>
       </nav>
 
-      <main class="lp__wrap">
+      <!-- hero -->
+      <header class="hero">
+        <div class="hero__backdrop" aria-hidden="true"></div>
+        <div class="hero__inner">
+        <p class="hero__eyebrow">Open source</p>
+        <h1 class="hero__title">The open standard for <span class="hero__title-nowrap">AI-built SaaS.</span></h1>
+        <p class="hero__lede">Every AI assistant asked to build a SaaS invents its own infrastructure — auth, billing, permissions, teams. Fonderie gives every LLM one standard to compose from. <span class="hero__lede-strong">Your AI stops improvising. You start shipping.</span></p>
+        <div class="hero__cta">
+          <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" class="btn btn--dark">Get started
+            <span class="btn__chip"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+          </a>
+          <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+            View on GitHub
+          </a>
+        </div>
+        <div class="hero__snippet">
+          <code class="hero__snippet-code"><span class="hero__snippet-muted">$</span> npx <span class="hero__snippet-pkg">@fonderie/create</span> my-saas</code>
+          <button type="button" class="hero__copy-btn" data-copy="npx @fonderie/create my-saas">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="13" height="13"><rect x="9" y="9" width="11" height="11" rx="2"></rect><path d="M5 15V5a2 2 0 0 1 2-2h10"></path></svg>
+            <span data-copy-label>Copy</span>
+          </button>
+        </div>
+        <div class="hero__proof">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--stage)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="m9 12 2 2 4-4"></path><circle cx="12" cy="12" r="10"></circle></svg>
+          MIT-licensed · Open source · Your infrastructure
+        </div>
+        </div>
+        <div class="hero__assistants" aria-label="Compatible AI assistants">
+          <span class="hero__assistants-label">Works with</span>
+          <div class="hero__assistants-list">
+            <span class="hero__assistant"><img src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/claude-color.svg" alt="" width="24" height="24" class="hero__assistant-icon" data-hide-on-error><span class="hero__assistant-name">Claude Code</span></span>
+            <span class="hero__assistant"><img src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/cursor.svg" alt="" width="24" height="24" class="hero__assistant-icon hero__assistant-icon--dim" data-hide-on-error><span class="hero__assistant-name">Cursor</span></span>
+            <span class="hero__assistant"><img src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/openai.svg" alt="" width="24" height="24" class="hero__assistant-icon hero__assistant-icon--dim" data-hide-on-error><span class="hero__assistant-name">Codex</span></span>
+            <span class="hero__assistant"><img src="https://cdn.jsdelivr.net/npm/@lobehub/icons-static-svg@latest/icons/windsurf.svg" alt="" width="24" height="24" class="hero__assistant-icon hero__assistant-icon--dim" data-hide-on-error><span class="hero__assistant-name">Windsurf</span></span>
+            <span class="hero__assistant"><span class="hero__assistant-name">Any code-reading AI</span></span>
+          </div>
+        </div>
+      </header>
 
-        <section class="lp-hero">
-          <p class="lp-eyebrow" style="text-transform:none;letter-spacing:-0.01em;font-size:13px;margin:0">Open source · npm install @fonderie/core</p>
-          <h1 class="lp-hero__title">Build SaaS with AI,<br/>not boilerplate.</h1>
-          <p class="lp-hero__lede">Fonderie is the backend suite that lets AI assistants compose production-tested modules — auth, billing, teams — instead of regenerating them from scratch every session.</p>
-          <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:8px">
-            <a class="lp-btn" href="https://github.com/fonderiejs/fonderie">Start composing</a>
-            <a class="lp-btn lp-btn--ghost" href="https://github.com/fonderiejs/fonderie">
-              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-              View on GitHub
+      <div class="container">
+
+        <!-- the problem -->
+        <section class="problem">
+          <div class="problem__grid">
+          <div class="problem__copy">
+          <div data-reveal><p class="eyebrow">The problem</p></div>
+          <h2 data-reveal class="section-title section-title--sm">Every SaaS starts with the same nine weeks.</h2>
+          <p data-reveal class="problem__lede">AI doesn't remove this work — it improvises it. Same invented auth, same tenant leaks, same billing edge cases, only shipped in an afternoon instead of two months. <strong class="problem__lede-strong">Faster isn't the same as solved.</strong></p>
+          <p data-reveal class="problem__compare">Hiring a backend engineer for 3 months: <s class="problem__strike">$30–60k</s>.&nbsp; Starting with Fonderie: <b class="problem__free">free and open source.</b></p>
+          </div>
+          <div data-reveal class="problem__ledger">
+            <p class="problem__ledger-head">Before you write a line of product <b class="problem__ledger-head-strong">~9 weeks</b></p>
+            <div>
+              <div>
+                <div class="problem__ledger-row"><span class="problem__ledger-week">Week 1–2</span> Auth setup</div>
+                <div class="problem__ledger-row"><span class="problem__ledger-week">Week 3</span> Team / org model</div>
+                <div class="problem__ledger-row"><span class="problem__ledger-week">Week 4</span> Stripe wiring</div>
+                <div class="problem__ledger-row"><span class="problem__ledger-week">Week 5</span> Email system</div>
+              </div>
+              <div>
+                <div class="problem__ledger-row"><span class="problem__ledger-week">Week 6</span> Permissions</div>
+                <div class="problem__ledger-row"><span class="problem__ledger-week">Week 7</span> Multi-tenancy</div>
+                <div class="problem__ledger-row"><span class="problem__ledger-week">Week 8</span> Remote config</div>
+                <div class="problem__ledger-row problem__ledger-row--final"><span class="problem__ledger-week problem__ledger-week--accent">Week 9</span> Finally write product</div>
+              </div>
+            </div>
+            <div class="problem__ledger-foot">
+              <p class="problem__ledger-note"><b class="problem__ledger-note-head">By hand — ~9 weeks.</b><br>Two months of code the world already wrote, re-shipping the same security flaws.</p>
+              <p class="problem__ledger-note"><b class="problem__ledger-note-head--accent">With AI — ~1 afternoon.</b><br>Same improvised infrastructure, same flaws. The timeline collapses; the problem doesn't.</p>
+            </div>
+          </div>
+          </div>
+        </section>
+
+        <!-- meta strip -->
+        <section class="meta-strip">
+          <span><code>npx @fonderie/create</code></span><span>Composed from 17 standard modules</span><span>Zero external servers in your request path</span>
+        </section>
+
+        <!-- the shift -->
+        <section class="shift">
+          <p data-reveal class="eyebrow">The shift</p>
+          <h2 data-reveal class="section-title">AI doesn't need more speed. It needs a standard.</h2>
+          <p data-reveal class="shift__lede">Raw AI generates from scratch every time. Fonderie gives it a shared, audited vocabulary — so it composes, not hallucinates.</p>
+          <div class="shift__grid">
+            <div data-reveal class="shift__list">
+              <div class="shift__item">
+                <span class="shift__item-num">01</span>
+                <div><h3 class="shift__item-title">Standard modules</h3><p class="shift__item-text">Auth, billing, permissions, workspaces — each a typed, tested primitive. Not a template; a building block.</p></div>
+              </div>
+              <div class="shift__item">
+                <span class="shift__item-num">02</span>
+                <div><h3 class="shift__item-title">AI-readable skills</h3><p class="shift__item-text">Skill files in your repo spell out how the modules wire together. No prompt engineering. No drift between sessions.</p></div>
+              </div>
+              <div class="shift__item shift__item--featured">
+                <span class="shift__item-num">03</span>
+                <div><h3 class="shift__item-title">Reviewable output</h3><p class="shift__item-text">Composition resolves to plain TypeScript in your repo — diffable, testable, auditable line by line.</p></div>
+              </div>
+            </div>
+            <div data-reveal class="shift__panel">
+              <p class="shift__panel-label">The vocabulary your AI reads</p>
+              <div class="shift__code"><pre><span class="code-comment">// one shape, every session
+</span><span class="code-fn">auth</span>({ oauth, passkeys })
+<span class="code-fn">workspaces</span>({ multiTenant })
+<span class="code-fn">billing</span>({ provider, seats })
+<span class="code-fn">permissions</span>({ roles })</pre></div>
+              <p class="shift__panel-foot">Every module exposes the same contract, so composition is a lookup — not a guess.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- the solution -->
+        <section id="how" class="solution">
+          <p data-reveal class="eyebrow">The solution</p>
+          <h2 data-reveal class="section-title solution__title">Ship the product. The backend is already done.</h2>
+          <div class="solution__grid">
+            <div>
+              <div class="solution__chat">
+                <div class="solution__bubble">"Scaffold my SaaS with auth, billing, and team workspaces"</div>
+                <div class="solution__reply">
+                  <span class="solution__reply-label">Your AI + Fonderie modules</span>
+                  I'll compose the backend using Fonderie's standard modules. Generating your config…
+                </div>
+                <div class="solution__bubble">"Add Stripe billing with per-seat pricing"</div>
+                <div class="solution__reply">
+                  <span class="solution__reply-label">Your AI + Fonderie modules</span>
+                  Adding <code>@fonderie/billing</code> with Stripe provider and seat-based plans. Your project is scaffolded.
+                </div>
+                <div class="solution__bubble">"Now write the endpoint to create a schedule"</div>
+                <div class="solution__reply">
+                  <span class="solution__reply-label">Your AI + Fonderie modules</span>
+                  Writing your product logic. Auth, tenant scoping, and billing are already wired — you write the part only you can write.
+                </div>
+              </div>
+            </div>
+            <div class="solution__panel">
+              <p class="solution__panel-label">Generated by your AI + Fonderie modules</p>
+              <div class="solution__code"><pre><span class="code-comment">// fonderie.config.ts — generated by your AI</span>
+import { <span class="code-fn">defineApp</span> } from <span class="code-str">"@fonderie/core"</span>;
+import { auth } from <span class="code-str">"@fonderie/auth"</span>;
+import { billing } from <span class="code-str">"@fonderie/billing"</span>;
+import { workspaces } from <span class="code-str">"@fonderie/workspaces"</span>;
+
+export default <span class="code-fn">defineApp</span>({
+  modules: [
+    <span class="code-fn">auth</span>({ oauth: [<span class="code-str">"google"</span>], passkeys: <span class="code-str">true</span> }),
+    <span class="code-fn">workspaces</span>({ multiTenant: <span class="code-str">true</span> }),
+    <span class="code-fn">billing</span>({ provider: <span class="code-str">"stripe"</span>, seats: <span class="code-str">true</span> }),
+  ],
+});</pre></div>
+              <div class="solution__code"><pre><span class="code-comment">$</span> npx @fonderie/create my-saas
+<span class="code-comment"># dependencies installed, modules registered, project scaffolded</span></pre></div>
+              <div class="solution__code solution__code--dim"><pre><span class="code-comment">// product logic — you write this part</span>
+export const <span class="code-fn">createSchedule</span> = <span class="code-fn">workspace</span>.<span class="code-fn">action</span>(<span class="code-str">async</span> (ctx, input) =&gt; {
+  <span class="code-comment">// ctx.user, ctx.workspace, ctx.can() — all provided</span>
+  <span class="code-str">return</span> ctx.db.schedules.<span class="code-fn">create</span>(input);
+});</pre></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- proof strip -->
+        <section id="proof" class="proof">
+          <p data-reveal class="eyebrow eyebrow--wide">The proof</p>
+          <div data-reveal class="proof__grid">
+            <div class="proof__cell">
+              <p class="proof__num proof__num--accent">0</p>
+              <p class="proof__label">Security vulnerabilities</p>
+              <p class="proof__sub">Audited by default, on every run</p>
+            </div>
+            <div class="proof__cell">
+              <p class="proof__num">Day 1</p>
+              <p class="proof__label">Backend ready</p>
+              <p class="proof__sub">Instead of nine weeks of scaffolding</p>
+            </div>
+            <div class="proof__cell">
+              <p class="proof__num">~1,300</p>
+              <p class="proof__label">Lines of backend code</p>
+              <p class="proof__sub">A third of the hand-built equivalent</p>
+            </div>
+            <div class="proof__cell">
+              <p class="proof__num proof__num--accent">$199</p>
+              <p class="proof__label">Per project / month</p>
+              <p class="proof__sub">vs. $30–60k engineer cost</p>
+            </div>
+          </div>
+          <p data-reveal class="proof__footnote">Results from a reproducible A/B security experiment. <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer">See the protocol →</a></p>
+        </section>
+
+        <!-- packages -->
+        <section id="packages" class="packages">
+          <p data-reveal class="eyebrow">The packages</p>
+          <h2 data-reveal class="section-title">Real packages, on the real registry.</h2>
+          <p data-reveal class="packages__lede">Real packages on npm. Click through and read the code — with adapters for Express, Hono, and Koa, so you can mount Fonderie inside an app you already run.</p>
+          <div data-reveal class="packages__grid">
+            <a href="https://www.npmjs.com/package/@fonderie/auth" target="_blank" rel="noopener noreferrer" class="packages__card">
+              <span class="packages__card-kicker">Business Logic</span>
+              <h3 class="packages__card-title">@fonderie/auth</h3>
+              <p class="packages__card-text">Drop-in auth for SaaS</p>
+            </a>
+            <a href="https://www.npmjs.com/package/@fonderie/billing" target="_blank" rel="noopener noreferrer" class="packages__card">
+              <span class="packages__card-kicker">Business Logic</span>
+              <h3 class="packages__card-title">@fonderie/billing</h3>
+              <p class="packages__card-text">Subscriptions, seats, usage, and webhooks</p>
+            </a>
+            <a href="https://www.npmjs.com/package/@fonderie/workspaces" target="_blank" rel="noopener noreferrer" class="packages__card">
+              <span class="packages__card-kicker">Business Logic</span>
+              <h3 class="packages__card-title">@fonderie/workspaces</h3>
+              <p class="packages__card-text">Teams, orgs, invites, and multi-tenancy</p>
+            </a>
+            <a href="https://www.npmjs.com/package/@fonderie/permissions" target="_blank" rel="noopener noreferrer" class="packages__card">
+              <span class="packages__card-kicker">Business Logic</span>
+              <h3 class="packages__card-title">@fonderie/permissions</h3>
+              <p class="packages__card-text">Role-based access control</p>
+            </a>
+            <a href="https://www.npmjs.com/package/@fonderie/courier" target="_blank" rel="noopener noreferrer" class="packages__card">
+              <span class="packages__card-kicker">Business Logic</span>
+              <h3 class="packages__card-title">@fonderie/courier</h3>
+              <p class="packages__card-text">Email, SMS, and push notification dispatch</p>
+            </a>
+            <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" class="packages__card packages__card--featured">
+              <span class="packages__card-kicker packages__card-kicker--accent">The rest of the registry</span>
+              <h3 class="packages__card-title packages__card-title--accent">+12 more →</h3>
+              <p class="packages__card-text">core, audit, events, rate-limit, config…</p>
             </a>
           </div>
+          <p data-reveal class="packages__footnote">All MIT-licensed. <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer">See the full registry on GitHub →</a></p>
         </section>
 
-        <section class="lp-strip">
-          <span>Open source</span><span>Self-hosted</span><span>Production-ready</span>
-        </section>
-
-        <section class="lp-section">
-          <p class="lp-eyebrow" data-reveal>01 — The problem</p>
-          <h2 class="lp-h2" data-reveal data-delay="60">Every session, your AI starts from zero.</h2>
-          <div class="lp-grid3">
-            <div class="lp-card" data-reveal>
-              <h3 class="lp-card__title">Regenerates from scratch</h3>
-              <p class="lp-card__text">Auth, billing, teams — rebuilt every session, differently each time.</p>
-            </div>
-            <div class="lp-card" data-reveal data-delay="80">
-              <h3 class="lp-card__title">Burns tokens on solved problems</h3>
-              <p class="lp-card__text">Context and budget spent re-deriving code the world already wrote.</p>
-            </div>
-            <div class="lp-card" data-reveal data-delay="160">
-              <h3 class="lp-card__title">Ships security holes</h3>
-              <p class="lp-card__text">Vulnerabilities you only discover once they're already in production.</p>
+        <!-- difference -->
+        <section class="difference">
+          <div id="manifesto" class="difference__inner">
+            <p data-reveal class="difference__eyebrow">The difference</p>
+            <h2 data-reveal class="section-title section-title--lg">Owned, not locked in.</h2>
+            <p data-reveal class="difference__lede">Fonderie is a skill wired into your project — self-hosted, MIT-licensed, yours to run. Or let us manage that same open standard on your own infrastructure with Fonderie Cloud.</p>
+            <div data-reveal class="difference__badges">
+              <span class="difference__badge">Self-hosted (Core)</span>
+              <span class="difference__badge difference__badge--filled">Fonderie Cloud</span>
             </div>
           </div>
         </section>
 
-        <section class="lp-section">
-          <p class="lp-eyebrow" data-reveal>02 — The solution</p>
-          <h2 class="lp-h2" data-reveal data-delay="60">Compose, don't regenerate.</h2>
-          <div class="lp-grid3">
-            <div class="lp-step" data-reveal>
-              <span class="lp-step__num">01</span>
-              <div>
-                <h3 class="lp-step__title">Describe your SaaS</h3>
-                <p class="lp-step__text">Your assistant reads the suite and knows what to compose.</p>
-              </div>
-            </div>
-            <div class="lp-step" data-reveal data-delay="80">
-              <span class="lp-step__num">02</span>
-              <div>
-                <h3 class="lp-step__title">Ship proven modules</h3>
-                <p class="lp-step__text">Auth, billing, permissions — production-tested, not generated.</p>
-              </div>
-            </div>
-            <div class="lp-step" data-reveal data-delay="160">
-              <span class="lp-step__num">03</span>
-              <div>
-                <h3 class="lp-step__title">Own your stack</h3>
-                <p class="lp-step__text">Self-hosted. Auditable. No vendor lock-in.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <!-- pricing -->
+        <section id="pricing" class="pricing">
+          <p data-reveal class="eyebrow">Pricing</p>
+          <h2 data-reveal class="section-title">Start free. Scale when you ship.</h2>
+          <p data-reveal class="pricing__lede">Open-source core, self-hosted, zero lock-in. Upgrade when you need managed infrastructure, SSO, and compliance.</p>
 
-        <section class="lp-section lp-proof" data-reveal>
-          <p class="lp-eyebrow" style="margin:0">03 — Proof</p>
-          <p class="lp-proof__num">2 <span class="accent">of 3</span></p>
-          <h2 class="lp-proof__h2">AI-generated SaaS backends we tested shipped a real security hole. Fonderie's didn't.</h2>
-          <p class="lp-proof__lede">We built the same SaaS three times from scratch with AI assistants — once composing Fonderie modules, twice without. The Fonderie build had zero vulnerabilities, in about a third of the code.</p>
-        </section>
+          <div data-reveal class="pricing__grid">
 
-        <section class="lp-section" id="how">
-          <p class="lp-eyebrow" data-reveal>04 — How it works</p>
-          <h2 class="lp-h2" data-reveal data-delay="60">Three steps to shipping.</h2>
-          <div class="lp-timeline">
-
-            <div class="lp-tstep" data-reveal>
-              <div class="lp-tstep__rail">
-                <span class="lp-tstep__marker">1</span>
-                <span class="lp-tstep__line"></span>
+            <div class="pricing__tier">
+              <div class="pricing__tier-head">
+                <h3 class="pricing__tier-name">Build</h3>
+                <p class="pricing__tier-price">Free</p>
+                <p class="pricing__tier-desc">For side projects</p>
               </div>
-              <div>
-                <h3 class="lp-tstep__title">Install the suite</h3>
-                <div class="lp-code">
-                  <code><span class="muted">$</span> npm install <span class="accent">@fonderie/core</span></code>
-                  <button class="lp-copy" type="button" data-copy="npm install @fonderie/core">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="13" height="13"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
-                    <span data-copy-label>Copy</span>
-                  </button>
-                </div>
+              <div class="pricing__tier-features">
+                <p>All core modules</p>
+                <p>Self-hosted</p>
+                <p>Community support</p>
               </div>
+              <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" class="pricing__tier-cta">Get started</a>
             </div>
 
-            <div class="lp-tstep" data-reveal data-delay="80">
-              <div class="lp-tstep__rail">
-                <span class="lp-tstep__marker">2</span>
-                <span class="lp-tstep__line"></span>
+            <div class="pricing__tier pricing__tier--featured">
+              <div class="pricing__tier-head">
+                <h3 class="pricing__tier-name pricing__tier-name--accent">Ship</h3>
+                <p class="pricing__tier-price">$199<span class="pricing__tier-price-period">/mo</span></p>
+                <p class="pricing__tier-desc">For SaaS with users</p>
               </div>
-              <div>
-                <h3 class="lp-tstep__title">Describe your product to your AI</h3>
-                <div class="lp-chat">
-                  <div class="lp-chat__msg lp-chat__msg--user">Add subscription billing with team seats.</div>
-                  <div class="lp-chat__msg lp-chat__msg--ai">Composing <code>@fonderie/billing</code> — subscriptions, seats, and webhooks wired in.</div>
-                </div>
+              <div class="pricing__tier-features">
+                <p class="pricing__tier-features-lead">Everything in Build, plus</p>
+                <p>Production license</p>
+                <p>Priority support</p>
+                <p>Team features</p>
+                <p>Audit logs</p>
               </div>
+              <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" class="pricing__tier-cta pricing__tier-cta--solid">Start shipping</a>
             </div>
 
-            <div class="lp-tstep" data-reveal data-delay="160">
-              <div class="lp-tstep__rail">
-                <span class="lp-tstep__marker lp-tstep__marker--done">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-background)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M20 6L9 17l-5-5"/></svg>
-                </span>
-                <span class="lp-tstep__line"></span>
+            <div class="pricing__tier">
+              <div class="pricing__tier-head">
+                <h3 class="pricing__tier-name">Scale</h3>
+                <p class="pricing__tier-price">$499<span class="pricing__tier-price-period">/mo</span></p>
+                <p class="pricing__tier-desc">For growing teams</p>
               </div>
-              <div>
-                <h3 class="lp-tstep__title">Ship with confidence</h3>
-                <div class="lp-statuspill">
-                  <span class="lp-statuspill__dot"></span>
-                  Deployed · self-hosted · auditable
-                </div>
+              <div class="pricing__tier-features">
+                <p class="pricing__tier-features-lead">Everything in Ship, plus</p>
+                <p>SLA</p>
+                <p>Advanced compliance</p>
+                <p>Dedicated support</p>
+                <p>SSO ready</p>
               </div>
+              <a href="/contact" class="pricing__tier-cta">Contact sales</a>
+            </div>
+
+            <div class="pricing__tier">
+              <div class="pricing__tier-head">
+                <h3 class="pricing__tier-name">Enterprise</h3>
+                <p class="pricing__tier-price">Custom</p>
+                <p class="pricing__tier-desc">For organizations</p>
+              </div>
+              <div class="pricing__tier-features">
+                <p class="pricing__tier-features-lead">Everything in Scale, plus</p>
+                <p>On-premise</p>
+                <p>Custom modules</p>
+                <p>SOC 2 / HIPAA</p>
+                <p>Dedicated account</p>
+              </div>
+              <a href="/contact" class="pricing__tier-cta">Contact sales</a>
             </div>
 
           </div>
-        </section>
 
-        <section class="lp-section" style="border-bottom:0">
-          <p class="lp-eyebrow" data-reveal>05 — The difference</p>
-          <h2 class="lp-h2" data-reveal data-delay="60">A different starting point.</h2>
-          <div class="lp-compare" data-reveal>
-            <div class="lp-compare__card lp-compare__card--hosted">
-              <h3 class="lp-compare__name">Hosted backends</h3>
-              <div><p class="lp-compare__label">Built for</p><p class="lp-compare__value">Humans reading docs and clicking dashboards</p></div>
-              <div><p class="lp-compare__label">Integration</p><p class="lp-compare__value">SDKs, webhooks, and dashboard configuration</p></div>
-              <div><p class="lp-compare__label">Ownership</p><p class="lp-compare__value">Rented — their infrastructure, per-MAU pricing</p></div>
-              <div><p class="lp-compare__label">AI workflow</p><p class="lp-compare__value">Your agent stops to check the docs</p></div>
-            </div>
-            <div class="lp-compare__card lp-compare__card--fonderie">
-              <h3 class="lp-compare__name">Fonderie</h3>
-              <div><p class="lp-compare__label">Built for</p><p class="lp-compare__value">Agents that read code</p></div>
-              <div><p class="lp-compare__label">Integration</p><p class="lp-compare__value">Modules composed directly in your repo</p></div>
-              <div><p class="lp-compare__label">Ownership</p><p class="lp-compare__value">Owned — your infrastructure, MIT-licensed source</p></div>
-              <div><p class="lp-compare__label">AI workflow</p><p class="lp-compare__value">Native — the assistant reads the suite</p></div>
-            </div>
+          <div data-reveal class="pricing__note">
+            <p class="pricing__note-italic">Compare to hiring a backend engineer for 3 months: $30–60k.</p>
+            <p class="pricing__note-accent">$199/mo is cheaper than one day of a contractor. $499/mo is cheaper than one week of an engineer.</p>
+            <p class="pricing__note-muted">You only pay when your SaaS starts earning.</p>
           </div>
         </section>
 
-      </main>
+      </div>
 
-      <footer class="lp-footer">
-        <div class="lp-footer__inner">
-          <div class="lp-footer__grid">
-            <div class="lp-footer__col">
-              <a class="lp-footer__head" href="/products">Product</a>
-              <a class="lp-footer__link" href="/products#sdk">The SDK</a>
-              <a class="lp-footer__link" href="/products#core">Core</a>
-              <a class="lp-footer__link" href="/products#connectors">Connectors</a>
+      <!-- final CTA -->
+      <section class="final-cta">
+        <h2 data-reveal class="final-cta__title">Start shipping. Not scaffolding.</h2>
+        <p data-reveal class="final-cta__lede">Nine weeks of infrastructure, already written and already audited.</p>
+        <div data-reveal class="final-cta__row">
+          <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" class="btn btn--stage">Get started on GitHub
+            <span class="btn__chip btn__chip--dark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+          </a>
+          <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" class="btn btn--ghost-dark">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+            Star on GitHub
+          </a>
+        </div>
+        <p data-reveal class="final-cta__note">System prompts for Claude Code and Cursor ship with the repo — <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer">grab them on GitHub →</a></p>
+        <div data-reveal class="final-cta__tags">
+          <span class="final-cta__tag">For agencies, solo founders, teams, and vibe coders</span>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <div class="site-footer__grid">
+            <div class="site-footer__col">
+              <a href="https://github.com/fonderiejs/fonderie" class="site-footer__head">Open source</a>
+              <a href="https://github.com/fonderiejs/fonderie" class="site-footer__link">GitHub</a>
+              <a href="https://www.npmjs.com/package/@fonderie/core" class="site-footer__link">npm install @fonderie/core</a>
             </div>
-            <div class="lp-footer__col">
-              <a class="lp-footer__head" href="/resources">Resources</a>
-              <a class="lp-footer__link" href="/resources#docs">Documentation</a>
-              <a class="lp-footer__link" href="/resources#support">Support</a>
-            </div>
-            <div class="lp-footer__col">
-              <a class="lp-footer__head" href="https://github.com/fonderiejs/fonderie">Open source</a>
-              <a class="lp-footer__link" href="https://github.com/fonderiejs/fonderie">GitHub</a>
-              <a class="lp-footer__link" href="https://github.com/fonderiejs/fonderie">npm install @fonderie/core</a>
-            </div>
-            <div class="lp-footer__col">
-              <p class="lp-footer__head">Company</p>
-              <a class="lp-footer__link" href="/contact">Contact</a>
-              <a class="lp-footer__link" href="/contact">Press</a>
-              <a class="lp-footer__link" href="/contact">Investors</a>
+            <div class="site-footer__col">
+              <p class="site-footer__head">Company</p>
+              <a href="/contact" class="site-footer__link">Contact</a>
+              <a href="https://x.com/fonderiejs" class="site-footer__link">X / Twitter</a>
             </div>
           </div>
-          <div class="lp-footer__bottom">
-            <div class="lp-footer__meta">
-              <p style="font-size:12px;color:var(--color-muted);margin:0">© 2026 Fonderie, Inc.</p>
-              <a class="lp-footer__social" href="https://github.com/fonderiejs/fonderie" aria-label="GitHub">
-                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-              </a>
-              <a class="lp-footer__social" href="https://x.com/fonderiejs" aria-label="Fonderie on X">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="15" height="15"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-              </a>
+          <div class="site-footer__bottom">
+            <div class="site-footer__meta">
+              <p><strong>Fonderie, Inc.</strong> · © 2026 · Open source · MIT License</p>
+              <a href="https://github.com/fonderiejs/fonderie" aria-label="GitHub" class="site-footer__social"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+              <a href="https://x.com/fonderiejs" aria-label="Fonderie on X" class="site-footer__social"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="15" height="15"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
             </div>
-            <fieldset class="theme-switch" aria-label="Theme switcher">
-              <label class="theme-switch__option" data-theme-value="system">
-                <input type="radio" name="theme" value="system"/>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
-                <span>System</span>
-              </label>
-              <label class="theme-switch__option" data-theme-value="light">
-                <input type="radio" name="theme" value="light"/>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
-                <span>Light</span>
-              </label>
-              <label class="theme-switch__option" data-theme-value="dark">
-                <input type="radio" name="theme" value="dark"/>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-                <span>Dark</span>
-              </label>
-            </fieldset>
+            <div class="theme-switch" aria-label="Theme switcher">
+              <button type="button" class="theme-btn" data-theme-btn="system">System</button>
+              <button type="button" class="theme-btn" data-theme-btn="light">Light</button>
+              <button type="button" class="theme-btn" data-theme-btn="dark">Dark</button>
+            </div>
           </div>
         </div>
       </footer>
+
     </div>
+    </div>
+
+    <script src="/assets/js/home.js" defer></script>
   </body>
 </html>

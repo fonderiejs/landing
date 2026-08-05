@@ -7,14 +7,10 @@ The marketing site for [Fonderie](https://fonderiejs.com), the open foundry for 
 | File | URL | Purpose |
 | --- | --- | --- |
 | `index.html` | `/` | Home page |
-| `platform.html` | `/platform` | Platform overview |
-| `products.html` | `/products` | Products overview |
-| `help.html` | `/help` | Help / FAQ |
 | `contact.html` | `/contact` | Contact |
-| `blog/index.html` | `/blog` | Blog index |
-| `blog/<slug>.html` | `/blog/<slug>` | Blog posts (one file per post) |
+| `404.html` | (any unmatched path) | Error page, served directly by `serve.mjs` |
 
-Pages are served with clean URLs (`/platform`, not `/platform.html`).
+Pages are served with clean URLs (`/contact`, not `/contact.html`).
 
 ## Local development
 
@@ -31,36 +27,26 @@ node serve.mjs 3000   # custom port
 
 ```
 assets/
-  css/        base.css and theme.css (light/dark themes via data-theme)
-  fonts/      self-hosted woff2 fonts
-  img/        logo lockups and favicon
-  js/         landing.js (theme toggle and page interactions)
+  css/        home.css — orange/blueprint stage design (tokens, reveal, theme
+              switcher). Shared by every page.
+  img/        favicon, OG image, hero art
+  js/         home.js — theme switcher, copy button, scroll reveal
+404.html
 contact.html
-help.html
 index.html
-platform.html
-products.html
 manifest.json   PWA manifest
 serve.mjs       local dev server
-vercel.json     clean URLs + font caching headers
 CNAME           custom domain for GitHub Pages (fonderiejs.com)
 ```
 
-Theme preference is stored in `localStorage` and applied via a `data-theme` attribute on `<html>` before first paint to avoid a flash of the wrong theme.
+Theme preference (System/Light/Dark) is stored in `localStorage` and applied via a `data-theme` attribute on `<html>`.
 
 ## Deployment
 
-The site deploys as-is — every file in the repo is served directly:
-
-- **GitHub Pages** uses the `CNAME` file to bind the `fonderiejs.com` domain.
-- **Vercel** (or compatible hosts) reads `vercel.json` for clean URLs and long-lived cache headers on fonts.
-
-No build or bundling step is needed; push to `main` to publish.
+The site deploys as-is — every file in the repo is served directly. GitHub Pages uses the `CNAME` file to bind the `fonderiejs.com` domain. No build or bundling step is needed; push to `main` to publish.
 
 ## Conventions
 
 - Keep the site dependency-free: no frameworks, no package.json.
-- Fonts are cached immutably (`vercel.json`), so add new font files under new names rather than replacing existing ones.
-- When adding a page, create `<name>.html` at the root and link to it with its clean URL (`/<name>`).
-
-See `MIGRATION.md` and `MIGRATION-CLASS-MAP.md` for notes from the original site migration.
+- When adding a page, create `<name>.html` at the root, link `home.css`/`home.js`, and link to it with its clean URL (`/<name>`).
+- All pages share one design system (`home.css`/`home.js`) — the nav/footer chrome in `index.html`, `contact.html`, and `404.html` is copied verbatim between them, so keep new pages consistent with that shell.

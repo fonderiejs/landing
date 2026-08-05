@@ -3,114 +3,86 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
-    <link rel="stylesheet" href="/assets/css/base.css"/>
-    <link rel="stylesheet" href="/assets/css/theme.css"/>
     <title>Page not found — Fonderie</title>
-    <meta name="description" content="That page doesn't exist. Head back to Fonderie — the backend suite for AI-built SaaS."/>
+    <meta name="description" content="That page doesn't exist. Head back to Fonderie — the open standard for AI-built SaaS."/>
     <meta name="robots" content="noindex, follow"/>
     <link rel="icon" href="/assets/img/icon.svg" sizes="any" type="image/svg+xml"/>
-    <script>
-      (function () {
-        var t = localStorage.getItem('theme');
-        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
-      })();
-    </script>
-    <script src="/assets/js/landing.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/assets/css/home.css"/>
   </head>
   <body>
-    <div class="lp" style="display:flex;flex-direction:column">
-      <nav class="nav lp-nav">
-        <div class="lp-nav__inner">
-          <a href="/" aria-label="Fonderie" style="display:flex;align-items:center">
-            <img class="nav__logo-mark nav__logo-mark--light" src="/assets/img/fonderie-lockup-light.svg" alt="Fonderie" style="height:18px;width:auto"/>
-            <img class="nav__logo-mark nav__logo-mark--dark" src="/assets/img/fonderie-lockup-dark.svg" alt="Fonderie" style="height:18px;width:auto"/>
-          </a>
-          <div class="lp-nav__links">
-            <a class="lp-link" href="/products">Product</a>
-            <a class="lp-link" href="/resources">Resources</a>
-            <a class="lp-link" href="/contact">Contact</a>
+
+    <div class="page">
+    <div class="page__card page__card--flush">
+
+      <!-- nav -->
+      <nav class="nav">
+        <div class="nav__inner container">
+          <a href="/" class="nav__logo">Fonderie</a>
+          <div class="nav__links">
+            <a href="/#how" class="nav__link">The solution</a>
+            <a href="/#packages" class="nav__link">Packages</a>
+            <a href="/#pricing" class="nav__link">Pricing</a>
+            <a href="/contact" class="nav__link">Contact</a>
           </div>
-          <a class="lp-cta" href="/contact">Get started</a>
-          <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-        </div>
-        <div class="nav__menu">
-          <a href="/products">Product</a>
-          <a href="/resources">Resources</a>
-          <a href="/contact">Contact</a>
+          <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" class="btn btn--dark-sm">Get started
+            <span class="btn__chip btn__chip--sm"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="12" height="12"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+          </a>
         </div>
       </nav>
 
-      <main class="lp__wrap" style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:20px;padding-block:clamp(72px,14vh,160px)">
-        <p class="lp-eyebrow" style="margin:0">Error 404</p>
-        <p class="lp-proof__num">4<span class="accent">0</span>4</p>
-        <h1 class="lp-proof__h2" style="max-width:24ch">This page didn't compose. It may have moved, or never existed.</h1>
-        <p class="lp-proof__lede">Head back to the suite, or jump straight to the code.</p>
-        <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;margin-top:8px">
-          <a class="lp-btn" href="/">Back home</a>
-          <a class="lp-btn lp-btn--ghost" href="https://github.com/fonderiejs/fonderie">
-            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      <!-- 404 -->
+      <main class="notfound">
+        <p class="eyebrow">Error 404</p>
+        <p class="notfound__num">4<span class="notfound__num-accent">0</span>4</p>
+        <h1 class="notfound__title">This page didn't compose. It may have moved, or never existed.</h1>
+        <p class="notfound__lede">Head back to the suite, or jump straight to the code.</p>
+        <div class="notfound__row">
+          <a href="/" class="btn btn--dark">Back home
+            <span class="btn__chip"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+          </a>
+          <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
             View on GitHub
           </a>
         </div>
       </main>
 
-      <footer class="lp-footer">
-        <div class="lp-footer__inner">
-          <div class="lp-footer__grid">
-            <div class="lp-footer__col">
-              <a class="lp-footer__head" href="/products">Product</a>
-              <a class="lp-footer__link" href="/products#sdk">The SDK</a>
-              <a class="lp-footer__link" href="/products#core">Core</a>
-              <a class="lp-footer__link" href="/products#connectors">Connectors</a>
-              <a class="lp-footer__link" href="/products#modules">Modules</a>
+      <!-- footer -->
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <div class="site-footer__grid">
+            <div class="site-footer__col">
+              <a href="https://github.com/fonderiejs/fonderie" class="site-footer__head">Open source</a>
+              <a href="https://github.com/fonderiejs/fonderie" class="site-footer__link">GitHub</a>
+              <a href="https://www.npmjs.com/package/@fonderie/core" class="site-footer__link">npm install @fonderie/core</a>
             </div>
-            <div class="lp-footer__col">
-              <a class="lp-footer__head" href="/resources">Resources</a>
-              <a class="lp-footer__link" href="/resources#docs">Documentation</a>
-              <a class="lp-footer__link" href="/resources#support">Support</a>
-            </div>
-            <div class="lp-footer__col">
-              <a class="lp-footer__head" href="https://github.com/fonderiejs/fonderie">Open source</a>
-              <a class="lp-footer__link" href="https://github.com/fonderiejs/fonderie">GitHub</a>
-              <a class="lp-footer__link" href="https://github.com/fonderiejs/fonderie">npm install @fonderie/core</a>
-            </div>
-            <div class="lp-footer__col">
-              <p class="lp-footer__head">Company</p>
-              <a class="lp-footer__link" href="/contact">Contact</a>
-              <a class="lp-footer__link" href="/contact">Press</a>
-              <a class="lp-footer__link" href="/contact">Investors</a>
+            <div class="site-footer__col">
+              <p class="site-footer__head">Company</p>
+              <a href="/contact" class="site-footer__link">Contact</a>
+              <a href="https://x.com/fonderiejs" class="site-footer__link">X / Twitter</a>
             </div>
           </div>
-          <div class="lp-footer__bottom">
-            <div class="lp-footer__meta">
-              <p style="font-size:12px;color:var(--color-muted);margin:0">© 2026 Fonderie, Inc.</p>
-              <a class="lp-footer__social" href="https://github.com/fonderiejs/fonderie" aria-label="GitHub">
-                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-              </a>
-              <a class="lp-footer__social" href="https://x.com/fonderiejs" aria-label="Fonderie on X">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="15" height="15"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-              </a>
+          <div class="site-footer__bottom">
+            <div class="site-footer__meta">
+              <p><strong>Fonderie, Inc.</strong> · © 2026 · Open source · MIT License</p>
+              <a href="https://github.com/fonderiejs/fonderie" aria-label="GitHub" class="site-footer__social"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+              <a href="https://x.com/fonderiejs" aria-label="Fonderie on X" class="site-footer__social"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="15" height="15"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
             </div>
-            <fieldset class="theme-switch" aria-label="Theme switcher">
-              <label class="theme-switch__option" data-theme-value="system">
-                <input type="radio" name="theme" value="system"/>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
-                <span>System</span>
-              </label>
-              <label class="theme-switch__option" data-theme-value="light">
-                <input type="radio" name="theme" value="light"/>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
-                <span>Light</span>
-              </label>
-              <label class="theme-switch__option" data-theme-value="dark">
-                <input type="radio" name="theme" value="dark"/>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-                <span>Dark</span>
-              </label>
-            </fieldset>
+            <div class="theme-switch" aria-label="Theme switcher">
+              <button type="button" class="theme-btn" data-theme-btn="system">System</button>
+              <button type="button" class="theme-btn" data-theme-btn="light">Light</button>
+              <button type="button" class="theme-btn" data-theme-btn="dark">Dark</button>
+            </div>
           </div>
         </div>
       </footer>
+
     </div>
+    </div>
+
+    <script src="/assets/js/home.js" defer></script>
   </body>
 </html>
