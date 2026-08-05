@@ -14,8 +14,6 @@ Key facts:
 ## Pages
 
 - [Home](https://fonderiejs.com/): What Fonderie is and how it works, with FAQ
-- [Product](https://fonderiejs.com/products): The SDK, Core, Connectors, and the app already in production
-- [Resources](https://fonderiejs.com/resources): Documentation, status, and support
 - [Contact](https://fonderiejs.com/contact): Contact, press, and investors
 
 ## Code
