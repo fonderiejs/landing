@@ -148,8 +148,8 @@ a:hover { color: var(--ink); }
 
 .nav {
   position: sticky; top: 0; z-index: 50;
-  background: color-mix(in srgb, var(--bg) 80%, transparent);
-  backdrop-filter: blur(12px); border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg) 94%, transparent);
+  border-bottom: 1px solid var(--line);
 }
 .nav__inner { min-height: 64px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
 .nav__logo { font-family: var(--serif); font-size: 24px; color: var(--ink); letter-spacing: -0.01em; }
@@ -168,7 +168,7 @@ a:hover { color: var(--ink); }
 }
 .hero__backdrop {
   position: absolute; top: 0; left: -4%; width: 108%; height: 100%; z-index: 0; pointer-events: none;
-  background-image: url(/assets/img/cloud-hero.png);
+  background-image: url(/assets/img/cloud-hero.webp);
   background-position: center top; background-size: 100% 100%; background-repeat: no-repeat;
   transform-origin: 20% 10%; animation: cloudGrow 18s ease-in-out infinite alternate; will-change: transform;
 }
@@ -248,7 +248,7 @@ a:hover { color: var(--ink); }
    shift
    ================================================================ */
 
-.shift { padding: clamp(48px, 6vw, 72px) 0; border-bottom: 1px solid var(--line); }
+.shift { content-visibility: auto; contain-intrinsic-size: auto 700px; padding: clamp(48px, 6vw, 72px) 0; border-bottom: 1px solid var(--line); }
 .shift__lede { font-size: 16px; line-height: 1.6; color: var(--muted); max-width: 56ch; margin: 0 0 clamp(32px, 4vw, 44px); }
 .shift__grid { display: flex; flex-wrap: wrap; gap: clamp(28px, 4vw, 48px); align-items: stretch; }
 .shift__list { flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
@@ -267,7 +267,7 @@ a:hover { color: var(--ink); }
    solution
    ================================================================ */
 
-.solution { padding: clamp(48px, 6vw, 72px) 0; border-bottom: 1px solid var(--line); }
+.solution { content-visibility: auto; contain-intrinsic-size: auto 700px; padding: clamp(48px, 6vw, 72px) 0; border-bottom: 1px solid var(--line); }
 .solution__title { margin: 0 0 40px; }
 .solution__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: start; }
 .solution__chat { display: flex; flex-direction: column; gap: 10px; }
@@ -285,7 +285,7 @@ a:hover { color: var(--ink); }
    proof
    ================================================================ */
 
-.proof { padding: clamp(56px, 7vw, 80px) 0 clamp(44px, 5vw, 60px); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.proof { content-visibility: auto; contain-intrinsic-size: auto 300px; padding: clamp(56px, 7vw, 80px) 0 clamp(44px, 5vw, 60px); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .proof__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 .proof__cell { padding: 4px 28px; display: flex; flex-direction: column; border-left: 1px solid var(--line); }
 .proof__cell:first-child { padding-left: 0; border-left: 0; }
@@ -305,7 +305,7 @@ a:hover { color: var(--ink); }
    packages
    ================================================================ */
 
-.packages { padding: clamp(48px, 6vw, 72px) 0; border-bottom: 1px solid var(--line); }
+.packages { content-visibility: auto; contain-intrinsic-size: auto 500px; padding: clamp(48px, 6vw, 72px) 0; border-bottom: 1px solid var(--line); }
 .packages__lede { font-size: 16px; line-height: 1.6; color: var(--muted); max-width: 52ch; margin: 0 0 32px; }
 .packages__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); grid-auto-rows: 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
 .packages__card { background: var(--bg); padding: 22px; display: flex; flex-direction: column; gap: 8px; color: var(--ink); }
@@ -324,7 +324,7 @@ a:hover { color: var(--ink); }
    difference
    ================================================================ */
 
-.difference { padding: clamp(60px, 7vw, 88px) 0; border-bottom: 1px solid var(--line); }
+.difference { content-visibility: auto; contain-intrinsic-size: auto 400px; padding: clamp(60px, 7vw, 88px) 0; border-bottom: 1px solid var(--line); }
 .difference__inner { max-width: 800px; margin: 0 auto; text-align: center; padding: clamp(48px, 6vw, 72px) 0; }
 .difference__eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin: 0 0 24px; }
 .difference__lede { font-size: 18px; line-height: 1.7; color: var(--muted); max-width: 60ch; margin: 0 auto 24px; text-wrap: pretty; }
@@ -339,7 +339,7 @@ a:hover { color: var(--ink); }
    pricing
    ================================================================ */
 
-.pricing { padding: clamp(48px, 6vw, 72px) 0; border-bottom: 1px solid var(--line); }
+.pricing { content-visibility: auto; contain-intrinsic-size: auto 700px; padding: clamp(48px, 6vw, 72px) 0; border-bottom: 1px solid var(--line); }
 .pricing__lede { font-size: 16px; line-height: 1.6; color: var(--muted); max-width: 56ch; margin: 0 0 clamp(28px, 4vw, 40px); }
 .pricing__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); grid-template-rows: auto 1fr auto; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
 .pricing__tier { background: var(--bg); padding: 28px 24px; display: grid; grid-template-rows: subgrid; grid-row: span 3; gap: 18px; align-content: start; }
