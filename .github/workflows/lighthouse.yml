@@ -26,6 +26,7 @@ jobs:
           urls: |
             http://localhost:8080/
             http://localhost:8080/contact
+            http://localhost:8080/404
           configPath: ./.lighthouserc.json
           uploadArtifacts: true
           temporaryPublicStorage: true
