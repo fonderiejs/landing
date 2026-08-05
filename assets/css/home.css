@@ -256,7 +256,7 @@ a:hover { color: var(--ink); }
    ================================================================ */
 
 .hero {
-  position: relative; overflow: hidden; background: #fff;
+  position: relative; overflow: hidden; background: var(--bg);
   padding: clamp(48px, 7vw, 88px) 24px 0;
   display: flex; flex-direction: column; align-items: center; text-align: center;
 }
@@ -265,7 +265,12 @@ a:hover { color: var(--ink); }
   background-image: url(/assets/img/cloud-hero.webp);
   background-position: center top; background-size: 100% 100%; background-repeat: no-repeat;
   transform-origin: 20% 10%; animation: cloudGrow 18s ease-in-out infinite alternate; will-change: transform;
+  opacity: 1; filter: none;
+  transition: opacity .2s linear, filter .2s linear;
 }
+/* the cloud photo is a light-sky image; on the dark page it reads as a
+   jarring white box unless dimmed down to a faint atmospheric texture */
+:root[data-theme="dark"] .hero__backdrop { opacity: .14; filter: brightness(.5) saturate(.6); }
 .hero__inner { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; min-width: 0; }
 .hero__eyebrow { margin: 0 0 20px; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
 .hero__title {
@@ -279,7 +284,7 @@ a:hover { color: var(--ink); }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; align-items: center; margin-bottom: 26px; max-width: 100%; }
 .hero__snippet {
   display: inline-flex; align-items: center; gap: 14px;
-  background: rgba(255,255,255,.72); backdrop-filter: blur(8px); border: 1px solid var(--line); border-radius: 12px;
+  background: color-mix(in srgb, var(--bg) 72%, transparent); backdrop-filter: blur(8px); border: 1px solid var(--line); border-radius: 12px;
   padding: 10px 12px 10px 16px; flex-wrap: wrap; justify-content: center; margin-bottom: 22px;
   min-width: 0; max-width: 100%;
 }
@@ -354,6 +359,10 @@ a:hover { color: var(--ink); }
 .shift__item-title { font-size: 16px; font-weight: 600; margin: 0 0 6px; }
 .shift__item-text { font-size: 14.5px; line-height: 1.55; color: var(--muted); margin: 0; }
 .shift__panel { flex: 1 1 340px; min-width: 0; background: #12100e; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; gap: 16px; box-shadow: 0 12px 32px -12px rgba(0,0,0,.35); }
+/* #12100e is close in lightness to the dark theme's page background, so
+   the panel needs an explicit edge to read as elevated rather than
+   blending into the page */
+:root[data-theme="dark"] .shift__panel { border: 1px solid #2a2521; }
 .shift__panel-label { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: #8a827c; margin: 0; }
 .shift__code { font-family: var(--mono); font-size: 13px; line-height: 1.9; color: #e8e2dc; }
 .shift__code pre { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
@@ -368,10 +377,12 @@ a:hover { color: var(--ink); }
 .solution__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: start; }
 .solution__chat { display: flex; flex-direction: column; gap: 10px; }
 .solution__bubble { align-self: flex-end; max-width: 88%; padding: 12px 16px; font-size: 14.5px; line-height: 1.5; border-radius: 16px 16px 4px 16px; background: var(--dark); color: #fff; }
+:root[data-theme="dark"] .solution__bubble { border: 1px solid #2a2521; }
 .solution__reply { align-self: flex-start; max-width: 92%; padding: 10px 14px; font-size: 14px; line-height: 1.5; border-radius: 16px 16px 16px 4px; background: var(--bg); border: 1px solid var(--line); color: var(--muted); }
 .solution__reply-label { display: block; font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
 .solution__reply code { font-family: var(--mono); color: var(--ink); }
 .solution__panel { background: #12100e; border-radius: 16px; padding: 24px; overflow: hidden; box-shadow: 0 12px 32px -12px rgba(0,0,0,.35); }
+:root[data-theme="dark"] .solution__panel { border: 1px solid #2a2521; }
 .solution__panel-label { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: #8a827c; margin: 0 0 18px; }
 .solution__code { font-family: var(--mono); font-size: 13px; line-height: 1.8; color: #e8e2dc; margin-bottom: 20px; }
 .solution__code pre { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
