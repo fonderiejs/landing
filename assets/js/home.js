@@ -41,6 +41,28 @@
     });
   }
 
+  // ---- mobile nav burger ----
+  var nav = document.querySelector('.nav');
+  var burger = document.querySelector('.nav__burger');
+  if (nav && burger) {
+    burger.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('.nav__link').forEach(function (link) {
+      link.addEventListener('click', function () {
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded', 'false');
+      });
+    });
+    matchMedia('(min-width: 641px)').addEventListener('change', function (e) {
+      if (e.matches) {
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
   // ---- hide any AI-assistant icon that fails to load ----
   document.querySelectorAll('[data-hide-on-error]').forEach(function (img) {
     img.addEventListener('error', function () { img.style.display = 'none'; });
