@@ -206,9 +206,9 @@ a:hover { color: var(--ink); }
 .mobile-menu.is-open .mobile-menu__backdrop { opacity: 1; }
 
 .mobile-menu__sheet {
-  position: absolute; left: 0; right: 0; bottom: 0; max-height: 85vh; overflow-y: auto;
+  position: absolute; left: 0; right: 0; bottom: 0; max-height: calc(100vh - 40px); overflow-y: auto;
   background: var(--bg); border-radius: 24px 24px 0 0;
-  padding: 20px 24px max(24px, env(safe-area-inset-bottom));
+  padding: 20px 24px max(24px, calc(env(safe-area-inset-bottom) + 16px));
   transform: translateY(100%);
   transition: transform .35s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -240,6 +240,7 @@ a:hover { color: var(--ink); }
 
 .mobile-menu__divider { border: 0; border-top: 1px solid #f0f0f0; margin: 4px 0 16px; }
 
+.mobile-menu__cta-wrap { margin-bottom: 8px; }
 .mobile-menu__cta { width: 100%; justify-content: center; }
 
 @media (min-width: 768px) {
