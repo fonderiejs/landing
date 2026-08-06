@@ -1,0 +1,9 @@
+{
+  "eyebrow": "違い",
+  "title": "所有する。ロックインしない。",
+  "lede": "Fonderieはあなたのプロジェクトに組み込まれたスキルです — セルフホスト、MITライセンス、あなた自身が実行します。または、その同じオープンスタンダードをFonderie Cloudで、あなた自身のインフラ上に運用管理させることもできます。",
+  "badges": {
+    "selfHosted": "セルフホスト（Core）",
+    "cloud": "Fonderie Cloud"
+  }
+}

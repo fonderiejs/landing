@@ -1,0 +1,20 @@
+{
+  "eyebrow": "The packages",
+  "title": "Real packages, on the real registry.",
+  "lede": "Real packages on npm. Click through and read the code — with adapters for Express, Hono, and Koa, so you can mount Fonderie inside an app you already run.",
+  "businessLogic": "Business Logic",
+  "items": [
+    { "name": "@fonderie/auth", "desc": "Drop-in auth for SaaS" },
+    { "name": "@fonderie/billing", "desc": "Subscriptions, seats, usage, and webhooks" },
+    { "name": "@fonderie/workspaces", "desc": "Teams, orgs, invites, and multi-tenancy" },
+    { "name": "@fonderie/permissions", "desc": "Role-based access control" },
+    { "name": "@fonderie/courier", "desc": "Email, SMS, and push notification dispatch" }
+  ],
+  "moreCard": {
+    "kicker": "The rest of the registry",
+    "title": "+12 more →",
+    "desc": "core, audit, events, rate-limit, config…"
+  },
+  "footnote": "All MIT-licensed.",
+  "footnoteLink": "See the full registry on GitHub →"
+}

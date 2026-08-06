@@ -1,0 +1,20 @@
+{
+  "eyebrow": "Die Lösung",
+  "title": "Shippen Sie das Produkt. Das Backend ist bereits fertig.",
+  "replyLabel": "Ihre KI + Fonderie-Module",
+  "chat": [
+    {
+      "prompt": "\"Gerüst für meine SaaS mit Auth, Billing und Team-Workspaces bauen\"",
+      "reply": "Ich komponiere das Backend mit Fonderies Standardmodulen. Generiere Ihre Konfiguration…"
+    },
+    {
+      "prompt": "\"Stripe-Billing mit Preisen pro Sitzplatz hinzufügen\"",
+      "reply": "Füge @fonderie/billing mit Stripe-Provider und sitzplatzbasierten Plänen hinzu. Ihr Projekt ist eingerichtet."
+    },
+    {
+      "prompt": "\"Jetzt den Endpunkt zum Erstellen eines Termins schreiben\"",
+      "reply": "Schreibe Ihre Produktlogik. Auth, Tenant-Scoping und Billing sind bereits verdrahtet — Sie schreiben nur den Teil, den nur Sie schreiben können."
+    }
+  ],
+  "codePanelLabel": "Generiert von Ihrer KI + Fonderie-Modulen"
+}

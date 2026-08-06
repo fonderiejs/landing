@@ -1,0 +1,20 @@
+{
+  "eyebrow": "软件包",
+  "title": "真实的软件包,发布在真实的注册表上。",
+  "lede": "npm 上真实存在的软件包。点进去阅读源码 —— 并提供 Express、Hono 和 Koa 的适配器,方便你将 Fonderie 接入现有正在运行的应用。",
+  "businessLogic": "业务逻辑",
+  "items": [
+    { "name": "@fonderie/auth", "desc": "SaaS 开箱即用的认证方案" },
+    { "name": "@fonderie/billing", "desc": "订阅、席位、用量计费与 Webhook" },
+    { "name": "@fonderie/workspaces", "desc": "团队、组织、邀请与多租户支持" },
+    { "name": "@fonderie/permissions", "desc": "基于角色的访问控制" },
+    { "name": "@fonderie/courier", "desc": "邮件、短信与推送通知的发送" }
+  ],
+  "moreCard": {
+    "kicker": "注册表中的其余部分",
+    "title": "还有 12 个以上 →",
+    "desc": "core、audit、events、rate-limit、config…"
+  },
+  "footnote": "全部采用 MIT 许可。",
+  "footnoteLink": "在 GitHub 上查看完整注册表 →"
+}

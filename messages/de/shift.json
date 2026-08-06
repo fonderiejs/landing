@@ -1,0 +1,24 @@
+{
+  "eyebrow": "Der Wandel",
+  "title": "KI braucht nicht mehr Geschwindigkeit. Sie braucht einen Standard.",
+  "lede": "Rohe KI generiert jedes Mal von Grund auf neu. Fonderie gibt ihr ein gemeinsames, geprüftes Vokabular — damit sie komponiert statt halluziniert.",
+  "features": [
+    {
+      "num": "01",
+      "title": "Standardmodule",
+      "text": "Auth, Billing, Berechtigungen, Workspaces — jedes ein typisiertes, getestetes Primitiv. Keine Vorlage; ein Baustein."
+    },
+    {
+      "num": "02",
+      "title": "KI-lesbare Skills",
+      "text": "Skill-Dateien in Ihrem Repo legen fest, wie die Module zusammenspielen. Kein Prompt Engineering. Keine Drift zwischen Sitzungen."
+    },
+    {
+      "num": "03",
+      "title": "Überprüfbarer Output",
+      "text": "Komposition wird zu reinem TypeScript in Ihrem Repo — diffbar, testbar, Zeile für Zeile prüfbar."
+    }
+  ],
+  "codeLabel": "Das Vokabular, das Ihre KI liest",
+  "codeFooter": "Jedes Modul stellt denselben Vertrag bereit, sodass Komposition ein Nachschlagen ist — kein Raten."
+}

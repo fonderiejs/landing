@@ -1,0 +1,11 @@
+{
+  "eyebrow": "Der Beweis",
+  "stats": [
+    { "value": "0", "label": "Sicherheitslücken", "sub": "Standardmäßig geprüft, bei jedem Lauf" },
+    { "value": "Tag 1", "label": "Backend einsatzbereit", "sub": "Statt neun Wochen Gerüstbau" },
+    { "value": "~1.300", "label": "Zeilen Backend-Code", "sub": "Ein Drittel des handgebauten Äquivalents" },
+    { "value": "$199", "label": "Pro Projekt / Monat", "sub": "vs. 30.000–60.000 $ Engineering-Kosten" }
+  ],
+  "footnote": "Ergebnisse aus einem reproduzierbaren A/B-Sicherheitsexperiment.",
+  "footnoteLink": "Protokoll ansehen →"
+}

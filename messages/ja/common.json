@@ -1,0 +1,38 @@
+{
+  "siteTitle": "Fonderie",
+  "meta": {
+    "titleSuffix": "AIが構築するSaaSのためのオープンスタンダード",
+    "description": "あらゆるSaaSは、製品コードを一行も書く前に、同じ認証・課金・チーム機能・マルチテナンシーを何度も作り直しています。Fonderieはそのインフラのためのオープンスタンダードです。"
+  },
+  "nav": {
+    "solution": "ソリューション",
+    "packages": "パッケージ",
+    "pricing": "料金",
+    "github": "GitHub",
+    "contact": "お問い合わせ"
+  },
+  "cta": {
+    "getStarted": "はじめる",
+    "viewOnGitHub": "GitHubで見る",
+    "startShipping": "今すぐ始める",
+    "contactSales": "営業に問い合わせる"
+  },
+  "footer": {
+    "openSource": "オープンソース",
+    "github": "GitHub",
+    "npmInstall": "npm install @fonderie/core",
+    "company": "会社情報",
+    "contact": "お問い合わせ",
+    "twitter": "X / Twitter",
+    "copyright": "Fonderie, Inc. · © 2026 · オープンソース · MITライセンス"
+  },
+  "theme": {
+    "label": "テーマ",
+    "system": "システム",
+    "light": "ライト",
+    "dark": "ダーク"
+  },
+  "localeSwitcher": {
+    "label": "言語"
+  }
+}

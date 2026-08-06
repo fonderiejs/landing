@@ -1,0 +1,24 @@
+{
+  "eyebrow": "The shift",
+  "title": "AI doesn't need more speed. It needs a standard.",
+  "lede": "Raw AI generates from scratch every time. Fonderie gives it a shared, audited vocabulary — so it composes, not hallucinates.",
+  "features": [
+    {
+      "num": "01",
+      "title": "Standard modules",
+      "text": "Auth, billing, permissions, workspaces — each a typed, tested primitive. Not a template; a building block."
+    },
+    {
+      "num": "02",
+      "title": "AI-readable skills",
+      "text": "Skill files in your repo spell out how the modules wire together. No prompt engineering. No drift between sessions."
+    },
+    {
+      "num": "03",
+      "title": "Reviewable output",
+      "text": "Composition resolves to plain TypeScript in your repo — diffable, testable, auditable line by line."
+    }
+  ],
+  "codeLabel": "The vocabulary your AI reads",
+  "codeFooter": "Every module exposes the same contract, so composition is a lookup — not a guess."
+}

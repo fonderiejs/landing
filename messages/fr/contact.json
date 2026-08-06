@@ -1,0 +1,7 @@
+{
+  "title": "Parlons-en.",
+  "lede": "Dites-nous ce que vous construisez. On vous dira à quelle vitesse Fonderie peut le composer.",
+  "email": { "label": "E-mail", "value": "hello@fonderiejs.com" },
+  "fit": { "label": "Pour qui", "value": "Agences, studios et équipes qui construisent du SaaS avec l'IA." },
+  "response": { "label": "Délai de réponse", "value": "Sous un jour ouvré. Par un humain, pas un tunnel de vente." }
+}
