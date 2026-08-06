@@ -203,6 +203,9 @@ a:hover {
   padding: 10px 10px 10px 24px;
   font-size: 15px;
 }
+.btn--dark:hover {
+  color: #fff;
+}
 .btn--dark-sm {
   background: var(--dark);
   color: #fff;
@@ -210,12 +213,18 @@ a:hover {
   padding: 7px 7px 7px 18px;
   font-size: 13px;
 }
+.btn--dark-sm:hover {
+  color: #fff;
+}
 .btn--stage {
   background: var(--stage);
   color: #fff;
   gap: 12px;
   padding: 10px 10px 10px 24px;
   font-size: 15px;
+}
+.btn--stage:hover {
+  color: #fff;
 }
 .btn--ghost {
   background: var(--bg);
@@ -1134,14 +1143,20 @@ a:hover {
 }
 
 @media (max-width: 767px) {
+  .proof__grid {
+    grid-template-columns: 1fr;
+  }
   .proof__cell {
     border-left: 0;
     border-top: 1px solid var(--line);
-    padding: 24px 0 0;
+    padding: 24px 0 20px;
   }
   .proof__cell:first-child {
     border-top: 0;
     padding-top: 0;
+  }
+  .proof__cell:last-child {
+    padding-bottom: 0;
   }
 }
 
