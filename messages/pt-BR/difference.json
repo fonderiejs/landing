@@ -1,0 +1,9 @@
+{
+  "eyebrow": "A diferença",
+  "title": "Seu, sem lock-in.",
+  "lede": "A Fonderie é um skill integrado ao seu projeto — self-hosted, sob licença MIT, seu para rodar. Ou deixe a gente gerenciar esse mesmo padrão aberto na sua própria infraestrutura com o Fonderie Cloud.",
+  "badges": {
+    "selfHosted": "Self-hosted (Core)",
+    "cloud": "Fonderie Cloud"
+  }
+}

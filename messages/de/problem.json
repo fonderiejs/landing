@@ -1,0 +1,31 @@
+{
+  "eyebrow": "Das Problem",
+  "title": "Jede SaaS beginnt mit denselben neun Wochen.",
+  "lede": "KI beseitigt diese Arbeit nicht — sie improvisiert sie. Dieselbe erfundene Auth, dieselben Tenant-Lecks, dieselben Billing-Sonderfälle, nur an einem Nachmittag statt in zwei Monaten geshippt.",
+  "ledeStrong": "Schneller ist nicht dasselbe wie gelöst.",
+  "compareBefore": "Ein Backend-Engineer für 3 Monate:",
+  "comparePriceStrike": "30.000–60.000 $",
+  "compareAfter": "Mit Fonderie starten:",
+  "compareFree": "kostenlos und quelloffen.",
+  "ledgerHeading": "Bevor Sie eine Zeile Produktcode schreiben",
+  "ledgerDuration": "~9 Wochen",
+  "timeline": [
+    { "week": "Woche 1–2", "label": "Auth-Setup" },
+    { "week": "Woche 3", "label": "Team-/Org-Modell" },
+    { "week": "Woche 4", "label": "Stripe-Anbindung" },
+    { "week": "Woche 5", "label": "E-Mail-System" },
+    { "week": "Woche 6", "label": "Berechtigungen" },
+    { "week": "Woche 7", "label": "Multi-Tenancy" },
+    { "week": "Woche 8", "label": "Remote-Konfiguration" },
+    { "week": "Woche 9", "label": "Endlich am Produkt arbeiten" }
+  ],
+  "byHandTitle": "Von Hand — ~9 Wochen.",
+  "byHandText": "Zwei Monate Code, den die Welt längst geschrieben hat — dieselben Sicherheitslücken erneut ausgeliefert.",
+  "withAiTitle": "Mit KI — ~1 Nachmittag.",
+  "withAiText": "Dieselbe improvisierte Infrastruktur, dieselben Lücken. Der Zeitplan schrumpft; das Problem nicht.",
+  "metaStrip": {
+    "command": "npx @fonderie/create",
+    "modules": "Komponiert aus 17 Standardmodulen",
+    "noExternal": "Null externe Server in Ihrem Request-Pfad"
+  }
+}

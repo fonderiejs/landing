@@ -1,0 +1,9 @@
+{
+  "eyebrow": "Der Unterschied",
+  "title": "Ihr Eigentum, kein Lock-in.",
+  "lede": "Fonderie ist ein Skill, fest in Ihr Projekt integriert — selbst gehostet, MIT-lizenziert, Ihres zum Betreiben. Oder lassen Sie uns denselben offenen Standard mit Fonderie Cloud auf Ihrer eigenen Infrastruktur verwalten.",
+  "badges": {
+    "selfHosted": "Selbst gehostet (Core)",
+    "cloud": "Fonderie Cloud"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "eyebrow": "課題",
+  "title": "すべてのSaaSは、同じ9週間から始まる。",
+  "lede": "AIはこの作業をなくすのではなく、即興で作り直しているだけです。同じような認証、同じようなテナント間の情報漏れ、同じような課金のエッジケース — それが2か月ではなく数時間で出荷されるようになっただけです。",
+  "ledeStrong": "速いことと、解決したことは違います。",
+  "compareBefore": "バックエンドエンジニアを3か月雇う場合:",
+  "comparePriceStrike": "$30,000〜60,000",
+  "compareAfter": "Fonderieから始める場合:",
+  "compareFree": "無料でオープンソース。",
+  "ledgerHeading": "製品コードを1行も書く前に",
+  "ledgerDuration": "約9週間",
+  "timeline": [
+    { "week": "1〜2週目", "label": "認証のセットアップ" },
+    { "week": "3週目", "label": "チーム/組織モデル" },
+    { "week": "4週目", "label": "Stripe連携" },
+    { "week": "5週目", "label": "メールシステム" },
+    { "week": "6週目", "label": "権限管理" },
+    { "week": "7週目", "label": "マルチテナンシー" },
+    { "week": "8週目", "label": "リモート設定" },
+    { "week": "9週目", "label": "ようやく製品を書く" }
+  ],
+  "byHandTitle": "手作業 — 約9週間。",
+  "byHandText": "世界がすでに書いたコードに2か月を費やし、同じセキュリティの欠陥を再び出荷する。",
+  "withAiTitle": "AI利用 — 約1時間。",
+  "withAiText": "同じ即興のインフラ、同じ欠陥。かかる時間は縮まっても、問題は縮まりません。",
+  "metaStrip": {
+    "command": "npx @fonderie/create",
+    "modules": "17個の標準モジュールから構成",
+    "noExternal": "リクエストの経路に外部サーバーはゼロ"
+  }
+}

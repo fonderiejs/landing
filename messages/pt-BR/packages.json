@@ -1,0 +1,20 @@
+{
+  "eyebrow": "Os pacotes",
+  "title": "Pacotes de verdade, no registro de verdade.",
+  "lede": "Pacotes reais no npm. Entre e leia o código — com adaptadores para Express, Hono e Koa, para você plugar a Fonderie em uma aplicação que já está rodando.",
+  "businessLogic": "Lógica de negócio",
+  "items": [
+    { "name": "@fonderie/auth", "desc": "Autenticação pronta para SaaS" },
+    { "name": "@fonderie/billing", "desc": "Assinaturas, seats, uso e webhooks" },
+    { "name": "@fonderie/workspaces", "desc": "Times, organizações, convites e multi-tenancy" },
+    { "name": "@fonderie/permissions", "desc": "Controle de acesso baseado em papéis" },
+    { "name": "@fonderie/courier", "desc": "Disparo de e-mail, SMS e notificações push" }
+  ],
+  "moreCard": {
+    "kicker": "O resto do registro",
+    "title": "+12 outros →",
+    "desc": "core, audit, events, rate-limit, config…"
+  },
+  "footnote": "Todos sob licença MIT.",
+  "footnoteLink": "Ver o registro completo no GitHub →"
+}

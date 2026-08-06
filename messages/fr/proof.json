@@ -1,0 +1,11 @@
+{
+  "eyebrow": "La preuve",
+  "stats": [
+    { "value": "0", "label": "Vulnérabilités de sécurité", "sub": "Audité par défaut, à chaque exécution" },
+    { "value": "Jour 1", "label": "Backend prêt", "sub": "Au lieu de neuf semaines d'échafaudage" },
+    { "value": "~1 300", "label": "Lignes de code backend", "sub": "Un tiers de l'équivalent construit à la main" },
+    { "value": "199 $", "label": "Par projet / mois", "sub": "vs. 30 000–60 000 $ de coût ingénieur" }
+  ],
+  "footnote": "Résultats issus d'une expérience de sécurité A/B reproductible.",
+  "footnoteLink": "Voir le protocole →"
+}

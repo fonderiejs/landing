@@ -1,0 +1,38 @@
+{
+  "siteTitle": "Fonderie",
+  "meta": {
+    "titleSuffix": "The open standard for AI-built SaaS",
+    "description": "Every SaaS rebuilds the same auth, billing, teams, and multi-tenancy before writing a single line of product code. Fonderie is the open standard for that infrastructure — a skill wired into your repo, running on your server, against your database. Compose it in an afternoon; spend the rest on the part that's actually yours."
+  },
+  "nav": {
+    "solution": "The solution",
+    "packages": "Packages",
+    "pricing": "Pricing",
+    "github": "GitHub",
+    "contact": "Contact"
+  },
+  "cta": {
+    "getStarted": "Get started",
+    "viewOnGitHub": "View on GitHub",
+    "startShipping": "Start shipping",
+    "contactSales": "Contact sales"
+  },
+  "footer": {
+    "openSource": "Open source",
+    "github": "GitHub",
+    "npmInstall": "npm install @fonderie/core",
+    "company": "Company",
+    "contact": "Contact",
+    "twitter": "X / Twitter",
+    "copyright": "Fonderie, Inc. · © 2026 · Open source · MIT License"
+  },
+  "theme": {
+    "label": "Theme",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "localeSwitcher": {
+    "label": "Language"
+  }
+}

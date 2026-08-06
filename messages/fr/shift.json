@@ -1,0 +1,24 @@
+{
+  "eyebrow": "Le changement",
+  "title": "L'IA n'a pas besoin de plus de vitesse. Elle a besoin d'un standard.",
+  "lede": "L'IA brute génère à partir de zéro à chaque fois. Fonderie lui donne un vocabulaire commun et audité — pour qu'elle compose au lieu d'halluciner.",
+  "features": [
+    {
+      "num": "01",
+      "title": "Modules standards",
+      "text": "Auth, facturation, permissions, workspaces — chacun un primitif typé et testé. Pas un template ; un bloc de construction."
+    },
+    {
+      "num": "02",
+      "title": "Skills lisibles par l'IA",
+      "text": "Des fichiers de skills dans votre repo précisent comment les modules s'assemblent. Pas de prompt engineering. Pas de dérive entre les sessions."
+    },
+    {
+      "num": "03",
+      "title": "Résultat vérifiable",
+      "text": "La composition se résout en TypeScript brut dans votre repo — diffable, testable, auditable ligne par ligne."
+    }
+  ],
+  "codeLabel": "Le vocabulaire que votre IA lit",
+  "codeFooter": "Chaque module expose le même contrat, si bien que composer revient à consulter — pas à deviner."
+}

@@ -1,0 +1,20 @@
+{
+  "eyebrow": "Die Pakete",
+  "title": "Echte Pakete, in der echten Registry.",
+  "lede": "Echte Pakete auf npm. Klicken Sie sich durch und lesen Sie den Code — mit Adaptern für Express, Hono und Koa, damit Sie Fonderie in eine bereits laufende App einbinden können.",
+  "businessLogic": "Business-Logik",
+  "items": [
+    { "name": "@fonderie/auth", "desc": "Fertige Auth für SaaS" },
+    { "name": "@fonderie/billing", "desc": "Abos, Sitzplätze, Nutzung und Webhooks" },
+    { "name": "@fonderie/workspaces", "desc": "Teams, Organisationen, Einladungen und Multi-Tenancy" },
+    { "name": "@fonderie/permissions", "desc": "Rollenbasierte Zugriffskontrolle" },
+    { "name": "@fonderie/courier", "desc": "Versand von E-Mail, SMS und Push-Benachrichtigungen" }
+  ],
+  "moreCard": {
+    "kicker": "Der Rest der Registry",
+    "title": "+12 weitere →",
+    "desc": "core, audit, events, rate-limit, config…"
+  },
+  "footnote": "Alle MIT-lizenziert.",
+  "footnoteLink": "Vollständige Registry auf GitHub ansehen →"
+}

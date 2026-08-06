@@ -1,0 +1,19 @@
+{
+  "eyebrow": "オープンソース",
+  "titleLine1": "AIが構築するSaaSのための",
+  "titleLine2": "オープンスタンダード。",
+  "lede": "SaaSの構築を任されたAIアシスタントは、そのたびに独自のインフラ — 認証、課金、権限、チーム機能 — を発明します。FonderieはあらゆるLLMに、組み立てのための共通標準を提供します。",
+  "ledeStrong": "AIが即興を止め、あなたは出荷を始める。",
+  "command": "npx @fonderie/create my-saas",
+  "copy": "コピー",
+  "copied": "コピーしました！",
+  "proof": "MITライセンス · オープンソース · あなたのインフラ",
+  "worksWith": "対応ツール",
+  "assistants": {
+    "claudeCode": "Claude Code",
+    "cursor": "Cursor",
+    "codex": "Codex",
+    "windsurf": "Windsurf",
+    "any": "コードを読めるあらゆるAI"
+  }
+}

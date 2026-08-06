@@ -1,0 +1,19 @@
+{
+  "eyebrow": "Open source",
+  "titleLine1": "The open standard for",
+  "titleLine2": "AI-built SaaS.",
+  "lede": "Every AI assistant asked to build a SaaS invents its own infrastructure — auth, billing, permissions, teams. Fonderie gives every LLM one standard to compose from.",
+  "ledeStrong": "Your AI stops improvising. You start shipping.",
+  "command": "npx @fonderie/create my-saas",
+  "copy": "Copy",
+  "copied": "Copied!",
+  "proof": "MIT-licensed · Open source · Your infrastructure",
+  "worksWith": "Works with",
+  "assistants": {
+    "claudeCode": "Claude Code",
+    "cursor": "Cursor",
+    "codex": "Codex",
+    "windsurf": "Windsurf",
+    "any": "Any code-reading AI"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "eyebrow": "パッケージ",
+  "title": "本物のレジストリにある、本物のパッケージ。",
+  "lede": "npm上の実在するパッケージです。コードを開いて読んでみてください — Express、Hono、Koa向けのアダプターも用意されているので、すでに動いているアプリにFonderieを組み込めます。",
+  "businessLogic": "ビジネスロジック",
+  "items": [
+    { "name": "@fonderie/auth", "desc": "SaaS向けのドロップイン認証" },
+    { "name": "@fonderie/billing", "desc": "サブスクリプション、シート、利用量、Webhook" },
+    { "name": "@fonderie/workspaces", "desc": "チーム、組織、招待、マルチテナンシー" },
+    { "name": "@fonderie/permissions", "desc": "ロールベースのアクセス制御" },
+    { "name": "@fonderie/courier", "desc": "メール、SMS、プッシュ通知の配信" }
+  ],
+  "moreCard": {
+    "kicker": "レジストリの他のパッケージ",
+    "title": "他12個以上 →",
+    "desc": "core、audit、events、rate-limit、config…"
+  },
+  "footnote": "すべてMITライセンス。",
+  "footnoteLink": "GitHubでレジストリ全体を見る →"
+}
