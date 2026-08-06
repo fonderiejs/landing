@@ -1,4 +1,4 @@
-import { unstable_setRequestLocale } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollReveal from './components/ScrollReveal';
@@ -13,8 +13,9 @@ import Difference from './sections/Difference';
 import Pricing from './sections/Pricing';
 import FinalCta from './sections/FinalCta';
 
-export default function HomePage({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale);
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <>
       <ScrollReveal />

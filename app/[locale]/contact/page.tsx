@@ -1,5 +1,4 @@
-import { useTranslations } from 'next-intl';
-import { unstable_setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { locales } from '@/lib/i18n';
@@ -8,9 +7,10 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default function ContactPage({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale);
-  const t = useTranslations('contact');
+export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('contact');
   const cells = ['email', 'fit', 'response'] as const;
 
   return (

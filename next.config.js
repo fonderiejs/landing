@@ -19,6 +19,8 @@ const nextConfig = {
     // GitHub Pages has no image-optimization server - ship raw files.
     unoptimized: true,
   },
+  // Don't auto-generate/rewrite AGENTS.md and CLAUDE.md on every `next dev`.
+  agentRules: false,
 };
 
 module.exports = withNextIntl(nextConfig);
