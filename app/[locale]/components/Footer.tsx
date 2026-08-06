@@ -45,7 +45,7 @@ export default function Footer() {
               </svg>
             </a>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <div className="site-footer__controls">
             <ThemeSwitcher />
             <LocaleSwitcher />
           </div>
