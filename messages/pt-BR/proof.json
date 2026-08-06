@@ -1,0 +1,11 @@
+{
+  "eyebrow": "A prova",
+  "stats": [
+    { "value": "0", "label": "Vulnerabilidades de segurança", "sub": "Auditado por padrão, em toda execução" },
+    { "value": "Dia 1", "label": "Backend pronto", "sub": "Em vez de nove semanas de infraestrutura" },
+    { "value": "~1.300", "label": "Linhas de código de backend", "sub": "Um terço do equivalente feito à mão" },
+    { "value": "US$ 199", "label": "Por projeto / mês", "sub": "vs. US$ 30–60 mil de custo de engenharia" }
+  ],
+  "footnote": "Resultados de um experimento de segurança A/B reprodutível.",
+  "footnoteLink": "Ver o protocolo →"
+}

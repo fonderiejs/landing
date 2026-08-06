@@ -1,0 +1,58 @@
+{
+  "eyebrow": "定价",
+  "title": "免费开始,交付时再扩容。",
+  "lede": "开源核心,自托管,零锁定。当你需要托管基础设施、SSO 与合规能力时再升级。",
+  "tiers": [
+    {
+      "name": "Build",
+      "price": "免费",
+      "period": "",
+      "desc": "适合个人项目",
+      "features": ["全部核心模块", "自托管", "社区支持"],
+      "cta": "立即开始",
+      "featured": false
+    },
+    {
+      "name": "Ship",
+      "price": "$199",
+      "period": "/月",
+      "desc": "适合有真实用户的 SaaS",
+      "featuresLead": "包含 Build 全部内容,以及",
+      "features": ["生产环境许可", "优先支持", "团队功能", "审计日志"],
+      "cta": "开始交付",
+      "featured": true
+    },
+    {
+      "name": "Scale",
+      "price": "$499",
+      "period": "/月",
+      "desc": "适合快速成长的团队",
+      "featuresLead": "包含 Ship 全部内容,以及",
+      "features": ["SLA", "高级合规能力", "专属支持", "SSO 就绪"],
+      "cta": "联系销售",
+      "featured": false
+    },
+    {
+      "name": "Enterprise",
+      "price": "定制报价",
+      "period": "",
+      "desc": "适合大型组织",
+      "featuresLead": "包含 Scale 全部内容,以及",
+      "features": ["本地部署", "定制模块", "SOC 2 / HIPAA", "专属客户经理"],
+      "cta": "联系销售",
+      "featured": false
+    }
+  ],
+  "compareNote1": "对比雇佣一名后端工程师 3 个月的成本:3 万至 6 万美元。",
+  "compareNote2": "每月 199 美元比一天的外包顾问费用还低;每月 499 美元比一周的工程师成本还低。",
+  "compareNote3": "只有当你的 SaaS 开始盈利时,你才需要付费。",
+  "finalCta": {
+    "title": "去交付产品,而不是搭建脚手架。",
+    "lede": "九周的基础设施工作,已经写好,并已通过审计。",
+    "getStarted": "在 GitHub 上开始",
+    "star": "在 GitHub 上点星标",
+    "prompts": "适用于 Claude Code 和 Cursor 的系统提示词已随仓库提供 —",
+    "promptsLink": "前往 GitHub 获取 →",
+    "tag": "适合代理商、独立创始人、团队与 vibe coder"
+  }
+}

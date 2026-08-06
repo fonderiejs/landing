@@ -1,0 +1,9 @@
+{
+  "eyebrow": "The difference",
+  "title": "Owned, not locked in.",
+  "lede": "Fonderie is a skill wired into your project — self-hosted, MIT-licensed, yours to run. Or let us manage that same open standard on your own infrastructure with Fonderie Cloud.",
+  "badges": {
+    "selfHosted": "Self-hosted (Core)",
+    "cloud": "Fonderie Cloud"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "title": "联系我们。",
+  "lede": "告诉我们你正在构建什么,我们会告诉你 Fonderie 能以多快的速度帮你组装出来。",
+  "email": { "label": "邮箱", "value": "hello@fonderiejs.com" },
+  "fit": { "label": "适用对象", "value": "使用 AI 构建 SaaS 的代理商、工作室和团队。" },
+  "response": { "label": "响应时间", "value": "一个工作日内。真人回复,不是自动化漏斗。" }
+}

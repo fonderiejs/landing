@@ -1,0 +1,31 @@
+{
+  "eyebrow": "Le problème",
+  "title": "Chaque SaaS commence par les neuf mêmes semaines.",
+  "lede": "L'IA ne supprime pas ce travail — elle l'improvise. Même auth inventée, mêmes fuites entre tenants, mêmes cas limites de facturation, livrés en un après-midi au lieu de deux mois.",
+  "ledeStrong": "Plus rapide n'est pas la même chose que résolu.",
+  "compareBefore": "Embaucher un ingénieur backend pendant 3 mois :",
+  "comparePriceStrike": "30 000–60 000 $",
+  "compareAfter": "En démarrant avec Fonderie :",
+  "compareFree": "gratuit et open source.",
+  "ledgerHeading": "Avant d'écrire une seule ligne de produit",
+  "ledgerDuration": "~9 semaines",
+  "timeline": [
+    { "week": "Semaine 1–2", "label": "Mise en place de l'auth" },
+    { "week": "Semaine 3", "label": "Modèle équipe / organisation" },
+    { "week": "Semaine 4", "label": "Intégration Stripe" },
+    { "week": "Semaine 5", "label": "Système d'e-mails" },
+    { "week": "Semaine 6", "label": "Permissions" },
+    { "week": "Semaine 7", "label": "Multi-tenant" },
+    { "week": "Semaine 8", "label": "Configuration à distance" },
+    { "week": "Semaine 9", "label": "Enfin écrire le produit" }
+  ],
+  "byHandTitle": "À la main — ~9 semaines.",
+  "byHandText": "Deux mois de code que le monde a déjà écrit, en relivrant les mêmes failles de sécurité.",
+  "withAiTitle": "Avec l'IA — ~1 après-midi.",
+  "withAiText": "Même infrastructure improvisée, mêmes failles. Le délai s'effondre ; le problème, non.",
+  "metaStrip": {
+    "command": "npx @fonderie/create",
+    "modules": "Composé à partir de 17 modules standards",
+    "noExternal": "Zéro serveur externe dans votre chemin de requête"
+  }
+}

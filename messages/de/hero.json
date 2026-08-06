@@ -1,0 +1,19 @@
+{
+  "eyebrow": "Open Source",
+  "titleLine1": "Der offene Standard für",
+  "titleLine2": "KI-gebaute SaaS.",
+  "lede": "Jeder KI-Assistent, der eine SaaS bauen soll, erfindet seine eigene Infrastruktur — Auth, Billing, Berechtigungen, Teams. Fonderie gibt jedem LLM einen gemeinsamen Standard, aus dem es komponieren kann.",
+  "ledeStrong": "Ihre KI hört auf zu improvisieren. Sie fangen an zu shippen.",
+  "command": "npx @fonderie/create my-saas",
+  "copy": "Kopieren",
+  "copied": "Kopiert!",
+  "proof": "MIT-lizenziert · Open Source · Ihre Infrastruktur",
+  "worksWith": "Funktioniert mit",
+  "assistants": {
+    "claudeCode": "Claude Code",
+    "cursor": "Cursor",
+    "codex": "Codex",
+    "windsurf": "Windsurf",
+    "any": "Jeder codelesenden KI"
+  }
+}
