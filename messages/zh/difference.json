@@ -1,0 +1,9 @@
+{
+  "eyebrow": "核心差异",
+  "title": "归你所有,而非被锁定。",
+  "lede": "Fonderie 是一项接入你项目中的技能 — 自托管、MIT 许可,由你自行运行。或者,让我们通过 Fonderie Cloud 在你自己的基础设施上管理这套相同的开放标准。",
+  "badges": {
+    "selfHosted": "自托管(Core)",
+    "cloud": "Fonderie Cloud"
+  }
+}

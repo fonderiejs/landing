@@ -1,0 +1,58 @@
+{
+  "eyebrow": "料金",
+  "title": "無料で始めて、出荷時にスケールする。",
+  "lede": "オープンソースのコア、セルフホスト、ロックインなし。マネージドインフラ、SSO、コンプライアンスが必要になったらアップグレードしてください。",
+  "tiers": [
+    {
+      "name": "Build",
+      "price": "無料",
+      "period": "",
+      "desc": "個人プロジェクト向け",
+      "features": ["すべてのコアモジュール", "セルフホスト", "コミュニティサポート"],
+      "cta": "はじめる",
+      "featured": false
+    },
+    {
+      "name": "Ship",
+      "price": "$199",
+      "period": "/月",
+      "desc": "ユーザーがいるSaaS向け",
+      "featuresLead": "Buildのすべてに加え",
+      "features": ["本番ライセンス", "優先サポート", "チーム機能", "監査ログ"],
+      "cta": "今すぐ始める",
+      "featured": true
+    },
+    {
+      "name": "Scale",
+      "price": "$499",
+      "period": "/月",
+      "desc": "成長中のチーム向け",
+      "featuresLead": "Shipのすべてに加え",
+      "features": ["SLA", "高度なコンプライアンス", "専任サポート", "SSO対応"],
+      "cta": "営業に問い合わせる",
+      "featured": false
+    },
+    {
+      "name": "Enterprise",
+      "price": "個別見積もり",
+      "period": "",
+      "desc": "組織向け",
+      "featuresLead": "Scaleのすべてに加え",
+      "features": ["オンプレミス", "カスタムモジュール", "SOC 2 / HIPAA", "専任アカウント担当"],
+      "cta": "営業に問い合わせる",
+      "featured": false
+    }
+  ],
+  "compareNote1": "バックエンドエンジニアを3か月雇う場合と比較: $30,000〜60,000。",
+  "compareNote2": "月額$199はコントラクター1日分より安く、月額$499はエンジニア1週間分より安い。",
+  "compareNote3": "支払いが発生するのは、あなたのSaaSが収益を生み始めてからです。",
+  "finalCta": {
+    "title": "土台作りではなく、製品を出荷しよう。",
+    "lede": "9週間分のインフラが、すでに書かれ、すでに監査済みです。",
+    "getStarted": "GitHubで始める",
+    "star": "GitHubでスターをつける",
+    "prompts": "Claude CodeとCursor向けのシステムプロンプトがリポジトリに同梱されています —",
+    "promptsLink": "GitHubで入手する →",
+    "tag": "エージェンシー、個人開発者、チーム、vibe coder向け"
+  }
+}

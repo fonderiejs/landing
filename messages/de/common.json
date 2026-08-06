@@ -1,0 +1,38 @@
+{
+  "siteTitle": "Fonderie",
+  "meta": {
+    "titleSuffix": "Der offene Standard für KI-gebaute SaaS",
+    "description": "Jede SaaS baut immer wieder dieselbe Auth, Abrechnung, Teams und Multi-Tenancy, bevor auch nur eine Zeile Produktcode geschrieben wird. Fonderie ist der offene Standard für diese Infrastruktur."
+  },
+  "nav": {
+    "solution": "Die Lösung",
+    "packages": "Pakete",
+    "pricing": "Preise",
+    "github": "GitHub",
+    "contact": "Kontakt"
+  },
+  "cta": {
+    "getStarted": "Jetzt starten",
+    "viewOnGitHub": "Auf GitHub ansehen",
+    "startShipping": "Jetzt loslegen",
+    "contactSales": "Vertrieb kontaktieren"
+  },
+  "footer": {
+    "openSource": "Open Source",
+    "github": "GitHub",
+    "npmInstall": "npm install @fonderie/core",
+    "company": "Unternehmen",
+    "contact": "Kontakt",
+    "twitter": "X / Twitter",
+    "copyright": "Fonderie, Inc. · © 2026 · Open Source · MIT-Lizenz"
+  },
+  "theme": {
+    "label": "Design",
+    "system": "System",
+    "light": "Hell",
+    "dark": "Dunkel"
+  },
+  "localeSwitcher": {
+    "label": "Sprache"
+  }
+}

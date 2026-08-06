@@ -1,0 +1,24 @@
+{
+  "eyebrow": "A virada",
+  "title": "A IA não precisa de mais velocidade. Ela precisa de um padrão.",
+  "lede": "IA pura gera do zero toda vez. A Fonderie dá a ela um vocabulário compartilhado e auditado — para compor, não alucinar.",
+  "features": [
+    {
+      "num": "01",
+      "title": "Módulos padrão",
+      "text": "Auth, cobrança, permissões, workspaces — cada um um primitivo tipado e testado. Não é um template; é um bloco de construção."
+    },
+    {
+      "num": "02",
+      "title": "Skills legíveis por IA",
+      "text": "Arquivos de skill no seu repositório detalham como os módulos se conectam. Sem prompt engineering. Sem deriva entre sessões."
+    },
+    {
+      "num": "03",
+      "title": "Saída revisável",
+      "text": "A composição resulta em TypeScript puro no seu repositório — com diff, testável, auditável linha por linha."
+    }
+  ],
+  "codeLabel": "O vocabulário que sua IA lê",
+  "codeFooter": "Cada módulo expõe o mesmo contrato, então compor é uma consulta — não um palpite."
+}

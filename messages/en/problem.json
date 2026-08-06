@@ -1,0 +1,31 @@
+{
+  "eyebrow": "The problem",
+  "title": "Every SaaS starts with the same nine weeks.",
+  "lede": "AI doesn't remove this work — it improvises it. Same invented auth, same tenant leaks, same billing edge cases, only shipped in an afternoon instead of two months.",
+  "ledeStrong": "Faster isn't the same as solved.",
+  "compareBefore": "Hiring a backend engineer for 3 months:",
+  "comparePriceStrike": "$30–60k",
+  "compareAfter": "Starting with Fonderie:",
+  "compareFree": "free and open source.",
+  "ledgerHeading": "Before you write a line of product",
+  "ledgerDuration": "~9 weeks",
+  "timeline": [
+    { "week": "Week 1–2", "label": "Auth setup" },
+    { "week": "Week 3", "label": "Team / org model" },
+    { "week": "Week 4", "label": "Stripe wiring" },
+    { "week": "Week 5", "label": "Email system" },
+    { "week": "Week 6", "label": "Permissions" },
+    { "week": "Week 7", "label": "Multi-tenancy" },
+    { "week": "Week 8", "label": "Remote config" },
+    { "week": "Week 9", "label": "Finally write product" }
+  ],
+  "byHandTitle": "By hand — ~9 weeks.",
+  "byHandText": "Two months of code the world already wrote, re-shipping the same security flaws.",
+  "withAiTitle": "With AI — ~1 afternoon.",
+  "withAiText": "Same improvised infrastructure, same flaws. The timeline collapses; the problem doesn't.",
+  "metaStrip": {
+    "command": "npx @fonderie/create",
+    "modules": "Composed from 17 standard modules",
+    "noExternal": "Zero external servers in your request path"
+  }
+}

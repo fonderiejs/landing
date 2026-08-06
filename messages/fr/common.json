@@ -1,0 +1,38 @@
+{
+  "siteTitle": "Fonderie",
+  "meta": {
+    "titleSuffix": "Le standard ouvert pour les SaaS construits par IA",
+    "description": "Chaque SaaS reconstruit la même authentification, la même facturation, les mêmes équipes et le même multi-tenant avant d'écrire la moindre ligne de code produit. Fonderie est le standard ouvert pour cette infrastructure."
+  },
+  "nav": {
+    "solution": "La solution",
+    "packages": "Packages",
+    "pricing": "Tarifs",
+    "github": "GitHub",
+    "contact": "Contact"
+  },
+  "cta": {
+    "getStarted": "Commencer",
+    "viewOnGitHub": "Voir sur GitHub",
+    "startShipping": "Se lancer",
+    "contactSales": "Contacter l'équipe commerciale"
+  },
+  "footer": {
+    "openSource": "Open source",
+    "github": "GitHub",
+    "npmInstall": "npm install @fonderie/core",
+    "company": "Entreprise",
+    "contact": "Contact",
+    "twitter": "X / Twitter",
+    "copyright": "Fonderie, Inc. · © 2026 · Open source · Licence MIT"
+  },
+  "theme": {
+    "label": "Thème",
+    "system": "Système",
+    "light": "Clair",
+    "dark": "Sombre"
+  },
+  "localeSwitcher": {
+    "label": "Langue"
+  }
+}

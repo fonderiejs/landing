@@ -1,0 +1,20 @@
+{
+  "eyebrow": "La solution",
+  "title": "Livrez le produit. Le backend est déjà prêt.",
+  "replyLabel": "Votre IA + les modules Fonderie",
+  "chat": [
+    {
+      "prompt": "\"Créer l'échafaudage de mon SaaS avec auth, facturation et workspaces d'équipe\"",
+      "reply": "Je vais composer le backend avec les modules standards de Fonderie. Génération de votre configuration…"
+    },
+    {
+      "prompt": "\"Ajouter la facturation Stripe avec un tarif par siège\"",
+      "reply": "Ajout de @fonderie/billing avec le fournisseur Stripe et des plans basés sur les sièges. Votre projet est configuré."
+    },
+    {
+      "prompt": "\"Maintenant, écris l'endpoint pour créer un planning\"",
+      "reply": "J'écris votre logique produit. L'auth, le scoping par tenant et la facturation sont déjà en place — vous écrivez seulement la partie que vous seul pouvez écrire."
+    }
+  ],
+  "codePanelLabel": "Généré par votre IA + les modules Fonderie"
+}

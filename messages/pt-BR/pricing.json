@@ -1,0 +1,58 @@
+{
+  "eyebrow": "Preços",
+  "title": "Comece de graça. Escale quando for entregar.",
+  "lede": "Núcleo open source, self-hosted, sem lock-in. Faça upgrade quando precisar de infraestrutura gerenciada, SSO e compliance.",
+  "tiers": [
+    {
+      "name": "Build",
+      "price": "Grátis",
+      "period": "",
+      "desc": "Para projetos paralelos",
+      "features": ["Todos os módulos core", "Self-hosted", "Suporte da comunidade"],
+      "cta": "Começar agora",
+      "featured": false
+    },
+    {
+      "name": "Ship",
+      "price": "US$ 199",
+      "period": "/mês",
+      "desc": "Para SaaS com usuários",
+      "featuresLead": "Tudo do Build, mais",
+      "features": ["Licença de produção", "Suporte prioritário", "Recursos de time", "Logs de auditoria"],
+      "cta": "Começar a entregar",
+      "featured": true
+    },
+    {
+      "name": "Scale",
+      "price": "US$ 499",
+      "period": "/mês",
+      "desc": "Para times em crescimento",
+      "featuresLead": "Tudo do Ship, mais",
+      "features": ["SLA", "Compliance avançado", "Suporte dedicado", "Pronto para SSO"],
+      "cta": "Falar com vendas",
+      "featured": false
+    },
+    {
+      "name": "Enterprise",
+      "price": "Sob consulta",
+      "period": "",
+      "desc": "Para organizações",
+      "featuresLead": "Tudo do Scale, mais",
+      "features": ["On-premise", "Módulos sob medida", "SOC 2 / HIPAA", "Conta dedicada"],
+      "cta": "Falar com vendas",
+      "featured": false
+    }
+  ],
+  "compareNote1": "Compare com contratar um engenheiro de backend por 3 meses: US$ 30–60 mil.",
+  "compareNote2": "US$ 199/mês é mais barato que um dia de freelancer. US$ 499/mês é mais barato que uma semana de engenheiro.",
+  "compareNote3": "Você só paga quando seu SaaS começa a gerar receita.",
+  "finalCta": {
+    "title": "Entregue o produto. Não a infraestrutura.",
+    "lede": "Nove semanas de infraestrutura, já escrita e já auditada.",
+    "getStarted": "Começar no GitHub",
+    "star": "Dar uma estrela no GitHub",
+    "prompts": "Prompts de sistema para Claude Code e Cursor já vêm com o repositório —",
+    "promptsLink": "pegue no GitHub →",
+    "tag": "Para agências, fundadores solo, times e vibe coders"
+  }
+}

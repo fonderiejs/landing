@@ -1,0 +1,58 @@
+{
+  "eyebrow": "Preise",
+  "title": "Kostenlos starten. Skalieren, wenn Sie shippen.",
+  "lede": "Open-Source-Kern, selbst gehostet, ohne Lock-in. Upgraden Sie, wenn Sie verwaltete Infrastruktur, SSO und Compliance brauchen.",
+  "tiers": [
+    {
+      "name": "Build",
+      "price": "Kostenlos",
+      "period": "",
+      "desc": "Für Nebenprojekte",
+      "features": ["Alle Kernmodule", "Selbst gehostet", "Community-Support"],
+      "cta": "Jetzt starten",
+      "featured": false
+    },
+    {
+      "name": "Ship",
+      "price": "$199",
+      "period": "/Monat",
+      "desc": "Für SaaS mit Nutzern",
+      "featuresLead": "Alles aus Build, plus",
+      "features": ["Produktionslizenz", "Priorisierter Support", "Team-Funktionen", "Audit-Logs"],
+      "cta": "Jetzt loslegen",
+      "featured": true
+    },
+    {
+      "name": "Scale",
+      "price": "$499",
+      "period": "/Monat",
+      "desc": "Für wachsende Teams",
+      "featuresLead": "Alles aus Ship, plus",
+      "features": ["SLA", "Erweiterte Compliance", "Dedizierter Support", "SSO-fähig"],
+      "cta": "Vertrieb kontaktieren",
+      "featured": false
+    },
+    {
+      "name": "Enterprise",
+      "price": "Individuell",
+      "period": "",
+      "desc": "Für Organisationen",
+      "featuresLead": "Alles aus Scale, plus",
+      "features": ["On-Premise", "Individuelle Module", "SOC 2 / HIPAA", "Dedizierter Account"],
+      "cta": "Vertrieb kontaktieren",
+      "featured": false
+    }
+  ],
+  "compareNote1": "Zum Vergleich: ein Backend-Engineer für 3 Monate kostet 30.000–60.000 $.",
+  "compareNote2": "199 $/Monat sind günstiger als ein Tag Freelancer. 499 $/Monat sind günstiger als eine Woche Engineer.",
+  "compareNote3": "Sie zahlen erst, wenn Ihre SaaS anfängt zu verdienen.",
+  "finalCta": {
+    "title": "Shippen Sie. Kein Gerüst bauen.",
+    "lede": "Neun Wochen Infrastruktur — bereits geschrieben und bereits geprüft.",
+    "getStarted": "Auf GitHub starten",
+    "star": "Auf GitHub mit Stern versehen",
+    "prompts": "System-Prompts für Claude Code und Cursor liegen dem Repo bei —",
+    "promptsLink": "auf GitHub abholen →",
+    "tag": "Für Agenturen, Solo-Gründer, Teams und Vibe Coder"
+  }
+}

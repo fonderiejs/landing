@@ -1,0 +1,7 @@
+{
+  "title": "お気軽にご連絡ください。",
+  "lede": "何を作っているか教えてください。Fonderieがどれだけ速く組み立てられるかお伝えします。",
+  "email": { "label": "メール", "value": "hello@fonderiejs.com" },
+  "fit": { "label": "対象", "value": "AIでSaaSを構築するエージェンシー、スタジオ、チーム向け。" },
+  "response": { "label": "返信目安", "value": "1営業日以内。自動応答ではなく、人が対応します。" }
+}

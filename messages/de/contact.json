@@ -1,0 +1,7 @@
+{
+  "title": "Sprechen Sie mit uns.",
+  "lede": "Erzählen Sie uns, was Sie bauen. Wir sagen Ihnen, wie schnell Fonderie es zusammensetzen kann.",
+  "email": { "label": "E-Mail", "value": "hello@fonderiejs.com" },
+  "fit": { "label": "Zielgruppe", "value": "Agenturen, Studios und Teams, die SaaS mit KI bauen." },
+  "response": { "label": "Antwortzeit", "value": "Innerhalb eines Werktags. Von einem Menschen, nicht von einem Trichter." }
+}

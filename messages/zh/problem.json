@@ -1,0 +1,31 @@
+{
+  "eyebrow": "问题所在",
+  "title": "每一个 SaaS 都从相同的九周开始。",
+  "lede": "AI 并没有消除这些工作 —— 它只是在临场发挥。同样臆造出来的认证逻辑,同样的租户数据泄露风险,同样的账单边界情况,只不过从两个月压缩到了一个下午就交付出来。",
+  "ledeStrong": "更快,不等于被解决了。",
+  "compareBefore": "雇佣一名后端工程师 3 个月:",
+  "comparePriceStrike": "3 万至 6 万美元",
+  "compareAfter": "从 Fonderie 开始:",
+  "compareFree": "免费且开源。",
+  "ledgerHeading": "在你写下第一行产品代码之前",
+  "ledgerDuration": "约 9 周",
+  "timeline": [
+    { "week": "第 1–2 周", "label": "认证搭建" },
+    { "week": "第 3 周", "label": "团队 / 组织模型" },
+    { "week": "第 4 周", "label": "Stripe 接入" },
+    { "week": "第 5 周", "label": "邮件系统" },
+    { "week": "第 6 周", "label": "权限管理" },
+    { "week": "第 7 周", "label": "多租户支持" },
+    { "week": "第 8 周", "label": "远程配置" },
+    { "week": "第 9 周", "label": "终于开始写产品代码" }
+  ],
+  "byHandTitle": "手工搭建 —— 约 9 周。",
+  "byHandText": "花两个月重写世界早已写过的代码,还顺带重新交付同样的安全漏洞。",
+  "withAiTitle": "借助 AI —— 约 1 个下午。",
+  "withAiText": "同样是临时拼凑的基础设施,同样的漏洞。时间线被压缩了,但问题本身并没有。",
+  "metaStrip": {
+    "command": "npx @fonderie/create",
+    "modules": "由 17 个标准模块组装而成",
+    "noExternal": "请求路径中零外部服务器依赖"
+  }
+}

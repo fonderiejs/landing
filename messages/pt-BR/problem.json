@@ -1,0 +1,31 @@
+{
+  "eyebrow": "O problema",
+  "title": "Todo SaaS começa com as mesmas nove semanas.",
+  "lede": "A IA não elimina esse trabalho — ela improvisa. Mesma autenticação inventada, mesmos vazamentos entre tenants, mesmos casos extremos de cobrança, só que entregues em uma tarde em vez de dois meses.",
+  "ledeStrong": "Mais rápido não é a mesma coisa que resolvido.",
+  "compareBefore": "Contratar um engenheiro de backend por 3 meses:",
+  "comparePriceStrike": "US$ 30–60 mil",
+  "compareAfter": "Começando com a Fonderie:",
+  "compareFree": "grátis e open source.",
+  "ledgerHeading": "Antes de escrever uma linha de produto",
+  "ledgerDuration": "~9 semanas",
+  "timeline": [
+    { "week": "Semana 1–2", "label": "Configuração de auth" },
+    { "week": "Semana 3", "label": "Modelo de time / organização" },
+    { "week": "Semana 4", "label": "Integração com Stripe" },
+    { "week": "Semana 5", "label": "Sistema de e-mail" },
+    { "week": "Semana 6", "label": "Permissões" },
+    { "week": "Semana 7", "label": "Multi-tenancy" },
+    { "week": "Semana 8", "label": "Configuração remota" },
+    { "week": "Semana 9", "label": "Finalmente escrever o produto" }
+  ],
+  "byHandTitle": "Na mão — ~9 semanas.",
+  "byHandText": "Dois meses de código que o mundo já escreveu, reentregando as mesmas falhas de segurança.",
+  "withAiTitle": "Com IA — ~1 tarde.",
+  "withAiText": "Mesma infraestrutura improvisada, mesmas falhas. O prazo encolhe; o problema não.",
+  "metaStrip": {
+    "command": "npx @fonderie/create",
+    "modules": "Composto a partir de 17 módulos padrão",
+    "noExternal": "Zero servidores externos no caminho da sua requisição"
+  }
+}

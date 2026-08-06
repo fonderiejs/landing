@@ -1,0 +1,58 @@
+{
+  "eyebrow": "Tarifs",
+  "title": "Commencez gratuitement. Scalez au moment de livrer.",
+  "lede": "Cœur open source, auto-hébergé, sans dépendance forcée. Passez à l'échelle supérieure quand vous avez besoin d'infrastructure managée, de SSO et de conformité.",
+  "tiers": [
+    {
+      "name": "Build",
+      "price": "Gratuit",
+      "period": "",
+      "desc": "Pour les side-projects",
+      "features": ["Tous les modules core", "Auto-hébergé", "Support communautaire"],
+      "cta": "Commencer",
+      "featured": false
+    },
+    {
+      "name": "Ship",
+      "price": "199 $",
+      "period": "/mois",
+      "desc": "Pour un SaaS avec des utilisateurs",
+      "featuresLead": "Tout ce qui est dans Build, plus",
+      "features": ["Licence de production", "Support prioritaire", "Fonctionnalités d'équipe", "Journaux d'audit"],
+      "cta": "Se lancer",
+      "featured": true
+    },
+    {
+      "name": "Scale",
+      "price": "499 $",
+      "period": "/mois",
+      "desc": "Pour les équipes en croissance",
+      "featuresLead": "Tout ce qui est dans Ship, plus",
+      "features": ["SLA", "Conformité avancée", "Support dédié", "SSO prêt à l'emploi"],
+      "cta": "Contacter l'équipe commerciale",
+      "featured": false
+    },
+    {
+      "name": "Enterprise",
+      "price": "Sur mesure",
+      "period": "",
+      "desc": "Pour les organisations",
+      "featuresLead": "Tout ce qui est dans Scale, plus",
+      "features": ["On-premise", "Modules sur mesure", "SOC 2 / HIPAA", "Compte dédié"],
+      "cta": "Contacter l'équipe commerciale",
+      "featured": false
+    }
+  ],
+  "compareNote1": "À comparer avec l'embauche d'un ingénieur backend pendant 3 mois : 30 000–60 000 $.",
+  "compareNote2": "199 $/mois coûte moins cher qu'une journée de freelance. 499 $/mois coûte moins cher qu'une semaine d'ingénieur.",
+  "compareNote3": "Vous ne payez que lorsque votre SaaS commence à générer des revenus.",
+  "finalCta": {
+    "title": "Livrez le produit. Pas l'échafaudage.",
+    "lede": "Neuf semaines d'infrastructure, déjà écrite et déjà auditée.",
+    "getStarted": "Commencer sur GitHub",
+    "star": "Mettre une étoile sur GitHub",
+    "prompts": "Les prompts système pour Claude Code et Cursor sont fournis avec le repo —",
+    "promptsLink": "récupérez-les sur GitHub →",
+    "tag": "Pour les agences, fondateurs solo, équipes et vibe coders"
+  }
+}

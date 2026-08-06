@@ -1,0 +1,19 @@
+{
+  "eyebrow": "Open source",
+  "titleLine1": "Le standard ouvert pour",
+  "titleLine2": "le SaaS construit par l'IA.",
+  "lede": "Chaque assistant IA à qui l'on demande de construire un SaaS invente sa propre infrastructure — auth, facturation, permissions, équipes. Fonderie donne à chaque LLM un standard commun à partir duquel composer.",
+  "ledeStrong": "Votre IA arrête d'improviser. Vous commencez à livrer.",
+  "command": "npx @fonderie/create my-saas",
+  "copy": "Copier",
+  "copied": "Copié !",
+  "proof": "Sous licence MIT · Open source · Votre infrastructure",
+  "worksWith": "Fonctionne avec",
+  "assistants": {
+    "claudeCode": "Claude Code",
+    "cursor": "Cursor",
+    "codex": "Codex",
+    "windsurf": "Windsurf",
+    "any": "Toute IA capable de lire du code"
+  }
+}

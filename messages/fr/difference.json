@@ -1,0 +1,9 @@
+{
+  "eyebrow": "La différence",
+  "title": "Vous en êtes propriétaire, sans dépendance forcée.",
+  "lede": "Fonderie est un skill intégré à votre projet — auto-hébergé, sous licence MIT, à vous de l'exécuter. Ou laissez-nous gérer ce même standard ouvert sur votre propre infrastructure avec Fonderie Cloud.",
+  "badges": {
+    "selfHosted": "Auto-hébergé (Core)",
+    "cloud": "Fonderie Cloud"
+  }
+}

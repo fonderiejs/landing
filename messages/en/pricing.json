@@ -1,0 +1,58 @@
+{
+  "eyebrow": "Pricing",
+  "title": "Start free. Scale when you ship.",
+  "lede": "Open-source core, self-hosted, zero lock-in. Upgrade when you need managed infrastructure, SSO, and compliance.",
+  "tiers": [
+    {
+      "name": "Build",
+      "price": "Free",
+      "period": "",
+      "desc": "For side projects",
+      "features": ["All core modules", "Self-hosted", "Community support"],
+      "cta": "Get started",
+      "featured": false
+    },
+    {
+      "name": "Ship",
+      "price": "$199",
+      "period": "/mo",
+      "desc": "For SaaS with users",
+      "featuresLead": "Everything in Build, plus",
+      "features": ["Production license", "Priority support", "Team features", "Audit logs"],
+      "cta": "Start shipping",
+      "featured": true
+    },
+    {
+      "name": "Scale",
+      "price": "$499",
+      "period": "/mo",
+      "desc": "For growing teams",
+      "featuresLead": "Everything in Ship, plus",
+      "features": ["SLA", "Advanced compliance", "Dedicated support", "SSO ready"],
+      "cta": "Contact sales",
+      "featured": false
+    },
+    {
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "",
+      "desc": "For organizations",
+      "featuresLead": "Everything in Scale, plus",
+      "features": ["On-premise", "Custom modules", "SOC 2 / HIPAA", "Dedicated account"],
+      "cta": "Contact sales",
+      "featured": false
+    }
+  ],
+  "compareNote1": "Compare to hiring a backend engineer for 3 months: $30–60k.",
+  "compareNote2": "$199/mo is cheaper than one day of a contractor. $499/mo is cheaper than one week of an engineer.",
+  "compareNote3": "You only pay when your SaaS starts earning.",
+  "finalCta": {
+    "title": "Start shipping. Not scaffolding.",
+    "lede": "Nine weeks of infrastructure, already written and already audited.",
+    "getStarted": "Get started on GitHub",
+    "star": "Star on GitHub",
+    "prompts": "System prompts for Claude Code and Cursor ship with the repo —",
+    "promptsLink": "grab them on GitHub →",
+    "tag": "For agencies, solo founders, teams, and vibe coders"
+  }
+}
