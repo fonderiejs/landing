@@ -1381,11 +1381,13 @@ a:hover {
   align-items: center;
   justify-content: center;
   min-height: 42px;
+  padding: 0 20px;
   border: 1px solid var(--line);
   border-radius: 999px;
   font-size: 14px;
   font-weight: 600;
   color: var(--ink);
+  text-align: center;
 }
 .pricing__tier-cta:hover {
   border-color: var(--stage);
