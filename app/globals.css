@@ -630,6 +630,16 @@ a:hover {
 .hero__title-nowrap {
   white-space: nowrap;
 }
+/* CJK glyphs are ~1em wide each vs. a Latin "ch" unit (~0.5-0.6em), so
+   the same 14ch budget that fits short Latin phrases like "AI-built
+   SaaS." overflows badly for the equivalent Japanese/Chinese string.
+   CJK text also breaks safely between any two characters, so nowrap
+   isn't needed to avoid awkward mid-word breaks the way it is in
+   Latin scripts - let it wrap like the rest of the title. */
+:lang(ja) .hero__title-nowrap,
+:lang(zh) .hero__title-nowrap {
+  white-space: normal;
+}
 .hero__lede {
   margin: 0 0 30px;
   font-size: clamp(16px, 1.7vw, 18px);
