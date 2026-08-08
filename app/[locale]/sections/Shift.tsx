@@ -5,7 +5,7 @@ export default function Shift() {
   const t = useTranslations('shift');
   const features = t.raw('features') as { num: string; title: string; text: string }[];
 
-  const code = `// one shape, every session
+  const code = `${t('codeComment')}
 auth({ oauth, passkeys })
 workspaces({ multiTenant })
 billing({ provider, seats })
