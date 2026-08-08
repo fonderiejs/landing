@@ -640,20 +640,25 @@ a:hover {
 :lang(zh) .hero__title-nowrap {
   white-space: normal;
 }
-/* French titleLine2 is a passive construction nearly 2x the length of
-   English's "AI-built SaaS." ("le SaaS construit par l'IA.", 27 vs 14
-   chars), and at mobile widths the same 14ch/nowrap budget that fits
-   every other Latin locale clips it past the viewport edge - confirmed
-   on production. Scoped to :lang(fr) + mobile only, rather than
-   dropping nowrap for every Latin locale: an earlier version of this
-   fix removed nowrap unconditionally at this width, which was harmless
-   for en/pt-BR (already fit, never actually wrap) but let text-wrap:
+/* French and Portuguese (BR) titleLine2 ("le SaaS construit par
+   l'IA.", "SaaS construído por IA.") are both longer than English's
+   "AI-built SaaS.", and at mobile widths the same 14ch/nowrap budget
+   that fits en/de clips them - confirmed on production for both
+   (pt-BR's case is subtle: the span stays inside the raw viewport
+   width, but overflows past .page__card's inner edge, which has
+   overflow: clip, silently dropping the trailing period).
+
+   Scoped to :lang(fr)/:lang(pt-BR) + mobile only, rather than dropping
+   nowrap for every Latin locale: an earlier version of this fix
+   removed nowrap unconditionally at this width, which was harmless
+   for en (already fits, never actually wraps) but let text-wrap:
    balance reflow German's title from a clean 3-line break with
    "KI-gebaute SaaS." held together, into one that splits the
    hyphenated compound itself ("KI-" / "gebaute SaaS.") - not overflow,
    but a worse break introduced with no benefit for that locale. */
 @media (max-width: 480px) {
-  :lang(fr) .hero__title-nowrap {
+  :lang(fr) .hero__title-nowrap,
+  :lang(pt-BR) .hero__title-nowrap {
     white-space: normal;
   }
 }
