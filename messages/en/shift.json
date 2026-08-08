@@ -20,5 +20,6 @@
     }
   ],
   "codeLabel": "The vocabulary your AI reads",
-  "codeFooter": "Every module exposes the same contract, so composition is a lookup — not a guess."
+  "codeFooter": "Every module exposes the same contract, so composition is a lookup — not a guess.",
+  "codeComment": "// one shape, every session"
 }

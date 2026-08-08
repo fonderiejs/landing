@@ -16,5 +16,9 @@
       "reply": "Schreibe Ihre Produktlogik. Auth, Tenant-Scoping und Billing sind bereits verdrahtet — Sie schreiben nur den Teil, den nur Sie schreiben können."
     }
   ],
-  "codePanelLabel": "Generiert von Ihrer KI + Fonderie-Modulen"
+  "codePanelLabel": "Generiert von Ihrer KI + Fonderie-Modulen",
+  "configComment": "// fonderie.config.ts — von Ihrer KI generiert",
+  "installComment": "# Abhängigkeiten installiert, Module registriert, Projekt aufgesetzt",
+  "logicComment": "// Produktlogik — das schreiben Sie selbst",
+  "ctxComment": "// ctx.user, ctx.workspace, ctx.can() — alles bereits bereitgestellt"
 }
