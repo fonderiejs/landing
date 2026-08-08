@@ -20,5 +20,6 @@
     }
   ],
   "codeLabel": "O vocabulário que sua IA lê",
-  "codeFooter": "Cada módulo expõe o mesmo contrato, então compor é uma consulta — não um palpite."
+  "codeFooter": "Cada módulo expõe o mesmo contrato, então compor é uma consulta — não um palpite.",
+  "codeComment": "// uma forma, toda sessão"
 }

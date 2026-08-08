@@ -20,5 +20,6 @@
     }
   ],
   "codeLabel": "Das Vokabular, das Ihre KI liest",
-  "codeFooter": "Jedes Modul stellt denselben Vertrag bereit, sodass Komposition ein Nachschlagen ist — kein Raten."
+  "codeFooter": "Jedes Modul stellt denselben Vertrag bereit, sodass Komposition ein Nachschlagen ist — kein Raten.",
+  "codeComment": "// eine Form, jede Sitzung"
 }

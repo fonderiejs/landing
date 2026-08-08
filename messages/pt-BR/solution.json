@@ -16,5 +16,9 @@
       "reply": "Escrevendo a lógica do seu produto. Auth, escopo por tenant e cobrança já estão conectados — você escreve só a parte que só você pode escrever."
     }
   ],
-  "codePanelLabel": "Gerado pela sua IA + módulos Fonderie"
+  "codePanelLabel": "Gerado pela sua IA + módulos Fonderie",
+  "configComment": "// fonderie.config.ts — gerado pela sua IA",
+  "installComment": "# dependências instaladas, módulos registrados, projeto estruturado",
+  "logicComment": "// lógica de produto — você escreve esta parte",
+  "ctxComment": "// ctx.user, ctx.workspace, ctx.can() — tudo já fornecido"
 }

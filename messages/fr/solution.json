@@ -16,5 +16,9 @@
       "reply": "J'écris votre logique produit. L'auth, le scoping par tenant et la facturation sont déjà en place — vous écrivez seulement la partie que vous seul pouvez écrire."
     }
   ],
-  "codePanelLabel": "Généré par votre IA + les modules Fonderie"
+  "codePanelLabel": "Généré par votre IA + les modules Fonderie",
+  "configComment": "// fonderie.config.ts — généré par votre IA",
+  "installComment": "# dépendances installées, modules enregistrés, projet généré",
+  "logicComment": "// logique produit — c'est vous qui l'écrivez",
+  "ctxComment": "// ctx.user, ctx.workspace, ctx.can() — tout est déjà fourni"
 }
