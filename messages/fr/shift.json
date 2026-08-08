@@ -20,5 +20,6 @@
     }
   ],
   "codeLabel": "Le vocabulaire que votre IA lit",
-  "codeFooter": "Chaque module expose le même contrat, si bien que composer revient à consulter — pas à deviner."
+  "codeFooter": "Chaque module expose le même contrat, si bien que composer revient à consulter — pas à deviner.",
+  "codeComment": "// une seule forme, à chaque session"
 }

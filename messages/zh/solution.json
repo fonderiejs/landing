@@ -16,5 +16,9 @@
       "reply": "正在编写你的产品逻辑。认证、租户隔离和账单都已经接好线 —— 你只需要写只有你才能写的那部分。"
     }
   ],
-  "codePanelLabel": "由你的 AI + Fonderie 模块生成"
+  "codePanelLabel": "由你的 AI + Fonderie 模块生成",
+  "configComment": "// fonderie.config.ts —— 由你的 AI 生成",
+  "installComment": "# 依赖已安装,模块已注册,项目脚手架已搭建完成",
+  "logicComment": "// 产品逻辑 —— 由你来编写",
+  "ctxComment": "// ctx.user、ctx.workspace、ctx.can() —— 均已提供"
 }

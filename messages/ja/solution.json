@@ -16,5 +16,9 @@
       "reply": "製品ロジックを書いています。認証、テナントのスコープ、課金はすでに接続済みです — あなたにしか書けない部分だけを書いてください。"
     }
   ],
-  "codePanelLabel": "あなたのAI + Fonderieモジュールによって生成"
+  "codePanelLabel": "あなたのAI + Fonderieモジュールによって生成",
+  "configComment": "// fonderie.config.ts — あなたのAIが生成",
+  "installComment": "# 依存関係をインストールし、モジュールを登録し、プロジェクトを構築しました",
+  "logicComment": "// 製品ロジック — ここはあなたが書く部分",
+  "ctxComment": "// ctx.user、ctx.workspace、ctx.can() — すべて提供済み"
 }
