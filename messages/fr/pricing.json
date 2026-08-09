@@ -1,7 +1,7 @@
 {
   "eyebrow": "Tarifs",
   "title": "Démarrez gratuitement. Passez à l'échelle en livrant.",
-  "lede": "Cœur open source, auto-hébergé, aucune dépendance forcée. Passez à un niveau supérieur pour le déploiement orchestré, le SSO et la conformité.",
+  "lede": "Cœur open source, auto-hébergé, aucune dépendance forcée. Passez à un niveau supérieur pour le déploiement géré, le SSO et la conformité.",
   "tiers": [
     {
       "name": "Build",
@@ -33,14 +33,15 @@
       "featured": true
     },
     {
-      "name": "Mobile",
+      "name": "Kits d'écrans",
       "price": "199 $",
       "period": "/mois",
       "desc": "Pour les équipes multiplateformes",
       "featuresLead": "Tout ce qui est dans Grow, plus",
-      "features": ["Kits d'écrans React Native", "Repli d'auth biométrique", "Navigation mobile"],
+      "features": ["Kits d'écrans frontend", "Connexion biométrique", "Structure de navigation", "Support multiplateforme"],
       "cta": "Contacter les ventes",
-      "featured": false
+      "featured": false,
+      "hidden": true
     },
     {
       "name": "Enterprise",

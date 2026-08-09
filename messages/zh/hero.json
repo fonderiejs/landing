@@ -3,7 +3,7 @@
   "titleLine1": "这周就上线你的 SaaS，",
   "titleLine2": "而不是下个季度。",
   "lede": "认证、计费、工作区和权限管理 — 全部以 npm 包的形式提供。",
-  "ledeStrong": "后端模块与 React Native 屏幕套件。安装、配置、上线。",
+  "ledeStrong": "AI 构建你的后端与前端，你只需交付产品。",
   "command": "npx @fonderie/create my-saas",
   "copy": "复制",
   "copied": "已复制！",

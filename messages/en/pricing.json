@@ -1,7 +1,7 @@
 {
   "eyebrow": "Pricing",
   "title": "Start free. Scale when you ship.",
-  "lede": "Open-source core, self-hosted, zero lock-in. Upgrade when you need orchestrated deployment, SSO, and compliance.",
+  "lede": "Open-source core, self-hosted, zero lock-in. Upgrade when you need managed deployment, SSO, and compliance.",
   "tiers": [
     {
       "name": "Build",
@@ -33,14 +33,15 @@
       "featured": true
     },
     {
-      "name": "Mobile",
+      "name": "Screen Kits",
       "price": "$199",
       "period": "/mo",
       "desc": "For cross-platform teams",
       "featuresLead": "Everything in Grow, plus",
-      "features": ["React Native screen kits", "Biometric auth fallback", "Mobile navigation"],
+      "features": ["Frontend screen kits", "Biometric login", "Navigation shell", "Cross-platform support"],
       "cta": "Contact sales",
-      "featured": false
+      "featured": false,
+      "hidden": true
     },
     {
       "name": "Enterprise",

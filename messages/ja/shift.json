@@ -10,8 +10,8 @@
     },
     {
       "num": "02",
-      "title": "React Nativeスクリーンキット",
-      "text": "LoginScreen、BillingScreen、TeamInviteScreen — バックエンドのフックを直接インポートする実用的な画面キット。生体認証のフォールバック、バリデーションエラー表示、アクセシビリティラベルなど、AIが見落としがちなエッジケースにも対応。"
+      "title": "スクリーンキット",
+      "text": "AIがログイン、課金、チーム画面を生成します。あらかじめ作り込まれたアクセシブルで安全な画面が、バックエンドに自動で接続されます。"
     },
     {
       "num": "03",
@@ -21,12 +21,12 @@
     {
       "num": "04",
       "title": "コミュニティレジストリ",
-      "text": "コミュニティが作った画面のレジストリ。shadcnのログイン画面やReact Nativeの課金ポータルを取り込むか、自分で作りましょう。インテリジェンスは共有され、UIはあなたのものです。"
+      "text": "コミュニティが作った画面のレジストリ。shadcnのログイン画面や課金ポータルを取り込むか、自分で作りましょう。インテリジェンスは共有され、UIはあなたのものです。"
     }
   ],
   "codeLabel": "あなたのAIが読む語彙",
   "codeFooter": "すべてのモジュールが同じ契約を公開しているため、組み合わせは推測ではなく参照で済みます。",
   "codeComment": "// 一つの形、すべてのセッションで",
-  "codeMobileComment": "// React Native — 同じ語彙、異なるプラットフォーム",
-  "codeMobileImport": "import { LoginScreen } from '@fonderie/mobile/auth-screens'"
+  "codeMobileComment": "// モバイル — 同じ語彙、異なるプラットフォーム",
+  "codeMobileImport": "import { LoginScreen } from '@fonderie/screens/auth'"
 }

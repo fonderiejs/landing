@@ -1,7 +1,7 @@
 {
   "eyebrow": "定价",
   "title": "免费开始，上线后再扩展。",
-  "lede": "开源核心，自托管，零锁定。当你需要编排式部署、SSO 和合规能力时再升级。",
+  "lede": "开源核心，自托管，零锁定。当你需要托管部署、SSO 和合规能力时再升级。",
   "tiers": [
     {
       "name": "Build",
@@ -33,14 +33,15 @@
       "featured": true
     },
     {
-      "name": "Mobile",
+      "name": "Screen Kits",
       "price": "$199",
       "period": "/月",
       "desc": "适合跨平台团队",
       "featuresLead": "包含 Grow 的所有内容，另加",
-      "features": ["React Native 屏幕套件", "生物识别认证回退", "移动端导航"],
+      "features": ["前端屏幕套件", "生物识别登录", "导航结构", "跨平台支持"],
       "cta": "联系销售",
-      "featured": false
+      "featured": false,
+      "hidden": true
     },
     {
       "name": "Enterprise",

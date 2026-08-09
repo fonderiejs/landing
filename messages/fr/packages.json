@@ -4,7 +4,7 @@
   "lede": "De vrais packages sur npm. Cliquez et lisez le code — avec des adaptateurs pour Express, Hono et Koa, pour monter Fonderie dans une app que vous faites déjà tourner.",
   "categories": {
     "backend": "Intelligence backend",
-    "mobile": "Kits d'écrans React Native (v0.3)",
+    "mobile": "Kits d'écrans",
     "adapters": "Adaptateurs web"
   },
   "items": [
@@ -15,10 +15,10 @@
     { "name": "@fonderie/courier", "desc": "Envoi d'e-mails, de SMS et de notifications push" }
   ],
   "mobileItems": [
-    { "name": "@fonderie/mobile/auth-screens", "desc": "Connexion, inscription, MFA, biométrie" },
-    { "name": "@fonderie/mobile/billing-screens", "desc": "Sélecteur de plan, paiement, factures" },
-    { "name": "@fonderie/mobile/workspace-screens", "desc": "Invitation d'équipe, changement d'espace" },
-    { "name": "@fonderie/mobile/navigation", "desc": "Structure de navigation, réglages" }
+    { "name": "@fonderie/screens/auth", "desc": "Connexion, inscription, MFA, biométrie" },
+    { "name": "@fonderie/screens/billing", "desc": "Sélecteur de plan, paiement, factures" },
+    { "name": "@fonderie/screens/workspace", "desc": "Invitation d'équipe, changement d'espace" },
+    { "name": "@fonderie/screens/navigation", "desc": "Structure de navigation, réglages" }
   ],
   "adapterItems": [
     { "name": "@fonderie/adapter-express", "desc": "Intégration Express" },

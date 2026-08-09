@@ -3,7 +3,7 @@
   "titleLine1": "Lancez votre SaaS cette semaine,",
   "titleLine2": "pas le trimestre prochain.",
   "lede": "Auth, facturation, espaces de travail et permissions — sous forme de packages npm.",
-  "ledeStrong": "Modules backend et kits d'écrans React Native. Installez. Configurez. Livrez.",
+  "ledeStrong": "L'IA construit votre backend et votre frontend. Vous livrez votre produit.",
   "command": "npx @fonderie/create my-saas",
   "copy": "Copier",
   "copied": "Copié !",

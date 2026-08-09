@@ -32,5 +32,6 @@
   "byHandText": "Two months of code the world already wrote, re-shipping the same security flaws.",
   "withAiTitle": "With AI — ~1 afternoon.",
   "withAiText": "Same improvised infrastructure, same flaws. The timeline collapses; the problem doesn't.",
-  "mobileCompare": "Hiring a backend engineer: $30–60k. Rebuilding the same mobile screens for your 3rd client: priceless frustration. Starting with Fonderie: free and open source."
+  "mobileCompare": "Hiring a backend engineer: $30–60k. Rebuilding the same mobile screens for your 3rd client: priceless frustration. Starting with Fonderie: free and open source.",
+  "customApiLine": "Custom product = custom API = no support when you scale."
 }

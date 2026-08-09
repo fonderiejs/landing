@@ -4,7 +4,7 @@
   "lede": "Pacotes de verdade no npm. Clique e leia o código — com adaptadores para Express, Hono e Koa, para você montar o Fonderie dentro de um app que já roda.",
   "categories": {
     "backend": "Inteligência de backend",
-    "mobile": "Kits de telas React Native (v0.3)",
+    "mobile": "Kits de telas",
     "adapters": "Adaptadores web"
   },
   "items": [
@@ -15,10 +15,10 @@
     { "name": "@fonderie/courier", "desc": "Envio de e-mail, SMS e notificações push" }
   ],
   "mobileItems": [
-    { "name": "@fonderie/mobile/auth-screens", "desc": "Login, cadastro, MFA, biometria" },
-    { "name": "@fonderie/mobile/billing-screens", "desc": "Seletor de plano, checkout, faturas" },
-    { "name": "@fonderie/mobile/workspace-screens", "desc": "Convite de time, troca de workspace" },
-    { "name": "@fonderie/mobile/navigation", "desc": "Estrutura de navegação, configurações" }
+    { "name": "@fonderie/screens/auth", "desc": "Login, cadastro, MFA, biometria" },
+    { "name": "@fonderie/screens/billing", "desc": "Seletor de plano, checkout, faturas" },
+    { "name": "@fonderie/screens/workspace", "desc": "Convite de time, troca de workspace" },
+    { "name": "@fonderie/screens/navigation", "desc": "Estrutura de navegação, configurações" }
   ],
   "adapterItems": [
     { "name": "@fonderie/adapter-express", "desc": "Integração com Express" },

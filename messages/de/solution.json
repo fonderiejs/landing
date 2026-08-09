@@ -12,8 +12,8 @@
       "reply": "Füge @fonderie/billing mit Stripe-Provider und sitzplatzbasierten Plänen hinzu. Dein Projekt ist aufgesetzt."
     },
     {
-      "prompt": "\"Bau den React-Native-Login-Screen mit biometrischer Authentifizierung\"",
-      "reply": "Füge @fonderie/mobile/auth-screens mit biometrischem Fallback, Validierungsfehlern und Barrierefreiheits-Labels hinzu. Verbunden mit den @fonderie/auth-Backend-Hooks."
+      "prompt": "\"Bau den Login-Screen mit biometrischer Authentifizierung\"",
+      "reply": "Füge ein Screen-Kit für Login mit biometrischer Unterstützung, Validierungsstatus und Barrierefreiheits-Labels hinzu. Verbunden mit dem @fonderie/auth-Backend."
     }
   ],
   "codePanelLabel": "Generiert von deiner KI + Fonderie-Modulen",
@@ -21,5 +21,5 @@
   "installComment": "# Abhängigkeiten installiert, Module registriert, Projekt aufgesetzt",
   "logicComment": "// Produktlogik — diesen Teil schreibst du",
   "ctxComment": "// ctx.user, ctx.workspace, ctx.can() — alles bereitgestellt",
-  "mobileComment": "// React Native — von deiner KI generiert"
+  "mobileComment": "// Mobile — von deiner KI generiert"
 }

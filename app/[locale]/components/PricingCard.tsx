@@ -9,6 +9,7 @@ type Tier = {
   features: string[];
   cta: string;
   featured: boolean;
+  hidden?: boolean;
 };
 
 export default function PricingCard({ tier }: { tier: Tier }) {

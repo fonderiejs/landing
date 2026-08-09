@@ -10,8 +10,8 @@
     },
     {
       "num": "02",
-      "title": "React-Native-Screen-Kits",
-      "text": "LoginScreen, BillingScreen, TeamInviteScreen — funktionale Screen-Kits, die Backend-Hooks direkt importieren. Sie decken Edge-Cases ab, die KI oft übersieht: biometrischer Fallback, Validierungsfehler, Barrierefreiheits-Labels."
+      "title": "Screen-Kits",
+      "text": "KI generiert deine Login-, Billing- und Team-Screens. Fertig gebaut, barrierefrei, sicher — automatisch mit deinem Backend verbunden."
     },
     {
       "num": "03",
@@ -21,12 +21,12 @@
     {
       "num": "04",
       "title": "Community-Registry",
-      "text": "Eine Registry mit Screens aus der Community. Nimm ein shadcn-Login, ein React-Native-Billing-Portal — oder bau dein eigenes. Die Intelligenz wird geteilt; die UI gehört dir."
+      "text": "Eine Registry mit Screens aus der Community. Nimm ein shadcn-Login, ein Billing-Portal — oder bau dein eigenes. Die Intelligenz wird geteilt; die UI gehört dir."
     }
   ],
   "codeLabel": "Das Vokabular, das deine KI liest",
   "codeFooter": "Jedes Modul stellt denselben Vertrag bereit — Komposition wird zum Nachschlagen, nicht zum Raten.",
   "codeComment": "// eine Form, jede Session",
-  "codeMobileComment": "// React Native — dasselbe Vokabular, andere Plattform",
-  "codeMobileImport": "import { LoginScreen } from '@fonderie/mobile/auth-screens'"
+  "codeMobileComment": "// Mobile — dasselbe Vokabular, andere Plattform",
+  "codeMobileImport": "import { LoginScreen } from '@fonderie/screens/auth'"
 }

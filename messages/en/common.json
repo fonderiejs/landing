@@ -2,7 +2,7 @@
   "siteTitle": "Fonderie",
   "meta": {
     "titleSuffix": "Ship your SaaS this week",
-    "description": "Auth, billing, workspaces, and permissions as npm packages. Backend modules and React Native screen kits. MIT-licensed. Self-hosted."
+    "description": "Auth, billing, workspaces, and permissions as npm packages. Backend modules and screen kits. MIT-licensed. Self-hosted."
   },
   "nav": {
     "solution": "The solution",
@@ -24,8 +24,7 @@
     "registry": "Registry",
     "twitter": "X",
     "discord": "Discord",
-    "copyright": "Fonderie, Inc. · © 2026 · MIT License",
-    "yc": "Backed by Y Combinator · YC W26"
+    "copyright": "Fonderie, Inc. · © 2026 · MIT License"
   },
   "theme": {
     "label": "Theme",
