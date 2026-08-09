@@ -4,5 +4,6 @@
   "lede": "Every package runs inside your process, against your database. No Fonderie server is ever in your request path.",
   "compare1": "You are Drizzle, not Supabase.",
   "compare2": "You are Next.js, not Vercel.",
-  "footer": "Your data. Your process. Your database."
+  "footer": "Your data. Your process. Your database.",
+  "portability": "Use Claude today, Cursor tomorrow, ChatGPT next week. Fonderie's normalized API means your backend doesn't change — regardless of which AI you prompt."
 }

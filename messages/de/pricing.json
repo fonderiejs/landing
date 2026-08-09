@@ -1,7 +1,7 @@
 {
   "eyebrow": "Preise",
   "title": "Kostenlos starten. Skalieren, wenn du live bist.",
-  "lede": "Open-Source-Core, selbst gehostet, ohne Lock-in. Upgrade, wenn du verwaltetes Deployment, SSO und Compliance brauchst.",
+  "lede": "Open-Source-Core, selbst gehostet, ohne Lock-in. Upgrade, wenn du eine Produktionslizenz, Priority-Support, SSO und Compliance brauchst.",
   "tiers": [
     {
       "name": "Build",

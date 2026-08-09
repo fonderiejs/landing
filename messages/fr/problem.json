@@ -33,5 +33,7 @@
   "withAiTitle": "Avec l'IA — ~1 après-midi.",
   "withAiText": "Même infrastructure improvisée, mêmes failles. Le délai se réduit ; le problème reste.",
   "mobileCompare": "Embaucher un ingénieur backend : 30–60 k$. Reconstruire les mêmes écrans mobiles pour votre 3ᵉ client : une frustration sans prix. Démarrer avec Fonderie : gratuit et open source.",
-  "customApiLine": "Produit sur mesure = API sur mesure = aucun support quand vous passez à l'échelle."
+  "customApiLine": "Produit sur mesure = API sur mesure = aucun support quand vous passez à l'échelle.",
+  "tokenBurnLine": "Et quand votre IA improvise un flux de connexion, vous consommez 3 000 tokens à le déboguer. À. Chaque. Session.",
+  "opportunityCostLine": "Ce sont 9 semaines où vous ne parlez pas à vos clients. 9 semaines où vous ne livrez pas de fonctionnalités. 9 semaines de runway brûlées sur du code que le monde a déjà écrit."
 }

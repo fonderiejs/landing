@@ -19,11 +19,20 @@
   },
   "footer": {
     "tagline": "SaaS 基础设施的标准库。",
+    "product": "产品",
     "github": "GitHub",
     "docs": "文档",
     "registry": "注册表",
-    "twitter": "X",
+    "roadmap": "路线图",
+    "community": "社区",
     "discord": "Discord",
+    "twitter": "X",
+    "youtube": "YouTube",
+    "company": "公司",
+    "about": "关于我们",
+    "blog": "博客",
+    "careers": "招聘",
+    "contact": "联系我们",
     "copyright": "Fonderie, Inc. · © 2026 · MIT 许可"
   },
   "theme": {

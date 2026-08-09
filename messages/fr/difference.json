@@ -4,5 +4,6 @@
   "lede": "Chaque package s'exécute dans votre propre processus, contre votre propre base de données. Aucun serveur Fonderie ne se trouve jamais sur le chemin de vos requêtes.",
   "compare1": "Vous êtes Drizzle, pas Supabase.",
   "compare2": "Vous êtes Next.js, pas Vercel.",
-  "footer": "Vos données. Votre processus. Votre base de données."
+  "footer": "Vos données. Votre processus. Votre base de données.",
+  "portability": "Utilisez Claude aujourd'hui, Cursor demain, ChatGPT la semaine prochaine. L'API normalisée de Fonderie fait que votre backend ne change pas — quelle que soit l'IA que vous utilisez."
 }

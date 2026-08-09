@@ -33,5 +33,7 @@
   "withAiTitle": "Com IA — ~1 tarde.",
   "withAiText": "Mesma infraestrutura improvisada, mesmas falhas. O prazo encolhe; o problema não.",
   "mobileCompare": "Contratar um engenheiro de backend: US$ 30–60 mil. Reconstruir as mesmas telas mobile para o 3º cliente: frustração sem preço. Começando com o Fonderie: grátis e open source.",
-  "customApiLine": "Produto sob medida = API sob medida = sem suporte quando você escala."
+  "customApiLine": "Produto sob medida = API sob medida = sem suporte quando você escala.",
+  "tokenBurnLine": "E quando sua IA improvisa um fluxo de login, você gasta 3.000 tokens depurando isso. Toda. Sessão.",
+  "opportunityCostLine": "São 9 semanas que você não está falando com clientes. 9 semanas que você não está lançando funcionalidades. 9 semanas de runway queimadas em código que o mundo já escreveu."
 }

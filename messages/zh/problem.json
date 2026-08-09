@@ -33,5 +33,7 @@
   "withAiTitle": "使用 AI — 约 1 个下午。",
   "withAiText": "同样是临时拼凑的基础设施，同样的缺陷。时间缩短了，问题却没有解决。",
   "mobileCompare": "雇一名后端工程师：3万–6万美元。为第三个客户重新搭建同样的移动端界面：无价的挫败感。从 Fonderie 开始：免费且开源。",
-  "customApiLine": "定制产品 = 定制 API = 扩展时无人支持。"
+  "customApiLine": "定制产品 = 定制 API = 扩展时无人支持。",
+  "tokenBurnLine": "当你的 AI 即兴拼凑一个登录流程时，你要花 3000 个 token 去调试它。每一次。每个会话。",
+  "opportunityCostLine": "那是 9 周你没有在和客户对话。9 周你没有在交付功能。9 周的资金烧在了世界早已写好的代码上。"
 }

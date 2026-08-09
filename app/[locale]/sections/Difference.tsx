@@ -22,6 +22,9 @@ export default function Difference() {
         <p className="difference__lede" data-reveal="">
           {t('footer')}
         </p>
+        <p className="difference__lede" data-reveal="">
+          {t('portability')}
+        </p>
       </div>
     </section>
   );

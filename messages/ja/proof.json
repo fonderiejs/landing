@@ -9,6 +9,7 @@
     "quote": "Fonderieに出会うまで、認証システムを3回も作り直しました。モバイルアプリを4週間ではなく4日でリリースできました。",
     "attribution": "— Magus Dacar、CrewFinding Inc. CEO"
   },
+  "securityUpdateLine": "セキュリティパッチはnpm updateで配信されます。移行不要。ダウンタイムなし。1か月がかりの認証作り直しも不要です。",
   "metric": "本番稼働アプリ200以上 · 週間npmダウンロード8,000以上 · GitHubスター2,000以上",
   "footnote": "再現可能なA/Bセキュリティ実験の結果です。",
   "footnoteLink": "検証方法を見る →"

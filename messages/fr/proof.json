@@ -9,6 +9,7 @@
     "quote": "Nous avons reconstruit notre système d'auth 3 fois avant de trouver Fonderie. Nous avons livré notre app mobile en 4 jours au lieu de 4 semaines.",
     "attribution": "— Magus Dacar, PDG chez CrewFinding Inc."
   },
+  "securityUpdateLine": "Les correctifs de sécurité arrivent via npm update. Pas de migration. Pas d'interruption. Pas de refonte d'auth d'un mois.",
   "metric": "200+ applications en production · 8 000+ téléchargements npm hebdomadaires · 2 000+ étoiles GitHub",
   "footnote": "Résultats d'une expérience de sécurité A/B reproductible.",
   "footnoteLink": "Voir la méthodologie →"

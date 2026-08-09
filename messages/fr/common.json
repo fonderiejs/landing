@@ -19,11 +19,20 @@
   },
   "footer": {
     "tagline": "La bibliothèque standard pour l'infrastructure SaaS.",
+    "product": "Produit",
     "github": "GitHub",
     "docs": "Docs",
     "registry": "Registre",
-    "twitter": "X",
+    "roadmap": "Feuille de route",
+    "community": "Communauté",
     "discord": "Discord",
+    "twitter": "X",
+    "youtube": "YouTube",
+    "company": "Entreprise",
+    "about": "À propos",
+    "blog": "Blog",
+    "careers": "Carrières",
+    "contact": "Contact",
     "copyright": "Fonderie, Inc. · © 2026 · Licence MIT"
   },
   "theme": {

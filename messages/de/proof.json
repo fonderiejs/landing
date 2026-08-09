@@ -9,6 +9,7 @@
     "quote": "Wir haben unser Auth-System dreimal neu gebaut, bevor wir Fonderie fanden. Unsere Mobile-App war in 4 Tagen statt 4 Wochen live.",
     "attribution": "— Magus Dacar, CEO bei CrewFinding Inc."
   },
+  "securityUpdateLine": "Sicherheitspatches kommen per npm update. Keine Migration. Keine Ausfallzeit. Kein monatelanger Auth-Umbau.",
   "metric": "200+ Apps in Produktion · 8.000+ wöchentliche npm-Downloads · 2.000+ GitHub-Stars",
   "footnote": "Ergebnisse aus einem reproduzierbaren A/B-Sicherheitsexperiment.",
   "footnoteLink": "Methodik ansehen →"

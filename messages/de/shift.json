@@ -1,7 +1,7 @@
 {
   "eyebrow": "Der Wandel",
   "title": "KI braucht nicht mehr Tempo. Sie braucht einen Standard.",
-  "lede": "Rohe KI generiert jedes Mal von Grund auf neu. Fonderie gibt ihr ein gemeinsames, geprüftes Vokabular — sie komponiert, statt zu halluzinieren.",
+  "lede": "Rohe KI generiert jedes Mal von Grund auf neu — sie verbraucht Tokens, führt Bugs ein und liefert jede Session ein anderes Auth-Muster. Fonderie gibt ihr ein gemeinsames, geprüftes Vokabular — sie komponiert, statt zu halluzinieren. Gleiches Ergebnis. Weniger Tokens. Keine Sicherheitsdrift.",
   "features": [
     {
       "num": "01",
