@@ -23,7 +23,7 @@ export default function Footer() {
             <a href="https://x.com/fonderiejs" className="site-footer__link">
               {t('footer.twitter')}
             </a>
-            <a href="https://discord.gg/fonderiejs" className="site-footer__link">
+            <a href="https://discord.gg/EcZnGfdBhj" className="site-footer__link">
               {t('footer.discord')}
             </a>
           </div>
