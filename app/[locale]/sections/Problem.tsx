@@ -48,6 +48,9 @@ export default function Problem() {
             </p>
           </div>
         </div>
+        <p className="problem__lede problem__why-now" data-reveal="">
+          {t('whyNowLine')}
+        </p>
       </div>
     </section>
   );

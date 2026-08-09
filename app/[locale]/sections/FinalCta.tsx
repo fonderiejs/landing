@@ -37,6 +37,9 @@ export default function FinalCta() {
       <div className="final-cta__tags" data-reveal="">
         <span className="final-cta__tag">{t('finalCta.tag')}</span>
       </div>
+      <p className="final-cta__note" data-reveal="">
+        {t('finalCta.team')}
+      </p>
     </section>
   );
 }

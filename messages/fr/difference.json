@@ -4,8 +4,8 @@
   "cards": [
     {
       "icon": "🔒",
-      "title": "Une sécurité qui se met à jour toute seule",
-      "text": "Quand des vulnérabilités sont découvertes, une seule mise à jour corrige toutes les apps Fonderie. Pas de refonte de sécurité d'un mois. Pas besoin d'embaucher un consultant en sécurité."
+      "title": "Votre infrastructure s'améliore automatiquement",
+      "text": "Nouvelles fonctionnalités, correctifs de sécurité et mises à jour de conformité sont livrés en continu. Votre SaaS s'améliore sans que vous touchiez une ligne de code d'infrastructure."
     },
     {
       "icon": "💰",
@@ -15,7 +15,7 @@
     {
       "icon": "🤖",
       "title": "Fonctionne avec toute IA",
-      "text": "Claude aujourd'hui, Cursor demain, ChatGPT la semaine prochaine. Les briques de Fonderie fonctionnent de la même façon quelle que soit l'IA que vous utilisez. Votre produit ne casse pas quand vous changez d'outil."
+      "text": "Claude aujourd'hui, Cursor demain, ChatGPT la semaine prochaine. Les briques de Fonderie fonctionnent de la même façon quelle que soit l'IA que vous utilisez. Votre produit ne casse pas quand vous changez d'outil. Comme Fonderie normalise chaque composant backend, notre équipe peut vous accompagner quel que soit l'IA que vous avez utilisée pour construire votre app."
     },
     {
       "icon": "⏰",

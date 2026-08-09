@@ -4,8 +4,8 @@
   "cards": [
     {
       "icon": "🔒",
-      "title": "Security that updates itself",
-      "text": "When vulnerabilities are discovered, one update patches every Fonderie app. No month-long security rewrite. No hiring a security consultant."
+      "title": "Your infrastructure improves automatically",
+      "text": "New features, security patches, and compliance updates ship continuously. Your SaaS gets better without you touching a line of infrastructure code."
     },
     {
       "icon": "💰",
@@ -15,7 +15,7 @@
     {
       "icon": "🤖",
       "title": "Works with any AI assistant",
-      "text": "Claude today. Cursor tomorrow. ChatGPT next week. Fonderie's building blocks work the same way regardless of which AI you use. Your product doesn't break when you switch tools."
+      "text": "Claude today. Cursor tomorrow. ChatGPT next week. Fonderie's building blocks work the same way regardless of which AI you use. Your product doesn't break when you switch tools. Because Fonderie normalizes every backend component, our team can support you no matter which AI assistant you used to build your app."
     },
     {
       "icon": "⏰",

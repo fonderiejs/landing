@@ -14,5 +14,6 @@
   "withAiTitle": "Mit KI allein",
   "withAiText": "Dein Assistent improvisiert bei jeder Session alles neu — andere Login-Flows, andere Billing-Logik, andere Bugs. Er verschwendet Stunden (und dein KI-Budget) damit, dieselben Probleme immer wieder zu debuggen.",
   "withFonderieTitle": "Mit Fonderie",
-  "withFonderieText": "Deine KI nutzt bewährte, getestete Bausteine. Immer derselbe Login-Flow. Dieselbe Billing-Logik. Dieselbe Sicherheit. Du shippst in einer Woche und verbringst deine Zeit mit deinen Kunden."
+  "withFonderieText": "Deine KI nutzt bewährte, getestete Bausteine. Immer derselbe Login-Flow. Dieselbe Billing-Logik. Dieselbe Sicherheit. Du shippst in einer Woche und verbringst deine Zeit mit deinen Kunden.",
+  "whyNowLine": "2026 nutzen 90 % der SaaS-Gründer KI-Assistenten zum Bauen. Und 100 % von ihnen improvisieren dieselbe Infrastruktur. Fonderie ist die Standardbibliothek, die der KI gefehlt hat."
 }
