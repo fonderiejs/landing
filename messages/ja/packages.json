@@ -1,35 +1,35 @@
 {
-  "eyebrow": "The packages",
-  "title": "Real packages, on the real registry.",
-  "lede": "Real packages on npm. Click through and read the code — with adapters for Express, Hono, and Koa, so you can mount Fonderie inside an app you already run.",
+  "eyebrow": "パッケージ",
+  "title": "本物のレジストリにある、本物のパッケージ。",
+  "lede": "npm上の本物のパッケージ。クリックしてコードを読んでみてください — Express、Hono、Koa向けアダプターも用意しており、すでに動いているアプリにFonderieを組み込めます。",
   "categories": {
-    "backend": "Backend Intelligence",
-    "mobile": "React Native Screen Kits (v0.3)",
-    "adapters": "Web Adapters"
+    "backend": "バックエンドインテリジェンス",
+    "mobile": "React Nativeスクリーンキット（v0.3）",
+    "adapters": "ウェブアダプター"
   },
   "items": [
-    { "name": "@fonderie/auth", "desc": "Drop-in auth for SaaS" },
-    { "name": "@fonderie/billing", "desc": "Subscriptions, seats, usage, and webhooks" },
-    { "name": "@fonderie/workspaces", "desc": "Teams, orgs, invites, and multi-tenancy" },
-    { "name": "@fonderie/permissions", "desc": "Role-based access control" },
-    { "name": "@fonderie/courier", "desc": "Email, SMS, and push notification dispatch" }
+    { "name": "@fonderie/auth", "desc": "SaaS向けの導入即完了する認証" },
+    { "name": "@fonderie/billing", "desc": "サブスクリプション、シート、利用量、Webhook" },
+    { "name": "@fonderie/workspaces", "desc": "チーム、組織、招待、マルチテナント対応" },
+    { "name": "@fonderie/permissions", "desc": "ロールベースのアクセス制御" },
+    { "name": "@fonderie/courier", "desc": "メール、SMS、プッシュ通知の配信" }
   ],
   "mobileItems": [
-    { "name": "@fonderie/mobile/auth-screens", "desc": "Login, signup, MFA, biometric" },
-    { "name": "@fonderie/mobile/billing-screens", "desc": "Plan selector, checkout, invoices" },
-    { "name": "@fonderie/mobile/workspace-screens", "desc": "Team invite, workspace switcher" },
-    { "name": "@fonderie/mobile/navigation", "desc": "Navigation shell, settings" }
+    { "name": "@fonderie/mobile/auth-screens", "desc": "ログイン、サインアップ、多要素認証、生体認証" },
+    { "name": "@fonderie/mobile/billing-screens", "desc": "プラン選択、チェックアウト、請求書" },
+    { "name": "@fonderie/mobile/workspace-screens", "desc": "チーム招待、ワークスペース切り替え" },
+    { "name": "@fonderie/mobile/navigation", "desc": "ナビゲーション構造、設定画面" }
   ],
   "adapterItems": [
-    { "name": "@fonderie/adapter-express", "desc": "Express integration" },
-    { "name": "@fonderie/adapter-hono", "desc": "Hono integration" },
-    { "name": "@fonderie/adapter-koa", "desc": "Koa integration" }
+    { "name": "@fonderie/adapter-express", "desc": "Express連携" },
+    { "name": "@fonderie/adapter-hono", "desc": "Hono連携" },
+    { "name": "@fonderie/adapter-koa", "desc": "Koa連携" }
   ],
   "moreCard": {
-    "kicker": "The rest of the registry",
-    "title": "+8 more →",
-    "desc": "core, store, audit, events, rate-limit, config, logger, webhooks"
+    "kicker": "レジストリのその他",
+    "title": "他8個 →",
+    "desc": "core、store、audit、events、rate-limit、config、logger、webhooks"
   },
-  "footnote": "All MIT-licensed.",
-  "footnoteLink": "See the full registry on GitHub →"
+  "footnote": "すべてMITライセンスです。",
+  "footnoteLink": "GitHubでレジストリ全体を見る →"
 }

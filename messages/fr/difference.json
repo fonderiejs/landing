@@ -1,8 +1,8 @@
 {
-  "eyebrow": "The difference",
-  "title": "Library, not service.",
-  "lede": "Every package runs inside your process, against your database. No Fonderie server is ever in your request path.",
-  "compare1": "You are Drizzle, not Supabase.",
-  "compare2": "You are Next.js, not Vercel.",
-  "footer": "Your data. Your process. Your database."
+  "eyebrow": "La différence",
+  "title": "Une librairie, pas un service.",
+  "lede": "Chaque package s'exécute dans votre propre processus, contre votre propre base de données. Aucun serveur Fonderie ne se trouve jamais sur le chemin de vos requêtes.",
+  "compare1": "Vous êtes Drizzle, pas Supabase.",
+  "compare2": "Vous êtes Next.js, pas Vercel.",
+  "footer": "Vos données. Votre processus. Votre base de données."
 }

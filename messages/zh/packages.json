@@ -1,35 +1,35 @@
 {
-  "eyebrow": "The packages",
-  "title": "Real packages, on the real registry.",
-  "lede": "Real packages on npm. Click through and read the code — with adapters for Express, Hono, and Koa, so you can mount Fonderie inside an app you already run.",
+  "eyebrow": "包",
+  "title": "真实的包，在真实的注册表上。",
+  "lede": "npm 上的真实包。点进去阅读源码 —— 我们还提供了 Express、Hono 和 Koa 的适配器，方便你把 Fonderie 挂载到已有的应用中。",
   "categories": {
-    "backend": "Backend Intelligence",
-    "mobile": "React Native Screen Kits (v0.3)",
-    "adapters": "Web Adapters"
+    "backend": "后端智能模块",
+    "mobile": "React Native 屏幕套件（v0.3）",
+    "adapters": "Web 适配器"
   },
   "items": [
-    { "name": "@fonderie/auth", "desc": "Drop-in auth for SaaS" },
-    { "name": "@fonderie/billing", "desc": "Subscriptions, seats, usage, and webhooks" },
-    { "name": "@fonderie/workspaces", "desc": "Teams, orgs, invites, and multi-tenancy" },
-    { "name": "@fonderie/permissions", "desc": "Role-based access control" },
-    { "name": "@fonderie/courier", "desc": "Email, SMS, and push notification dispatch" }
+    { "name": "@fonderie/auth", "desc": "开箱即用的 SaaS 认证" },
+    { "name": "@fonderie/billing", "desc": "订阅、席位、用量与 Webhook" },
+    { "name": "@fonderie/workspaces", "desc": "团队、组织、邀请与多租户支持" },
+    { "name": "@fonderie/permissions", "desc": "基于角色的访问控制" },
+    { "name": "@fonderie/courier", "desc": "邮件、短信与推送通知的发送" }
   ],
   "mobileItems": [
-    { "name": "@fonderie/mobile/auth-screens", "desc": "Login, signup, MFA, biometric" },
-    { "name": "@fonderie/mobile/billing-screens", "desc": "Plan selector, checkout, invoices" },
-    { "name": "@fonderie/mobile/workspace-screens", "desc": "Team invite, workspace switcher" },
-    { "name": "@fonderie/mobile/navigation", "desc": "Navigation shell, settings" }
+    { "name": "@fonderie/mobile/auth-screens", "desc": "登录、注册、多因素认证、生物识别" },
+    { "name": "@fonderie/mobile/billing-screens", "desc": "套餐选择、结账、账单" },
+    { "name": "@fonderie/mobile/workspace-screens", "desc": "团队邀请、工作区切换" },
+    { "name": "@fonderie/mobile/navigation", "desc": "导航结构、设置页面" }
   ],
   "adapterItems": [
-    { "name": "@fonderie/adapter-express", "desc": "Express integration" },
-    { "name": "@fonderie/adapter-hono", "desc": "Hono integration" },
-    { "name": "@fonderie/adapter-koa", "desc": "Koa integration" }
+    { "name": "@fonderie/adapter-express", "desc": "Express 集成" },
+    { "name": "@fonderie/adapter-hono", "desc": "Hono 集成" },
+    { "name": "@fonderie/adapter-koa", "desc": "Koa 集成" }
   ],
   "moreCard": {
-    "kicker": "The rest of the registry",
-    "title": "+8 more →",
-    "desc": "core, store, audit, events, rate-limit, config, logger, webhooks"
+    "kicker": "注册表中的其余部分",
+    "title": "还有 8 个 →",
+    "desc": "core、store、audit、events、rate-limit、config、logger、webhooks"
   },
-  "footnote": "All MIT-licensed.",
-  "footnoteLink": "See the full registry on GitHub →"
+  "footnote": "全部采用 MIT 许可。",
+  "footnoteLink": "在 GitHub 上查看完整注册表 →"
 }

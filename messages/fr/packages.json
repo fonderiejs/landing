@@ -1,35 +1,35 @@
 {
-  "eyebrow": "The packages",
-  "title": "Real packages, on the real registry.",
-  "lede": "Real packages on npm. Click through and read the code — with adapters for Express, Hono, and Koa, so you can mount Fonderie inside an app you already run.",
+  "eyebrow": "Les packages",
+  "title": "De vrais packages, sur le vrai registre.",
+  "lede": "De vrais packages sur npm. Cliquez et lisez le code — avec des adaptateurs pour Express, Hono et Koa, pour monter Fonderie dans une app que vous faites déjà tourner.",
   "categories": {
-    "backend": "Backend Intelligence",
-    "mobile": "React Native Screen Kits (v0.3)",
-    "adapters": "Web Adapters"
+    "backend": "Intelligence backend",
+    "mobile": "Kits d'écrans React Native (v0.3)",
+    "adapters": "Adaptateurs web"
   },
   "items": [
-    { "name": "@fonderie/auth", "desc": "Drop-in auth for SaaS" },
-    { "name": "@fonderie/billing", "desc": "Subscriptions, seats, usage, and webhooks" },
-    { "name": "@fonderie/workspaces", "desc": "Teams, orgs, invites, and multi-tenancy" },
-    { "name": "@fonderie/permissions", "desc": "Role-based access control" },
-    { "name": "@fonderie/courier", "desc": "Email, SMS, and push notification dispatch" }
+    { "name": "@fonderie/auth", "desc": "Auth prête à l'emploi pour SaaS" },
+    { "name": "@fonderie/billing", "desc": "Abonnements, sièges, usage et webhooks" },
+    { "name": "@fonderie/workspaces", "desc": "Équipes, organisations, invitations et multi-tenant" },
+    { "name": "@fonderie/permissions", "desc": "Contrôle d'accès basé sur les rôles" },
+    { "name": "@fonderie/courier", "desc": "Envoi d'e-mails, de SMS et de notifications push" }
   ],
   "mobileItems": [
-    { "name": "@fonderie/mobile/auth-screens", "desc": "Login, signup, MFA, biometric" },
-    { "name": "@fonderie/mobile/billing-screens", "desc": "Plan selector, checkout, invoices" },
-    { "name": "@fonderie/mobile/workspace-screens", "desc": "Team invite, workspace switcher" },
-    { "name": "@fonderie/mobile/navigation", "desc": "Navigation shell, settings" }
+    { "name": "@fonderie/mobile/auth-screens", "desc": "Connexion, inscription, MFA, biométrie" },
+    { "name": "@fonderie/mobile/billing-screens", "desc": "Sélecteur de plan, paiement, factures" },
+    { "name": "@fonderie/mobile/workspace-screens", "desc": "Invitation d'équipe, changement d'espace" },
+    { "name": "@fonderie/mobile/navigation", "desc": "Structure de navigation, réglages" }
   ],
   "adapterItems": [
-    { "name": "@fonderie/adapter-express", "desc": "Express integration" },
-    { "name": "@fonderie/adapter-hono", "desc": "Hono integration" },
-    { "name": "@fonderie/adapter-koa", "desc": "Koa integration" }
+    { "name": "@fonderie/adapter-express", "desc": "Intégration Express" },
+    { "name": "@fonderie/adapter-hono", "desc": "Intégration Hono" },
+    { "name": "@fonderie/adapter-koa", "desc": "Intégration Koa" }
   ],
   "moreCard": {
-    "kicker": "The rest of the registry",
-    "title": "+8 more →",
+    "kicker": "Le reste du registre",
+    "title": "+8 de plus →",
     "desc": "core, store, audit, events, rate-limit, config, logger, webhooks"
   },
-  "footnote": "All MIT-licensed.",
-  "footnoteLink": "See the full registry on GitHub →"
+  "footnote": "Tous sous licence MIT.",
+  "footnoteLink": "Voir le registre complet sur GitHub →"
 }

@@ -1,19 +1,19 @@
 {
-  "eyebrow": "Open source",
-  "titleLine1": "Ship your SaaS this week,",
-  "titleLine2": "not next quarter.",
-  "lede": "Auth, billing, workspaces, and permissions — as npm packages.",
-  "ledeStrong": "Backend modules and React Native screen kits. Install. Configure. Ship.",
+  "eyebrow": "オープンソース",
+  "titleLine1": "SaaSを今週リリースしよう、",
+  "titleLine2": "来四半期ではなく。",
+  "lede": "認証、課金、ワークスペース、権限管理 — すべてnpmパッケージとして。",
+  "ledeStrong": "バックエンドモジュールとReact Nativeスクリーンキット。インストール、設定、リリース。",
   "command": "npx @fonderie/create my-saas",
-  "copy": "Copy",
-  "copied": "Copied!",
-  "proof": "MIT-licensed · Open source · Runs in your process",
-  "worksWith": "Works with",
+  "copy": "コピー",
+  "copied": "コピーしました！",
+  "proof": "MITライセンス · オープンソース · あなたのプロセス内で動作",
+  "worksWith": "対応ツール",
   "assistants": {
     "claudeCode": "Claude Code",
     "cursor": "Cursor",
     "codex": "Codex",
     "windsurf": "Windsurf",
-    "any": "Any code-reading AI"
+    "any": "コードを読めるあらゆるAI"
   }
 }
