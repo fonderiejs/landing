@@ -23,6 +23,7 @@ export default function Proof() {
         <p>&ldquo;{t('testimonial.quote')}&rdquo;</p>
         <cite>{t('testimonial.attribution')}</cite>
       </blockquote>
+      {/* Hidden for now
       <p className="proof__metric" data-reveal="">
         {t('metric')}
       </p>
@@ -32,6 +33,7 @@ export default function Proof() {
           {t('footnoteLink')}
         </a>
       </p>
+      */}
     </section>
   );
 }

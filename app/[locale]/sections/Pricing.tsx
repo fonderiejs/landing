@@ -3,7 +3,8 @@ import PricingCard from '../components/PricingCard';
 
 export default function Pricing() {
   const t = useTranslations('pricing');
-  const tiers = t.raw('tiers');
+  // Mobile tier disabled for now
+  const tiers = t.raw('tiers').filter((tier: any) => tier.name !== 'Mobile');
 
   return (
     <section id="pricing" className="pricing">
