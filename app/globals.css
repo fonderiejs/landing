@@ -1694,8 +1694,8 @@ a:hover {
 }
 .site-footer__col {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px 24px;
+  flex-direction: column;
+  gap: 10px;
 }
 .site-footer__head {
   font-size: 10px;

@@ -19,10 +19,20 @@
   },
   "footer": {
     "tagline": "Für Gründer, die shippen.",
+    "product": "Produkt",
     "github": "GitHub",
-    "docs": "Dokumentation",
-    "twitter": "X",
+    "docs": "Docs",
+    "registry": "Registry",
+    "roadmap": "Roadmap",
+    "community": "Community",
     "discord": "Discord",
+    "twitter": "X",
+    "youtube": "YouTube",
+    "company": "Unternehmen",
+    "about": "Über uns",
+    "blog": "Blog",
+    "careers": "Karriere",
+    "contact": "Kontakt",
     "copyright": "Fonderie, Inc. · © 2026"
   },
   "theme": {

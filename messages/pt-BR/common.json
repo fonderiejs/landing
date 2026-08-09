@@ -19,10 +19,20 @@
   },
   "footer": {
     "tagline": "Feito para founders que lançam.",
+    "product": "Produto",
     "github": "GitHub",
-    "docs": "Documentação",
-    "twitter": "X",
+    "docs": "Docs",
+    "registry": "Registro",
+    "roadmap": "Roadmap",
+    "community": "Comunidade",
     "discord": "Discord",
+    "twitter": "X",
+    "youtube": "YouTube",
+    "company": "Empresa",
+    "about": "Sobre",
+    "blog": "Blog",
+    "careers": "Carreiras",
+    "contact": "Contato",
     "copyright": "Fonderie, Inc. · © 2026"
   },
   "theme": {
