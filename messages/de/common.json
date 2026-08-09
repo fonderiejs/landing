@@ -12,27 +12,20 @@
     "contact": "Kontakt"
   },
   "cta": {
-    "getStarted": "npm install @fonderie/core",
+    "getStarted": "npm install @fonderie/core →",
     "viewOnGitHub": "Auf GitHub ansehen",
     "startShipping": "Jetzt shippen",
     "contactSales": "Vertrieb kontaktieren"
   },
   "footer": {
-    "product": "Produkt",
+    "tagline": "Die Standardbibliothek für SaaS-Infrastruktur.",
     "github": "GitHub",
     "docs": "Docs",
     "registry": "Registry",
-    "roadmap": "Roadmap",
-    "community": "Community",
-    "discord": "Discord",
     "twitter": "X",
-    "youtube": "YouTube",
-    "company": "Unternehmen",
-    "about": "Über uns",
-    "blog": "Blog",
-    "careers": "Karriere",
-    "contact": "Kontakt",
-    "copyright": "Fonderie, Inc. · © 2026 · MIT-Lizenz · YC W26"
+    "discord": "Discord",
+    "copyright": "Fonderie, Inc. · © 2026 · MIT-Lizenz",
+    "yc": "Backed by Y Combinator · YC W26"
   },
   "theme": {
     "label": "Design",

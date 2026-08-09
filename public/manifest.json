@@ -1,7 +1,7 @@
 {
   "name": "Fonderie",
   "short_name": "Fonderie",
-  "description": "The open standard for AI-built SaaS.",
+  "description": "The standard library for AI-built SaaS.",
   "start_url": "/en",
   "display": "standalone",
   "background_color": "#ffffff",

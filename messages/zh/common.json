@@ -12,27 +12,20 @@
     "contact": "联系我们"
   },
   "cta": {
-    "getStarted": "npm install @fonderie/core",
+    "getStarted": "npm install @fonderie/core →",
     "viewOnGitHub": "在 GitHub 上查看",
     "startShipping": "开始上线",
     "contactSales": "联系销售"
   },
   "footer": {
-    "product": "产品",
+    "tagline": "SaaS 基础设施的标准库。",
     "github": "GitHub",
     "docs": "文档",
     "registry": "注册表",
-    "roadmap": "路线图",
-    "community": "社区",
-    "discord": "Discord",
     "twitter": "X",
-    "youtube": "YouTube",
-    "company": "公司",
-    "about": "关于我们",
-    "blog": "博客",
-    "careers": "招聘",
-    "contact": "联系我们",
-    "copyright": "Fonderie, Inc. · © 2026 · MIT 许可 · YC W26"
+    "discord": "Discord",
+    "copyright": "Fonderie, Inc. · © 2026 · MIT 许可",
+    "yc": "Backed by Y Combinator · YC W26"
   },
   "theme": {
     "label": "主题",

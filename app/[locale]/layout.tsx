@@ -86,7 +86,7 @@ const jsonLd = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Any',
       description:
-        'Fonderie is the open standard for the SaaS backend — the auth, billing, teams, permissions, and multi-tenancy that every SaaS rebuilds before writing product code. It’s a skill wired into your repo, running in your process, against your database. You own the source (MIT), self-host it, and swap any provider. Free and open source — managed hosting is on the roadmap.',
+        'Fonderie is the standard library for the SaaS backend — the auth, billing, teams, permissions, and multi-tenancy that every SaaS rebuilds before writing product code. It’s a skill wired into your repo, running in your process, against your database. You own the source (MIT), self-host it, and swap any provider. Free and open source — managed hosting is on the roadmap.',
       downloadUrl: 'https://github.com/fonderiejs/fonderie',
       isAccessibleForFree: true,
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
