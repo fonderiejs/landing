@@ -810,6 +810,11 @@ a:hover {
   max-width: 48ch;
   margin: 0;
 }
+.problem__why-now {
+  flex: 1 1 100%;
+  max-width: 72ch;
+  padding-top: 8px;
+}
 .problem__lede-strong {
   color: var(--ink);
 }

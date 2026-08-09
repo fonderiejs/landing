@@ -4,8 +4,8 @@
   "cards": [
     {
       "icon": "🔒",
-      "title": "Sicherheit, die sich selbst aktualisiert",
-      "text": "Wenn Schwachstellen entdeckt werden, patcht ein einziges Update jede Fonderie-App. Kein monatelanger Sicherheits-Umbau. Kein Sicherheitsberater nötig."
+      "title": "Deine Infrastruktur verbessert sich automatisch",
+      "text": "Neue Features, Sicherheitspatches und Compliance-Updates erscheinen laufend. Dein SaaS wird besser, ohne dass du eine einzige Zeile Infrastruktur-Code anfasst."
     },
     {
       "icon": "💰",
@@ -15,7 +15,7 @@
     {
       "icon": "🤖",
       "title": "Funktioniert mit jeder KI",
-      "text": "Heute Claude, morgen Cursor, nächste Woche ChatGPT. Fonderies Bausteine funktionieren immer gleich, egal welche KI du nutzt. Dein Produkt bricht nicht, wenn du das Tool wechselst."
+      "text": "Heute Claude, morgen Cursor, nächste Woche ChatGPT. Fonderies Bausteine funktionieren immer gleich, egal welche KI du nutzt. Dein Produkt bricht nicht, wenn du das Tool wechselst. Weil Fonderie jede Backend-Komponente normalisiert, kann unser Team dich unterstützen — egal, mit welcher KI du deine App gebaut hast."
     },
     {
       "icon": "⏰",

@@ -14,5 +14,6 @@
   "withAiTitle": "Avec l'IA seule",
   "withAiText": "Votre assistant improvise tout depuis zéro à chaque session — flux de connexion différents, logique de facturation différente, bugs différents. Il gaspille des heures (et votre budget IA) à déboguer les mêmes problèmes encore et encore.",
   "withFonderieTitle": "Avec Fonderie",
-  "withFonderieText": "Votre IA utilise des briques éprouvées et testées. Même flux de connexion à chaque fois. Même logique de facturation. Même sécurité. Vous livrez en une semaine et passez votre temps à parler à vos clients."
+  "withFonderieText": "Votre IA utilise des briques éprouvées et testées. Même flux de connexion à chaque fois. Même logique de facturation. Même sécurité. Vous livrez en une semaine et passez votre temps à parler à vos clients.",
+  "whyNowLine": "En 2026, 90 % des fondateurs de SaaS utilisent des assistants IA pour construire. Et 100 % d'entre eux improvisent la même infrastructure. Fonderie est la bibliothèque standard qui manquait à l'IA."
 }

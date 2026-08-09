@@ -49,7 +49,7 @@
       "period": "",
       "desc": "Pour les organisations",
       "featuresLead": "Tout ce qui est dans Scale, plus",
-      "features": ["SSO et SAML", "Support de conformité", "Déploiement sur votre propre infrastructure", "Compte dédié"],
+      "features": ["Authentification unique (SSO)", "Support de conformité", "Vos données restent sur vos serveurs", "Compte dédié"],
       "cta": "Contacter les ventes",
       "featured": false
     }
@@ -64,6 +64,7 @@
     "star": "Mettre une étoile sur GitHub",
     "prompts": "Les prompts système pour Claude Code et Cursor sont fournis avec le repo —",
     "promptsLink": "récupérez-les sur GitHub →",
-    "tag": "Pour les fondateurs qui veulent livrer, pas configurer"
+    "tag": "Pour les fondateurs qui veulent livrer, pas configurer",
+    "team": "Construit par des fondateurs fatigués de reconstruire l'auth pour chaque nouveau produit."
   }
 }

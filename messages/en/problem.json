@@ -14,5 +14,6 @@
   "withAiTitle": "With AI alone",
   "withAiText": "Your assistant improvises everything from scratch every session — different login flows, different billing logic, different bugs. It wastes hours (and your AI budget) debugging the same problems over and over.",
   "withFonderieTitle": "With Fonderie",
-  "withFonderieText": "Your AI uses proven, tested building blocks. Same login flow every time. Same billing logic. Same security. You ship in a week and spend your time talking to customers."
+  "withFonderieText": "Your AI uses proven, tested building blocks. Same login flow every time. Same billing logic. Same security. You ship in a week and spend your time talking to customers.",
+  "whyNowLine": "In 2026, 90% of SaaS founders use AI assistants to build. And 100% of them are improvising the same infrastructure. Fonderie is the standard library AI was missing."
 }
