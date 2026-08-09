@@ -1,38 +1,46 @@
 {
   "siteTitle": "Fonderie",
   "meta": {
-    "titleSuffix": "AIが構築するSaaSのためのオープンスタンダード",
-    "description": "あらゆるSaaSは、製品コードを一行も書く前に、同じ認証・課金・チーム機能・マルチテナンシーを何度も作り直しています。Fonderieはそのインフラのためのオープンスタンダードです。"
+    "titleSuffix": "Ship your SaaS this week",
+    "description": "Auth, billing, workspaces, and permissions as npm packages. Backend modules and React Native screen kits. MIT-licensed. Self-hosted."
   },
   "nav": {
-    "solution": "ソリューション",
-    "packages": "パッケージ",
-    "pricing": "料金",
+    "solution": "The solution",
+    "packages": "Packages",
+    "pricing": "Pricing",
     "github": "GitHub",
-    "contact": "お問い合わせ"
+    "contact": "Contact"
   },
   "cta": {
-    "getStarted": "はじめる",
-    "viewOnGitHub": "GitHubで見る",
-    "startShipping": "今すぐ始める",
-    "contactSales": "営業に問い合わせる"
+    "getStarted": "npm install @fonderie/core",
+    "viewOnGitHub": "View on GitHub",
+    "startShipping": "Start shipping",
+    "contactSales": "Contact sales"
   },
   "footer": {
-    "openSource": "オープンソース",
+    "product": "Product",
     "github": "GitHub",
-    "npmInstall": "npm install @fonderie/core",
-    "company": "会社情報",
-    "contact": "お問い合わせ",
-    "twitter": "X / Twitter",
-    "copyright": "Fonderie, Inc. · © 2026 · オープンソース · MITライセンス"
+    "docs": "Docs",
+    "registry": "Registry",
+    "roadmap": "Roadmap",
+    "community": "Community",
+    "discord": "Discord",
+    "twitter": "X",
+    "youtube": "YouTube",
+    "company": "Company",
+    "about": "About",
+    "blog": "Blog",
+    "careers": "Careers",
+    "contact": "Contact",
+    "copyright": "Fonderie, Inc. · © 2026 · MIT License · YC W26"
   },
   "theme": {
-    "label": "テーマ",
-    "system": "システム",
-    "light": "ライト",
-    "dark": "ダーク"
+    "label": "Theme",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark"
   },
   "localeSwitcher": {
-    "label": "言語"
+    "label": "Language"
   }
 }

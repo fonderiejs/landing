@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 export default function Problem() {
   const t = useTranslations('problem');
   const timeline = t.raw('timeline') as { week: string; label: string }[];
+  const mobileTimeline = t.raw('mobileTimeline') as { week: string; label: string }[];
   const half = Math.ceil(timeline.length / 2);
 
   return (
@@ -21,6 +22,9 @@ export default function Problem() {
           <p className="problem__compare" data-reveal="">
             {t('compareBefore')} <s className="problem__strike">{t('comparePriceStrike')}</s>. {t('compareAfter')}{' '}
             <b className="problem__free">{t('compareFree')}</b>
+          </p>
+          <p className="problem__compare" data-reveal="">
+            {t('mobileCompare')}
           </p>
         </div>
         <div className="problem__ledger" data-reveal="">
@@ -58,6 +62,24 @@ export default function Problem() {
               <br />
               {t('withAiText')}
             </p>
+          </div>
+        </div>
+        <div className="problem__ledger" data-reveal="">
+          <p className="problem__ledger-head">
+            {t('mobileLedgerHeading')} <b className="problem__ledger-head-strong">{t('mobileLedgerDuration')}</b>
+          </p>
+          <div>
+            <div>
+              {mobileTimeline.map((row, i) => {
+                const isLast = i === mobileTimeline.length - 1;
+                return (
+                  <div key={row.week} className={`problem__ledger-row${isLast ? ' problem__ledger-row--final' : ''}`}>
+                    <span className={`problem__ledger-week${isLast ? ' problem__ledger-week--accent' : ''}`}>{row.week}</span>{' '}
+                    {row.label}
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

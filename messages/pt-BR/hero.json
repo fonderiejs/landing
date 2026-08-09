@@ -1,19 +1,19 @@
 {
   "eyebrow": "Open source",
-  "titleLine1": "O padrão aberto para",
-  "titleLine2": "SaaS construído por IA.",
-  "lede": "Todo assistente de IA que recebe a tarefa de construir um SaaS inventa sua própria infraestrutura — autenticação, cobrança, permissões, times. A Fonderie dá a cada LLM um padrão único para compor a partir dele.",
-  "ledeStrong": "Sua IA para de improvisar. Você começa a entregar.",
+  "titleLine1": "Ship your SaaS this week,",
+  "titleLine2": "not next quarter.",
+  "lede": "Auth, billing, workspaces, and permissions — as npm packages.",
+  "ledeStrong": "Backend modules and React Native screen kits. Install. Configure. Ship.",
   "command": "npx @fonderie/create my-saas",
-  "copy": "Copiar",
-  "copied": "Copiado!",
-  "proof": "Sob licença MIT · Open source · Sua infraestrutura",
-  "worksWith": "Funciona com",
+  "copy": "Copy",
+  "copied": "Copied!",
+  "proof": "MIT-licensed · Open source · Runs in your process",
+  "worksWith": "Works with",
   "assistants": {
     "claudeCode": "Claude Code",
     "cursor": "Cursor",
     "codex": "Codex",
     "windsurf": "Windsurf",
-    "any": "Qualquer IA que leia código"
+    "any": "Any code-reading AI"
   }
 }

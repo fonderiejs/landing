@@ -1,25 +1,32 @@
 {
-  "eyebrow": "范式转变",
-  "title": "AI 需要的不是更快,而是一套标准。",
-  "lede": "原始的 AI 每次都要从零开始生成代码。Fonderie 为它提供了一套共享且经过审计的词汇表 —— 让它能够组装,而不是凭空臆造。",
+  "eyebrow": "The shift",
+  "title": "AI doesn't need more speed. It needs a standard.",
+  "lede": "Raw AI generates from scratch every time. Fonderie gives it a shared, audited vocabulary — so it composes, not hallucinates.",
   "features": [
     {
       "num": "01",
-      "title": "标准模块",
-      "text": "认证、账单、权限、工作区 —— 每一个都是经过类型化、测试完备的基础单元。不是模板,而是构建块。"
+      "title": "Backend intelligence",
+      "text": "Auth, billing, permissions, workspaces — each a typed, tested state machine. Not a template; a building block that runs in your process, against your database."
     },
     {
       "num": "02",
-      "title": "AI 可读的技能文件",
-      "text": "仓库中的技能文件清晰说明各模块如何协同工作。无需提示词工程,不同会话之间也不会产生偏差。"
+      "title": "React Native screen kits",
+      "text": "LoginScreen, BillingScreen, TeamInviteScreen — functional screen kits that import backend hooks directly. Handle edge cases AI usually misses: biometric fallback, validation error states, accessibility labels."
     },
     {
       "num": "03",
-      "title": "可审查的输出",
-      "text": "组装的结果最终落地为你仓库中纯粹的 TypeScript 代码 —— 可对比差异、可测试、可逐行审计。"
+      "title": "AI-readable skills",
+      "text": "Skill files in your repo spell out how backend modules and frontend screens wire together. No prompt engineering. No drift between sessions."
+    },
+    {
+      "num": "04",
+      "title": "Community registry",
+      "text": "A registry of screens built by the community. Grab a shadcn login, a React Native billing portal, or build your own. The intelligence is shared; the UI is yours."
     }
   ],
-  "codeLabel": "你的 AI 所读取的词汇表",
-  "codeFooter": "每个模块都暴露相同的契约,因此组装过程是一次查找,而不是一次猜测。",
-  "codeComment": "// 一种结构,贯穿每一次会话"
+  "codeLabel": "The vocabulary your AI reads",
+  "codeFooter": "Every module exposes the same contract, so composition is a lookup — not a guess.",
+  "codeComment": "// one shape, every session",
+  "codeMobileComment": "// React Native — same vocabulary, different platform",
+  "codeMobileImport": "import { LoginScreen } from '@fonderie/mobile/auth-screens'"
 }

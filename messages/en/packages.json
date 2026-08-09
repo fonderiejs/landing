@@ -2,7 +2,11 @@
   "eyebrow": "The packages",
   "title": "Real packages, on the real registry.",
   "lede": "Real packages on npm. Click through and read the code — with adapters for Express, Hono, and Koa, so you can mount Fonderie inside an app you already run.",
-  "businessLogic": "Business Logic",
+  "categories": {
+    "backend": "Backend Intelligence",
+    "mobile": "React Native Screen Kits (v0.3)",
+    "adapters": "Web Adapters"
+  },
   "items": [
     { "name": "@fonderie/auth", "desc": "Drop-in auth for SaaS" },
     { "name": "@fonderie/billing", "desc": "Subscriptions, seats, usage, and webhooks" },
@@ -10,10 +14,21 @@
     { "name": "@fonderie/permissions", "desc": "Role-based access control" },
     { "name": "@fonderie/courier", "desc": "Email, SMS, and push notification dispatch" }
   ],
+  "mobileItems": [
+    { "name": "@fonderie/mobile/auth-screens", "desc": "Login, signup, MFA, biometric" },
+    { "name": "@fonderie/mobile/billing-screens", "desc": "Plan selector, checkout, invoices" },
+    { "name": "@fonderie/mobile/workspace-screens", "desc": "Team invite, workspace switcher" },
+    { "name": "@fonderie/mobile/navigation", "desc": "Navigation shell, settings" }
+  ],
+  "adapterItems": [
+    { "name": "@fonderie/adapter-express", "desc": "Express integration" },
+    { "name": "@fonderie/adapter-hono", "desc": "Hono integration" },
+    { "name": "@fonderie/adapter-koa", "desc": "Koa integration" }
+  ],
   "moreCard": {
     "kicker": "The rest of the registry",
-    "title": "+12 more →",
-    "desc": "core, audit, events, rate-limit, config…"
+    "title": "+8 more →",
+    "desc": "core, store, audit, events, rate-limit, config, logger, webhooks"
   },
   "footnote": "All MIT-licensed.",
   "footnoteLink": "See the full registry on GitHub →"

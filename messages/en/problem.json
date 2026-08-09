@@ -7,7 +7,7 @@
   "comparePriceStrike": "$30–60k",
   "compareAfter": "Starting with Fonderie:",
   "compareFree": "free and open source.",
-  "ledgerHeading": "Before you write a line of product",
+  "ledgerHeading": "Backend — before you write a line of product",
   "ledgerDuration": "~9 weeks",
   "timeline": [
     { "week": "Week 1–2", "label": "Auth setup" },
@@ -19,13 +19,18 @@
     { "week": "Week 8", "label": "Remote config" },
     { "week": "Week 9", "label": "Finally write product" }
   ],
+  "mobileLedgerHeading": "Mobile — before you write a line of product",
+  "mobileLedgerDuration": "~5 weeks",
+  "mobileTimeline": [
+    { "week": "Week 1", "label": "Login screen + auth flow" },
+    { "week": "Week 2", "label": "Billing UI + checkout" },
+    { "week": "Week 3", "label": "Team invite + workspace switcher" },
+    { "week": "Week 4", "label": "Navigation shell + settings" },
+    { "week": "Week 5", "label": "Finally write product" }
+  ],
   "byHandTitle": "By hand — ~9 weeks.",
   "byHandText": "Two months of code the world already wrote, re-shipping the same security flaws.",
   "withAiTitle": "With AI — ~1 afternoon.",
   "withAiText": "Same improvised infrastructure, same flaws. The timeline collapses; the problem doesn't.",
-  "metaStrip": {
-    "command": "npx @fonderie/create",
-    "modules": "Composed from 17 standard modules",
-    "noExternal": "Zero external servers in your request path"
-  }
+  "mobileCompare": "Hiring a backend engineer: $30–60k. Rebuilding the same mobile screens for your 3rd client: priceless frustration. Starting with Fonderie: free and open source."
 }

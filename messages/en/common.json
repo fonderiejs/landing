@@ -1,8 +1,8 @@
 {
   "siteTitle": "Fonderie",
   "meta": {
-    "titleSuffix": "The open standard for AI-built SaaS",
-    "description": "Every SaaS rebuilds the same auth, billing, teams, and multi-tenancy before writing a single line of product code. Fonderie is the open standard for that infrastructure — a skill wired into your repo, running on your server, against your database. Compose it in an afternoon; spend the rest on the part that's actually yours."
+    "titleSuffix": "Ship your SaaS this week",
+    "description": "Auth, billing, workspaces, and permissions as npm packages. Backend modules and React Native screen kits. MIT-licensed. Self-hosted."
   },
   "nav": {
     "solution": "The solution",
@@ -12,19 +12,27 @@
     "contact": "Contact"
   },
   "cta": {
-    "getStarted": "Get started",
+    "getStarted": "npm install @fonderie/core",
     "viewOnGitHub": "View on GitHub",
     "startShipping": "Start shipping",
     "contactSales": "Contact sales"
   },
   "footer": {
-    "openSource": "Open source",
+    "product": "Product",
     "github": "GitHub",
-    "npmInstall": "npm install @fonderie/core",
+    "docs": "Docs",
+    "registry": "Registry",
+    "roadmap": "Roadmap",
+    "community": "Community",
+    "discord": "Discord",
+    "twitter": "X",
+    "youtube": "YouTube",
     "company": "Company",
+    "about": "About",
+    "blog": "Blog",
+    "careers": "Careers",
     "contact": "Contact",
-    "twitter": "X / Twitter",
-    "copyright": "Fonderie, Inc. · © 2026 · Open source · MIT License"
+    "copyright": "Fonderie, Inc. · © 2026 · MIT License · YC W26"
   },
   "theme": {
     "label": "Theme",

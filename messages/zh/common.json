@@ -1,38 +1,46 @@
 {
   "siteTitle": "Fonderie",
   "meta": {
-    "titleSuffix": "AI 构建 SaaS 的开放标准",
-    "description": "每个 SaaS 在写下第一行产品代码之前，都要重新搭建同样的认证、计费、团队和多租户体系。Fonderie 是这套基础设施的开放标准。"
+    "titleSuffix": "Ship your SaaS this week",
+    "description": "Auth, billing, workspaces, and permissions as npm packages. Backend modules and React Native screen kits. MIT-licensed. Self-hosted."
   },
   "nav": {
-    "solution": "解决方案",
-    "packages": "软件包",
-    "pricing": "定价",
+    "solution": "The solution",
+    "packages": "Packages",
+    "pricing": "Pricing",
     "github": "GitHub",
-    "contact": "联系我们"
+    "contact": "Contact"
   },
   "cta": {
-    "getStarted": "立即开始",
-    "viewOnGitHub": "在 GitHub 上查看",
-    "startShipping": "开始交付",
-    "contactSales": "联系销售"
+    "getStarted": "npm install @fonderie/core",
+    "viewOnGitHub": "View on GitHub",
+    "startShipping": "Start shipping",
+    "contactSales": "Contact sales"
   },
   "footer": {
-    "openSource": "开源",
+    "product": "Product",
     "github": "GitHub",
-    "npmInstall": "npm install @fonderie/core",
-    "company": "公司",
-    "contact": "联系我们",
-    "twitter": "X / Twitter",
-    "copyright": "Fonderie, Inc. · © 2026 · 开源 · MIT 许可证"
+    "docs": "Docs",
+    "registry": "Registry",
+    "roadmap": "Roadmap",
+    "community": "Community",
+    "discord": "Discord",
+    "twitter": "X",
+    "youtube": "YouTube",
+    "company": "Company",
+    "about": "About",
+    "blog": "Blog",
+    "careers": "Careers",
+    "contact": "Contact",
+    "copyright": "Fonderie, Inc. · © 2026 · MIT License · YC W26"
   },
   "theme": {
-    "label": "主题",
-    "system": "系统",
-    "light": "浅色",
-    "dark": "深色"
+    "label": "Theme",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark"
   },
   "localeSwitcher": {
-    "label": "语言"
+    "label": "Language"
   }
 }
