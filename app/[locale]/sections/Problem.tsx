@@ -26,6 +26,9 @@ export default function Problem() {
           <p className="problem__compare" data-reveal="">
             {t('mobileCompare')}
           </p>
+          <p className="problem__compare" data-reveal="">
+            <b className="problem__free">{t('customApiLine')}</b>
+          </p>
         </div>
         <div className="problem__ledger" data-reveal="">
           <p className="problem__ledger-head">

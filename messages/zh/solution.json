@@ -12,8 +12,8 @@
       "reply": "正在添加 @fonderie/billing，使用 Stripe 作为支付服务商，并配置按席位的方案。你的项目已搭建完成。"
     },
     {
-      "prompt": "「构建带生物识别认证的 React Native 登录页」",
-      "reply": "正在添加 @fonderie/mobile/auth-screens，包含生物识别回退、校验错误状态和无障碍标签，并已连接到 @fonderie/auth 的后端 hooks。"
+      "prompt": "「构建带生物识别认证的登录页」",
+      "reply": "正在添加登录页屏幕套件，包含生物识别支持、校验状态和无障碍标签，并已连接到 @fonderie/auth 后端。"
     }
   ],
   "codePanelLabel": "由你的 AI ＋ Fonderie 模块生成",
@@ -21,5 +21,5 @@
   "installComment": "# 依赖已安装，模块已注册，项目已搭建完成",
   "logicComment": "// 产品逻辑 —— 这部分由你来编写",
   "ctxComment": "// ctx.user、ctx.workspace、ctx.can() —— 全部已提供",
-  "mobileComment": "// React Native —— 由你的 AI 生成"
+  "mobileComment": "// 移动端 —— 由你的 AI 生成"
 }

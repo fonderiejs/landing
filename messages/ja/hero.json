@@ -3,7 +3,7 @@
   "titleLine1": "SaaSを今週リリースしよう、",
   "titleLine2": "来四半期ではなく。",
   "lede": "認証、課金、ワークスペース、権限管理 — すべてnpmパッケージとして。",
-  "ledeStrong": "バックエンドモジュールとReact Nativeスクリーンキット。インストール、設定、リリース。",
+  "ledeStrong": "AIがバックエンドとフロントエンドを構築。あなたはプロダクトをリリースするだけ。",
   "command": "npx @fonderie/create my-saas",
   "copy": "コピー",
   "copied": "コピーしました！",

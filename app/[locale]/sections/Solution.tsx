@@ -27,7 +27,7 @@ export const createSchedule = workspace.action(async (ctx, input) => {
 });`;
 
   const mobileScreen = `${t('mobileComment')}
-import { LoginScreen } from '@fonderie/mobile/auth-screens'
+import { LoginScreen } from '@fonderie/screens/auth'
 
 export function AuthStack() {
   return (

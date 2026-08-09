@@ -2,7 +2,7 @@
   "siteTitle": "Fonderie",
   "meta": {
     "titleSuffix": "SaaSを今週リリース",
-    "description": "認証、課金、ワークスペース、権限管理をnpmパッケージとして。バックエンドモジュールとReact Nativeスクリーンキット。MITライセンス。セルフホスト対応。"
+    "description": "認証、課金、ワークスペース、権限管理をnpmパッケージとして。バックエンドモジュールとスクリーンキット。MITライセンス。セルフホスト対応。"
   },
   "nav": {
     "solution": "解決策",
@@ -24,8 +24,7 @@
     "registry": "レジストリ",
     "twitter": "X",
     "discord": "Discord",
-    "copyright": "Fonderie, Inc. · © 2026 · MITライセンス",
-    "yc": "Backed by Y Combinator · YC W26"
+    "copyright": "Fonderie, Inc. · © 2026 · MITライセンス"
   },
   "theme": {
     "label": "テーマ",

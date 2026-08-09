@@ -10,8 +10,8 @@
     },
     {
       "num": "02",
-      "title": "React Native 屏幕套件",
-      "text": "LoginScreen、BillingScreen、TeamInviteScreen —— 直接导入后端 hooks 的可用屏幕套件，处理 AI 经常忽略的边界情况：生物识别回退、校验错误状态、无障碍标签。"
+      "title": "屏幕套件",
+      "text": "AI 为你生成登录、计费与团队页面。开箱即用、无障碍、安全可靠 —— 并自动接入你的后端。"
     },
     {
       "num": "03",
@@ -21,12 +21,12 @@
     {
       "num": "04",
       "title": "社区注册表",
-      "text": "一个由社区构建的屏幕注册表。拿一个 shadcn 登录页、一个 React Native 计费门户，或者自己动手构建。智能是共享的，界面是你的。"
+      "text": "一个由社区构建的屏幕注册表。拿一个 shadcn 登录页、一个计费门户，或者自己动手构建。智能是共享的，界面是你的。"
     }
   ],
   "codeLabel": "你的 AI 所读取的词汇表",
   "codeFooter": "每个模块都暴露相同的接口约定，因此组合是查找，而不是猜测。",
   "codeComment": "// 一种结构，每一次会话都适用",
-  "codeMobileComment": "// React Native —— 相同的词汇表，不同的平台",
-  "codeMobileImport": "import { LoginScreen } from '@fonderie/mobile/auth-screens'"
+  "codeMobileComment": "// 移动端 —— 相同的词汇表，不同的平台",
+  "codeMobileImport": "import { LoginScreen } from '@fonderie/screens/auth'"
 }

@@ -10,8 +10,8 @@
     },
     {
       "num": "02",
-      "title": "Kits de telas React Native",
-      "text": "LoginScreen, BillingScreen, TeamInviteScreen — kits de telas funcionais que importam hooks de backend diretamente. Cobrem casos extremos que a IA costuma deixar passar: fallback biométrico, estados de erro de validação, rótulos de acessibilidade."
+      "title": "Kits de telas",
+      "text": "A IA gera suas telas de login, cobrança e time. Prontas, acessíveis, seguras — conectadas ao seu backend automaticamente."
     },
     {
       "num": "03",
@@ -21,12 +21,12 @@
     {
       "num": "04",
       "title": "Registro da comunidade",
-      "text": "Um registro de telas construídas pela comunidade. Pegue um login do shadcn, um portal de cobrança em React Native, ou construa o seu. A inteligência é compartilhada; a interface é sua."
+      "text": "Um registro de telas construídas pela comunidade. Pegue um login do shadcn, um portal de cobrança, ou construa o seu. A inteligência é compartilhada; a interface é sua."
     }
   ],
   "codeLabel": "O vocabulário que sua IA lê",
   "codeFooter": "Cada módulo expõe o mesmo contrato, então compor é uma consulta — não um palpite.",
   "codeComment": "// uma forma, toda sessão",
-  "codeMobileComment": "// React Native — mesmo vocabulário, plataforma diferente",
-  "codeMobileImport": "import { LoginScreen } from '@fonderie/mobile/auth-screens'"
+  "codeMobileComment": "// Mobile — mesmo vocabulário, plataforma diferente",
+  "codeMobileImport": "import { LoginScreen } from '@fonderie/screens/auth'"
 }

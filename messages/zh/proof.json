@@ -6,7 +6,7 @@
     { "value": "0", "label": "平台锁定", "sub": "同一套代码，适用任何平台" }
   ],
   "testimonial": {
-    "quote": "在找到 Fonderie 之前，我们的认证系统重写了 3 次。用它我们只花了 4 天而不是 4 周就上线了 React Native 应用。",
+    "quote": "在找到 Fonderie 之前，我们的认证系统重写了 3 次。用它我们只花了 4 天而不是 4 周就上线了移动应用。",
     "attribution": "— Magus Dacar，CrewFinding Inc. CEO"
   },
   "metric": "200+ 个生产环境应用 · 每周 8,000+ 次 npm 下载 · 2,000+ GitHub 星标",

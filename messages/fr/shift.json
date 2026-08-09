@@ -10,8 +10,8 @@
     },
     {
       "num": "02",
-      "title": "Kits d'écrans React Native",
-      "text": "LoginScreen, BillingScreen, TeamInviteScreen — des kits d'écrans fonctionnels qui importent directement les hooks backend. Ils gèrent les cas limites que l'IA rate souvent : repli biométrique, états d'erreur de validation, libellés d'accessibilité."
+      "title": "Kits d'écrans",
+      "text": "L'IA génère vos écrans de connexion, de facturation et d'équipe. Prêts à l'emploi, accessibles, sécurisés — connectés automatiquement à votre backend."
     },
     {
       "num": "03",
@@ -21,12 +21,12 @@
     {
       "num": "04",
       "title": "Registre communautaire",
-      "text": "Un registre d'écrans construits par la communauté. Prenez un login shadcn, un portail de facturation React Native, ou construisez le vôtre. L'intelligence est partagée ; l'UI est la vôtre."
+      "text": "Un registre d'écrans construits par la communauté. Prenez un login shadcn, un portail de facturation, ou construisez le vôtre. L'intelligence est partagée ; l'UI est la vôtre."
     }
   ],
   "codeLabel": "Le vocabulaire que votre IA lit",
   "codeFooter": "Chaque module expose le même contrat, la composition devient une recherche — pas un pari.",
   "codeComment": "// une seule forme, à chaque session",
-  "codeMobileComment": "// React Native — même vocabulaire, autre plateforme",
-  "codeMobileImport": "import { LoginScreen } from '@fonderie/mobile/auth-screens'"
+  "codeMobileComment": "// Mobile — même vocabulaire, autre plateforme",
+  "codeMobileImport": "import { LoginScreen } from '@fonderie/screens/auth'"
 }

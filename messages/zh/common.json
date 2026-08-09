@@ -2,7 +2,7 @@
   "siteTitle": "Fonderie",
   "meta": {
     "titleSuffix": "这周就上线你的 SaaS",
-    "description": "认证、计费、工作区和权限管理，全部以 npm 包的形式提供。后端模块与 React Native 屏幕套件。MIT 许可，自托管。"
+    "description": "认证、计费、工作区和权限管理，全部以 npm 包的形式提供。后端模块与屏幕套件。MIT 许可，自托管。"
   },
   "nav": {
     "solution": "解决方案",
@@ -24,8 +24,7 @@
     "registry": "注册表",
     "twitter": "X",
     "discord": "Discord",
-    "copyright": "Fonderie, Inc. · © 2026 · MIT 许可",
-    "yc": "Backed by Y Combinator · YC W26"
+    "copyright": "Fonderie, Inc. · © 2026 · MIT 许可"
   },
   "theme": {
     "label": "主题",

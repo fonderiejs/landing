@@ -12,8 +12,8 @@
       "reply": "Ajout de @fonderie/billing avec le provider Stripe et des plans par siège. Votre projet est prêt."
     },
     {
-      "prompt": "\"Construis l'écran de connexion React Native avec authentification biométrique\"",
-      "reply": "Ajout de @fonderie/mobile/auth-screens avec repli biométrique, états d'erreur de validation et libellés d'accessibilité. Connecté aux hooks backend de @fonderie/auth."
+      "prompt": "\"Construis l'écran de connexion avec authentification biométrique\"",
+      "reply": "Ajout d'un kit d'écran pour la connexion avec support biométrique, états de validation et libellés d'accessibilité. Connecté au backend @fonderie/auth."
     }
   ],
   "codePanelLabel": "Généré par votre IA + les modules Fonderie",
@@ -21,5 +21,5 @@
   "installComment": "# dépendances installées, modules enregistrés, projet prêt",
   "logicComment": "// logique produit — c'est vous qui écrivez cette partie",
   "ctxComment": "// ctx.user, ctx.workspace, ctx.can() — tout est fourni",
-  "mobileComment": "// React Native — généré par votre IA"
+  "mobileComment": "// Mobile — généré par votre IA"
 }

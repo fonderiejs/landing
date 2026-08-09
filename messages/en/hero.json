@@ -3,7 +3,7 @@
   "titleLine1": "Ship your SaaS this week,",
   "titleLine2": "not next quarter.",
   "lede": "Auth, billing, workspaces, and permissions — as npm packages.",
-  "ledeStrong": "Backend modules and React Native screen kits. Install. Configure. Ship.",
+  "ledeStrong": "AI builds your backend and frontend. You ship your product.",
   "command": "npx @fonderie/create my-saas",
   "copy": "Copy",
   "copied": "Copied!",

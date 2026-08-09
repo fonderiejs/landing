@@ -32,5 +32,6 @@
   "byHandText": "Zwei Monate Code, den die Welt längst geschrieben hat — mit denselben Sicherheitslücken erneut ausgeliefert.",
   "withAiTitle": "Mit KI — ~1 Nachmittag.",
   "withAiText": "Dieselbe improvisierte Infrastruktur, dieselben Schwachstellen. Die Zeitspanne schrumpft; das Problem bleibt.",
-  "mobileCompare": "Einen Backend-Entwickler einstellen: 30–60k $. Dieselben Mobile-Screens für den 3. Kunden neu bauen: unbezahlbarer Frust. Mit Fonderie starten: kostenlos und Open Source."
+  "mobileCompare": "Einen Backend-Entwickler einstellen: 30–60k $. Dieselben Mobile-Screens für den 3. Kunden neu bauen: unbezahlbarer Frust. Mit Fonderie starten: kostenlos und Open Source.",
+  "customApiLine": "Individuelles Produkt = individuelle API = kein Support, wenn du skalierst."
 }

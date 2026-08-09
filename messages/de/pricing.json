@@ -1,7 +1,7 @@
 {
   "eyebrow": "Preise",
   "title": "Kostenlos starten. Skalieren, wenn du live bist.",
-  "lede": "Open-Source-Core, selbst gehostet, ohne Lock-in. Upgrade, wenn du orchestriertes Deployment, SSO und Compliance brauchst.",
+  "lede": "Open-Source-Core, selbst gehostet, ohne Lock-in. Upgrade, wenn du verwaltetes Deployment, SSO und Compliance brauchst.",
   "tiers": [
     {
       "name": "Build",
@@ -33,14 +33,15 @@
       "featured": true
     },
     {
-      "name": "Mobile",
+      "name": "Screen Kits",
       "price": "199 $",
       "period": "/Monat",
       "desc": "Für plattformübergreifende Teams",
       "featuresLead": "Alles aus Grow, plus",
-      "features": ["React-Native-Screen-Kits", "Biometrischer Auth-Fallback", "Mobile Navigation"],
+      "features": ["Frontend-Screen-Kits", "Biometrischer Login", "Navigationsstruktur", "Plattformübergreifende Unterstützung"],
       "cta": "Vertrieb kontaktieren",
-      "featured": false
+      "featured": false,
+      "hidden": true
     },
     {
       "name": "Enterprise",

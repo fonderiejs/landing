@@ -4,7 +4,7 @@
   "lede": "npm 上的真实包。点进去阅读源码 —— 我们还提供了 Express、Hono 和 Koa 的适配器，方便你把 Fonderie 挂载到已有的应用中。",
   "categories": {
     "backend": "后端智能模块",
-    "mobile": "React Native 屏幕套件（v0.3）",
+    "mobile": "屏幕套件",
     "adapters": "Web 适配器"
   },
   "items": [
@@ -15,10 +15,10 @@
     { "name": "@fonderie/courier", "desc": "邮件、短信与推送通知的发送" }
   ],
   "mobileItems": [
-    { "name": "@fonderie/mobile/auth-screens", "desc": "登录、注册、多因素认证、生物识别" },
-    { "name": "@fonderie/mobile/billing-screens", "desc": "套餐选择、结账、账单" },
-    { "name": "@fonderie/mobile/workspace-screens", "desc": "团队邀请、工作区切换" },
-    { "name": "@fonderie/mobile/navigation", "desc": "导航结构、设置页面" }
+    { "name": "@fonderie/screens/auth", "desc": "登录、注册、多因素认证、生物识别" },
+    { "name": "@fonderie/screens/billing", "desc": "套餐选择、结账、账单" },
+    { "name": "@fonderie/screens/workspace", "desc": "团队邀请、工作区切换" },
+    { "name": "@fonderie/screens/navigation", "desc": "导航结构、设置页面" }
   ],
   "adapterItems": [
     { "name": "@fonderie/adapter-express", "desc": "Express 集成" },

@@ -4,7 +4,7 @@
   "lede": "npm上の本物のパッケージ。クリックしてコードを読んでみてください — Express、Hono、Koa向けアダプターも用意しており、すでに動いているアプリにFonderieを組み込めます。",
   "categories": {
     "backend": "バックエンドインテリジェンス",
-    "mobile": "React Nativeスクリーンキット（v0.3）",
+    "mobile": "スクリーンキット",
     "adapters": "ウェブアダプター"
   },
   "items": [
@@ -15,10 +15,10 @@
     { "name": "@fonderie/courier", "desc": "メール、SMS、プッシュ通知の配信" }
   ],
   "mobileItems": [
-    { "name": "@fonderie/mobile/auth-screens", "desc": "ログイン、サインアップ、多要素認証、生体認証" },
-    { "name": "@fonderie/mobile/billing-screens", "desc": "プラン選択、チェックアウト、請求書" },
-    { "name": "@fonderie/mobile/workspace-screens", "desc": "チーム招待、ワークスペース切り替え" },
-    { "name": "@fonderie/mobile/navigation", "desc": "ナビゲーション構造、設定画面" }
+    { "name": "@fonderie/screens/auth", "desc": "ログイン、サインアップ、多要素認証、生体認証" },
+    { "name": "@fonderie/screens/billing", "desc": "プラン選択、チェックアウト、請求書" },
+    { "name": "@fonderie/screens/workspace", "desc": "チーム招待、ワークスペース切り替え" },
+    { "name": "@fonderie/screens/navigation", "desc": "ナビゲーション構造、設定画面" }
   ],
   "adapterItems": [
     { "name": "@fonderie/adapter-express", "desc": "Express連携" },

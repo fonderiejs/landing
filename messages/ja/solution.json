@@ -12,8 +12,8 @@
       "reply": "Stripeプロバイダーとシート単位のプランで@fonderie/billingを追加しています。プロジェクトのスキャフォールドが完了しました。"
     },
     {
-      "prompt": "「生体認証付きのReact Nativeログイン画面を作って」",
-      "reply": "生体認証フォールバック、バリデーションエラー表示、アクセシビリティラベル付きで@fonderie/mobile/auth-screensを追加しています。@fonderie/authのバックエンドフックに接続済みです。"
+      "prompt": "「生体認証付きのログイン画面を作って」",
+      "reply": "生体認証サポート、バリデーション状態、アクセシビリティラベル付きのログイン用スクリーンキットを追加しています。@fonderie/authのバックエンドに接続済みです。"
     }
   ],
   "codePanelLabel": "あなたのAI＋Fonderieモジュールによって生成",
@@ -21,5 +21,5 @@
   "installComment": "# 依存関係のインストール、モジュールの登録、プロジェクトのスキャフォールドが完了",
   "logicComment": "// プロダクトロジック — ここはあなたが書く部分です",
   "ctxComment": "// ctx.user、ctx.workspace、ctx.can() — すべて提供済み",
-  "mobileComment": "// React Native — あなたのAIが生成"
+  "mobileComment": "// モバイル — あなたのAIが生成"
 }

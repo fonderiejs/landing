@@ -32,5 +32,6 @@
   "byHandText": "Dois meses reescrevendo código que o mundo já escreveu, entregando de novo as mesmas falhas de segurança.",
   "withAiTitle": "Com IA — ~1 tarde.",
   "withAiText": "Mesma infraestrutura improvisada, mesmas falhas. O prazo encolhe; o problema não.",
-  "mobileCompare": "Contratar um engenheiro de backend: US$ 30–60 mil. Reconstruir as mesmas telas mobile para o 3º cliente: frustração sem preço. Começando com o Fonderie: grátis e open source."
+  "mobileCompare": "Contratar um engenheiro de backend: US$ 30–60 mil. Reconstruir as mesmas telas mobile para o 3º cliente: frustração sem preço. Começando com o Fonderie: grátis e open source.",
+  "customApiLine": "Produto sob medida = API sob medida = sem suporte quando você escala."
 }
