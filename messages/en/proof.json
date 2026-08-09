@@ -7,7 +7,7 @@
   ],
   "testimonial": {
     "quote": "We rebuilt our auth system 3 times before finding Fonderie. Shipped our React Native app in 4 days instead of 4 weeks.",
-    "attribution": "— Magus Dacar, CEO at Crewfinding Inc."
+    "attribution": "— Magus Dacar, CEO at CrewFinding Inc."
   },
   "metric": "200+ production apps · 8,000+ weekly npm downloads · 2,000+ GitHub stars",
   "footnote": "Results from a reproducible A/B security experiment.",
