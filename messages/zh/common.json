@@ -19,10 +19,20 @@
   },
   "footer": {
     "tagline": "为想上线产品的创始人打造。",
+    "product": "产品",
     "github": "GitHub",
     "docs": "文档",
-    "twitter": "X",
+    "registry": "注册表",
+    "roadmap": "路线图",
+    "community": "社区",
     "discord": "Discord",
+    "twitter": "X",
+    "youtube": "YouTube",
+    "company": "公司",
+    "about": "关于我们",
+    "blog": "博客",
+    "careers": "招聘",
+    "contact": "联系我们",
     "copyright": "Fonderie, Inc. · © 2026"
   },
   "theme": {

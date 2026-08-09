@@ -19,10 +19,20 @@
   },
   "footer": {
     "tagline": "Conçu pour les fondateurs qui livrent.",
+    "product": "Produit",
     "github": "GitHub",
-    "docs": "Documentation",
-    "twitter": "X",
+    "docs": "Docs",
+    "registry": "Registre",
+    "roadmap": "Feuille de route",
+    "community": "Communauté",
     "discord": "Discord",
+    "twitter": "X",
+    "youtube": "YouTube",
+    "company": "Entreprise",
+    "about": "À propos",
+    "blog": "Blog",
+    "careers": "Carrières",
+    "contact": "Contact",
     "copyright": "Fonderie, Inc. · © 2026"
   },
   "theme": {

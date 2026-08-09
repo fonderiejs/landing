@@ -19,10 +19,20 @@
   },
   "footer": {
     "tagline": "Built for founders who ship.",
+    "product": "Product",
     "github": "GitHub",
-    "docs": "Documentation",
-    "twitter": "X",
+    "docs": "Docs",
+    "registry": "Registry",
+    "roadmap": "Roadmap",
+    "community": "Community",
     "discord": "Discord",
+    "twitter": "X",
+    "youtube": "YouTube",
+    "company": "Company",
+    "about": "About",
+    "blog": "Blog",
+    "careers": "Careers",
+    "contact": "Contact",
     "copyright": "Fonderie, Inc. · © 2026"
   },
   "theme": {

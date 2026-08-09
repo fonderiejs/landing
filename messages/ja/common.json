@@ -19,10 +19,20 @@
   },
   "footer": {
     "tagline": "リリースする創業者のために。",
+    "product": "プロダクト",
     "github": "GitHub",
     "docs": "ドキュメント",
-    "twitter": "X",
+    "registry": "レジストリ",
+    "roadmap": "ロードマップ",
+    "community": "コミュニティ",
     "discord": "Discord",
+    "twitter": "X",
+    "youtube": "YouTube",
+    "company": "会社情報",
+    "about": "会社概要",
+    "blog": "ブログ",
+    "careers": "採用情報",
+    "contact": "お問い合わせ",
     "copyright": "Fonderie, Inc. · © 2026"
   },
   "theme": {
