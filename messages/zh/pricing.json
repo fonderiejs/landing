@@ -1,14 +1,14 @@
 {
   "eyebrow": "定价",
-  "title": "免费开始，上线后再扩展。",
-  "lede": "开源核心，自托管，零锁定。当你需要生产许可证、优先支持、SSO 和合规能力时再升级。",
+  "title": "免费开始，盈利后再付费。",
+  "lede": "构建阶段完全免费。只有当你有了付费客户，才需要升级。",
   "tiers": [
     {
-      "name": "Build",
+      "name": "Starter",
       "price": "免费",
       "period": "",
-      "desc": "适合个人项目",
-      "features": ["所有后端模块", "自托管", "社区支持"],
+      "desc": "适合构建你的产品",
+      "features": ["所有现成模块", "社区支持"],
       "cta": "开始使用",
       "featured": false
     },
@@ -16,19 +16,19 @@
       "name": "Launch",
       "price": "$49",
       "period": "/月",
-      "desc": "适合已有用户的 SaaS",
-      "featuresLead": "包含 Build 的所有内容，另加",
-      "features": ["生产许可证", "优先支持"],
+      "desc": "适合有付费客户的 SaaS",
+      "featuresLead": "包含 Starter 的所有内容，另加",
+      "features": ["优先支持", "生产就绪功能"],
       "cta": "开始上线",
       "featured": false
     },
     {
-      "name": "Grow",
+      "name": "Scale",
       "price": "$149",
       "period": "/月",
       "desc": "适合成长中的团队",
       "featuresLead": "包含 Launch 的所有内容，另加",
-      "features": ["团队功能", "审计日志", "高级合规能力"],
+      "features": ["团队协作", "高级安全"],
       "cta": "联系销售",
       "featured": true
     },
@@ -37,8 +37,8 @@
       "price": "$199",
       "period": "/月",
       "desc": "适合跨平台团队",
-      "featuresLead": "包含 Grow 的所有内容，另加",
-      "features": ["前端屏幕套件", "生物识别登录", "导航结构", "跨平台支持"],
+      "featuresLead": "包含 Scale 的所有内容，另加",
+      "features": ["前端屏幕套件", "Face ID 登录", "导航结构", "跨平台支持"],
       "cta": "联系销售",
       "featured": false,
       "hidden": true
@@ -48,22 +48,22 @@
       "price": "定制",
       "period": "",
       "desc": "适合大型组织",
-      "featuresLead": "包含 Grow 的所有内容，另加",
-      "features": ["SSO / SAML", "SOC 2 / HIPAA", "本地化部署", "专属客户经理"],
+      "featuresLead": "包含 Scale 的所有内容，另加",
+      "features": ["SSO 与 SAML", "合规支持", "部署到你自己的基础设施", "专属客户经理"],
       "cta": "联系销售",
       "featured": false
     }
   ],
-  "compareNote1": "对比一下雇一名后端工程师做 3 个月：3万–6万美元。",
-  "compareNote2": "每月 $49 比雇一天外包工程师还便宜；每月 $199 拿下后端 + 移动端，比雇一周工程师还便宜。",
+  "compareNote1": "对比一下雇一名开发者做 3 个月：3万–6万美元。",
+  "compareNote2": "每月 $49 比雇一天外包工程师还便宜。",
   "compareNote3": "只有当你的 SaaS 开始盈利时，你才需要付费。",
   "finalCta": {
-    "title": "别再重复造认证系统了，去构建你的产品吧。",
-    "lede": "九周的基础设施，早已写好，早已通过审计。",
-    "getStarted": "在 GitHub 上开始",
+    "title": "别再搭建基础设施了，去构建你的产品吧。",
+    "lede": "你的 SaaS 所需的一切，已经搭建好，随时可以上线。",
+    "getStarted": "免费开始",
     "star": "在 GitHub 上点星标",
     "prompts": "适用于 Claude Code 和 Cursor 的系统提示词已随仓库提供 —",
     "promptsLink": "在 GitHub 上获取 →",
-    "tag": "适合代理机构、独立开发者、团队和 vibe coder"
+    "tag": "献给想上线产品、而不是配置系统的创始人"
   }
 }

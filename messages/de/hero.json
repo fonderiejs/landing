@@ -1,13 +1,10 @@
 {
-  "eyebrow": "Open Source",
+  "eyebrow": "Für Gründer, die SaaS shippen",
   "titleLine1": "Bring dein SaaS diese Woche live,",
   "titleLine2": "nicht nächstes Quartal.",
-  "lede": "Auth, Billing, Workspaces und Berechtigungen — als npm-Pakete.",
-  "ledeStrong": "Fonderie gibt deinem KI-Assistenten ein Vokabular für den Bau von SaaS — damit er bewährte Infrastruktur komponiert, statt sie von Grund auf zu improvisieren. Du verbrauchst weniger Tokens, shippst schneller und baust Auth nie wieder neu.",
-  "command": "npx @fonderie/create my-saas",
-  "copy": "Kopieren",
-  "copied": "Kopiert!",
-  "proof": "MIT-lizenziert · Open Source · Läuft in deinem Prozess",
+  "lede": "Sag Claude, Cursor oder ChatGPT, was du bauen willst.",
+  "ledeStrong": "Fonderie gibt deiner KI die Bausteine für Auth, Billing und Team-Verwaltung — damit sie dein Produkt baut, statt von Grund auf zu improvisieren.",
+  "proof": "Standardmäßig sicher · Funktioniert mit jeder KI · Kein Lock-in",
   "worksWith": "Funktioniert mit",
   "assistants": {
     "claudeCode": "Claude Code",

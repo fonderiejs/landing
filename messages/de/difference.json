@@ -1,9 +1,26 @@
 {
-  "eyebrow": "Der Unterschied",
-  "title": "Eigentum, kein Dienst.",
-  "lede": "Jedes Paket läuft in deinem eigenen Prozess, gegen deine eigene Datenbank. Kein Fonderie-Server liegt jemals in deinem Request-Pfad.",
-  "compare1": "Du bist Drizzle, nicht Supabase.",
-  "compare2": "Du bist Next.js, nicht Vercel.",
-  "footer": "Deine Daten. Dein Prozess. Deine Datenbank.",
-  "portability": "Nutze heute Claude, morgen Cursor, nächste Woche ChatGPT. Dank der normalisierten API von Fonderie ändert sich dein Backend nicht — egal, welche KI du promptest."
+  "eyebrow": "Warum Gründer sich für Fonderie entscheiden",
+  "title": "Warum Gründer sich für Fonderie entscheiden",
+  "cards": [
+    {
+      "icon": "🔒",
+      "title": "Sicherheit, die sich selbst aktualisiert",
+      "text": "Wenn Schwachstellen entdeckt werden, patcht ein einziges Update jede Fonderie-App. Kein monatelanger Sicherheits-Umbau. Kein Sicherheitsberater nötig."
+    },
+    {
+      "icon": "💰",
+      "title": "Senk deine KI-Kosten",
+      "text": "Deine KI verschwendet dein Budget nicht mehr damit, jedes Mal einen Login-Flow neu zu improvisieren. Sie nutzt stattdessen Fonderies Bausteine. Gleiches Ergebnis, geringere Kosten."
+    },
+    {
+      "icon": "🤖",
+      "title": "Funktioniert mit jeder KI",
+      "text": "Heute Claude, morgen Cursor, nächste Woche ChatGPT. Fonderies Bausteine funktionieren immer gleich, egal welche KI du nutzt. Dein Produkt bricht nicht, wenn du das Tool wechselst."
+    },
+    {
+      "icon": "⏰",
+      "title": "Mit Kunden sprechen, statt Auth zu debuggen",
+      "text": "Den Monat, den du sonst mit dem Beheben von Login-Bugs verbracht hättest? Verbring ihn damit, deine Kunden zu verstehen und Features zu bauen, die sie wirklich wollen."
+    }
+  ]
 }

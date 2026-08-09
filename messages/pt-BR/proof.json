@@ -1,16 +1,15 @@
 {
-  "eyebrow": "A prova",
+  "eyebrow": "Usado por founders lançando produtos de verdade",
   "stats": [
-    { "value": "0", "label": "Vulnerabilidades de segurança", "sub": "Auditado por padrão" },
-    { "value": "0", "label": "Backend pronto", "sub": "Em vez de 9 semanas" },
-    { "value": "0", "label": "Lock-in de plataforma", "sub": "Mesmo código, qualquer plataforma" }
+    { "value": "0", "label": "Vulnerabilidades de segurança", "sub": "Testado por padrão" },
+    { "value": "0", "label": "Backend para construir", "sub": "Em vez de 9 semanas" },
+    { "value": "0", "label": "Lock-in", "sub": "Mesmo código, qualquer IA" }
   ],
   "testimonial": {
-    "quote": "Reconstruímos nosso sistema de auth 3 vezes antes de encontrar o Fonderie. Lançamos nosso app mobile em 4 dias em vez de 4 semanas.",
+    "quote": "Reconstruímos nosso sistema de auth 3 vezes antes de encontrar o Fonderie. Lançamos nosso app em 4 dias em vez de 4 semanas.",
     "attribution": "— Magus Dacar, CEO na CrewFinding Inc."
   },
-  "securityUpdateLine": "Patches de segurança chegam via npm update. Sem migração. Sem downtime. Sem um mês reescrevendo auth.",
-  "metric": "200+ aplicações em produção · 8.000+ downloads semanais no npm · 2.000+ estrelas no GitHub",
+  "metric": "200+ apps lançados · 8.000+ usuários semanais · 2.000+ estrelas no GitHub",
   "footnote": "Resultados de um experimento de segurança A/B reproduzível.",
   "footnoteLink": "Veja a metodologia →"
 }

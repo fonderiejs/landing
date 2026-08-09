@@ -1,39 +1,18 @@
 {
   "eyebrow": "Das Problem",
-  "title": "Jedes SaaS beginnt mit denselben neun Wochen.",
-  "lede": "KI nimmt dir diese Arbeit nicht ab — sie improvisiert sie. Dieselbe erfundene Auth, dieselben Tenant-Lecks, dieselben Billing-Edge-Cases, nur an einem Nachmittag statt in zwei Monaten ausgeliefert.",
-  "ledeStrong": "Schneller ist nicht dasselbe wie gelöst.",
-  "compareBefore": "Einen Backend-Entwickler für 3 Monate einstellen:",
-  "comparePriceStrike": "30–60k $",
-  "compareAfter": "Mit Fonderie starten:",
-  "compareFree": "kostenlos und Open Source.",
-  "ledgerHeading": "Backend — bevor du eine Zeile Produkt schreibst",
-  "ledgerDuration": "~9 Wochen",
-  "timeline": [
-    { "week": "Woche 1–2", "label": "Auth-Setup" },
-    { "week": "Woche 3", "label": "Team-/Org-Modell" },
-    { "week": "Woche 4", "label": "Stripe-Anbindung" },
-    { "week": "Woche 5", "label": "E-Mail-System" },
-    { "week": "Woche 6", "label": "Berechtigungen" },
-    { "week": "Woche 7", "label": "Multi-Tenancy" },
-    { "week": "Woche 8", "label": "Remote-Konfiguration" },
-    { "week": "Woche 9", "label": "Endlich Produkt schreiben" }
+  "title": "Jedes SaaS baut dieselben 5 Dinge neu.",
+  "lede": "Bevor du eine einzige Zeile deines eigentlichen Produkts schreibst, brauchst du:",
+  "items": [
+    { "title": "Login und Registrierung", "text": "Damit Nutzer auf deine App zugreifen können." },
+    { "title": "Billing und Abos", "text": "Damit du bezahlt wirst." },
+    { "title": "Team-Einladungen und Berechtigungen", "text": "Damit Kunden ihre Kollegen einladen können." },
+    { "title": "E-Mail-Benachrichtigungen", "text": "Damit Nutzer informiert bleiben." },
+    { "title": "Sicherheit und Compliance", "text": "Damit du nicht gehackt wirst." }
   ],
-  "mobileLedgerHeading": "Mobile — bevor du eine Zeile Produkt schreibst",
-  "mobileLedgerDuration": "~5 Wochen",
-  "mobileTimeline": [
-    { "week": "Woche 1", "label": "Login-Screen + Auth-Flow" },
-    { "week": "Woche 2", "label": "Billing-UI + Checkout" },
-    { "week": "Woche 3", "label": "Team-Einladung + Workspace-Wechsel" },
-    { "week": "Woche 4", "label": "Navigation + Einstellungen" },
-    { "week": "Woche 5", "label": "Endlich Produkt schreiben" }
-  ],
-  "byHandTitle": "Von Hand — ~9 Wochen.",
-  "byHandText": "Zwei Monate Code, den die Welt längst geschrieben hat — mit denselben Sicherheitslücken erneut ausgeliefert.",
-  "withAiTitle": "Mit KI — ~1 Nachmittag.",
-  "withAiText": "Dieselbe improvisierte Infrastruktur, dieselben Schwachstellen. Die Zeitspanne schrumpft; das Problem bleibt.",
-  "mobileCompare": "Einen Backend-Entwickler einstellen: 30–60k $. Dieselben Mobile-Screens für den 3. Kunden neu bauen: unbezahlbarer Frust. Mit Fonderie starten: kostenlos und Open Source.",
-  "customApiLine": "Individuelles Produkt = individuelle API = kein Support, wenn du skalierst.",
-  "tokenBurnLine": "Und wenn deine KI einen Login-Flow improvisiert, verbrauchst du 3.000 Tokens beim Debuggen. Jede. Einzelne. Session.",
-  "opportunityCostLine": "Das sind 9 Wochen, in denen du nicht mit Kunden sprichst. 9 Wochen, in denen du keine Features shippst. 9 Wochen Runway, verbrannt für Code, den die Welt schon geschrieben hat."
+  "byHandTitle": "Von Hand",
+  "byHandText": "2–3 Monate und 30.000–60.000 $ für die Einstellung eines Entwicklers.",
+  "withAiTitle": "Mit KI allein",
+  "withAiText": "Dein Assistent improvisiert bei jeder Session alles neu — andere Login-Flows, andere Billing-Logik, andere Bugs. Er verschwendet Stunden (und dein KI-Budget) damit, dieselben Probleme immer wieder zu debuggen.",
+  "withFonderieTitle": "Mit Fonderie",
+  "withFonderieText": "Deine KI nutzt bewährte, getestete Bausteine. Immer derselbe Login-Flow. Dieselbe Billing-Logik. Dieselbe Sicherheit. Du shippst in einer Woche und verbringst deine Zeit mit deinen Kunden."
 }

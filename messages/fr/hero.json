@@ -1,13 +1,10 @@
 {
-  "eyebrow": "Open source",
+  "eyebrow": "Pour les fondateurs qui lancent un SaaS",
   "titleLine1": "Lancez votre SaaS cette semaine,",
   "titleLine2": "pas le trimestre prochain.",
-  "lede": "Auth, facturation, espaces de travail et permissions — sous forme de packages npm.",
-  "ledeStrong": "Fonderie donne à votre assistant IA un vocabulaire pour construire du SaaS — pour qu'il compose une infrastructure éprouvée au lieu de tout improviser depuis zéro. Vous consommez moins de tokens, livrez plus vite, et ne reconstruisez plus jamais l'auth.",
-  "command": "npx @fonderie/create my-saas",
-  "copy": "Copier",
-  "copied": "Copié !",
-  "proof": "Sous licence MIT · Open source · Fonctionne dans votre processus",
+  "lede": "Dites à Claude, Cursor ou ChatGPT ce que vous voulez construire.",
+  "ledeStrong": "Fonderie donne à votre IA les briques pour l'auth, la facturation et la gestion d'équipe — pour qu'elle construise votre produit au lieu d'improviser depuis zéro.",
+  "proof": "Sécurisé par défaut · Fonctionne avec toute IA · Aucune dépendance forcée",
   "worksWith": "Fonctionne avec",
   "assistants": {
     "claudeCode": "Claude Code",

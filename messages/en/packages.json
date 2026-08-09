@@ -1,35 +1,14 @@
 {
-  "eyebrow": "The packages",
-  "title": "Real packages, on the real registry.",
-  "lede": "Real packages on npm. Click through and read the code — with adapters for Express, Hono, and Koa, so you can mount Fonderie inside an app you already run.",
-  "categories": {
-    "backend": "Backend Intelligence",
-    "mobile": "Screen Kits",
-    "adapters": "Web Adapters"
-  },
+  "eyebrow": "What you get",
+  "title": "Everything your SaaS needs.",
+  "lede": "Real, working features — not templates. Your AI wires them into your product automatically.",
   "items": [
-    { "name": "@fonderie/auth", "desc": "Drop-in auth for SaaS" },
-    { "name": "@fonderie/billing", "desc": "Subscriptions, seats, usage, and webhooks" },
-    { "name": "@fonderie/workspaces", "desc": "Teams, orgs, invites, and multi-tenancy" },
-    { "name": "@fonderie/permissions", "desc": "Role-based access control" },
-    { "name": "@fonderie/courier", "desc": "Email, SMS, and push notification dispatch" }
+    { "title": "User Accounts", "text": "Login, signup, password reset, social login, and Face ID. Your users get in. You don't build it." },
+    { "title": "Payments", "text": "Stripe integration, subscription plans, per-seat billing, and invoice management. You get paid. You don't wire it." },
+    { "title": "Teams and Permissions", "text": "Invite coworkers, assign roles, control who sees what. Your customers manage their own teams. You don't code it." },
+    { "title": "Notifications", "text": "Email, SMS, and push notifications. Your users stay informed. You don't configure it." },
+    { "title": "Security and Compliance", "text": "Audit logs, rate limiting, and SOC 2 readiness. Your app stays secure. You don't worry about it." }
   ],
-  "mobileItems": [
-    { "name": "@fonderie/screens/auth", "desc": "Login, signup, MFA, biometric" },
-    { "name": "@fonderie/screens/billing", "desc": "Plan selector, checkout, invoices" },
-    { "name": "@fonderie/screens/workspace", "desc": "Team invite, workspace switcher" },
-    { "name": "@fonderie/screens/navigation", "desc": "Navigation shell, settings" }
-  ],
-  "adapterItems": [
-    { "name": "@fonderie/adapter-express", "desc": "Express integration" },
-    { "name": "@fonderie/adapter-hono", "desc": "Hono integration" },
-    { "name": "@fonderie/adapter-koa", "desc": "Koa integration" }
-  ],
-  "moreCard": {
-    "kicker": "The rest of the registry",
-    "title": "+8 more →",
-    "desc": "core, store, audit, events, rate-limit, config, logger, webhooks"
-  },
-  "footnote": "All MIT-licensed.",
-  "footnoteLink": "See the full registry on GitHub →"
+  "footnote": "Want the technical details?",
+  "footnoteLink": "See the code on GitHub →"
 }

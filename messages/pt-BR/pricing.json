@@ -1,14 +1,14 @@
 {
   "eyebrow": "Preços",
-  "title": "Comece grátis. Escale quando lançar.",
-  "lede": "Núcleo open source, self-hosted, sem lock-in. Faça upgrade quando precisar de licença de produção, suporte prioritário, SSO e compliance.",
+  "title": "Comece grátis. Pague quando ganhar.",
+  "lede": "Grátis enquanto você constrói. Faça upgrade só quando tiver clientes pagantes.",
   "tiers": [
     {
-      "name": "Build",
+      "name": "Starter",
       "price": "Grátis",
       "period": "",
-      "desc": "Para projetos pessoais",
-      "features": ["Todos os módulos de backend", "Self-hosted", "Suporte da comunidade"],
+      "desc": "Para construir seu produto",
+      "features": ["Todos os blocos prontos", "Suporte da comunidade"],
       "cta": "Começar",
       "featured": false
     },
@@ -16,19 +16,19 @@
       "name": "Launch",
       "price": "US$ 49",
       "period": "/mês",
-      "desc": "Para SaaS com usuários",
-      "featuresLead": "Tudo do Build, mais",
-      "features": ["Licença de produção", "Suporte prioritário"],
+      "desc": "Para SaaS com clientes pagantes",
+      "featuresLead": "Tudo do Starter, mais",
+      "features": ["Suporte prioritário", "Recursos prontos para produção"],
       "cta": "Começar a lançar",
       "featured": false
     },
     {
-      "name": "Grow",
+      "name": "Scale",
       "price": "US$ 149",
       "period": "/mês",
       "desc": "Para times em crescimento",
       "featuresLead": "Tudo do Launch, mais",
-      "features": ["Recursos de time", "Logs de auditoria", "Compliance avançado"],
+      "features": ["Colaboração de time", "Segurança avançada"],
       "cta": "Falar com vendas",
       "featured": true
     },
@@ -37,8 +37,8 @@
       "price": "US$ 199",
       "period": "/mês",
       "desc": "Para times multiplataforma",
-      "featuresLead": "Tudo do Grow, mais",
-      "features": ["Kits de telas frontend", "Login biométrico", "Estrutura de navegação", "Suporte multiplataforma"],
+      "featuresLead": "Tudo do Scale, mais",
+      "features": ["Kits de telas frontend", "Login com Face ID", "Estrutura de navegação", "Suporte multiplataforma"],
       "cta": "Falar com vendas",
       "featured": false,
       "hidden": true
@@ -48,22 +48,22 @@
       "price": "Sob consulta",
       "period": "",
       "desc": "Para organizações",
-      "featuresLead": "Tudo do Grow, mais",
-      "features": ["SSO / SAML", "SOC 2 / HIPAA", "Deployment on-premise", "Conta dedicada"],
+      "featuresLead": "Tudo do Scale, mais",
+      "features": ["SSO e SAML", "Suporte a compliance", "Deploy na sua própria infraestrutura", "Conta dedicada"],
       "cta": "Falar com vendas",
       "featured": false
     }
   ],
-  "compareNote1": "Compare com contratar um engenheiro de backend por 3 meses: US$ 30–60 mil.",
-  "compareNote2": "US$ 49/mês é mais barato que um dia de freelancer. US$ 199/mês por backend + mobile é mais barato que uma semana de engenheiro.",
+  "compareNote1": "Compare com contratar um desenvolvedor por 3 meses: US$ 30.000–60.000.",
+  "compareNote2": "US$ 49/mês é mais barato que um dia de freelancer.",
   "compareNote3": "Você só paga quando seu SaaS começa a gerar receita.",
   "finalCta": {
-    "title": "Pare de reconstruir auth. Comece a construir seu produto.",
-    "lede": "Nove semanas de infraestrutura, já escrita e já auditada.",
-    "getStarted": "Começar no GitHub",
+    "title": "Pare de construir infraestrutura. Comece a construir seu produto.",
+    "lede": "Tudo que seu SaaS precisa, já construído e pronto para lançar.",
+    "getStarted": "Começar de graça",
     "star": "Dar uma estrela no GitHub",
     "prompts": "Prompts de sistema para Claude Code e Cursor já vêm no repositório —",
     "promptsLink": "pegue no GitHub →",
-    "tag": "Para agências, fundadores solo, times e vibe coders"
+    "tag": "Para founders que querem lançar, não configurar"
   }
 }

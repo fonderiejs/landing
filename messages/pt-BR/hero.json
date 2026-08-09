@@ -1,13 +1,10 @@
 {
-  "eyebrow": "Código aberto",
+  "eyebrow": "Para founders lançando SaaS",
   "titleLine1": "Lance seu SaaS nesta semana,",
   "titleLine2": "não no próximo trimestre.",
-  "lede": "Autenticação, cobrança, workspaces e permissões — como pacotes npm.",
-  "ledeStrong": "O Fonderie dá ao seu assistente de IA um vocabulário para construir SaaS — para que ele componha infraestrutura comprovada em vez de improvisar do zero. Você consome menos tokens, lança mais rápido e nunca mais reconstrói auth.",
-  "command": "npx @fonderie/create my-saas",
-  "copy": "Copiar",
-  "copied": "Copiado!",
-  "proof": "Licença MIT · Código aberto · Roda no seu processo",
+  "lede": "Diga ao Claude, Cursor ou ChatGPT o que você quer construir.",
+  "ledeStrong": "A Fonderie dá à sua IA os blocos prontos para auth, cobrança e gestão de times — para que ela construa seu produto em vez de improvisar do zero.",
+  "proof": "Seguro por padrão · Funciona com qualquer IA · Sem lock-in",
   "worksWith": "Funciona com",
   "assistants": {
     "claudeCode": "Claude Code",

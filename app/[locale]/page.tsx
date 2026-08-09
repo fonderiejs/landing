@@ -5,7 +5,6 @@ import ScrollReveal from './components/ScrollReveal';
 import Hero from './sections/Hero';
 import Problem from './sections/Problem';
 import Shift from './sections/Shift';
-import Solution from './sections/Solution';
 import Proof from './sections/Proof';
 import Packages from './sections/Packages';
 import Difference from './sections/Difference';
@@ -29,7 +28,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <div className="container">
           <Problem />
           <Shift />
-          <Solution />
           <Proof />
           <Packages />
           <Difference />

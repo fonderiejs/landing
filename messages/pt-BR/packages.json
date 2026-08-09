@@ -1,35 +1,14 @@
 {
-  "eyebrow": "Os pacotes",
-  "title": "Pacotes de verdade, no registro de verdade.",
-  "lede": "Pacotes de verdade no npm. Clique e leia o código — com adaptadores para Express, Hono e Koa, para você montar o Fonderie dentro de um app que já roda.",
-  "categories": {
-    "backend": "Inteligência de backend",
-    "mobile": "Kits de telas",
-    "adapters": "Adaptadores web"
-  },
+  "eyebrow": "O que você recebe",
+  "title": "Tudo que seu SaaS precisa.",
+  "lede": "Funcionalidades reais e funcionando — não templates. Sua IA conecta tudo automaticamente ao seu produto.",
   "items": [
-    { "name": "@fonderie/auth", "desc": "Auth pronta para SaaS" },
-    { "name": "@fonderie/billing", "desc": "Assinaturas, assentos, uso e webhooks" },
-    { "name": "@fonderie/workspaces", "desc": "Times, organizações, convites e multi-tenancy" },
-    { "name": "@fonderie/permissions", "desc": "Controle de acesso baseado em papéis" },
-    { "name": "@fonderie/courier", "desc": "Envio de e-mail, SMS e notificações push" }
+    { "title": "Contas de usuário", "text": "Login, cadastro, redefinição de senha, login social e Face ID. Seus usuários entram. Você não precisa construir isso." },
+    { "title": "Pagamentos", "text": "Integração com Stripe, planos de assinatura, cobrança por assento e gestão de faturas. Você recebe. Você não precisa conectar isso." },
+    { "title": "Times e permissões", "text": "Convide colegas, atribua papéis, controle quem vê o quê. Seus clientes gerenciam seus próprios times. Você não precisa programar isso." },
+    { "title": "Notificações", "text": "E-mail, SMS e notificações push. Seus usuários ficam informados. Você não precisa configurar isso." },
+    { "title": "Segurança e compliance", "text": "Logs de auditoria, limitação de taxa e prontidão para SOC 2. Seu app fica seguro. Você não precisa se preocupar com isso." }
   ],
-  "mobileItems": [
-    { "name": "@fonderie/screens/auth", "desc": "Login, cadastro, MFA, biometria" },
-    { "name": "@fonderie/screens/billing", "desc": "Seletor de plano, checkout, faturas" },
-    { "name": "@fonderie/screens/workspace", "desc": "Convite de time, troca de workspace" },
-    { "name": "@fonderie/screens/navigation", "desc": "Estrutura de navegação, configurações" }
-  ],
-  "adapterItems": [
-    { "name": "@fonderie/adapter-express", "desc": "Integração com Express" },
-    { "name": "@fonderie/adapter-hono", "desc": "Integração com Hono" },
-    { "name": "@fonderie/adapter-koa", "desc": "Integração com Koa" }
-  ],
-  "moreCard": {
-    "kicker": "O resto do registro",
-    "title": "+8 mais →",
-    "desc": "core, store, audit, events, rate-limit, config, logger, webhooks"
-  },
-  "footnote": "Todos com licença MIT.",
-  "footnoteLink": "Ver o registro completo no GitHub →"
+  "footnote": "Quer os detalhes técnicos?",
+  "footnoteLink": "Veja o código no GitHub →"
 }

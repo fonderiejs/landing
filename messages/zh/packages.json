@@ -1,35 +1,14 @@
 {
-  "eyebrow": "包",
-  "title": "真实的包，在真实的注册表上。",
-  "lede": "npm 上的真实包。点进去阅读源码 —— 我们还提供了 Express、Hono 和 Koa 的适配器，方便你把 Fonderie 挂载到已有的应用中。",
-  "categories": {
-    "backend": "后端智能模块",
-    "mobile": "屏幕套件",
-    "adapters": "Web 适配器"
-  },
+  "eyebrow": "你能获得什么",
+  "title": "你的 SaaS 所需的一切。",
+  "lede": "真正能用的功能，而不是模板。你的 AI 会自动把它们接入你的产品。",
   "items": [
-    { "name": "@fonderie/auth", "desc": "开箱即用的 SaaS 认证" },
-    { "name": "@fonderie/billing", "desc": "订阅、席位、用量与 Webhook" },
-    { "name": "@fonderie/workspaces", "desc": "团队、组织、邀请与多租户支持" },
-    { "name": "@fonderie/permissions", "desc": "基于角色的访问控制" },
-    { "name": "@fonderie/courier", "desc": "邮件、短信与推送通知的发送" }
+    { "title": "用户账户", "text": "登录、注册、密码重置、社交登录和 Face ID。用户能进来，你不用自己搭建。" },
+    { "title": "支付", "text": "Stripe 集成、订阅方案、按席位计费、发票管理。你能收到钱，你不用自己接线。" },
+    { "title": "团队与权限", "text": "邀请同事、分配角色、控制谁能看到什么。你的客户自己管理团队，你不用写代码。" },
+    { "title": "通知", "text": "邮件、短信和推送通知。用户能及时收到消息，你不用自己配置。" },
+    { "title": "安全与合规", "text": "审计日志、速率限制、SOC 2 就绪。你的应用保持安全，你不用为此操心。" }
   ],
-  "mobileItems": [
-    { "name": "@fonderie/screens/auth", "desc": "登录、注册、多因素认证、生物识别" },
-    { "name": "@fonderie/screens/billing", "desc": "套餐选择、结账、账单" },
-    { "name": "@fonderie/screens/workspace", "desc": "团队邀请、工作区切换" },
-    { "name": "@fonderie/screens/navigation", "desc": "导航结构、设置页面" }
-  ],
-  "adapterItems": [
-    { "name": "@fonderie/adapter-express", "desc": "Express 集成" },
-    { "name": "@fonderie/adapter-hono", "desc": "Hono 集成" },
-    { "name": "@fonderie/adapter-koa", "desc": "Koa 集成" }
-  ],
-  "moreCard": {
-    "kicker": "注册表中的其余部分",
-    "title": "还有 8 个 →",
-    "desc": "core、store、audit、events、rate-limit、config、logger、webhooks"
-  },
-  "footnote": "全部采用 MIT 许可。",
-  "footnoteLink": "在 GitHub 上查看完整注册表 →"
+  "footnote": "想了解技术细节？",
+  "footnoteLink": "在 GitHub 上查看代码 →"
 }

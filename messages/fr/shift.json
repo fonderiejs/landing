@@ -1,32 +1,22 @@
 {
-  "eyebrow": "Le changement",
-  "title": "L'IA n'a pas besoin de plus de vitesse. Elle a besoin d'un standard.",
-  "lede": "L'IA brute génère tout depuis zéro à chaque fois — en consommant des tokens, en introduisant des bugs, et en livrant un schéma d'auth différent à chaque session. Fonderie lui donne un vocabulaire partagé et audité — elle compose, au lieu d'halluciner. Même résultat. Moins de tokens. Zéro dérive de sécurité.",
-  "features": [
+  "eyebrow": "Comment ça marche",
+  "title": "Comment ça marche",
+  "lede": "De l'idée au produit livré en trois étapes.",
+  "steps": [
     {
       "num": "01",
-      "title": "Intelligence backend",
-      "text": "Auth, facturation, permissions, espaces de travail — chacun une machine à états typée et testée. Pas un template ; un bloc qui s'exécute dans votre processus, contre votre base de données."
+      "title": "Dites à votre IA ce que vous voulez construire",
+      "text": "« J'ai besoin d'un SaaS avec connexion, facturation Stripe et espaces d'équipe. »"
     },
     {
       "num": "02",
-      "title": "Kits d'écrans",
-      "text": "L'IA génère vos écrans de connexion, de facturation et d'équipe. Prêts à l'emploi, accessibles, sécurisés — connectés automatiquement à votre backend."
+      "title": "Votre IA utilise les briques de Fonderie",
+      "text": "Au lieu de tout écrire depuis zéro, votre IA assemble des composants éprouvés et sécurisés — écrans de connexion, flux de paiement, invitations d'équipe — tous connectés automatiquement."
     },
     {
       "num": "03",
-      "title": "Skills lisibles par l'IA",
-      "text": "Des fichiers de skills dans votre repo expliquent comment les modules backend et les écrans frontend s'assemblent. Pas de prompt engineering. Pas de dérive entre les sessions."
-    },
-    {
-      "num": "04",
-      "title": "Registre communautaire",
-      "text": "Un registre d'écrans construits par la communauté. Prenez un login shadcn, un portail de facturation, ou construisez le vôtre. L'intelligence est partagée ; l'UI est la vôtre."
+      "title": "Vous vérifiez et livrez",
+      "text": "L'IA génère votre produit. Vous le vérifiez, personnalisez le design et déployez. Votre backend est sécurisé, votre frontend fonctionne, et vos clients peuvent s'inscrire et payer."
     }
-  ],
-  "codeLabel": "Le vocabulaire que votre IA lit",
-  "codeFooter": "Chaque module expose le même contrat, la composition devient une recherche — pas un pari.",
-  "codeComment": "// une seule forme, à chaque session",
-  "codeMobileComment": "// Mobile — même vocabulaire, autre plateforme",
-  "codeMobileImport": "import { LoginScreen } from '@fonderie/screens/auth'"
+  ]
 }

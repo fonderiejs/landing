@@ -2,38 +2,28 @@
   "siteTitle": "Fonderie",
   "meta": {
     "titleSuffix": "Lance seu SaaS nesta semana",
-    "description": "Autenticação, cobrança, workspaces e permissões como pacotes npm. Módulos de backend e kits de telas. Licença MIT. Self-hosted."
+    "description": "A Fonderie dá à sua IA os blocos prontos para auth, cobrança e gestão de times — para você lançar seu SaaS em uma semana, não em um trimestre."
   },
   "nav": {
-    "solution": "A solução",
-    "packages": "Pacotes",
+    "solution": "Como funciona",
+    "packages": "Recursos",
     "pricing": "Preços",
     "github": "GitHub",
     "contact": "Contato"
   },
   "cta": {
-    "getStarted": "npm install @fonderie/core →",
-    "viewOnGitHub": "Ver no GitHub",
+    "getStarted": "Começar de graça",
+    "howItWorks": "Ver como funciona",
     "startShipping": "Começar a lançar",
     "contactSales": "Falar com vendas"
   },
   "footer": {
-    "tagline": "A biblioteca padrão para infraestrutura de SaaS.",
-    "product": "Produto",
+    "tagline": "Feito para founders que lançam.",
     "github": "GitHub",
-    "docs": "Docs",
-    "registry": "Registro",
-    "roadmap": "Roadmap",
-    "community": "Comunidade",
-    "discord": "Discord",
+    "docs": "Documentação",
     "twitter": "X",
-    "youtube": "YouTube",
-    "company": "Empresa",
-    "about": "Sobre",
-    "blog": "Blog",
-    "careers": "Carreiras",
-    "contact": "Contato",
-    "copyright": "Fonderie, Inc. · © 2026 · Licença MIT"
+    "discord": "Discord",
+    "copyright": "Fonderie, Inc. · © 2026"
   },
   "theme": {
     "label": "Tema",

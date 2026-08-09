@@ -1,32 +1,22 @@
 {
-  "eyebrow": "Der Wandel",
-  "title": "KI braucht nicht mehr Tempo. Sie braucht einen Standard.",
-  "lede": "Rohe KI generiert jedes Mal von Grund auf neu — sie verbraucht Tokens, führt Bugs ein und liefert jede Session ein anderes Auth-Muster. Fonderie gibt ihr ein gemeinsames, geprüftes Vokabular — sie komponiert, statt zu halluzinieren. Gleiches Ergebnis. Weniger Tokens. Keine Sicherheitsdrift.",
-  "features": [
+  "eyebrow": "So funktioniert's",
+  "title": "So funktioniert's",
+  "lede": "Von der Idee zum fertigen Produkt in drei Schritten.",
+  "steps": [
     {
       "num": "01",
-      "title": "Backend-Intelligenz",
-      "text": "Auth, Billing, Berechtigungen, Workspaces — jeweils eine typisierte, getestete Zustandsmaschine. Kein Template; ein Baustein, der in deinem Prozess läuft, gegen deine Datenbank."
+      "title": "Sag deiner KI, was du bauen willst",
+      "text": "„Ich brauche ein SaaS mit Login, Stripe-Billing und Team-Workspaces.“"
     },
     {
       "num": "02",
-      "title": "Screen-Kits",
-      "text": "KI generiert deine Login-, Billing- und Team-Screens. Fertig gebaut, barrierefrei, sicher — automatisch mit deinem Backend verbunden."
+      "title": "Deine KI nutzt Fonderies Bausteine",
+      "text": "Statt alles von Grund auf zu schreiben, setzt deine KI bewährte, sichere Komponenten zusammen — Login-Screens, Zahlungsflüsse, Team-Einladungen — alles automatisch verbunden."
     },
     {
       "num": "03",
-      "title": "KI-lesbare Skills",
-      "text": "Skill-Dateien in deinem Repo beschreiben, wie Backend-Module und Frontend-Screens zusammenspielen. Kein Prompt-Engineering. Keine Drift zwischen Sessions."
-    },
-    {
-      "num": "04",
-      "title": "Community-Registry",
-      "text": "Eine Registry mit Screens aus der Community. Nimm ein shadcn-Login, ein Billing-Portal — oder bau dein eigenes. Die Intelligenz wird geteilt; die UI gehört dir."
+      "title": "Du prüfst und shippst",
+      "text": "Die KI generiert dein Produkt. Du prüfst es, passt das Design an und deployst. Dein Backend ist sicher, dein Frontend funktioniert, und deine Kunden können sich anmelden und bezahlen."
     }
-  ],
-  "codeLabel": "Das Vokabular, das deine KI liest",
-  "codeFooter": "Jedes Modul stellt denselben Vertrag bereit — Komposition wird zum Nachschlagen, nicht zum Raten.",
-  "codeComment": "// eine Form, jede Session",
-  "codeMobileComment": "// Mobile — dasselbe Vokabular, andere Plattform",
-  "codeMobileImport": "import { LoginScreen } from '@fonderie/screens/auth'"
+  ]
 }

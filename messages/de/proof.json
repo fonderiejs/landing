@@ -1,16 +1,15 @@
 {
-  "eyebrow": "Der Beweis",
+  "eyebrow": "Vertraut von Gründern, die echte Produkte shippen",
   "stats": [
-    { "value": "0", "label": "Sicherheitslücken", "sub": "Standardmäßig geprüft" },
-    { "value": "0", "label": "Backend bereit", "sub": "Statt 9 Wochen" },
-    { "value": "0", "label": "Plattform-Lock-in", "sub": "Derselbe Code, jede Plattform" }
+    { "value": "0", "label": "Sicherheitslücken", "sub": "Standardmäßig getestet" },
+    { "value": "0", "label": "Backend zu bauen", "sub": "Statt 9 Wochen" },
+    { "value": "0", "label": "Lock-in", "sub": "Derselbe Code, jede KI" }
   ],
   "testimonial": {
-    "quote": "Wir haben unser Auth-System dreimal neu gebaut, bevor wir Fonderie fanden. Unsere Mobile-App war in 4 Tagen statt 4 Wochen live.",
+    "quote": "Wir haben unser Auth-System dreimal neu gebaut, bevor wir Fonderie fanden. Unsere App war in 4 Tagen statt 4 Wochen live.",
     "attribution": "— Magus Dacar, CEO bei CrewFinding Inc."
   },
-  "securityUpdateLine": "Sicherheitspatches kommen per npm update. Keine Migration. Keine Ausfallzeit. Kein monatelanger Auth-Umbau.",
-  "metric": "200+ Apps in Produktion · 8.000+ wöchentliche npm-Downloads · 2.000+ GitHub-Stars",
+  "metric": "200+ Apps live · 8.000+ wöchentliche Nutzer · 2.000+ GitHub-Stars",
   "footnote": "Ergebnisse aus einem reproduzierbaren A/B-Sicherheitsexperiment.",
   "footnoteLink": "Methodik ansehen →"
 }

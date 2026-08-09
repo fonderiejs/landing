@@ -1,6 +1,6 @@
 {
   "title": "Fale com a gente.",
-  "lede": "Conte o que você está construindo. A gente te diz a velocidade que a Fonderie consegue compor.",
+  "lede": "Conte o que você está construindo. A gente te diz a velocidade que a Fonderie consegue te ajudar.",
   "email": { "label": "E-mail", "value": "hello@fonderiejs.com" },
   "fit": { "label": "Perfil", "value": "Agências, estúdios e times que constroem SaaS com IA." },
   "response": { "label": "Tempo de resposta", "value": "Em até um dia útil. Uma pessoa de verdade, não um funil." }

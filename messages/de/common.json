@@ -2,38 +2,28 @@
   "siteTitle": "Fonderie",
   "meta": {
     "titleSuffix": "Bring dein SaaS diese Woche live",
-    "description": "Auth, Billing, Workspaces und Berechtigungen als npm-Pakete. Backend-Module und Screen-Kits. MIT-lizenziert. Selbst gehostet."
+    "description": "Fonderie gibt deiner KI die Bausteine für Auth, Billing und Team-Verwaltung — damit du dein SaaS in einer Woche shippst, nicht in einem Quartal."
   },
   "nav": {
-    "solution": "Die Lösung",
-    "packages": "Pakete",
+    "solution": "So funktioniert's",
+    "packages": "Features",
     "pricing": "Preise",
     "github": "GitHub",
     "contact": "Kontakt"
   },
   "cta": {
-    "getStarted": "npm install @fonderie/core →",
-    "viewOnGitHub": "Auf GitHub ansehen",
+    "getStarted": "Kostenlos loslegen",
+    "howItWorks": "So funktioniert's",
     "startShipping": "Jetzt shippen",
     "contactSales": "Vertrieb kontaktieren"
   },
   "footer": {
-    "tagline": "Die Standardbibliothek für SaaS-Infrastruktur.",
-    "product": "Produkt",
+    "tagline": "Für Gründer, die shippen.",
     "github": "GitHub",
-    "docs": "Docs",
-    "registry": "Registry",
-    "roadmap": "Roadmap",
-    "community": "Community",
-    "discord": "Discord",
+    "docs": "Dokumentation",
     "twitter": "X",
-    "youtube": "YouTube",
-    "company": "Unternehmen",
-    "about": "Über uns",
-    "blog": "Blog",
-    "careers": "Karriere",
-    "contact": "Kontakt",
-    "copyright": "Fonderie, Inc. · © 2026 · MIT-Lizenz"
+    "discord": "Discord",
+    "copyright": "Fonderie, Inc. · © 2026"
   },
   "theme": {
     "label": "Design",
