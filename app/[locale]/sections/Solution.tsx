@@ -26,6 +26,17 @@ export const createSchedule = workspace.action(async (ctx, input) => {
   return ctx.db.schedules.create(input);
 });`;
 
+  const mobileScreen = `${t('mobileComment')}
+import { LoginScreen } from '@fonderie/mobile/auth-screens'
+
+export function AuthStack() {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="Login" component={LoginScreen} />
+    </Stack.Navigator>
+  )
+}`;
+
   return (
     <section className="solution">
       <p className="eyebrow" data-reveal="">
@@ -59,6 +70,9 @@ export const createSchedule = workspace.action(async (ctx, input) => {
           </div>
           <div className="solution__code solution__code--dim">
             <CodeBlock code={productLogic} />
+          </div>
+          <div className="solution__code">
+            <CodeBlock code={mobileScreen} />
           </div>
         </div>
       </div>

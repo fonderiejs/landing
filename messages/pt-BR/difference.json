@@ -1,9 +1,8 @@
 {
-  "eyebrow": "A diferença",
-  "title": "Seu, sem lock-in.",
-  "lede": "A Fonderie é um skill integrado ao seu projeto — self-hosted, sob licença MIT, seu para rodar. Ou deixe a gente gerenciar esse mesmo padrão aberto na sua própria infraestrutura com o Fonderie Cloud.",
-  "badges": {
-    "selfHosted": "Self-hosted (Core)",
-    "cloud": "Fonderie Cloud"
-  }
+  "eyebrow": "The difference",
+  "title": "Library, not service.",
+  "lede": "Every package runs inside your process, against your database. No Fonderie server is ever in your request path.",
+  "compare1": "You are Drizzle, not Supabase.",
+  "compare2": "You are Next.js, not Vercel.",
+  "footer": "Your data. Your process. Your database."
 }

@@ -1,31 +1,36 @@
 {
-  "eyebrow": "Das Problem",
-  "title": "Jede SaaS beginnt mit denselben neun Wochen.",
-  "lede": "KI beseitigt diese Arbeit nicht — sie improvisiert sie. Dieselbe erfundene Auth, dieselben Tenant-Lecks, dieselben Billing-Sonderfälle, nur an einem Nachmittag statt in zwei Monaten geshippt.",
-  "ledeStrong": "Schneller ist nicht dasselbe wie gelöst.",
-  "compareBefore": "Ein Backend-Engineer für 3 Monate:",
-  "comparePriceStrike": "30.000–60.000 $",
-  "compareAfter": "Mit Fonderie starten:",
-  "compareFree": "kostenlos und quelloffen.",
-  "ledgerHeading": "Bevor Sie eine Zeile Produktcode schreiben",
-  "ledgerDuration": "~9 Wochen",
+  "eyebrow": "The problem",
+  "title": "Every SaaS starts with the same nine weeks.",
+  "lede": "AI doesn't remove this work — it improvises it. Same invented auth, same tenant leaks, same billing edge cases, only shipped in an afternoon instead of two months.",
+  "ledeStrong": "Faster isn't the same as solved.",
+  "compareBefore": "Hiring a backend engineer for 3 months:",
+  "comparePriceStrike": "$30–60k",
+  "compareAfter": "Starting with Fonderie:",
+  "compareFree": "free and open source.",
+  "ledgerHeading": "Backend — before you write a line of product",
+  "ledgerDuration": "~9 weeks",
   "timeline": [
-    { "week": "Woche 1–2", "label": "Auth-Setup" },
-    { "week": "Woche 3", "label": "Team-/Org-Modell" },
-    { "week": "Woche 4", "label": "Stripe-Anbindung" },
-    { "week": "Woche 5", "label": "E-Mail-System" },
-    { "week": "Woche 6", "label": "Berechtigungen" },
-    { "week": "Woche 7", "label": "Multi-Tenancy" },
-    { "week": "Woche 8", "label": "Remote-Konfiguration" },
-    { "week": "Woche 9", "label": "Endlich am Produkt arbeiten" }
+    { "week": "Week 1–2", "label": "Auth setup" },
+    { "week": "Week 3", "label": "Team / org model" },
+    { "week": "Week 4", "label": "Stripe wiring" },
+    { "week": "Week 5", "label": "Email system" },
+    { "week": "Week 6", "label": "Permissions" },
+    { "week": "Week 7", "label": "Multi-tenancy" },
+    { "week": "Week 8", "label": "Remote config" },
+    { "week": "Week 9", "label": "Finally write product" }
   ],
-  "byHandTitle": "Von Hand — ~9 Wochen.",
-  "byHandText": "Zwei Monate Code, den die Welt längst geschrieben hat — dieselben Sicherheitslücken erneut ausgeliefert.",
-  "withAiTitle": "Mit KI — ~1 Nachmittag.",
-  "withAiText": "Dieselbe improvisierte Infrastruktur, dieselben Lücken. Der Zeitplan schrumpft; das Problem nicht.",
-  "metaStrip": {
-    "command": "npx @fonderie/create",
-    "modules": "Komponiert aus 17 Standardmodulen",
-    "noExternal": "Null externe Server in Ihrem Request-Pfad"
-  }
+  "mobileLedgerHeading": "Mobile — before you write a line of product",
+  "mobileLedgerDuration": "~5 weeks",
+  "mobileTimeline": [
+    { "week": "Week 1", "label": "Login screen + auth flow" },
+    { "week": "Week 2", "label": "Billing UI + checkout" },
+    { "week": "Week 3", "label": "Team invite + workspace switcher" },
+    { "week": "Week 4", "label": "Navigation shell + settings" },
+    { "week": "Week 5", "label": "Finally write product" }
+  ],
+  "byHandTitle": "By hand — ~9 weeks.",
+  "byHandText": "Two months of code the world already wrote, re-shipping the same security flaws.",
+  "withAiTitle": "With AI — ~1 afternoon.",
+  "withAiText": "Same improvised infrastructure, same flaws. The timeline collapses; the problem doesn't.",
+  "mobileCompare": "Hiring a backend engineer: $30–60k. Rebuilding the same mobile screens for your 3rd client: priceless frustration. Starting with Fonderie: free and open source."
 }

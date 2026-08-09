@@ -1,9 +1,8 @@
 {
   "eyebrow": "The difference",
-  "title": "Owned, not locked in.",
-  "lede": "Fonderie is a skill wired into your project — self-hosted, MIT-licensed, yours to run. Or let us manage that same open standard on your own infrastructure with Fonderie Cloud.",
-  "badges": {
-    "selfHosted": "Self-hosted (Core)",
-    "cloud": "Fonderie Cloud"
-  }
+  "title": "Library, not service.",
+  "lede": "Every package runs inside your process, against your database. No Fonderie server is ever in your request path.",
+  "compare1": "You are Drizzle, not Supabase.",
+  "compare2": "You are Next.js, not Vercel.",
+  "footer": "Your data. Your process. Your database."
 }

@@ -16,9 +16,12 @@ export default function Difference() {
           {t('lede')}
         </p>
         <div className="difference__badges" data-reveal="">
-          <span className="difference__badge">{t('badges.selfHosted')}</span>
-          <span className="difference__badge difference__badge--filled">{t('badges.cloud')}</span>
+          <span className="difference__badge">{t('compare1')}</span>
+          <span className="difference__badge">{t('compare2')}</span>
         </div>
+        <p className="difference__lede" data-reveal="">
+          {t('footer')}
+        </p>
       </div>
     </section>
   );

@@ -1,25 +1,32 @@
 {
-  "eyebrow": "A virada",
-  "title": "A IA não precisa de mais velocidade. Ela precisa de um padrão.",
-  "lede": "IA pura gera do zero toda vez. A Fonderie dá a ela um vocabulário compartilhado e auditado — para compor, não alucinar.",
+  "eyebrow": "The shift",
+  "title": "AI doesn't need more speed. It needs a standard.",
+  "lede": "Raw AI generates from scratch every time. Fonderie gives it a shared, audited vocabulary — so it composes, not hallucinates.",
   "features": [
     {
       "num": "01",
-      "title": "Módulos padrão",
-      "text": "Auth, cobrança, permissões, workspaces — cada um um primitivo tipado e testado. Não é um template; é um bloco de construção."
+      "title": "Backend intelligence",
+      "text": "Auth, billing, permissions, workspaces — each a typed, tested state machine. Not a template; a building block that runs in your process, against your database."
     },
     {
       "num": "02",
-      "title": "Skills legíveis por IA",
-      "text": "Arquivos de skill no seu repositório detalham como os módulos se conectam. Sem prompt engineering. Sem deriva entre sessões."
+      "title": "React Native screen kits",
+      "text": "LoginScreen, BillingScreen, TeamInviteScreen — functional screen kits that import backend hooks directly. Handle edge cases AI usually misses: biometric fallback, validation error states, accessibility labels."
     },
     {
       "num": "03",
-      "title": "Saída revisável",
-      "text": "A composição resulta em TypeScript puro no seu repositório — com diff, testável, auditável linha por linha."
+      "title": "AI-readable skills",
+      "text": "Skill files in your repo spell out how backend modules and frontend screens wire together. No prompt engineering. No drift between sessions."
+    },
+    {
+      "num": "04",
+      "title": "Community registry",
+      "text": "A registry of screens built by the community. Grab a shadcn login, a React Native billing portal, or build your own. The intelligence is shared; the UI is yours."
     }
   ],
-  "codeLabel": "O vocabulário que sua IA lê",
-  "codeFooter": "Cada módulo expõe o mesmo contrato, então compor é uma consulta — não um palpite.",
-  "codeComment": "// uma forma, toda sessão"
+  "codeLabel": "The vocabulary your AI reads",
+  "codeFooter": "Every module exposes the same contract, so composition is a lookup — not a guess.",
+  "codeComment": "// one shape, every session",
+  "codeMobileComment": "// React Native — same vocabulary, different platform",
+  "codeMobileImport": "import { LoginScreen } from '@fonderie/mobile/auth-screens'"
 }

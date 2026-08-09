@@ -1,19 +1,19 @@
 {
-  "eyebrow": "オープンソース",
-  "titleLine1": "AIが構築するSaaSのための",
-  "titleLine2": "オープンスタンダード。",
-  "lede": "SaaSの構築を任されたAIアシスタントは、そのたびに独自のインフラ — 認証、課金、権限、チーム機能 — を発明します。FonderieはあらゆるLLMに、組み立てのための共通標準を提供します。",
-  "ledeStrong": "AIが即興を止め、あなたは出荷を始める。",
+  "eyebrow": "Open source",
+  "titleLine1": "Ship your SaaS this week,",
+  "titleLine2": "not next quarter.",
+  "lede": "Auth, billing, workspaces, and permissions — as npm packages.",
+  "ledeStrong": "Backend modules and React Native screen kits. Install. Configure. Ship.",
   "command": "npx @fonderie/create my-saas",
-  "copy": "コピー",
-  "copied": "コピーしました！",
-  "proof": "MITライセンス · オープンソース · あなたのインフラ",
-  "worksWith": "対応ツール",
+  "copy": "Copy",
+  "copied": "Copied!",
+  "proof": "MIT-licensed · Open source · Runs in your process",
+  "worksWith": "Works with",
   "assistants": {
     "claudeCode": "Claude Code",
     "cursor": "Cursor",
     "codex": "Codex",
     "windsurf": "Windsurf",
-    "any": "コードを読めるあらゆるAI"
+    "any": "Any code-reading AI"
   }
 }

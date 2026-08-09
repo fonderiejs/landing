@@ -4,6 +4,8 @@ import PackageCard from '../components/PackageCard';
 export default function Packages() {
   const t = useTranslations('packages');
   const items = t.raw('items') as { name: string; desc: string }[];
+  const mobileItems = t.raw('mobileItems') as { name: string; desc: string }[];
+  const adapterItems = t.raw('adapterItems') as { name: string; desc: string }[];
 
   return (
     <section id="packages" className="packages">
@@ -17,11 +19,14 @@ export default function Packages() {
         {t('lede')}
       </p>
 
+      <h3 className="packages__category" data-reveal="">
+        {t('categories.backend')}
+      </h3>
       <div className="packages__grid" data-reveal="">
         {items.map((pkg) => (
           <PackageCard
             key={pkg.name}
-            kicker={t('businessLogic')}
+            kicker={t('categories.backend')}
             title={pkg.name}
             desc={pkg.desc}
             href={`https://www.npmjs.com/package/${pkg.name}`}
@@ -34,6 +39,36 @@ export default function Packages() {
           href="https://github.com/fonderiejs/fonderie"
           featured
         />
+      </div>
+
+      <h3 className="packages__category" data-reveal="">
+        {t('categories.mobile')}
+      </h3>
+      <div className="packages__grid" data-reveal="">
+        {mobileItems.map((pkg) => (
+          <PackageCard
+            key={pkg.name}
+            kicker={t('categories.mobile')}
+            title={pkg.name}
+            desc={pkg.desc}
+            href={`https://www.npmjs.com/package/${pkg.name}`}
+          />
+        ))}
+      </div>
+
+      <h3 className="packages__category" data-reveal="">
+        {t('categories.adapters')}
+      </h3>
+      <div className="packages__grid" data-reveal="">
+        {adapterItems.map((pkg) => (
+          <PackageCard
+            key={pkg.name}
+            kicker={t('categories.adapters')}
+            title={pkg.name}
+            desc={pkg.desc}
+            href={`https://www.npmjs.com/package/${pkg.name}`}
+          />
+        ))}
       </div>
 
       <p className="packages__footnote" data-reveal="">

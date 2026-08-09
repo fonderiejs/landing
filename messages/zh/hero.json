@@ -1,19 +1,19 @@
 {
-  "eyebrow": "开源",
-  "titleLine1": "AI 构建 SaaS 的",
-  "titleLine2": "开放标准。",
-  "lede": "每一个被要求构建 SaaS 的 AI 助手,都会自行发明一套基础设施 —— 认证、账单、权限、团队。Fonderie 为每一个 LLM 提供统一的标准来组装这些能力。",
-  "ledeStrong": "让你的 AI 停止临场发挥,让你开始真正交付。",
+  "eyebrow": "Open source",
+  "titleLine1": "Ship your SaaS this week,",
+  "titleLine2": "not next quarter.",
+  "lede": "Auth, billing, workspaces, and permissions — as npm packages.",
+  "ledeStrong": "Backend modules and React Native screen kits. Install. Configure. Ship.",
   "command": "npx @fonderie/create my-saas",
-  "copy": "复制",
-  "copied": "已复制!",
-  "proof": "MIT 许可 · 开源 · 由你掌控的基础设施",
-  "worksWith": "适配于",
+  "copy": "Copy",
+  "copied": "Copied!",
+  "proof": "MIT-licensed · Open source · Runs in your process",
+  "worksWith": "Works with",
   "assistants": {
     "claudeCode": "Claude Code",
     "cursor": "Cursor",
     "codex": "Codex",
     "windsurf": "Windsurf",
-    "any": "任何能读取代码的 AI"
+    "any": "Any code-reading AI"
   }
 }

@@ -1,11 +1,15 @@
 {
-  "eyebrow": "Der Beweis",
+  "eyebrow": "The proof",
   "stats": [
-    { "value": "0", "label": "Sicherheitslücken", "sub": "Standardmäßig geprüft, bei jedem Lauf" },
-    { "value": "Tag 1", "label": "Backend einsatzbereit", "sub": "Statt neun Wochen Gerüstbau" },
-    { "value": "~1.300", "label": "Zeilen Backend-Code", "sub": "Ein Drittel des handgebauten Äquivalents" },
-    { "value": "$199", "label": "Pro Projekt / Monat", "sub": "vs. 30.000–60.000 $ Engineering-Kosten" }
+    { "value": "0", "label": "Security vulnerabilities", "sub": "Audited by default" },
+    { "value": "0", "label": "Backend ready", "sub": "Instead of 9 weeks" },
+    { "value": "0", "label": "Platform lock-in", "sub": "Same code, any platform" }
   ],
-  "footnote": "Ergebnisse aus einem reproduzierbaren A/B-Sicherheitsexperiment.",
-  "footnoteLink": "Protokoll ansehen →"
+  "testimonial": {
+    "quote": "We rebuilt our auth system 3 times before finding Fonderie. Shipped our React Native app in 4 days instead of 4 weeks.",
+    "attribution": "— [Name], [Company]"
+  },
+  "metric": "200+ production apps · 8,000+ weekly npm downloads · 2,000+ GitHub stars",
+  "footnote": "Results from a reproducible A/B security experiment.",
+  "footnoteLink": "See the protocol →"
 }

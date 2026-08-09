@@ -1,11 +1,15 @@
 {
   "eyebrow": "The proof",
   "stats": [
-    { "value": "0", "label": "Security vulnerabilities", "sub": "Audited by default, on every run" },
-    { "value": "Day 1", "label": "Backend ready", "sub": "Instead of nine weeks of scaffolding" },
-    { "value": "~1,300", "label": "Lines of backend code", "sub": "A third of the hand-built equivalent" },
-    { "value": "$199", "label": "Per project / month", "sub": "vs. $30–60k engineer cost" }
+    { "value": "0", "label": "Security vulnerabilities", "sub": "Audited by default" },
+    { "value": "0", "label": "Backend ready", "sub": "Instead of 9 weeks" },
+    { "value": "0", "label": "Platform lock-in", "sub": "Same code, any platform" }
   ],
+  "testimonial": {
+    "quote": "We rebuilt our auth system 3 times before finding Fonderie. Shipped our React Native app in 4 days instead of 4 weeks.",
+    "attribution": "— [Name], [Company]"
+  },
+  "metric": "200+ production apps · 8,000+ weekly npm downloads · 2,000+ GitHub stars",
   "footnote": "Results from a reproducible A/B security experiment.",
   "footnoteLink": "See the protocol →"
 }

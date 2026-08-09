@@ -19,6 +19,13 @@ export default function Proof() {
           </div>
         ))}
       </div>
+      <blockquote className="proof__testimonial" data-reveal="">
+        <p>&ldquo;{t('testimonial.quote')}&rdquo;</p>
+        <cite>{t('testimonial.attribution')}</cite>
+      </blockquote>
+      <p className="proof__metric" data-reveal="">
+        {t('metric')}
+      </p>
       <p className="proof__footnote" data-reveal="">
         {t('footnote')}{' '}
         <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer">

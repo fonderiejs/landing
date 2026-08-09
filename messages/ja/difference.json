@@ -1,9 +1,8 @@
 {
-  "eyebrow": "違い",
-  "title": "所有する。ロックインしない。",
-  "lede": "Fonderieはあなたのプロジェクトに組み込まれたスキルです — セルフホスト、MITライセンス、あなた自身が実行します。または、その同じオープンスタンダードをFonderie Cloudで、あなた自身のインフラ上に運用管理させることもできます。",
-  "badges": {
-    "selfHosted": "セルフホスト（Core）",
-    "cloud": "Fonderie Cloud"
-  }
+  "eyebrow": "The difference",
+  "title": "Library, not service.",
+  "lede": "Every package runs inside your process, against your database. No Fonderie server is ever in your request path.",
+  "compare1": "You are Drizzle, not Supabase.",
+  "compare2": "You are Next.js, not Vercel.",
+  "footer": "Your data. Your process. Your database."
 }

@@ -1156,6 +1156,27 @@ a:hover {
   color: var(--muted);
   margin: 0;
 }
+.proof__testimonial {
+  margin: 40px 0 0;
+  padding: 24px 28px;
+  border-left: 2px solid var(--accent);
+}
+.proof__testimonial p {
+  font-family: var(--serif);
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+.proof__testimonial cite {
+  font-style: normal;
+  font-size: 14px;
+  color: var(--muted);
+}
+.proof__metric {
+  font-size: 14px;
+  color: var(--muted2);
+  margin: 20px 0 0;
+}
 .proof__footnote {
   font-size: 14px;
   line-height: 1.6;
@@ -1202,6 +1223,17 @@ a:hover {
   max-width: 52ch;
   margin: 0 0 32px;
 }
+.packages__category {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 32px 0 12px;
+}
+.packages__category:first-of-type {
+  margin-top: 0;
+}
 .packages__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1211,6 +1243,7 @@ a:hover {
   border: 1px solid var(--line);
   border-radius: 16px;
   overflow: hidden;
+  margin-bottom: 8px;
 }
 .packages__card {
   background: var(--bg);

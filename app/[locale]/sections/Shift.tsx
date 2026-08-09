@@ -26,7 +26,7 @@ permissions({ roles })`;
       <div className="shift__grid">
         <div className="shift__list" data-reveal="">
           {features.map((f) => (
-            <div key={f.num} className={`shift__item${f.num === '03' ? ' shift__item--featured' : ''}`}>
+            <div key={f.num} className={`shift__item${f.num === '04' ? ' shift__item--featured' : ''}`}>
               <span className="shift__item-num">{f.num}</span>
               <div>
                 <h3 className="shift__item-title">{f.title}</h3>
@@ -42,6 +42,9 @@ permissions({ roles })`;
             <CodeBlock code={code} />
           </div>
           <p className="shift__panel-foot">{t('codeFooter')}</p>
+          <div className="shift__code">
+            <CodeBlock code={`${t('codeMobileComment')}\n${t.raw('codeMobileImport')}`} />
+          </div>
         </div>
       </div>
     </section>
