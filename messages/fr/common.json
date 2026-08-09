@@ -2,38 +2,28 @@
   "siteTitle": "Fonderie",
   "meta": {
     "titleSuffix": "Lancez votre SaaS cette semaine",
-    "description": "Auth, facturation, espaces de travail et permissions sous forme de packages npm. Modules backend et kits d'écrans. Sous licence MIT. Auto-hébergé."
+    "description": "Fonderie donne à votre IA les briques pour l'auth, la facturation et la gestion d'équipe — pour que vous livriez votre SaaS en une semaine, pas en un trimestre."
   },
   "nav": {
-    "solution": "La solution",
-    "packages": "Packages",
+    "solution": "Comment ça marche",
+    "packages": "Fonctionnalités",
     "pricing": "Tarifs",
     "github": "GitHub",
     "contact": "Contact"
   },
   "cta": {
-    "getStarted": "npm install @fonderie/core →",
-    "viewOnGitHub": "Voir sur GitHub",
+    "getStarted": "Commencer gratuitement",
+    "howItWorks": "Voir comment ça marche",
     "startShipping": "Commencer à livrer",
     "contactSales": "Contacter les ventes"
   },
   "footer": {
-    "tagline": "La bibliothèque standard pour l'infrastructure SaaS.",
-    "product": "Produit",
+    "tagline": "Conçu pour les fondateurs qui livrent.",
     "github": "GitHub",
-    "docs": "Docs",
-    "registry": "Registre",
-    "roadmap": "Feuille de route",
-    "community": "Communauté",
-    "discord": "Discord",
+    "docs": "Documentation",
     "twitter": "X",
-    "youtube": "YouTube",
-    "company": "Entreprise",
-    "about": "À propos",
-    "blog": "Blog",
-    "careers": "Carrières",
-    "contact": "Contact",
-    "copyright": "Fonderie, Inc. · © 2026 · Licence MIT"
+    "discord": "Discord",
+    "copyright": "Fonderie, Inc. · © 2026"
   },
   "theme": {
     "label": "Thème",

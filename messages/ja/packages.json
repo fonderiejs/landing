@@ -1,35 +1,14 @@
 {
-  "eyebrow": "パッケージ",
-  "title": "本物のレジストリにある、本物のパッケージ。",
-  "lede": "npm上の本物のパッケージ。クリックしてコードを読んでみてください — Express、Hono、Koa向けアダプターも用意しており、すでに動いているアプリにFonderieを組み込めます。",
-  "categories": {
-    "backend": "バックエンドインテリジェンス",
-    "mobile": "スクリーンキット",
-    "adapters": "ウェブアダプター"
-  },
+  "eyebrow": "手に入るもの",
+  "title": "あなたのSaaSに必要な全て。",
+  "lede": "テンプレートではなく、実際に動く機能です。あなたのAIが自動でプロダクトに組み込みます。",
   "items": [
-    { "name": "@fonderie/auth", "desc": "SaaS向けの導入即完了する認証" },
-    { "name": "@fonderie/billing", "desc": "サブスクリプション、シート、利用量、Webhook" },
-    { "name": "@fonderie/workspaces", "desc": "チーム、組織、招待、マルチテナント対応" },
-    { "name": "@fonderie/permissions", "desc": "ロールベースのアクセス制御" },
-    { "name": "@fonderie/courier", "desc": "メール、SMS、プッシュ通知の配信" }
+    { "title": "ユーザーアカウント", "text": "ログイン、登録、パスワードリセット、ソーシャルログイン、Face ID。ユーザーはすぐ使えます。あなたが作る必要はありません。" },
+    { "title": "決済", "text": "Stripe連携、サブスクリプションプラン、席数ベースの課金、請求書管理。あなたは報酬を得られます。あなたが組む必要はありません。" },
+    { "title": "チームと権限管理", "text": "同僚を招待し、役割を割り当て、誰が何を見られるかを制御。顧客が自分のチームを管理します。あなたがコードを書く必要はありません。" },
+    { "title": "通知", "text": "メール、SMS、プッシュ通知。ユーザーに情報が届きます。あなたが設定する必要はありません。" },
+    { "title": "セキュリティとコンプライアンス", "text": "監査ログ、レート制限、SOC 2対応。アプリは安全に保たれます。あなたが心配する必要はありません。" }
   ],
-  "mobileItems": [
-    { "name": "@fonderie/screens/auth", "desc": "ログイン、サインアップ、多要素認証、生体認証" },
-    { "name": "@fonderie/screens/billing", "desc": "プラン選択、チェックアウト、請求書" },
-    { "name": "@fonderie/screens/workspace", "desc": "チーム招待、ワークスペース切り替え" },
-    { "name": "@fonderie/screens/navigation", "desc": "ナビゲーション構造、設定画面" }
-  ],
-  "adapterItems": [
-    { "name": "@fonderie/adapter-express", "desc": "Express連携" },
-    { "name": "@fonderie/adapter-hono", "desc": "Hono連携" },
-    { "name": "@fonderie/adapter-koa", "desc": "Koa連携" }
-  ],
-  "moreCard": {
-    "kicker": "レジストリのその他",
-    "title": "他8個 →",
-    "desc": "core、store、audit、events、rate-limit、config、logger、webhooks"
-  },
-  "footnote": "すべてMITライセンスです。",
-  "footnoteLink": "GitHubでレジストリ全体を見る →"
+  "footnote": "技術的な詳細が知りたいですか？",
+  "footnoteLink": "GitHubでコードを見る →"
 }

@@ -1,32 +1,22 @@
 {
-  "eyebrow": "The shift",
-  "title": "AI doesn't need more speed. It needs a standard.",
-  "lede": "Raw AI generates from scratch every time — burning tokens, introducing bugs, and shipping different auth patterns every session. Fonderie gives it a shared, audited vocabulary — so it composes, not hallucinates. Same result. Fewer tokens. Zero security drift.",
-  "features": [
+  "eyebrow": "How it works",
+  "title": "How it works",
+  "lede": "From idea to shipped product in three steps.",
+  "steps": [
     {
       "num": "01",
-      "title": "Backend intelligence",
-      "text": "Auth, billing, permissions, workspaces — each a typed, tested state machine. Not a template; a building block that runs in your process, against your database."
+      "title": "Tell your AI what you want to build",
+      "text": "\"I need a SaaS with login, Stripe billing, and team workspaces.\""
     },
     {
       "num": "02",
-      "title": "Screen kits",
-      "text": "AI generates your login, billing, and team screens. Pre-built, accessible, secure — wired to your backend automatically."
+      "title": "Your AI uses Fonderie's building blocks",
+      "text": "Instead of writing everything from scratch, your AI assembles proven, secure components — login screens, payment flows, team invites — all wired together automatically."
     },
     {
       "num": "03",
-      "title": "AI-readable skills",
-      "text": "Skill files in your repo spell out how backend modules and frontend screens wire together. No prompt engineering. No drift between sessions."
-    },
-    {
-      "num": "04",
-      "title": "Community registry",
-      "text": "A registry of screens built by the community. Grab a shadcn login, a billing portal, or build your own. The intelligence is shared; the UI is yours."
+      "title": "You review and ship",
+      "text": "The AI generates your product. You review it, customize the design, and deploy. Your backend is secure, your frontend works, and your customers can sign up and pay."
     }
-  ],
-  "codeLabel": "The vocabulary your AI reads",
-  "codeFooter": "Every module exposes the same contract, so composition is a lookup — not a guess.",
-  "codeComment": "// one shape, every session",
-  "codeMobileComment": "// Mobile — same vocabulary, different platform",
-  "codeMobileImport": "import { LoginScreen } from '@fonderie/screens/auth'"
+  ]
 }

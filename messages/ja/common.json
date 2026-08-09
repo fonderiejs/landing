@@ -2,38 +2,28 @@
   "siteTitle": "Fonderie",
   "meta": {
     "titleSuffix": "SaaSを今週リリース",
-    "description": "認証、課金、ワークスペース、権限管理をnpmパッケージとして。バックエンドモジュールとスクリーンキット。MITライセンス。セルフホスト対応。"
+    "description": "FonderieはあなたのAIに認証・課金・チーム管理の部品を与えます。四半期ではなく1週間でSaaSをリリースできます。"
   },
   "nav": {
-    "solution": "解決策",
-    "packages": "パッケージ",
+    "solution": "使い方",
+    "packages": "機能",
     "pricing": "料金",
     "github": "GitHub",
     "contact": "お問い合わせ"
   },
   "cta": {
-    "getStarted": "npm install @fonderie/core →",
-    "viewOnGitHub": "GitHubで見る",
+    "getStarted": "無料で始める",
+    "howItWorks": "使い方を見る",
     "startShipping": "リリースを始める",
     "contactSales": "営業に問い合わせる"
   },
   "footer": {
-    "tagline": "SaaSインフラのための標準ライブラリ。",
-    "product": "プロダクト",
+    "tagline": "リリースする創業者のために。",
     "github": "GitHub",
     "docs": "ドキュメント",
-    "registry": "レジストリ",
-    "roadmap": "ロードマップ",
-    "community": "コミュニティ",
-    "discord": "Discord",
     "twitter": "X",
-    "youtube": "YouTube",
-    "company": "会社情報",
-    "about": "会社概要",
-    "blog": "ブログ",
-    "careers": "採用情報",
-    "contact": "お問い合わせ",
-    "copyright": "Fonderie, Inc. · © 2026 · MITライセンス"
+    "discord": "Discord",
+    "copyright": "Fonderie, Inc. · © 2026"
   },
   "theme": {
     "label": "テーマ",

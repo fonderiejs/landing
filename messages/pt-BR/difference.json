@@ -1,9 +1,26 @@
 {
-  "eyebrow": "A diferença",
-  "title": "Biblioteca, não serviço.",
-  "lede": "Cada pacote roda dentro do seu próprio processo, contra o seu próprio banco de dados. Nenhum servidor do Fonderie fica no caminho das suas requisições.",
-  "compare1": "Você é Drizzle, não Supabase.",
-  "compare2": "Você é Next.js, não Vercel.",
-  "footer": "Seus dados. Seu processo. Seu banco de dados.",
-  "portability": "Use Claude hoje, Cursor amanhã, ChatGPT semana que vem. A API normalizada do Fonderie garante que seu backend não muda — não importa qual IA você use."
+  "eyebrow": "Por que founders escolhem a Fonderie",
+  "title": "Por que founders escolhem a Fonderie",
+  "cards": [
+    {
+      "icon": "🔒",
+      "title": "Segurança que se atualiza sozinha",
+      "text": "Quando vulnerabilidades são descobertas, uma única atualização corrige todos os apps Fonderie. Sem reescrever segurança por um mês. Sem contratar um consultor de segurança."
+    },
+    {
+      "icon": "💰",
+      "title": "Reduza sua conta de IA",
+      "text": "Sua IA não desperdiça mais seu orçamento improvisando um fluxo de login toda vez. Ela usa os blocos prontos da Fonderie. Mesmo resultado, custo menor."
+    },
+    {
+      "icon": "🤖",
+      "title": "Funciona com qualquer IA",
+      "text": "Claude hoje, Cursor amanhã, ChatGPT semana que vem. Os blocos da Fonderie funcionam do mesmo jeito, não importa qual IA você use. Seu produto não quebra quando você troca de ferramenta."
+    },
+    {
+      "icon": "⏰",
+      "title": "Fale com clientes, não depure auth",
+      "text": "Aquele mês que você gastaria corrigindo bugs de login? Gaste entendendo seus clientes e construindo o que eles realmente querem."
+    }
+  ]
 }

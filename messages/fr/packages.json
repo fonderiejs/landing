@@ -1,35 +1,14 @@
 {
-  "eyebrow": "Les packages",
-  "title": "De vrais packages, sur le vrai registre.",
-  "lede": "De vrais packages sur npm. Cliquez et lisez le code — avec des adaptateurs pour Express, Hono et Koa, pour monter Fonderie dans une app que vous faites déjà tourner.",
-  "categories": {
-    "backend": "Intelligence backend",
-    "mobile": "Kits d'écrans",
-    "adapters": "Adaptateurs web"
-  },
+  "eyebrow": "Ce que vous obtenez",
+  "title": "Tout ce dont votre SaaS a besoin.",
+  "lede": "De vraies fonctionnalités, prêtes à l'emploi — pas des modèles. Votre IA les connecte automatiquement à votre produit.",
   "items": [
-    { "name": "@fonderie/auth", "desc": "Auth prête à l'emploi pour SaaS" },
-    { "name": "@fonderie/billing", "desc": "Abonnements, sièges, usage et webhooks" },
-    { "name": "@fonderie/workspaces", "desc": "Équipes, organisations, invitations et multi-tenant" },
-    { "name": "@fonderie/permissions", "desc": "Contrôle d'accès basé sur les rôles" },
-    { "name": "@fonderie/courier", "desc": "Envoi d'e-mails, de SMS et de notifications push" }
+    { "title": "Comptes utilisateurs", "text": "Connexion, inscription, réinitialisation de mot de passe, connexion sociale et Face ID. Vos utilisateurs entrent. Vous n'avez rien à construire." },
+    { "title": "Paiements", "text": "Intégration Stripe, plans d'abonnement, facturation par siège et gestion des factures. Vous êtes payé. Vous n'avez rien à connecter." },
+    { "title": "Équipes et permissions", "text": "Invitez des collègues, attribuez des rôles, contrôlez qui voit quoi. Vos clients gèrent leurs propres équipes. Vous n'avez rien à coder." },
+    { "title": "Notifications", "text": "E-mail, SMS et notifications push. Vos utilisateurs restent informés. Vous n'avez rien à configurer." },
+    { "title": "Sécurité et conformité", "text": "Journaux d'audit, limitation de débit et conformité SOC 2. Votre app reste sécurisée. Vous n'avez pas à vous en soucier." }
   ],
-  "mobileItems": [
-    { "name": "@fonderie/screens/auth", "desc": "Connexion, inscription, MFA, biométrie" },
-    { "name": "@fonderie/screens/billing", "desc": "Sélecteur de plan, paiement, factures" },
-    { "name": "@fonderie/screens/workspace", "desc": "Invitation d'équipe, changement d'espace" },
-    { "name": "@fonderie/screens/navigation", "desc": "Structure de navigation, réglages" }
-  ],
-  "adapterItems": [
-    { "name": "@fonderie/adapter-express", "desc": "Intégration Express" },
-    { "name": "@fonderie/adapter-hono", "desc": "Intégration Hono" },
-    { "name": "@fonderie/adapter-koa", "desc": "Intégration Koa" }
-  ],
-  "moreCard": {
-    "kicker": "Le reste du registre",
-    "title": "+8 de plus →",
-    "desc": "core, store, audit, events, rate-limit, config, logger, webhooks"
-  },
-  "footnote": "Tous sous licence MIT.",
-  "footnoteLink": "Voir le registre complet sur GitHub →"
+  "footnote": "Vous voulez les détails techniques ?",
+  "footnoteLink": "Voir le code sur GitHub →"
 }

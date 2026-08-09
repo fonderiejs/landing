@@ -1,13 +1,10 @@
 {
-  "eyebrow": "オープンソース",
+  "eyebrow": "SaaSをリリースする創業者のために",
   "titleLine1": "SaaSを今週リリースしよう、",
   "titleLine2": "来四半期ではなく。",
-  "lede": "認証、課金、ワークスペース、権限管理 — すべてnpmパッケージとして。",
-  "ledeStrong": "FonderieはあなたのAIアシスタントにSaaS構築のための語彙を与えます。ゼロから即興で作る代わりに、実証済みのインフラを組み合わせられるようになります。トークン消費は減り、リリースは速くなり、認証を二度と作り直す必要はありません。",
-  "command": "npx @fonderie/create my-saas",
-  "copy": "コピー",
-  "copied": "コピーしました！",
-  "proof": "MITライセンス · オープンソース · あなたのプロセス内で動作",
+  "lede": "Claude、Cursor、ChatGPTに作りたいものを伝えるだけ。",
+  "ledeStrong": "Fonderieはあなたが使うAIに、認証・課金・チーム管理のための部品を与えます。AIはゼロから即興で作る代わりに、あなたのプロダクトを組み立てます。",
+  "proof": "標準で安全 · どのAIでも使える · ロックインなし",
   "worksWith": "対応ツール",
   "assistants": {
     "claudeCode": "Claude Code",

@@ -1,39 +1,18 @@
 {
   "eyebrow": "O problema",
-  "title": "Todo SaaS começa com as mesmas nove semanas.",
-  "lede": "A IA não elimina esse trabalho — ela improvisa. Mesma autenticação inventada, mesmos vazamentos entre tenants, mesmos casos extremos de cobrança, só que entregues em uma tarde em vez de dois meses.",
-  "ledeStrong": "Mais rápido não é o mesmo que resolvido.",
-  "compareBefore": "Contratar um engenheiro de backend por 3 meses:",
-  "comparePriceStrike": "US$ 30–60 mil",
-  "compareAfter": "Começando com o Fonderie:",
-  "compareFree": "grátis e open source.",
-  "ledgerHeading": "Backend — antes de escrever uma linha de produto",
-  "ledgerDuration": "~9 semanas",
-  "timeline": [
-    { "week": "Semana 1–2", "label": "Configuração de auth" },
-    { "week": "Semana 3", "label": "Modelo de time / organização" },
-    { "week": "Semana 4", "label": "Integração com Stripe" },
-    { "week": "Semana 5", "label": "Sistema de e-mail" },
-    { "week": "Semana 6", "label": "Permissões" },
-    { "week": "Semana 7", "label": "Multi-tenancy" },
-    { "week": "Semana 8", "label": "Configuração remota" },
-    { "week": "Semana 9", "label": "Finalmente escrever o produto" }
+  "title": "Todo SaaS reconstrói as mesmas 5 coisas.",
+  "lede": "Antes de escrever uma linha sequer do seu produto de verdade, você precisa de:",
+  "items": [
+    { "title": "Login e cadastro", "text": "Para que os usuários acessem seu app." },
+    { "title": "Cobrança e assinaturas", "text": "Para que você receba pagamentos." },
+    { "title": "Convites de time e permissões", "text": "Para que clientes convidem colegas." },
+    { "title": "Notificações por e-mail", "text": "Para que os usuários fiquem informados." },
+    { "title": "Segurança e compliance", "text": "Para que você não seja hackeado." }
   ],
-  "mobileLedgerHeading": "Mobile — antes de escrever uma linha de produto",
-  "mobileLedgerDuration": "~5 semanas",
-  "mobileTimeline": [
-    { "week": "Semana 1", "label": "Tela de login + fluxo de auth" },
-    { "week": "Semana 2", "label": "UI de cobrança + checkout" },
-    { "week": "Semana 3", "label": "Convite de time + troca de workspace" },
-    { "week": "Semana 4", "label": "Navegação + configurações" },
-    { "week": "Semana 5", "label": "Finalmente escrever o produto" }
-  ],
-  "byHandTitle": "Na mão — ~9 semanas.",
-  "byHandText": "Dois meses reescrevendo código que o mundo já escreveu, entregando de novo as mesmas falhas de segurança.",
-  "withAiTitle": "Com IA — ~1 tarde.",
-  "withAiText": "Mesma infraestrutura improvisada, mesmas falhas. O prazo encolhe; o problema não.",
-  "mobileCompare": "Contratar um engenheiro de backend: US$ 30–60 mil. Reconstruir as mesmas telas mobile para o 3º cliente: frustração sem preço. Começando com o Fonderie: grátis e open source.",
-  "customApiLine": "Produto sob medida = API sob medida = sem suporte quando você escala.",
-  "tokenBurnLine": "E quando sua IA improvisa um fluxo de login, você gasta 3.000 tokens depurando isso. Toda. Sessão.",
-  "opportunityCostLine": "São 9 semanas que você não está falando com clientes. 9 semanas que você não está lançando funcionalidades. 9 semanas de runway queimadas em código que o mundo já escreveu."
+  "byHandTitle": "Na mão",
+  "byHandText": "2–3 meses e US$ 30.000–60.000 contratando um desenvolvedor.",
+  "withAiTitle": "Com IA sozinha",
+  "withAiText": "Seu assistente improvisa tudo do zero a cada sessão — fluxos de login diferentes, lógica de cobrança diferente, bugs diferentes. Ele desperdiça horas (e seu orçamento de IA) depurando os mesmos problemas repetidamente.",
+  "withFonderieTitle": "Com a Fonderie",
+  "withFonderieText": "Sua IA usa blocos prontos, testados e comprovados. O mesmo fluxo de login sempre. A mesma lógica de cobrança. A mesma segurança. Você lança em uma semana e passa seu tempo falando com clientes."
 }

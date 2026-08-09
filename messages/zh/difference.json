@@ -1,9 +1,26 @@
 {
-  "eyebrow": "本质区别",
-  "title": "它是一个库，不是一项服务。",
-  "lede": "每个包都运行在你自己的进程中，直接对接你自己的数据库。Fonderie 的服务器永远不会出现在你的请求路径上。",
-  "compare1": "你是 Drizzle，不是 Supabase。",
-  "compare2": "你是 Next.js，不是 Vercel。",
-  "footer": "你的数据。你的进程。你的数据库。",
-  "portability": "今天用 Claude，明天用 Cursor，下周用 ChatGPT。Fonderie 的标准化 API 意味着无论你用哪个 AI，你的后端都不会改变。"
+  "eyebrow": "创始人为什么选择 Fonderie",
+  "title": "创始人为什么选择 Fonderie",
+  "cards": [
+    {
+      "icon": "🔒",
+      "title": "会自动更新的安全性",
+      "text": "一旦发现漏洞，一次更新就能修复所有 Fonderie 应用。不需要花一个月重写安全系统，也不需要雇安全顾问。"
+    },
+    {
+      "icon": "💰",
+      "title": "降低你的 AI 费用",
+      "text": "你的 AI 不用再浪费预算反复即兴拼凑登录流程，而是使用 Fonderie 的现成模块。结果一样，成本更低。"
+    },
+    {
+      "icon": "🤖",
+      "title": "兼容任何 AI",
+      "text": "今天用 Claude，明天用 Cursor，下周用 ChatGPT。无论用哪个 AI，Fonderie 的模块都以同样的方式工作。换工具也不会破坏你的产品。"
+    },
+    {
+      "icon": "⏰",
+      "title": "和客户沟通，而不是调试认证",
+      "text": "本该用来修登录 bug 的那一个月？拿去理解你的客户，构建他们真正想要的功能。"
+    }
+  ]
 }

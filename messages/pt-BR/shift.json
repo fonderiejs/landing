@@ -1,32 +1,22 @@
 {
-  "eyebrow": "A mudança",
-  "title": "A IA não precisa de mais velocidade. Ela precisa de um padrão.",
-  "lede": "IA pura gera tudo do zero, toda vez — consumindo tokens, introduzindo bugs e entregando um padrão de auth diferente a cada sessão. O Fonderie dá a ela um vocabulário compartilhado e auditado — assim ela compõe, em vez de alucinar. Mesmo resultado. Menos tokens. Zero deriva de segurança.",
-  "features": [
+  "eyebrow": "Como funciona",
+  "title": "Como funciona",
+  "lede": "Da ideia ao produto lançado em três passos.",
+  "steps": [
     {
       "num": "01",
-      "title": "Inteligência de backend",
-      "text": "Auth, cobrança, permissões, workspaces — cada um uma máquina de estados tipada e testada. Não é um template; é um bloco de construção que roda no seu processo, contra o seu banco de dados."
+      "title": "Diga à sua IA o que você quer construir",
+      "text": "\"Preciso de um SaaS com login, cobrança via Stripe e workspaces de time.\""
     },
     {
       "num": "02",
-      "title": "Kits de telas",
-      "text": "A IA gera suas telas de login, cobrança e time. Prontas, acessíveis, seguras — conectadas ao seu backend automaticamente."
+      "title": "Sua IA usa os blocos prontos da Fonderie",
+      "text": "Em vez de escrever tudo do zero, sua IA monta componentes comprovados e seguros — telas de login, fluxos de pagamento, convites de time — tudo já conectado automaticamente."
     },
     {
       "num": "03",
-      "title": "Skills legíveis por IA",
-      "text": "Arquivos de skill no seu repositório explicam como os módulos de backend e as telas de frontend se conectam. Sem prompt engineering. Sem deriva entre sessões."
-    },
-    {
-      "num": "04",
-      "title": "Registro da comunidade",
-      "text": "Um registro de telas construídas pela comunidade. Pegue um login do shadcn, um portal de cobrança, ou construa o seu. A inteligência é compartilhada; a interface é sua."
+      "title": "Você revisa e lança",
+      "text": "A IA gera seu produto. Você revisa, personaliza o design e faz o deploy. Seu backend é seguro, seu frontend funciona, e seus clientes podem se cadastrar e pagar."
     }
-  ],
-  "codeLabel": "O vocabulário que sua IA lê",
-  "codeFooter": "Cada módulo expõe o mesmo contrato, então compor é uma consulta — não um palpite.",
-  "codeComment": "// uma forma, toda sessão",
-  "codeMobileComment": "// Mobile — mesmo vocabulário, plataforma diferente",
-  "codeMobileImport": "import { LoginScreen } from '@fonderie/screens/auth'"
+  ]
 }

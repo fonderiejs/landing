@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 
 export default function Difference() {
   const t = useTranslations('difference');
+  const cards = t.raw('cards') as { icon: string; title: string; text: string }[];
 
   return (
     <section className="difference">
@@ -12,19 +13,15 @@ export default function Difference() {
         <h2 className="section-title section-title--lg" data-reveal="">
           {t('title')}
         </h2>
-        <p className="difference__lede" data-reveal="">
-          {t('lede')}
-        </p>
-        <div className="difference__badges" data-reveal="">
-          <span className="difference__badge">{t('compare1')}</span>
-          <span className="difference__badge">{t('compare2')}</span>
+        <div className="packages__grid" data-reveal="">
+          {cards.map((card) => (
+            <div key={card.title} className="packages__card">
+              <span aria-hidden="true">{card.icon}</span>
+              <h3 className="packages__card-title">{card.title}</h3>
+              <p className="packages__card-text">{card.text}</p>
+            </div>
+          ))}
         </div>
-        <p className="difference__lede" data-reveal="">
-          {t('footer')}
-        </p>
-        <p className="difference__lede" data-reveal="">
-          {t('portability')}
-        </p>
       </div>
     </section>
   );

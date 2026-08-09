@@ -1,9 +1,26 @@
 {
-  "eyebrow": "La différence",
-  "title": "Une librairie, pas un service.",
-  "lede": "Chaque package s'exécute dans votre propre processus, contre votre propre base de données. Aucun serveur Fonderie ne se trouve jamais sur le chemin de vos requêtes.",
-  "compare1": "Vous êtes Drizzle, pas Supabase.",
-  "compare2": "Vous êtes Next.js, pas Vercel.",
-  "footer": "Vos données. Votre processus. Votre base de données.",
-  "portability": "Utilisez Claude aujourd'hui, Cursor demain, ChatGPT la semaine prochaine. L'API normalisée de Fonderie fait que votre backend ne change pas — quelle que soit l'IA que vous utilisez."
+  "eyebrow": "Pourquoi les fondateurs choisissent Fonderie",
+  "title": "Pourquoi les fondateurs choisissent Fonderie",
+  "cards": [
+    {
+      "icon": "🔒",
+      "title": "Une sécurité qui se met à jour toute seule",
+      "text": "Quand des vulnérabilités sont découvertes, une seule mise à jour corrige toutes les apps Fonderie. Pas de refonte de sécurité d'un mois. Pas besoin d'embaucher un consultant en sécurité."
+    },
+    {
+      "icon": "💰",
+      "title": "Réduisez votre facture d'IA",
+      "text": "Votre IA ne gaspille plus votre budget à improviser un flux de connexion à chaque fois. Elle utilise les briques de Fonderie à la place. Même résultat, coût réduit."
+    },
+    {
+      "icon": "🤖",
+      "title": "Fonctionne avec toute IA",
+      "text": "Claude aujourd'hui, Cursor demain, ChatGPT la semaine prochaine. Les briques de Fonderie fonctionnent de la même façon quelle que soit l'IA que vous utilisez. Votre produit ne casse pas quand vous changez d'outil."
+    },
+    {
+      "icon": "⏰",
+      "title": "Parlez à vos clients, pas à déboguer l'auth",
+      "text": "Ce mois que vous auriez passé à corriger des bugs de connexion ? Passez-le à comprendre vos clients et à construire les fonctionnalités qu'ils veulent vraiment."
+    }
+  ]
 }

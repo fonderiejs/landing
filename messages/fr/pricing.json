@@ -1,14 +1,14 @@
 {
   "eyebrow": "Tarifs",
-  "title": "Démarrez gratuitement. Passez à l'échelle en livrant.",
-  "lede": "Cœur open source, auto-hébergé, aucune dépendance forcée. Passez à un niveau supérieur pour une licence de production, un support prioritaire, le SSO et la conformité.",
+  "title": "Démarrez gratuitement. Payez quand vous générez des revenus.",
+  "lede": "Gratuit pendant que vous construisez. Passez à un niveau supérieur seulement une fois que vous avez des clients payants.",
   "tiers": [
     {
-      "name": "Build",
+      "name": "Starter",
       "price": "Gratuit",
       "period": "",
-      "desc": "Pour les projets personnels",
-      "features": ["Tous les modules backend", "Auto-hébergé", "Support communautaire"],
+      "desc": "Pour construire votre produit",
+      "features": ["Toutes les briques", "Support communautaire"],
       "cta": "Commencer",
       "featured": false
     },
@@ -16,19 +16,19 @@
       "name": "Launch",
       "price": "49 $",
       "period": "/mois",
-      "desc": "Pour un SaaS avec des utilisateurs",
-      "featuresLead": "Tout ce qui est dans Build, plus",
-      "features": ["Licence de production", "Support prioritaire"],
+      "desc": "Pour un SaaS avec des clients payants",
+      "featuresLead": "Tout ce qui est dans Starter, plus",
+      "features": ["Support prioritaire", "Fonctionnalités prêtes pour la production"],
       "cta": "Commencer à livrer",
       "featured": false
     },
     {
-      "name": "Grow",
+      "name": "Scale",
       "price": "149 $",
       "period": "/mois",
       "desc": "Pour les équipes en croissance",
       "featuresLead": "Tout ce qui est dans Launch, plus",
-      "features": ["Fonctionnalités d'équipe", "Journaux d'audit", "Conformité avancée"],
+      "features": ["Collaboration d'équipe", "Sécurité avancée"],
       "cta": "Contacter les ventes",
       "featured": true
     },
@@ -37,8 +37,8 @@
       "price": "199 $",
       "period": "/mois",
       "desc": "Pour les équipes multiplateformes",
-      "featuresLead": "Tout ce qui est dans Grow, plus",
-      "features": ["Kits d'écrans frontend", "Connexion biométrique", "Structure de navigation", "Support multiplateforme"],
+      "featuresLead": "Tout ce qui est dans Scale, plus",
+      "features": ["Kits d'écrans frontend", "Connexion Face ID", "Structure de navigation", "Support multiplateforme"],
       "cta": "Contacter les ventes",
       "featured": false,
       "hidden": true
@@ -48,22 +48,22 @@
       "price": "Sur mesure",
       "period": "",
       "desc": "Pour les organisations",
-      "featuresLead": "Tout ce qui est dans Grow, plus",
-      "features": ["SSO / SAML", "SOC 2 / HIPAA", "Déploiement sur site", "Compte dédié"],
+      "featuresLead": "Tout ce qui est dans Scale, plus",
+      "features": ["SSO et SAML", "Support de conformité", "Déploiement sur votre propre infrastructure", "Compte dédié"],
       "cta": "Contacter les ventes",
       "featured": false
     }
   ],
-  "compareNote1": "À comparer avec l'embauche d'un ingénieur backend pendant 3 mois : 30–60 k$.",
-  "compareNote2": "49 $/mois, c'est moins cher qu'une journée de freelance. 199 $/mois pour backend + mobile, c'est moins cher qu'une semaine d'ingénieur.",
+  "compareNote1": "À comparer avec l'embauche d'un développeur pendant 3 mois : 30 000–60 000 $.",
+  "compareNote2": "49 $/mois, c'est moins cher qu'une journée de freelance.",
   "compareNote3": "Vous ne payez que lorsque votre SaaS commence à générer des revenus.",
   "finalCta": {
-    "title": "Arrêtez de reconstruire l'auth. Construisez votre produit.",
-    "lede": "Neuf semaines d'infrastructure, déjà écrite et déjà auditée.",
-    "getStarted": "Commencer sur GitHub",
+    "title": "Arrêtez de construire de l'infrastructure. Construisez votre produit.",
+    "lede": "Tout ce dont votre SaaS a besoin, déjà construit et prêt à livrer.",
+    "getStarted": "Commencer gratuitement",
     "star": "Mettre une étoile sur GitHub",
     "prompts": "Les prompts système pour Claude Code et Cursor sont fournis avec le repo —",
     "promptsLink": "récupérez-les sur GitHub →",
-    "tag": "Pour les agences, les fondateurs solo, les équipes et les vibe coders"
+    "tag": "Pour les fondateurs qui veulent livrer, pas configurer"
   }
 }

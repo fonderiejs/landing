@@ -1,9 +1,26 @@
 {
-  "eyebrow": "The difference",
-  "title": "Library, not service.",
-  "lede": "Every package runs inside your process, against your database. No Fonderie server is ever in your request path.",
-  "compare1": "You are Drizzle, not Supabase.",
-  "compare2": "You are Next.js, not Vercel.",
-  "footer": "Your data. Your process. Your database.",
-  "portability": "Use Claude today, Cursor tomorrow, ChatGPT next week. Fonderie's normalized API means your backend doesn't change — regardless of which AI you prompt."
+  "eyebrow": "Why founders choose Fonderie",
+  "title": "Why founders choose Fonderie",
+  "cards": [
+    {
+      "icon": "🔒",
+      "title": "Security that updates itself",
+      "text": "When vulnerabilities are discovered, one update patches every Fonderie app. No month-long security rewrite. No hiring a security consultant."
+    },
+    {
+      "icon": "💰",
+      "title": "Lower your AI bill",
+      "text": "Your AI doesn't waste your budget improvising a login flow from scratch every time. It uses Fonderie's building blocks instead. Same result, lower cost."
+    },
+    {
+      "icon": "🤖",
+      "title": "Works with any AI assistant",
+      "text": "Claude today. Cursor tomorrow. ChatGPT next week. Fonderie's building blocks work the same way regardless of which AI you use. Your product doesn't break when you switch tools."
+    },
+    {
+      "icon": "⏰",
+      "title": "Talk to customers, not debug auth",
+      "text": "That month you would have spent fixing login bugs? Spend it understanding your customers and building features they actually want."
+    }
+  ]
 }

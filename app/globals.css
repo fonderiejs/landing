@@ -833,7 +833,6 @@ a:hover {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 24px 22px;
-  font-family: var(--mono);
   box-shadow: 0 12px 32px -12px rgba(0, 0, 0, 0.08);
 }
 .problem__ledger-head {
@@ -1311,10 +1310,14 @@ a:hover {
   border-bottom: 1px solid var(--line);
 }
 .difference__inner {
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
   text-align: center;
   padding: clamp(48px, 6vw, 72px) 0;
+}
+.difference__inner .packages__grid {
+  text-align: left;
+  margin-top: 24px;
 }
 .difference__eyebrow {
   font-size: 12px;
@@ -1686,8 +1689,8 @@ a:hover {
 }
 .site-footer__col {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 10px 24px;
 }
 .site-footer__head {
   font-size: 10px;

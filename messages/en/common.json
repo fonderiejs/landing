@@ -2,38 +2,28 @@
   "siteTitle": "Fonderie",
   "meta": {
     "titleSuffix": "Ship your SaaS this week",
-    "description": "Auth, billing, workspaces, and permissions as npm packages. Backend modules and screen kits. MIT-licensed. Self-hosted."
+    "description": "Fonderie gives your AI assistant the building blocks for auth, billing, and team management — so you can ship your SaaS in a week, not a quarter."
   },
   "nav": {
-    "solution": "The solution",
-    "packages": "Packages",
+    "solution": "How it works",
+    "packages": "Features",
     "pricing": "Pricing",
     "github": "GitHub",
     "contact": "Contact"
   },
   "cta": {
-    "getStarted": "npm install @fonderie/core →",
-    "viewOnGitHub": "View on GitHub",
+    "getStarted": "Start building for free",
+    "howItWorks": "See how it works",
     "startShipping": "Start shipping",
     "contactSales": "Contact sales"
   },
   "footer": {
-    "tagline": "The standard library for SaaS infrastructure.",
-    "product": "Product",
+    "tagline": "Built for founders who ship.",
     "github": "GitHub",
-    "docs": "Docs",
-    "registry": "Registry",
-    "roadmap": "Roadmap",
-    "community": "Community",
-    "discord": "Discord",
+    "docs": "Documentation",
     "twitter": "X",
-    "youtube": "YouTube",
-    "company": "Company",
-    "about": "About",
-    "blog": "Blog",
-    "careers": "Careers",
-    "contact": "Contact",
-    "copyright": "Fonderie, Inc. · © 2026 · MIT License"
+    "discord": "Discord",
+    "copyright": "Fonderie, Inc. · © 2026"
   },
   "theme": {
     "label": "Theme",

@@ -1,35 +1,14 @@
 {
-  "eyebrow": "Die Pakete",
-  "title": "Echte Pakete, in der echten Registry.",
-  "lede": "Echte Pakete auf npm. Schau dir den Code an — mit Adaptern für Express, Hono und Koa, damit du Fonderie in eine bestehende App einbinden kannst.",
-  "categories": {
-    "backend": "Backend-Intelligenz",
-    "mobile": "Screen-Kits",
-    "adapters": "Web-Adapter"
-  },
+  "eyebrow": "Was du bekommst",
+  "title": "Alles, was dein SaaS braucht.",
+  "lede": "Echte, funktionierende Features — keine Vorlagen. Deine KI verbindet sie automatisch mit deinem Produkt.",
   "items": [
-    { "name": "@fonderie/auth", "desc": "Fertige Auth für SaaS" },
-    { "name": "@fonderie/billing", "desc": "Abos, Sitzplätze, Nutzung und Webhooks" },
-    { "name": "@fonderie/workspaces", "desc": "Teams, Organisationen, Einladungen und Multi-Tenancy" },
-    { "name": "@fonderie/permissions", "desc": "Rollenbasierte Zugriffskontrolle" },
-    { "name": "@fonderie/courier", "desc": "Versand von E-Mail, SMS und Push-Benachrichtigungen" }
+    { "title": "Nutzerkonten", "text": "Login, Registrierung, Passwort-Reset, Social Login und Face ID. Deine Nutzer kommen rein. Du musst es nicht bauen." },
+    { "title": "Zahlungen", "text": "Stripe-Integration, Abo-Pläne, Abrechnung pro Sitzplatz und Rechnungsverwaltung. Du wirst bezahlt. Du musst es nicht verdrahten." },
+    { "title": "Teams und Berechtigungen", "text": "Kollegen einladen, Rollen vergeben, steuern, wer was sieht. Deine Kunden verwalten ihre eigenen Teams. Du musst es nicht programmieren." },
+    { "title": "Benachrichtigungen", "text": "E-Mail, SMS und Push-Benachrichtigungen. Deine Nutzer bleiben informiert. Du musst es nicht konfigurieren." },
+    { "title": "Sicherheit und Compliance", "text": "Audit-Logs, Rate-Limiting und SOC-2-Bereitschaft. Deine App bleibt sicher. Du musst dich nicht darum kümmern." }
   ],
-  "mobileItems": [
-    { "name": "@fonderie/screens/auth", "desc": "Login, Registrierung, MFA, Biometrie" },
-    { "name": "@fonderie/screens/billing", "desc": "Plan-Auswahl, Checkout, Rechnungen" },
-    { "name": "@fonderie/screens/workspace", "desc": "Team-Einladung, Workspace-Wechsel" },
-    { "name": "@fonderie/screens/navigation", "desc": "Navigationsstruktur, Einstellungen" }
-  ],
-  "adapterItems": [
-    { "name": "@fonderie/adapter-express", "desc": "Express-Integration" },
-    { "name": "@fonderie/adapter-hono", "desc": "Hono-Integration" },
-    { "name": "@fonderie/adapter-koa", "desc": "Koa-Integration" }
-  ],
-  "moreCard": {
-    "kicker": "Der Rest der Registry",
-    "title": "+8 weitere →",
-    "desc": "core, store, audit, events, rate-limit, config, logger, webhooks"
-  },
-  "footnote": "Alle MIT-lizenziert.",
-  "footnoteLink": "Vollständige Registry auf GitHub ansehen →"
+  "footnote": "Willst du die technischen Details?",
+  "footnoteLink": "Sieh dir den Code auf GitHub an →"
 }

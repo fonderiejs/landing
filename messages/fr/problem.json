@@ -1,39 +1,18 @@
 {
   "eyebrow": "Le problème",
-  "title": "Chaque SaaS commence par les neuf mêmes semaines.",
-  "lede": "L'IA ne supprime pas ce travail — elle l'improvise. Même auth inventée, mêmes fuites entre tenants, mêmes cas limites de facturation, livrés en un après-midi au lieu de deux mois.",
-  "ledeStrong": "Plus rapide n'est pas la même chose que résolu.",
-  "compareBefore": "Embaucher un ingénieur backend pendant 3 mois :",
-  "comparePriceStrike": "30–60 k$",
-  "compareAfter": "Démarrer avec Fonderie :",
-  "compareFree": "gratuit et open source.",
-  "ledgerHeading": "Backend — avant d'écrire une seule ligne de produit",
-  "ledgerDuration": "~9 semaines",
-  "timeline": [
-    { "week": "Semaine 1–2", "label": "Mise en place de l'auth" },
-    { "week": "Semaine 3", "label": "Modèle équipe / organisation" },
-    { "week": "Semaine 4", "label": "Intégration Stripe" },
-    { "week": "Semaine 5", "label": "Système d'e-mails" },
-    { "week": "Semaine 6", "label": "Permissions" },
-    { "week": "Semaine 7", "label": "Multi-tenant" },
-    { "week": "Semaine 8", "label": "Configuration à distance" },
-    { "week": "Semaine 9", "label": "Enfin écrire le produit" }
+  "title": "Chaque SaaS reconstruit les 5 mêmes choses.",
+  "lede": "Avant d'écrire la moindre ligne de votre produit, vous avez besoin de :",
+  "items": [
+    { "title": "Connexion et inscription", "text": "Pour que les utilisateurs accèdent à votre app." },
+    { "title": "Facturation et abonnements", "text": "Pour que vous soyez payé." },
+    { "title": "Invitations et permissions d'équipe", "text": "Pour que vos clients invitent leurs collègues." },
+    { "title": "Notifications par e-mail", "text": "Pour que les utilisateurs soient informés." },
+    { "title": "Sécurité et conformité", "text": "Pour ne pas vous faire pirater." }
   ],
-  "mobileLedgerHeading": "Mobile — avant d'écrire une seule ligne de produit",
-  "mobileLedgerDuration": "~5 semaines",
-  "mobileTimeline": [
-    { "week": "Semaine 1", "label": "Écran de connexion + flux d'auth" },
-    { "week": "Semaine 2", "label": "UI de facturation + paiement" },
-    { "week": "Semaine 3", "label": "Invitation d'équipe + changement d'espace" },
-    { "week": "Semaine 4", "label": "Navigation + réglages" },
-    { "week": "Semaine 5", "label": "Enfin écrire le produit" }
-  ],
-  "byHandTitle": "À la main — ~9 semaines.",
-  "byHandText": "Deux mois de code que le monde a déjà écrit, en relivrant les mêmes failles de sécurité.",
-  "withAiTitle": "Avec l'IA — ~1 après-midi.",
-  "withAiText": "Même infrastructure improvisée, mêmes failles. Le délai se réduit ; le problème reste.",
-  "mobileCompare": "Embaucher un ingénieur backend : 30–60 k$. Reconstruire les mêmes écrans mobiles pour votre 3ᵉ client : une frustration sans prix. Démarrer avec Fonderie : gratuit et open source.",
-  "customApiLine": "Produit sur mesure = API sur mesure = aucun support quand vous passez à l'échelle.",
-  "tokenBurnLine": "Et quand votre IA improvise un flux de connexion, vous consommez 3 000 tokens à le déboguer. À. Chaque. Session.",
-  "opportunityCostLine": "Ce sont 9 semaines où vous ne parlez pas à vos clients. 9 semaines où vous ne livrez pas de fonctionnalités. 9 semaines de runway brûlées sur du code que le monde a déjà écrit."
+  "byHandTitle": "À la main",
+  "byHandText": "2 à 3 mois et 30 000 à 60 000 $ pour embaucher un développeur.",
+  "withAiTitle": "Avec l'IA seule",
+  "withAiText": "Votre assistant improvise tout depuis zéro à chaque session — flux de connexion différents, logique de facturation différente, bugs différents. Il gaspille des heures (et votre budget IA) à déboguer les mêmes problèmes encore et encore.",
+  "withFonderieTitle": "Avec Fonderie",
+  "withFonderieText": "Votre IA utilise des briques éprouvées et testées. Même flux de connexion à chaque fois. Même logique de facturation. Même sécurité. Vous livrez en une semaine et passez votre temps à parler à vos clients."
 }
