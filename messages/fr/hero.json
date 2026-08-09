@@ -3,7 +3,7 @@
   "titleLine1": "Lancez votre SaaS cette semaine,",
   "titleLine2": "pas le trimestre prochain.",
   "lede": "Auth, facturation, espaces de travail et permissions — sous forme de packages npm.",
-  "ledeStrong": "L'IA construit votre backend et votre frontend. Vous livrez votre produit.",
+  "ledeStrong": "Fonderie donne à votre assistant IA un vocabulaire pour construire du SaaS — pour qu'il compose une infrastructure éprouvée au lieu de tout improviser depuis zéro. Vous consommez moins de tokens, livrez plus vite, et ne reconstruisez plus jamais l'auth.",
   "command": "npx @fonderie/create my-saas",
   "copy": "Copier",
   "copied": "Copié !",

@@ -9,6 +9,7 @@
     "quote": "We rebuilt our auth system 3 times before finding Fonderie. Shipped our mobile app in 4 days instead of 4 weeks.",
     "attribution": "— Magus Dacar, CEO at CrewFinding Inc."
   },
+  "securityUpdateLine": "Security patches ship via npm update. No migration. No downtime. No month-long auth rewrite.",
   "metric": "200+ production apps · 8,000+ weekly npm downloads · 2,000+ GitHub stars",
   "footnote": "Results from a reproducible A/B security experiment.",
   "footnoteLink": "See the methodology →"

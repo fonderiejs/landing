@@ -1,7 +1,7 @@
 {
   "eyebrow": "Pricing",
   "title": "Start free. Scale when you ship.",
-  "lede": "Open-source core, self-hosted, zero lock-in. Upgrade when you need managed deployment, SSO, and compliance.",
+  "lede": "Open-source core, self-hosted, zero lock-in. Upgrade when you need a production license, priority support, SSO, and compliance.",
   "tiers": [
     {
       "name": "Build",

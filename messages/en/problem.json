@@ -33,5 +33,7 @@
   "withAiTitle": "With AI — ~1 afternoon.",
   "withAiText": "Same improvised infrastructure, same flaws. The timeline collapses; the problem doesn't.",
   "mobileCompare": "Hiring a backend engineer: $30–60k. Rebuilding the same mobile screens for your 3rd client: priceless frustration. Starting with Fonderie: free and open source.",
-  "customApiLine": "Custom product = custom API = no support when you scale."
+  "customApiLine": "Custom product = custom API = no support when you scale.",
+  "tokenBurnLine": "And when your AI improvises a login flow, you burn 3,000 tokens debugging it. Every. Session.",
+  "opportunityCostLine": "That's 9 weeks you're not talking to customers. 9 weeks you're not shipping features. 9 weeks of runway burned on code the world already wrote."
 }

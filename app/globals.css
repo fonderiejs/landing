@@ -1686,13 +1686,8 @@ a:hover {
 }
 .site-footer__col {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px 24px;
-}
-.site-footer__yc {
-  font-size: 12px;
-  color: var(--muted);
-  margin: 0;
+  flex-direction: column;
+  gap: 10px;
 }
 .site-footer__head {
   font-size: 10px;

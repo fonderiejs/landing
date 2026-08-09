@@ -1,7 +1,7 @@
 {
   "eyebrow": "Le changement",
   "title": "L'IA n'a pas besoin de plus de vitesse. Elle a besoin d'un standard.",
-  "lede": "L'IA brute génère tout depuis zéro à chaque fois. Fonderie lui donne un vocabulaire partagé et audité — elle compose, au lieu d'halluciner.",
+  "lede": "L'IA brute génère tout depuis zéro à chaque fois — en consommant des tokens, en introduisant des bugs, et en livrant un schéma d'auth différent à chaque session. Fonderie lui donne un vocabulaire partagé et audité — elle compose, au lieu d'halluciner. Même résultat. Moins de tokens. Zéro dérive de sécurité.",
   "features": [
     {
       "num": "01",

@@ -3,7 +3,7 @@
   "titleLine1": "Ship your SaaS this week,",
   "titleLine2": "not next quarter.",
   "lede": "Auth, billing, workspaces, and permissions — as npm packages.",
-  "ledeStrong": "AI builds your backend and frontend. You ship your product.",
+  "ledeStrong": "Fonderie gives your AI assistant a vocabulary for building SaaS — so it composes proven infrastructure instead of improvising from scratch. You burn fewer tokens, ship faster, and never rebuild auth again.",
   "command": "npx @fonderie/create my-saas",
   "copy": "Copy",
   "copied": "Copied!",

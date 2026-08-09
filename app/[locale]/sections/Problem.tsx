@@ -29,6 +29,12 @@ export default function Problem() {
           <p className="problem__compare" data-reveal="">
             <b className="problem__free">{t('customApiLine')}</b>
           </p>
+          <p className="problem__compare" data-reveal="">
+            {t('tokenBurnLine')}
+          </p>
+          <p className="problem__compare" data-reveal="">
+            {t('opportunityCostLine')}
+          </p>
         </div>
         <div className="problem__ledger" data-reveal="">
           <p className="problem__ledger-head">

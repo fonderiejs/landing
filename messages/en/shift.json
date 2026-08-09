@@ -1,7 +1,7 @@
 {
   "eyebrow": "The shift",
   "title": "AI doesn't need more speed. It needs a standard.",
-  "lede": "Raw AI generates from scratch every time. Fonderie gives it a shared, audited vocabulary — so it composes, not hallucinates.",
+  "lede": "Raw AI generates from scratch every time — burning tokens, introducing bugs, and shipping different auth patterns every session. Fonderie gives it a shared, audited vocabulary — so it composes, not hallucinates. Same result. Fewer tokens. Zero security drift.",
   "features": [
     {
       "num": "01",

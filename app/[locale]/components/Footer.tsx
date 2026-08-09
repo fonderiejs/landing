@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import { Link } from '@/lib/navigation';
 import LocaleSwitcher from './LocaleSwitcher';
 import ThemeSwitcher from './ThemeSwitcher';
 
@@ -11,6 +12,7 @@ export default function Footer() {
         <p className="site-footer__tagline">{t('footer.tagline')}</p>
         <div className="site-footer__grid">
           <div className="site-footer__col">
+            <p className="site-footer__head">{t('footer.product')}</p>
             <a href="https://github.com/fonderiejs/fonderie" className="site-footer__link">
               {t('footer.github')}
             </a>
@@ -20,12 +22,36 @@ export default function Footer() {
             <a href="https://www.npmjs.com/org/fonderie" className="site-footer__link">
               {t('footer.registry')}
             </a>
-            <a href="https://x.com/fonderiejs" className="site-footer__link">
-              {t('footer.twitter')}
+            <a href="https://github.com/orgs/fonderiejs/projects" className="site-footer__link">
+              {t('footer.roadmap')}
             </a>
+          </div>
+          <div className="site-footer__col">
+            <p className="site-footer__head">{t('footer.community')}</p>
             <a href="https://discord.gg/EcZnGfdBhj" className="site-footer__link">
               {t('footer.discord')}
             </a>
+            <a href="https://x.com/fonderiejs" className="site-footer__link">
+              {t('footer.twitter')}
+            </a>
+            <a href="#" className="site-footer__link">
+              {t('footer.youtube')}
+            </a>
+          </div>
+          <div className="site-footer__col">
+            <p className="site-footer__head">{t('footer.company')}</p>
+            <a href="#" className="site-footer__link">
+              {t('footer.about')}
+            </a>
+            <a href="#" className="site-footer__link">
+              {t('footer.blog')}
+            </a>
+            <a href="#" className="site-footer__link">
+              {t('footer.careers')}
+            </a>
+            <Link href="/contact" className="site-footer__link">
+              {t('footer.contact')}
+            </Link>
           </div>
         </div>
         <div className="site-footer__bottom">

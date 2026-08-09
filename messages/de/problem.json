@@ -33,5 +33,7 @@
   "withAiTitle": "Mit KI — ~1 Nachmittag.",
   "withAiText": "Dieselbe improvisierte Infrastruktur, dieselben Schwachstellen. Die Zeitspanne schrumpft; das Problem bleibt.",
   "mobileCompare": "Einen Backend-Entwickler einstellen: 30–60k $. Dieselben Mobile-Screens für den 3. Kunden neu bauen: unbezahlbarer Frust. Mit Fonderie starten: kostenlos und Open Source.",
-  "customApiLine": "Individuelles Produkt = individuelle API = kein Support, wenn du skalierst."
+  "customApiLine": "Individuelles Produkt = individuelle API = kein Support, wenn du skalierst.",
+  "tokenBurnLine": "Und wenn deine KI einen Login-Flow improvisiert, verbrauchst du 3.000 Tokens beim Debuggen. Jede. Einzelne. Session.",
+  "opportunityCostLine": "Das sind 9 Wochen, in denen du nicht mit Kunden sprichst. 9 Wochen, in denen du keine Features shippst. 9 Wochen Runway, verbrannt für Code, den die Welt schon geschrieben hat."
 }

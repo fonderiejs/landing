@@ -1,7 +1,7 @@
 {
   "eyebrow": "Preços",
   "title": "Comece grátis. Escale quando lançar.",
-  "lede": "Núcleo open source, self-hosted, sem lock-in. Faça upgrade quando precisar de deployment gerenciado, SSO e compliance.",
+  "lede": "Núcleo open source, self-hosted, sem lock-in. Faça upgrade quando precisar de licença de produção, suporte prioritário, SSO e compliance.",
   "tiers": [
     {
       "name": "Build",

@@ -3,7 +3,7 @@
   "titleLine1": "Bring dein SaaS diese Woche live,",
   "titleLine2": "nicht nächstes Quartal.",
   "lede": "Auth, Billing, Workspaces und Berechtigungen — als npm-Pakete.",
-  "ledeStrong": "KI baut dein Backend und Frontend. Du shippst dein Produkt.",
+  "ledeStrong": "Fonderie gibt deinem KI-Assistenten ein Vokabular für den Bau von SaaS — damit er bewährte Infrastruktur komponiert, statt sie von Grund auf zu improvisieren. Du verbrauchst weniger Tokens, shippst schneller und baust Auth nie wieder neu.",
   "command": "npx @fonderie/create my-saas",
   "copy": "Kopieren",
   "copied": "Kopiert!",

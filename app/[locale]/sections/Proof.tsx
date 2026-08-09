@@ -23,6 +23,9 @@ export default function Proof() {
         <p>&ldquo;{t('testimonial.quote')}&rdquo;</p>
         <cite>{t('testimonial.attribution')}</cite>
       </blockquote>
+      <p className="proof__sub" data-reveal="">
+        {t('securityUpdateLine')}
+      </p>
       {/* Hidden for now
       <p className="proof__metric" data-reveal="">
         {t('metric')}
