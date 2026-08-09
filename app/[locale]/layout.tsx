@@ -86,7 +86,7 @@ const jsonLd = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Any',
       description:
-        'Fonderie is the standard library for the SaaS backend — the auth, billing, teams, permissions, and multi-tenancy that every SaaS rebuilds before writing product code. It’s a skill wired into your repo, running in your process, against your database. You own the source (MIT), self-host it, and swap any provider. Free and open source — managed hosting is on the roadmap.',
+        'Ship your SaaS in a week. Fonderie gives AI assistants the building blocks for auth, billing, and team management — so founders focus on their product, not infrastructure.',
       downloadUrl: 'https://github.com/fonderiejs/fonderie',
       isAccessibleForFree: true,
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
@@ -101,23 +101,23 @@ const jsonLd = {
           name: 'Is Fonderie a service? Do you host my data?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'No. Fonderie is a skill wired into your project — not a hosted service. The skill files live in your repo; your AI reads them as project context, your server runs the generated code. No Fonderie server is ever in your request path, and we never host your data.',
+            text: 'No. Fonderie is not a hosted service — your data stays on your own servers. Your AI assistant uses Fonderie as a set of building blocks when it builds your product, and everything runs on your own infrastructure.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Can I swap Stripe for another provider?',
+          name: 'Can I swap Stripe for another payment provider?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes. The modules define the standard shape — subscriptions, seats, webhooks — and providers plug in behind it. Start on Stripe, move to Paddle, LemonSqueezy, or your own processor without rewriting your product code. The integration is the product; the provider is a detail.',
+            text: 'Yes. Payments, subscriptions, and invoices work the same way no matter which provider is behind them. Start on Stripe, move to another processor later, and your product keeps working without a rewrite.',
           },
         },
         {
           '@type': 'Question',
-          name: 'Is Fonderie only for new projects?',
+          name: 'Is Fonderie only for new products?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'It’s best on greenfield SaaS, where you skip two to three months of infrastructure. You can also adopt a single module — say billing or workspaces — in an existing codebase, because each module is plain TypeScript you own and register yourself.',
+            text: 'It works best when you\'re starting a new SaaS, where it saves you two to three months of work. You can also add a single piece — like billing or team management — to a product you\'ve already started.',
           },
         },
         {
@@ -125,7 +125,7 @@ const jsonLd = {
           name: 'How much does Fonderie cost?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Fonderie is free and open source under the MIT license. Every module is self-hosted on your own infrastructure with no usage limits and no vendor lock-in. Compare it to hiring a backend engineer for three months ($30–60k). Managed hosting and commercial support are on the roadmap.',
+            text: 'Free to start, with no usage limits and no vendor lock-in. Compare that to hiring a developer for three months ($30,000–$60,000). Paid plans add priority support, team features, and enterprise options as you grow.',
           },
         },
       ],
