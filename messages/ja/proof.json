@@ -1,15 +1,15 @@
 {
-  "eyebrow": "The proof",
+  "eyebrow": "実績",
   "stats": [
-    { "value": "0", "label": "Security vulnerabilities", "sub": "Audited by default" },
-    { "value": "0", "label": "Backend ready", "sub": "Instead of 9 weeks" },
-    { "value": "0", "label": "Platform lock-in", "sub": "Same code, any platform" }
+    { "value": "0", "label": "セキュリティ脆弱性", "sub": "デフォルトで監査済み" },
+    { "value": "0", "label": "バックエンドの準備", "sub": "9週間ではなく" },
+    { "value": "0", "label": "プラットフォームロックイン", "sub": "同じコードでどのプラットフォームにも" }
   ],
   "testimonial": {
-    "quote": "We rebuilt our auth system 3 times before finding Fonderie. Shipped our React Native app in 4 days instead of 4 weeks.",
-    "attribution": "— Magus Dacar, CEO at Crewfinding Inc."
+    "quote": "Fonderieに出会うまで、認証システムを3回も作り直しました。React Nativeアプリを4週間ではなく4日でリリースできました。",
+    "attribution": "— Magus Dacar、Crewfinding Inc. CEO"
   },
-  "metric": "200+ production apps · 8,000+ weekly npm downloads · 2,000+ GitHub stars",
-  "footnote": "Results from a reproducible A/B security experiment.",
-  "footnoteLink": "See the protocol →"
+  "metric": "本番稼働アプリ200以上 · 週間npmダウンロード8,000以上 · GitHubスター2,000以上",
+  "footnote": "再現可能なA/Bセキュリティ実験の結果です。",
+  "footnoteLink": "検証プロトコルを見る →"
 }

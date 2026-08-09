@@ -1,46 +1,46 @@
 {
   "siteTitle": "Fonderie",
   "meta": {
-    "titleSuffix": "Ship your SaaS this week",
-    "description": "Auth, billing, workspaces, and permissions as npm packages. Backend modules and React Native screen kits. MIT-licensed. Self-hosted."
+    "titleSuffix": "Lance seu SaaS nesta semana",
+    "description": "Autenticação, cobrança, workspaces e permissões como pacotes npm. Módulos de backend e kits de telas React Native. Licença MIT. Self-hosted."
   },
   "nav": {
-    "solution": "The solution",
-    "packages": "Packages",
-    "pricing": "Pricing",
+    "solution": "A solução",
+    "packages": "Pacotes",
+    "pricing": "Preços",
     "github": "GitHub",
-    "contact": "Contact"
+    "contact": "Contato"
   },
   "cta": {
     "getStarted": "npm install @fonderie/core",
-    "viewOnGitHub": "View on GitHub",
-    "startShipping": "Start shipping",
-    "contactSales": "Contact sales"
+    "viewOnGitHub": "Ver no GitHub",
+    "startShipping": "Começar a lançar",
+    "contactSales": "Falar com vendas"
   },
   "footer": {
-    "product": "Product",
+    "product": "Produto",
     "github": "GitHub",
     "docs": "Docs",
-    "registry": "Registry",
+    "registry": "Registro",
     "roadmap": "Roadmap",
-    "community": "Community",
+    "community": "Comunidade",
     "discord": "Discord",
     "twitter": "X",
     "youtube": "YouTube",
-    "company": "Company",
-    "about": "About",
+    "company": "Empresa",
+    "about": "Sobre",
     "blog": "Blog",
-    "careers": "Careers",
-    "contact": "Contact",
-    "copyright": "Fonderie, Inc. · © 2026 · MIT License · YC W26"
+    "careers": "Carreiras",
+    "contact": "Contato",
+    "copyright": "Fonderie, Inc. · © 2026 · Licença MIT · YC W26"
   },
   "theme": {
-    "label": "Theme",
-    "system": "System",
-    "light": "Light",
-    "dark": "Dark"
+    "label": "Tema",
+    "system": "Sistema",
+    "light": "Claro",
+    "dark": "Escuro"
   },
   "localeSwitcher": {
-    "label": "Language"
+    "label": "Idioma"
   }
 }

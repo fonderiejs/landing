@@ -1,19 +1,19 @@
 {
-  "eyebrow": "Open source",
-  "titleLine1": "Ship your SaaS this week,",
-  "titleLine2": "not next quarter.",
-  "lede": "Auth, billing, workspaces, and permissions — as npm packages.",
-  "ledeStrong": "Backend modules and React Native screen kits. Install. Configure. Ship.",
+  "eyebrow": "Open Source",
+  "titleLine1": "Bring dein SaaS diese Woche live,",
+  "titleLine2": "nicht nächstes Quartal.",
+  "lede": "Auth, Billing, Workspaces und Berechtigungen — als npm-Pakete.",
+  "ledeStrong": "Backend-Module und React-Native-Screen-Kits. Installieren. Konfigurieren. Shippen.",
   "command": "npx @fonderie/create my-saas",
-  "copy": "Copy",
-  "copied": "Copied!",
-  "proof": "MIT-licensed · Open source · Runs in your process",
-  "worksWith": "Works with",
+  "copy": "Kopieren",
+  "copied": "Kopiert!",
+  "proof": "MIT-lizenziert · Open Source · Läuft in deinem Prozess",
+  "worksWith": "Funktioniert mit",
   "assistants": {
     "claudeCode": "Claude Code",
     "cursor": "Cursor",
     "codex": "Codex",
     "windsurf": "Windsurf",
-    "any": "Any code-reading AI"
+    "any": "Jede code-lesende KI"
   }
 }

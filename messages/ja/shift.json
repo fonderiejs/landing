@@ -1,32 +1,32 @@
 {
-  "eyebrow": "The shift",
-  "title": "AI doesn't need more speed. It needs a standard.",
-  "lede": "Raw AI generates from scratch every time. Fonderie gives it a shared, audited vocabulary — so it composes, not hallucinates.",
+  "eyebrow": "発想の転換",
+  "title": "AIに必要なのはスピードではなく、標準です。",
+  "lede": "生のAIは毎回ゼロから生成します。Fonderieは共有され監査済みの語彙をAIに与えることで、幻覚を見るのではなく組み合わせられるようにします。",
   "features": [
     {
       "num": "01",
-      "title": "Backend intelligence",
-      "text": "Auth, billing, permissions, workspaces — each a typed, tested state machine. Not a template; a building block that runs in your process, against your database."
+      "title": "バックエンドインテリジェンス",
+      "text": "認証、課金、権限管理、ワークスペース — それぞれが型付けされテスト済みのステートマシンです。テンプレートではなく、あなたのプロセス内であなたのデータベースに対して動作する構成要素です。"
     },
     {
       "num": "02",
-      "title": "React Native screen kits",
-      "text": "LoginScreen, BillingScreen, TeamInviteScreen — functional screen kits that import backend hooks directly. Handle edge cases AI usually misses: biometric fallback, validation error states, accessibility labels."
+      "title": "React Nativeスクリーンキット",
+      "text": "LoginScreen、BillingScreen、TeamInviteScreen — バックエンドのフックを直接インポートする実用的な画面キット。生体認証のフォールバック、バリデーションエラー表示、アクセシビリティラベルなど、AIが見落としがちなエッジケースにも対応。"
     },
     {
       "num": "03",
-      "title": "AI-readable skills",
-      "text": "Skill files in your repo spell out how backend modules and frontend screens wire together. No prompt engineering. No drift between sessions."
+      "title": "AIが読めるスキル",
+      "text": "リポジトリ内のスキルファイルが、バックエンドモジュールとフロントエンド画面の結線方法を明記しています。プロンプトエンジニアリング不要。セッション間のずれもありません。"
     },
     {
       "num": "04",
-      "title": "Community registry",
-      "text": "A registry of screens built by the community. Grab a shadcn login, a React Native billing portal, or build your own. The intelligence is shared; the UI is yours."
+      "title": "コミュニティレジストリ",
+      "text": "コミュニティが作った画面のレジストリ。shadcnのログイン画面やReact Nativeの課金ポータルを取り込むか、自分で作りましょう。インテリジェンスは共有され、UIはあなたのものです。"
     }
   ],
-  "codeLabel": "The vocabulary your AI reads",
-  "codeFooter": "Every module exposes the same contract, so composition is a lookup — not a guess.",
-  "codeComment": "// one shape, every session",
-  "codeMobileComment": "// React Native — same vocabulary, different platform",
+  "codeLabel": "あなたのAIが読む語彙",
+  "codeFooter": "すべてのモジュールが同じ契約を公開しているため、組み合わせは推測ではなく参照で済みます。",
+  "codeComment": "// 一つの形、すべてのセッションで",
+  "codeMobileComment": "// React Native — 同じ語彙、異なるプラットフォーム",
   "codeMobileImport": "import { LoginScreen } from '@fonderie/mobile/auth-screens'"
 }

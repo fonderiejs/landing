@@ -1,32 +1,32 @@
 {
-  "eyebrow": "The shift",
-  "title": "AI doesn't need more speed. It needs a standard.",
-  "lede": "Raw AI generates from scratch every time. Fonderie gives it a shared, audited vocabulary — so it composes, not hallucinates.",
+  "eyebrow": "Le changement",
+  "title": "L'IA n'a pas besoin de plus de vitesse. Elle a besoin d'un standard.",
+  "lede": "L'IA brute génère tout depuis zéro à chaque fois. Fonderie lui donne un vocabulaire partagé et audité — elle compose, au lieu d'halluciner.",
   "features": [
     {
       "num": "01",
-      "title": "Backend intelligence",
-      "text": "Auth, billing, permissions, workspaces — each a typed, tested state machine. Not a template; a building block that runs in your process, against your database."
+      "title": "Intelligence backend",
+      "text": "Auth, facturation, permissions, espaces de travail — chacun une machine à états typée et testée. Pas un template ; un bloc qui s'exécute dans votre processus, contre votre base de données."
     },
     {
       "num": "02",
-      "title": "React Native screen kits",
-      "text": "LoginScreen, BillingScreen, TeamInviteScreen — functional screen kits that import backend hooks directly. Handle edge cases AI usually misses: biometric fallback, validation error states, accessibility labels."
+      "title": "Kits d'écrans React Native",
+      "text": "LoginScreen, BillingScreen, TeamInviteScreen — des kits d'écrans fonctionnels qui importent directement les hooks backend. Ils gèrent les cas limites que l'IA rate souvent : repli biométrique, états d'erreur de validation, libellés d'accessibilité."
     },
     {
       "num": "03",
-      "title": "AI-readable skills",
-      "text": "Skill files in your repo spell out how backend modules and frontend screens wire together. No prompt engineering. No drift between sessions."
+      "title": "Skills lisibles par l'IA",
+      "text": "Des fichiers de skills dans votre repo expliquent comment les modules backend et les écrans frontend s'assemblent. Pas de prompt engineering. Pas de dérive entre les sessions."
     },
     {
       "num": "04",
-      "title": "Community registry",
-      "text": "A registry of screens built by the community. Grab a shadcn login, a React Native billing portal, or build your own. The intelligence is shared; the UI is yours."
+      "title": "Registre communautaire",
+      "text": "Un registre d'écrans construits par la communauté. Prenez un login shadcn, un portail de facturation React Native, ou construisez le vôtre. L'intelligence est partagée ; l'UI est la vôtre."
     }
   ],
-  "codeLabel": "The vocabulary your AI reads",
-  "codeFooter": "Every module exposes the same contract, so composition is a lookup — not a guess.",
-  "codeComment": "// one shape, every session",
-  "codeMobileComment": "// React Native — same vocabulary, different platform",
+  "codeLabel": "Le vocabulaire que votre IA lit",
+  "codeFooter": "Chaque module expose le même contrat, la composition devient une recherche — pas un pari.",
+  "codeComment": "// une seule forme, à chaque session",
+  "codeMobileComment": "// React Native — même vocabulaire, autre plateforme",
   "codeMobileImport": "import { LoginScreen } from '@fonderie/mobile/auth-screens'"
 }
