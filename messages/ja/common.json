@@ -12,27 +12,20 @@
     "contact": "お問い合わせ"
   },
   "cta": {
-    "getStarted": "npm install @fonderie/core",
+    "getStarted": "npm install @fonderie/core →",
     "viewOnGitHub": "GitHubで見る",
     "startShipping": "リリースを始める",
     "contactSales": "営業に問い合わせる"
   },
   "footer": {
-    "product": "プロダクト",
+    "tagline": "SaaSインフラのための標準ライブラリ。",
     "github": "GitHub",
     "docs": "ドキュメント",
     "registry": "レジストリ",
-    "roadmap": "ロードマップ",
-    "community": "コミュニティ",
-    "discord": "Discord",
     "twitter": "X",
-    "youtube": "YouTube",
-    "company": "会社情報",
-    "about": "会社概要",
-    "blog": "ブログ",
-    "careers": "採用情報",
-    "contact": "お問い合わせ",
-    "copyright": "Fonderie, Inc. · © 2026 · MITライセンス · YC W26"
+    "discord": "Discord",
+    "copyright": "Fonderie, Inc. · © 2026 · MITライセンス",
+    "yc": "Backed by Y Combinator · YC W26"
   },
   "theme": {
     "label": "テーマ",

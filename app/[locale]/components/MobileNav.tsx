@@ -57,12 +57,6 @@ export default function MobileNav({ links }: { links: { href: string; label: str
             className="btn btn--dark mobile-menu__cta"
           >
             {t('cta.getStarted')}
-            <span className="btn__chip">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round" width={14} height={14}>
-                <path d="M7 17 17 7" />
-                <path d="M8 7h9v9" />
-              </svg>
-            </span>
           </a>
         </div>
       </div>

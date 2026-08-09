@@ -34,12 +34,6 @@ export default function Navbar() {
           className="btn btn--dark-sm"
         >
           {t('cta.getStarted')}
-          <span className="btn__chip btn__chip--sm">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round" width={12} height={12}>
-              <path d="M7 17 17 7" />
-              <path d="M8 7h9v9" />
-            </svg>
-          </span>
         </a>
 
         <MobileNav links={links} />
