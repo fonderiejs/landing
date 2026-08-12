@@ -36,9 +36,9 @@
       "name": "Mobile",
       "price": "$199",
       "period": "/月",
-      "desc": "React Native 界面套件",
+      "desc": "移动端界面套件",
       "featuresLead": "包含 Grow 的全部功能，另加",
-      "features": ["React Native 认证界面", "React Native 计费界面", "React Native 工作区界面", "导航外壳"],
+      "features": ["移动端认证界面", "移动端计费界面", "移动端工作区界面", "导航外壳"],
       "cta": "联系销售 — $199",
       "featured": false,
       "hidden": false

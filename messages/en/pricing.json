@@ -36,9 +36,9 @@
       "name": "Mobile",
       "price": "$199",
       "period": "/mo",
-      "desc": "React Native screen kits",
+      "desc": "Mobile screen kits",
       "featuresLead": "Everything in Grow, plus",
-      "features": ["React Native auth screens", "React Native billing screens", "React Native workspace screens", "Navigation shell"],
+      "features": ["Mobile auth screens", "Mobile billing screens", "Mobile workspace screens", "Navigation shell"],
       "cta": "Contact sales — $199",
       "featured": false,
       "hidden": false

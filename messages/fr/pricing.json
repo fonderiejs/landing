@@ -36,9 +36,9 @@
       "name": "Mobile",
       "price": "199 $",
       "period": "/mois",
-      "desc": "Kits d'écrans React Native",
+      "desc": "Kits d'écrans Mobile",
       "featuresLead": "Tout ce qui est dans Grow, plus",
-      "features": ["Écrans d'auth React Native", "Écrans de facturation React Native", "Écrans d'espace de travail React Native", "Structure de navigation"],
+      "features": ["Écrans d'auth mobiles", "Écrans de facturation mobiles", "Écrans d'espace de travail mobiles", "Structure de navigation"],
       "cta": "Contacter les ventes — 199 $",
       "featured": false,
       "hidden": false

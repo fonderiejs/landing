@@ -7,7 +7,7 @@
     { "label": "What you install", "alt": "3 services, 3 dashboards, 3 bills", "fonderie": "npm install @fonderie/*" },
     { "label": "Data ownership", "alt": "Their servers", "fonderie": "Your database" },
     { "label": "AI control", "alt": "AI improvises every session", "fonderie": "Fonderie directs the AI" },
-    { "label": "React Native", "alt": "Build from scratch", "fonderie": "Pre-built screen kits" },
+    { "label": "Mobile apps", "alt": "Build from scratch", "fonderie": "Pre-built screen kits" },
     { "label": "Lock-in", "alt": "High — hosted services", "fonderie": "None — code in your repo" }
   ],
   "closing": "Every other tool gives your AI primitives and hopes for the best. Fonderie gives your AI a playbook and verifies the result. That's the difference between improvisation and execution."

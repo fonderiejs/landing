@@ -7,7 +7,7 @@
     { "label": "Was Sie installieren", "alt": "3 Dienste, 3 Dashboards, 3 Rechnungen", "fonderie": "npm install @fonderie/*" },
     { "label": "Dateneigentum", "alt": "Ihre Server", "fonderie": "Ihre Datenbank" },
     { "label": "KI-Kontrolle", "alt": "KI improvisiert jede Sitzung", "fonderie": "Fonderie steuert die KI" },
-    { "label": "React Native", "alt": "Von Grund auf bauen", "fonderie": "Vorgefertigte Screen-Kits" },
+    { "label": "Mobile Apps", "alt": "Von Grund auf bauen", "fonderie": "Vorgefertigte Screen-Kits" },
     { "label": "Lock-in", "alt": "Hoch — gehostete Dienste", "fonderie": "Keiner — Code in Ihrem Repo" }
   ],
   "closing": "Jedes andere Tool gibt Ihrer KI Bausteine und hofft auf das Beste. Fonderie gibt Ihrer KI ein Playbook und verifiziert das Ergebnis. Das ist der Unterschied zwischen Improvisation und Ausführung."
