@@ -1,9 +1,9 @@
 {
   "eyebrow": "Utilisé par des fondateurs qui livrent de vrais produits",
   "stats": [
-    { "value": "0", "label": "Vulnérabilités de sécurité", "sub": "Testées par défaut" },
-    { "value": "0", "label": "Backend à construire", "sub": "Au lieu de 9 semaines" },
-    { "value": "0", "label": "Dépendance forcée", "sub": "Même code, toute IA" }
+    { "value": "2 jours", "label": "De l'idée au backend livré", "sub": "Au lieu de 9 semaines" },
+    { "value": "49 $", "label": "Plan Launch, forfait mensuel", "sub": "contre 30 000 $+ pour embaucher un développeur" },
+    { "value": "Auto-hébergé", "label": "Votre base de données. Vos serveurs. Votre code.", "sub": "Aucune dépendance forcée" }
   ],
   "testimonial": {
     "quote": "Nous avons reconstruit notre système d'auth 3 fois avec l'IA avant de trouver Fonderie. Chaque fois, un bug différent. Fonderie a donné à notre IA un plan à suivre. Nous avons livré en 4 jours au lieu de 4 semaines.",

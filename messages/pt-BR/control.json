@@ -1,6 +1,6 @@
 {
   "eyebrow": "A camada de controle",
-  "title": "A Fonderie direciona. A IA executa.",
+  "title": "Como a Fonderie controla a IA",
   "lede": "A Fonderie entrega arquivos de skill — instruções estruturadas — que vivem no seu repositório. Quando sua IA lê seu código, ela lê primeiro o playbook da Fonderie.",
   "steps": [
     {
