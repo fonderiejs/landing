@@ -11,7 +11,7 @@
     {
       "num": "02",
       "title": "Qualquer IA segue o mesmo playbook",
-      "text": "As instruções da Fonderie vivem no seu repositório. Claude, Cursor ou qualquer IA as lê antes de escrever código — para que seu produto seja construído corretamente, mesmo se você trocar de ferramenta. Sem improviso."
+      "text": "O playbook da Fonderie vive no seu repositório. Sua IA o lê antes de construir — para que seu produto saia da mesma forma sempre, não importa qual IA você use."
     },
     {
       "num": "03",

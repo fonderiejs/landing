@@ -11,7 +11,7 @@
     {
       "num": "02",
       "title": "Any AI follows the same playbook",
-      "text": "Fonderie's instructions live in your repo. Claude, Cursor, or any AI reads them before it writes code — so your product is built correctly whether you switch tools or not. No improvisation."
+      "text": "Fonderie's playbook lives in your repo. Your AI reads it before building — so your product comes out the same way every time, no matter which AI you use."
     },
     {
       "num": "03",

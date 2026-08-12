@@ -5,7 +5,7 @@
   "items": [
     { "title": "Login e cadastro", "text": "A IA improvisa isso a cada sessão. Bugs diferentes. APIs diferentes. Segurança inconsistente." },
     { "title": "Cobrança e assinaturas", "text": "A IA gera uma integração diferente com o Stripe toda vez. Algumas sessões esquecem os webhooks. Outras pulam a lógica de faturas." },
-    { "title": "Convites e permissões de time", "text": "A IA constrói o RBAC de forma diferente a cada vez. Uma sessão usa papéis. Outra usa flags. Nenhuma combina com sua auth." },
+    { "title": "Convites e permissões de time", "text": "A IA constrói o controle de acesso de forma diferente a cada vez. Uma sessão usa papéis. Outra usa flags. Nenhuma combina com sua auth." },
     { "title": "Notificações por e-mail", "text": "A IA reinventa a lógica de e-mail a cada sessão. Templates, filas, lógica de retentativa — reconstruídos do zero, de forma diferente toda vez." },
     { "title": "Segurança e conformidade", "text": "A IA pula o rate limiting em algumas sessões. Em outras, deixa segredos fixos no código. Nenhum build trata a auth da mesma forma." }
   ],

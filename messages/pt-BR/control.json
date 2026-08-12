@@ -1,17 +1,17 @@
 {
   "eyebrow": "A camada de controle",
   "title": "Como a Fonderie controla a IA",
-  "lede": "A Fonderie entrega arquivos de skill — instruções estruturadas — que vivem no seu repositório. Quando sua IA lê seu código, ela lê primeiro o playbook da Fonderie.",
+  "lede": "A Fonderie entrega um playbook — um conjunto de instruções — que vive no seu repositório. Quando sua IA olha para o seu projeto, ela lê primeiro o guia da Fonderie.",
   "steps": [
     {
       "num": "01",
-      "title": "Arquivos de skill vêm com seu repositório",
-      "text": ".claude/skills/fonderie/SKILL.md ensina sua IA quando usar qual módulo."
+      "title": "Seu playbook vem com seu código",
+      "text": "Um único arquivo diz à sua IA exatamente o que construir e quais peças usar."
     },
     {
       "num": "02",
-      "title": "Qualquer IA lê o mesmo playbook",
-      "text": "Claude, Cursor ou qualquer IA que leia código recebe exatamente as mesmas instruções. Troque de modelo sem mudar seu stack."
+      "title": "Qualquer IA segue o mesmo guia",
+      "text": "Claude, Cursor, ChatGPT ou qualquer outra IA recebe exatamente as mesmas instruções. Troque de ferramenta quando quiser, sem reconstruir seu produto."
     },
     {
       "num": "03",
@@ -24,6 +24,6 @@
       "text": "Você é dono do código. Personalize a interface, adicione sua lógica, faça o deploy."
     }
   ],
-  "footnote": "Veja o arquivo de skill real",
+  "footnote": "Veja o arquivo real do playbook",
   "footnoteLink": "no GitHub →"
 }

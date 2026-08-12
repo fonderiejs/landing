@@ -1,17 +1,17 @@
 {
   "eyebrow": "控制层",
   "title": "Fonderie 如何控制 AI",
-  "lede": "Fonderie 提供技能文件——结构化的指令——存放在你的代码仓库中。当你的 AI 读取代码库时，它会先读取 Fonderie 的操作手册。",
+  "lede": "Fonderie 提供一份操作手册——一套指令——存放在你的代码仓库中。当你的 AI 查看你的项目时，会先读取 Fonderie 的指南。",
   "steps": [
     {
       "num": "01",
-      "title": "技能文件随仓库一起提供",
-      "text": ".claude/skills/fonderie/SKILL.md 教你的 AI 在何时使用哪个模块。"
+      "title": "操作手册随代码一起提供",
+      "text": "一个文件就能明确告诉你的 AI 该构建什么、该用哪些组件。"
     },
     {
       "num": "02",
-      "title": "任何 AI 读取的都是同一份操作手册",
-      "text": "无论是 Claude、Cursor，还是其他任何能读代码的 AI，收到的指令完全一致。切换模型不需要改变你的技术栈。"
+      "title": "任何 AI 遵循的都是同一份指南",
+      "text": "无论是 Claude、Cursor、ChatGPT 还是其他任何 AI，收到的指令完全一致。随时切换工具，无需重新构建你的产品。"
     },
     {
       "num": "03",
@@ -24,6 +24,6 @@
       "text": "代码归你所有。自定义界面、添加你的业务逻辑、部署上线。"
     }
   ],
-  "footnote": "查看实际的技能文件",
+  "footnote": "查看实际的操作手册文件",
   "footnoteLink": "在 GitHub 上 →"
 }

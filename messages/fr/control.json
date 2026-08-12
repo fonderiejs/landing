@@ -1,17 +1,17 @@
 {
   "eyebrow": "La couche de contrôle",
   "title": "Comment Fonderie contrôle l'IA",
-  "lede": "Fonderie fournit des fichiers de compétences — des instructions structurées — qui vivent dans votre repo. Quand votre IA lit votre code, elle lit d'abord le plan de Fonderie.",
+  "lede": "Fonderie fournit un plan — un ensemble d'instructions — qui vit dans votre repo. Quand votre IA regarde votre projet, elle lit d'abord le guide de Fonderie.",
   "steps": [
     {
       "num": "01",
-      "title": "Les fichiers de compétences sont fournis avec votre repo",
-      "text": ".claude/skills/fonderie/SKILL.md apprend à votre IA quand utiliser quel module."
+      "title": "Votre plan est fourni avec votre code",
+      "text": "Un seul fichier indique à votre IA exactement quoi construire et quels éléments utiliser."
     },
     {
       "num": "02",
-      "title": "Toute IA lit le même plan",
-      "text": "Claude, Cursor ou toute IA capable de lire du code reçoit exactement les mêmes instructions. Changez de modèle sans changer votre stack."
+      "title": "Toute IA suit le même guide",
+      "text": "Claude, Cursor, ChatGPT ou toute autre IA reçoit exactement les mêmes instructions. Changez d'outil à tout moment sans reconstruire votre produit."
     },
     {
       "num": "03",
@@ -24,6 +24,6 @@
       "text": "Vous possédez le code. Personnalisez l'interface, ajoutez votre logique, déployez."
     }
   ],
-  "footnote": "Voir le fichier de compétences réel",
+  "footnote": "Voir le fichier du plan réel",
   "footnoteLink": "sur GitHub →"
 }
