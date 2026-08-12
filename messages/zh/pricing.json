@@ -59,7 +59,7 @@
   "compareNote3": "只有当你的 SaaS 正式上线后才需要付费。",
   "finalCta": {
     "title": "别再调试认证系统了，去构建你的产品。",
-    "lede": "Fonderie 指挥你的 AI 搭建基础设施，你只需专注于让你的 SaaS 与众不同的部分。",
+    "lede": "Fonderie 的操作手册存放在你的代码仓库中，为任何 AI 提供正确构建所需的上下文。你只需专注于让你的 SaaS 与众不同的部分。",
     "getStarted": "开始构建 — 免费",
     "star": "在 GitHub 上点星",
     "prompts": "适用于 Claude Code 和 Cursor 的指令随仓库一起提供 —",

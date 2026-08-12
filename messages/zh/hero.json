@@ -3,9 +3,9 @@
   "titleLine1": "这个周末就上线你的 SaaS。",
   "titleLine2": "而不是下个季度。",
   "lede": "你只需描述你的产品。",
-  "ledeStrong": "Fonderie 指挥你的 AI 助手构建认证、计费和团队功能——安全、正确，每次都一样。不再即兴发挥。",
+  "ledeStrong": "Fonderie 的操作手册存放在你的代码仓库中，为任何 AI 助手提供构建认证、计费和团队功能所需的确切上下文——安全、正确，每次都一样。",
   "primaryCta": "开始构建 — 免费",
-  "proof": "自托管 · MIT 许可证 · 无锁定",
+  "proof": "不限定 AI · 自托管 · MIT 许可证",
   "worksWith": "指挥",
   "assistants": {
     "claudeCode": "Claude Code",

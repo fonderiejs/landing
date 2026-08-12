@@ -59,7 +59,7 @@
   "compareNote3": "Sie zahlen erst, wenn Ihr SaaS live geht.",
   "finalCta": {
     "title": "Hören Sie auf, Auth zu debuggen. Bauen Sie Ihr Produkt.",
-    "lede": "Fonderie steuert Ihre KI beim Bau der Infrastruktur. Sie konzentrieren sich darauf, was Ihr SaaS einzigartig macht.",
+    "lede": "Fonderies Playbook lebt in Ihrem Repo und gibt jeder KI den Kontext, um korrekt zu bauen. Sie konzentrieren sich darauf, was Ihr SaaS einzigartig macht.",
     "getStarted": "Loslegen — kostenlos",
     "star": "Auf GitHub mit Stern versehen",
     "prompts": "Anweisungen für Claude Code und Cursor werden mit dem Repo ausgeliefert —",

@@ -59,7 +59,7 @@
   "compareNote3": "You only pay when your SaaS goes live.",
   "finalCta": {
     "title": "Stop debugging auth. Start building your product.",
-    "lede": "Fonderie directs your AI to build the infrastructure. You focus on what makes your SaaS unique.",
+    "lede": "Fonderie's playbook lives in your repo and gives any AI the context it needs to build correctly. You focus on what makes your SaaS unique.",
     "getStarted": "Start building — free",
     "star": "Star on GitHub",
     "prompts": "Instructions for Claude Code and Cursor ship with the repo —",

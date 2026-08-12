@@ -10,8 +10,8 @@
     },
     {
       "num": "02",
-      "title": "A Fonderie instrui sua IA",
-      "text": "As instruções da Fonderie vivem no seu repositório. Quando sua IA lê seu código, ela lê primeiro o playbook da Fonderie: usar o módulo de auth, nunca escrever do zero, montar essas rotas, aplicar esses tipos."
+      "title": "Qualquer IA segue o mesmo playbook",
+      "text": "As instruções da Fonderie vivem no seu repositório. Claude, Cursor ou qualquer IA as lê antes de escrever código — para que seu produto seja construído corretamente, mesmo se você trocar de ferramenta. Sem improviso."
     },
     {
       "num": "03",

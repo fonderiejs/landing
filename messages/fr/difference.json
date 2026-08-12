@@ -8,7 +8,8 @@
     { "label": "Propriété des données", "alt": "Leurs serveurs", "fonderie": "Votre base de données" },
     { "label": "Contrôle de l'IA", "alt": "L'IA improvise à chaque session", "fonderie": "Fonderie dirige l'IA" },
     { "label": "Applications mobiles", "alt": "À construire depuis zéro", "fonderie": "Kits d'écrans prêts à l'emploi" },
-    { "label": "Dépendance forcée", "alt": "Élevée — services hébergés", "fonderie": "Aucune — code dans votre repo" }
+    { "label": "Dépendance forcée", "alt": "Élevée — services hébergés", "fonderie": "Aucune — code dans votre repo" },
+    { "label": "Portabilité IA", "alt": "Enfermé dans les suppositions d'une seule IA", "fonderie": "Un seul plan. Changez d'IA à tout moment." }
   ],
   "closing": "Tous les autres outils donnent à votre IA des briques de base et espèrent le meilleur. Fonderie donne à votre IA un plan à suivre et vérifie le résultat. C'est la différence entre l'improvisation et l'exécution."
 }

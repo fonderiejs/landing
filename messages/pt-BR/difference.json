@@ -8,7 +8,8 @@
     { "label": "Propriedade dos dados", "alt": "Servidores deles", "fonderie": "Seu banco de dados" },
     { "label": "Controle da IA", "alt": "IA improvisa a cada sessão", "fonderie": "A Fonderie direciona a IA" },
     { "label": "Apps mobile", "alt": "Construir do zero", "fonderie": "Screen kits prontos" },
-    { "label": "Lock-in", "alt": "Alto — serviços hospedados", "fonderie": "Nenhum — código no seu repositório" }
+    { "label": "Lock-in", "alt": "Alto — serviços hospedados", "fonderie": "Nenhum — código no seu repositório" },
+    { "label": "Portabilidade de IA", "alt": "Preso aos palpites de uma única IA", "fonderie": "Um playbook. Troque de IA quando quiser." }
   ],
   "closing": "Todas as outras ferramentas dão à sua IA blocos primitivos e torcem para que dê certo. A Fonderie dá à sua IA um playbook e verifica o resultado. Essa é a diferença entre improviso e execução."
 }

@@ -14,6 +14,6 @@
   "withAiTitle": "IA sozinha",
   "withAiText": "Seu assistente improvisa tudo do zero a cada sessão — fluxos de login diferentes, lógica de cobrança diferente, bugs diferentes. Ele desperdiça horas (e seu orçamento de IA) depurando os mesmos problemas repetidamente.",
   "withFonderieTitle": "Com a Fonderie",
-  "withFonderieText": "A Fonderie direciona sua IA para usar módulos comprovados e testados. Mesmo fluxo de login sempre. Mesma lógica de cobrança. Mesma segurança. Você passa seu tempo conversando com clientes.",
+  "withFonderieText": "A Fonderie direciona sua IA para usar módulos comprovados e testados. Mesmo fluxo de login sempre. Mesma lógica de cobrança. Mesma segurança. Você passa seu tempo conversando com clientes. Sem a Fonderie, toda sessão de IA começa do zero — ela não conhece sua auth, sua cobrança, seu stack. A Fonderie é o playbook que lembra, para a IA não precisar.",
   "whyNowLine": "Em 2026, a maioria dos fundadores de SaaS usa assistentes de IA para construir. Quase todos improvisam a mesma infraestrutura, de forma diferente a cada sessão. A Fonderie é a camada de controle — um único sistema que direciona a IA a construir corretamente, seja qual for a forma como você lança."
 }

@@ -3,9 +3,9 @@
   "titleLine1": "Lancez votre SaaS ce week-end.",
   "titleLine2": "Pas le trimestre prochain.",
   "lede": "Vous décrivez votre produit.",
-  "ledeStrong": "Fonderie dirige votre assistant IA pour qu'il construise l'auth, la facturation et les équipes — de façon sécurisée, correcte, à chaque fois. Aucune improvisation.",
+  "ledeStrong": "Le plan de Fonderie vit dans votre repo et donne à toute IA le contexte exact dont elle a besoin pour construire l'auth, la facturation et les équipes — de façon sécurisée, correcte, à chaque fois.",
   "primaryCta": "Commencer — gratuit",
-  "proof": "Auto-hébergé · Licence MIT · Aucune dépendance forcée",
+  "proof": "Compatible avec toute IA · Auto-hébergé · Licence MIT",
   "worksWith": "Dirige",
   "assistants": {
     "claudeCode": "Claude Code",

@@ -10,8 +10,8 @@
     },
     {
       "num": "02",
-      "title": "Fonderie instructs your AI",
-      "text": "Fonderie's instructions live in your repo. When your AI reads your codebase, it reads Fonderie's playbook first: use the auth module, never write auth from scratch, mount these routes, enforce these types."
+      "title": "Any AI follows the same playbook",
+      "text": "Fonderie's instructions live in your repo. Claude, Cursor, or any AI reads them before it writes code — so your product is built correctly whether you switch tools or not. No improvisation."
     },
     {
       "num": "03",

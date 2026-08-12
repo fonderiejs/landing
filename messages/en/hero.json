@@ -3,9 +3,9 @@
   "titleLine1": "Ship your SaaS this weekend.",
   "titleLine2": "Not next quarter.",
   "lede": "You describe your product.",
-  "ledeStrong": "Fonderie directs your AI assistant to build auth, billing, and teams — securely, correctly, every time. No improvisation.",
+  "ledeStrong": "Fonderie's playbook lives in your repo and gives any AI assistant the exact context it needs to build auth, billing, and teams — securely, correctly, every time.",
   "primaryCta": "Start building — free",
-  "proof": "Self-hosted · MIT licensed · No lock-in",
+  "proof": "AI-agnostic · Self-hosted · MIT licensed",
   "worksWith": "Directs",
   "assistants": {
     "claudeCode": "Claude Code",
