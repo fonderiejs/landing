@@ -6,10 +6,10 @@
     { "value": "0", "label": "Dépendance forcée", "sub": "Même code, toute IA" }
   ],
   "testimonial": {
-    "quote": "Nous avons reconstruit notre système d'auth 3 fois avant de trouver Fonderie. Nous avons livré notre app en 4 jours au lieu de 4 semaines.",
+    "quote": "Nous avons reconstruit notre système d'auth 3 fois avec l'IA avant de trouver Fonderie. Chaque fois, un bug différent. Fonderie a donné à notre IA un plan à suivre. Nous avons livré en 4 jours au lieu de 4 semaines.",
     "attribution": "— Magus Dacar, PDG chez CrewFinding Inc."
   },
-  "metric": "200+ apps livrées · 8 000+ utilisateurs hebdomadaires · 2 000+ étoiles GitHub",
-  "footnote": "Résultats d'une expérience de sécurité A/B reproductible.",
-  "footnoteLink": "Voir la méthodologie →"
+  "metric": "",
+  "footnote": "",
+  "footnoteLink": ""
 }

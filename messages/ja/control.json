@@ -1,29 +1,29 @@
 {
-  "eyebrow": "The control layer",
-  "title": "Fonderie directs. The AI executes.",
-  "lede": "Fonderie ships skill files — structured instructions — that live in your repo. When your AI reads your codebase, it reads Fonderie's playbook first.",
+  "eyebrow": "制御レイヤー",
+  "title": "Fonderieが指示し、AIが実行する。",
+  "lede": "Fonderieはスキルファイル — 構造化された指示 — をあなたのリポジトリに提供します。AIがあなたのコードを読むとき、まずFonderieのプレイブックを読みます。",
   "steps": [
     {
       "num": "01",
-      "title": "Skill files ship with your repo",
-      "text": ".claude/skills/fonderie/SKILL.md teaches your AI when to reach for which module."
+      "title": "スキルファイルがリポジトリに同梱される",
+      "text": ".claude/skills/fonderie/SKILL.md が、どのモジュールをいつ使うべきかをAIに教えます。"
     },
     {
       "num": "02",
-      "title": "The AI reads the playbook",
-      "text": "\"When the user asks for auth, use @fonderie/auth. Never write auth from scratch.\""
+      "title": "AIがプレイブックを読む",
+      "text": "「ユーザーが認証を求めたら @fonderie/auth を使う。認証をゼロから書いてはいけない。」"
     },
     {
       "num": "03",
-      "title": "Fonderie verifies the output",
-      "text": "Types and tests catch errors before they ship. Correct by construction."
+      "title": "Fonderieが出力を検証する",
+      "text": "型とテストが出荷前にエラーを検出します。構造的に正しいコードになります。"
     },
     {
       "num": "04",
-      "title": "You review and ship",
-      "text": "You own the code. Customize the UI, add your logic, deploy."
+      "title": "あなたがレビューして出荷する",
+      "text": "コードはあなたのものです。UIをカスタマイズし、独自のロジックを追加し、デプロイします。"
     }
   ],
-  "footnote": "See the actual skill file",
-  "footnoteLink": "on GitHub →"
+  "footnote": "実際のスキルファイルを見る",
+  "footnoteLink": "GitHubで →"
 }

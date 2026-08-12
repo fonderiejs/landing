@@ -1,24 +1,24 @@
 {
   "siteTitle": "Fonderie",
   "meta": {
-    "titleSuffix": "SaaSを今週リリース",
-    "description": "FonderieはあなたのAIに認証・課金・チーム管理の部品を与えます。四半期ではなく1週間でSaaSをリリースできます。"
+    "titleSuffix": "SaaSのためのAIインフラ制御レイヤー",
+    "description": "Fonderieは、認証・課金・チーム・権限といった安全なSaaSインフラをAIアシスタントに指示して構築させます。創業者は数ヶ月ではなく数日で出荷できます。セルフホスト・MITライセンス。"
   },
   "nav": {
-    "solution": "使い方",
+    "solution": "仕組み",
     "packages": "機能",
     "pricing": "料金",
     "github": "GitHub",
     "contact": "お問い合わせ"
   },
   "cta": {
-    "getStarted": "無料で始める",
-    "howItWorks": "使い方を見る",
-    "startShipping": "リリースを始める",
+    "getStarted": "始める — ずっと無料",
+    "howItWorks": "FonderieがAIをどう指示するか見る",
+    "startShipping": "出荷を始める",
     "contactSales": "営業に問い合わせる"
   },
   "footer": {
-    "tagline": "リリースする創業者のために。",
+    "tagline": "AIが構築するSaaSのための制御レイヤー。",
     "product": "プロダクト",
     "github": "GitHub",
     "docs": "ドキュメント",

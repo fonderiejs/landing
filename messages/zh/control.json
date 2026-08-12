@@ -1,29 +1,29 @@
 {
-  "eyebrow": "The control layer",
-  "title": "Fonderie directs. The AI executes.",
-  "lede": "Fonderie ships skill files — structured instructions — that live in your repo. When your AI reads your codebase, it reads Fonderie's playbook first.",
+  "eyebrow": "控制层",
+  "title": "Fonderie 指挥，AI 执行。",
+  "lede": "Fonderie 提供技能文件——结构化的指令——存放在你的代码仓库中。当你的 AI 读取代码库时，它会先读取 Fonderie 的操作手册。",
   "steps": [
     {
       "num": "01",
-      "title": "Skill files ship with your repo",
-      "text": ".claude/skills/fonderie/SKILL.md teaches your AI when to reach for which module."
+      "title": "技能文件随仓库一起提供",
+      "text": ".claude/skills/fonderie/SKILL.md 教你的 AI 在何时使用哪个模块。"
     },
     {
       "num": "02",
-      "title": "The AI reads the playbook",
-      "text": "\"When the user asks for auth, use @fonderie/auth. Never write auth from scratch.\""
+      "title": "AI 读取操作手册",
+      "text": "「当用户要求认证功能时，使用 @fonderie/auth。绝不从零编写认证逻辑。」"
     },
     {
       "num": "03",
-      "title": "Fonderie verifies the output",
-      "text": "Types and tests catch errors before they ship. Correct by construction."
+      "title": "Fonderie 验证输出结果",
+      "text": "类型和测试会在代码上线前捕获错误，从结构上保证正确性。"
     },
     {
       "num": "04",
-      "title": "You review and ship",
-      "text": "You own the code. Customize the UI, add your logic, deploy."
+      "title": "你负责审查并上线",
+      "text": "代码归你所有。自定义界面、添加你的业务逻辑、部署上线。"
     }
   ],
-  "footnote": "See the actual skill file",
-  "footnoteLink": "on GitHub →"
+  "footnote": "查看实际的技能文件",
+  "footnoteLink": "在 GitHub 上 →"
 }

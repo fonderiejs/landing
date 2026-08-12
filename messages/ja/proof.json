@@ -1,15 +1,15 @@
 {
-  "eyebrow": "実際にプロダクトをリリースした創業者に信頼されています",
+  "eyebrow": "実際のプロダクトを出荷する創業者に信頼されています",
   "stats": [
     { "value": "0", "label": "セキュリティ脆弱性", "sub": "デフォルトでテスト済み" },
-    { "value": "0", "label": "作るべきバックエンド", "sub": "9週間ではなく" },
-    { "value": "0", "label": "ロックイン", "sub": "同じコードでどのAIにも" }
+    { "value": "0", "label": "構築すべきバックエンド", "sub": "9週間の代わりに" },
+    { "value": "0", "label": "ロックイン", "sub": "同じコード、どのAIでも" }
   ],
   "testimonial": {
-    "quote": "Fonderieに出会うまで、認証システムを3回も作り直しました。アプリを4週間ではなく4日でリリースできました。",
+    "quote": "Fonderieに出会うまで、AIで認証システムを3回作り直しました。毎回違うバグでした。FonderieはAIにプレイブックを与えてくれました。4週間ではなく4日で出荷できました。",
     "attribution": "— Magus Dacar、CrewFinding Inc. CEO"
   },
-  "metric": "200以上のアプリがリリース済み · 週間ユーザー8,000以上 · GitHubスター2,000以上",
-  "footnote": "再現可能なA/Bセキュリティ実験の結果です。",
-  "footnoteLink": "検証方法を見る →"
+  "metric": "",
+  "footnote": "",
+  "footnoteLink": ""
 }

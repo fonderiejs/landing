@@ -1,11 +1,12 @@
 {
-  "eyebrow": "SaaSをリリースする創業者のために",
-  "titleLine1": "SaaSを今週リリースしよう、",
+  "eyebrow": "AIインフラ制御レイヤー",
+  "titleLine1": "SaaSを今週末に出荷しよう。",
   "titleLine2": "来四半期ではなく。",
-  "lede": "Claude、Cursor、ChatGPTに作りたいものを伝えるだけ。",
-  "ledeStrong": "FonderieはあなたのAIアシスタントに、認証・課金・チーム管理のための部品を与えます。AIはゼロから即興で作る代わりに、あなたのプロダクトを組み立てます。",
-  "proof": "標準で安全 · どのAIでも使える · ロックインなし",
-  "worksWith": "対応ツール",
+  "lede": "あなたはプロダクトを説明するだけ。",
+  "ledeStrong": "Fonderieがあなたの AI アシスタントに、認証・課金・チーム機能を安全かつ正確に構築するよう指示します。毎回同じ品質で。即興はありません。",
+  "primaryCta": "npm install @fonderie/core",
+  "proof": "セルフホスト · MITライセンス · ロックインなし",
+  "worksWith": "指示する対象",
   "assistants": {
     "claudeCode": "Claude Code",
     "cursor": "Cursor",

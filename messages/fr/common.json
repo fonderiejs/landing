@@ -1,8 +1,8 @@
 {
   "siteTitle": "Fonderie",
   "meta": {
-    "titleSuffix": "Lancez votre SaaS cette semaine",
-    "description": "Fonderie donne à votre IA les briques pour l'auth, la facturation et la gestion d'équipe — pour que vous livriez votre SaaS en une semaine, pas en un trimestre."
+    "titleSuffix": "La couche de contrôle de l'infrastructure IA pour SaaS",
+    "description": "Fonderie dirige les assistants IA pour qu'ils construisent une infrastructure SaaS sécurisée — auth, facturation, équipes, permissions — pour que les fondateurs livrent en jours, pas en mois. Auto-hébergé. Licence MIT."
   },
   "nav": {
     "solution": "Comment ça marche",
@@ -12,13 +12,13 @@
     "contact": "Contact"
   },
   "cta": {
-    "getStarted": "Commencer gratuitement",
-    "howItWorks": "Voir comment ça marche",
+    "getStarted": "Commencer — gratuit pour toujours",
+    "howItWorks": "Voir comment Fonderie dirige l'IA",
     "startShipping": "Commencer à livrer",
     "contactSales": "Contacter les ventes"
   },
   "footer": {
-    "tagline": "Conçu pour les fondateurs qui livrent.",
+    "tagline": "La couche de contrôle pour le SaaS construit par IA.",
     "product": "Produit",
     "github": "GitHub",
     "docs": "Docs",

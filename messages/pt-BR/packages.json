@@ -1,13 +1,13 @@
 {
-  "eyebrow": "O que você recebe",
-  "title": "Tudo que seu SaaS precisa.",
-  "lede": "Funcionalidades reais e funcionando — não templates. Sua IA conecta tudo automaticamente ao seu produto.",
+  "eyebrow": "Tudo que seu SaaS precisa",
+  "title": "Módulos de backend e screen kits para React Native.",
+  "lede": "Testado em produção, otimizado para IA. Sua IA não chuta. Ela segue as instruções da Fonderie.",
   "items": [
-    { "title": "Contas de usuário", "text": "Login, cadastro, redefinição de senha, login social e Face ID. Seus usuários entram. Você não precisa construir isso." },
-    { "title": "Pagamentos", "text": "Integração com Stripe, planos de assinatura, cobrança por assento e gestão de faturas. Você recebe. Você não precisa conectar isso." },
-    { "title": "Times e permissões", "text": "Convide colegas, atribua papéis, controle quem vê o quê. Seus clientes gerenciam seus próprios times. Você não precisa programar isso." },
-    { "title": "Notificações", "text": "E-mail, SMS e notificações push. Seus usuários ficam informados. Você não precisa configurar isso." },
-    { "title": "Segurança e compliance", "text": "Logs de auditoria, limitação de taxa e prontidão para SOC 2. Seu app fica seguro. Você não precisa se preocupar com isso." }
+    { "title": "Auth (Backend + Mobile)", "text": "JWT, sessões, OAuth, MFA, redefinição de senha. Além de telas de login em React Native com fallback biométrico. Sua IA nunca mais escreve auth do zero." },
+    { "title": "Cobrança (Backend + Mobile)", "text": "Integração com Stripe, assinaturas, medição de uso. Além de seletor de plano e telas de checkout em React Native. Pronto e conectado." },
+    { "title": "Workspaces (Backend + Mobile)", "text": "Times multi-tenant, convites, acesso baseado em papéis. Além de trocador de time e gerenciamento de membros em React Native. Seus clientes gerenciam suas próprias organizações." },
+    { "title": "Notificações", "text": "E-mail, SMS e notificações push. Mensagens fire-and-forget. Sua IA não reinventa a lógica de e-mail a cada sessão." },
+    { "title": "Permissões e auditoria", "text": "RBAC, permissões coringa, bypass de super-papel. Além de logs de auditoria por workspace." }
   ],
   "footnote": "Quer os detalhes técnicos?",
   "footnoteLink": "Veja o código no GitHub →"

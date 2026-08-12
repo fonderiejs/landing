@@ -1,70 +1,70 @@
 {
   "eyebrow": "Preise",
-  "title": "Kostenlos starten. Zahlen, wenn du verdienst.",
-  "lede": "Kostenlos, solange du baust. Upgrade erst, wenn du zahlende Kunden hast.",
+  "title": "Kostenlos starten. Zahlen, wenn Sie deployen.",
+  "lede": "Für immer kostenlos, während Sie bauen. Upgraden, wenn Ihr SaaS live geht.",
   "tiers": [
     {
-      "name": "Starter",
+      "name": "Build",
       "price": "Kostenlos",
       "period": "",
-      "desc": "Zum Bau deines Produkts",
-      "features": ["Alle Bausteine", "Community-Support"],
-      "cta": "Loslegen",
+      "desc": "Für Nebenprojekte und Pre-Revenue-SaaS",
+      "features": ["Alle Backend-Module", "Community-Support"],
+      "cta": "npm install — kostenlos",
       "featured": false
     },
     {
       "name": "Launch",
       "price": "49 $",
       "period": "/Monat",
-      "desc": "Für SaaS mit zahlenden Kunden",
-      "featuresLead": "Alles aus Starter, plus",
-      "features": ["Priority-Support", "Produktionsreife Features"],
-      "cta": "Jetzt shippen",
+      "desc": "Für SaaS mit ersten zahlenden Kunden",
+      "featuresLead": "Alles in Build, plus",
+      "features": ["Priority-Support", "Produktionslizenz + Audit-Logs"],
+      "cta": "Ausliefern — 49 $",
       "featured": false
     },
     {
-      "name": "Scale",
+      "name": "Grow",
       "price": "149 $",
       "period": "/Monat",
       "desc": "Für wachsende Teams",
-      "featuresLead": "Alles aus Launch, plus",
-      "features": ["Team-Zusammenarbeit", "Erweiterte Sicherheit"],
+      "featuresLead": "Alles in Launch, plus",
+      "features": ["Team-Funktionen + Rollenverwaltung", "Erweiterte Sicherheit"],
       "cta": "Vertrieb kontaktieren",
       "featured": true
     },
     {
-      "name": "Screen Kits",
+      "name": "Mobile",
       "price": "199 $",
       "period": "/Monat",
-      "desc": "Für plattformübergreifende Teams",
-      "featuresLead": "Alles aus Scale, plus",
-      "features": ["Frontend-Screen-Kits", "Face-ID-Login", "Navigationsstruktur", "Plattformübergreifende Unterstützung"],
-      "cta": "Vertrieb kontaktieren",
+      "desc": "React-Native-Screen-Kits",
+      "featuresLead": "Alles in Grow, plus",
+      "features": ["React-Native-Auth-Screens", "React-Native-Abrechnungs-Screens", "React-Native-Workspace-Screens", "Navigations-Shell"],
+      "cta": "Vertrieb kontaktieren — 199 $",
       "featured": false,
-      "hidden": true
+      "hidden": false
     },
     {
       "name": "Enterprise",
       "price": "Individuell",
       "period": "",
-      "desc": "Für Organisationen",
-      "featuresLead": "Alles aus Scale, plus",
-      "features": ["Single Sign-On (SSO)", "Compliance-Support", "Deine Daten bleiben auf deinen Servern", "Dedizierter Account"],
+      "desc": "Für Organisationen mit Compliance-Anforderungen",
+      "featuresLead": "Alles in Grow, plus",
+      "features": ["Single Sign-On (SSO)", "Compliance-Support", "On-Premise-Deployment", "Dedizierter Account-Manager"],
       "cta": "Vertrieb kontaktieren",
       "featured": false
     }
   ],
-  "compareNote1": "Vergleiche das mit der Einstellung eines Entwicklers für 3 Monate: 30.000–60.000 $.",
-  "compareNote2": "49 $/Monat sind günstiger als ein Tag Freelancer.",
-  "compareNote3": "Du zahlst erst, wenn dein SaaS anfängt, Geld zu verdienen.",
+  "compareNote1": "Vergleichen Sie das mit 3 Monaten Backend-Entwickler: 30.000–60.000 $.",
+  "compareNote2": "Fonderie Launch kostet 49 $/Monat. Weniger als ein Tag eines Auftragnehmers.",
+  "compareNote3": "Sie zahlen erst, wenn Ihr SaaS live geht.",
   "finalCta": {
-    "title": "Hör auf, Infrastruktur zu bauen. Bau dein Produkt.",
-    "lede": "Alles, was dein SaaS braucht, bereits gebaut und startklar.",
-    "getStarted": "Kostenlos loslegen",
-    "star": "Auf GitHub sternen",
-    "prompts": "System-Prompts für Claude Code und Cursor sind im Repo enthalten —",
+    "title": "Hören Sie auf, Auth zu debuggen. Bauen Sie Ihr Produkt.",
+    "lede": "Fonderie steuert Ihre KI beim Bau der Infrastruktur. Sie konzentrieren sich darauf, was Ihr SaaS einzigartig macht.",
+    "getStarted": "npm install @fonderie/core",
+    "star": "Auf GitHub mit Stern versehen",
+    "prompts": "Anweisungen für Claude Code und Cursor werden mit dem Repo ausgeliefert —",
     "promptsLink": "auf GitHub holen →",
-    "tag": "Für Gründer, die shippen wollen, nicht konfigurieren",
-    "team": "Gegründet von Leuten, die es leid waren, Auth für jedes neue Produkt neu zu bauen."
+    "tag": "Für Gründer, die ausliefern wollen, nicht Auth neu bauen",
+    "team": "Gebaut von einem Gründer, der jahrelang als Auftragnehmer bei PayPal an internen Audit-Tools und kundenseitigen Händler-Tools gearbeitet hat — und es leid war, zuzusehen, wie KI dieselben Bugs immer wieder einführt."
   }
 }

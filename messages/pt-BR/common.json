@@ -1,8 +1,8 @@
 {
   "siteTitle": "Fonderie",
   "meta": {
-    "titleSuffix": "Lance seu SaaS nesta semana",
-    "description": "A Fonderie dá à sua IA os blocos prontos para auth, cobrança e gestão de times — para você lançar seu SaaS em uma semana, não em um trimestre."
+    "titleSuffix": "A camada de controle de infraestrutura de IA para SaaS",
+    "description": "A Fonderie direciona assistentes de IA para construir infraestrutura de SaaS segura — auth, cobrança, times, permissões — para fundadores lançarem em dias, não meses. Auto-hospedado. Licença MIT."
   },
   "nav": {
     "solution": "Como funciona",
@@ -12,18 +12,18 @@
     "contact": "Contato"
   },
   "cta": {
-    "getStarted": "Começar de graça",
-    "howItWorks": "Ver como funciona",
+    "getStarted": "Começar — grátis para sempre",
+    "howItWorks": "Veja como a Fonderie direciona a IA",
     "startShipping": "Começar a lançar",
     "contactSales": "Falar com vendas"
   },
   "footer": {
-    "tagline": "Feito para founders que lançam.",
+    "tagline": "A camada de controle para SaaS construído por IA.",
     "product": "Produto",
     "github": "GitHub",
     "docs": "Docs",
     "registry": "Registro",
-    "roadmap": "Roadmap",
+    "roadmap": "Roteiro",
     "community": "Comunidade",
     "discord": "Discord",
     "twitter": "X",

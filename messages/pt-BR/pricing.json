@@ -1,70 +1,70 @@
 {
   "eyebrow": "Preços",
-  "title": "Comece grátis. Pague quando ganhar.",
-  "lede": "Grátis enquanto você constrói. Faça upgrade só quando tiver clientes pagantes.",
+  "title": "Comece grátis. Pague quando for para produção.",
+  "lede": "Grátis para sempre enquanto você constrói. Faça upgrade quando seu SaaS estiver no ar.",
   "tiers": [
     {
-      "name": "Starter",
+      "name": "Build",
       "price": "Grátis",
       "period": "",
-      "desc": "Para construir seu produto",
-      "features": ["Todos os blocos prontos", "Suporte da comunidade"],
-      "cta": "Começar",
+      "desc": "Para projetos paralelos e SaaS pré-receita",
+      "features": ["Todos os módulos de backend", "Suporte da comunidade"],
+      "cta": "npm install — grátis",
       "featured": false
     },
     {
       "name": "Launch",
       "price": "US$ 49",
       "period": "/mês",
-      "desc": "Para SaaS com clientes pagantes",
-      "featuresLead": "Tudo do Starter, mais",
-      "features": ["Suporte prioritário", "Recursos prontos para produção"],
-      "cta": "Começar a lançar",
+      "desc": "Para SaaS com os primeiros clientes pagantes",
+      "featuresLead": "Tudo do Build, mais",
+      "features": ["Suporte prioritário", "Licença de produção + logs de auditoria"],
+      "cta": "Começar a lançar — US$ 49",
       "featured": false
     },
     {
-      "name": "Scale",
+      "name": "Grow",
       "price": "US$ 149",
       "period": "/mês",
       "desc": "Para times em crescimento",
       "featuresLead": "Tudo do Launch, mais",
-      "features": ["Colaboração de time", "Segurança avançada"],
+      "features": ["Recursos de time + gestão de papéis", "Segurança avançada"],
       "cta": "Falar com vendas",
       "featured": true
     },
     {
-      "name": "Screen Kits",
+      "name": "Mobile",
       "price": "US$ 199",
       "period": "/mês",
-      "desc": "Para times multiplataforma",
-      "featuresLead": "Tudo do Scale, mais",
-      "features": ["Kits de telas frontend", "Login com Face ID", "Estrutura de navegação", "Suporte multiplataforma"],
-      "cta": "Falar com vendas",
+      "desc": "Screen kits para React Native",
+      "featuresLead": "Tudo do Grow, mais",
+      "features": ["Telas de auth em React Native", "Telas de cobrança em React Native", "Telas de workspace em React Native", "Shell de navegação"],
+      "cta": "Falar com vendas — US$ 199",
       "featured": false,
-      "hidden": true
+      "hidden": false
     },
     {
       "name": "Enterprise",
-      "price": "Sob consulta",
+      "price": "Personalizado",
       "period": "",
-      "desc": "Para organizações",
-      "featuresLead": "Tudo do Scale, mais",
-      "features": ["Login único (SSO)", "Suporte a compliance", "Seus dados ficam nos seus servidores", "Conta dedicada"],
+      "desc": "Para organizações com necessidades de conformidade",
+      "featuresLead": "Tudo do Grow, mais",
+      "features": ["Single sign-on (SSO)", "Suporte à conformidade", "Deploy on-premise", "Gerente de conta dedicado"],
       "cta": "Falar com vendas",
       "featured": false
     }
   ],
-  "compareNote1": "Compare com contratar um desenvolvedor por 3 meses: US$ 30.000–60.000.",
-  "compareNote2": "US$ 49/mês é mais barato que um dia de freelancer.",
-  "compareNote3": "Você só paga quando seu SaaS começa a gerar receita.",
+  "compareNote1": "Compare com contratar um desenvolvedor backend por 3 meses: US$ 30.000–60.000.",
+  "compareNote2": "O plano Launch da Fonderie custa US$ 49/mês. Menos que um dia de um contratado.",
+  "compareNote3": "Você só paga quando seu SaaS entra no ar.",
   "finalCta": {
-    "title": "Pare de construir infraestrutura. Comece a construir seu produto.",
-    "lede": "Tudo que seu SaaS precisa, já construído e pronto para lançar.",
-    "getStarted": "Começar de graça",
-    "star": "Dar uma estrela no GitHub",
-    "prompts": "Prompts de sistema para Claude Code e Cursor já vêm no repositório —",
+    "title": "Pare de depurar auth. Comece a construir seu produto.",
+    "lede": "A Fonderie direciona sua IA para construir a infraestrutura. Você foca no que torna seu SaaS único.",
+    "getStarted": "npm install @fonderie/core",
+    "star": "Dar estrela no GitHub",
+    "prompts": "Instruções para Claude Code e Cursor vêm com o repositório —",
     "promptsLink": "pegue no GitHub →",
-    "tag": "Para founders que querem lançar, não configurar",
-    "team": "Construído por founders cansados de reconstruir auth para cada novo produto."
+    "tag": "Para fundadores que querem lançar, não reconstruir auth",
+    "team": "Construído por um fundador que passou anos como contratado na PayPal trabalhando em ferramentas internas de auditoria e ferramentas voltadas a lojistas — e cansou de ver a IA reintroduzir os mesmos bugs a cada sessão."
   }
 }

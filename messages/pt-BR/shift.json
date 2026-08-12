@@ -1,22 +1,22 @@
 {
-  "eyebrow": "Como funciona",
-  "title": "Como funciona",
-  "lede": "Da ideia ao produto lançado em três passos.",
+  "eyebrow": "Como a Fonderie direciona sua IA",
+  "title": "A Fonderie direciona. A IA executa.",
+  "lede": "Da ideia ao produto lançado em três passos. A Fonderie é a diretora. Sua IA é a construtora.",
   "steps": [
     {
       "num": "01",
-      "title": "Diga à sua IA o que você quer construir",
+      "title": "Você descreve seu produto",
       "text": "\"Preciso de um SaaS com login, cobrança via Stripe e workspaces de time.\""
     },
     {
       "num": "02",
-      "title": "Sua IA usa os blocos prontos da Fonderie",
-      "text": "Em vez de escrever tudo do zero, sua IA monta componentes comprovados e seguros — telas de login, fluxos de pagamento, convites de time — tudo já conectado automaticamente."
+      "title": "A Fonderie instrui sua IA",
+      "text": "As instruções da Fonderie vivem no seu repositório. Quando sua IA lê seu código, ela lê primeiro o playbook da Fonderie: usar o módulo de auth, nunca escrever do zero, montar essas rotas, aplicar esses tipos."
     },
     {
       "num": "03",
       "title": "Você revisa e lança",
-      "text": "A IA gera seu produto. Você revisa, personaliza o design e faz o deploy. Seu backend é seguro, seu frontend funciona, e seus clientes podem se cadastrar e pagar."
+      "text": "A IA gera o código. Os tipos e testes da Fonderie o verificam. Você personaliza o design e faz o deploy. Seu backend é seguro, seu frontend funciona, e seus clientes conseguem se cadastrar e pagar."
     }
   ]
 }
