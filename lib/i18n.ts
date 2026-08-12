@@ -23,7 +23,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   if (!locales.includes(requested as Locale)) notFound();
   const locale = requested as Locale;
 
-  const sections = ['common', 'hero', 'problem', 'shift', 'proof', 'packages', 'difference', 'pricing', 'contact'];
+  const sections = ['common', 'hero', 'problem', 'control', 'shift', 'proof', 'packages', 'difference', 'pricing', 'contact'];
   const messages = Object.fromEntries(
     await Promise.all(
       sections.map(async (section) => [section, (await import(`../messages/${locale}/${section}.json`)).default])
