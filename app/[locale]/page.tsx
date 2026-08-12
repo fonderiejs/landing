@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import ScrollReveal from './components/ScrollReveal';
 import Hero from './sections/Hero';
 import Problem from './sections/Problem';
+import Control from './sections/Control';
 import Shift from './sections/Shift';
 import Proof from './sections/Proof';
 import Packages from './sections/Packages';
@@ -27,6 +28,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             child of this shared wrapper, not because it has its own. */}
         <div className="container">
           <Problem />
+          <Control />
           <Shift />
           <Proof />
           <Packages />
