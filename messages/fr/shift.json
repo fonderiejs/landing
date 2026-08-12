@@ -11,7 +11,7 @@
     {
       "num": "02",
       "title": "Toute IA suit le même plan",
-      "text": "Les instructions de Fonderie vivent dans votre repo. Claude, Cursor ou toute IA les lit avant d'écrire du code — pour que votre produit soit construit correctement, que vous changiez d'outil ou non. Aucune improvisation."
+      "text": "Le plan de Fonderie vit dans votre repo. Votre IA le lit avant de construire — pour que votre produit sorte de la même façon à chaque fois, quelle que soit l'IA que vous utilisez."
     },
     {
       "num": "03",

@@ -3,11 +3,11 @@
   "title": "Módulos de backend e screen kits para Mobile.",
   "lede": "Testado em produção, otimizado para IA. Sua IA não chuta. Ela segue as instruções da Fonderie.",
   "items": [
-    { "title": "Auth (Backend + Mobile)", "text": "JWT, sessões, OAuth, MFA, redefinição de senha. Além de telas de login mobile com fallback biométrico. Sua IA nunca mais escreve auth do zero." },
+    { "title": "Auth (Backend + Mobile)", "text": "Login, cadastro, redefinição de senha e autenticação de dois fatores. Além de telas de login mobile com fallback biométrico. Sua IA nunca mais escreve auth do zero." },
     { "title": "Cobrança (Backend + Mobile)", "text": "Integração com Stripe, assinaturas, medição de uso. Além de seletor de plano e telas de checkout mobile. Pronto e conectado." },
     { "title": "Workspaces (Backend + Mobile)", "text": "Times multi-tenant, convites, acesso baseado em papéis. Além de trocador de time e gerenciamento de membros mobile. Seus clientes gerenciam suas próprias organizações." },
     { "title": "Notificações", "text": "E-mail, SMS e notificações push. Mensagens fire-and-forget. Sua IA não reinventa a lógica de e-mail a cada sessão." },
-    { "title": "Permissões e auditoria", "text": "RBAC, permissões coringa, bypass de super-papel. Além de logs de auditoria por workspace." }
+    { "title": "Permissões e auditoria", "text": "Controle de acesso baseado em papéis, permissões coringa, bypass de administrador. Além de logs de auditoria por workspace." }
   ],
   "footnote": "Quer os detalhes técnicos?",
   "footnoteLink": "Veja o código no GitHub →"

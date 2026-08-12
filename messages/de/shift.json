@@ -11,7 +11,7 @@
     {
       "num": "02",
       "title": "Jede KI folgt demselben Playbook",
-      "text": "Fonderies Anweisungen leben in Ihrem Repo. Claude, Cursor oder jede KI liest sie, bevor sie Code schreibt — so wird Ihr Produkt korrekt gebaut, egal ob Sie das Tool wechseln. Keine Improvisation."
+      "text": "Fonderies Playbook lebt in Ihrem Repo. Ihre KI liest es, bevor sie baut — so kommt Ihr Produkt jedes Mal gleich heraus, egal welche KI Sie verwenden."
     },
     {
       "num": "03",

@@ -1,17 +1,17 @@
 {
   "eyebrow": "The control layer",
   "title": "How Fonderie controls the AI",
-  "lede": "Fonderie ships skill files — structured instructions — that live in your repo. When your AI reads your codebase, it reads Fonderie's playbook first.",
+  "lede": "Fonderie ships a playbook — a set of instructions — that lives in your repo. When your AI looks at your project, it reads Fonderie's guide first.",
   "steps": [
     {
       "num": "01",
-      "title": "Skill files ship with your repo",
-      "text": ".claude/skills/fonderie/SKILL.md teaches your AI when to reach for which module."
+      "title": "Your playbook ships with your code",
+      "text": "A single file tells your AI exactly what to build and which pieces to use."
     },
     {
       "num": "02",
-      "title": "Any AI reads the same playbook",
-      "text": "Claude, Cursor, or any code-reading AI gets the exact same instructions. Switch models without changing your stack."
+      "title": "Any AI follows the same guide",
+      "text": "Claude, Cursor, ChatGPT, or any AI gets the exact same instructions. Switch tools anytime without rebuilding your product."
     },
     {
       "num": "03",
@@ -24,6 +24,6 @@
       "text": "You own the code. Customize the UI, add your logic, deploy."
     }
   ],
-  "footnote": "See the actual skill file",
+  "footnote": "See the actual playbook file",
   "footnoteLink": "on GitHub →"
 }

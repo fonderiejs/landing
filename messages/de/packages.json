@@ -3,11 +3,11 @@
   "title": "Backend-Module und Mobile-Screen-Kits.",
   "lede": "Produktionsgetestet, KI-optimiert. Ihre KI rät nicht. Sie folgt Fonderies Anweisungen.",
   "items": [
-    { "title": "Auth (Backend + Mobile)", "text": "JWT, Sessions, OAuth, MFA, Passwort-Reset. Plus mobile Login-Screens mit biometrischem Fallback. Ihre KI schreibt Auth nie mehr von Grund auf." },
+    { "title": "Auth (Backend + Mobile)", "text": "Login, Registrierung, Passwort-Reset und Zwei-Faktor-Authentifizierung. Plus mobile Login-Screens mit biometrischem Fallback. Ihre KI schreibt Auth nie mehr von Grund auf." },
     { "title": "Abrechnung (Backend + Mobile)", "text": "Stripe-Integration, Abonnements, Nutzungsmessung. Plus mobile Planauswahl und Checkout-Screens. Vorgefertigt. Vorverdrahtet." },
     { "title": "Workspaces (Backend + Mobile)", "text": "Multi-Tenant-Teams, Einladungen, rollenbasierter Zugriff. Plus mobiler Team-Switcher und Mitgliederverwaltung. Ihre Kunden verwalten ihre eigenen Organisationen." },
     { "title": "Benachrichtigungen", "text": "E-Mail, SMS, Push-Benachrichtigungen. Fire-and-forget-Messaging. Ihre KI erfindet die E-Mail-Logik nicht jede Sitzung neu." },
-    { "title": "Berechtigungen und Audit", "text": "RBAC, Wildcard-Berechtigungen, Super-Rollen-Bypass. Plus workspace-bezogene Audit-Logs." }
+    { "title": "Berechtigungen und Audit", "text": "Rollenbasierte Zugriffskontrolle, Wildcard-Berechtigungen, Admin-Override. Plus workspace-bezogene Audit-Logs." }
   ],
   "footnote": "Wollen Sie die technischen Details?",
   "footnoteLink": "Code auf GitHub ansehen →"

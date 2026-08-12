@@ -1,17 +1,17 @@
 {
   "eyebrow": "Die Kontrollschicht",
   "title": "So steuert Fonderie die KI",
-  "lede": "Fonderie liefert Skill-Dateien — strukturierte Anweisungen — die in Ihrem Repo liegen. Wenn Ihre KI Ihren Code liest, liest sie zuerst Fonderies Playbook.",
+  "lede": "Fonderie liefert ein Playbook — eine Reihe von Anweisungen — das in Ihrem Repo liegt. Wenn Ihre KI sich Ihr Projekt ansieht, liest sie zuerst Fonderies Anleitung.",
   "steps": [
     {
       "num": "01",
-      "title": "Skill-Dateien werden mit Ihrem Repo ausgeliefert",
-      "text": ".claude/skills/fonderie/SKILL.md lehrt Ihre KI, wann welches Modul zu verwenden ist."
+      "title": "Ihr Playbook wird mit Ihrem Code ausgeliefert",
+      "text": "Eine einzige Datei sagt Ihrer KI genau, was sie bauen soll und welche Bausteine sie verwenden soll."
     },
     {
       "num": "02",
-      "title": "Jede KI liest dasselbe Playbook",
-      "text": "Claude, Cursor oder jede code-lesende KI erhält genau dieselben Anweisungen. Wechseln Sie das Modell, ohne Ihren Stack zu ändern."
+      "title": "Jede KI folgt derselben Anleitung",
+      "text": "Claude, Cursor, ChatGPT oder jede andere KI erhält genau dieselben Anweisungen. Wechseln Sie jederzeit das Tool, ohne Ihr Produkt neu zu bauen."
     },
     {
       "num": "03",
@@ -24,6 +24,6 @@
       "text": "Sie besitzen den Code. Passen Sie die UI an, fügen Sie Ihre Logik hinzu, deployen Sie."
     }
   ],
-  "footnote": "Die tatsächliche Skill-Datei ansehen",
+  "footnote": "Die tatsächliche Playbook-Datei ansehen",
   "footnoteLink": "auf GitHub →"
 }
