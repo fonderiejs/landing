@@ -3,7 +3,7 @@
   "stats": [
     { "value": "2 days", "label": "From idea to shipped backend", "sub": "Instead of 9 weeks" },
     { "value": "$49", "label": "Launch plan, flat monthly", "sub": "vs. $30K+ to hire a developer" },
-    { "value": "Any AI", "label": "One brain, any AI", "sub": "Switch models without changing your product" }
+    { "value": "100%", "label": "One playbook. Any AI.", "sub": "Switch tools without rebuilding" }
   ],
   "testimonial": {
     "quote": "We rebuilt our auth system 3 times with AI before finding Fonderie. Each time, a different bug. Fonderie gave our AI a playbook. We shipped in 4 days instead of 4 weeks.",

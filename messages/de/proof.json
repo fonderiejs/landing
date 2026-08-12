@@ -3,7 +3,7 @@
   "stats": [
     { "value": "2 Tage", "label": "Von der Idee zum ausgelieferten Backend", "sub": "Statt 9 Wochen" },
     { "value": "49 $", "label": "Launch-Plan, monatlich pauschal", "sub": "statt 30.000 $+ für einen Entwickler" },
-    { "value": "Jede KI", "label": "Ein Gehirn, jede KI", "sub": "Wechseln Sie das Modell, ohne Ihr Produkt zu ändern" }
+    { "value": "100%", "label": "Ein Playbook. Jede KI.", "sub": "Tool wechseln, ohne neu zu bauen" }
   ],
   "testimonial": {
     "quote": "Wir haben unser Auth-System 3 Mal mit KI neu gebaut, bevor wir Fonderie fanden. Jedes Mal ein anderer Bug. Fonderie gab unserer KI ein Playbook. Wir haben in 4 Tagen statt 4 Wochen ausgeliefert.",
