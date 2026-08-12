@@ -1,6 +1,6 @@
 {
   "eyebrow": "制御レイヤー",
-  "title": "Fonderieが指示し、AIが実行する。",
+  "title": "FonderieがどのようにAIを制御するか",
   "lede": "Fonderieはスキルファイル — 構造化された指示 — をあなたのリポジトリに提供します。AIがあなたのコードを読むとき、まずFonderieのプレイブックを読みます。",
   "steps": [
     {

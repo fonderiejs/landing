@@ -7,7 +7,7 @@
     { "title": "Cobrança e assinaturas", "text": "A IA gera uma integração diferente com o Stripe toda vez. Algumas sessões esquecem os webhooks. Outras pulam a lógica de faturas." },
     { "title": "Convites e permissões de time", "text": "A IA constrói o RBAC de forma diferente a cada vez. Uma sessão usa papéis. Outra usa flags. Nenhuma combina com sua auth." },
     { "title": "Notificações por e-mail", "text": "A IA reinventa a lógica de e-mail a cada sessão. Templates, filas, lógica de retentativa — reconstruídos do zero, de forma diferente toda vez." },
-    { "title": "Segurança e conformidade", "text": "Para você não ser hackeado." }
+    { "title": "Segurança e conformidade", "text": "A IA pula o rate limiting em algumas sessões. Em outras, deixa segredos fixos no código. Nenhum build trata a auth da mesma forma." }
   ],
   "byHandTitle": "Contratar um desenvolvedor",
   "byHandText": "2–3 meses e US$ 30.000–60.000. E mesmo assim a auth pode sair errada.",

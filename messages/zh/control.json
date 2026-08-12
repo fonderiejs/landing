@@ -1,6 +1,6 @@
 {
   "eyebrow": "控制层",
-  "title": "Fonderie 指挥，AI 执行。",
+  "title": "Fonderie 如何控制 AI",
   "lede": "Fonderie 提供技能文件——结构化的指令——存放在你的代码仓库中。当你的 AI 读取代码库时，它会先读取 Fonderie 的操作手册。",
   "steps": [
     {

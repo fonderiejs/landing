@@ -1,9 +1,9 @@
 {
   "eyebrow": "Usado por fundadores que lançam produtos reais",
   "stats": [
-    { "value": "0", "label": "Vulnerabilidades de segurança", "sub": "Testado por padrão" },
-    { "value": "0", "label": "Backend para construir", "sub": "Em vez de 9 semanas" },
-    { "value": "0", "label": "Lock-in", "sub": "Mesmo código, qualquer IA" }
+    { "value": "2 dias", "label": "Da ideia ao backend entregue", "sub": "Em vez de 9 semanas" },
+    { "value": "US$ 49", "label": "Plano Launch, mensalidade fixa", "sub": "contra US$ 30 mil+ para contratar um desenvolvedor" },
+    { "value": "Auto-hospedado", "label": "Seu banco de dados. Seus servidores. Seu código.", "sub": "Sem lock-in" }
   ],
   "testimonial": {
     "quote": "Reconstruímos nosso sistema de auth 3 vezes com IA antes de encontrar a Fonderie. Cada vez, um bug diferente. A Fonderie deu à nossa IA um playbook. Lançamos em 4 dias em vez de 4 semanas.",

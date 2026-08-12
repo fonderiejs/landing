@@ -1,9 +1,9 @@
 {
   "eyebrow": "Vertraut von Gründern, die echte Produkte ausliefern",
   "stats": [
-    { "value": "0", "label": "Sicherheitslücken", "sub": "Standardmäßig getestet" },
-    { "value": "0", "label": "Zu bauendes Backend", "sub": "Statt 9 Wochen" },
-    { "value": "0", "label": "Lock-in", "sub": "Gleicher Code, jede KI" }
+    { "value": "2 Tage", "label": "Von der Idee zum ausgelieferten Backend", "sub": "Statt 9 Wochen" },
+    { "value": "49 $", "label": "Launch-Plan, monatlich pauschal", "sub": "statt 30.000 $+ für einen Entwickler" },
+    { "value": "Selbst gehostet", "label": "Ihre Datenbank. Ihre Server. Ihr Code.", "sub": "Kein Lock-in" }
   ],
   "testimonial": {
     "quote": "Wir haben unser Auth-System 3 Mal mit KI neu gebaut, bevor wir Fonderie fanden. Jedes Mal ein anderer Bug. Fonderie gab unserer KI ein Playbook. Wir haben in 4 Tagen statt 4 Wochen ausgeliefert.",

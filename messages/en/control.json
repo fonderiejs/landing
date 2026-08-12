@@ -1,6 +1,6 @@
 {
   "eyebrow": "The control layer",
-  "title": "Fonderie directs. The AI executes.",
+  "title": "How Fonderie controls the AI",
   "lede": "Fonderie ships skill files — structured instructions — that live in your repo. When your AI reads your codebase, it reads Fonderie's playbook first.",
   "steps": [
     {

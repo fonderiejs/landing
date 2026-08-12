@@ -7,7 +7,7 @@
     { "title": "Abrechnung und Abonnements", "text": "Die KI erzeugt jedes Mal eine andere Stripe-Verdrahtung. Manche Sitzungen vergessen Webhooks. Andere überspringen die Rechnungslogik." },
     { "title": "Team-Einladungen und Berechtigungen", "text": "Die KI baut RBAC jedes Mal anders. Eine Sitzung nutzt Rollen, eine andere Flags. Keine passt zu Ihrer Auth." },
     { "title": "E-Mail-Benachrichtigungen", "text": "Die KI erfindet die E-Mail-Logik pro Sitzung neu. Vorlagen, Warteschlangen, Wiederholungslogik — jedes Mal anders von Grund auf neu gebaut." },
-    { "title": "Sicherheit und Compliance", "text": "Damit Sie nicht gehackt werden." }
+    { "title": "Sicherheit und Compliance", "text": "Die KI lässt in manchen Sitzungen Rate-Limiting weg. In anderen hartcodiert sie Secrets. Keine zwei Builds behandeln Auth gleich." }
   ],
   "byHandTitle": "Entwickler einstellen",
   "byHandText": "2–3 Monate und 30.000–60.000 $. Und die Auth ist trotzdem oft falsch.",

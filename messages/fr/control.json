@@ -1,6 +1,6 @@
 {
   "eyebrow": "La couche de contrôle",
-  "title": "Fonderie dirige. L'IA exécute.",
+  "title": "Comment Fonderie contrôle l'IA",
   "lede": "Fonderie fournit des fichiers de compétences — des instructions structurées — qui vivent dans votre repo. Quand votre IA lit votre code, elle lit d'abord le plan de Fonderie.",
   "steps": [
     {

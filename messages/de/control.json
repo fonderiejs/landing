@@ -1,6 +1,6 @@
 {
   "eyebrow": "Die Kontrollschicht",
-  "title": "Fonderie steuert. Die KI führt aus.",
+  "title": "So steuert Fonderie die KI",
   "lede": "Fonderie liefert Skill-Dateien — strukturierte Anweisungen — die in Ihrem Repo liegen. Wenn Ihre KI Ihren Code liest, liest sie zuerst Fonderies Playbook.",
   "steps": [
     {

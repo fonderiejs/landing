@@ -7,7 +7,7 @@
     { "title": "Billing and subscriptions", "text": "AI generates different Stripe wiring every time. Some sessions forget webhooks. Others skip invoice logic." },
     { "title": "Team invites and permissions", "text": "AI builds RBAC differently each time. One session uses roles. Another uses flags. Neither matches your auth." },
     { "title": "Email notifications", "text": "AI reinvents email logic per session. Templates, queues, retry logic — rebuilt from scratch, differently every time." },
-    { "title": "Security and compliance", "text": "So you don't get hacked." }
+    { "title": "Security and compliance", "text": "AI skips rate limiting in some sessions. Hardcodes secrets in others. No two builds handle auth the same way." }
   ],
   "byHandTitle": "Hire a developer",
   "byHandText": "2–3 months and $30,000–$60,000. And you still have to get auth right.",
