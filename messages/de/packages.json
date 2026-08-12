@@ -1,11 +1,11 @@
 {
   "eyebrow": "Alles, was Ihr SaaS braucht",
-  "title": "Backend-Module und React-Native-Screen-Kits.",
+  "title": "Backend-Module und Mobile-Screen-Kits.",
   "lede": "Produktionsgetestet, KI-optimiert. Ihre KI rät nicht. Sie folgt Fonderies Anweisungen.",
   "items": [
-    { "title": "Auth (Backend + Mobile)", "text": "JWT, Sessions, OAuth, MFA, Passwort-Reset. Plus React-Native-Login-Screens mit biometrischem Fallback. Ihre KI schreibt Auth nie mehr von Grund auf." },
-    { "title": "Abrechnung (Backend + Mobile)", "text": "Stripe-Integration, Abonnements, Nutzungsmessung. Plus React-Native-Planauswahl und Checkout-Screens. Vorgefertigt. Vorverdrahtet." },
-    { "title": "Workspaces (Backend + Mobile)", "text": "Multi-Tenant-Teams, Einladungen, rollenbasierter Zugriff. Plus React-Native-Team-Switcher und Mitgliederverwaltung. Ihre Kunden verwalten ihre eigenen Organisationen." },
+    { "title": "Auth (Backend + Mobile)", "text": "JWT, Sessions, OAuth, MFA, Passwort-Reset. Plus mobile Login-Screens mit biometrischem Fallback. Ihre KI schreibt Auth nie mehr von Grund auf." },
+    { "title": "Abrechnung (Backend + Mobile)", "text": "Stripe-Integration, Abonnements, Nutzungsmessung. Plus mobile Planauswahl und Checkout-Screens. Vorgefertigt. Vorverdrahtet." },
+    { "title": "Workspaces (Backend + Mobile)", "text": "Multi-Tenant-Teams, Einladungen, rollenbasierter Zugriff. Plus mobiler Team-Switcher und Mitgliederverwaltung. Ihre Kunden verwalten ihre eigenen Organisationen." },
     { "title": "Benachrichtigungen", "text": "E-Mail, SMS, Push-Benachrichtigungen. Fire-and-forget-Messaging. Ihre KI erfindet die E-Mail-Logik nicht jede Sitzung neu." },
     { "title": "Berechtigungen und Audit", "text": "RBAC, Wildcard-Berechtigungen, Super-Rollen-Bypass. Plus workspace-bezogene Audit-Logs." }
   ],

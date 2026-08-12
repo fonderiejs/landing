@@ -1,11 +1,11 @@
 {
   "eyebrow": "Tout ce dont votre SaaS a besoin",
-  "title": "Modules backend et kits d'écrans React Native.",
+  "title": "Modules backend et kits d'écrans Mobile.",
   "lede": "Testé en production, optimisé pour l'IA. Votre IA ne devine pas. Elle suit les instructions de Fonderie.",
   "items": [
-    { "title": "Auth (Backend + Mobile)", "text": "JWT, sessions, OAuth, MFA, réinitialisation de mot de passe. Plus des écrans de connexion React Native avec repli biométrique. Votre IA n'écrit plus jamais l'auth depuis zéro." },
-    { "title": "Facturation (Backend + Mobile)", "text": "Intégration Stripe, abonnements, mesure d'utilisation. Plus un sélecteur de plan et des écrans de paiement React Native. Prêt à l'emploi. Pré-connecté." },
-    { "title": "Espaces de travail (Backend + Mobile)", "text": "Équipes multi-tenant, invitations, accès basé sur les rôles. Plus un sélecteur d'équipe et une gestion des membres React Native. Vos clients gèrent leurs propres organisations." },
+    { "title": "Auth (Backend + Mobile)", "text": "JWT, sessions, OAuth, MFA, réinitialisation de mot de passe. Plus des écrans de connexion mobiles avec repli biométrique. Votre IA n'écrit plus jamais l'auth depuis zéro." },
+    { "title": "Facturation (Backend + Mobile)", "text": "Intégration Stripe, abonnements, mesure d'utilisation. Plus un sélecteur de plan et des écrans de paiement mobiles. Prêt à l'emploi. Pré-connecté." },
+    { "title": "Espaces de travail (Backend + Mobile)", "text": "Équipes multi-tenant, invitations, accès basé sur les rôles. Plus un sélecteur d'équipe et une gestion des membres mobiles. Vos clients gèrent leurs propres organisations." },
     { "title": "Notifications", "text": "E-mail, SMS, notifications push. Messagerie sans attente de réponse. Votre IA ne réinvente plus la logique d'e-mail à chaque session." },
     { "title": "Permissions et audit", "text": "RBAC, permissions génériques, contournement super-rôle. Plus des journaux d'audit à l'échelle de l'espace de travail." }
   ],

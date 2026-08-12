@@ -7,7 +7,7 @@
     { "label": "O que você instala", "alt": "3 serviços, 3 painéis, 3 faturas", "fonderie": "npm install @fonderie/*" },
     { "label": "Propriedade dos dados", "alt": "Servidores deles", "fonderie": "Seu banco de dados" },
     { "label": "Controle da IA", "alt": "IA improvisa a cada sessão", "fonderie": "A Fonderie direciona a IA" },
-    { "label": "React Native", "alt": "Construir do zero", "fonderie": "Screen kits prontos" },
+    { "label": "Apps mobile", "alt": "Construir do zero", "fonderie": "Screen kits prontos" },
     { "label": "Lock-in", "alt": "Alto — serviços hospedados", "fonderie": "Nenhum — código no seu repositório" }
   ],
   "closing": "Todas as outras ferramentas dão à sua IA blocos primitivos e torcem para que dê certo. A Fonderie dá à sua IA um playbook e verifica o resultado. Essa é a diferença entre improviso e execução."

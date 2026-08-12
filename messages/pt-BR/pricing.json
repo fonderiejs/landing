@@ -36,9 +36,9 @@
       "name": "Mobile",
       "price": "US$ 199",
       "period": "/mês",
-      "desc": "Screen kits para React Native",
+      "desc": "Screen kits para Mobile",
       "featuresLead": "Tudo do Grow, mais",
-      "features": ["Telas de auth em React Native", "Telas de cobrança em React Native", "Telas de workspace em React Native", "Shell de navegação"],
+      "features": ["Telas de auth mobile", "Telas de cobrança mobile", "Telas de workspace mobile", "Shell de navegação"],
       "cta": "Falar com vendas — US$ 199",
       "featured": false,
       "hidden": false

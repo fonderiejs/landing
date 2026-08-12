@@ -36,9 +36,9 @@
       "name": "Mobile",
       "price": "199 $",
       "period": "/Monat",
-      "desc": "React-Native-Screen-Kits",
+      "desc": "Mobile-Screen-Kits",
       "featuresLead": "Alles in Grow, plus",
-      "features": ["React-Native-Auth-Screens", "React-Native-Abrechnungs-Screens", "React-Native-Workspace-Screens", "Navigations-Shell"],
+      "features": ["Mobile Auth-Screens", "Mobile Abrechnungs-Screens", "Mobile Workspace-Screens", "Navigations-Shell"],
       "cta": "Vertrieb kontaktieren — 199 $",
       "featured": false,
       "hidden": false

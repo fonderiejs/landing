@@ -36,9 +36,9 @@
       "name": "Mobile",
       "price": "$199",
       "period": "/月",
-      "desc": "React Nativeスクリーンキット",
+      "desc": "モバイル向けスクリーンキット",
       "featuresLead": "Growのすべて、さらに",
-      "features": ["React Native認証画面", "React Native課金画面", "React Nativeワークスペース画面", "ナビゲーションシェル"],
+      "features": ["モバイル認証画面", "モバイル課金画面", "モバイルワークスペース画面", "ナビゲーションシェル"],
       "cta": "営業に問い合わせる — $199",
       "featured": false,
       "hidden": false
