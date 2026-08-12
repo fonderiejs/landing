@@ -1,22 +1,22 @@
 {
-  "eyebrow": "How it works",
-  "title": "How it works",
-  "lede": "From idea to shipped product in three steps.",
+  "eyebrow": "How Fonderie directs your AI",
+  "title": "Fonderie directs. The AI executes.",
+  "lede": "From idea to shipped product in three steps. Fonderie is the director. Your AI is the builder.",
   "steps": [
     {
       "num": "01",
-      "title": "Tell your AI what you want to build",
+      "title": "You describe your product",
       "text": "\"I need a SaaS with login, Stripe billing, and team workspaces.\""
     },
     {
       "num": "02",
-      "title": "Your AI uses Fonderie's building blocks",
-      "text": "Instead of writing everything from scratch, your AI assembles proven, secure components — login screens, payment flows, team invites — all wired together automatically."
+      "title": "Fonderie instructs your AI",
+      "text": "Fonderie's instructions live in your repo. When your AI reads your codebase, it reads Fonderie's playbook first: use the auth module, never write auth from scratch, mount these routes, enforce these types."
     },
     {
       "num": "03",
       "title": "You review and ship",
-      "text": "The AI generates your product. You review it, customize the design, and deploy. Your backend is secure, your frontend works, and your customers can sign up and pay."
+      "text": "The AI generates the code. Fonderie's types and tests verify it. You customize the design and deploy. Your backend is secure, your frontend works, and your customers can sign up and pay."
     }
   ]
 }

@@ -86,7 +86,7 @@ const jsonLd = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Any',
       description:
-        'Ship your SaaS in a week. Fonderie gives AI assistants the building blocks for auth, billing, and team management — so founders focus on their product, not infrastructure.',
+        'Fonderie directs AI assistants to build secure SaaS infrastructure — auth, billing, workspaces, permissions — as self-hosted TypeScript modules. Founders focus on their product, not infrastructure.',
       downloadUrl: 'https://github.com/fonderiejs/fonderie',
       isAccessibleForFree: true,
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
@@ -101,7 +101,7 @@ const jsonLd = {
           name: 'Is Fonderie a service? Do you host my data?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'No. Fonderie is not a hosted service — your data stays on your own servers. Your AI assistant uses Fonderie as a set of building blocks when it builds your product, and everything runs on your own infrastructure.',
+            text: 'No. Fonderie is not a hosted service — your data stays on your own servers. Fonderie ships instructions that direct your AI assistant to build correctly, and everything runs in your process, against your database.',
           },
         },
         {

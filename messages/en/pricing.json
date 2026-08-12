@@ -1,70 +1,70 @@
 {
   "eyebrow": "Pricing",
-  "title": "Start free. Pay when you earn.",
-  "lede": "Free while you build. Upgrade only once you have paying customers.",
+  "title": "Start free. Pay when you deploy.",
+  "lede": "Free forever while you build. Upgrade when your SaaS goes live.",
   "tiers": [
     {
-      "name": "Starter",
+      "name": "Build",
       "price": "Free",
       "period": "",
-      "desc": "For building your product",
-      "features": ["All building blocks", "Community support"],
-      "cta": "Start building",
+      "desc": "For side projects and pre-revenue SaaS",
+      "features": ["All backend modules", "Community support"],
+      "cta": "npm install — free",
       "featured": false
     },
     {
       "name": "Launch",
       "price": "$49",
       "period": "/mo",
-      "desc": "For SaaS with paying customers",
-      "featuresLead": "Everything in Starter, plus",
-      "features": ["Priority support", "Production-ready features"],
-      "cta": "Start shipping",
+      "desc": "For SaaS with first paying customers",
+      "featuresLead": "Everything in Build, plus",
+      "features": ["Priority support", "Production license + audit logs"],
+      "cta": "Start shipping — $49",
       "featured": false
     },
     {
-      "name": "Scale",
+      "name": "Grow",
       "price": "$149",
       "period": "/mo",
-      "desc": "For growing teams",
+      "desc": "For teams adding members",
       "featuresLead": "Everything in Launch, plus",
-      "features": ["Team collaboration", "Advanced security"],
+      "features": ["Team features + role management", "Advanced security"],
       "cta": "Contact sales",
       "featured": true
     },
     {
-      "name": "Screen Kits",
+      "name": "Mobile",
       "price": "$199",
       "period": "/mo",
-      "desc": "For cross-platform teams",
-      "featuresLead": "Everything in Scale, plus",
-      "features": ["Frontend screen kits", "Face ID login", "Navigation shell", "Cross-platform support"],
-      "cta": "Contact sales",
+      "desc": "React Native screen kits",
+      "featuresLead": "Everything in Grow, plus",
+      "features": ["React Native auth screens", "React Native billing screens", "React Native workspace screens", "Navigation shell"],
+      "cta": "Contact sales — $199",
       "featured": false,
-      "hidden": true
+      "hidden": false
     },
     {
       "name": "Enterprise",
       "price": "Custom",
       "period": "",
-      "desc": "For organizations",
-      "featuresLead": "Everything in Scale, plus",
-      "features": ["Single sign-on (SSO)", "Compliance support", "Your data stays on your servers", "Dedicated account manager"],
+      "desc": "For organizations with compliance needs",
+      "featuresLead": "Everything in Grow, plus",
+      "features": ["Single sign-on (SSO)", "Compliance support", "On-premise deployment", "Dedicated account manager"],
       "cta": "Contact sales",
       "featured": false
     }
   ],
-  "compareNote1": "Compare to hiring a developer for 3 months: $30,000–$60,000.",
-  "compareNote2": "$49/month is less than one day of a contractor.",
-  "compareNote3": "You only pay when your SaaS starts earning.",
+  "compareNote1": "Compare to hiring a backend developer for 3 months: $30,000–$60,000.",
+  "compareNote2": "Fonderie Launch is $49/month. Less than one day of a contractor.",
+  "compareNote3": "You only pay when your SaaS goes live.",
   "finalCta": {
-    "title": "Stop building infrastructure. Start building your product.",
-    "lede": "Everything your SaaS needs, already built and ready to ship.",
-    "getStarted": "Start building for free",
+    "title": "Stop debugging auth. Start building your product.",
+    "lede": "Fonderie directs your AI to build the infrastructure. You focus on what makes your SaaS unique.",
+    "getStarted": "npm install @fonderie/core",
     "star": "Star on GitHub",
-    "prompts": "System prompts for Claude Code and Cursor ship with the repo —",
+    "prompts": "Instructions for Claude Code and Cursor ship with the repo —",
     "promptsLink": "grab them on GitHub →",
-    "tag": "For founders who want to ship, not configure",
-    "team": "Built by founders who were tired of rebuilding auth for every new product."
+    "tag": "For founders who want to ship, not rebuild auth",
+    "team": "Built by a founder who spent years as a contractor at PayPal working on internal auditing and merchant-facing tools — and got tired of watching AI reintroduce the same bugs every session."
   }
 }
