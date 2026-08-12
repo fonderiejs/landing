@@ -9,7 +9,7 @@
       "period": "",
       "desc": "Für Nebenprojekte und Pre-Revenue-SaaS",
       "features": ["Alle Backend-Module", "Community-Support"],
-      "cta": "npm install — kostenlos",
+      "cta": "Loslegen — kostenlos",
       "featured": false
     },
     {
@@ -41,7 +41,7 @@
       "features": ["Mobile Auth-Screens", "Mobile Abrechnungs-Screens", "Mobile Workspace-Screens", "Navigations-Shell"],
       "cta": "Vertrieb kontaktieren — 199 $",
       "featured": false,
-      "hidden": false
+      "hidden": true
     },
     {
       "name": "Enterprise",
@@ -60,7 +60,7 @@
   "finalCta": {
     "title": "Hören Sie auf, Auth zu debuggen. Bauen Sie Ihr Produkt.",
     "lede": "Fonderie steuert Ihre KI beim Bau der Infrastruktur. Sie konzentrieren sich darauf, was Ihr SaaS einzigartig macht.",
-    "getStarted": "npm install @fonderie/core",
+    "getStarted": "Loslegen — kostenlos",
     "star": "Auf GitHub mit Stern versehen",
     "prompts": "Anweisungen für Claude Code und Cursor werden mit dem Repo ausgeliefert —",
     "promptsLink": "auf GitHub holen →",

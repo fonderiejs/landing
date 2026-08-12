@@ -9,7 +9,7 @@
       "period": "",
       "desc": "适合个人项目和尚未产生收入的 SaaS",
       "features": ["所有后端模块", "社区支持"],
-      "cta": "npm install — 免费",
+      "cta": "开始构建 — 免费",
       "featured": false
     },
     {
@@ -41,7 +41,7 @@
       "features": ["移动端认证界面", "移动端计费界面", "移动端工作区界面", "导航外壳"],
       "cta": "联系销售 — $199",
       "featured": false,
-      "hidden": false
+      "hidden": true
     },
     {
       "name": "Enterprise",
@@ -60,7 +60,7 @@
   "finalCta": {
     "title": "别再调试认证系统了，去构建你的产品。",
     "lede": "Fonderie 指挥你的 AI 搭建基础设施，你只需专注于让你的 SaaS 与众不同的部分。",
-    "getStarted": "npm install @fonderie/core",
+    "getStarted": "开始构建 — 免费",
     "star": "在 GitHub 上点星",
     "prompts": "适用于 Claude Code 和 Cursor 的指令随仓库一起提供 —",
     "promptsLink": "在 GitHub 上获取 →",

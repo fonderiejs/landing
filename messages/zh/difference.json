@@ -4,7 +4,7 @@
   "tableHeadAlt": "Clerk + Stripe + Supabase",
   "tableHeadFonderie": "Fonderie",
   "rows": [
-    { "label": "你需要安装的东西", "alt": "3 个服务、3 个控制台、3 张账单", "fonderie": "npm install @fonderie/*" },
+    { "label": "你需要安装的东西", "alt": "3 个服务、3 个控制台、3 张账单", "fonderie": "一次安装，一个代码库。" },
     { "label": "数据所有权", "alt": "对方的服务器", "fonderie": "你自己的数据库" },
     { "label": "AI 控制", "alt": "AI 每次会话都即兴发挥", "fonderie": "Fonderie 指挥 AI" },
     { "label": "移动应用", "alt": "从零开始搭建", "fonderie": "预制界面套件" },

@@ -9,7 +9,7 @@
       "period": "",
       "desc": "Pour les projets personnels et le SaaS pré-revenu",
       "features": ["Tous les modules backend", "Support communautaire"],
-      "cta": "npm install — gratuit",
+      "cta": "Commencer — gratuit",
       "featured": false
     },
     {
@@ -41,7 +41,7 @@
       "features": ["Écrans d'auth mobiles", "Écrans de facturation mobiles", "Écrans d'espace de travail mobiles", "Structure de navigation"],
       "cta": "Contacter les ventes — 199 $",
       "featured": false,
-      "hidden": false
+      "hidden": true
     },
     {
       "name": "Enterprise",
@@ -60,7 +60,7 @@
   "finalCta": {
     "title": "Arrêtez de déboguer l'auth. Construisez votre produit.",
     "lede": "Fonderie dirige votre IA pour construire l'infrastructure. Vous vous concentrez sur ce qui rend votre SaaS unique.",
-    "getStarted": "npm install @fonderie/core",
+    "getStarted": "Commencer — gratuit",
     "star": "Mettre une étoile sur GitHub",
     "prompts": "Les instructions pour Claude Code et Cursor sont fournies avec le repo —",
     "promptsLink": "récupérez-les sur GitHub →",
