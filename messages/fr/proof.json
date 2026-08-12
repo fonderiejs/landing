@@ -3,7 +3,7 @@
   "stats": [
     { "value": "2 jours", "label": "De l'idée au backend livré", "sub": "Au lieu de 9 semaines" },
     { "value": "49 $", "label": "Plan Launch, forfait mensuel", "sub": "contre 30 000 $+ pour embaucher un développeur" },
-    { "value": "Toute IA", "label": "Un cerveau, toute IA", "sub": "Changez de modèle sans changer votre produit" }
+    { "value": "100 %", "label": "Un seul plan. Toute IA.", "sub": "Changez d'outil sans tout reconstruire" }
   ],
   "testimonial": {
     "quote": "Nous avons reconstruit notre système d'auth 3 fois avec l'IA avant de trouver Fonderie. Chaque fois, un bug différent. Fonderie a donné à notre IA un plan à suivre. Nous avons livré en 4 jours au lieu de 4 semaines.",
