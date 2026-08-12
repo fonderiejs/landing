@@ -21,6 +21,7 @@ export async function generateMetadata({
   const title = `${t('siteTitle')} — ${t('meta.titleSuffix')}`;
   const description = t('meta.description');
   const ogImage = `/images/og-image-${locale}.png`;
+  const canonicalPath = locale === 'en' ? '/' : `/${locale}`;
 
   return {
     title,
@@ -40,13 +41,13 @@ export async function generateMetadata({
     manifest: '/manifest.json',
     metadataBase: new URL('https://fonderiejs.com'),
     alternates: {
-      canonical: locale === 'en' ? '/' : `/${locale}`,
+      canonical: canonicalPath,
       languages: Object.fromEntries(locales.map((l) => [l, l === 'en' ? '/' : `/${l}`])),
     },
     openGraph: {
       title,
       description,
-      url: 'https://fonderiejs.com',
+      url: canonicalPath,
       siteName: 'Fonderie',
       images: [{ url: ogImage, width: 1200, height: 630, type: 'image/png', alt: title }],
       type: 'website',
