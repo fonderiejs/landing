@@ -1,8 +1,8 @@
 {
   "siteTitle": "Fonderie",
   "meta": {
-    "titleSuffix": "Ship your SaaS this week",
-    "description": "Fonderie gives your AI assistant the building blocks for auth, billing, and team management — so you can ship your SaaS in a week, not a quarter."
+    "titleSuffix": "The AI Infrastructure Control Layer for SaaS",
+    "description": "Fonderie directs AI assistants to build secure SaaS infrastructure — auth, billing, teams, permissions — so founders ship in days, not months. Self-hosted. MIT licensed."
   },
   "nav": {
     "solution": "How it works",
@@ -12,13 +12,13 @@
     "contact": "Contact"
   },
   "cta": {
-    "getStarted": "Start building for free",
-    "howItWorks": "See how it works",
+    "getStarted": "Start building — free forever",
+    "howItWorks": "See how Fonderie directs the AI",
     "startShipping": "Start shipping",
     "contactSales": "Contact sales"
   },
   "footer": {
-    "tagline": "Built for founders who ship.",
+    "tagline": "The control layer for AI-built SaaS.",
     "product": "Product",
     "github": "GitHub",
     "docs": "Docs",

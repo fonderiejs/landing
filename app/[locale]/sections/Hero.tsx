@@ -24,7 +24,7 @@ export default function Hero() {
         </p>
         <div className="hero__cta">
           <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" className="btn btn--dark">
-            {tc('cta.getStarted')}
+            {t('primaryCta')}
             <span className="btn__chip">
               <svg viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round" width={14} height={14}>
                 <path d="M7 17 17 7" />

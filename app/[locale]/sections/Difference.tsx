@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 
 export default function Difference() {
   const t = useTranslations('difference');
-  const cards = t.raw('cards') as { title: string; text: string }[];
+  const rows = t.raw('rows') as { label: string; alt: string; fonderie: string }[];
 
   return (
     <section className="difference">
@@ -13,14 +13,31 @@ export default function Difference() {
         <h2 className="section-title section-title--lg" data-reveal="">
           {t('title')}
         </h2>
-        <div className="packages__grid" data-reveal="">
-          {cards.map((card) => (
-            <div key={card.title} className="packages__card">
-              <h3 className="packages__card-title">{card.title}</h3>
-              <p className="packages__card-text">{card.text}</p>
-            </div>
-          ))}
+        <div className="difference__table-wrap" data-reveal="">
+          <table className="difference__table">
+            <thead>
+              <tr>
+                <th />
+                <th>{t('tableHeadAlt')}</th>
+                <th>{t('tableHeadFonderie')}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row) => (
+                <tr key={row.label}>
+                  <td>{row.label}</td>
+                  <td>{row.alt}</td>
+                  <td>
+                    <strong>{row.fonderie}</strong>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
+        <p className="difference__closing" data-reveal="">
+          {t('closing')}
+        </p>
       </div>
     </section>
   );

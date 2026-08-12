@@ -1,13 +1,13 @@
 {
-  "eyebrow": "What you get",
-  "title": "Everything your SaaS needs.",
-  "lede": "Real, working features — not templates. Your AI wires them into your product automatically.",
+  "eyebrow": "Everything your SaaS needs",
+  "title": "Backend modules and React Native screen kits.",
+  "lede": "Production-tested, AI-optimized. Your AI doesn't guess. It follows Fonderie's instructions.",
   "items": [
-    { "title": "User Accounts", "text": "Login, signup, password reset, social login, and Face ID. Your users get in. You don't build it." },
-    { "title": "Payments", "text": "Stripe integration, subscription plans, per-seat billing, and invoice management. You get paid. You don't wire it." },
-    { "title": "Teams and Permissions", "text": "Invite coworkers, assign roles, control who sees what. Your customers manage their own teams. You don't code it." },
-    { "title": "Notifications", "text": "Email, SMS, and push notifications. Your users stay informed. You don't configure it." },
-    { "title": "Security and Compliance", "text": "Audit logs, rate limiting, and SOC 2 readiness. Your app stays secure. You don't worry about it." }
+    { "title": "Auth (Backend + Mobile)", "text": "JWT, sessions, OAuth, MFA, password reset. Plus React Native login screens with biometric fallback. Your AI never writes auth from scratch." },
+    { "title": "Billing (Backend + Mobile)", "text": "Stripe integration, subscriptions, usage metering. Plus React Native plan selector and checkout screens. Pre-built. Pre-wired." },
+    { "title": "Workspaces (Backend + Mobile)", "text": "Multi-tenant teams, invites, role-based access. Plus React Native team switcher and member management. Your customers manage their own orgs." },
+    { "title": "Notifications", "text": "Email, SMS, and push notifications. Fire-and-forget messaging. Your AI doesn't reinvent email logic every session." },
+    { "title": "Permissions and Audit", "text": "RBAC, wildcard permissions, super-role bypass. Plus workspace-scoped audit logs." }
   ],
   "footnote": "Want the technical details?",
   "footnoteLink": "See the code on GitHub →"

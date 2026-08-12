@@ -6,10 +6,10 @@
     { "value": "0", "label": "Lock-in", "sub": "Same code, any AI" }
   ],
   "testimonial": {
-    "quote": "We rebuilt our auth system 3 times before finding Fonderie. Shipped our app in 4 days instead of 4 weeks.",
+    "quote": "We rebuilt our auth system 3 times with AI before finding Fonderie. Each time, a different bug. Fonderie gave our AI a playbook. We shipped in 4 days instead of 4 weeks.",
     "attribution": "— Magus Dacar, CEO at CrewFinding Inc."
   },
-  "metric": "200+ apps shipped · 8,000+ weekly users · 2,000+ GitHub stars",
-  "footnote": "Results from a reproducible A/B security experiment.",
-  "footnoteLink": "See the methodology →"
+  "metric": "",
+  "footnote": "",
+  "footnoteLink": ""
 }

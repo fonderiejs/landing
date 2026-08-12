@@ -1,19 +1,19 @@
 {
-  "eyebrow": "The problem",
-  "title": "Every SaaS rebuilds the same 5 things.",
-  "lede": "Before you write a single line of your actual product, you need:",
+  "eyebrow": "The problem AI made worse",
+  "title": "Every SaaS rebuilds the same infrastructure. AI just made it faster — and less consistent.",
+  "lede": "Before you write your product, you need auth, billing, teams, permissions. AI improvises all of it differently every session.",
   "items": [
-    { "title": "Login and signup", "text": "So users can access your app." },
-    { "title": "Billing and subscriptions", "text": "So you can get paid." },
-    { "title": "Team invites and permissions", "text": "So customers can invite their coworkers." },
-    { "title": "Email notifications", "text": "So users know what happened." },
+    { "title": "Login and signup", "text": "AI improvises this every session. Different bugs. Different APIs. Inconsistent security." },
+    { "title": "Billing and subscriptions", "text": "AI generates different Stripe wiring every time. Some sessions forget webhooks. Others skip invoice logic." },
+    { "title": "Team invites and permissions", "text": "AI builds RBAC differently each time. One session uses roles. Another uses flags. Neither matches your auth." },
+    { "title": "Email notifications", "text": "AI reinvents email logic per session. Templates, queues, retry logic — rebuilt from scratch, differently every time." },
     { "title": "Security and compliance", "text": "So you don't get hacked." }
   ],
-  "byHandTitle": "By hand",
-  "byHandText": "2–3 months and $30,000–$60,000 hiring a developer.",
-  "withAiTitle": "With AI alone",
-  "withAiText": "Your assistant improvises everything from scratch every session — different login flows, different billing logic, different bugs. It wastes hours (and your AI budget) debugging the same problems over and over.",
+  "byHandTitle": "Hire a developer",
+  "byHandText": "2–3 months and $30,000–$60,000. And you still have to get auth right.",
+  "withAiTitle": "AI alone",
+  "withAiText": "Your assistant improvises from scratch every session — different login flows, different billing logic, different bugs. It wastes hours (and your AI budget) debugging the same problems over and over.",
   "withFonderieTitle": "With Fonderie",
-  "withFonderieText": "Your AI uses proven, tested building blocks. Same login flow every time. Same billing logic. Same security. You ship in a week and spend your time talking to customers.",
-  "whyNowLine": "In 2026, 90% of SaaS founders use AI assistants to build. And 100% of them are improvising the same infrastructure. Fonderie is the standard library AI was missing."
+  "withFonderieText": "Fonderie directs your AI to use proven, tested modules. Same login flow every time. Same billing logic. Same security. You spend your time talking to customers.",
+  "whyNowLine": "In 2026, most SaaS founders use AI assistants to build. Nearly all of them are improvising the same infrastructure, differently every session. Fonderie is the control layer AI needs."
 }
