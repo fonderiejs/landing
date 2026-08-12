@@ -1,22 +1,22 @@
 {
-  "eyebrow": "Comment ça marche",
-  "title": "Comment ça marche",
-  "lede": "De l'idée au produit livré en trois étapes.",
+  "eyebrow": "Comment Fonderie dirige votre IA",
+  "title": "Fonderie dirige. L'IA exécute.",
+  "lede": "De l'idée au produit livré en trois étapes. Fonderie est le directeur. Votre IA est le constructeur.",
   "steps": [
     {
       "num": "01",
-      "title": "Dites à votre IA ce que vous voulez construire",
+      "title": "Vous décrivez votre produit",
       "text": "« J'ai besoin d'un SaaS avec connexion, facturation Stripe et espaces d'équipe. »"
     },
     {
       "num": "02",
-      "title": "Votre IA utilise les briques de Fonderie",
-      "text": "Au lieu de tout écrire depuis zéro, votre IA assemble des composants éprouvés et sécurisés — écrans de connexion, flux de paiement, invitations d'équipe — tous connectés automatiquement."
+      "title": "Fonderie instruit votre IA",
+      "text": "Les instructions de Fonderie vivent dans votre repo. Quand votre IA lit votre code, elle lit d'abord le plan de Fonderie : utiliser le module d'auth, ne jamais l'écrire depuis zéro, monter ces routes, appliquer ces types."
     },
     {
       "num": "03",
       "title": "Vous vérifiez et livrez",
-      "text": "L'IA génère votre produit. Vous le vérifiez, personnalisez le design et déployez. Votre backend est sécurisé, votre frontend fonctionne, et vos clients peuvent s'inscrire et payer."
+      "text": "L'IA génère le code. Les types et les tests de Fonderie le vérifient. Vous personnalisez le design et déployez. Votre backend est sécurisé, votre frontend fonctionne, et vos clients peuvent s'inscrire et payer."
     }
   ]
 }

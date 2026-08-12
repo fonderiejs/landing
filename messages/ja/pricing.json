@@ -1,70 +1,70 @@
 {
   "eyebrow": "料金",
-  "title": "無料で始めて、収益が出たら払う。",
-  "lede": "作っている間は無料。有料顧客がついてから初めてアップグレードしてください。",
+  "title": "無料で始めて、デプロイ時に支払う。",
+  "lede": "構築中はずっと無料。SaaSが本番稼働したらアップグレード。",
   "tiers": [
     {
-      "name": "Starter",
+      "name": "Build",
       "price": "無料",
       "period": "",
-      "desc": "プロダクトを作るために",
-      "features": ["すべての部品", "コミュニティサポート"],
-      "cta": "始める",
+      "desc": "サイドプロジェクトや収益前のSaaS向け",
+      "features": ["すべてのバックエンドモジュール", "コミュニティサポート"],
+      "cta": "npm install — 無料",
       "featured": false
     },
     {
       "name": "Launch",
       "price": "$49",
       "period": "/月",
-      "desc": "有料顧客がいるSaaS向け",
-      "featuresLead": "Starterのすべて、さらに",
-      "features": ["優先サポート", "本番対応の機能"],
-      "cta": "リリースを始める",
+      "desc": "最初の有料顧客がいるSaaS向け",
+      "featuresLead": "Buildのすべて、さらに",
+      "features": ["優先サポート", "本番ライセンス + 監査ログ"],
+      "cta": "出荷を始める — $49",
       "featured": false
     },
     {
-      "name": "Scale",
+      "name": "Grow",
       "price": "$149",
       "period": "/月",
-      "desc": "成長中のチーム向け",
+      "desc": "メンバーが増えるチーム向け",
       "featuresLead": "Launchのすべて、さらに",
-      "features": ["チームコラボレーション", "高度なセキュリティ"],
+      "features": ["チーム機能 + ロール管理", "高度なセキュリティ"],
       "cta": "営業に問い合わせる",
       "featured": true
     },
     {
-      "name": "Screen Kits",
+      "name": "Mobile",
       "price": "$199",
       "period": "/月",
-      "desc": "クロスプラットフォームチーム向け",
-      "featuresLead": "Scaleのすべて、さらに",
-      "features": ["フロントエンドスクリーンキット", "Face IDログイン", "ナビゲーション構造", "クロスプラットフォーム対応"],
-      "cta": "営業に問い合わせる",
+      "desc": "React Nativeスクリーンキット",
+      "featuresLead": "Growのすべて、さらに",
+      "features": ["React Native認証画面", "React Native課金画面", "React Nativeワークスペース画面", "ナビゲーションシェル"],
+      "cta": "営業に問い合わせる — $199",
       "featured": false,
-      "hidden": true
+      "hidden": false
     },
     {
       "name": "Enterprise",
-      "price": "個別見積もり",
+      "price": "カスタム",
       "period": "",
-      "desc": "組織向け",
-      "featuresLead": "Scaleのすべて、さらに",
-      "features": ["シングルサインオン（SSO）", "コンプライアンス支援", "データは自社サーバーに保持", "専任アカウント担当"],
+      "desc": "コンプライアンス要件のある組織向け",
+      "featuresLead": "Growのすべて、さらに",
+      "features": ["シングルサインオン（SSO）", "コンプライアンスサポート", "オンプレミス展開", "専任アカウントマネージャー"],
       "cta": "営業に問い合わせる",
       "featured": false
     }
   ],
-  "compareNote1": "開発者を3か月雇う場合と比較：3万〜6万ドル。",
-  "compareNote2": "月額$49は業務委託エンジニア1日分より安い。",
-  "compareNote3": "SaaSが収益を生み始めたときだけお支払いいただきます。",
+  "compareNote1": "バックエンド開発者を3ヶ月雇う場合と比較してください：3万〜6万ドル。",
+  "compareNote2": "Fonderie Launchは月額$49。契約社員の1日分より安い。",
+  "compareNote3": "SaaSが本番稼働するまで料金は発生しません。",
   "finalCta": {
-    "title": "インフラ作りをやめて、プロダクト作りを始めよう。",
-    "lede": "あなたのSaaSに必要な全てが、すでに作られリリース可能な状態です。",
-    "getStarted": "無料で始める",
+    "title": "認証のデバッグはもうやめよう。プロダクトを作ろう。",
+    "lede": "Fonderieがあなたの AI にインフラの構築を指示します。あなたはSaaSを独自たらしめる部分に集中できます。",
+    "getStarted": "npm install @fonderie/core",
     "star": "GitHubでスターを付ける",
-    "prompts": "Claude CodeとCursor向けのシステムプロンプトがリポジトリに同梱されています —",
-    "promptsLink": "GitHubで入手する →",
-    "tag": "設定ではなく、リリースしたい創業者のために",
-    "team": "新しいプロダクトのたびに認証を作り直すことにうんざりした創業者たちが作りました。"
+    "prompts": "Claude CodeとCursor向けの指示はリポジトリに同梱されています —",
+    "promptsLink": "GitHubで取得 →",
+    "tag": "認証を作り直すのではなく、出荷したい創業者のために",
+    "team": "PayPalで契約社員として長年、社内監査ツールや加盟店向けツールに携わった創業者が作りました — AIが毎回同じバグを再発させるのを見て、うんざりしたことがきっかけです。"
   }
 }

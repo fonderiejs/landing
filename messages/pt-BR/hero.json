@@ -1,16 +1,17 @@
 {
-  "eyebrow": "Para founders lançando SaaS",
-  "titleLine1": "Lance seu SaaS nesta semana,",
-  "titleLine2": "não no próximo trimestre.",
-  "lede": "Diga ao Claude, Cursor ou ChatGPT o que você quer construir.",
-  "ledeStrong": "A Fonderie dá ao seu assistente de IA os blocos prontos para auth, cobrança e gestão de times — para que ele construa seu produto em vez de improvisar do zero.",
-  "proof": "Seguro por padrão · Funciona com qualquer IA · Sem lock-in",
-  "worksWith": "Funciona com",
+  "eyebrow": "A camada de controle de infraestrutura de IA",
+  "titleLine1": "Lance seu SaaS neste fim de semana.",
+  "titleLine2": "Não no próximo trimestre.",
+  "lede": "Você descreve seu produto.",
+  "ledeStrong": "A Fonderie direciona seu assistente de IA para construir auth, cobrança e times — de forma segura e correta, sempre. Sem improviso.",
+  "primaryCta": "npm install @fonderie/core",
+  "proof": "Auto-hospedado · Licença MIT · Sem lock-in",
+  "worksWith": "Direciona",
   "assistants": {
     "claudeCode": "Claude Code",
     "cursor": "Cursor",
     "codex": "Codex",
     "windsurf": "Windsurf",
-    "any": "Qualquer IA que lê código"
+    "any": "Qualquer IA que leia código"
   }
 }

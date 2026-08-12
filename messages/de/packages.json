@@ -1,14 +1,14 @@
 {
-  "eyebrow": "Was du bekommst",
-  "title": "Alles, was dein SaaS braucht.",
-  "lede": "Echte, funktionierende Features — keine Vorlagen. Deine KI verbindet sie automatisch mit deinem Produkt.",
+  "eyebrow": "Alles, was Ihr SaaS braucht",
+  "title": "Backend-Module und React-Native-Screen-Kits.",
+  "lede": "Produktionsgetestet, KI-optimiert. Ihre KI rät nicht. Sie folgt Fonderies Anweisungen.",
   "items": [
-    { "title": "Nutzerkonten", "text": "Login, Registrierung, Passwort-Reset, Social Login und Face ID. Deine Nutzer kommen rein. Du musst es nicht bauen." },
-    { "title": "Zahlungen", "text": "Stripe-Integration, Abo-Pläne, Abrechnung pro Sitzplatz und Rechnungsverwaltung. Du wirst bezahlt. Du musst es nicht verdrahten." },
-    { "title": "Teams und Berechtigungen", "text": "Kollegen einladen, Rollen vergeben, steuern, wer was sieht. Deine Kunden verwalten ihre eigenen Teams. Du musst es nicht programmieren." },
-    { "title": "Benachrichtigungen", "text": "E-Mail, SMS und Push-Benachrichtigungen. Deine Nutzer bleiben informiert. Du musst es nicht konfigurieren." },
-    { "title": "Sicherheit und Compliance", "text": "Audit-Logs, Rate-Limiting und SOC-2-Bereitschaft. Deine App bleibt sicher. Du musst dich nicht darum kümmern." }
+    { "title": "Auth (Backend + Mobile)", "text": "JWT, Sessions, OAuth, MFA, Passwort-Reset. Plus React-Native-Login-Screens mit biometrischem Fallback. Ihre KI schreibt Auth nie mehr von Grund auf." },
+    { "title": "Abrechnung (Backend + Mobile)", "text": "Stripe-Integration, Abonnements, Nutzungsmessung. Plus React-Native-Planauswahl und Checkout-Screens. Vorgefertigt. Vorverdrahtet." },
+    { "title": "Workspaces (Backend + Mobile)", "text": "Multi-Tenant-Teams, Einladungen, rollenbasierter Zugriff. Plus React-Native-Team-Switcher und Mitgliederverwaltung. Ihre Kunden verwalten ihre eigenen Organisationen." },
+    { "title": "Benachrichtigungen", "text": "E-Mail, SMS, Push-Benachrichtigungen. Fire-and-forget-Messaging. Ihre KI erfindet die E-Mail-Logik nicht jede Sitzung neu." },
+    { "title": "Berechtigungen und Audit", "text": "RBAC, Wildcard-Berechtigungen, Super-Rollen-Bypass. Plus workspace-bezogene Audit-Logs." }
   ],
-  "footnote": "Willst du die technischen Details?",
-  "footnoteLink": "Sieh dir den Code auf GitHub an →"
+  "footnote": "Wollen Sie die technischen Details?",
+  "footnoteLink": "Code auf GitHub ansehen →"
 }

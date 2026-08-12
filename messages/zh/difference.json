@@ -1,26 +1,14 @@
 {
-  "eyebrow": "创始人为什么选择 Fonderie",
-  "title": "创始人为什么选择 Fonderie",
-  "cards": [
-    {
-      "icon": "🔒",
-      "title": "你的基础设施会自动变得更好",
-      "text": "新功能、安全补丁和合规更新持续推送。你不用碰一行基础设施代码，你的 SaaS 就在不断变好。"
-    },
-    {
-      "icon": "💰",
-      "title": "降低你的 AI 费用",
-      "text": "你的 AI 不用再浪费预算反复即兴拼凑登录流程，而是使用 Fonderie 的现成模块。结果一样，成本更低。"
-    },
-    {
-      "icon": "🤖",
-      "title": "兼容任何 AI",
-      "text": "今天用 Claude，明天用 Cursor，下周用 ChatGPT。无论用哪个 AI，Fonderie 的模块都以同样的方式工作。换工具也不会破坏你的产品。因为 Fonderie 把每个后端组件都标准化了，无论你用哪个 AI 构建的应用，我们的团队都能为你提供支持。"
-    },
-    {
-      "icon": "⏰",
-      "title": "和客户沟通，而不是调试认证",
-      "text": "本该用来修登录 bug 的那一个月？拿去理解你的客户，构建他们真正想要的功能。"
-    }
-  ]
+  "eyebrow": "为什么选择 Fonderie，而不是其他方案",
+  "title": "Fonderie 对比自己拼凑方案",
+  "tableHeadAlt": "Clerk + Stripe + Supabase",
+  "tableHeadFonderie": "Fonderie",
+  "rows": [
+    { "label": "你需要安装的东西", "alt": "3 个服务、3 个控制台、3 张账单", "fonderie": "npm install @fonderie/*" },
+    { "label": "数据所有权", "alt": "对方的服务器", "fonderie": "你自己的数据库" },
+    { "label": "AI 控制", "alt": "AI 每次会话都即兴发挥", "fonderie": "Fonderie 指挥 AI" },
+    { "label": "React Native", "alt": "从零开始搭建", "fonderie": "预制界面套件" },
+    { "label": "锁定风险", "alt": "高——托管服务", "fonderie": "无——代码在你自己的仓库中" }
+  ],
+  "closing": "其他工具只是把基础组件交给你的 AI，然后祈祷结果不出错。Fonderie 给你的 AI 一份操作手册，并验证结果。这就是即兴发挥和精确执行的区别。"
 }

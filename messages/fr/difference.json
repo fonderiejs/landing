@@ -1,26 +1,14 @@
 {
-  "eyebrow": "Pourquoi les fondateurs choisissent Fonderie",
-  "title": "Pourquoi les fondateurs choisissent Fonderie",
-  "cards": [
-    {
-      "icon": "🔒",
-      "title": "Votre infrastructure s'améliore automatiquement",
-      "text": "Nouvelles fonctionnalités, correctifs de sécurité et mises à jour de conformité sont livrés en continu. Votre SaaS s'améliore sans que vous touchiez une ligne de code d'infrastructure."
-    },
-    {
-      "icon": "💰",
-      "title": "Réduisez votre facture d'IA",
-      "text": "Votre IA ne gaspille plus votre budget à improviser un flux de connexion à chaque fois. Elle utilise les briques de Fonderie à la place. Même résultat, coût réduit."
-    },
-    {
-      "icon": "🤖",
-      "title": "Fonctionne avec toute IA",
-      "text": "Claude aujourd'hui, Cursor demain, ChatGPT la semaine prochaine. Les briques de Fonderie fonctionnent de la même façon quelle que soit l'IA que vous utilisez. Votre produit ne casse pas quand vous changez d'outil. Comme Fonderie normalise chaque composant backend, notre équipe peut vous accompagner quel que soit l'IA que vous avez utilisée pour construire votre app."
-    },
-    {
-      "icon": "⏰",
-      "title": "Parlez à vos clients, pas à déboguer l'auth",
-      "text": "Ce mois que vous auriez passé à corriger des bugs de connexion ? Passez-le à comprendre vos clients et à construire les fonctionnalités qu'ils veulent vraiment."
-    }
-  ]
+  "eyebrow": "Pourquoi Fonderie, pas l'alternative",
+  "title": "Fonderie contre l'assemblage manuel",
+  "tableHeadAlt": "Clerk + Stripe + Supabase",
+  "tableHeadFonderie": "Fonderie",
+  "rows": [
+    { "label": "Ce que vous installez", "alt": "3 services, 3 tableaux de bord, 3 factures", "fonderie": "npm install @fonderie/*" },
+    { "label": "Propriété des données", "alt": "Leurs serveurs", "fonderie": "Votre base de données" },
+    { "label": "Contrôle de l'IA", "alt": "L'IA improvise à chaque session", "fonderie": "Fonderie dirige l'IA" },
+    { "label": "React Native", "alt": "À construire depuis zéro", "fonderie": "Kits d'écrans prêts à l'emploi" },
+    { "label": "Dépendance forcée", "alt": "Élevée — services hébergés", "fonderie": "Aucune — code dans votre repo" }
+  ],
+  "closing": "Tous les autres outils donnent à votre IA des briques de base et espèrent le meilleur. Fonderie donne à votre IA un plan à suivre et vérifie le résultat. C'est la différence entre l'improvisation et l'exécution."
 }

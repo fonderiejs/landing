@@ -1,26 +1,14 @@
 {
-  "eyebrow": "Warum Gründer sich für Fonderie entscheiden",
-  "title": "Warum Gründer sich für Fonderie entscheiden",
-  "cards": [
-    {
-      "icon": "🔒",
-      "title": "Deine Infrastruktur verbessert sich automatisch",
-      "text": "Neue Features, Sicherheitspatches und Compliance-Updates erscheinen laufend. Dein SaaS wird besser, ohne dass du eine einzige Zeile Infrastruktur-Code anfasst."
-    },
-    {
-      "icon": "💰",
-      "title": "Senk deine KI-Kosten",
-      "text": "Deine KI verschwendet dein Budget nicht mehr damit, jedes Mal einen Login-Flow neu zu improvisieren. Sie nutzt stattdessen Fonderies Bausteine. Gleiches Ergebnis, geringere Kosten."
-    },
-    {
-      "icon": "🤖",
-      "title": "Funktioniert mit jeder KI",
-      "text": "Heute Claude, morgen Cursor, nächste Woche ChatGPT. Fonderies Bausteine funktionieren immer gleich, egal welche KI du nutzt. Dein Produkt bricht nicht, wenn du das Tool wechselst. Weil Fonderie jede Backend-Komponente normalisiert, kann unser Team dich unterstützen — egal, mit welcher KI du deine App gebaut hast."
-    },
-    {
-      "icon": "⏰",
-      "title": "Mit Kunden sprechen, statt Auth zu debuggen",
-      "text": "Den Monat, den du sonst mit dem Beheben von Login-Bugs verbracht hättest? Verbring ihn damit, deine Kunden zu verstehen und Features zu bauen, die sie wirklich wollen."
-    }
-  ]
+  "eyebrow": "Warum Fonderie statt der Alternative",
+  "title": "Fonderie vs. selbst zusammenstellen",
+  "tableHeadAlt": "Clerk + Stripe + Supabase",
+  "tableHeadFonderie": "Fonderie",
+  "rows": [
+    { "label": "Was Sie installieren", "alt": "3 Dienste, 3 Dashboards, 3 Rechnungen", "fonderie": "npm install @fonderie/*" },
+    { "label": "Dateneigentum", "alt": "Ihre Server", "fonderie": "Ihre Datenbank" },
+    { "label": "KI-Kontrolle", "alt": "KI improvisiert jede Sitzung", "fonderie": "Fonderie steuert die KI" },
+    { "label": "React Native", "alt": "Von Grund auf bauen", "fonderie": "Vorgefertigte Screen-Kits" },
+    { "label": "Lock-in", "alt": "Hoch — gehostete Dienste", "fonderie": "Keiner — Code in Ihrem Repo" }
+  ],
+  "closing": "Jedes andere Tool gibt Ihrer KI Bausteine und hofft auf das Beste. Fonderie gibt Ihrer KI ein Playbook und verifiziert das Ergebnis. Das ist der Unterschied zwischen Improvisation und Ausführung."
 }

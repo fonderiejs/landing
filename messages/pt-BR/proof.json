@@ -1,15 +1,15 @@
 {
-  "eyebrow": "Usado por founders lançando produtos de verdade",
+  "eyebrow": "Usado por fundadores que lançam produtos reais",
   "stats": [
     { "value": "0", "label": "Vulnerabilidades de segurança", "sub": "Testado por padrão" },
     { "value": "0", "label": "Backend para construir", "sub": "Em vez de 9 semanas" },
     { "value": "0", "label": "Lock-in", "sub": "Mesmo código, qualquer IA" }
   ],
   "testimonial": {
-    "quote": "Reconstruímos nosso sistema de auth 3 vezes antes de encontrar o Fonderie. Lançamos nosso app em 4 dias em vez de 4 semanas.",
-    "attribution": "— Magus Dacar, CEO na CrewFinding Inc."
+    "quote": "Reconstruímos nosso sistema de auth 3 vezes com IA antes de encontrar a Fonderie. Cada vez, um bug diferente. A Fonderie deu à nossa IA um playbook. Lançamos em 4 dias em vez de 4 semanas.",
+    "attribution": "— Magus Dacar, CEO da CrewFinding Inc."
   },
-  "metric": "200+ apps lançados · 8.000+ usuários semanais · 2.000+ estrelas no GitHub",
-  "footnote": "Resultados de um experimento de segurança A/B reproduzível.",
-  "footnoteLink": "Veja a metodologia →"
+  "metric": "",
+  "footnote": "",
+  "footnoteLink": ""
 }

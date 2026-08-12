@@ -1,19 +1,19 @@
 {
-  "eyebrow": "Le problème",
-  "title": "Chaque SaaS reconstruit les 5 mêmes choses.",
-  "lede": "Avant d'écrire la moindre ligne de votre produit, vous avez besoin de :",
+  "eyebrow": "Le problème que l'IA a aggravé",
+  "title": "Chaque SaaS reconstruit la même infrastructure. L'IA l'a juste rendu plus rapide — et moins cohérent.",
+  "lede": "Avant d'écrire votre produit, vous avez besoin d'auth, de facturation, d'équipes, de permissions. L'IA improvise tout cela différemment à chaque session.",
   "items": [
-    { "title": "Connexion et inscription", "text": "Pour que les utilisateurs accèdent à votre app." },
-    { "title": "Facturation et abonnements", "text": "Pour que vous soyez payé." },
-    { "title": "Invitations et permissions d'équipe", "text": "Pour que vos clients invitent leurs collègues." },
-    { "title": "Notifications par e-mail", "text": "Pour que les utilisateurs soient informés." },
+    { "title": "Connexion et inscription", "text": "L'IA improvise cela à chaque session. Bugs différents. API différentes. Sécurité incohérente." },
+    { "title": "Facturation et abonnements", "text": "L'IA génère un câblage Stripe différent à chaque fois. Certaines sessions oublient les webhooks. D'autres sautent la logique de facturation." },
+    { "title": "Invitations et permissions d'équipe", "text": "L'IA construit le RBAC différemment à chaque fois. Une session utilise des rôles. Une autre des indicateurs. Aucun ne correspond à votre auth." },
+    { "title": "Notifications par e-mail", "text": "L'IA réinvente la logique d'e-mail à chaque session. Modèles, files d'attente, nouvelles tentatives — reconstruits depuis zéro, différemment à chaque fois." },
     { "title": "Sécurité et conformité", "text": "Pour ne pas vous faire pirater." }
   ],
-  "byHandTitle": "À la main",
-  "byHandText": "2 à 3 mois et 30 000 à 60 000 $ pour embaucher un développeur.",
-  "withAiTitle": "Avec l'IA seule",
-  "withAiText": "Votre assistant improvise tout depuis zéro à chaque session — flux de connexion différents, logique de facturation différente, bugs différents. Il gaspille des heures (et votre budget IA) à déboguer les mêmes problèmes encore et encore.",
+  "byHandTitle": "Embaucher un développeur",
+  "byHandText": "2 à 3 mois et 30 000 à 60 000 $. Et vous risquez quand même de mal gérer l'auth.",
+  "withAiTitle": "L'IA seule",
+  "withAiText": "Votre assistant improvise depuis zéro à chaque session — flux de connexion différents, logique de facturation différente, bugs différents. Il gaspille des heures (et votre budget IA) à déboguer les mêmes problèmes encore et encore.",
   "withFonderieTitle": "Avec Fonderie",
-  "withFonderieText": "Votre IA utilise des briques éprouvées et testées. Même flux de connexion à chaque fois. Même logique de facturation. Même sécurité. Vous livrez en une semaine et passez votre temps à parler à vos clients.",
-  "whyNowLine": "En 2026, 90 % des fondateurs de SaaS utilisent des assistants IA pour construire. Et 100 % d'entre eux improvisent la même infrastructure. Fonderie est la bibliothèque standard qui manquait à l'IA."
+  "withFonderieText": "Fonderie dirige votre IA pour qu'elle utilise des modules éprouvés et testés. Même flux de connexion à chaque fois. Même logique de facturation. Même sécurité. Vous passez votre temps à parler à vos clients.",
+  "whyNowLine": "En 2026, la plupart des fondateurs de SaaS utilisent des assistants IA pour construire. Presque tous improvisent la même infrastructure, différemment à chaque session. Fonderie est la couche de contrôle dont l'IA a besoin."
 }

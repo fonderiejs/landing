@@ -1,24 +1,24 @@
 {
   "siteTitle": "Fonderie",
   "meta": {
-    "titleSuffix": "Bring dein SaaS diese Woche live",
-    "description": "Fonderie gibt deiner KI die Bausteine für Auth, Billing und Team-Verwaltung — damit du dein SaaS in einer Woche shippst, nicht in einem Quartal."
+    "titleSuffix": "Die KI-Infrastruktur-Kontrollschicht für SaaS",
+    "description": "Fonderie steuert KI-Assistenten beim Aufbau sicherer SaaS-Infrastruktur — Auth, Abrechnung, Teams, Berechtigungen — damit Gründer in Tagen statt Monaten liefern. Selbst gehostet. MIT-lizenziert."
   },
   "nav": {
     "solution": "So funktioniert's",
-    "packages": "Features",
+    "packages": "Funktionen",
     "pricing": "Preise",
     "github": "GitHub",
     "contact": "Kontakt"
   },
   "cta": {
-    "getStarted": "Kostenlos loslegen",
-    "howItWorks": "So funktioniert's",
-    "startShipping": "Jetzt shippen",
+    "getStarted": "Loslegen — für immer kostenlos",
+    "howItWorks": "So steuert Fonderie die KI",
+    "startShipping": "Jetzt ausliefern",
     "contactSales": "Vertrieb kontaktieren"
   },
   "footer": {
-    "tagline": "Für Gründer, die shippen.",
+    "tagline": "Die Kontrollschicht für KI-gebautes SaaS.",
     "product": "Produkt",
     "github": "GitHub",
     "docs": "Docs",
@@ -36,7 +36,7 @@
     "copyright": "Fonderie, Inc. · © 2026"
   },
   "theme": {
-    "label": "Design",
+    "label": "Theme",
     "system": "System",
     "light": "Hell",
     "dark": "Dunkel"

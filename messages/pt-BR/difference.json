@@ -1,26 +1,14 @@
 {
-  "eyebrow": "Por que founders escolhem a Fonderie",
-  "title": "Por que founders escolhem a Fonderie",
-  "cards": [
-    {
-      "icon": "🔒",
-      "title": "Sua infraestrutura melhora sozinha",
-      "text": "Novas funcionalidades, patches de segurança e atualizações de compliance chegam continuamente. Seu SaaS fica melhor sem você tocar em uma linha de código de infraestrutura."
-    },
-    {
-      "icon": "💰",
-      "title": "Reduza sua conta de IA",
-      "text": "Sua IA não desperdiça mais seu orçamento improvisando um fluxo de login toda vez. Ela usa os blocos prontos da Fonderie. Mesmo resultado, custo menor."
-    },
-    {
-      "icon": "🤖",
-      "title": "Funciona com qualquer IA",
-      "text": "Claude hoje, Cursor amanhã, ChatGPT semana que vem. Os blocos da Fonderie funcionam do mesmo jeito, não importa qual IA você use. Seu produto não quebra quando você troca de ferramenta. Como a Fonderie normaliza cada componente de backend, nosso time pode te dar suporte não importa qual IA você usou para construir seu app."
-    },
-    {
-      "icon": "⏰",
-      "title": "Fale com clientes, não depure auth",
-      "text": "Aquele mês que você gastaria corrigindo bugs de login? Gaste entendendo seus clientes e construindo o que eles realmente querem."
-    }
-  ]
+  "eyebrow": "Por que Fonderie, não a alternativa",
+  "title": "Fonderie vs. montar tudo você mesmo",
+  "tableHeadAlt": "Clerk + Stripe + Supabase",
+  "tableHeadFonderie": "Fonderie",
+  "rows": [
+    { "label": "O que você instala", "alt": "3 serviços, 3 painéis, 3 faturas", "fonderie": "npm install @fonderie/*" },
+    { "label": "Propriedade dos dados", "alt": "Servidores deles", "fonderie": "Seu banco de dados" },
+    { "label": "Controle da IA", "alt": "IA improvisa a cada sessão", "fonderie": "A Fonderie direciona a IA" },
+    { "label": "React Native", "alt": "Construir do zero", "fonderie": "Screen kits prontos" },
+    { "label": "Lock-in", "alt": "Alto — serviços hospedados", "fonderie": "Nenhum — código no seu repositório" }
+  ],
+  "closing": "Todas as outras ferramentas dão à sua IA blocos primitivos e torcem para que dê certo. A Fonderie dá à sua IA um playbook e verifica o resultado. Essa é a diferença entre improviso e execução."
 }

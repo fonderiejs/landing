@@ -1,19 +1,19 @@
 {
-  "eyebrow": "O problema",
-  "title": "Todo SaaS reconstrói as mesmas 5 coisas.",
-  "lede": "Antes de escrever uma linha sequer do seu produto de verdade, você precisa de:",
+  "eyebrow": "O problema que a IA piorou",
+  "title": "Todo SaaS reconstrói a mesma infraestrutura. A IA só deixou isso mais rápido — e menos consistente.",
+  "lede": "Antes de escrever seu produto, você precisa de auth, cobrança, times, permissões. A IA improvisa tudo isso de forma diferente a cada sessão.",
   "items": [
-    { "title": "Login e cadastro", "text": "Para que os usuários acessem seu app." },
-    { "title": "Cobrança e assinaturas", "text": "Para que você receba pagamentos." },
-    { "title": "Convites de time e permissões", "text": "Para que clientes convidem colegas." },
-    { "title": "Notificações por e-mail", "text": "Para que os usuários fiquem informados." },
-    { "title": "Segurança e compliance", "text": "Para que você não seja hackeado." }
+    { "title": "Login e cadastro", "text": "A IA improvisa isso a cada sessão. Bugs diferentes. APIs diferentes. Segurança inconsistente." },
+    { "title": "Cobrança e assinaturas", "text": "A IA gera uma integração diferente com o Stripe toda vez. Algumas sessões esquecem os webhooks. Outras pulam a lógica de faturas." },
+    { "title": "Convites e permissões de time", "text": "A IA constrói o RBAC de forma diferente a cada vez. Uma sessão usa papéis. Outra usa flags. Nenhuma combina com sua auth." },
+    { "title": "Notificações por e-mail", "text": "A IA reinventa a lógica de e-mail a cada sessão. Templates, filas, lógica de retentativa — reconstruídos do zero, de forma diferente toda vez." },
+    { "title": "Segurança e conformidade", "text": "Para você não ser hackeado." }
   ],
-  "byHandTitle": "Na mão",
-  "byHandText": "2–3 meses e US$ 30.000–60.000 contratando um desenvolvedor.",
-  "withAiTitle": "Com IA sozinha",
+  "byHandTitle": "Contratar um desenvolvedor",
+  "byHandText": "2–3 meses e US$ 30.000–60.000. E mesmo assim a auth pode sair errada.",
+  "withAiTitle": "IA sozinha",
   "withAiText": "Seu assistente improvisa tudo do zero a cada sessão — fluxos de login diferentes, lógica de cobrança diferente, bugs diferentes. Ele desperdiça horas (e seu orçamento de IA) depurando os mesmos problemas repetidamente.",
   "withFonderieTitle": "Com a Fonderie",
-  "withFonderieText": "Sua IA usa blocos prontos, testados e comprovados. O mesmo fluxo de login sempre. A mesma lógica de cobrança. A mesma segurança. Você lança em uma semana e passa seu tempo falando com clientes.",
-  "whyNowLine": "Em 2026, 90% dos founders de SaaS usam assistentes de IA para construir. E 100% deles estão improvisando a mesma infraestrutura. A Fonderie é a biblioteca padrão que faltava para a IA."
+  "withFonderieText": "A Fonderie direciona sua IA para usar módulos comprovados e testados. Mesmo fluxo de login sempre. Mesma lógica de cobrança. Mesma segurança. Você passa seu tempo conversando com clientes.",
+  "whyNowLine": "Em 2026, a maioria dos fundadores de SaaS usa assistentes de IA para construir. Quase todos improvisam a mesma infraestrutura, de forma diferente a cada sessão. A Fonderie é a camada de controle que a IA precisa."
 }

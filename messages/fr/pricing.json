@@ -1,70 +1,70 @@
 {
   "eyebrow": "Tarifs",
-  "title": "Démarrez gratuitement. Payez quand vous générez des revenus.",
-  "lede": "Gratuit pendant que vous construisez. Passez à un niveau supérieur seulement une fois que vous avez des clients payants.",
+  "title": "Démarrez gratuitement. Payez quand vous déployez.",
+  "lede": "Gratuit pour toujours pendant que vous construisez. Passez à un niveau supérieur quand votre SaaS est en ligne.",
   "tiers": [
     {
-      "name": "Starter",
+      "name": "Build",
       "price": "Gratuit",
       "period": "",
-      "desc": "Pour construire votre produit",
-      "features": ["Toutes les briques", "Support communautaire"],
-      "cta": "Commencer",
+      "desc": "Pour les projets personnels et le SaaS pré-revenu",
+      "features": ["Tous les modules backend", "Support communautaire"],
+      "cta": "npm install — gratuit",
       "featured": false
     },
     {
       "name": "Launch",
       "price": "49 $",
       "period": "/mois",
-      "desc": "Pour un SaaS avec des clients payants",
-      "featuresLead": "Tout ce qui est dans Starter, plus",
-      "features": ["Support prioritaire", "Fonctionnalités prêtes pour la production"],
-      "cta": "Commencer à livrer",
+      "desc": "Pour un SaaS avec ses premiers clients payants",
+      "featuresLead": "Tout ce qui est dans Build, plus",
+      "features": ["Support prioritaire", "Licence de production + journaux d'audit"],
+      "cta": "Commencer à livrer — 49 $",
       "featured": false
     },
     {
-      "name": "Scale",
+      "name": "Grow",
       "price": "149 $",
       "period": "/mois",
-      "desc": "Pour les équipes en croissance",
+      "desc": "Pour les équipes qui grandissent",
       "featuresLead": "Tout ce qui est dans Launch, plus",
-      "features": ["Collaboration d'équipe", "Sécurité avancée"],
+      "features": ["Fonctionnalités d'équipe + gestion des rôles", "Sécurité avancée"],
       "cta": "Contacter les ventes",
       "featured": true
     },
     {
-      "name": "Kits d'écrans",
+      "name": "Mobile",
       "price": "199 $",
       "period": "/mois",
-      "desc": "Pour les équipes multiplateformes",
-      "featuresLead": "Tout ce qui est dans Scale, plus",
-      "features": ["Kits d'écrans frontend", "Connexion Face ID", "Structure de navigation", "Support multiplateforme"],
-      "cta": "Contacter les ventes",
+      "desc": "Kits d'écrans React Native",
+      "featuresLead": "Tout ce qui est dans Grow, plus",
+      "features": ["Écrans d'auth React Native", "Écrans de facturation React Native", "Écrans d'espace de travail React Native", "Structure de navigation"],
+      "cta": "Contacter les ventes — 199 $",
       "featured": false,
-      "hidden": true
+      "hidden": false
     },
     {
       "name": "Enterprise",
       "price": "Sur mesure",
       "period": "",
-      "desc": "Pour les organisations",
-      "featuresLead": "Tout ce qui est dans Scale, plus",
-      "features": ["Authentification unique (SSO)", "Support de conformité", "Vos données restent sur vos serveurs", "Compte dédié"],
+      "desc": "Pour les organisations avec des besoins de conformité",
+      "featuresLead": "Tout ce qui est dans Grow, plus",
+      "features": ["Authentification unique (SSO)", "Support de conformité", "Déploiement sur site", "Compte dédié"],
       "cta": "Contacter les ventes",
       "featured": false
     }
   ],
-  "compareNote1": "À comparer avec l'embauche d'un développeur pendant 3 mois : 30 000–60 000 $.",
-  "compareNote2": "49 $/mois, c'est moins cher qu'une journée de freelance.",
-  "compareNote3": "Vous ne payez que lorsque votre SaaS commence à générer des revenus.",
+  "compareNote1": "À comparer avec l'embauche d'un développeur backend pendant 3 mois : 30 000–60 000 $.",
+  "compareNote2": "Fonderie Launch coûte 49 $/mois. Moins cher qu'une journée de freelance.",
+  "compareNote3": "Vous ne payez que lorsque votre SaaS est en ligne.",
   "finalCta": {
-    "title": "Arrêtez de construire de l'infrastructure. Construisez votre produit.",
-    "lede": "Tout ce dont votre SaaS a besoin, déjà construit et prêt à livrer.",
-    "getStarted": "Commencer gratuitement",
+    "title": "Arrêtez de déboguer l'auth. Construisez votre produit.",
+    "lede": "Fonderie dirige votre IA pour construire l'infrastructure. Vous vous concentrez sur ce qui rend votre SaaS unique.",
+    "getStarted": "npm install @fonderie/core",
     "star": "Mettre une étoile sur GitHub",
-    "prompts": "Les prompts système pour Claude Code et Cursor sont fournis avec le repo —",
+    "prompts": "Les instructions pour Claude Code et Cursor sont fournies avec le repo —",
     "promptsLink": "récupérez-les sur GitHub →",
-    "tag": "Pour les fondateurs qui veulent livrer, pas configurer",
-    "team": "Construit par des fondateurs fatigués de reconstruire l'auth pour chaque nouveau produit."
+    "tag": "Pour les fondateurs qui veulent livrer, pas reconstruire l'auth",
+    "team": "Construit par un fondateur qui a passé des années comme contractant chez PayPal à travailler sur des outils d'audit interne et des outils pour marchands — et en a eu assez de voir l'IA réintroduire les mêmes bugs à chaque session."
   }
 }

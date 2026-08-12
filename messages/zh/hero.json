@@ -1,11 +1,12 @@
 {
-  "eyebrow": "为上线 SaaS 的创始人打造",
-  "titleLine1": "这周就上线你的 SaaS，",
+  "eyebrow": "AI 基础设施控制层",
+  "titleLine1": "这个周末就上线你的 SaaS。",
   "titleLine2": "而不是下个季度。",
-  "lede": "告诉 Claude、Cursor 或 ChatGPT 你想构建什么。",
-  "ledeStrong": "Fonderie 为你的 AI 助手提供认证、支付和团队管理的现成模块 —— 让它真正构建你的产品，而不是从零即兴发挥。",
-  "proof": "默认安全 · 兼容任何 AI · 无锁定",
-  "worksWith": "适用于",
+  "lede": "你只需描述你的产品。",
+  "ledeStrong": "Fonderie 指挥你的 AI 助手构建认证、计费和团队功能——安全、正确，每次都一样。不再即兴发挥。",
+  "primaryCta": "npm install @fonderie/core",
+  "proof": "自托管 · MIT 许可证 · 无锁定",
+  "worksWith": "指挥",
   "assistants": {
     "claudeCode": "Claude Code",
     "cursor": "Cursor",

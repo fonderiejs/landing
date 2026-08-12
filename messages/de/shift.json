@@ -1,22 +1,22 @@
 {
-  "eyebrow": "So funktioniert's",
-  "title": "So funktioniert's",
-  "lede": "Von der Idee zum fertigen Produkt in drei Schritten.",
+  "eyebrow": "So steuert Fonderie Ihre KI",
+  "title": "Fonderie steuert. Die KI führt aus.",
+  "lede": "Von der Idee zum ausgelieferten Produkt in drei Schritten. Fonderie ist der Regisseur. Ihre KI ist der Baumeister.",
   "steps": [
     {
       "num": "01",
-      "title": "Sag deiner KI, was du bauen willst",
-      "text": "„Ich brauche ein SaaS mit Login, Stripe-Billing und Team-Workspaces.“"
+      "title": "Sie beschreiben Ihr Produkt",
+      "text": "\"Ich brauche ein SaaS mit Login, Stripe-Abrechnung und Team-Workspaces.\""
     },
     {
       "num": "02",
-      "title": "Deine KI nutzt Fonderies Bausteine",
-      "text": "Statt alles von Grund auf zu schreiben, setzt deine KI bewährte, sichere Komponenten zusammen — Login-Screens, Zahlungsflüsse, Team-Einladungen — alles automatisch verbunden."
+      "title": "Fonderie instruiert Ihre KI",
+      "text": "Fonderies Anweisungen leben in Ihrem Repo. Wenn Ihre KI Ihren Code liest, liest sie zuerst Fonderies Playbook: das Auth-Modul verwenden, Auth nie von Grund auf schreiben, diese Routen einbinden, diese Typen durchsetzen."
     },
     {
       "num": "03",
-      "title": "Du prüfst und shippst",
-      "text": "Die KI generiert dein Produkt. Du prüfst es, passt das Design an und deployst. Dein Backend ist sicher, dein Frontend funktioniert, und deine Kunden können sich anmelden und bezahlen."
+      "title": "Sie prüfen und liefern aus",
+      "text": "Die KI generiert den Code. Fonderies Typen und Tests verifizieren ihn. Sie passen das Design an und deployen. Ihr Backend ist sicher, Ihr Frontend funktioniert, und Ihre Kunden können sich anmelden und bezahlen."
     }
   ]
 }

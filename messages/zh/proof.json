@@ -1,15 +1,15 @@
 {
-  "eyebrow": "受到已上线真实产品的创始人信赖",
+  "eyebrow": "受到正在上线真实产品的创始人信赖",
   "stats": [
     { "value": "0", "label": "安全漏洞", "sub": "默认经过测试" },
     { "value": "0", "label": "需要搭建的后端", "sub": "而不是 9 周" },
-    { "value": "0", "label": "锁定", "sub": "同一套代码，适用任何 AI" }
+    { "value": "0", "label": "锁定风险", "sub": "同样的代码，任何 AI" }
   ],
   "testimonial": {
-    "quote": "在找到 Fonderie 之前，我们的认证系统重写了 3 次。用它我们只花了 4 天而不是 4 周就上线了应用。",
-    "attribution": "— Magus Dacar，CrewFinding Inc. CEO"
+    "quote": "在找到 Fonderie 之前，我们用 AI 重建了三次认证系统，每次都出现不同的 bug。Fonderie 给了我们的 AI 一份操作手册，我们只用 4 天而不是 4 周就上线了。",
+    "attribution": "— Magus Dacar，CrewFinding Inc. 首席执行官"
   },
-  "metric": "200+ 个应用已上线 · 每周 8,000+ 活跃用户 · 2,000+ GitHub 星标",
-  "footnote": "结果来自一项可复现的 A/B 安全实验。",
-  "footnoteLink": "查看实验方案 →"
+  "metric": "",
+  "footnote": "",
+  "footnoteLink": ""
 }
