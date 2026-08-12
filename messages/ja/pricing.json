@@ -9,7 +9,7 @@
       "period": "",
       "desc": "サイドプロジェクトや収益前のSaaS向け",
       "features": ["すべてのバックエンドモジュール", "コミュニティサポート"],
-      "cta": "npm install — 無料",
+      "cta": "始める — 無料",
       "featured": false
     },
     {
@@ -41,7 +41,7 @@
       "features": ["モバイル認証画面", "モバイル課金画面", "モバイルワークスペース画面", "ナビゲーションシェル"],
       "cta": "営業に問い合わせる — $199",
       "featured": false,
-      "hidden": false
+      "hidden": true
     },
     {
       "name": "Enterprise",
@@ -60,7 +60,7 @@
   "finalCta": {
     "title": "認証のデバッグはもうやめよう。プロダクトを作ろう。",
     "lede": "Fonderieがあなたの AI にインフラの構築を指示します。あなたはSaaSを独自たらしめる部分に集中できます。",
-    "getStarted": "npm install @fonderie/core",
+    "getStarted": "始める — 無料",
     "star": "GitHubでスターを付ける",
     "prompts": "Claude CodeとCursor向けの指示はリポジトリに同梱されています —",
     "promptsLink": "GitHubで取得 →",

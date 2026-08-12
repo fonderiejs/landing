@@ -4,7 +4,7 @@
   "tableHeadAlt": "Clerk + Stripe + Supabase",
   "tableHeadFonderie": "Fonderie",
   "rows": [
-    { "label": "インストールするもの", "alt": "3つのサービス、3つのダッシュボード、3つの請求", "fonderie": "npm install @fonderie/*" },
+    { "label": "インストールするもの", "alt": "3つのサービス、3つのダッシュボード、3つの請求", "fonderie": "1回のインストール。1つのコードベース。" },
     { "label": "データの所有権", "alt": "相手のサーバー", "fonderie": "あなたのデータベース" },
     { "label": "AIの制御", "alt": "AIがセッションごとに即興で作る", "fonderie": "FonderieがAIを指示する" },
     { "label": "モバイルアプリ", "alt": "ゼロから構築", "fonderie": "構築済みのスクリーンキット" },

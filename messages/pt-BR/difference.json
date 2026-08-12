@@ -4,7 +4,7 @@
   "tableHeadAlt": "Clerk + Stripe + Supabase",
   "tableHeadFonderie": "Fonderie",
   "rows": [
-    { "label": "O que você instala", "alt": "3 serviços, 3 painéis, 3 faturas", "fonderie": "npm install @fonderie/*" },
+    { "label": "O que você instala", "alt": "3 serviços, 3 painéis, 3 faturas", "fonderie": "Uma instalação. Uma base de código." },
     { "label": "Propriedade dos dados", "alt": "Servidores deles", "fonderie": "Seu banco de dados" },
     { "label": "Controle da IA", "alt": "IA improvisa a cada sessão", "fonderie": "A Fonderie direciona a IA" },
     { "label": "Apps mobile", "alt": "Construir do zero", "fonderie": "Screen kits prontos" },

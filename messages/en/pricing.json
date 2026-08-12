@@ -9,7 +9,7 @@
       "period": "",
       "desc": "For side projects and pre-revenue SaaS",
       "features": ["All backend modules", "Community support"],
-      "cta": "npm install — free",
+      "cta": "Start building — free",
       "featured": false
     },
     {
@@ -41,7 +41,7 @@
       "features": ["Mobile auth screens", "Mobile billing screens", "Mobile workspace screens", "Navigation shell"],
       "cta": "Contact sales — $199",
       "featured": false,
-      "hidden": false
+      "hidden": true
     },
     {
       "name": "Enterprise",
@@ -60,7 +60,7 @@
   "finalCta": {
     "title": "Stop debugging auth. Start building your product.",
     "lede": "Fonderie directs your AI to build the infrastructure. You focus on what makes your SaaS unique.",
-    "getStarted": "npm install @fonderie/core",
+    "getStarted": "Start building — free",
     "star": "Star on GitHub",
     "prompts": "Instructions for Claude Code and Cursor ship with the repo —",
     "promptsLink": "grab them on GitHub →",

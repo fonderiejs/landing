@@ -9,7 +9,7 @@
       "period": "",
       "desc": "Para projetos paralelos e SaaS pré-receita",
       "features": ["Todos os módulos de backend", "Suporte da comunidade"],
-      "cta": "npm install — grátis",
+      "cta": "Começar — grátis",
       "featured": false
     },
     {
@@ -41,7 +41,7 @@
       "features": ["Telas de auth mobile", "Telas de cobrança mobile", "Telas de workspace mobile", "Shell de navegação"],
       "cta": "Falar com vendas — US$ 199",
       "featured": false,
-      "hidden": false
+      "hidden": true
     },
     {
       "name": "Enterprise",
@@ -60,7 +60,7 @@
   "finalCta": {
     "title": "Pare de depurar auth. Comece a construir seu produto.",
     "lede": "A Fonderie direciona sua IA para construir a infraestrutura. Você foca no que torna seu SaaS único.",
-    "getStarted": "npm install @fonderie/core",
+    "getStarted": "Começar — grátis",
     "star": "Dar estrela no GitHub",
     "prompts": "Instruções para Claude Code e Cursor vêm com o repositório —",
     "promptsLink": "pegue no GitHub →",
