@@ -10,8 +10,8 @@
     },
     {
       "num": "02",
-      "title": "Die KI liest das Playbook",
-      "text": "\"Wenn der Nutzer nach Auth fragt, verwende @fonderie/auth. Schreibe Auth nie von Grund auf neu.\""
+      "title": "Jede KI liest dasselbe Playbook",
+      "text": "Claude, Cursor oder jede code-lesende KI erhält genau dieselben Anweisungen. Wechseln Sie das Modell, ohne Ihren Stack zu ändern."
     },
     {
       "num": "03",

@@ -3,9 +3,9 @@
   "titleLine1": "Lance seu SaaS neste fim de semana.",
   "titleLine2": "Não no próximo trimestre.",
   "lede": "Você descreve seu produto.",
-  "ledeStrong": "A Fonderie direciona seu assistente de IA para construir auth, cobrança e times — de forma segura e correta, sempre. Sem improviso.",
+  "ledeStrong": "O playbook da Fonderie vive no seu repositório e dá a qualquer assistente de IA o contexto exato que ele precisa para construir auth, cobrança e times — de forma segura e correta, sempre.",
   "primaryCta": "Começar — grátis",
-  "proof": "Auto-hospedado · Licença MIT · Sem lock-in",
+  "proof": "Agnóstico de IA · Auto-hospedado · Licença MIT",
   "worksWith": "Direciona",
   "assistants": {
     "claudeCode": "Claude Code",

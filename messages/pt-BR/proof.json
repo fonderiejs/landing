@@ -3,7 +3,7 @@
   "stats": [
     { "value": "2 dias", "label": "Da ideia ao backend entregue", "sub": "Em vez de 9 semanas" },
     { "value": "US$ 49", "label": "Plano Launch, mensalidade fixa", "sub": "contra US$ 30 mil+ para contratar um desenvolvedor" },
-    { "value": "Auto-hospedado", "label": "Seu banco de dados. Seus servidores. Seu código.", "sub": "Sem lock-in" }
+    { "value": "Qualquer IA", "label": "Um cérebro, qualquer IA", "sub": "Troque de modelo sem mudar seu produto" }
   ],
   "testimonial": {
     "quote": "Reconstruímos nosso sistema de auth 3 vezes com IA antes de encontrar a Fonderie. Cada vez, um bug diferente. A Fonderie deu à nossa IA um playbook. Lançamos em 4 dias em vez de 4 semanas.",

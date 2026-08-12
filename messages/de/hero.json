@@ -3,9 +3,9 @@
   "titleLine1": "Liefern Sie Ihr SaaS dieses Wochenende.",
   "titleLine2": "Nicht nächstes Quartal.",
   "lede": "Sie beschreiben Ihr Produkt.",
-  "ledeStrong": "Fonderie steuert Ihren KI-Assistenten beim Bau von Auth, Abrechnung und Teams — sicher, korrekt, jedes Mal. Keine Improvisation.",
+  "ledeStrong": "Fonderies Playbook lebt in Ihrem Repo und gibt jedem KI-Assistenten genau den Kontext, den er braucht, um Auth, Abrechnung und Teams zu bauen — sicher, korrekt, jedes Mal.",
   "primaryCta": "Loslegen — kostenlos",
-  "proof": "Selbst gehostet · MIT-lizenziert · Kein Lock-in",
+  "proof": "KI-unabhängig · Selbst gehostet · MIT-lizenziert",
   "worksWith": "Steuert",
   "assistants": {
     "claudeCode": "Claude Code",

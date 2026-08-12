@@ -10,8 +10,8 @@
     },
     {
       "num": "02",
-      "title": "L'IA lit le plan",
-      "text": "« Quand l'utilisateur demande l'auth, utilise @fonderie/auth. N'écris jamais l'auth depuis zéro. »"
+      "title": "Toute IA lit le même plan",
+      "text": "Claude, Cursor ou toute IA capable de lire du code reçoit exactement les mêmes instructions. Changez de modèle sans changer votre stack."
     },
     {
       "num": "03",

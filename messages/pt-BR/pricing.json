@@ -59,7 +59,7 @@
   "compareNote3": "Você só paga quando seu SaaS entra no ar.",
   "finalCta": {
     "title": "Pare de depurar auth. Comece a construir seu produto.",
-    "lede": "A Fonderie direciona sua IA para construir a infraestrutura. Você foca no que torna seu SaaS único.",
+    "lede": "O playbook da Fonderie vive no seu repositório e dá a qualquer IA o contexto para construir corretamente. Você foca no que torna seu SaaS único.",
     "getStarted": "Começar — grátis",
     "star": "Dar estrela no GitHub",
     "prompts": "Instruções para Claude Code e Cursor vêm com o repositório —",

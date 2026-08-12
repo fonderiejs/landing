@@ -10,8 +10,8 @@
     },
     {
       "num": "02",
-      "title": "A IA lê o playbook",
-      "text": "\"Quando o usuário pedir auth, use @fonderie/auth. Nunca escreva auth do zero.\""
+      "title": "Qualquer IA lê o mesmo playbook",
+      "text": "Claude, Cursor ou qualquer IA que leia código recebe exatamente as mesmas instruções. Troque de modelo sem mudar seu stack."
     },
     {
       "num": "03",

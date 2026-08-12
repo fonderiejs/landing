@@ -10,8 +10,8 @@
     },
     {
       "num": "02",
-      "title": "Fonderie instruit votre IA",
-      "text": "Les instructions de Fonderie vivent dans votre repo. Quand votre IA lit votre code, elle lit d'abord le plan de Fonderie : utiliser le module d'auth, ne jamais l'écrire depuis zéro, monter ces routes, appliquer ces types."
+      "title": "Toute IA suit le même plan",
+      "text": "Les instructions de Fonderie vivent dans votre repo. Claude, Cursor ou toute IA les lit avant d'écrire du code — pour que votre produit soit construit correctement, que vous changiez d'outil ou non. Aucune improvisation."
     },
     {
       "num": "03",

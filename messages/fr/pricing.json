@@ -59,7 +59,7 @@
   "compareNote3": "Vous ne payez que lorsque votre SaaS est en ligne.",
   "finalCta": {
     "title": "Arrêtez de déboguer l'auth. Construisez votre produit.",
-    "lede": "Fonderie dirige votre IA pour construire l'infrastructure. Vous vous concentrez sur ce qui rend votre SaaS unique.",
+    "lede": "Le plan de Fonderie vit dans votre repo et donne à toute IA le contexte nécessaire pour construire correctement. Vous vous concentrez sur ce qui rend votre SaaS unique.",
     "getStarted": "Commencer — gratuit",
     "star": "Mettre une étoile sur GitHub",
     "prompts": "Les instructions pour Claude Code et Cursor sont fournies avec le repo —",

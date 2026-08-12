@@ -8,7 +8,8 @@
     { "label": "Data ownership", "alt": "Their servers", "fonderie": "Your database" },
     { "label": "AI control", "alt": "AI improvises every session", "fonderie": "Fonderie directs the AI" },
     { "label": "Mobile apps", "alt": "Build from scratch", "fonderie": "Pre-built screen kits" },
-    { "label": "Lock-in", "alt": "High — hosted services", "fonderie": "None — code in your repo" }
+    { "label": "Lock-in", "alt": "High — hosted services", "fonderie": "None — code in your repo" },
+    { "label": "AI portability", "alt": "Locked to one AI's guesses", "fonderie": "One brain. Switch AI anytime." }
   ],
   "closing": "Every other tool gives your AI primitives and hopes for the best. Fonderie gives your AI a playbook and verifies the result. That's the difference between improvisation and execution."
 }

@@ -10,8 +10,8 @@
     },
     {
       "num": "02",
-      "title": "Fonderie instruiert Ihre KI",
-      "text": "Fonderies Anweisungen leben in Ihrem Repo. Wenn Ihre KI Ihren Code liest, liest sie zuerst Fonderies Playbook: das Auth-Modul verwenden, Auth nie von Grund auf schreiben, diese Routen einbinden, diese Typen durchsetzen."
+      "title": "Jede KI folgt demselben Playbook",
+      "text": "Fonderies Anweisungen leben in Ihrem Repo. Claude, Cursor oder jede KI liest sie, bevor sie Code schreibt — so wird Ihr Produkt korrekt gebaut, egal ob Sie das Tool wechseln. Keine Improvisation."
     },
     {
       "num": "03",

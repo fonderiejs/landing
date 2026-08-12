@@ -8,7 +8,8 @@
     { "label": "Dateneigentum", "alt": "Ihre Server", "fonderie": "Ihre Datenbank" },
     { "label": "KI-Kontrolle", "alt": "KI improvisiert jede Sitzung", "fonderie": "Fonderie steuert die KI" },
     { "label": "Mobile Apps", "alt": "Von Grund auf bauen", "fonderie": "Vorgefertigte Screen-Kits" },
-    { "label": "Lock-in", "alt": "Hoch — gehostete Dienste", "fonderie": "Keiner — Code in Ihrem Repo" }
+    { "label": "Lock-in", "alt": "Hoch — gehostete Dienste", "fonderie": "Keiner — Code in Ihrem Repo" },
+    { "label": "KI-Portabilität", "alt": "An eine KI und ihre Vermutungen gebunden", "fonderie": "Ein Playbook. KI jederzeit wechseln." }
   ],
   "closing": "Jedes andere Tool gibt Ihrer KI Bausteine und hofft auf das Beste. Fonderie gibt Ihrer KI ein Playbook und verifiziert das Ergebnis. Das ist der Unterschied zwischen Improvisation und Ausführung."
 }
