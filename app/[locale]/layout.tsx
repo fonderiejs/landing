@@ -20,6 +20,7 @@ export async function generateMetadata({
 
   const title = `${t('siteTitle')} — ${t('meta.titleSuffix')}`;
   const description = t('meta.description');
+  const ogImage = `/images/og-image-${locale}.png`;
 
   return {
     title,
@@ -47,12 +48,14 @@ export async function generateMetadata({
       description,
       url: 'https://fonderiejs.com',
       siteName: 'Fonderie',
+      images: [{ url: ogImage, width: 1200, height: 630, type: 'image/png', alt: title }],
       type: 'website',
     },
     twitter: {
-      card: 'summary',
+      card: 'summary_large_image',
       title,
       description,
+      images: [{ url: ogImage, alt: title }],
     },
     icons: { icon: '/images/icon.svg' },
   };
