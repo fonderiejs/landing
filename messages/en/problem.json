@@ -1,7 +1,7 @@
 {
   "eyebrow": "The problem AI made worse",
   "title": "Every SaaS rebuilds the same infrastructure. AI just made it faster — and less consistent.",
-  "lede": "Before you write your product, you need auth, billing, teams, permissions. In 2026, most SaaS founders use AI assistants to build. Nearly all of them are improvising the same infrastructure, differently every session. Fonderie is the control layer — one system that directs AI to build correctly, however you ship. AI improvises all of it differently every session.",
+  "lede": "Before you write your product, you need auth, billing, teams, permissions. In 2026, most SaaS founders use AI assistants to build. Nearly all of them are improvising the same infrastructure, differently every session.",
   "ledeCombined": "Before you write your product, you need auth, billing, teams, permissions. AI improvises all of it differently every session. In 2026, most SaaS founders use AI assistants to build. Nearly all of them are improvising the same infrastructure, differently every session. Fonderie is the control layer — one system that directs AI to build correctly, however you ship.",
   "items": [
     { "title": "Login and signup", "text": "AI improvises this every session. Different bugs. Different APIs. Inconsistent security." },
