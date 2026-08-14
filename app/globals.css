@@ -1579,18 +1579,24 @@ a:hover {
 }
 .pricing__tier-cta {
   grid-row: 2;
-  width: 100%;
-  display: inline-flex;
+  align-self: end;
+  display: flex;
   align-items: center;
   justify-content: center;
   min-height: 42px;
-  padding: 0 20px;
+  padding: 10px 16px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  font-size: 14px;
+  font-size: 13.5px;
   font-weight: 600;
   color: var(--ink);
   text-align: center;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .pricing__tier-cta:hover {
   border-color: var(--stage);
@@ -1620,6 +1626,13 @@ a:hover {
 }
 .pricing__note-muted {
   color: var(--muted);
+}
+
+@media (max-width: 767px) {
+  .pricing__tier-cta {
+    white-space: normal;
+    padding: 10px 14px;
+  }
 }
 
 /* ================================================================
