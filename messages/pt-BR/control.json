@@ -1,6 +1,6 @@
 {
   "eyebrow": "A camada de controle",
-  "title": "Infraestrutura pronta, não achismo de IA",
+  "title": "Como a Fonderie funciona",
   "lede": "A Fonderie é infraestrutura de SaaS pronta que vive no seu repositório. Auth, cobrança, times, permissões — tudo testado, tudo documentado. Sua IA lê o playbook e monta os módulos. Sem improviso. Sem reinventar a auth a cada sessão.",
   "steps": [
     {

@@ -1,6 +1,6 @@
 {
   "eyebrow": "The control layer",
-  "title": "Off-the-shelf infrastructure, not AI guesswork",
+  "title": "How Fonderie works",
   "lede": "Fonderie is off-the-shelf SaaS infrastructure that lives in your repo. Auth, billing, teams, permissions — all tested, all documented. Your AI reads the playbook and assembles the modules. No improvisation. No reinventing auth every session.",
   "steps": [
     {
