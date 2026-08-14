@@ -1,27 +1,27 @@
 {
   "eyebrow": "La couche de contrôle",
-  "title": "Comment Fonderie contrôle l'IA",
-  "lede": "Fonderie fournit un plan — un ensemble d'instructions — qui vit dans votre repo. Quand votre IA regarde votre projet, elle lit d'abord le guide de Fonderie.",
+  "title": "Une infrastructure prête à l'emploi, pas des suppositions d'IA",
+  "lede": "Fonderie est une infrastructure SaaS prête à l'emploi qui vit dans votre repo. Auth, facturation, équipes, permissions — tout est testé, tout est documenté. Votre IA lit le plan et assemble les modules. Aucune improvisation. Plus besoin de réinventer l'auth à chaque session.",
   "steps": [
     {
       "num": "01",
-      "title": "Votre plan est fourni avec votre code",
-      "text": "Un seul fichier indique à votre IA exactement quoi construire et quels éléments utiliser."
+      "title": "Vous décrivez votre produit",
+      "text": "« J'ai besoin d'un SaaS avec connexion, facturation Stripe et espaces d'équipe. »"
     },
     {
       "num": "02",
-      "title": "Toute IA suit le même guide",
-      "text": "Claude, Cursor, ChatGPT ou toute autre IA reçoit exactement les mêmes instructions. Changez d'outil à tout moment sans reconstruire votre produit."
+      "title": "Votre IA suit le guide de montage",
+      "text": "Le plan de Fonderie indique à votre IA exactement quels modules utiliser et comment les connecter. Changez d'IA à tout moment — les instructions restent les mêmes."
     },
     {
       "num": "03",
-      "title": "Fonderie vérifie le résultat",
-      "text": "Les types et les tests détectent les erreurs avant qu'elles ne soient livrées. Correct par construction."
+      "title": "Des modules éprouvés, pas du code improvisé",
+      "text": "L'auth, la facturation et les équipes sont préconstruits et testés. Votre IA les assemble. Elle ne devine pas. Elle n'oublie pas de webhooks. Elle ne code pas de secrets en dur."
     },
     {
       "num": "04",
       "title": "Vous vérifiez et livrez",
-      "text": "Vous possédez le code. Personnalisez l'interface, ajoutez votre logique, déployez."
+      "text": "Vous possédez le code. Personnalisez l'interface, ajoutez votre logique, déployez. Votre backend est sécurisé, votre frontend fonctionne, et vos clients peuvent s'inscrire et payer."
     }
   ],
   "footnote": "Voir le fichier du plan réel",

@@ -1,27 +1,27 @@
 {
   "eyebrow": "Die Kontrollschicht",
-  "title": "So steuert Fonderie die KI",
-  "lede": "Fonderie liefert ein Playbook — eine Reihe von Anweisungen — das in Ihrem Repo liegt. Wenn Ihre KI sich Ihr Projekt ansieht, liest sie zuerst Fonderies Anleitung.",
+  "title": "Fertige Infrastruktur, kein KI-Ratespiel",
+  "lede": "Fonderie ist fertige SaaS-Infrastruktur, die in Ihrem Repo liegt. Auth, Abrechnung, Teams, Berechtigungen — alles getestet, alles dokumentiert. Ihre KI liest das Playbook und setzt die Module zusammen. Keine Improvisation. Kein Neuerfinden von Auth bei jeder Sitzung.",
   "steps": [
     {
       "num": "01",
-      "title": "Ihr Playbook wird mit Ihrem Code ausgeliefert",
-      "text": "Eine einzige Datei sagt Ihrer KI genau, was sie bauen soll und welche Bausteine sie verwenden soll."
+      "title": "Sie beschreiben Ihr Produkt",
+      "text": "„Ich brauche ein SaaS mit Login, Stripe-Abrechnung und Team-Workspaces.\""
     },
     {
       "num": "02",
-      "title": "Jede KI folgt derselben Anleitung",
-      "text": "Claude, Cursor, ChatGPT oder jede andere KI erhält genau dieselben Anweisungen. Wechseln Sie jederzeit das Tool, ohne Ihr Produkt neu zu bauen."
+      "title": "Ihre KI folgt der Montageanleitung",
+      "text": "Fonderies Playbook sagt Ihrer KI genau, welche Module sie verwenden und wie sie diese verdrahten soll. Wechseln Sie jederzeit die KI — die Anweisungen bleiben gleich."
     },
     {
       "num": "03",
-      "title": "Fonderie verifiziert das Ergebnis",
-      "text": "Typen und Tests fangen Fehler ab, bevor sie ausgeliefert werden. Korrekt durch Konstruktion."
+      "title": "Bewährte Module statt improvisiertem Code",
+      "text": "Auth, Abrechnung und Teams sind vorgefertigt und getestet. Ihre KI setzt sie zusammen. Sie rät nicht. Sie überspringt keine Webhooks. Sie hartcodiert keine Secrets."
     },
     {
       "num": "04",
       "title": "Sie prüfen und liefern aus",
-      "text": "Sie besitzen den Code. Passen Sie die UI an, fügen Sie Ihre Logik hinzu, deployen Sie."
+      "text": "Sie besitzen den Code. Passen Sie die UI an, fügen Sie Ihre Logik hinzu, deployen Sie. Ihr Backend ist sicher, Ihr Frontend funktioniert, und Ihre Kunden können sich registrieren und bezahlen."
     }
   ],
   "footnote": "Die tatsächliche Playbook-Datei ansehen",
