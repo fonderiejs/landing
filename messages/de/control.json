@@ -1,27 +1,27 @@
 {
-  "eyebrow": "Die Kontrollschicht",
-  "title": "So funktioniert Fonderie",
-  "lede": "Fonderie ist fertige SaaS-Infrastruktur, die in Ihrem Repo liegt. Auth, Abrechnung, Teams, Berechtigungen — alles getestet, alles dokumentiert. Ihre KI liest das Playbook und setzt die Module zusammen. Keine Improvisation. Kein Neuerfinden von Auth bei jeder Sitzung.",
+  "eyebrow": "So funktioniert's",
+  "title": "Die KI-Infrastruktur-Kontrollschicht",
+  "lede": "Fonderie ist die Kontrollschicht für KI-gebaute Software. Sie spezifiziert, verifiziert und standardisiert jedes kritische System — Auth, Abrechnung, Teams, Berechtigungen — damit jede KI genau gleich baut, jedes Mal. Eine Plattform. Jede KI. Keine Improvisation.",
   "steps": [
     {
       "num": "01",
-      "title": "Sie beschreiben Ihr Produkt",
+      "title": "Sie beschreiben das Produkt",
       "text": "„Ich brauche ein SaaS mit Login, Stripe-Abrechnung und Team-Workspaces.\""
     },
     {
       "num": "02",
-      "title": "Ihre KI folgt der Montageanleitung",
-      "text": "Fonderies Playbook sagt Ihrer KI genau, welche Module sie verwenden und wie sie diese verdrahten soll. Wechseln Sie jederzeit die KI — die Anweisungen bleiben gleich."
+      "title": "Fonderie spezifiziert die Architektur",
+      "text": "Die Kontrollschicht legt genau fest, welche Systeme gebaut werden und wie sie zusammenhängen. Wechseln Sie jederzeit die KI — die Spezifikation bleibt gleich."
     },
     {
       "num": "03",
-      "title": "Bewährte Module statt improvisiertem Code",
-      "text": "Auth, Abrechnung und Teams sind vorgefertigt und getestet. Ihre KI setzt sie zusammen. Sie rät nicht. Sie überspringt keine Webhooks. Sie hartcodiert keine Secrets."
+      "title": "Fonderie verifiziert das Ergebnis",
+      "text": "Typen, Tests und Sicherheitsprüfungen laufen automatisch. Jeder Build wird gegen den Standard validiert, bevor er ausgeliefert wird."
     },
     {
       "num": "04",
-      "title": "Sie prüfen und liefern aus",
-      "text": "Sie besitzen den Code. Passen Sie die UI an, fügen Sie Ihre Logik hinzu, deployen Sie. Ihr Backend ist sicher, Ihr Frontend funktioniert, und Ihre Kunden können sich registrieren und bezahlen."
+      "title": "Sie prüfen und deployen",
+      "text": "Sie besitzen den Code. Passen Sie das Design an, fügen Sie Ihre Logik hinzu, deployen Sie. Ihr Backend ist sicher, Ihr Frontend funktioniert, und Ihre Kunden können sich registrieren und bezahlen."
     }
   ],
   "footnote": "Die tatsächliche Playbook-Datei ansehen",

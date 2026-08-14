@@ -1,27 +1,27 @@
 {
-  "eyebrow": "The control layer",
-  "title": "How Fonderie works",
-  "lede": "Fonderie is off-the-shelf SaaS infrastructure that lives in your repo. Auth, billing, teams, permissions — all tested, all documented. Your AI reads the playbook and assembles the modules. No improvisation. No reinventing auth every session.",
+  "eyebrow": "How it works",
+  "title": "The AI Infrastructure Control Layer",
+  "lede": "Fonderie is the control layer for AI-built software. It specifies, verifies, and standardizes every critical system — auth, billing, teams, permissions — so any AI assistant builds the same way every time. One platform. Any AI. Zero improvisation.",
   "steps": [
     {
       "num": "01",
-      "title": "You describe your product",
+      "title": "You describe the product",
       "text": "\"I need a SaaS with login, Stripe billing, and team workspaces.\""
     },
     {
       "num": "02",
-      "title": "Your AI follows the assembly guide",
-      "text": "Fonderie's playbook tells your AI exactly which modules to use and how to wire them. Switch AI assistants anytime — the instructions stay the same."
+      "title": "Fonderie specifies the architecture",
+      "text": "The control layer defines exactly which systems to build and how they connect. Switch AI assistants anytime — the specification stays the same."
     },
     {
       "num": "03",
-      "title": "Proven modules, not improvised code",
-      "text": "Auth, billing, and teams are pre-built and tested. Your AI assembles them. It doesn't guess. It doesn't skip webhooks. It doesn't hardcode secrets."
+      "title": "Fonderie verifies the output",
+      "text": "Types, tests, and security checks run automatically. Every build is validated against the standard before it ships."
     },
     {
       "num": "04",
-      "title": "You review and ship",
-      "text": "You own the code. Customize the UI, add your logic, deploy. Your backend is secure, your frontend works, and your customers can sign up and pay."
+      "title": "You review and deploy",
+      "text": "You own the code. Customize the design, add your logic, deploy. Your backend is secure, your frontend works, and your customers can sign up and pay."
     }
   ],
   "footnote": "See the actual playbook file",

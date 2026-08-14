@@ -1,27 +1,27 @@
 {
-  "eyebrow": "A camada de controle",
-  "title": "Como a Fonderie funciona",
-  "lede": "A Fonderie é infraestrutura de SaaS pronta que vive no seu repositório. Auth, cobrança, times, permissões — tudo testado, tudo documentado. Sua IA lê o playbook e monta os módulos. Sem improviso. Sem reinventar a auth a cada sessão.",
+  "eyebrow": "Como funciona",
+  "title": "A Camada de Controle de Infraestrutura de IA",
+  "lede": "A Fonderie é a camada de controle para software construído por IA. Ela especifica, verifica e padroniza cada sistema crítico — auth, cobrança, times, permissões — para que qualquer IA construa da mesma forma, sempre. Uma plataforma. Qualquer IA. Zero improviso.",
   "steps": [
     {
       "num": "01",
-      "title": "Você descreve seu produto",
+      "title": "Você descreve o produto",
       "text": "\"Preciso de um SaaS com login, cobrança via Stripe e workspaces de time.\""
     },
     {
       "num": "02",
-      "title": "Sua IA segue o guia de montagem",
-      "text": "O playbook da Fonderie diz à sua IA exatamente quais módulos usar e como conectá-los. Troque de IA quando quiser — as instruções continuam as mesmas."
+      "title": "A Fonderie especifica a arquitetura",
+      "text": "A camada de controle define exatamente quais sistemas construir e como eles se conectam. Troque de IA quando quiser — a especificação continua a mesma."
     },
     {
       "num": "03",
-      "title": "Módulos comprovados, não código improvisado",
-      "text": "Auth, cobrança e times já vêm prontos e testados. Sua IA apenas os monta. Ela não chuta. Não pula webhooks. Não deixa segredos fixos no código."
+      "title": "A Fonderie verifica o resultado",
+      "text": "Tipos, testes e verificações de segurança rodam automaticamente. Cada build é validado contra o padrão antes de ir para produção."
     },
     {
       "num": "04",
-      "title": "Você revisa e lança",
-      "text": "Você é dono do código. Personalize a interface, adicione sua lógica, faça o deploy. Seu backend é seguro, seu frontend funciona, e seus clientes conseguem se cadastrar e pagar."
+      "title": "Você revisa e implanta",
+      "text": "Você é dono do código. Personalize o design, adicione sua lógica, faça o deploy. Seu backend é seguro, seu frontend funciona, e seus clientes conseguem se cadastrar e pagar."
     }
   ],
   "footnote": "Veja o arquivo real do playbook",
