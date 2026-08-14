@@ -44,9 +44,7 @@
       "featured": false
     }
   ],
-  "compareNote1": "À comparer avec l'embauche d'un développeur backend pendant 3 mois : 30 000–60 000 $.",
-  "compareNote2": "Fonderie Launch coûte 49 $/mois. Moins cher qu'une journée de freelance.",
-  "compareNote3": "Vous ne payez que lorsque votre SaaS est en ligne.",
+  "compareNote": "Embaucher un développeur backend coûte 30 000–60 000 $. Fonderie Launch coûte 49 $/mois. Vous ne payez que lorsque votre SaaS est en ligne.",
   "finalCta": {
     "title": "Arrêtez de déboguer l'auth. Construisez votre produit.",
     "lede": "Le plan de Fonderie vit dans votre repo et donne à toute IA le contexte nécessaire pour construire correctement. Vous vous concentrez sur ce qui rend votre SaaS unique.",

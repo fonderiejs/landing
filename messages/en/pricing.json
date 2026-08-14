@@ -44,9 +44,7 @@
       "featured": false
     }
   ],
-  "compareNote1": "Compare to hiring a backend developer for 3 months: $30,000–$60,000.",
-  "compareNote2": "Fonderie Launch is $49/month. Less than one day of a contractor.",
-  "compareNote3": "You only pay when your SaaS goes live.",
+  "compareNote": "Hiring a backend developer costs $30K–$60K. Fonderie Launch is $49/month. You only pay when your SaaS goes live.",
   "finalCta": {
     "title": "Stop debugging auth. Start building your product.",
     "lede": "Fonderie's playbook lives in your repo and gives any AI the context it needs to build correctly. You focus on what makes your SaaS unique.",

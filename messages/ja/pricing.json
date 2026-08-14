@@ -44,9 +44,7 @@
       "featured": false
     }
   ],
-  "compareNote1": "バックエンド開発者を3ヶ月雇う場合と比較してください：3万〜6万ドル。",
-  "compareNote2": "Fonderie Launchは月額$49。契約社員の1日分より安い。",
-  "compareNote3": "SaaSが本番稼働するまで料金は発生しません。",
+  "compareNote": "バックエンド開発者を雇うと3万〜6万ドル。Fonderie Launchは月額$49。SaaSが本番稼働するまで料金は発生しません。",
   "finalCta": {
     "title": "認証のデバッグはもうやめよう。プロダクトを作ろう。",
     "lede": "Fonderieのプレイブックはあなたのリポジトリに存在し、どのAIにも正しく構築するためのコンテキストを与えます。あなたはSaaSを独自たらしめる部分に集中できます。",

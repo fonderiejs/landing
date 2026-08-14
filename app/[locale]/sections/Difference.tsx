@@ -35,9 +35,6 @@ export default function Difference() {
             </tbody>
           </table>
         </div>
-        <p className="difference__closing" data-reveal="">
-          {t('closing')}
-        </p>
       </div>
     </section>
   );

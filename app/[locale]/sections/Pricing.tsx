@@ -24,9 +24,7 @@ export default function Pricing() {
       </div>
 
       <div className="pricing__note" data-reveal="">
-        <p className="pricing__note-italic">{t('compareNote1')}</p>
-        <p className="pricing__note-accent">{t('compareNote2')}</p>
-        <p className="pricing__note-muted">{t('compareNote3')}</p>
+        <p className="pricing__note-accent">{t('compareNote')}</p>
       </div>
     </section>
   );
