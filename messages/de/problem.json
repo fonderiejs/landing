@@ -15,6 +15,6 @@
   "withAiTitle": "KI allein",
   "withAiText": "Ihr Assistent improvisiert bei jeder Sitzung alles von Grund auf neu — andere Login-Flows, andere Abrechnungslogik, andere Bugs. Er verschwendet Stunden (und Ihr KI-Budget) beim wiederholten Debuggen derselben Probleme.",
   "withFonderieTitle": "Mit Fonderie",
-  "withFonderieText": "Fonderie steuert Ihre KI zu bewährten, getesteten Modulen. Jedes Mal derselbe Login-Flow. Dieselbe Abrechnungslogik. Dieselbe Sicherheit. Sie verbringen Ihre Zeit mit Kundengesprächen. Ohne Fonderie beginnt jede KI-Sitzung bei null — sie kennt weder Ihre Auth noch Ihre Abrechnung noch Ihren Stack. Fonderie ist das Playbook, das sich erinnert, damit die KI es nicht muss.",
+  "withFonderieText": "Fonderies Kontrollschicht spezifiziert und verifiziert jeden Build. Jedes Mal derselbe Login-Flow. Dieselbe Abrechnungslogik. Dieselbe Sicherheit. Sie verbringen Ihre Zeit mit Kundengesprächen. Ohne Fonderie beginnt jede KI-Sitzung bei null — sie kennt weder Ihre Auth noch Ihre Abrechnung noch Ihren Stack. Fonderie ist der Standard, der sich erinnert, damit die KI es nicht muss.",
   "whyNowLine": "2026 nutzen die meisten SaaS-Gründer KI-Assistenten zum Bauen. Fast alle improvisieren dieselbe Infrastruktur, jedes Mal anders. Fonderie ist die Kontrollschicht — ein System, das KI anleitet, korrekt zu bauen, egal wie Sie ausliefern."
 }

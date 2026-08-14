@@ -12,35 +12,11 @@ export default function Problem() {
         align="start"
         className="problem__grid"
       >
-        {/* Left column: copy + ledger stacked */}
-        <Col span={6} data-reveal>
-          <div className="problem__copy">
-            <p className="eyebrow">{t('eyebrow')}</p>
-            <h2 className="section-title section-title--sm">{t('title')}</h2>
-            <p className="problem__lede">{t('lede')}</p>
-          </div>
-
-          <div className="problem__ledger">
-            <div className="problem__ledger-foot">
-              <p className="problem__ledger-note">
-                <b className="problem__ledger-note-head">{t('byHandTitle')}</b>
-                <br />
-                {t('byHandText')}
-              </p>
-              <p className="problem__ledger-note">
-                <b className="problem__ledger-note-head">{t('withAiTitle')}</b>
-                <br />
-                {t('withAiText')}
-              </p>
-              <p className="problem__ledger-note">
-                <b className="problem__ledger-note-head--accent">
-                  {t('withFonderieTitle')}
-                </b>
-                <br />
-                {t('withFonderieText')}
-              </p>
-            </div>
-          </div>
+        {/* Left column: copy only */}
+        <Col span={6} className="problem__copy" data-reveal>
+          <p className="eyebrow">{t('eyebrow')}</p>
+          <h2 className="section-title section-title--sm">{t('title')}</h2>
+          <p className="problem__lede">{t('lede')}</p>
         </Col>
 
         {/* Right column: numbered list */}

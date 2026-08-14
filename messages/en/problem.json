@@ -15,6 +15,6 @@
   "withAiTitle": "AI alone",
   "withAiText": "Your assistant improvises from scratch every session — different login flows, different billing logic, different bugs. It wastes hours (and your AI budget) debugging the same problems over and over.",
   "withFonderieTitle": "With Fonderie",
-  "withFonderieText": "Fonderie directs your AI to use proven, tested modules. Same login flow every time. Same billing logic. Same security. You spend your time talking to customers. Without Fonderie, every AI session starts from zero — it doesn't know your auth, your billing, your stack. Fonderie is the playbook that remembers, so the AI doesn't have to.",
+  "withFonderieText": "Fonderie's control layer specifies and verifies every build. Same login flow every time. Same billing logic. Same security. You spend your time talking to customers. Without Fonderie, every AI session starts from zero — it doesn't know your auth, your billing, your stack. Fonderie is the standard that remembers, so the AI doesn't have to.",
   "whyNowLine": "In 2026, most SaaS founders use AI assistants to build. Nearly all of them are improvising the same infrastructure, differently every session. Fonderie is the control layer — one system that directs AI to build correctly, however you ship."
 }
