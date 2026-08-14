@@ -6,7 +6,7 @@ export default function Navbar() {
   const t = useTranslations('common');
 
   const links = [
-    { href: '#how', label: t('nav.solution') },
+    { href: '#control', label: t('nav.solution') },
     { href: '#packages', label: t('nav.packages') },
     { href: '#pricing', label: t('nav.pricing') },
     { href: 'https://github.com/fonderiejs/fonderie', label: t('nav.github'), external: true },

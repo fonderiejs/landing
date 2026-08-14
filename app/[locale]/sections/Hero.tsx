@@ -32,7 +32,7 @@ export default function Hero() {
               </svg>
             </span>
           </a>
-          <a href="#how" className="btn btn--ghost">
+          <a href="#control" className="btn btn--ghost">
             {tc('cta.howItWorks')}
           </a>
         </div>
