@@ -15,6 +15,6 @@
   "withAiTitle": "L'IA seule",
   "withAiText": "Votre assistant improvise depuis zéro à chaque session — flux de connexion différents, logique de facturation différente, bugs différents. Il gaspille des heures (et votre budget IA) à déboguer les mêmes problèmes encore et encore.",
   "withFonderieTitle": "Avec Fonderie",
-  "withFonderieText": "Fonderie dirige votre IA pour qu'elle utilise des modules éprouvés et testés. Même flux de connexion à chaque fois. Même logique de facturation. Même sécurité. Vous passez votre temps à parler à vos clients. Sans Fonderie, chaque session IA repart de zéro — elle ne connaît ni votre auth, ni votre facturation, ni votre stack. Fonderie est le plan qui se souvient, pour que l'IA n'ait pas à le faire.",
+  "withFonderieText": "La couche de contrôle de Fonderie spécifie et vérifie chaque build. Même flux de connexion à chaque fois. Même logique de facturation. Même sécurité. Vous passez votre temps à parler à vos clients. Sans Fonderie, chaque session IA repart de zéro — elle ne connaît ni votre auth, ni votre facturation, ni votre stack. Fonderie est le standard qui se souvient, pour que l'IA n'ait pas à le faire.",
   "whyNowLine": "En 2026, la plupart des fondateurs de SaaS utilisent des assistants IA pour construire. Presque tous improvisent la même infrastructure, différemment à chaque session. Fonderie est la couche de contrôle — un système qui dirige l'IA pour qu'elle construise correctement, quelle que soit la façon dont vous livrez."
 }
