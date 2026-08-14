@@ -44,9 +44,7 @@
       "featured": false
     }
   ],
-  "compareNote1": "Compare com contratar um desenvolvedor backend por 3 meses: US$ 30.000–60.000.",
-  "compareNote2": "O plano Launch da Fonderie custa US$ 49/mês. Menos que um dia de um contratado.",
-  "compareNote3": "Você só paga quando seu SaaS entra no ar.",
+  "compareNote": "Contratar um desenvolvedor backend custa US$ 30.000–60.000. O plano Launch da Fonderie custa US$ 49/mês. Você só paga quando seu SaaS entra no ar.",
   "finalCta": {
     "title": "Pare de depurar auth. Comece a construir seu produto.",
     "lede": "O playbook da Fonderie vive no seu repositório e dá a qualquer IA o contexto para construir corretamente. Você foca no que torna seu SaaS único.",

@@ -44,9 +44,7 @@
       "featured": false
     }
   ],
-  "compareNote1": "Vergleichen Sie das mit 3 Monaten Backend-Entwickler: 30.000–60.000 $.",
-  "compareNote2": "Fonderie Launch kostet 49 $/Monat. Weniger als ein Tag eines Auftragnehmers.",
-  "compareNote3": "Sie zahlen erst, wenn Ihr SaaS live geht.",
+  "compareNote": "Ein Backend-Entwickler kostet 30.000–60.000 $. Fonderie Launch kostet 49 $/Monat. Sie zahlen erst, wenn Ihr SaaS live geht.",
   "finalCta": {
     "title": "Hören Sie auf, Auth zu debuggen. Bauen Sie Ihr Produkt.",
     "lede": "Fonderies Playbook lebt in Ihrem Repo und gibt jeder KI den Kontext, um korrekt zu bauen. Sie konzentrieren sich darauf, was Ihr SaaS einzigartig macht.",
