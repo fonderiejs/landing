@@ -17,7 +17,7 @@ export default function Problem() {
           <div className="problem__copy">
             <p className="eyebrow">{t('eyebrow')}</p>
             <h2 className="section-title section-title--sm">{t('title')}</h2>
-            <p className="problem__lede">{t('lede')}</p>
+            <p className="problem__lede">{t('ledeCombined')}</p>
           </div>
 
           <div className="problem__ledger">
@@ -56,15 +56,6 @@ export default function Problem() {
               </div>
             </div>
           ))}
-        </Col>
-
-        {/* Full-width: closing statement */}
-        <Col
-          span={12}
-          className="problem__lede problem__why-now"
-          data-reveal
-        >
-          {t('whyNowLine')}
         </Col>
       </Row>
     </section>
