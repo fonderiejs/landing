@@ -1488,7 +1488,7 @@ a:hover {
 .pricing__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto 1fr;
   gap: 1px;
   background: var(--line);
   border: 1px solid var(--line);
@@ -1497,11 +1497,11 @@ a:hover {
 }
 .pricing__tier {
   background: var(--bg);
-  padding: 28px 24px;
+  padding: 32px 28px;
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 3;
-  gap: 18px;
+  gap: 20px;
   align-content: start;
 }
 .pricing__tier--featured {
@@ -1509,6 +1509,7 @@ a:hover {
   box-shadow: inset 0 3px 0 var(--stage);
 }
 .pricing__tier-head {
+  grid-row: 1;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -1543,22 +1544,42 @@ a:hover {
   margin: 0;
 }
 .pricing__tier-features {
+  grid-row: 3;
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 12px;
   font-size: 14.5px;
   line-height: 1.45;
   color: var(--muted);
 }
-.pricing__tier-features p {
-  margin: 0;
-}
 .pricing__tier-features-lead {
   color: var(--ink);
   font-weight: 600;
+  margin: 0;
+}
+.pricing__tier-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pricing__tier-list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14.5px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+.pricing__tier-check {
+  flex-shrink: 0;
+  color: var(--accent);
 }
 .pricing__tier-cta {
-  align-self: end;
+  grid-row: 2;
+  width: 100%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
