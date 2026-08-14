@@ -335,6 +335,7 @@ a:hover {
   border-color: var(--stage);
 }
 .btn--ghost-dark:hover {
+  color: #f5efe9;
   border-color: #a89f97;
 }
 
