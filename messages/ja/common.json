@@ -2,7 +2,7 @@
   "siteTitle": "Fonderie",
   "meta": {
     "titleSuffix": "SaaSのためのAIインフラ制御レイヤー",
-    "description": "Fonderieは、認証・課金・チーム・権限といった安全なSaaSインフラをAIアシスタントに指示して構築させます。創業者は数ヶ月ではなく数日で出荷できます。セルフホスト・MITライセンス。"
+    "description": "Fonderieは既製のSaaSインフラです — 認証・課金・チーム・権限。プレイブックが付属し、あなたのAIがそれを読んで正しく構築します。創業者は数ヶ月ではなく数日で出荷できます。セルフホスト・MITライセンス。"
   },
   "nav": {
     "solution": "仕組み",

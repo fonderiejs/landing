@@ -2,7 +2,7 @@
   "siteTitle": "Fonderie",
   "meta": {
     "titleSuffix": "面向 SaaS 的 AI 基础设施控制层",
-    "description": "Fonderie 指挥 AI 助手构建安全的 SaaS 基础设施——认证、计费、团队、权限——让创始人以天为单位、而不是以月为单位上线。自托管，MIT 许可证。"
+    "description": "Fonderie 是现成的 SaaS 基础设施——认证、计费、团队、权限——并附带一份操作手册，供你的 AI 读取以正确构建它，让创始人以天为单位、而不是以月为单位上线。自托管，MIT 许可证。"
   },
   "nav": {
     "solution": "工作原理",
