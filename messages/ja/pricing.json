@@ -20,16 +20,6 @@
       "featuresLead": "Buildのすべて、さらに",
       "features": ["優先サポート", "本番ライセンス + 監査ログ"],
       "cta": "出荷を始める — $49",
-      "featured": false
-    },
-    {
-      "name": "Grow",
-      "price": "$149",
-      "period": "/月",
-      "desc": "メンバーが増えるチーム向け",
-      "featuresLead": "Launchのすべて、さらに",
-      "features": ["チーム機能 + ロール管理", "高度なセキュリティ"],
-      "cta": "営業に問い合わせる",
       "featured": true
     },
     {
@@ -37,7 +27,7 @@
       "price": "$199",
       "period": "/月",
       "desc": "モバイル向けスクリーンキット",
-      "featuresLead": "Growのすべて、さらに",
+      "featuresLead": "Launchのすべて、さらに",
       "features": ["モバイル認証画面", "モバイル課金画面", "モバイルワークスペース画面", "ナビゲーションシェル"],
       "cta": "営業に問い合わせる — $199",
       "featured": false,
@@ -48,7 +38,7 @@
       "price": "カスタム",
       "period": "",
       "desc": "コンプライアンス要件のある組織向け",
-      "featuresLead": "Growのすべて、さらに",
+      "featuresLead": "Launchのすべて、さらに",
       "features": ["シングルサインオン（SSO）", "コンプライアンスサポート", "オンプレミス展開", "専任アカウントマネージャー"],
       "cta": "営業に問い合わせる",
       "featured": false
