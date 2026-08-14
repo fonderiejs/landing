@@ -20,16 +20,6 @@
       "featuresLead": "包含 Build 的全部功能，另加",
       "features": ["优先支持", "生产许可 + 审计日志"],
       "cta": "开始上线 — $49",
-      "featured": false
-    },
-    {
-      "name": "Grow",
-      "price": "$149",
-      "period": "/月",
-      "desc": "适合正在扩充成员的团队",
-      "featuresLead": "包含 Launch 的全部功能，另加",
-      "features": ["团队功能 + 角色管理", "高级安全"],
-      "cta": "联系销售",
       "featured": true
     },
     {
@@ -37,7 +27,7 @@
       "price": "$199",
       "period": "/月",
       "desc": "移动端界面套件",
-      "featuresLead": "包含 Grow 的全部功能，另加",
+      "featuresLead": "包含 Launch 的全部功能，另加",
       "features": ["移动端认证界面", "移动端计费界面", "移动端工作区界面", "导航外壳"],
       "cta": "联系销售 — $199",
       "featured": false,
@@ -48,7 +38,7 @@
       "price": "定制",
       "period": "",
       "desc": "适合有合规需求的组织",
-      "featuresLead": "包含 Grow 的全部功能，另加",
+      "featuresLead": "包含 Launch 的全部功能，另加",
       "features": ["单点登录（SSO）", "合规支持", "本地化部署", "专属客户经理"],
       "cta": "联系销售",
       "featured": false

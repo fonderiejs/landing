@@ -20,16 +20,6 @@
       "featuresLead": "Tudo do Build, mais",
       "features": ["Suporte prioritário", "Licença de produção + logs de auditoria"],
       "cta": "Começar a lançar — US$ 49",
-      "featured": false
-    },
-    {
-      "name": "Grow",
-      "price": "US$ 149",
-      "period": "/mês",
-      "desc": "Para times em crescimento",
-      "featuresLead": "Tudo do Launch, mais",
-      "features": ["Recursos de time + gestão de papéis", "Segurança avançada"],
-      "cta": "Falar com vendas",
       "featured": true
     },
     {
@@ -37,7 +27,7 @@
       "price": "US$ 199",
       "period": "/mês",
       "desc": "Screen kits para Mobile",
-      "featuresLead": "Tudo do Grow, mais",
+      "featuresLead": "Tudo do Launch, mais",
       "features": ["Telas de auth mobile", "Telas de cobrança mobile", "Telas de workspace mobile", "Shell de navegação"],
       "cta": "Falar com vendas — US$ 199",
       "featured": false,
@@ -48,7 +38,7 @@
       "price": "Personalizado",
       "period": "",
       "desc": "Para organizações com necessidades de conformidade",
-      "featuresLead": "Tudo do Grow, mais",
+      "featuresLead": "Tudo do Launch, mais",
       "features": ["Single sign-on (SSO)", "Suporte à conformidade", "Deploy on-premise", "Gerente de conta dedicado"],
       "cta": "Falar com vendas",
       "featured": false

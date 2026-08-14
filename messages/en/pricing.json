@@ -20,16 +20,6 @@
       "featuresLead": "Everything in Build, plus",
       "features": ["Priority support", "Production license + audit logs"],
       "cta": "Start shipping — $49",
-      "featured": false
-    },
-    {
-      "name": "Grow",
-      "price": "$149",
-      "period": "/mo",
-      "desc": "For teams adding members",
-      "featuresLead": "Everything in Launch, plus",
-      "features": ["Team features + role management", "Advanced security"],
-      "cta": "Contact sales",
       "featured": true
     },
     {
@@ -37,7 +27,7 @@
       "price": "$199",
       "period": "/mo",
       "desc": "Mobile screen kits",
-      "featuresLead": "Everything in Grow, plus",
+      "featuresLead": "Everything in Launch, plus",
       "features": ["Mobile auth screens", "Mobile billing screens", "Mobile workspace screens", "Navigation shell"],
       "cta": "Contact sales — $199",
       "featured": false,
@@ -48,7 +38,7 @@
       "price": "Custom",
       "period": "",
       "desc": "For organizations with compliance needs",
-      "featuresLead": "Everything in Grow, plus",
+      "featuresLead": "Everything in Launch, plus",
       "features": ["Single sign-on (SSO)", "Compliance support", "On-premise deployment", "Dedicated account manager"],
       "cta": "Contact sales",
       "featured": false
