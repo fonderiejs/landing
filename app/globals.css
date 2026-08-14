@@ -881,14 +881,7 @@ a:hover {
   padding: clamp(36px, 5vw, 56px) 0;
   border-bottom: 1px solid var(--line);
 }
-.problem__grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: clamp(28px, 4vw, 48px);
-  align-items: start;
-}
 .problem__copy {
-  flex: 1 1 380px;
   min-width: 0;
 }
 .problem__lede {
@@ -899,7 +892,6 @@ a:hover {
   margin: 0;
 }
 .problem__why-now {
-  flex: 1 1 100%;
   max-width: 72ch;
   padding-top: 8px;
 }
@@ -921,7 +913,6 @@ a:hover {
 }
 
 .problem__ledger {
-  flex: 1 1 400px;
   min-width: 0;
   border: 1px solid var(--line);
   border-radius: 16px;
