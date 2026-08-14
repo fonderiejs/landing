@@ -1,7 +1,7 @@
 {
   "eyebrow": "O problema que a IA piorou",
   "title": "Todo SaaS reconstrói a mesma infraestrutura. A IA só deixou isso mais rápido — e menos consistente.",
-  "lede": "Antes de escrever seu produto, você precisa de auth, cobrança, times, permissões. A IA improvisa tudo isso de forma diferente a cada sessão.",
+  "lede": "Antes de escrever seu produto, você precisa de auth, cobrança, times, permissões. Em 2026, a maioria dos fundadores de SaaS usa assistentes de IA para construir. Quase todos improvisam a mesma infraestrutura, de forma diferente a cada sessão. A Fonderie é a camada de controle — um único sistema que direciona a IA a construir corretamente, seja qual for a forma como você lança. A IA improvisa tudo isso de forma diferente a cada sessão.",
   "ledeCombined": "Antes de escrever seu produto, você precisa de auth, cobrança, times, permissões. A IA improvisa tudo isso de forma diferente a cada sessão. Em 2026, a maioria dos fundadores de SaaS usa assistentes de IA para construir. Quase todos improvisam a mesma infraestrutura, de forma diferente a cada sessão. A Fonderie é a camada de controle — um único sistema que direciona a IA a construir corretamente, seja qual for a forma como você lança.",
   "items": [
     { "title": "Login e cadastro", "text": "A IA improvisa isso a cada sessão. Bugs diferentes. APIs diferentes. Segurança inconsistente." },
