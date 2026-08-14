@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import { Row, Col } from '@/components/ui/Grid';
 
 export default function Problem() {
   const t = useTranslations('problem');
@@ -6,30 +7,35 @@ export default function Problem() {
 
   return (
     <section className="problem">
-      <div className="problem__grid">
-        <div className="problem__copy">
-          <p className="eyebrow" data-reveal="">
-            {t('eyebrow')}
-          </p>
-          <h2 className="section-title section-title--sm" data-reveal="">
-            {t('title')}
-          </h2>
-          <p className="problem__lede" data-reveal="">
-            {t('lede')}
-          </p>
-        </div>
-        <div className="shift__list" data-reveal="">
+      <Row
+        gutter="clamp(28px, 4vw, 48px)"
+        align="start"
+        className="problem__grid"
+      >
+        {/* Left column: copy only */}
+        <Col span={6} className="problem__copy" data-reveal>
+          <p className="eyebrow">{t('eyebrow')}</p>
+          <h2 className="section-title section-title--sm">{t('title')}</h2>
+          <p className="problem__lede">{t('lede')}</p>
+        </Col>
+
+        {/* Right column: numbered list */}
+        <Col span={6} className="shift__list" data-reveal>
           {items.map((item, i) => (
             <div key={item.title} className="shift__item">
-              <span className="shift__item-num">{String(i + 1).padStart(2, '0')}</span>
+              <span className="shift__item-num">
+                {String(i + 1).padStart(2, '0')}
+              </span>
               <div>
                 <h3 className="shift__item-title">{item.title}</h3>
                 <p className="shift__item-text">{item.text}</p>
               </div>
             </div>
           ))}
-        </div>
-        <div className="problem__ledger" data-reveal="">
+        </Col>
+
+        {/* Full-width: ledger comparison */}
+        <Col span={12} className="problem__ledger" data-reveal>
           <div className="problem__ledger-foot">
             <p className="problem__ledger-note">
               <b className="problem__ledger-note-head">{t('byHandTitle')}</b>
@@ -42,16 +48,25 @@ export default function Problem() {
               {t('withAiText')}
             </p>
             <p className="problem__ledger-note">
-              <b className="problem__ledger-note-head--accent">{t('withFonderieTitle')}</b>
+              <b className="problem__ledger-note-head--accent">
+                {t('withFonderieTitle')}
+              </b>
               <br />
               {t('withFonderieText')}
             </p>
           </div>
-        </div>
-        <p className="problem__lede problem__why-now" data-reveal="">
+        </Col>
+
+        {/* Full-width: closing statement */}
+        <Col
+          span={12}
+          className="problem__lede problem__why-now"
+          data-reveal
+        >
           {t('whyNowLine')}
-        </p>
-      </div>
+        </Col>
+      </Row>
     </section>
   );
 }
+

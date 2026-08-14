@@ -186,6 +186,94 @@ a:hover {
 }
 
 /* ================================================================
+ grid system — additive, zero impact until explicitly used
+ ================================================================ */
+
+:root {
+  --grid-columns: 12;
+  --grid-gutter: clamp(16px, 3vw, 28px);
+}
+
+/* base grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns, 12), 1fr);
+  gap: var(--grid-gutter, clamp(16px, 3vw, 28px));
+}
+
+/* ledger variant (1px gap + border — matches packages/pricing) */
+.grid--ledger {
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* alignment variants */
+.grid--align-start    { align-items: start; }
+.grid--align-center   { align-items: center; }
+.grid--align-end      { align-items: end; }
+.grid--align-stretch  { align-items: stretch; }
+
+/* column base */
+.col {
+  min-width: 0;
+  grid-column: span var(--col-span, 12);
+}
+
+/* column spans (desktop+) */
+.col--1  { --col-span: 1; }
+.col--2  { --col-span: 2; }
+.col--3  { --col-span: 3; }
+.col--4  { --col-span: 4; }
+.col--5  { --col-span: 5; }
+.col--6  { --col-span: 6; }
+.col--7  { --col-span: 7; }
+.col--8  { --col-span: 8; }
+.col--9  { --col-span: 9; }
+.col--10 { --col-span: 10; }
+.col--11 { --col-span: 11; }
+.col--12 { --col-span: 12; }
+
+/* column starts (offsets) */
+.col--start-1  { grid-column-start: 1; }
+.col--start-2  { grid-column-start: 2; }
+.col--start-3  { grid-column-start: 3; }
+.col--start-4  { grid-column-start: 4; }
+.col--start-5  { grid-column-start: 5; }
+.col--start-6  { grid-column-start: 6; }
+.col--start-7  { grid-column-start: 7; }
+.col--start-8  { grid-column-start: 8; }
+.col--start-9  { grid-column-start: 9; }
+.col--start-10 { grid-column-start: 10; }
+.col--start-11 { grid-column-start: 11; }
+.col--start-12 { grid-column-start: 12; }
+
+/* mobile (< 768px): stack to full width by default */
+@media (max-width: 767px) {
+  .col,
+  .col--1, .col--2, .col--3, .col--4, .col--5, .col--6,
+  .col--7, .col--8, .col--9, .col--10, .col--11, .col--12 {
+    grid-column: 1 / -1;
+  }
+
+  /* opt-in mobile columns */
+  .col-sm--1  { grid-column: span 1; }
+  .col-sm--2  { grid-column: span 2; }
+  .col-sm--3  { grid-column: span 3; }
+  .col-sm--4  { grid-column: span 4; }
+  .col-sm--5  { grid-column: span 5; }
+  .col-sm--6  { grid-column: span 6; }
+  .col-sm--7  { grid-column: span 7; }
+  .col-sm--8  { grid-column: span 8; }
+  .col-sm--9  { grid-column: span 9; }
+  .col-sm--10 { grid-column: span 10; }
+  .col-sm--11 { grid-column: span 11; }
+  .col-sm--12 { grid-column: span 12; }
+}
+
+/* ================================================================
    buttons
    ================================================================ */
 
