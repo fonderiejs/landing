@@ -1,6 +1,6 @@
 {
   "eyebrow": "La couche de contrôle",
-  "title": "Une infrastructure prête à l'emploi, pas des suppositions d'IA",
+  "title": "Comment fonctionne Fonderie",
   "lede": "Fonderie est une infrastructure SaaS prête à l'emploi qui vit dans votre repo. Auth, facturation, équipes, permissions — tout est testé, tout est documenté. Votre IA lit le plan et assemble les modules. Aucune improvisation. Plus besoin de réinventer l'auth à chaque session.",
   "steps": [
     {

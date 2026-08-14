@@ -1,6 +1,6 @@
 {
   "eyebrow": "Die Kontrollschicht",
-  "title": "Fertige Infrastruktur, kein KI-Ratespiel",
+  "title": "So funktioniert Fonderie",
   "lede": "Fonderie ist fertige SaaS-Infrastruktur, die in Ihrem Repo liegt. Auth, Abrechnung, Teams, Berechtigungen — alles getestet, alles dokumentiert. Ihre KI liest das Playbook und setzt die Module zusammen. Keine Improvisation. Kein Neuerfinden von Auth bei jeder Sitzung.",
   "steps": [
     {

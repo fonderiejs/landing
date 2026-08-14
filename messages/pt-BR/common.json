@@ -2,7 +2,7 @@
   "siteTitle": "Fonderie",
   "meta": {
     "titleSuffix": "A camada de controle de infraestrutura de IA para SaaS",
-    "description": "A Fonderie é infraestrutura de SaaS pronta — auth, cobrança, times, permissões — que vem com um playbook que sua IA lê para construí-la corretamente, para fundadores lançarem em dias, não meses. Auto-hospedado. Licença MIT."
+    "description": "A Fonderie ajuda fundadores a lançar seu SaaS no mercado mais rápido. Ela entrega um playbook que vive no seu repositório e guia sua IA a construir um SaaS da forma certa — auth, cobrança, times, segurança, permissões, tudo testado e documentado. Ele dá à sua IA as bases que todo SaaS precisa, para que você não precise reconstruí-las ou reexplicá-las a cada sessão. Foque no seu produto e nos seus clientes — a Fonderie dá à sua IA o contexto e os blocos de construção para transformar sua ideia em um SaaS pronto para produção."
   },
   "nav": {
     "solution": "Como funciona",
