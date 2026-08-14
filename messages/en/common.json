@@ -2,7 +2,7 @@
   "siteTitle": "Fonderie",
   "meta": {
     "titleSuffix": "The AI Infrastructure Control Layer for SaaS",
-    "description": "Fonderie directs AI assistants to build secure SaaS infrastructure — auth, billing, teams, permissions — so founders ship in days, not months. Self-hosted. MIT licensed."
+    "description": "Fonderie is off-the-shelf SaaS infrastructure — auth, billing, teams, permissions — that ships with a playbook your AI assistant reads to build it correctly, so founders ship in days, not months. Self-hosted. MIT licensed."
   },
   "nav": {
     "solution": "How it works",

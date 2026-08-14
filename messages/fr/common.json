@@ -2,7 +2,7 @@
   "siteTitle": "Fonderie",
   "meta": {
     "titleSuffix": "La couche de contrôle de l'infrastructure IA pour SaaS",
-    "description": "Fonderie dirige les assistants IA pour qu'ils construisent une infrastructure SaaS sécurisée — auth, facturation, équipes, permissions — pour que les fondateurs livrent en jours, pas en mois. Auto-hébergé. Licence MIT."
+    "description": "Fonderie est une infrastructure SaaS prête à l'emploi — auth, facturation, équipes, permissions — livrée avec un plan que votre IA lit pour la construire correctement, afin que les fondateurs livrent en jours, pas en mois. Auto-hébergé. Licence MIT."
   },
   "nav": {
     "solution": "Comment ça marche",
