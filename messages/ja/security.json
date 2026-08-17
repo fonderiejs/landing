@@ -87,5 +87,20 @@
   "discloseText": "GitHub のセキュリティアドバイザリから非公開でご報告ください — 当社の",
   "discloseLinkText": "セキュリティポリシー",
   "discloseLinkHref": "https://github.com/fonderiejs/fonderie/blob/main/SECURITY.md",
-  "discloseSuffix": "をご覧ください"
+  "discloseSuffix": "をご覧ください",
+  "docsLead": "詳細を見る",
+  "docs": [
+    {
+      "label": "ソースコード",
+      "href": "https://github.com/fonderiejs/fonderie"
+    },
+    {
+      "label": "セキュリティ統制と状況",
+      "href": "https://github.com/fonderiejs/fonderie/blob/main/SOC2-readiness.md"
+    },
+    {
+      "label": "セキュリティポリシー",
+      "href": "https://github.com/fonderiejs/fonderie/tree/main/docs/policies"
+    }
+  ]
 }

@@ -86,5 +86,20 @@
   "discloseLead": "Encontrou uma vulnerabilidade?",
   "discloseText": "Relate de forma privada pelos security advisories do GitHub — veja nossa",
   "discloseLinkText": "política de segurança",
-  "discloseLinkHref": "https://github.com/fonderiejs/fonderie/blob/main/SECURITY.md"
+  "discloseLinkHref": "https://github.com/fonderiejs/fonderie/blob/main/SECURITY.md",
+  "docsLead": "Veja os detalhes",
+  "docs": [
+    {
+      "label": "Código-fonte",
+      "href": "https://github.com/fonderiejs/fonderie"
+    },
+    {
+      "label": "Controles de segurança e status",
+      "href": "https://github.com/fonderiejs/fonderie/blob/main/SOC2-readiness.md"
+    },
+    {
+      "label": "Políticas de segurança",
+      "href": "https://github.com/fonderiejs/fonderie/tree/main/docs/policies"
+    }
+  ]
 }

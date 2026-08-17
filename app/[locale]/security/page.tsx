@@ -12,6 +12,7 @@ export default async function SecurityPage({ params }: { params: Promise<{ local
   setRequestLocale(locale);
   const t = await getTranslations('security');
   const groups = t.raw('groups') as { title: string; items: { title: string; text: string }[] }[];
+  const docs = t.raw('docs') as { label: string; href: string }[];
 
   return (
     <>
@@ -37,6 +38,25 @@ export default async function SecurityPage({ params }: { params: Promise<{ local
             </div>
           </section>
         ))}
+
+        <section className="packages">
+          <div className="container">
+            <h2 className="section-title section-title--sm">{t('docsLead')}</h2>
+            <div className="packages__grid">
+              {docs.map((doc) => (
+                <a
+                  key={doc.href}
+                  className="packages__card"
+                  href={doc.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3 className="packages__card-title">{doc.label} →</h3>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <section className="subhero container">
           <p className="subhero__lede">

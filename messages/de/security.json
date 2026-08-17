@@ -86,5 +86,20 @@
   "discloseLead": "Eine Schwachstelle gefunden?",
   "discloseText": "Melden Sie sie privat über die GitHub Security Advisories — siehe unsere",
   "discloseLinkText": "Sicherheitsrichtlinie",
-  "discloseLinkHref": "https://github.com/fonderiejs/fonderie/blob/main/SECURITY.md"
+  "discloseLinkHref": "https://github.com/fonderiejs/fonderie/blob/main/SECURITY.md",
+  "docsLead": "Details ansehen",
+  "docs": [
+    {
+      "label": "Quellcode",
+      "href": "https://github.com/fonderiejs/fonderie"
+    },
+    {
+      "label": "Sicherheitskontrollen & Status",
+      "href": "https://github.com/fonderiejs/fonderie/blob/main/SOC2-readiness.md"
+    },
+    {
+      "label": "Sicherheitsrichtlinien",
+      "href": "https://github.com/fonderiejs/fonderie/tree/main/docs/policies"
+    }
+  ]
 }
