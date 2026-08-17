@@ -8,7 +8,10 @@
       "price": "Kostenlos",
       "period": "",
       "desc": "Für Nebenprojekte und Pre-Revenue-SaaS",
-      "features": ["Alle Backend-Module", "Community-Support"],
+      "features": [
+        "Alle Backend-Module",
+        "Community-Support"
+      ],
       "cta": "Loslegen — kostenlos",
       "featured": false
     },
@@ -18,17 +21,24 @@
       "period": "/Monat",
       "desc": "Für SaaS mit ersten zahlenden Kunden",
       "featuresLead": "Alles in Build, plus",
-      "features": ["Priority-Support", "Produktionslizenz + Audit-Logs"],
+      "features": [
+        "Priority-Support",
+        "Produktionslizenz + Audit-Logs"
+      ],
       "cta": "Ausliefern — 49 $",
       "featured": true
     },
     {
-      "name": "Mobile",
+      "name": "Frontend",
       "price": "199 $",
       "period": "/Monat",
-      "desc": "Mobile-Screen-Kits",
+      "desc": "Frontend-Screen-Kits",
       "featuresLead": "Alles in Launch, plus",
-      "features": ["Mobile Auth-Screens", "Mobile Abrechnungs-Screens", "Mobile Workspace-Screens", "Navigations-Shell"],
+      "features": [
+        "Auth-, Abrechnungs- & Workspace-Screens",
+        "React, React Native & Vue",
+        "Headless-Hooks oder fertige UI"
+      ],
       "cta": "Vertrieb kontaktieren — 199 $",
       "featured": false,
       "hidden": true
@@ -39,7 +49,12 @@
       "period": "",
       "desc": "Für Organisationen mit Compliance-Anforderungen",
       "featuresLead": "Alles in Launch, plus",
-      "features": ["Single Sign-On (SSO)", "Compliance-Support", "On-Premise-Deployment", "Dedizierter Account-Manager"],
+      "features": [
+        "Single Sign-On (SSO)",
+        "Compliance-Support",
+        "On-Premise-Deployment",
+        "Dedizierter Account-Manager"
+      ],
       "cta": "Vertrieb kontaktieren",
       "featured": false
     }

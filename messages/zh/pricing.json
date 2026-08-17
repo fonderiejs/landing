@@ -8,7 +8,10 @@
       "price": "免费",
       "period": "",
       "desc": "适合个人项目和尚未产生收入的 SaaS",
-      "features": ["所有后端模块", "社区支持"],
+      "features": [
+        "所有后端模块",
+        "社区支持"
+      ],
       "cta": "开始构建 — 免费",
       "featured": false
     },
@@ -18,17 +21,24 @@
       "period": "/月",
       "desc": "适合已有首批付费客户的 SaaS",
       "featuresLead": "包含 Build 的全部功能，另加",
-      "features": ["优先支持", "生产许可 + 审计日志"],
+      "features": [
+        "优先支持",
+        "生产许可 + 审计日志"
+      ],
       "cta": "开始上线 — $49",
       "featured": true
     },
     {
-      "name": "Mobile",
+      "name": "Frontend",
       "price": "$199",
       "period": "/月",
-      "desc": "移动端界面套件",
+      "desc": "前端界面套件",
       "featuresLead": "包含 Launch 的全部功能，另加",
-      "features": ["移动端认证界面", "移动端计费界面", "移动端工作区界面", "导航外壳"],
+      "features": [
+        "认证、计费与工作区界面",
+        "React、React Native 和 Vue",
+        "无头 hooks 或现成 UI"
+      ],
       "cta": "联系销售 — $199",
       "featured": false,
       "hidden": true
@@ -39,7 +49,12 @@
       "period": "",
       "desc": "适合有合规需求的组织",
       "featuresLead": "包含 Launch 的全部功能，另加",
-      "features": ["单点登录（SSO）", "合规支持", "本地化部署", "专属客户经理"],
+      "features": [
+        "单点登录（SSO）",
+        "合规支持",
+        "本地化部署",
+        "专属客户经理"
+      ],
       "cta": "联系销售",
       "featured": false
     }

@@ -1,13 +1,28 @@
 {
   "eyebrow": "Tout ce dont votre SaaS a besoin",
-  "title": "Modules backend et kits d'écrans Mobile.",
-  "lede": "Testé en production, optimisé pour l'IA. Votre IA ne devine pas. Elle suit les instructions de Fonderie.",
+  "title": "Modules backend et kits d'écrans frontend.",
+  "lede": "Testé en production, optimisé pour l'IA. Logique backend plus UI prête à l'emploi pour React, React Native et Vue — prenez les hooks headless ou les écrans prêts. Votre IA ne devine pas. Elle suit les instructions de Fonderie.",
   "items": [
-    { "title": "Auth (Backend + Mobile)", "text": "Connexion, inscription, réinitialisation de mot de passe et authentification à deux facteurs. Plus des écrans de connexion mobiles avec repli biométrique. Votre IA n'écrit plus jamais l'auth depuis zéro." },
-    { "title": "Facturation (Backend + Mobile)", "text": "Intégration Stripe, abonnements, mesure d'utilisation. Plus un sélecteur de plan et des écrans de paiement mobiles. Prêt à l'emploi. Pré-connecté." },
-    { "title": "Espaces de travail (Backend + Mobile)", "text": "Équipes multi-tenant, invitations, accès basé sur les rôles. Plus un sélecteur d'équipe et une gestion des membres mobiles. Vos clients gèrent leurs propres organisations." },
-    { "title": "Notifications", "text": "E-mail, SMS, notifications push. Messagerie sans attente de réponse. Votre IA ne réinvente plus la logique d'e-mail à chaque session." },
-    { "title": "Permissions et audit", "text": "Contrôle d'accès basé sur les rôles, permissions génériques, contournement administrateur. Plus des journaux d'audit à l'échelle de l'espace de travail." }
+    {
+      "title": "Auth (Backend + Frontend)",
+      "text": "Connexion, inscription, réinitialisation de mot de passe et authentification à deux facteurs. Plus des écrans d'auth prêts pour React, React Native et Vue. Votre IA n'écrit plus jamais l'auth depuis zéro."
+    },
+    {
+      "title": "Facturation (Backend + Frontend)",
+      "text": "Intégration Stripe, abonnements, mesure d'utilisation. Plus des grilles tarifaires et des écrans de paiement pour React, React Native et Vue. Prêt à l'emploi. Pré-connecté."
+    },
+    {
+      "title": "Espaces de travail (Backend + Frontend)",
+      "text": "Équipes multi-tenant, invitations, accès basé sur les rôles. Plus un sélecteur d'équipe et une gestion des membres pour React, React Native et Vue. Vos clients gèrent leurs propres organisations."
+    },
+    {
+      "title": "Notifications",
+      "text": "E-mail, SMS, notifications push, plus une UI d'administration des modèles. Messagerie sans attente de réponse. Votre IA ne réinvente plus la logique d'e-mail à chaque session."
+    },
+    {
+      "title": "Permissions et audit",
+      "text": "Contrôle d'accès basé sur les rôles, permissions génériques, contournement administrateur. Plus des journaux d'audit à l'échelle de l'espace de travail avec un écran prêt sur chaque framework."
+    }
   ],
   "footnote": "Vous voulez les détails techniques ?",
   "footnoteLink": "Voir le code sur GitHub →"
