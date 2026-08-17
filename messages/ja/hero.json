@@ -4,6 +4,7 @@
   "titleLine2": "来四半期ではなく。",
   "lede": "どのAIアシスタントもFonderieの仕様に従って構築します。",
   "ledeStrong": "認証、課金、チーム、権限 — 標準化され、検証され、毎回正しく仕上がります。",
+  "ledeStrong2": "そしてそれに合うUIも — React、React Native、Vue 向けの構築済み画面。",
   "primaryCta": "始める — 無料",
   "proof": "AIを問わず利用可能 · セルフホスト · MITライセンス",
   "worksWith": "指示する対象",

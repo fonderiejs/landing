@@ -22,6 +22,7 @@ export default function Hero() {
         <p className="hero__lede">
           {t('lede')} <span className="hero__lede-strong">{t('ledeStrong')}</span>
         </p>
+        <p className="hero__lede">{t('ledeStrong2')}</p>
         <div className="hero__cta">
           <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" className="btn btn--dark">
             {t('primaryCta')}
