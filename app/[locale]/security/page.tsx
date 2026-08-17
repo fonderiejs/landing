@@ -23,15 +23,17 @@ export default async function SecurityPage({ params }: { params: Promise<{ local
         </section>
 
         {groups.map((group) => (
-          <section key={group.title} className="packages container">
-            <h2 className="section-title section-title--sm">{group.title}</h2>
-            <div className="packages__grid">
-              {group.items.map((item) => (
-                <div key={item.title} className="packages__card">
-                  <h3 className="packages__card-title">{item.title}</h3>
-                  <p className="packages__card-text">{item.text}</p>
-                </div>
-              ))}
+          <section key={group.title} className="packages">
+            <div className="container">
+              <h2 className="section-title section-title--sm">{group.title}</h2>
+              <div className="packages__grid">
+                {group.items.map((item) => (
+                  <div key={item.title} className="packages__card">
+                    <h3 className="packages__card-title">{item.title}</h3>
+                    <p className="packages__card-text">{item.text}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </section>
         ))}
