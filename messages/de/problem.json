@@ -2,6 +2,7 @@
   "eyebrow": "Das Problem, das KI schlimmer gemacht hat",
   "title": "Jedes SaaS baut dieselbe Infrastruktur neu. KI hat es nur schneller gemacht — und weniger konsistent.",
   "lede": "Bevor Sie Ihr eigentliches Produkt schreiben, brauchen Sie Auth, Abrechnung, Teams, Berechtigungen. 2026 nutzen die meisten SaaS-Gründer KI-Assistenten zum Bauen. Fast alle improvisieren dieselbe Infrastruktur, jedes Mal anders.",
+  "marketScale": "Wir beginnen dort, wo jedes SaaS beginnt: Auth und Abrechnung — die beiden Systeme, ohne die kein Produkt starten kann. Sobald Fonderie Ihr Fundament spezifiziert, erweitert sich dieselbe Kontrollschicht auf Benachrichtigungen, Berechtigungen, Mobile und jedes System, das Ihre KI als Nächstes baut. Der Einstieg sind die ersten fünf Systeme. Der Markt ist das gesamte Infrastrukturbudget jedes KI-gebauten Unternehmens.",
   "ledeCombined": "Bevor Sie Ihr eigentliches Produkt schreiben, brauchen Sie Auth, Abrechnung, Teams, Berechtigungen. KI improvisiert das alles bei jeder Sitzung anders. 2026 nutzen die meisten SaaS-Gründer KI-Assistenten zum Bauen. Fast alle improvisieren dieselbe Infrastruktur, jedes Mal anders. Fonderie ist die Kontrollschicht — ein System, das KI anleitet, korrekt zu bauen, egal wie Sie ausliefern.",
   "items": [
     { "title": "Login und Registrierung", "text": "Die KI improvisiert das bei jeder Sitzung. Unterschiedliche Bugs. Unterschiedliche APIs. Inkonsistente Sicherheit." },
