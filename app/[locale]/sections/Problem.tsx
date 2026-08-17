@@ -17,6 +17,7 @@ export default function Problem() {
           <p className="eyebrow">{t('eyebrow')}</p>
           <h2 className="section-title section-title--sm">{t('title')}</h2>
           <p className="problem__lede">{t('lede')}</p>
+          <p className="problem__lede">{t('marketScale')}</p>
         </Col>
 
         {/* Right column: numbered list */}
