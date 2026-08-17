@@ -1,13 +1,28 @@
 {
   "eyebrow": "Tudo que seu SaaS precisa",
-  "title": "Módulos de backend e screen kits para Mobile.",
-  "lede": "Testado em produção, otimizado para IA. Sua IA não chuta. Ela segue as instruções da Fonderie.",
+  "title": "Módulos de backend e screen kits de frontend.",
+  "lede": "Testado em produção, otimizado para IA. Lógica de backend mais UI pronta para React, React Native e Vue — use os hooks headless ou as telas prontas. Sua IA não chuta. Ela segue as instruções da Fonderie.",
   "items": [
-    { "title": "Auth (Backend + Mobile)", "text": "Login, cadastro, redefinição de senha e autenticação de dois fatores. Além de telas de login mobile com fallback biométrico. Sua IA nunca mais escreve auth do zero." },
-    { "title": "Cobrança (Backend + Mobile)", "text": "Integração com Stripe, assinaturas, medição de uso. Além de seletor de plano e telas de checkout mobile. Pronto e conectado." },
-    { "title": "Workspaces (Backend + Mobile)", "text": "Times multi-tenant, convites, acesso baseado em papéis. Além de trocador de time e gerenciamento de membros mobile. Seus clientes gerenciam suas próprias organizações." },
-    { "title": "Notificações", "text": "E-mail, SMS e notificações push. Mensagens fire-and-forget. Sua IA não reinventa a lógica de e-mail a cada sessão." },
-    { "title": "Permissões e auditoria", "text": "Controle de acesso baseado em papéis, permissões coringa, bypass de administrador. Além de logs de auditoria por workspace." }
+    {
+      "title": "Auth (Backend + Frontend)",
+      "text": "Login, cadastro, redefinição de senha e autenticação de dois fatores. Além de telas de auth prontas para React, React Native e Vue. Sua IA nunca mais escreve auth do zero."
+    },
+    {
+      "title": "Cobrança (Backend + Frontend)",
+      "text": "Integração com Stripe, assinaturas, medição de uso. Além de tabelas de preço e telas de checkout para React, React Native e Vue. Pronto e conectado."
+    },
+    {
+      "title": "Workspaces (Backend + Frontend)",
+      "text": "Times multi-tenant, convites, acesso baseado em papéis. Além de trocador de time e gerenciamento de membros para React, React Native e Vue. Seus clientes gerenciam suas próprias organizações."
+    },
+    {
+      "title": "Notificações",
+      "text": "E-mail, SMS e notificações push, além de uma UI de administração de templates. Mensagens fire-and-forget. Sua IA não reinventa a lógica de e-mail a cada sessão."
+    },
+    {
+      "title": "Permissões e auditoria",
+      "text": "Controle de acesso baseado em papéis, permissões coringa, bypass de administrador. Além de logs de auditoria por workspace com tela pronta em cada framework."
+    }
   ],
   "footnote": "Quer os detalhes técnicos?",
   "footnoteLink": "Veja o código no GitHub →"

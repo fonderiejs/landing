@@ -8,7 +8,10 @@
       "price": "Grátis",
       "period": "",
       "desc": "Para projetos paralelos e SaaS pré-receita",
-      "features": ["Todos os módulos de backend", "Suporte da comunidade"],
+      "features": [
+        "Todos os módulos de backend",
+        "Suporte da comunidade"
+      ],
       "cta": "Começar — grátis",
       "featured": false
     },
@@ -18,17 +21,24 @@
       "period": "/mês",
       "desc": "Para SaaS com os primeiros clientes pagantes",
       "featuresLead": "Tudo do Build, mais",
-      "features": ["Suporte prioritário", "Licença de produção + logs de auditoria"],
+      "features": [
+        "Suporte prioritário",
+        "Licença de produção + logs de auditoria"
+      ],
       "cta": "Começar a lançar — US$ 49",
       "featured": true
     },
     {
-      "name": "Mobile",
+      "name": "Frontend",
       "price": "US$ 199",
       "period": "/mês",
-      "desc": "Screen kits para Mobile",
+      "desc": "Screen kits de frontend",
       "featuresLead": "Tudo do Launch, mais",
-      "features": ["Telas de auth mobile", "Telas de cobrança mobile", "Telas de workspace mobile", "Shell de navegação"],
+      "features": [
+        "Telas de auth, cobrança e workspaces",
+        "React, React Native e Vue",
+        "Hooks headless ou UI pronta"
+      ],
       "cta": "Falar com vendas — US$ 199",
       "featured": false,
       "hidden": true
@@ -39,7 +49,12 @@
       "period": "",
       "desc": "Para organizações com necessidades de conformidade",
       "featuresLead": "Tudo do Launch, mais",
-      "features": ["Single sign-on (SSO)", "Suporte à conformidade", "Deploy on-premise", "Gerente de conta dedicado"],
+      "features": [
+        "Single sign-on (SSO)",
+        "Suporte à conformidade",
+        "Deploy on-premise",
+        "Gerente de conta dedicado"
+      ],
       "cta": "Falar com vendas",
       "featured": false
     }

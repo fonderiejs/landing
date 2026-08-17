@@ -1,13 +1,28 @@
 {
   "eyebrow": "Everything your SaaS needs",
-  "title": "Backend modules and Mobile screen kits.",
-  "lede": "Production-tested, AI-optimized. Your AI doesn't guess. It follows Fonderie's instructions.",
+  "title": "Backend modules and frontend screen kits.",
+  "lede": "Production-tested, AI-optimized. Backend logic plus prebuilt UI for React, React Native, and Vue — take the headless hooks or the ready-made screens. Your AI doesn't guess. It follows Fonderie's instructions.",
   "items": [
-    { "title": "Auth (Backend + Mobile)", "text": "Login, signup, password reset, and multi-factor authentication. Plus mobile login screens with biometric fallback. Your AI never writes auth from scratch." },
-    { "title": "Billing (Backend + Mobile)", "text": "Stripe integration, subscriptions, usage metering. Plus mobile plan selector and checkout screens. Pre-built. Pre-wired." },
-    { "title": "Workspaces (Backend + Mobile)", "text": "Multi-tenant teams, invites, role-based access. Plus mobile team switcher and member management. Your customers manage their own orgs." },
-    { "title": "Notifications", "text": "Email, SMS, and push notifications. Fire-and-forget messaging. Your AI doesn't reinvent email logic every session." },
-    { "title": "Permissions and Audit", "text": "Role-based access control, wildcard permissions, admin override. Plus workspace-scoped audit logs." }
+    {
+      "title": "Auth (Backend + Frontend)",
+      "text": "Login, signup, password reset, and multi-factor authentication. Plus prebuilt auth screens for React, React Native, and Vue. Your AI never writes auth from scratch."
+    },
+    {
+      "title": "Billing (Backend + Frontend)",
+      "text": "Stripe integration, subscriptions, usage metering. Plus pricing tables and checkout screens for React, React Native, and Vue. Pre-built. Pre-wired."
+    },
+    {
+      "title": "Workspaces (Backend + Frontend)",
+      "text": "Multi-tenant teams, invites, role-based access. Plus team-switcher and member-management screens for React, React Native, and Vue. Your customers manage their own orgs."
+    },
+    {
+      "title": "Notifications",
+      "text": "Email, SMS, and push notifications, plus a template admin UI. Fire-and-forget messaging. Your AI doesn't reinvent email logic every session."
+    },
+    {
+      "title": "Permissions and Audit",
+      "text": "Role-based access control, wildcard permissions, admin override. Plus a workspace-scoped audit log with a prebuilt screen on every framework."
+    }
   ],
   "footnote": "Want the technical details?",
   "footnoteLink": "See the code on GitHub →"
