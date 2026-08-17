@@ -1,0 +1,90 @@
+{
+  "title": "Segurança na Fonderie",
+  "lede": "A Fonderie é o padrão auditado para infraestrutura de SaaS. É open source (MIT), roda no seu próprio processo contra o seu próprio banco de dados e traz segurança nos padrões — para que os apps construídos sobre ela sejam seguros por construção. Veja como é construída, publicada e protegida.",
+  "groups": [
+    {
+      "title": "Segurança embutida em cada app",
+      "items": [
+        {
+          "title": "Autenticação bem feita",
+          "text": "Hash de senha com bcrypt, MFA TOTP com códigos de backup e sessões revogadas na troca de senha."
+        },
+        {
+          "title": "Segredos criptografados",
+          "text": "Segredos de MFA/TOTP criptografados em repouso (AES-256-GCM). Chaves de assinatura são validadas fail-closed — um segredo fraco ou ausente impede a inicialização."
+        },
+        {
+          "title": "Acesso de menor privilégio",
+          "text": "Controle de acesso por papéis no escopo do workspace, com consultas parametrizadas e isoladas por tenant. Sem vazamento entre tenants."
+        },
+        {
+          "title": "Proteção contra abuso",
+          "text": "Rate limiting ligado por padrão à frente de login, cadastro, redefinição de senha e MFA."
+        },
+        {
+          "title": "Trilha de auditoria à prova de adulteração",
+          "text": "Cada evento carrega um HMAC com chave, tornando detectável qualquer histórico alterado ou forjado."
+        },
+        {
+          "title": "Transporte reforçado",
+          "text": "HSTS e cabeçalhos seguros por padrão; cookies Secure, HttpOnly, SameSite em produção."
+        }
+      ]
+    },
+    {
+      "title": "Seus dados, sua infraestrutura",
+      "items": [
+        {
+          "title": "Auto-hospedado por design",
+          "text": "A Fonderie roda no seu processo contra o seu banco. Nós não hospedamos nem guardamos os dados dos seus usuários finais."
+        },
+        {
+          "title": "Exportação e apagamento embutidos",
+          "text": "Exportação de dados por usuário (solicitação de acesso) e retenção/apagamento configuráveis já vêm inclusos."
+        },
+        {
+          "title": "Sem lock-in",
+          "text": "Licença MIT, TypeScript puro. Pegue um bloco ou o conjunto todo. O que você constrói é seu."
+        }
+      ]
+    },
+    {
+      "title": "Como é construída e publicada",
+      "items": [
+        {
+          "title": "Main revisada e protegida",
+          "text": "Toda mudança passa por um pull request com CI verde numa branch main protegida; caminhos sensíveis são roteados a revisores via CODEOWNERS."
+        },
+        {
+          "title": "Verificação contínua de vulnerabilidades",
+          "text": "O CI falha o build diante de advisories de alta severidade nas dependências publicadas."
+        },
+        {
+          "title": "Releases assinados",
+          "text": "Os pacotes publicam via OIDC Trusted Publishing com proveniência SLSA — sem tokens de longa duração."
+        },
+        {
+          "title": "Divulgação responsável",
+          "text": "Relate vulnerabilidades de forma privada pelos security advisories do GitHub. Nós confirmamos, avaliamos e corrigimos abertamente."
+        }
+      ]
+    },
+    {
+      "title": "Conformidade — onde estamos",
+      "items": [
+        {
+          "title": "SOC 2",
+          "text": "A Fonderie não é certificada SOC 2. Implementamos os controles técnicos que um SOC 2 examina — controle de acesso, criptografia, logs de auditoria, gestão de mudanças — e documentamos nossas políticas de segurança. A certificação formal está no nosso roadmap."
+        },
+        {
+          "title": "Verificável por padrão",
+          "text": "Nossa postura de segurança não é uma alegação de marketing — está aberta. Leia o código-fonte e nossa política de segurança e confira você mesmo."
+        }
+      ]
+    }
+  ],
+  "discloseLead": "Encontrou uma vulnerabilidade?",
+  "discloseText": "Relate de forma privada pelos security advisories do GitHub — veja nossa",
+  "discloseLinkText": "política de segurança",
+  "discloseLinkHref": "https://github.com/fonderiejs/fonderie/blob/main/SECURITY.md"
+}

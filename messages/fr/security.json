@@ -1,0 +1,90 @@
+{
+  "title": "La sécurité chez Fonderie",
+  "lede": "Fonderie est le standard audité de l'infrastructure SaaS. Open source (MIT), il s'exécute dans votre propre processus sur votre propre base de données et intègre la sécurité dans les valeurs par défaut — pour que les applications construites dessus soient sûres par conception. Voici comment il est construit, publié et sécurisé.",
+  "groups": [
+    {
+      "title": "Une sécurité intégrée à chaque application",
+      "items": [
+        {
+          "title": "Authentification bien faite",
+          "text": "Hachage des mots de passe par bcrypt, MFA TOTP avec codes de secours, et sessions révoquées au changement de mot de passe."
+        },
+        {
+          "title": "Secrets chiffrés",
+          "text": "Secrets MFA/TOTP chiffrés au repos (AES-256-GCM). Les clés de signature sont validées en fail-closed — un secret faible ou absent empêche le démarrage."
+        },
+        {
+          "title": "Accès au moindre privilège",
+          "text": "Contrôle d'accès basé sur les rôles à l'échelle de l'espace de travail, avec des requêtes paramétrées et isolées par locataire. Aucune fuite entre locataires."
+        },
+        {
+          "title": "Protection contre les abus",
+          "text": "La limitation de débit est active par défaut devant la connexion, l'inscription, la réinitialisation et la MFA."
+        },
+        {
+          "title": "Journal d'audit inviolable",
+          "text": "Chaque événement porte un HMAC à clé, rendant tout historique modifié ou falsifié détectable."
+        },
+        {
+          "title": "Transport renforcé",
+          "text": "HSTS et en-têtes sécurisés par défaut ; cookies Secure, HttpOnly, SameSite en production."
+        }
+      ]
+    },
+    {
+      "title": "Vos données, votre infrastructure",
+      "items": [
+        {
+          "title": "Auto-hébergé par conception",
+          "text": "Fonderie s'exécute dans votre processus sur votre base de données. Nous n'hébergeons ni ne détenons les données de vos utilisateurs."
+        },
+        {
+          "title": "Export et effacement intégrés",
+          "text": "Export de données par utilisateur (demande d'accès) et rétention/effacement configurables sont inclus."
+        },
+        {
+          "title": "Aucun verrouillage",
+          "text": "Sous licence MIT, TypeScript pur. Prenez une brique ou l'ensemble. Ce que vous construisez vous appartient."
+        }
+      ]
+    },
+    {
+      "title": "Comment il est construit et livré",
+      "items": [
+        {
+          "title": "Branche principale revue et protégée",
+          "text": "Chaque changement passe par une pull request avec CI au vert sur une branche main protégée ; les chemins sensibles sont routés vers des relecteurs via CODEOWNERS."
+        },
+        {
+          "title": "Analyse continue des vulnérabilités",
+          "text": "La CI échoue en cas d'avis de sécurité de gravité élevée dans les dépendances livrées."
+        },
+        {
+          "title": "Publications signées",
+          "text": "Les paquets sont publiés via OIDC Trusted Publishing avec provenance SLSA — sans jetons durables."
+        },
+        {
+          "title": "Divulgation responsable",
+          "text": "Signalez les vulnérabilités en privé via les avis de sécurité GitHub. Nous accusons réception, évaluons et corrigeons au grand jour."
+        }
+      ]
+    },
+    {
+      "title": "Conformité — où nous en sommes",
+      "items": [
+        {
+          "title": "SOC 2",
+          "text": "Fonderie n'est pas certifié SOC 2. Nous avons mis en œuvre les contrôles techniques qu'un audit SOC 2 examine — contrôle d'accès, chiffrement, journalisation d'audit, gestion des changements — et documenté nos politiques de sécurité. La certification formelle figure sur notre feuille de route."
+        },
+        {
+          "title": "Vérifiable par défaut",
+          "text": "Notre posture de sécurité n'est pas une allégation marketing — elle est ouverte. Lisez le code source et notre politique de sécurité, et vérifiez par vous-même."
+        }
+      ]
+    }
+  ],
+  "discloseLead": "Une vulnérabilité détectée ?",
+  "discloseText": "Signalez-la en privé via les avis de sécurité GitHub — voir notre",
+  "discloseLinkText": "politique de sécurité",
+  "discloseLinkHref": "https://github.com/fonderiejs/fonderie/blob/main/SECURITY.md"
+}
