@@ -1,0 +1,45 @@
+{
+  "title": "Security at Fonderie",
+  "lede": "Fonderie is the audited standard for SaaS infrastructure. It's open source (MIT), runs in your own process against your own database, and ships security into the defaults — so the apps built on it are secure by construction. Here's how it's built, released, and secured.",
+  "groups": [
+    {
+      "title": "Security built into every app",
+      "items": [
+        { "title": "Authentication done right", "text": "bcrypt password hashing, TOTP multi-factor auth with backup codes, and sessions revoked on password change." },
+        { "title": "Encrypted secrets", "text": "MFA/TOTP secrets encrypted at rest (AES-256-GCM). Signing secrets are validated fail-closed — a weak or missing secret stops the app from booting." },
+        { "title": "Least-privilege access", "text": "Workspace-scoped role-based access control with tenant-isolated, parameterized queries. No cross-tenant leakage." },
+        { "title": "Abuse protection", "text": "Rate limiting is on by default in front of login, registration, password reset, and MFA." },
+        { "title": "Tamper-evident audit trail", "text": "Every event carries a keyed HMAC, so altered or forged history is detectable." },
+        { "title": "Hardened transport", "text": "HSTS and secure-by-default response headers; Secure, HttpOnly, SameSite cookies in production." }
+      ]
+    },
+    {
+      "title": "Your data, your infrastructure",
+      "items": [
+        { "title": "Self-hosted by design", "text": "Fonderie runs in your process against your database. We don't host or hold your end-users' data." },
+        { "title": "Export & erasure built in", "text": "Per-user data export (Subject Access Request) and configurable data retention and erasure ship in the box." },
+        { "title": "No lock-in", "text": "MIT-licensed, plain TypeScript. Take one brick or the whole set. What you build is yours." }
+      ]
+    },
+    {
+      "title": "How it's built and shipped",
+      "items": [
+        { "title": "Reviewed, protected mainline", "text": "Every change goes through a pull request with passing CI on a protected main branch; security-sensitive paths are routed to reviewers via CODEOWNERS." },
+        { "title": "Continuous vulnerability checks", "text": "CI fails the build on high-severity advisories in shipped dependencies." },
+        { "title": "Signed releases", "text": "Packages publish over OIDC Trusted Publishing with SLSA provenance — no long-lived tokens." },
+        { "title": "Responsible disclosure", "text": "Report vulnerabilities privately through GitHub's security advisories. We acknowledge, assess, and fix in the open." }
+      ]
+    },
+    {
+      "title": "Compliance — where we stand",
+      "items": [
+        { "title": "SOC 2", "text": "Fonderie is not SOC 2 certified. We've implemented the technical controls a SOC 2 examines — access control, encryption, audit logging, change management — and documented our security policies. Formal certification is on our roadmap." },
+        { "title": "Verifiable by default", "text": "Our security posture isn't a marketing claim — it's in the open. Read the source and our security policy, and check it yourself." }
+      ]
+    }
+  ],
+  "discloseLead": "Found a vulnerability?",
+  "discloseText": "Report it privately through GitHub's security advisories — see our",
+  "discloseLinkText": "security policy",
+  "discloseLinkHref": "https://github.com/fonderiejs/fonderie/blob/main/SECURITY.md"
+}

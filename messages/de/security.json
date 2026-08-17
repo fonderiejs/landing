@@ -1,0 +1,90 @@
+{
+  "title": "Sicherheit bei Fonderie",
+  "lede": "Fonderie ist der auditierte Standard für SaaS-Infrastruktur. Open Source (MIT), läuft in Ihrem eigenen Prozess gegen Ihre eigene Datenbank und bringt Sicherheit in die Standardeinstellungen — damit die darauf gebauten Apps von Grund auf sicher sind. So wird es gebaut, veröffentlicht und abgesichert.",
+  "groups": [
+    {
+      "title": "Sicherheit in jeder App",
+      "items": [
+        {
+          "title": "Authentifizierung richtig gemacht",
+          "text": "bcrypt-Passwort-Hashing, TOTP-Zwei-Faktor-Auth mit Backup-Codes und Sitzungen, die bei Passwortänderung widerrufen werden."
+        },
+        {
+          "title": "Verschlüsselte Secrets",
+          "text": "MFA/TOTP-Secrets verschlüsselt gespeichert (AES-256-GCM). Signaturschlüssel werden fail-closed geprüft — ein schwaches oder fehlendes Secret verhindert den Start."
+        },
+        {
+          "title": "Least-Privilege-Zugriff",
+          "text": "Workspace-bezogene rollenbasierte Zugriffskontrolle mit mandantenisolierten, parametrisierten Abfragen. Kein mandantenübergreifendes Leck."
+        },
+        {
+          "title": "Missbrauchsschutz",
+          "text": "Rate-Limiting ist standardmäßig vor Login, Registrierung, Passwort-Reset und MFA aktiv."
+        },
+        {
+          "title": "Manipulationssicherer Audit-Trail",
+          "text": "Jedes Ereignis trägt einen Schlüssel-HMAC, sodass veränderte oder gefälschte Historie erkennbar ist."
+        },
+        {
+          "title": "Gehärteter Transport",
+          "text": "HSTS und sichere Standard-Header; Secure-, HttpOnly-, SameSite-Cookies in der Produktion."
+        }
+      ]
+    },
+    {
+      "title": "Ihre Daten, Ihre Infrastruktur",
+      "items": [
+        {
+          "title": "Self-hosted von Grund auf",
+          "text": "Fonderie läuft in Ihrem Prozess gegen Ihre Datenbank. Wir hosten oder speichern die Daten Ihrer Endnutzer nicht."
+        },
+        {
+          "title": "Export & Löschung integriert",
+          "text": "Nutzer-Datenexport (Auskunftsersuchen) sowie konfigurierbare Aufbewahrung und Löschung sind eingebaut."
+        },
+        {
+          "title": "Kein Lock-in",
+          "text": "MIT-lizenziert, reines TypeScript. Nehmen Sie einen Baustein oder das ganze Set. Was Sie bauen, gehört Ihnen."
+        }
+      ]
+    },
+    {
+      "title": "Wie es gebaut und ausgeliefert wird",
+      "items": [
+        {
+          "title": "Geprüfter, geschützter Main-Branch",
+          "text": "Jede Änderung läuft über einen Pull Request mit grünem CI auf einem geschützten main-Branch; sicherheitsrelevante Pfade werden per CODEOWNERS an Reviewer geleitet."
+        },
+        {
+          "title": "Kontinuierliche Schwachstellenprüfung",
+          "text": "CI bricht den Build bei kritischen Advisories in ausgelieferten Abhängigkeiten ab."
+        },
+        {
+          "title": "Signierte Releases",
+          "text": "Pakete werden über OIDC Trusted Publishing mit SLSA-Provenance veröffentlicht — keine langlebigen Tokens."
+        },
+        {
+          "title": "Responsible Disclosure",
+          "text": "Melden Sie Schwachstellen privat über die GitHub Security Advisories. Wir bestätigen, bewerten und beheben transparent."
+        }
+      ]
+    },
+    {
+      "title": "Compliance — unser Stand",
+      "items": [
+        {
+          "title": "SOC 2",
+          "text": "Fonderie ist nicht SOC-2-zertifiziert. Wir haben die technischen Kontrollen umgesetzt, die ein SOC-2-Audit prüft — Zugriffskontrolle, Verschlüsselung, Audit-Logging, Change-Management — und unsere Sicherheitsrichtlinien dokumentiert. Die formale Zertifizierung steht auf unserer Roadmap."
+        },
+        {
+          "title": "Überprüfbar per Standard",
+          "text": "Unsere Sicherheitslage ist keine Marketingaussage — sie ist offen. Lesen Sie den Quellcode und unsere Sicherheitsrichtlinie und prüfen Sie es selbst."
+        }
+      ]
+    }
+  ],
+  "discloseLead": "Eine Schwachstelle gefunden?",
+  "discloseText": "Melden Sie sie privat über die GitHub Security Advisories — siehe unsere",
+  "discloseLinkText": "Sicherheitsrichtlinie",
+  "discloseLinkHref": "https://github.com/fonderiejs/fonderie/blob/main/SECURITY.md"
+}

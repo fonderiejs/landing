@@ -52,6 +52,9 @@ export default function Footer() {
             <Link href="/contact" className="site-footer__link">
               {t('footer.contact')}
             </Link>
+            <Link href="/security" className="site-footer__link">
+              {t('footer.security')}
+            </Link>
           </div>
         </div>
         <div className="site-footer__bottom">
