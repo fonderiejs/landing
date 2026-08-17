@@ -1,7 +1,7 @@
 {
   "eyebrow": "Comment ça marche",
   "title": "La couche de contrôle de l'infrastructure IA",
-  "lede": "Fonderie est la couche de contrôle pour les logiciels construits par IA. Elle spécifie, vérifie et standardise chaque système critique — auth, facturation, équipes, permissions — pour que toute IA construise de la même façon, à chaque fois. Une plateforme. N'importe quelle IA. Zéro improvisation.",
+  "lede": "Fonderie est la couche de contrôle pour les SaaS construits par IA. Elle spécifie, vérifie et standardise chaque système critique — auth, facturation, équipes, permissions — pour que toute IA construise de la même façon, à chaque fois. Une plateforme. N'importe quelle IA. Zéro improvisation.",
   "steps": [
     {
       "num": "01",
