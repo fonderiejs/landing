@@ -1,7 +1,7 @@
 {
   "eyebrow": "Como funciona",
   "title": "A Camada de Controle de Infraestrutura de IA",
-  "lede": "A Fonderie é a camada de controle para software construído por IA. Ela especifica, verifica e padroniza cada sistema crítico — auth, cobrança, times, permissões — para que qualquer IA construa da mesma forma, sempre. Uma plataforma. Qualquer IA. Zero improviso.",
+  "lede": "A Fonderie é a camada de controle para SaaS construído por IA. Ela especifica, verifica e padroniza cada sistema crítico — auth, cobrança, times, permissões — para que qualquer IA construa da mesma forma, sempre. Uma plataforma. Qualquer IA. Zero improviso.",
   "steps": [
     {
       "num": "01",

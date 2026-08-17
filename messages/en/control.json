@@ -1,7 +1,7 @@
 {
   "eyebrow": "How it works",
   "title": "The AI Infrastructure Control Layer",
-  "lede": "Fonderie is the control layer for AI-built software. It specifies, verifies, and standardizes every critical system — auth, billing, teams, permissions — so any AI assistant builds the same way every time. One platform. Any AI. Zero improvisation.",
+  "lede": "Fonderie is the control layer for AI-built SaaS. It specifies, verifies, and standardizes every critical system — auth, billing, teams, permissions — so any AI assistant builds the same way every time. One platform. Any AI. Zero improvisation.",
   "steps": [
     {
       "num": "01",

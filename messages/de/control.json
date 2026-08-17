@@ -1,7 +1,7 @@
 {
   "eyebrow": "So funktioniert's",
   "title": "Die KI-Infrastruktur-Kontrollschicht",
-  "lede": "Fonderie ist die Kontrollschicht für KI-gebaute Software. Sie spezifiziert, verifiziert und standardisiert jedes kritische System — Auth, Abrechnung, Teams, Berechtigungen — damit jede KI genau gleich baut, jedes Mal. Eine Plattform. Jede KI. Keine Improvisation.",
+  "lede": "Fonderie ist die Kontrollschicht für KI-gebaute SaaS. Sie spezifiziert, verifiziert und standardisiert jedes kritische System — Auth, Abrechnung, Teams, Berechtigungen — damit jede KI genau gleich baut, jedes Mal. Eine Plattform. Jede KI. Keine Improvisation.",
   "steps": [
     {
       "num": "01",
