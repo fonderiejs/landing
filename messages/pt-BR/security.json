@@ -1,6 +1,6 @@
 {
   "title": "Segurança na Fonderie",
-  "lede": "A Fonderie é o padrão auditado para infraestrutura de SaaS. É open source (MIT), roda no seu próprio processo contra o seu próprio banco de dados e traz segurança nos padrões — para que os apps construídos sobre ela sejam seguros por construção. Veja como é construída, publicada e protegida.",
+  "lede": "A Fonderie é o padrão focado em segurança para infraestrutura de SaaS. É open source (MIT), roda no seu próprio processo contra o seu próprio banco de dados e traz segurança nos padrões — para que os apps construídos sobre ela sejam seguros por construção. Veja como é construída, publicada e protegida.",
   "groups": [
     {
       "title": "Segurança embutida em cada app",
@@ -74,7 +74,7 @@
       "items": [
         {
           "title": "SOC 2",
-          "text": "A Fonderie não é certificada SOC 2. Implementamos os controles técnicos que um SOC 2 examina — controle de acesso, criptografia, logs de auditoria, gestão de mudanças — e documentamos nossas políticas de segurança. A certificação formal está no nosso roadmap."
+          "text": "A Fonderie não é certificada SOC 2 — nenhuma auditoria foi realizada. Concluímos uma avaliação interna de prontidão: os controles técnicos que um SOC 2 examina (controle de acesso, criptografia, logs de auditoria, gestão de mudanças) estão implementados, nossas políticas de segurança foram adotadas e realizamos uma avaliação de riscos. Um exame formal está planejado."
         },
         {
           "title": "Verificável por padrão",

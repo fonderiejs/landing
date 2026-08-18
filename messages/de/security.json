@@ -1,6 +1,6 @@
 {
   "title": "Sicherheit bei Fonderie",
-  "lede": "Fonderie ist der auditierte Standard für SaaS-Infrastruktur. Open Source (MIT), läuft in Ihrem eigenen Prozess gegen Ihre eigene Datenbank und bringt Sicherheit in die Standardeinstellungen — damit die darauf gebauten Apps von Grund auf sicher sind. So wird es gebaut, veröffentlicht und abgesichert.",
+  "lede": "Fonderie ist der sicherheitsorientierte Standard für SaaS-Infrastruktur. Open Source (MIT), läuft in Ihrem eigenen Prozess gegen Ihre eigene Datenbank und bringt Sicherheit in die Standardeinstellungen — damit die darauf gebauten Apps von Grund auf sicher sind. So wird es gebaut, veröffentlicht und abgesichert.",
   "groups": [
     {
       "title": "Sicherheit in jeder App",
@@ -74,7 +74,7 @@
       "items": [
         {
           "title": "SOC 2",
-          "text": "Fonderie ist nicht SOC-2-zertifiziert. Wir haben die technischen Kontrollen umgesetzt, die ein SOC-2-Audit prüft — Zugriffskontrolle, Verschlüsselung, Audit-Logging, Change-Management — und unsere Sicherheitsrichtlinien dokumentiert. Die formale Zertifizierung steht auf unserer Roadmap."
+          "text": "Fonderie ist nicht SOC-2-zertifiziert — es wurde kein Audit durchgeführt. Wir haben eine interne Bereitschaftsbewertung abgeschlossen: Die technischen Kontrollen, die ein SOC 2 prüft (Zugriffskontrolle, Verschlüsselung, Audit-Logging, Change-Management), sind implementiert, unsere Sicherheitsrichtlinien sind verabschiedet und wir haben eine Risikobewertung durchgeführt. Eine formelle Prüfung ist geplant."
         },
         {
           "title": "Überprüfbar per Standard",

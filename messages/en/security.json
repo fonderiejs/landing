@@ -1,6 +1,6 @@
 {
   "title": "Security at Fonderie",
-  "lede": "Fonderie is the audited standard for SaaS infrastructure. It's open source (MIT), runs in your own process against your own database, and ships security into the defaults — so the apps built on it are secure by construction. Here's how it's built, released, and secured.",
+  "lede": "Fonderie is the security-first standard for SaaS infrastructure. It's open source (MIT), runs in your own process against your own database, and ships security into the defaults — so the apps built on it are secure by construction. Here's how it's built, released, and secured.",
   "groups": [
     {
       "title": "Security built into every app",
@@ -74,7 +74,7 @@
       "items": [
         {
           "title": "SOC 2",
-          "text": "Fonderie is not SOC 2 certified. We've implemented the technical controls a SOC 2 examines — access control, encryption, audit logging, change management — and documented our security policies. Formal certification is on our roadmap."
+          "text": "Fonderie is not SOC 2 certified — no audit has been performed. We've completed an internal readiness assessment: the technical controls a SOC 2 examines (access control, encryption, audit logging, change management) are implemented, our security policies are adopted, and we've performed a risk assessment. A formal examination is planned."
         },
         {
           "title": "Verifiable by default",
