@@ -1,7 +1,7 @@
 {
   "eyebrow": "Utilisé par des fondateurs qui livrent des produits",
   "stats": [
-    { "value": "1 jour", "label": "Jusqu'au SaaS livré", "sub": "Au lieu de 9 semaines" },
+    { "value": "1 jour", "label": "De l'idée au SaaS livré", "sub": "Au lieu de 9 semaines" },
     { "value": "49 $", "label": "Par mois", "sub": "contre 30 000 $+ pour embaucher un développeur" },
     { "value": "100 %", "label": "Toute IA", "sub": "Changez d'IA sans tout reconstruire" }
   ],

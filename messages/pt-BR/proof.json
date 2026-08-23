@@ -1,7 +1,7 @@
 {
   "eyebrow": "Usado por fundadores que lançam produtos",
   "stats": [
-    { "value": "1 dia", "label": "Até o SaaS entregue", "sub": "Em vez de 9 semanas" },
+    { "value": "1 dia", "label": "Da ideia ao SaaS entregue", "sub": "Em vez de 9 semanas" },
     { "value": "US$ 49", "label": "Por mês", "sub": "contra US$ 30 mil+ para contratar um desenvolvedor" },
     { "value": "100%", "label": "Qualquer IA", "sub": "Troque de IA sem reconstruir" }
   ],

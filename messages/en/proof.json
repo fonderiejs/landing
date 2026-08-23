@@ -1,7 +1,7 @@
 {
   "eyebrow": "Trusted by founders shipping products",
   "stats": [
-    { "value": "1 day", "label": "To a shipped SaaS", "sub": "Instead of 9 weeks" },
+    { "value": "1 day", "label": "From idea to shipped SaaS", "sub": "Instead of 9 weeks" },
     { "value": "$49", "label": "Per month", "sub": "vs. $30K+ to hire a developer" },
     { "value": "100%", "label": "Any AI", "sub": "Switch AI tools without rebuilding" }
   ],
