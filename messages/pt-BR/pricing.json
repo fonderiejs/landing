@@ -1,13 +1,13 @@
 {
   "eyebrow": "Preços",
   "title": "Comece grátis. Pague quando for para produção.",
-  "lede": "Grátis para sempre enquanto você constrói. Faça upgrade quando seu SaaS estiver no ar.",
+  "lede": "Grátis para sempre enquanto você constrói. Faça upgrade quando seu produto estiver no ar.",
   "tiers": [
     {
       "name": "Build",
       "price": "Grátis",
       "period": "",
-      "desc": "Para projetos paralelos e SaaS pré-receita",
+      "desc": "Para projetos paralelos e produtos pré-receita",
       "features": [
         "Todos os módulos de backend",
         "Suporte da comunidade"
@@ -19,7 +19,7 @@
       "name": "Launch",
       "price": "US$ 49",
       "period": "/mês",
-      "desc": "Para SaaS com os primeiros clientes pagantes",
+      "desc": "Para produtos com os primeiros clientes pagantes",
       "featuresLead": "Tudo do Build, mais",
       "features": [
         "Suporte prioritário",
@@ -35,7 +35,7 @@
       "desc": "Screen kits de frontend",
       "featuresLead": "Tudo do Launch, mais",
       "features": [
-        "Telas de auth, cobrança e workspaces",
+        "Telas de login, pagamento e time",
         "React, React Native e Vue",
         "Hooks headless ou UI pronta"
       ],
@@ -59,15 +59,15 @@
       "featured": false
     }
   ],
-  "compareNote": "Contratar um desenvolvedor backend custa US$ 30.000–60.000. O plano Launch da Fonderie custa US$ 49/mês. Você só paga quando seu SaaS entra no ar.",
+  "compareNote": "Contratar um desenvolvedor backend custa US$ 30.000–60.000. O plano Launch da Fonderie custa US$ 49/mês. Você só paga quando seu produto entra no ar.",
   "finalCta": {
-    "title": "Pare de depurar auth. Comece a construir seu produto.",
-    "lede": "O playbook da Fonderie vive no seu repositório e dá a qualquer IA o contexto para construir corretamente. Você foca no que torna seu SaaS único.",
+    "title": "Pare de depurar logins. Comece a construir seu produto.",
+    "lede": "O playbook da Fonderie vive no seu repositório e dá a qualquer IA o contexto para construir corretamente. Você foca no que torna seu produto único.",
     "getStarted": "Começar — grátis",
     "star": "Dar estrela no GitHub",
     "prompts": "Instruções para Claude Code e Cursor vêm com o repositório —",
     "promptsLink": "pegue no GitHub →",
-    "tag": "Para fundadores que querem lançar, não reconstruir auth",
+    "tag": "Para fundadores que querem lançar, não reconstruir logins",
     "team": "Construído por um fundador que passou anos como contratado na PayPal trabalhando em ferramentas internas de auditoria e ferramentas voltadas a lojistas — e cansou de ver a IA reintroduzir os mesmos bugs a cada sessão."
   }
 }

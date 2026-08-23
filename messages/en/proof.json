@@ -1,13 +1,13 @@
 {
-  "eyebrow": "Trusted by founders shipping real products",
+  "eyebrow": "Trusted by founders shipping products",
   "stats": [
-    { "value": "2 days", "label": "From idea to shipped backend", "sub": "Instead of 9 weeks" },
-    { "value": "$49", "label": "Launch plan, flat monthly", "sub": "vs. $30K+ to hire a developer" },
-    { "value": "100%", "label": "One playbook. Any AI.", "sub": "Switch tools without rebuilding" }
+    { "value": "1 day", "label": "To a shipped SaaS", "sub": "Instead of 9 weeks" },
+    { "value": "$49", "label": "Per month", "sub": "vs. $30K+ to hire a developer" },
+    { "value": "100%", "label": "Any AI", "sub": "Switch AI tools without rebuilding" }
   ],
   "testimonial": {
-    "quote": "We rebuilt our auth system 3 times with AI before finding Fonderie. Each time, a different bug. Fonderie gave our AI a playbook. We shipped in 4 days instead of 4 weeks.",
-    "attribution": "— Magus Dacar, CEO at CrewFinding Inc."
+    "quote": "We rebuilt our logins 3 times with AI before finding Fonderie. Each time, a different bug. Fonderie gave our AI a playbook. We shipped in 4 days instead of 4 weeks.",
+    "attribution": "— Magus Dacar, CEO, CrewFinding"
   },
   "metric": "",
   "footnote": "",

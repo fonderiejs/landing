@@ -1,15 +1,15 @@
 {
   "eyebrow": "Das Problem, das KI schlimmer gemacht hat",
-  "title": "Jedes SaaS baut dieselbe Infrastruktur neu. KI hat es nur schneller gemacht — und weniger konsistent.",
-  "lede": "Bevor Sie Ihr eigentliches Produkt schreiben, brauchen Sie Auth, Abrechnung, Teams, Berechtigungen. 2026 nutzen die meisten SaaS-Gründer KI-Assistenten zum Bauen. Fast alle improvisieren dieselbe Infrastruktur, jedes Mal anders.",
-  "marketScale": "Wir beginnen dort, wo jedes SaaS beginnt: Auth und Abrechnung — die beiden Systeme, ohne die kein Produkt starten kann. Sobald Fonderie Ihr Fundament spezifiziert, erweitert sich dieselbe Kontrollschicht auf Benachrichtigungen, Berechtigungen, Mobile und jedes System, das Ihre KI als Nächstes baut. Der Einstieg sind die ersten fünf Systeme. Der Markt ist das gesamte Infrastrukturbudget jedes KI-gebauten Unternehmens.",
+  "title": "Jedes SaaS baut dieselbe Infrastruktur neu. KI hat es schneller gemacht — und weniger konsistent.",
+  "lede": "Bevor Sie Ihr Produkt schreiben, brauchen Sie Logins, Zahlungen, Team-Einladungen und Berechtigungen. Die meisten Gründer bauen mit KI. Fast jede Sitzung improvisiert dasselbe anders.",
+  "marketScale": "Wir beginnen dort, wo jedes Produkt beginnt: Logins und Zahlungen. Sobald Fonderie Ihr Fundament definiert, erweitert sich derselbe Standard auf Benachrichtigungen, Berechtigungen und Mobile. Der Einstieg sind die ersten fünf Systeme. Der Markt ist das Infrastrukturbudget jedes KI-gebauten Unternehmens.",
   "ledeCombined": "Bevor Sie Ihr eigentliches Produkt schreiben, brauchen Sie Auth, Abrechnung, Teams, Berechtigungen. KI improvisiert das alles bei jeder Sitzung anders. 2026 nutzen die meisten SaaS-Gründer KI-Assistenten zum Bauen. Fast alle improvisieren dieselbe Infrastruktur, jedes Mal anders. Fonderie ist die Kontrollschicht — ein System, das KI anleitet, korrekt zu bauen, egal wie Sie ausliefern.",
   "items": [
-    { "title": "Login und Registrierung", "text": "Die KI improvisiert das bei jeder Sitzung. Unterschiedliche Bugs. Unterschiedliche APIs. Inkonsistente Sicherheit." },
-    { "title": "Abrechnung und Abonnements", "text": "Die KI erzeugt jedes Mal eine andere Stripe-Verdrahtung. Manche Sitzungen vergessen Webhooks. Andere überspringen die Rechnungslogik." },
-    { "title": "Team-Einladungen und Berechtigungen", "text": "Die KI baut die Zugriffskontrolle jedes Mal anders. Eine Sitzung nutzt Rollen, eine andere Flags. Keine passt zu Ihrer Auth." },
-    { "title": "E-Mail-Benachrichtigungen", "text": "Die KI erfindet die E-Mail-Logik pro Sitzung neu. Vorlagen, Warteschlangen, Wiederholungslogik — jedes Mal anders von Grund auf neu gebaut." },
-    { "title": "Sicherheit und Compliance", "text": "Die KI lässt in manchen Sitzungen Rate-Limiting weg. In anderen hartcodiert sie Secrets. Keine zwei Builds behandeln Auth gleich." }
+    { "title": "Logins", "text": "Die KI improvisiert bei jeder Sitzung. Unterschiedliche Bugs. Unterschiedliche APIs. Inkonsistente Sicherheit." },
+    { "title": "Zahlungen", "text": "Die KI verdrahtet Stripe jedes Mal anders. Manche Sitzungen vergessen Webhooks. Andere überspringen die Rechnungslogik." },
+    { "title": "Team-Einladungen", "text": "Die KI baut die Zugriffskontrolle jedes Mal anders. Eine Sitzung nutzt Rollen, eine andere Flags. Keine passt zu Ihren Logins." },
+    { "title": "E-Mail", "text": "Die KI erfindet E-Mail bei jeder Sitzung neu. Vorlagen, Warteschlangen, Wiederholungslogik — jedes Mal anders von Grund auf neu gebaut." },
+    { "title": "Sicherheit", "text": "Die KI lässt in manchen Sitzungen Rate-Limiting weg. In anderen hartcodiert sie Secrets. Keine zwei Builds behandeln Logins gleich." }
   ],
   "byHandTitle": "Entwickler einstellen",
   "byHandText": "2–3 Monate und 30.000–60.000 $. Und die Auth ist trotzdem oft falsch.",

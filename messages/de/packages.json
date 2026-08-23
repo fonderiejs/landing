@@ -1,27 +1,27 @@
 {
-  "eyebrow": "Alles, was Ihr SaaS braucht",
-  "title": "Backend-Module und Frontend-Screen-Kits.",
-  "lede": "Produktionsgetestet, KI-optimiert. Backend-Logik plus vorgefertigte UI für React, React Native und Vue — nehmen Sie die Headless-Hooks oder die fertigen Screens. Ihre KI rät nicht. Sie folgt Fonderies Anweisungen.",
+  "eyebrow": "Alles, was Ihr Produkt braucht",
+  "title": "Backend und Frontend, zusammen.",
+  "lede": "Produktionsgetestet. Backend-Logik plus vorgefertigte UI für React, React Native und Vue. Headless-Hooks oder fertige Screens. Ihre KI rät nicht. Sie folgt Fonderies Anweisungen.",
   "items": [
     {
-      "title": "Auth (Backend + Frontend)",
-      "text": "Login, Registrierung, Passwort-Reset und Zwei-Faktor-Authentifizierung. Plus vorgefertigte Auth-Screens für React, React Native und Vue. Ihre KI schreibt Auth nie mehr von Grund auf."
+      "title": "Logins (Backend + Frontend)",
+      "text": "Logins, Registrierung, Passwort-Reset und Zwei-Faktor-Authentifizierung. Plus vorgefertigte Screens für React, React Native und Vue. Ihre KI schreibt Logins nie mehr von Grund auf."
     },
     {
-      "title": "Abrechnung (Backend + Frontend)",
+      "title": "Zahlungen (Backend + Frontend)",
       "text": "Stripe-Integration, Abonnements, Nutzungsmessung. Plus Preistabellen und Checkout-Screens für React, React Native und Vue. Vorgefertigt. Vorverdrahtet."
     },
     {
-      "title": "Workspaces (Backend + Frontend)",
-      "text": "Multi-Tenant-Teams, Einladungen, rollenbasierter Zugriff. Plus Team-Switcher und Mitgliederverwaltung für React, React Native und Vue. Ihre Kunden verwalten ihre eigenen Organisationen."
+      "title": "Team-Einladungen (Backend + Frontend)",
+      "text": "Multi-Tenant-Teams, Einladungen und rollenbasierter Zugriff. Plus Team-Switcher und Mitgliederverwaltung für React, React Native und Vue. Ihre Kunden verwalten ihre eigenen Teams."
     },
     {
-      "title": "Benachrichtigungen",
-      "text": "E-Mail, SMS, Push-Benachrichtigungen, plus eine Template-Admin-UI. Fire-and-forget-Messaging. Ihre KI erfindet die E-Mail-Logik nicht jede Sitzung neu."
+      "title": "E-Mail",
+      "text": "E-Mail, SMS, Push-Benachrichtigungen, plus eine Template-Admin-UI. Fire and forget. Ihre KI erfindet E-Mail nicht jede Sitzung neu."
     },
     {
       "title": "Berechtigungen und Audit",
-      "text": "Rollenbasierte Zugriffskontrolle, Wildcard-Berechtigungen, Admin-Override. Plus workspace-bezogene Audit-Logs mit vorgefertigtem Screen auf jedem Framework."
+      "text": "Rollenbasierte Zugriffskontrolle, Wildcard-Berechtigungen, Admin-Override. Plus ein Audit-Log mit vorgefertigtem Screen auf jedem Framework."
     }
   ],
   "footnote": "Wollen Sie die technischen Details?",
