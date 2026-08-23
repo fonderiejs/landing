@@ -162,6 +162,21 @@ export default async function LocaleLayout({
           href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
+        {/* Separate request on purpose: `text=` is scoped to the whole
+            css2 call, so folding Noto Serif JP into the link above would
+            subset Inter/Instrument Serif/JetBrains Mono to these glyphs
+            too. Subsetting matters here - the full family is 248
+            @font-face blocks (~59KB gzipped CSS); restricted to the
+            characters .numeral can contain it is ~0.9KB CSS + 4.4KB
+            font. All four weights resolve to the same variable file, so
+            requesting the range costs nothing extra.
+            IMPORTANT: only these characters render in Noto Serif JP.
+            Putting any other glyph inside .numeral silently falls back
+            to var(--serif) - extend `text=` first. */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&text=0123456789.%2C-%E2%80%93&display=swap"
+          rel="stylesheet"
+        />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         {/* Runs before paint to avoid a flash of the wrong theme - the
             React-side ThemeSwitcher effect runs too late for that. */}

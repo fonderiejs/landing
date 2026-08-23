@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import PricingCard from '../components/PricingCard';
+import Numerals from '@/components/ui/Numerals';
 
 export default function Pricing() {
   const t = useTranslations('pricing');
@@ -24,7 +25,9 @@ export default function Pricing() {
       </div>
 
       <div className="pricing__note" data-reveal="">
-        <p className="pricing__note-accent">{t('compareNote')}</p>
+        <p className="pricing__note-accent">
+          <Numerals>{t('compareNote')}</Numerals>
+        </p>
       </div>
     </section>
   );

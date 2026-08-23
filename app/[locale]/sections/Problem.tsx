@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Numerals from '@/components/ui/Numerals';
 import { Row, Col } from '@/components/ui/Grid';
 
 export default function Problem() {
@@ -16,9 +17,13 @@ export default function Problem() {
         <Col span={6} className="problem__copy" data-reveal>
           <p className="eyebrow">{t('eyebrow')}</p>
           <h2 className="section-title section-title--sm">{t('title')}</h2>
-          <p className="problem__lede">{t('lede')}</p>
+          <p className="problem__lede">
+            <Numerals>{t('lede')}</Numerals>
+          </p>
           <br />
-          <p className="problem__lede">{t('marketScale')}</p>
+          <p className="problem__lede">
+            <Numerals>{t('marketScale')}</Numerals>
+          </p>
         </Col>
 
         {/* Right column: numbered list */}
@@ -30,7 +35,9 @@ export default function Problem() {
               </span>
               <div>
                 <h3 className="shift__item-title">{item.title}</h3>
-                <p className="shift__item-text">{item.text}</p>
+                <p className="shift__item-text">
+                  <Numerals>{item.text}</Numerals>
+                </p>
               </div>
             </div>
           ))}

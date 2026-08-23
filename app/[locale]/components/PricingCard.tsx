@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils';
+import Numerals from '@/components/ui/Numerals';
 
 type Tier = {
   name: string;
@@ -18,17 +19,23 @@ export default function PricingCard({ tier }: { tier: Tier }) {
       <div className="pricing__tier-head">
         <h3 className={cn('pricing__tier-name', tier.featured && 'pricing__tier-name--accent')}>{tier.name}</h3>
         <p className="pricing__tier-price">
-          {tier.price}
-          {tier.period && <span className="pricing__tier-price-period">{tier.period}</span>}
+          <Numerals>{tier.price}</Numerals>
+          {tier.period && (
+            <span className="pricing__tier-price-period">
+              <Numerals>{tier.period}</Numerals>
+            </span>
+          )}
         </p>
-        <p className="pricing__tier-desc">{tier.desc}</p>
+        <p className="pricing__tier-desc">
+          <Numerals>{tier.desc}</Numerals>
+        </p>
       </div>
 
       <a
         href={tier.cta.toLowerCase().includes('contact') ? '/contact' : 'https://github.com/fonderiejs/fonderie'}
         className={cn('pricing__tier-cta', tier.featured && 'pricing__tier-cta--solid')}
       >
-        {tier.cta}
+        <Numerals>{tier.cta}</Numerals>
       </a>
 
       <div className="pricing__tier-features">
@@ -49,7 +56,7 @@ export default function PricingCard({ tier }: { tier: Tier }) {
               >
                 <path d="m9 12 2 2 4-4" />
               </svg>
-              {f}
+              <Numerals>{f}</Numerals>
             </li>
           ))}
         </ul>

@@ -1,27 +1,27 @@
 {
   "eyebrow": "Comment ça marche",
   "title": "La couche de contrôle de l'infrastructure IA",
-  "lede": "Fonderie est la couche de contrôle pour les SaaS construits par IA. Elle spécifie, vérifie et standardise chaque système critique — auth, facturation, équipes, permissions — pour que toute IA construise de la même façon, à chaque fois. Une plateforme. N'importe quelle IA. Zéro improvisation.",
+  "lede": "Fonderie est le standard que votre IA lit. Il définit, vérifie et verrouille chaque système critique — connexions, paiements, équipes, permissions — pour que toute IA construise de la même façon, à chaque fois. Un seul plan. N'importe quelle IA. Zéro improvisation.",
   "steps": [
     {
       "num": "01",
-      "title": "Vous décrivez le produit",
-      "text": "« J'ai besoin d'un SaaS avec connexion, facturation Stripe et espaces d'équipe. »"
+      "title": "Décrivez votre produit",
+      "text": "« J'ai besoin de connexions, de paiements Stripe et d'espaces d'équipe. »"
     },
     {
       "num": "02",
-      "title": "Fonderie spécifie l'architecture",
-      "text": "La couche de contrôle définit exactement quels systèmes construire et comment ils se connectent. Changez d'IA à tout moment — la spécification reste la même."
+      "title": "Fonderie définit l'architecture",
+      "text": "Fonderie définit quels systèmes construire et comment ils se connectent. Changez d'assistant à tout moment — la spécification reste la même."
     },
     {
       "num": "03",
       "title": "Fonderie vérifie le résultat",
-      "text": "Les types, les tests et les vérifications de sécurité s'exécutent automatiquement. Chaque build est validé par rapport au standard avant d'être livré."
+      "text": "Les types, les tests et les vérifications de sécurité s'exécutent automatiquement. Chaque build est validé avant d'être livré."
     },
     {
       "num": "04",
-      "title": "Vous vérifiez et déployez",
-      "text": "Vous possédez le code. Personnalisez le design, ajoutez votre logique, déployez. Votre backend est sécurisé, votre frontend fonctionne, et vos clients peuvent s'inscrire et payer."
+      "title": "Vérifiez et déployez",
+      "text": "Vous possédez le code. Personnalisez le design, ajoutez votre logique, déployez. Votre code est sécurisé, vos écrans fonctionnent, et les clients peuvent s'inscrire et payer."
     }
   ],
   "footnote": "Voir le fichier du plan réel",

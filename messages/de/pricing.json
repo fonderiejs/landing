@@ -1,13 +1,13 @@
 {
   "eyebrow": "Preise",
   "title": "Kostenlos starten. Zahlen, wenn Sie deployen.",
-  "lede": "Für immer kostenlos, während Sie bauen. Upgraden, wenn Ihr SaaS live geht.",
+  "lede": "Für immer kostenlos, während Sie bauen. Upgraden, wenn Ihr Produkt live geht.",
   "tiers": [
     {
       "name": "Build",
       "price": "Kostenlos",
       "period": "",
-      "desc": "Für Nebenprojekte und Pre-Revenue-SaaS",
+      "desc": "Für Nebenprojekte und Produkte vor dem ersten Umsatz",
       "features": [
         "Alle Backend-Module",
         "Community-Support"
@@ -19,7 +19,7 @@
       "name": "Launch",
       "price": "49 $",
       "period": "/Monat",
-      "desc": "Für SaaS mit ersten zahlenden Kunden",
+      "desc": "Für Produkte mit ersten zahlenden Kunden",
       "featuresLead": "Alles in Build, plus",
       "features": [
         "Priority-Support",
@@ -35,7 +35,7 @@
       "desc": "Frontend-Screen-Kits",
       "featuresLead": "Alles in Launch, plus",
       "features": [
-        "Auth-, Abrechnungs- & Workspace-Screens",
+        "Login-, Zahlungs- & Team-Screens",
         "React, React Native & Vue",
         "Headless-Hooks oder fertige UI"
       ],
@@ -59,15 +59,15 @@
       "featured": false
     }
   ],
-  "compareNote": "Ein Backend-Entwickler kostet 30.000–60.000 $. Fonderie Launch kostet 49 $/Monat. Sie zahlen erst, wenn Ihr SaaS live geht.",
+  "compareNote": "Ein Backend-Entwickler kostet 30.000–60.000 $. Fonderie Launch kostet 49 $/Monat. Sie zahlen erst, wenn Ihr Produkt live geht.",
   "finalCta": {
-    "title": "Hören Sie auf, Auth zu debuggen. Bauen Sie Ihr Produkt.",
-    "lede": "Fonderies Playbook lebt in Ihrem Repo und gibt jeder KI den Kontext, um korrekt zu bauen. Sie konzentrieren sich darauf, was Ihr SaaS einzigartig macht.",
+    "title": "Hören Sie auf, Logins zu debuggen. Bauen Sie Ihr Produkt.",
+    "lede": "Fonderies Playbook lebt in Ihrem Repo und gibt jeder KI den Kontext, um korrekt zu bauen. Sie konzentrieren sich darauf, was Ihr Produkt einzigartig macht.",
     "getStarted": "Loslegen — kostenlos",
     "star": "Auf GitHub mit Stern versehen",
     "prompts": "Anweisungen für Claude Code und Cursor werden mit dem Repo ausgeliefert —",
     "promptsLink": "auf GitHub holen →",
-    "tag": "Für Gründer, die ausliefern wollen, nicht Auth neu bauen",
+    "tag": "Für Gründer, die ausliefern wollen, nicht Logins neu bauen",
     "team": "Gebaut von einem Gründer, der jahrelang als Auftragnehmer bei PayPal an internen Audit-Tools und kundenseitigen Händler-Tools gearbeitet hat — und es leid war, zuzusehen, wie KI dieselben Bugs immer wieder einführt."
   }
 }

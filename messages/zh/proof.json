@@ -1,13 +1,13 @@
 {
-  "eyebrow": "受到正在上线真实产品的创始人信赖",
+  "eyebrow": "受到正在上线产品的创始人信赖",
   "stats": [
-    { "value": "2 天", "label": "从想法到后端上线", "sub": "而不是 9 周" },
-    { "value": "$49", "label": "Launch 套餐，每月固定收费", "sub": "对比雇佣开发者的 3 万美元以上" },
-    { "value": "100%", "label": "一份操作手册，适配任何 AI。", "sub": "切换工具无需重建" }
+    { "value": "1 天", "label": "从想法到 SaaS 上线", "sub": "而不是 9 周" },
+    { "value": "$49", "label": "每月", "sub": "对比雇佣开发者的 3 万美元以上" },
+    { "value": "100%", "label": "任何 AI", "sub": "切换 AI 工具无需重建" }
   ],
   "testimonial": {
-    "quote": "在找到 Fonderie 之前，我们用 AI 重建了三次认证系统，每次都出现不同的 bug。Fonderie 给了我们的 AI 一份操作手册，我们只用 4 天而不是 4 周就上线了。",
-    "attribution": "— Magus Dacar，CrewFinding Inc. 首席执行官"
+    "quote": "在找到 Fonderie 之前，我们用 AI 重建了三次登录系统，每次都出现不同的 bug。Fonderie 给了我们的 AI 一份操作手册，我们只用 4 天而不是 4 周就上线了。",
+    "attribution": "— Magus Dacar，CrewFinding 首席执行官"
   },
   "metric": "",
   "footnote": "",
