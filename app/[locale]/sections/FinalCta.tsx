@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Numerals from '@/components/ui/Numerals';
 
 export default function FinalCta() {
   const t = useTranslations('pricing');
@@ -6,10 +7,10 @@ export default function FinalCta() {
   return (
     <section className="final-cta">
       <h2 className="final-cta__title" data-reveal="">
-        {t('finalCta.title')}
+        <Numerals>{t('finalCta.title')}</Numerals>
       </h2>
       <p className="final-cta__lede" data-reveal="">
-        {t('finalCta.lede')}
+        <Numerals>{t('finalCta.lede')}</Numerals>
       </p>
       <div className="final-cta__row" data-reveal="">
         <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer" className="btn btn--stage">
@@ -29,16 +30,16 @@ export default function FinalCta() {
         </a>
       </div>
       <p className="final-cta__note" data-reveal="">
-        {t('finalCta.prompts')}{' '}
+        <Numerals>{t('finalCta.prompts')}</Numerals>{' '}
         <a href="https://github.com/fonderiejs/fonderie" target="_blank" rel="noopener noreferrer">
           {t('finalCta.promptsLink')}
         </a>
       </p>
       <div className="final-cta__tags" data-reveal="">
-        <span className="final-cta__tag">{t('finalCta.tag')}</span>
+        <span className="final-cta__tag"><Numerals>{t('finalCta.tag')}</Numerals></span>
       </div>
       <p className="final-cta__note" data-reveal="">
-        {t('finalCta.team')}
+        <Numerals>{t('finalCta.team')}</Numerals>
       </p>
     </section>
   );

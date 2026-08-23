@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Numerals from '@/components/ui/Numerals';
 
 export default function Difference() {
   const t = useTranslations('difference');
@@ -26,9 +27,13 @@ export default function Difference() {
               {rows.map((row) => (
                 <tr key={row.label}>
                   <td>{row.label}</td>
-                  <td>{row.alt}</td>
                   <td>
-                    <strong>{row.fonderie}</strong>
+                    <Numerals>{row.alt}</Numerals>
+                  </td>
+                  <td>
+                    <strong>
+                      <Numerals>{row.fonderie}</Numerals>
+                    </strong>
                   </td>
                 </tr>
               ))}

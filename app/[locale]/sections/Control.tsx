@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Numerals from '@/components/ui/Numerals';
 import { Row, Col } from '@/components/ui/Grid';
 
 export default function Control() {
@@ -11,7 +12,9 @@ export default function Control() {
         <Col span={6} className="shift__copy" data-reveal>
           <p className="eyebrow">{t('eyebrow')}</p>
           <h2 className="section-title">{t('title')}</h2>
-          <p className="shift__lede">{t('lede')}</p>
+          <p className="shift__lede">
+            <Numerals>{t('lede')}</Numerals>
+          </p>
         </Col>
 
         <Col span={6} className="shift__list" data-reveal>
@@ -20,7 +23,9 @@ export default function Control() {
               <span className="shift__item-num">{step.num}</span>
               <div>
                 <h3 className="shift__item-title">{step.title}</h3>
-                <p className="shift__item-text">{step.text}</p>
+                <p className="shift__item-text">
+                  <Numerals>{step.text}</Numerals>
+                </p>
               </div>
             </div>
           ))}

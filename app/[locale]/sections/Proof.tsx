@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import StatCounter from '@/components/ui/StatCounter';
+import Numerals from '@/components/ui/Numerals';
 import { Row, Col } from '@/components/ui/Grid';
 
 export default function Proof() {
@@ -15,13 +16,19 @@ export default function Proof() {
         {stats.map((stat, i) => (
           <Col span={4} key={stat.label} className="proof__cell">
             <StatCounter value={stat.value} accent={i === stats.length - 1} />
-            <p className="proof__label">{stat.label}</p>
-            <p className="proof__sub">{stat.sub}</p>
+            <p className="proof__label">
+              <Numerals>{stat.label}</Numerals>
+            </p>
+            <p className="proof__sub">
+              <Numerals>{stat.sub}</Numerals>
+            </p>
           </Col>
         ))}
       </Row>
       <blockquote className="proof__testimonial" data-reveal="">
-        <p>&ldquo;{t('testimonial.quote')}&rdquo;</p>
+        <p>
+          &ldquo;<Numerals>{t('testimonial.quote')}</Numerals>&rdquo;
+        </p>
         <cite>{t('testimonial.attribution')}</cite>
       </blockquote>
       {/* Hidden for now
