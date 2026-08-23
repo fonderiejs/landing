@@ -169,6 +169,39 @@ a:hover {
   margin: 0 0 26px;
 }
 
+/* Numeral — wraps a run of digits so figures carry their own typeface
+   and weight, independent of the text around them. A standalone block,
+   not an element of any section: the intent is that every number on the
+   site eventually gets wrapped in this, so it deliberately sets no size
+   and no color and inherits both from context.
+
+   Why a separate family at all: --serif (Instrument Serif) ships a
+   single 400 file. It renders identically at 400/500/600 and then snaps
+   to a browser-synthesized bold, so there is no gradual weight — only
+   "regular" and "faked heavy". Noto Serif JP is a variable font with a
+   real wght axis; measured on rendered digits it ramps +11.5% ink at
+   500, +25.3% at 600, +44.4% at 700. Its digits also match Instrument
+   Serif's ink height exactly (75px at font-size:100px), so swapping the
+   figures in doesn't disturb the optical size of surrounding text.
+
+   Constraint worth knowing: the font is loaded via a `text=` subset
+   (see the dedicated <link> in app/[locale]/layout.tsx) covering only
+   0-9 . , - and –. Any other character placed inside .numeral silently
+   falls back to var(--serif) — extend the `text=` parameter first.
+
+   Digits are tabular by design in this face (each exactly 0.5em), so
+   columns of figures align and a counting animation can't jitter its
+   own width. */
+.numeral {
+  font-family: "Noto Serif JP", var(--serif);
+  font-weight: 600;
+}
+/* Lighter step for numerals set in running text, where 600 reads too
+   loud next to body copy. */
+.numeral--regular {
+  font-weight: 500;
+}
+
 .code-block pre {
   background: transparent !important;
   padding: 0 !important;
