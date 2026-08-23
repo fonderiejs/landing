@@ -1,27 +1,27 @@
 {
   "eyebrow": "Como funciona",
   "title": "A Camada de Controle de Infraestrutura de IA",
-  "lede": "A Fonderie é a camada de controle para SaaS construído por IA. Ela especifica, verifica e padroniza cada sistema crítico — auth, cobrança, times, permissões — para que qualquer IA construa da mesma forma, sempre. Uma plataforma. Qualquer IA. Zero improviso.",
+  "lede": "A Fonderie é o padrão que sua IA lê. Ela define, verifica e trava cada sistema crítico — logins, pagamentos, times, permissões — para que qualquer assistente construa da mesma forma, sempre. Um playbook. Qualquer IA. Zero improviso.",
   "steps": [
     {
       "num": "01",
-      "title": "Você descreve o produto",
-      "text": "\"Preciso de um SaaS com login, cobrança via Stripe e workspaces de time.\""
+      "title": "Descreva seu produto",
+      "text": "\"Preciso de logins, pagamentos via Stripe e workspaces de time.\""
     },
     {
       "num": "02",
-      "title": "A Fonderie especifica a arquitetura",
-      "text": "A camada de controle define exatamente quais sistemas construir e como eles se conectam. Troque de IA quando quiser — a especificação continua a mesma."
+      "title": "A Fonderie define a arquitetura",
+      "text": "A Fonderie define quais sistemas construir e como eles se conectam. Troque de assistente quando quiser — a especificação continua a mesma."
     },
     {
       "num": "03",
       "title": "A Fonderie verifica o resultado",
-      "text": "Tipos, testes e verificações de segurança rodam automaticamente. Cada build é validado contra o padrão antes de ir para produção."
+      "text": "Tipos, testes e verificações de segurança rodam automaticamente. Cada build é validado antes de ir para produção."
     },
     {
       "num": "04",
-      "title": "Você revisa e implanta",
-      "text": "Você é dono do código. Personalize o design, adicione sua lógica, faça o deploy. Seu backend é seguro, seu frontend funciona, e seus clientes conseguem se cadastrar e pagar."
+      "title": "Revise e implante",
+      "text": "Você é dono do código. Personalize o design, adicione sua lógica, faça o deploy. Seu código é seguro, suas telas funcionam, e os clientes conseguem se cadastrar e pagar."
     }
   ],
   "footnote": "Veja o arquivo real do playbook",

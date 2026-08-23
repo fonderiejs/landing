@@ -1,27 +1,27 @@
 {
-  "eyebrow": "Tudo que seu SaaS precisa",
-  "title": "Módulos de backend e screen kits de frontend.",
-  "lede": "Testado em produção, otimizado para IA. Lógica de backend mais UI pronta para React, React Native e Vue — use os hooks headless ou as telas prontas. Sua IA não chuta. Ela segue as instruções da Fonderie.",
+  "eyebrow": "Tudo que seu produto precisa",
+  "title": "Backend e frontend, juntos.",
+  "lede": "Testado em produção. Lógica de backend mais UI pronta para React, React Native e Vue. Hooks headless ou telas prontas. Sua IA não chuta. Ela segue as instruções da Fonderie.",
   "items": [
     {
-      "title": "Auth (Backend + Frontend)",
-      "text": "Login, cadastro, redefinição de senha e autenticação de dois fatores. Além de telas de auth prontas para React, React Native e Vue. Sua IA nunca mais escreve auth do zero."
+      "title": "Logins (Backend + Frontend)",
+      "text": "Logins, cadastro, redefinição de senha e autenticação de dois fatores. Além de telas prontas para React, React Native e Vue. Sua IA nunca mais escreve logins do zero."
     },
     {
-      "title": "Cobrança (Backend + Frontend)",
+      "title": "Pagamentos (Backend + Frontend)",
       "text": "Integração com Stripe, assinaturas, medição de uso. Além de tabelas de preço e telas de checkout para React, React Native e Vue. Pronto e conectado."
     },
     {
-      "title": "Workspaces (Backend + Frontend)",
-      "text": "Times multi-tenant, convites, acesso baseado em papéis. Além de trocador de time e gerenciamento de membros para React, React Native e Vue. Seus clientes gerenciam suas próprias organizações."
+      "title": "Convites de time (Backend + Frontend)",
+      "text": "Times multi-tenant, convites e acesso baseado em papéis. Além de trocador de time e gerenciamento de membros para React, React Native e Vue. Seus clientes gerenciam seus próprios times."
     },
     {
-      "title": "Notificações",
-      "text": "E-mail, SMS e notificações push, além de uma UI de administração de templates. Mensagens fire-and-forget. Sua IA não reinventa a lógica de e-mail a cada sessão."
+      "title": "E-mail",
+      "text": "E-mail, SMS e notificações push, além de uma UI de administração de templates. Dispare e esqueça. Sua IA não reinventa o e-mail a cada sessão."
     },
     {
       "title": "Permissões e auditoria",
-      "text": "Controle de acesso baseado em papéis, permissões coringa, bypass de administrador. Além de logs de auditoria por workspace com tela pronta em cada framework."
+      "text": "Controle de acesso baseado em papéis, permissões coringa, bypass de administrador. Além de um log de auditoria com tela pronta em cada framework."
     }
   ],
   "footnote": "Quer os detalhes técnicos?",

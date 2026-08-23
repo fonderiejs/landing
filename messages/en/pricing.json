@@ -1,13 +1,13 @@
 {
   "eyebrow": "Pricing",
   "title": "Start free. Pay when you deploy.",
-  "lede": "Free forever while you build. Upgrade when your SaaS goes live.",
+  "lede": "Free forever while you build. Upgrade when your product goes live.",
   "tiers": [
     {
       "name": "Build",
       "price": "Free",
       "period": "",
-      "desc": "For side projects and pre-revenue SaaS",
+      "desc": "For side projects and pre-revenue products",
       "features": [
         "All backend modules",
         "Community support"
@@ -19,7 +19,7 @@
       "name": "Launch",
       "price": "$49",
       "period": "/mo",
-      "desc": "For SaaS with first paying customers",
+      "desc": "For products with first paying customers",
       "featuresLead": "Everything in Build, plus",
       "features": [
         "Priority support",
@@ -35,7 +35,7 @@
       "desc": "Frontend screen kits",
       "featuresLead": "Everything in Launch, plus",
       "features": [
-        "Auth, billing & workspace screens",
+        "Login, payment & team screens",
         "React, React Native & Vue",
         "Headless hooks or prebuilt UI"
       ],
@@ -59,15 +59,15 @@
       "featured": false
     }
   ],
-  "compareNote": "Hiring a backend developer costs $30K–$60K. Fonderie Launch is $49/month. You only pay when your SaaS goes live.",
+  "compareNote": "Hiring a backend developer costs $30K–$60K. Fonderie Launch is $49/month. You only pay when your product goes live.",
   "finalCta": {
-    "title": "Stop debugging auth. Start building your product.",
-    "lede": "Fonderie's playbook lives in your repo and gives any AI the context it needs to build correctly. You focus on what makes your SaaS unique.",
+    "title": "Stop debugging logins. Start building your product.",
+    "lede": "Fonderie's playbook lives in your repo and gives any AI the context it needs to build correctly. You focus on what makes your product unique.",
     "getStarted": "Start building — free",
     "star": "Star on GitHub",
     "prompts": "Instructions for Claude Code and Cursor ship with the repo —",
     "promptsLink": "grab them on GitHub →",
-    "tag": "For founders who want to ship, not rebuild auth",
+    "tag": "For founders who want to ship, not rebuild logins",
     "team": "Built by a founder who spent years as a contractor at PayPal working on internal auditing and merchant-facing tools — and got tired of watching AI reintroduce the same bugs every session."
   }
 }
