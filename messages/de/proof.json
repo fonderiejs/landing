@@ -1,13 +1,13 @@
 {
-  "eyebrow": "Vertraut von Gründern, die echte Produkte ausliefern",
+  "eyebrow": "Vertraut von Gründern, die Produkte ausliefern",
   "stats": [
-    { "value": "2 Tage", "label": "Von der Idee zum ausgelieferten Backend", "sub": "Statt 9 Wochen" },
-    { "value": "49 $", "label": "Launch-Plan, monatlich pauschal", "sub": "statt 30.000 $+ für einen Entwickler" },
-    { "value": "100%", "label": "Ein Playbook. Jede KI.", "sub": "Tool wechseln, ohne neu zu bauen" }
+    { "value": "1 Tag", "label": "Von der Idee zum ausgelieferten SaaS", "sub": "Statt 9 Wochen" },
+    { "value": "49 $", "label": "Pro Monat", "sub": "statt 30.000 $+ für einen Entwickler" },
+    { "value": "100%", "label": "Jede KI", "sub": "KI-Tools wechseln, ohne neu zu bauen" }
   ],
   "testimonial": {
-    "quote": "Wir haben unser Auth-System 3 Mal mit KI neu gebaut, bevor wir Fonderie fanden. Jedes Mal ein anderer Bug. Fonderie gab unserer KI ein Playbook. Wir haben in 4 Tagen statt 4 Wochen ausgeliefert.",
-    "attribution": "— Magus Dacar, CEO bei CrewFinding Inc."
+    "quote": "Wir haben unsere Logins 3 Mal mit KI neu gebaut, bevor wir Fonderie fanden. Jedes Mal ein anderer Bug. Fonderie gab unserer KI ein Playbook. Wir haben in 4 Tagen statt 4 Wochen ausgeliefert.",
+    "attribution": "— Magus Dacar, CEO, CrewFinding"
   },
   "metric": "",
   "footnote": "",

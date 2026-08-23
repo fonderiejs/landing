@@ -1,13 +1,13 @@
 {
   "eyebrow": "Tarifs",
   "title": "Démarrez gratuitement. Payez quand vous déployez.",
-  "lede": "Gratuit pour toujours pendant que vous construisez. Passez à un niveau supérieur quand votre SaaS est en ligne.",
+  "lede": "Gratuit pour toujours pendant que vous construisez. Passez à un niveau supérieur quand votre produit est en ligne.",
   "tiers": [
     {
       "name": "Build",
       "price": "Gratuit",
       "period": "",
-      "desc": "Pour les projets personnels et le SaaS pré-revenu",
+      "desc": "Pour les projets personnels et les produits pré-revenu",
       "features": [
         "Tous les modules backend",
         "Support communautaire"
@@ -19,7 +19,7 @@
       "name": "Launch",
       "price": "49 $",
       "period": "/mois",
-      "desc": "Pour un SaaS avec ses premiers clients payants",
+      "desc": "Pour un produit avec ses premiers clients payants",
       "featuresLead": "Tout ce qui est dans Build, plus",
       "features": [
         "Support prioritaire",
@@ -35,7 +35,7 @@
       "desc": "Kits d'écrans frontend",
       "featuresLead": "Tout ce qui est dans Launch, plus",
       "features": [
-        "Écrans d'auth, facturation & espaces de travail",
+        "Écrans de connexion, paiement & équipe",
         "React, React Native & Vue",
         "Hooks headless ou UI prête"
       ],
@@ -59,15 +59,15 @@
       "featured": false
     }
   ],
-  "compareNote": "Embaucher un développeur backend coûte 30 000–60 000 $. Fonderie Launch coûte 49 $/mois. Vous ne payez que lorsque votre SaaS est en ligne.",
+  "compareNote": "Embaucher un développeur backend coûte 30 000–60 000 $. Fonderie Launch coûte 49 $/mois. Vous ne payez que lorsque votre produit est en ligne.",
   "finalCta": {
-    "title": "Arrêtez de déboguer l'auth. Construisez votre produit.",
-    "lede": "Le plan de Fonderie vit dans votre repo et donne à toute IA le contexte nécessaire pour construire correctement. Vous vous concentrez sur ce qui rend votre SaaS unique.",
+    "title": "Arrêtez de déboguer les connexions. Construisez votre produit.",
+    "lede": "Le plan de Fonderie vit dans votre repo et donne à toute IA le contexte nécessaire pour construire correctement. Vous vous concentrez sur ce qui rend votre produit unique.",
     "getStarted": "Commencer — gratuit",
     "star": "Mettre une étoile sur GitHub",
     "prompts": "Les instructions pour Claude Code et Cursor sont fournies avec le repo —",
     "promptsLink": "récupérez-les sur GitHub →",
-    "tag": "Pour les fondateurs qui veulent livrer, pas reconstruire l'auth",
+    "tag": "Pour les fondateurs qui veulent livrer, pas reconstruire les connexions",
     "team": "Construit par un fondateur qui a passé des années comme contractant chez PayPal à travailler sur des outils d'audit interne et des outils pour marchands — et en a eu assez de voir l'IA réintroduire les mêmes bugs à chaque session."
   }
 }

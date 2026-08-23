@@ -1,27 +1,27 @@
 {
   "eyebrow": "How it works",
   "title": "The AI Infrastructure Control Layer",
-  "lede": "Fonderie is the control layer for AI-built SaaS. It specifies, verifies, and standardizes every critical system — auth, billing, teams, permissions — so any AI assistant builds the same way every time. One platform. Any AI. Zero improvisation.",
+  "lede": "Fonderie is the standard your AI reads. It defines, verifies, and locks every critical system — logins, payments, teams, permissions — so any assistant builds the same way every time. One playbook. Any AI. Zero improvisation.",
   "steps": [
     {
       "num": "01",
-      "title": "You describe the product",
-      "text": "\"I need a SaaS with login, Stripe billing, and team workspaces.\""
+      "title": "Describe your product",
+      "text": "\"I need logins, Stripe payments, and team workspaces.\""
     },
     {
       "num": "02",
-      "title": "Fonderie specifies the architecture",
-      "text": "The control layer defines exactly which systems to build and how they connect. Switch AI assistants anytime — the specification stays the same."
+      "title": "Fonderie defines the architecture",
+      "text": "Fonderie defines which systems to build and how they connect. Switch assistants anytime — the specification stays the same."
     },
     {
       "num": "03",
       "title": "Fonderie verifies the output",
-      "text": "Types, tests, and security checks run automatically. Every build is validated against the standard before it ships."
+      "text": "Types, tests, and security checks run automatically. Every build is validated before it ships."
     },
     {
       "num": "04",
-      "title": "You review and deploy",
-      "text": "You own the code. Customize the design, add your logic, deploy. Your backend is secure, your frontend works, and your customers can sign up and pay."
+      "title": "Review and deploy",
+      "text": "You own the code. Customize the design, add your logic, deploy. Your code is secure, your screens work, and customers can sign up and pay."
     }
   ],
   "footnote": "See the actual playbook file",

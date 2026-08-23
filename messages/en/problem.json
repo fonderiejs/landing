@@ -1,15 +1,15 @@
 {
   "eyebrow": "The problem AI made worse",
-  "title": "Every SaaS rebuilds the same infrastructure. AI just made it faster — and less consistent.",
-  "lede": "Before you write your product, you need auth, billing, teams, permissions. In 2026, most SaaS founders use AI assistants to build. Nearly all of them are improvising the same infrastructure, differently every session.",
-  "marketScale": "We start where every SaaS starts: auth and billing — the two systems no product can launch without. Once Fonderie specifies your foundation, the same control layer extends to notifications, permissions, mobile, and every system your AI builds next. The wedge is the first five systems. The market is the entire infrastructure budget of every AI-built company.",
+  "title": "Every SaaS rebuilds the same infrastructure. AI made it faster — and less consistent.",
+  "lede": "Before you write your product, you need logins, payments, team invites, and permissions. Most founders use AI to build. Nearly every session improvises the same thing differently.",
+  "marketScale": "We start where every product starts: logins and payments. Once Fonderie defines your foundation, the same standard extends to notifications, permissions, and mobile. The wedge is the first five systems. The market is the infrastructure budget of every AI-built company.",
   "ledeCombined": "Before you write your product, you need auth, billing, teams, permissions. AI improvises all of it differently every session. In 2026, most SaaS founders use AI assistants to build. Nearly all of them are improvising the same infrastructure, differently every session. Fonderie is the control layer — one system that directs AI to build correctly, however you ship.",
   "items": [
-    { "title": "Login and signup", "text": "AI improvises this every session. Different bugs. Different APIs. Inconsistent security." },
-    { "title": "Billing and subscriptions", "text": "AI generates different Stripe wiring every time. Some sessions forget webhooks. Others skip invoice logic." },
-    { "title": "Team invites and permissions", "text": "AI builds access control differently each time. One session uses roles. Another uses flags. Neither matches your auth." },
-    { "title": "Email notifications", "text": "AI reinvents email logic per session. Templates, queues, retry logic — rebuilt from scratch, differently every time." },
-    { "title": "Security and compliance", "text": "AI skips rate limiting in some sessions. Hardcodes secrets in others. No two builds handle auth the same way." }
+    { "title": "Logins", "text": "AI improvises every session. Different bugs. Different APIs. Inconsistent security." },
+    { "title": "Payments", "text": "AI wires Stripe differently every time. Some sessions forget webhooks. Others skip invoice logic." },
+    { "title": "Team invites", "text": "AI builds access control differently each time. One session uses roles. Another uses flags. Neither matches your logins." },
+    { "title": "Email", "text": "AI reinvents email every session. Templates, queues, retry logic — rebuilt from scratch, differently every time." },
+    { "title": "Security", "text": "AI skips rate limiting in some sessions. Hardcodes secrets in others. No two builds handle logins the same way." }
   ],
   "byHandTitle": "Hire a developer",
   "byHandText": "2–3 months and $30,000–$60,000. And you still have to get auth right.",

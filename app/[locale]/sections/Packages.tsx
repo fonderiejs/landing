@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Numerals from '@/components/ui/Numerals';
 
 export default function Packages() {
   const t = useTranslations('packages');
@@ -13,14 +14,16 @@ export default function Packages() {
         {t('title')}
       </h2>
       <p className="packages__lede" data-reveal="">
-        {t('lede')}
+        <Numerals>{t('lede')}</Numerals>
       </p>
 
       <div className="packages__grid" data-reveal="">
         {items.map((item) => (
           <div key={item.title} className="packages__card">
             <h3 className="packages__card-title">{item.title}</h3>
-            <p className="packages__card-text">{item.text}</p>
+            <p className="packages__card-text">
+              <Numerals>{item.text}</Numerals>
+            </p>
           </div>
         ))}
       </div>
