@@ -330,7 +330,8 @@ a:hover {
   background: var(--dark);
   color: #fff;
   gap: 10px;
-  padding: 7px 7px 7px 18px;
+  /* symmetric — the nav CTA has no trailing chip to balance against */
+  padding: 7px 18px;
   font-size: 13px;
 }
 .btn--dark-sm:hover {
@@ -375,7 +376,7 @@ a:hover {
 .btn__chip {
   width: 30px;
   height: 30px;
-  border-radius: 10px;
+  border-radius: 50%;
   background: var(--stage);
   display: inline-flex;
   align-items: center;
@@ -385,7 +386,6 @@ a:hover {
 .btn__chip--sm {
   width: 24px;
   height: 24px;
-  border-radius: 8px;
 }
 .btn__chip--dark {
   background: #12100e;
