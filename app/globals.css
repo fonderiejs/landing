@@ -1076,6 +1076,69 @@ a:hover {
   font-weight: 600;
 }
 
+.problem__cards {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  align-content: start;
+}
+/* halves still side by side but too narrow for two card columns */
+@media (max-width: 979px) {
+  .problem__cards {
+    grid-template-columns: 1fr;
+  }
+}
+/* columns stack to full width below 768 — room for two card columns again */
+@media (max-width: 767px) {
+  .problem__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 559px) {
+  .problem__cards {
+    grid-template-columns: 1fr;
+  }
+}
+.pain-card {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.pain-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pain-card__icon {
+  display: block;
+  color: var(--accent);
+}
+.pain-card__badge {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--tint);
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+.pain-card__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+.pain-card__text {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0;
+}
+
 .meta-strip {
   display: flex;
   flex-wrap: wrap;
