@@ -1,7 +1,7 @@
 {
   "eyebrow": "Das Problem, das KI schlimmer gemacht hat",
   "title": "KI hat SaaS-Neubauten beschleunigt. Weniger konsistent.",
-  "lede": "KI hat das Bauen beschleunigt. Und die Inkonsistenz gleich mit.\nJedes Produkt braucht Logins, Zahlungen, Einladungen, E-Mail und Sicherheit. Die meisten KI-Sitzungen bauen sie jedes Mal anders.",
+  "lede": "KI hat das Bauen beschleunigt. Und die Inkonsistenz gleich mit. Jedes Produkt braucht Logins, Zahlungen, Einladungen, E-Mail und Sicherheit. Die meisten KI-Sitzungen bauen sie jedes Mal anders.",
   "ledeCombined": "Bevor Sie Ihr eigentliches Produkt schreiben, brauchen Sie Auth, Abrechnung, Teams, Berechtigungen. KI improvisiert das alles bei jeder Sitzung anders. 2026 nutzen die meisten SaaS-Gründer KI-Assistenten zum Bauen. Fast alle improvisieren dieselbe Infrastruktur, jedes Mal anders. Fonderie ist die Kontrollschicht — ein System, das KI anleitet, korrekt zu bauen, egal wie Sie ausliefern.",
   "riskBadge": "Risiko {n}",
   "items": [

@@ -982,7 +982,7 @@ a:hover {
    ================================================================ */
 
 .problem {
-  padding: clamp(36px, 5vw, 56px) 0;
+  padding: clamp(40px, 5vw, 64px) 0;
   border-bottom: 1px solid var(--line);
 }
 .problem__copy {
@@ -991,12 +991,6 @@ a:hover {
 .problem__lede {
   font-size: 16px;
   line-height: 1.6;
-  /* `pre-line` so a \n in the message string renders as a real break while
-     runs of spaces still collapse normally. The lede is authored as two
-     beats - a claim, then the list that backs it - and HTML would otherwise
-     flatten that into one paragraph. Only newlines are honoured, so it
-     cannot resurrect stray indentation from the JSON. */
-  white-space: pre-line;
   color: var(--muted);
   max-width: 48ch;
   margin: 0;
@@ -1120,7 +1114,7 @@ a:hover {
     gap: 12px;
   }
   .pain-card {
-    padding: 16px;
+    padding: 12px;
     gap: 12px;
   }
   .pain-card__badge {
@@ -1132,7 +1126,7 @@ a:hover {
   background: var(--bg);
   border: 1px solid var(--line);
   border-radius: 16px;
-  padding: 24px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1157,12 +1151,12 @@ a:hover {
   color: var(--accent);
   background: var(--tint);
   border-radius: 999px;
-  padding: 3px 10px;
+  padding: 4px 8px;
 }
 .pain-card__title {
   font-size: 16px;
   font-weight: 600;
-  margin: 0 0 6px;
+  margin: 0 0 8px;
   overflow-wrap: break-word;
   hyphens: auto;
 }
@@ -1388,7 +1382,7 @@ a:hover {
 .proof {
   content-visibility: auto;
   contain-intrinsic-size: auto 300px;
-  padding: clamp(56px, 7vw, 80px) 0 clamp(44px, 5vw, 60px);
+  padding: clamp(48px, 7vw, 80px) 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
