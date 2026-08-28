@@ -1,0 +1,20 @@
+# Width-budget gate. NOT wired into .github/workflows yet — see note below.
+#
+# Copy into .github/workflows/ only AFTER budgets.json is calibrated against
+# real render. Uncalibrated, this fails the build on defaults that were never
+# checked against your stylesheet, which trains everyone to ignore it.
+name: copy-width-gate
+on:
+  pull_request:
+    paths: ['messages/**', 'content-manifest.json', '.claude/skills/trim-copy/budgets.json']
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      # No install step: the script is dependency-free by design, so the gate
+      # cannot break because of an unrelated dependency bump.
+      - name: Measure copy width in every locale
+        run: node .claude/skills/trim-copy/measure-wu.mjs --manifest content-manifest.json

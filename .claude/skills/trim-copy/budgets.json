@@ -1,0 +1,90 @@
+{
+  "$comment": "CALIBRATED against app/globals.css + vendored font metrics. Each budget names the font whose real advances the gate loads, and derives the line width as min(maxWidthCh * chRatio, containerPx / fontPx) — the same min() CSS resolves when a max-width sits inside a narrower parent.",
+  "reference": {
+    "viewportPx": 360,
+    "usablePx": 320,
+    "note": "Responsive type evaluated AT 360px: clamp(44px, 7.2vw, 96px) resolves to 44px (7.2vw = 25.9px, below the floor)."
+  },
+  "budgets": {
+    "hero-headline": {
+      "$css": ".hero__title — var(--serif), clamp(44px,7.2vw,96px), max-width:14ch, line-height:1.02",
+      "font": "instrument-serif",
+      "maxWidthCh": 14,
+      "containerPx": 320,
+      "fontPx": 44,
+      "maxLines": 3
+    },
+    "body": {
+      "$css": ".hero__lede — var(--sans), clamp(16px,1.7vw,18px), max-width:64ch",
+      "font": "inter",
+      "maxWidthCh": 64,
+      "containerPx": 320,
+      "fontPx": 16,
+      "maxLines": 6
+    },
+    "eyebrow": {
+      "$css": ".eyebrow — var(--mono), 12px",
+      "font": "jetbrains-mono",
+      "containerPx": 320,
+      "fontPx": 12,
+      "maxLines": 1
+    },
+    "trust-line": {
+      "$css": ".hero__proof — var(--mono), 12.5px",
+      "font": "jetbrains-mono",
+      "containerPx": 320,
+      "fontPx": 12.5,
+      "maxLines": 1
+    },
+    "cta": {
+      "$css": ".btn — var(--sans), 15px",
+      "font": "inter",
+      "containerPx": 160,
+      "fontPx": 15,
+      "maxLines": 1
+    },
+    "accordion-trigger": {
+      "font": "inter",
+      "containerPx": 180,
+      "fontPx": 15,
+      "maxLines": 2
+    },
+    "subheadline": {
+      "font": "inter",
+      "containerPx": 320,
+      "fontPx": 18,
+      "maxLines": 2
+    },
+    "section-h2": {
+      "font": "instrument-serif",
+      "containerPx": 320,
+      "fontPx": 30,
+      "maxLines": 2
+    },
+    "section-intro": {
+      "font": "inter",
+      "containerPx": 320,
+      "fontPx": 16,
+      "maxLines": 4
+    },
+    "nav-item": {
+      "font": "inter",
+      "containerPx": 96,
+      "fontPx": 14,
+      "maxLines": 1
+    },
+    "above-fold-total": 240,
+    "section-h2-sm": {
+      "$css": ".section-title--sm — var(--serif), clamp(28px,4vw,42px); full-width col at <=767px",
+      "font": "instrument-serif",
+      "containerPx": 320,
+      "fontPx": 28,
+      "maxLines": 2
+    }
+  },
+  "notes": {
+    "maxLines": "The line count the DESIGN allows, not what a locale happens to need. If a locale needs more, that is the finding — do not raise maxLines to make it pass.",
+    "weights": "Metrics are extracted at weight 400. Elements set in 500+ measure slightly narrow; re-extract per weight if a budget is tight enough to care.",
+    "regenerate": "node extract-metrics.mjs \"Instrument Serif\" 400 > metrics/instrument-serif.json"
+  }
+}
