@@ -143,11 +143,11 @@ a:hover {
   font-size: 12px;
   letter-spacing: 0.08em;
   color: var(--accent);
-  margin: 0 0 14px;
+  margin: 0 0 24px;
 }
 .eyebrow--wide {
   letter-spacing: 0.15em;
-  margin: 0 0 clamp(28px, 3.5vw, 40px);
+  margin: 0 0 clamp(24px, 3.5vw, 40px);
 }
 
 .section-title {
@@ -934,12 +934,12 @@ a:hover {
   z-index: 1;
   width: 100%;
   max-width: 1080px;
-  margin-top: clamp(36px, 5vw, 56px);
+  margin-top: clamp(32px, 5vw, 48px);
   border-top: 1px solid var(--line);
-  padding: 30px 0;
+  padding: 32px 0;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 24px;
   align-items: center;
   min-width: 0;
 }
@@ -952,7 +952,7 @@ a:hover {
 .hero__assistants-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px clamp(28px, 4.5vw, 56px);
+  gap: 16px clamp(24px, 4.5vw, 48px);
   justify-content: center;
   align-items: center;
   min-width: 0;
