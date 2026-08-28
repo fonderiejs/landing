@@ -80,6 +80,13 @@
       "containerPx": 320,
       "fontPx": 28,
       "maxLines": 2
+    },
+    "risk-badge": {
+      "$css": ".pain-card__badge — var(--mono), 12px (11px <=559px), nowrap; shares the card head row with a 20px icon",
+      "font": "jetbrains-mono",
+      "containerPx": 90,
+      "fontPx": 11,
+      "maxLines": 1
     }
   },
   "notes": {

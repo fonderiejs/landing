@@ -3,6 +3,7 @@
   "title": "AI sped up SaaS rebuilds. Less consistent.",
   "lede": "AI sped up building. It also sped up inconsistency.\nEvery product needs logins, payments, invites, email, and security. Most AI sessions rebuild them differently each time.",
   "ledeCombined": "Before you write your product, you need auth, billing, teams, permissions. AI improvises all of it differently every session. In 2026, most SaaS founders use AI assistants to build. Nearly all of them are improvising the same infrastructure, differently every session. Fonderie is the control layer — one system that directs AI to build correctly, however you ship.",
+  "riskBadge": "Risk {n}",
   "items": [
     { "title": "Logins", "text": "AI improvises. Different bugs. Different APIs. Inconsistent security." },
     { "title": "Payments", "text": "AI wires Stripe differently. Forgotten webhooks. Skipped invoices." },

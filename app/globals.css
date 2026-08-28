@@ -1148,6 +1148,10 @@ a:hover {
 }
 .pain-card__badge {
   font-family: var(--mono);
+  /* The badge went from two digits to a word plus digits ("Risiko 01"),
+     which is wide enough to wrap inside a 152px card at mobile widths.
+     It is a label, not prose - keep it on one line. */
+  white-space: nowrap;
   font-size: 12px;
   font-weight: 600;
   color: var(--accent);

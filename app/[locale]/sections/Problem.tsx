@@ -54,7 +54,7 @@ export default function Problem() {
                 <path d={PAIN_ICON_PATHS[i]} />
               </svg>
               <span className="pain-card__badge">
-                {String(i + 1).padStart(2, '0')}
+                {t('riskBadge', { n: String(i + 1).padStart(2, '0') })}
               </span>
             </div>
             <div>

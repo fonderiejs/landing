@@ -80,6 +80,16 @@
       "keys": [
         "problem.lede"
       ]
+    },
+    {
+      "id": "PROBLEM-RISK-BADGE",
+      "type": "risk-badge",
+      "keys": [
+        "problem.riskBadge"
+      ],
+      "samples": {
+        "n": "05"
+      }
     }
   ]
 }
