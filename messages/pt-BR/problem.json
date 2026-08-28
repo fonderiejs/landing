@@ -4,11 +4,11 @@
   "lede": "A IA acelerou a construção. E a inconsistência também.\nTodo produto precisa de logins, pagamentos, convites, e-mail e segurança. A maioria das sessões de IA os reconstrói de um jeito diferente a cada vez.",
   "ledeCombined": "Antes de escrever seu produto, você precisa de auth, cobrança, times, permissões. A IA improvisa tudo isso de forma diferente a cada sessão. Em 2026, a maioria dos fundadores de SaaS usa assistentes de IA para construir. Quase todos improvisam a mesma infraestrutura, de forma diferente a cada sessão. A Fonderie é a camada de controle — um único sistema que direciona a IA a construir corretamente, seja qual for a forma como você lança.",
   "items": [
-    { "title": "Logins", "text": "Improvisa. Bugs diferentes. APIs diferentes. Segurança inconsistente." },
-    { "title": "Pagamentos", "text": "Conecta o Stripe de outro jeito. Webhooks esquecidos. Faturas puladas." },
-    { "title": "Convites de time", "text": "Constrói o controle de acesso de outro jeito. Papéis. Flags. Nunca combina com os logins." },
-    { "title": "E-mail", "text": "Reinventa o e-mail. Templates. Filas. Lógica de retentativa. Reconstruídos do zero. Nunca iguais." },
-    { "title": "Segurança", "text": "Pula o rate limiting em algumas sessões. Em outras, deixa segredos fixos no código. Nenhum build trata os logins da mesma forma." }
+    { "title": "Logins", "text": "A IA improvisa. Bugs diferentes. APIs diferentes. Segurança inconsistente." },
+    { "title": "Pagamentos", "text": "A IA conecta o Stripe de outro jeito. Webhooks esquecidos. Faturas puladas." },
+    { "title": "Convites de time", "text": "A IA constrói o controle de acesso de outro jeito. Papéis. Flags. Nunca combina com os logins." },
+    { "title": "E-mail", "text": "A IA reinventa o e-mail. Templates. Filas. Lógica de retentativa. Nunca iguais." },
+    { "title": "Segurança", "text": "A IA pula os rate limits. Deixa segredos fixos no código. Logins inconsistentes." }
   ],
   "byHandTitle": "Contratar um desenvolvedor",
   "byHandText": "2–3 meses e US$ 30.000–60.000. E mesmo assim a auth pode sair errada.",

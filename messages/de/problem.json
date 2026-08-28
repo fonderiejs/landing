@@ -4,11 +4,11 @@
   "lede": "KI hat das Bauen beschleunigt. Und die Inkonsistenz gleich mit.\nJedes Produkt braucht Logins, Zahlungen, Einladungen, E-Mail und Sicherheit. Die meisten KI-Sitzungen bauen sie jedes Mal anders.",
   "ledeCombined": "Bevor Sie Ihr eigentliches Produkt schreiben, brauchen Sie Auth, Abrechnung, Teams, Berechtigungen. KI improvisiert das alles bei jeder Sitzung anders. 2026 nutzen die meisten SaaS-Gründer KI-Assistenten zum Bauen. Fast alle improvisieren dieselbe Infrastruktur, jedes Mal anders. Fonderie ist die Kontrollschicht — ein System, das KI anleitet, korrekt zu bauen, egal wie Sie ausliefern.",
   "items": [
-    { "title": "Logins", "text": "Improvisiert. Unterschiedliche Bugs. Unterschiedliche APIs. Inkonsistente Sicherheit." },
-    { "title": "Zahlungen", "text": "Verdrahtet Stripe jedes Mal anders. Vergessene Webhooks. Übersprungene Rechnungen." },
-    { "title": "Team-Einladungen", "text": "Baut die Zugriffskontrolle anders. Rollen. Flags. Passt nie zu den Logins." },
-    { "title": "E-Mail", "text": "Erfindet E-Mail neu. Vorlagen. Warteschlangen. Wiederholungslogik. Von Grund auf neu gebaut. Nie gleich." },
-    { "title": "Sicherheit", "text": "Lässt in manchen Sitzungen Rate-Limiting weg. Hartcodiert Secrets in anderen. Keine zwei Builds behandeln Logins gleich." }
+    { "title": "Logins", "text": "Die KI improvisiert. Unterschiedliche Bugs. Unterschiedliche APIs. Inkonsistente Sicherheit." },
+    { "title": "Zahlungen", "text": "Die KI verdrahtet Stripe anders. Vergessene Webhooks. Übersprungene Rechnungen." },
+    { "title": "Team-Einladungen", "text": "Die KI baut die Zugriffskontrolle anders. Rollen. Flags. Passt nie zu den Logins." },
+    { "title": "E-Mail", "text": "Die KI erfindet E-Mail neu. Vorlagen. Warteschlangen. Wiederholungslogik. Nie gleich." },
+    { "title": "Sicherheit", "text": "Die KI lässt Rate-Limits weg. Hartcodiert Secrets. Inkonsistente Logins." }
   ],
   "byHandTitle": "Entwickler einstellen",
   "byHandText": "2–3 Monate und 30.000–60.000 $. Und die Auth ist trotzdem oft falsch.",

@@ -4,11 +4,11 @@
   "lede": "L'IA a accéléré la création. Et l'incohérence avec.\nTout produit a besoin de connexions, de paiements, d'invitations, d'e-mail et de sécurité. La plupart des sessions d'IA les reconstruisent différemment à chaque fois.",
   "ledeCombined": "Avant d'écrire votre produit, vous avez besoin d'auth, de facturation, d'équipes, de permissions. L'IA improvise tout cela différemment à chaque session. En 2026, la plupart des fondateurs de SaaS utilisent des assistants IA pour construire. Presque tous improvisent la même infrastructure, différemment à chaque session. Fonderie est la couche de contrôle — un système qui dirige l'IA pour qu'elle construise correctement, quelle que soit la façon dont vous livrez.",
   "items": [
-    { "title": "Connexions", "text": "Improvise. Bugs différents. API différentes. Sécurité incohérente." },
-    { "title": "Paiements", "text": "Câble Stripe différemment. Webhooks oubliés. Factures ignorées." },
-    { "title": "Invitations d'équipe", "text": "Construit le contrôle d'accès différemment. Rôles. Indicateurs. Ne correspond jamais aux connexions." },
-    { "title": "E-mail", "text": "Réinvente l'e-mail. Modèles. Files d'attente. Nouvelles tentatives. Reconstruits depuis zéro. Jamais pareil." },
-    { "title": "Sécurité", "text": "Omet la limitation de débit dans certaines sessions. Code en dur des secrets dans d'autres. Aucun build ne gère les connexions de la même façon." }
+    { "title": "Connexions", "text": "L'IA improvise. Bugs différents. API différentes. Sécurité incohérente." },
+    { "title": "Paiements", "text": "L'IA câble Stripe différemment. Webhooks oubliés. Factures ignorées." },
+    { "title": "Invitations d'équipe", "text": "L'IA construit le contrôle d'accès différemment. Rôles. Indicateurs. Ne correspond jamais aux connexions." },
+    { "title": "E-mail", "text": "L'IA réinvente l'e-mail. Modèles. Files d'attente. Nouvelles tentatives. Jamais pareil." },
+    { "title": "Sécurité", "text": "L'IA omet les limites de débit. Code en dur des secrets. Connexions incohérentes." }
   ],
   "byHandTitle": "Embaucher un développeur",
   "byHandText": "2 à 3 mois et 30 000 à 60 000 $. Et vous risquez quand même de mal gérer l'auth.",

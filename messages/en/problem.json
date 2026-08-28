@@ -4,11 +4,11 @@
   "lede": "AI sped up building. It also sped up inconsistency.\nEvery product needs logins, payments, invites, email, and security. Most AI sessions rebuild them differently each time.",
   "ledeCombined": "Before you write your product, you need auth, billing, teams, permissions. AI improvises all of it differently every session. In 2026, most SaaS founders use AI assistants to build. Nearly all of them are improvising the same infrastructure, differently every session. Fonderie is the control layer — one system that directs AI to build correctly, however you ship.",
   "items": [
-    { "title": "Logins", "text": "Improvises. Different bugs. Different APIs. Inconsistent security." },
-    { "title": "Payments", "text": "Wires Stripe differently. Forgotten webhooks. Skipped invoices." },
-    { "title": "Team invites", "text": "Builds access control differently. Roles. Flags. Never matches logins." },
-    { "title": "Email", "text": "Reinvents email. Templates. Queues. Retry logic. Rebuilt from scratch. Never the same." },
-    { "title": "Security", "text": "Skips rate limiting in some sessions. Hardcodes secrets in others. No two builds handle logins the same way." }
+    { "title": "Logins", "text": "AI improvises. Different bugs. Different APIs. Inconsistent security." },
+    { "title": "Payments", "text": "AI wires Stripe differently. Forgotten webhooks. Skipped invoices." },
+    { "title": "Team invites", "text": "AI builds access control differently. Roles. Flags. Never matches logins." },
+    { "title": "Email", "text": "AI reinvents email. Templates. Queues. Retry logic. Never the same." },
+    { "title": "Security", "text": "AI skips rate limits. Hardcodes secrets. Inconsistent logins." }
   ],
   "byHandTitle": "Hire a developer",
   "byHandText": "2–3 months and $30,000–$60,000. And you still have to get auth right.",
