@@ -1,15 +1,14 @@
 {
   "eyebrow": "The problem AI made worse",
-  "title": "Every SaaS rebuilds the same infrastructure. AI made it faster — and less consistent.",
-  "lede": "Before you write your product, you need logins, payments, team invites, and permissions. Most founders use AI to build. Nearly every session improvises the same thing differently.",
-  "marketScale": "We start where every product starts: logins and payments. Once Fonderie defines your foundation, the same standard extends to notifications, permissions, and mobile. The wedge is the first five systems. The market is the infrastructure budget of every AI-built company.",
+  "title": "AI sped up SaaS rebuilds. Less consistent.",
+  "lede": "AI sped up building. It also sped up inconsistency.\nEvery product needs logins, payments, invites, email, and security. Most AI sessions rebuild them differently each time.",
   "ledeCombined": "Before you write your product, you need auth, billing, teams, permissions. AI improvises all of it differently every session. In 2026, most SaaS founders use AI assistants to build. Nearly all of them are improvising the same infrastructure, differently every session. Fonderie is the control layer — one system that directs AI to build correctly, however you ship.",
   "items": [
-    { "title": "Logins", "text": "AI improvises every session. Different bugs. Different APIs. Inconsistent security." },
-    { "title": "Payments", "text": "AI wires Stripe differently every time. Some sessions forget webhooks. Others skip invoice logic." },
-    { "title": "Team invites", "text": "AI builds access control differently each time. One session uses roles. Another uses flags. Neither matches your logins." },
-    { "title": "Email", "text": "AI reinvents email every session. Templates, queues, retry logic — rebuilt from scratch, differently every time." },
-    { "title": "Security", "text": "AI skips rate limiting in some sessions. Hardcodes secrets in others. No two builds handle logins the same way." }
+    { "title": "Logins", "text": "Improvises. Different bugs. Different APIs. Inconsistent security." },
+    { "title": "Payments", "text": "Wires Stripe differently. Forgotten webhooks. Skipped invoices." },
+    { "title": "Team invites", "text": "Builds access control differently. Roles. Flags. Never matches logins." },
+    { "title": "Email", "text": "Reinvents email. Templates. Queues. Retry logic. Rebuilt from scratch. Never the same." },
+    { "title": "Security", "text": "Skips rate limiting in some sessions. Hardcodes secrets in others. No two builds handle logins the same way." }
   ],
   "byHandTitle": "Hire a developer",
   "byHandText": "2–3 months and $30,000–$60,000. And you still have to get auth right.",

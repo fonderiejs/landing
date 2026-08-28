@@ -991,6 +991,12 @@ a:hover {
 .problem__lede {
   font-size: 16px;
   line-height: 1.6;
+  /* `pre-line` so a \n in the message string renders as a real break while
+     runs of spaces still collapse normally. The lede is authored as two
+     beats - a claim, then the list that backs it - and HTML would otherwise
+     flatten that into one paragraph. Only newlines are honoured, so it
+     cannot resurrect stray indentation from the JSON. */
+  white-space: pre-line;
   color: var(--muted);
   max-width: 48ch;
   margin: 0;
@@ -1095,9 +1101,31 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* Two card columns hold all the way down rather than collapsing to one.
+   Measured at 14.5px body: 375px viewport leaves 122px of text per card
+   (8.4em/line, 7 lines worst case) and 320px still leaves 96px (6.7em,
+   9 lines). The tightened gap/padding below is what buys that width -
+   at the 16px/24px values used above 560px the same cards drop to
+   7.2em/line and run to 8 lines at 375px.
+
+   The hyphenation rule underneath is not cosmetic: German's
+   "Wiederholungslogik" is a single 9.4em token that cannot break on its
+   own, and needs a ~403px viewport to fit these columns unaided. Without
+   hyphens it would push past the card and be silently truncated by
+   .page__card's overflow: clip - the same way pt-BR's title lost its
+   trailing period. <html lang> is set per locale, so `hyphens: auto`
+   breaks German at real syllable boundaries rather than mid-morpheme. */
 @media (max-width: 559px) {
   .problem__cards {
-    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .pain-card {
+    padding: 16px;
+    gap: 12px;
+  }
+  .pain-card__badge {
+    font-size: 11px;
+    padding: 2px 8px;
   }
 }
 .pain-card {
@@ -1131,12 +1159,16 @@ a:hover {
   font-size: 16px;
   font-weight: 600;
   margin: 0 0 6px;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 .pain-card__text {
   font-size: 14.5px;
   line-height: 1.55;
   color: var(--muted);
   margin: 0;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .meta-strip {

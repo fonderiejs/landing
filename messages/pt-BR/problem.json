@@ -1,15 +1,14 @@
 {
   "eyebrow": "O problema que a IA piorou",
-  "title": "Todo SaaS reconstrói a mesma infraestrutura. A IA deixou isso mais rápido — e menos consistente.",
-  "lede": "Antes de escrever seu produto, você precisa de logins, pagamentos, convites de time e permissões. A maioria dos fundadores constrói com IA. Quase toda sessão improvisa a mesma coisa de um jeito diferente.",
-  "marketScale": "Começamos onde todo produto começa: logins e pagamentos. Assim que a Fonderie define sua fundação, o mesmo padrão se estende a notificações, permissões e mobile. O ponto de entrada são os cinco primeiros sistemas. O mercado é o orçamento de infraestrutura de cada empresa construída por IA.",
+  "title": "A IA acelerou as reconstruções de SaaS. Menos consistente.",
+  "lede": "A IA acelerou a construção. E a inconsistência também.\nTodo produto precisa de logins, pagamentos, convites, e-mail e segurança. A maioria das sessões de IA os reconstrói de um jeito diferente a cada vez.",
   "ledeCombined": "Antes de escrever seu produto, você precisa de auth, cobrança, times, permissões. A IA improvisa tudo isso de forma diferente a cada sessão. Em 2026, a maioria dos fundadores de SaaS usa assistentes de IA para construir. Quase todos improvisam a mesma infraestrutura, de forma diferente a cada sessão. A Fonderie é a camada de controle — um único sistema que direciona a IA a construir corretamente, seja qual for a forma como você lança.",
   "items": [
-    { "title": "Logins", "text": "A IA improvisa a cada sessão. Bugs diferentes. APIs diferentes. Segurança inconsistente." },
-    { "title": "Pagamentos", "text": "A IA conecta o Stripe de um jeito diferente toda vez. Algumas sessões esquecem os webhooks. Outras pulam a lógica de faturas." },
-    { "title": "Convites de time", "text": "A IA constrói o controle de acesso de forma diferente a cada vez. Uma sessão usa papéis. Outra usa flags. Nenhuma combina com seus logins." },
-    { "title": "E-mail", "text": "A IA reinventa o e-mail a cada sessão. Templates, filas, lógica de retentativa — reconstruídos do zero, de forma diferente toda vez." },
-    { "title": "Segurança", "text": "A IA pula o rate limiting em algumas sessões. Em outras, deixa segredos fixos no código. Nenhum build trata os logins da mesma forma." }
+    { "title": "Logins", "text": "Improvisa. Bugs diferentes. APIs diferentes. Segurança inconsistente." },
+    { "title": "Pagamentos", "text": "Conecta o Stripe de outro jeito. Webhooks esquecidos. Faturas puladas." },
+    { "title": "Convites de time", "text": "Constrói o controle de acesso de outro jeito. Papéis. Flags. Nunca combina com os logins." },
+    { "title": "E-mail", "text": "Reinventa o e-mail. Templates. Filas. Lógica de retentativa. Reconstruídos do zero. Nunca iguais." },
+    { "title": "Segurança", "text": "Pula o rate limiting em algumas sessões. Em outras, deixa segredos fixos no código. Nenhum build trata os logins da mesma forma." }
   ],
   "byHandTitle": "Contratar um desenvolvedor",
   "byHandText": "2–3 meses e US$ 30.000–60.000. E mesmo assim a auth pode sair errada.",

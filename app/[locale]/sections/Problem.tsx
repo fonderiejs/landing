@@ -36,10 +36,6 @@ export default function Problem() {
           <p className="problem__lede">
             <Numerals>{t('lede')}</Numerals>
           </p>
-          <br />
-          <p className="problem__lede">
-            <Numerals>{t('marketScale')}</Numerals>
-          </p>
         </Col>
 
         {/* Right column: pain cards in a 2-column grid — icon top-left, numeral badge top-right */}
