@@ -156,7 +156,7 @@ a:hover {
   letter-spacing: -0.015em;
   line-height: 1.08;
   font-size: clamp(30px, 4.5vw, 46px);
-  margin: 0 0 18px;
+  margin: 0 0 20px;
 }
 .section-title--sm {
   font-size: clamp(28px, 4vw, 42px);
