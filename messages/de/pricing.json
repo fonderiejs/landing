@@ -1,65 +1,52 @@
 {
   "eyebrow": "Preise",
-  "title": "Kostenlos starten. Zahlen, wenn Sie deployen.",
-  "lede": "Für immer kostenlos, während Sie bauen. Upgraden, wenn Ihr Produkt live geht.",
+  "title": "Kostenlos starten. Das Framework ist MIT — für immer.",
+  "lede": "Jedes Backend-Modul ist kostenlos und self-hosted — in Entwicklung und Produktion. Bezahlte Produkte entstehen auf dem Framework, nie darin.",
   "tiers": [
     {
       "name": "Build",
       "price": "Kostenlos",
       "period": "",
-      "desc": "Für Nebenprojekte und Produkte vor dem ersten Umsatz",
+      "desc": "Das komplette Framework, bei Ihnen betrieben",
       "features": [
-        "Alle Backend-Module",
+        "Alle Backend-Module — MIT-lizenziert",
+        "Produktionseinsatz inklusive, für immer",
         "Community-Support"
       ],
       "cta": "Loslegen — kostenlos",
       "featured": false
     },
     {
-      "name": "Launch",
-      "price": "49 $",
-      "period": "/Monat",
-      "desc": "Für Produkte mit ersten zahlenden Kunden",
-      "featuresLead": "Alles in Build, plus",
+      "name": "Console",
+      "price": "Warteliste",
+      "period": "",
+      "desc": "Gehostetes Dashboard für Ihre self-hosted App",
       "features": [
-        "Priority-Support",
-        "Produktionslizenz + Audit-Logs"
+        "Audit-Logs, Billing-Analysen und Team-Verwaltung",
+        "Verbindet sich mit Ihrer Infrastruktur — Ihre App bleibt Ihre",
+        "Early-Access-Preis für die Warteliste"
       ],
-      "cta": "Ausliefern — 49 $",
+      "cta": "Auf die Warteliste",
+      "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
       "featured": true
-    },
-    {
-      "name": "Frontend",
-      "price": "199 $",
-      "period": "/Monat",
-      "desc": "Frontend-Screen-Kits",
-      "featuresLead": "Alles in Launch, plus",
-      "features": [
-        "Login-, Zahlungs- & Team-Screens",
-        "React, React Native & Vue",
-        "Headless-Hooks oder fertige UI"
-      ],
-      "cta": "Vertrieb kontaktieren — 199 $",
-      "featured": false,
-      "hidden": true
     },
     {
       "name": "Enterprise",
       "price": "Individuell",
       "period": "",
       "desc": "Für Organisationen mit Compliance-Anforderungen",
-      "featuresLead": "Alles in Launch, plus",
+      "featuresLead": "Alles aus Build, plus",
       "features": [
-        "Single Sign-On (SSO)",
-        "Compliance-Support",
-        "On-Premise-Deployment",
-        "Dedizierter Account-Manager"
+        "Priorisierter Support mit SLA",
+        "Sicherheits- und Architektur-Reviews",
+        "Unterstützung bei Compliance-Dokumentation"
       ],
       "cta": "Vertrieb kontaktieren",
-      "featured": false
+      "featured": false,
+      "href": "/contact"
     }
   ],
-  "compareNote": "Ein Backend-Entwickler kostet 30.000–60.000 $. Fonderie Launch kostet 49 $/Monat. Sie zahlen erst, wenn Ihr Produkt live geht.",
+  "compareNote": "Keine Seats, keine Miete, keine Produktionslizenz. Das Framework ist MIT — in Produktion kostenlos, für immer.",
   "finalCta": {
     "title": "Hören Sie auf, Logins zu debuggen. Bauen Sie Ihr Produkt.",
     "lede": "Fonderies Playbook lebt in Ihrem Repo und gibt jeder KI den Kontext, um korrekt zu bauen. Sie konzentrieren sich darauf, was Ihr Produkt einzigartig macht.",

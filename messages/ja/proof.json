@@ -1,13 +1,25 @@
 {
-  "eyebrow": "プロダクトを出荷する創業者に信頼されています",
+  "eyebrow": "プロダクトを出荷する創業者のために",
   "stats": [
-    { "value": "1日", "label": "アイデアから出荷済みSaaSまで", "sub": "9週間の代わりに" },
-    { "value": "$49", "label": "月額", "sub": "開発者雇用の3万ドル以上と比較して" },
-    { "value": "100%", "label": "どのAIでも", "sub": "作り直さずにAIツールを切り替え" }
+    {
+      "value": "1日",
+      "label": "アイデアから出荷済みSaaSまで",
+      "sub": "9週間の代わりに"
+    },
+    {
+      "value": "$0",
+      "label": "フレームワークの価格",
+      "sub": "MITライセンス — シート課金も利用料もなし"
+    },
+    {
+      "value": "100%",
+      "label": "どのAIでも",
+      "sub": "作り直さずにAIツールを切り替え"
+    }
   ],
   "testimonial": {
-    "quote": "Fonderieに出会うまで、AIでログインを3回作り直しました。毎回違うバグでした。FonderieはAIにプレイブックを与えてくれました。4週間ではなく4日で出荷できました。",
-    "attribution": "— Magus Dacar、CrewFinding CEO"
+    "quote": "",
+    "attribution": ""
   },
   "metric": "",
   "footnote": "",
