@@ -6,6 +6,7 @@ import { Row, Col } from '@/components/ui/Grid';
 export default function Proof() {
   const t = useTranslations('proof');
   const stats = t.raw('stats') as { value: string; label: string; sub: string }[];
+  const testimonial = t.raw('testimonial') as { quote?: string; attribution?: string };
 
   return (
     <section id="proof" className="proof">
@@ -25,12 +26,14 @@ export default function Proof() {
           </Col>
         ))}
       </Row>
-      <blockquote className="proof__testimonial" data-reveal="">
-        <p>
-          &ldquo;<Numerals>{t('testimonial.quote')}</Numerals>&rdquo;
-        </p>
-        <cite>{t('testimonial.attribution')}</cite>
-      </blockquote>
+      {testimonial?.quote && (
+        <blockquote className="proof__testimonial" data-reveal="">
+          <p>
+            &ldquo;<Numerals>{testimonial.quote}</Numerals>&rdquo;
+          </p>
+          <cite>{testimonial.attribution}</cite>
+        </blockquote>
+      )}
       {/* Hidden for now
       <p className="proof__metric" data-reveal="">
         {t('metric')}
