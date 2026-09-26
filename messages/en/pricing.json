@@ -1,65 +1,52 @@
 {
   "eyebrow": "Pricing",
-  "title": "Start free. Pay when you deploy.",
-  "lede": "Free forever while you build. Upgrade when your product goes live.",
+  "title": "Start free. The framework is MIT — forever.",
+  "lede": "Every backend module is free and self-hosted, in development and in production. Paid products live on top of the framework — never inside it.",
   "tiers": [
     {
       "name": "Build",
       "price": "Free",
       "period": "",
-      "desc": "For side projects and pre-revenue products",
+      "desc": "The complete framework, yours to run",
       "features": [
-        "All backend modules",
+        "All backend modules — MIT licensed",
+        "Production use included, forever",
         "Community support"
       ],
       "cta": "Start building — free",
       "featured": false
     },
     {
-      "name": "Launch",
-      "price": "$49",
-      "period": "/mo",
-      "desc": "For products with first paying customers",
-      "featuresLead": "Everything in Build, plus",
+      "name": "Console",
+      "price": "Waitlist",
+      "period": "",
+      "desc": "Hosted dashboard for your self-hosted app",
       "features": [
-        "Priority support",
-        "Production license + audit logs"
+        "Audit logs, billing analytics & team admin",
+        "Connects to your infra — your app stays yours",
+        "Early-access pricing for waitlist members"
       ],
-      "cta": "Start shipping — $49",
+      "cta": "Join the waitlist",
+      "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
       "featured": true
-    },
-    {
-      "name": "Frontend",
-      "price": "$199",
-      "period": "/mo",
-      "desc": "Frontend screen kits",
-      "featuresLead": "Everything in Launch, plus",
-      "features": [
-        "Login, payment & team screens",
-        "React, React Native & Vue",
-        "Headless hooks or prebuilt UI"
-      ],
-      "cta": "Contact sales — $199",
-      "featured": false,
-      "hidden": true
     },
     {
       "name": "Enterprise",
       "price": "Custom",
       "period": "",
       "desc": "For organizations with compliance needs",
-      "featuresLead": "Everything in Launch, plus",
+      "featuresLead": "Everything in Build, plus",
       "features": [
-        "Single sign-on (SSO)",
-        "Compliance support",
-        "On-premise deployment",
-        "Dedicated account manager"
+        "Priority support with an SLA",
+        "Security & architecture reviews",
+        "Compliance documentation support"
       ],
       "cta": "Contact sales",
-      "featured": false
+      "featured": false,
+      "href": "/contact"
     }
   ],
-  "compareNote": "Hiring a backend developer costs $30K–$60K. Fonderie Launch is $49/month. You only pay when your product goes live.",
+  "compareNote": "No seats, no rent, no production license. The framework is MIT — free in production, forever.",
   "finalCta": {
     "title": "Stop debugging logins. Start building your product.",
     "lede": "Fonderie's playbook lives in your repo and gives any AI the context it needs to build correctly. You focus on what makes your product unique.",

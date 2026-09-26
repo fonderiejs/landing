@@ -1,65 +1,52 @@
 {
   "eyebrow": "价格",
-  "title": "免费开始，部署时再付费。",
-  "lede": "构建阶段永久免费，产品正式上线后再升级。",
+  "title": "免费开始。框架永远是 MIT 许可。",
+  "lede": "每个后端模块都免费且自托管 — 开发和生产环境皆是如此。付费产品建立在框架之上，绝不进入框架内部。",
   "tiers": [
     {
       "name": "Build",
       "price": "免费",
       "period": "",
-      "desc": "适合个人项目和尚未产生收入的产品",
+      "desc": "完整的框架，在你自己的环境中运行",
       "features": [
-        "所有后端模块",
+        "全部后端模块 — MIT 许可",
+        "生产环境使用永久免费",
         "社区支持"
       ],
       "cta": "开始构建 — 免费",
       "featured": false
     },
     {
-      "name": "Launch",
-      "price": "$49",
-      "period": "/月",
-      "desc": "适合已有首批付费客户的产品",
-      "featuresLead": "包含 Build 的全部功能，另加",
+      "name": "Console",
+      "price": "候补名单",
+      "period": "",
+      "desc": "为你的自托管应用提供的托管仪表盘",
       "features": [
-        "优先支持",
-        "生产许可 + 审计日志"
+        "审计日志、账单分析与团队管理",
+        "连接你的基础设施 — 应用所有权仍归你",
+        "候补名单专享早鸟价格"
       ],
-      "cta": "开始上线 — $49",
+      "cta": "加入候补名单",
+      "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
       "featured": true
-    },
-    {
-      "name": "Frontend",
-      "price": "$199",
-      "period": "/月",
-      "desc": "前端界面套件",
-      "featuresLead": "包含 Launch 的全部功能，另加",
-      "features": [
-        "登录、支付与团队界面",
-        "React、React Native 和 Vue",
-        "无头 hooks 或现成 UI"
-      ],
-      "cta": "联系销售 — $199",
-      "featured": false,
-      "hidden": true
     },
     {
       "name": "Enterprise",
       "price": "定制",
       "period": "",
       "desc": "适合有合规需求的组织",
-      "featuresLead": "包含 Launch 的全部功能，另加",
+      "featuresLead": "包含 Build 的全部，另加",
       "features": [
-        "单点登录（SSO）",
-        "合规支持",
-        "本地化部署",
-        "专属客户经理"
+        "带 SLA 的优先支持",
+        "安全与架构评审",
+        "合规文档支持"
       ],
       "cta": "联系销售",
-      "featured": false
+      "featured": false,
+      "href": "/contact"
     }
   ],
-  "compareNote": "雇佣后端开发者需要 3 万到 6 万美元。Fonderie Launch 每月仅 $49。只有当你的产品正式上线后才需要付费。",
+  "compareNote": "没有席位费，没有租金，无需生产许可。框架采用 MIT 许可 — 生产环境永久免费。",
   "finalCta": {
     "title": "别再调试登录系统了，去构建你的产品。",
     "lede": "Fonderie 的操作手册存放在你的代码仓库中，为任何 AI 提供正确构建所需的上下文。你只需专注于让你的产品与众不同的部分。",

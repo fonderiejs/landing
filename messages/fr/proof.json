@@ -1,13 +1,25 @@
 {
-  "eyebrow": "Utilisé par des fondateurs qui livrent des produits",
+  "eyebrow": "Conçu pour les fondateurs qui livrent des produits",
   "stats": [
-    { "value": "1 jour", "label": "De l'idée au SaaS livré", "sub": "Au lieu de 9 semaines" },
-    { "value": "49 $", "label": "Par mois", "sub": "contre 30 000 $+ pour embaucher un développeur" },
-    { "value": "100 %", "label": "Toute IA", "sub": "Changez d'IA sans tout reconstruire" }
+    {
+      "value": "1 jour",
+      "label": "De l'idée au SaaS livré",
+      "sub": "Au lieu de 9 semaines"
+    },
+    {
+      "value": "0 $",
+      "label": "Prix du framework",
+      "sub": "Licence MIT — pas de sièges, pas de loyer"
+    },
+    {
+      "value": "100 %",
+      "label": "Toute IA",
+      "sub": "Changez d'IA sans tout reconstruire"
+    }
   ],
   "testimonial": {
-    "quote": "Nous avons reconstruit nos connexions 3 fois avec l'IA avant de trouver Fonderie. Chaque fois, un bug différent. Fonderie a donné à notre IA un plan à suivre. Nous avons livré en 4 jours au lieu de 4 semaines.",
-    "attribution": "— Magus Dacar, PDG, CrewFinding"
+    "quote": "",
+    "attribution": ""
   },
   "metric": "",
   "footnote": "",
