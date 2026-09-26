@@ -1,13 +1,25 @@
 {
-  "eyebrow": "Trusted by founders shipping products",
+  "eyebrow": "Built for founders shipping products",
   "stats": [
-    { "value": "1 day", "label": "From idea to shipped SaaS", "sub": "Instead of 9 weeks" },
-    { "value": "$49", "label": "Per month", "sub": "vs. $30K+ to hire a developer" },
-    { "value": "100%", "label": "Any AI", "sub": "Switch AI tools without rebuilding" }
+    {
+      "value": "1 day",
+      "label": "From idea to shipped SaaS",
+      "sub": "Instead of 9 weeks"
+    },
+    {
+      "value": "$0",
+      "label": "Framework price",
+      "sub": "MIT licensed — no seats, no rent"
+    },
+    {
+      "value": "100%",
+      "label": "Any AI",
+      "sub": "Switch AI tools without rebuilding"
+    }
   ],
   "testimonial": {
-    "quote": "We rebuilt our logins 3 times with AI before finding Fonderie. Each time, a different bug. Fonderie gave our AI a playbook. We shipped in 4 days instead of 4 weeks.",
-    "attribution": "— Magus Dacar, CEO, CrewFinding"
+    "quote": "",
+    "attribution": ""
   },
   "metric": "",
   "footnote": "",

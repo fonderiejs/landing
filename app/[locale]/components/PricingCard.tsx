@@ -9,6 +9,7 @@ type Tier = {
   featuresLead?: string;
   features: string[];
   cta: string;
+  href?: string;
   featured: boolean;
   hidden?: boolean;
 };
@@ -32,7 +33,7 @@ export default function PricingCard({ tier }: { tier: Tier }) {
       </div>
 
       <a
-        href={tier.cta.toLowerCase().includes('contact') ? '/contact' : 'https://github.com/fonderiejs/fonderie'}
+        href={tier.href ?? (tier.cta.toLowerCase().includes('contact') ? '/contact' : 'https://github.com/fonderiejs/fonderie')}
         className={cn('pricing__tier-cta', tier.featured && 'pricing__tier-cta--solid')}
       >
         <Numerals>{tier.cta}</Numerals>

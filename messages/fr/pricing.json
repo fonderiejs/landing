@@ -1,65 +1,52 @@
 {
   "eyebrow": "Tarifs",
-  "title": "Démarrez gratuitement. Payez quand vous déployez.",
-  "lede": "Gratuit pour toujours pendant que vous construisez. Passez à un niveau supérieur quand votre produit est en ligne.",
+  "title": "Démarrez gratuitement. Le framework est MIT — pour toujours.",
+  "lede": "Chaque module backend est gratuit et auto-hébergé, en développement comme en production. Les produits payants se construisent au-dessus du framework — jamais à l'intérieur.",
   "tiers": [
     {
       "name": "Build",
       "price": "Gratuit",
       "period": "",
-      "desc": "Pour les projets personnels et les produits pré-revenu",
+      "desc": "Le framework complet, à faire tourner chez vous",
       "features": [
-        "Tous les modules backend",
+        "Tous les modules backend — licence MIT",
+        "Usage en production inclus, pour toujours",
         "Support communautaire"
       ],
       "cta": "Commencer — gratuit",
       "featured": false
     },
     {
-      "name": "Launch",
-      "price": "49 $",
-      "period": "/mois",
-      "desc": "Pour un produit avec ses premiers clients payants",
-      "featuresLead": "Tout ce qui est dans Build, plus",
+      "name": "Console",
+      "price": "Liste d'attente",
+      "period": "",
+      "desc": "Tableau de bord hébergé pour votre app auto-hébergée",
       "features": [
-        "Support prioritaire",
-        "Licence de production + journaux d'audit"
+        "Journaux d'audit, analytique de facturation et gestion d'équipe",
+        "Se connecte à votre infra — votre app reste la vôtre",
+        "Tarif early-access pour la liste d'attente"
       ],
-      "cta": "Commencer à livrer — 49 $",
+      "cta": "Rejoindre la liste d'attente",
+      "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
       "featured": true
-    },
-    {
-      "name": "Frontend",
-      "price": "199 $",
-      "period": "/mois",
-      "desc": "Kits d'écrans frontend",
-      "featuresLead": "Tout ce qui est dans Launch, plus",
-      "features": [
-        "Écrans de connexion, paiement & équipe",
-        "React, React Native & Vue",
-        "Hooks headless ou UI prête"
-      ],
-      "cta": "Contacter les ventes — 199 $",
-      "featured": false,
-      "hidden": true
     },
     {
       "name": "Enterprise",
       "price": "Sur mesure",
       "period": "",
       "desc": "Pour les organisations avec des besoins de conformité",
-      "featuresLead": "Tout ce qui est dans Launch, plus",
+      "featuresLead": "Tout ce qui est dans Build, plus",
       "features": [
-        "Authentification unique (SSO)",
-        "Support de conformité",
-        "Déploiement sur site",
-        "Compte dédié"
+        "Support prioritaire avec SLA",
+        "Revues de sécurité et d'architecture",
+        "Accompagnement sur la documentation de conformité"
       ],
       "cta": "Contacter les ventes",
-      "featured": false
+      "featured": false,
+      "href": "/contact"
     }
   ],
-  "compareNote": "Embaucher un développeur backend coûte 30 000–60 000 $. Fonderie Launch coûte 49 $/mois. Vous ne payez que lorsque votre produit est en ligne.",
+  "compareNote": "Pas de sièges, pas de loyer, pas de licence de production. Le framework est MIT — gratuit en production, pour toujours.",
   "finalCta": {
     "title": "Arrêtez de déboguer les connexions. Construisez votre produit.",
     "lede": "Le plan de Fonderie vit dans votre repo et donne à toute IA le contexte nécessaire pour construire correctement. Vous vous concentrez sur ce qui rend votre produit unique.",

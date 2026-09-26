@@ -1,13 +1,25 @@
 {
-  "eyebrow": "Usado por fundadores que lançam produtos",
+  "eyebrow": "Feito para fundadores que lançam produtos",
   "stats": [
-    { "value": "1 dia", "label": "Da ideia ao SaaS entregue", "sub": "Em vez de 9 semanas" },
-    { "value": "US$ 49", "label": "Por mês", "sub": "contra US$ 30 mil+ para contratar um desenvolvedor" },
-    { "value": "100%", "label": "Qualquer IA", "sub": "Troque de IA sem reconstruir" }
+    {
+      "value": "1 dia",
+      "label": "Da ideia ao SaaS entregue",
+      "sub": "Em vez de 9 semanas"
+    },
+    {
+      "value": "US$ 0",
+      "label": "Preço do framework",
+      "sub": "Licença MIT — sem assentos, sem aluguel"
+    },
+    {
+      "value": "100%",
+      "label": "Qualquer IA",
+      "sub": "Troque de IA sem reconstruir"
+    }
   ],
   "testimonial": {
-    "quote": "Reconstruímos nossos logins 3 vezes com IA antes de encontrar a Fonderie. Cada vez, um bug diferente. A Fonderie deu à nossa IA um playbook. Lançamos em 4 dias em vez de 4 semanas.",
-    "attribution": "— Magus Dacar, CEO, CrewFinding"
+    "quote": "",
+    "attribution": ""
   },
   "metric": "",
   "footnote": "",
