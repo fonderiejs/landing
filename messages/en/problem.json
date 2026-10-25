@@ -12,7 +12,7 @@
     { "title": "Security", "text": "AI skips rate limiting in some sessions. Hardcodes secrets in others. No two builds handle logins the same way." }
   ],
   "byHandTitle": "Hire a developer",
-  "byHandText": "2–3 months and $30,000–$60,000. And you still have to get auth right.",
+  "byHandText": "2–3 months and $30,000–$60,000 to build it — then ~$18k/month, forever, to run and maintain it. And you still have to get auth right.",
   "withAiTitle": "AI alone",
   "withAiText": "Your assistant improvises from scratch every session — different login flows, different billing logic, different bugs. It wastes hours (and your AI budget) debugging the same problems over and over.",
   "withFonderieTitle": "With Fonderie",

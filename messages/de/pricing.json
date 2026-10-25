@@ -1,20 +1,54 @@
 {
   "eyebrow": "Preise",
-  "title": "Kostenlos starten. Das Framework ist MIT — für immer.",
-  "lede": "Jedes Backend-Modul ist kostenlos und self-hosted — in Entwicklung und Produktion. Bezahlte Produkte entstehen auf dem Framework, nie darin.",
+  "title": "Kostenlos bauen. Oder von uns betreiben lassen.",
+  "lede": "Jedes Modul und jeder Screen — Backend wie Frontend — sind MIT-lizenziert und self-hosted, in Produktion für immer kostenlos. Und wenn Sie lieber nichts davon selbst betreiben: Fonderie Operated baut und betreibt Ihr Produkt für Sie — kalkuliert anhand des Engineers, den es ersetzt, nicht anhand von Software.",
   "tiers": [
     {
       "name": "Build",
       "price": "Kostenlos",
       "period": "",
-      "desc": "Das komplette Framework, bei Ihnen betrieben",
+      "desc": "Der komplette Stack, bei Ihnen betrieben",
       "features": [
-        "Alle Backend-Module — MIT-lizenziert",
+        "Alle Backend-Module + Frontend-Screens — MIT-lizenziert",
+        "React, Vue & React Native inklusive",
         "Produktionseinsatz inklusive, für immer",
         "Community-Support"
       ],
       "cta": "Loslegen — kostenlos",
       "featured": false
+    },
+    {
+      "name": "Operated",
+      "price": "3.500 $",
+      "period": "/Monat",
+      "desc": "Wir bauen und betreiben Ihr Produkt. Sie loggen sich nie ein.",
+      "features": [
+        "Wir entwerfen, bauen, deployen und betreiben Ihren Stack von Anfang bis Ende",
+        "Upgrades, Sicherheitsstatus und Incident Response — für immer",
+        "Monatlicher Ops-Report: alles, was wir getan haben — alles, was wir verhindert haben",
+        "Ein Slack-Kanal, der sich wie ein Senior Engineer verhält",
+        "30-tägiges Export-Escrow — kein Lock-in",
+        "Oder 9.900 $/Quartal, im Voraus bezahlt · 7.500 $ Einrichtung"
+      ],
+      "cta": "Mit einem Pilotprojekt für 499 $ starten",
+      "href": "/contact",
+      "featured": true
+    },
+    {
+      "name": "Enterprise",
+      "price": "Ab 10K $",
+      "period": "/Monat",
+      "desc": "Für Organisationen mit Compliance-Anforderungen",
+      "featuresLead": "Alles aus Operated, plus",
+      "features": [
+        "Dedizierte Infrastruktur und On-Prem-Support",
+        "Compliance-Nachweise: Audit-Chain-Witness, SOC-2-Roadmap",
+        "Vertraglich zugesichertes SLA"
+      ],
+      "cta": "Vertrieb kontaktieren",
+      "featured": false,
+      "href": "/contact",
+      "hidden": true
     },
     {
       "name": "Console",
@@ -28,28 +62,13 @@
       ],
       "cta": "Auf die Warteliste",
       "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
-      "featured": true
-    },
-    {
-      "name": "Enterprise",
-      "price": "Individuell",
-      "period": "",
-      "desc": "Für Organisationen mit Compliance-Anforderungen",
-      "featuresLead": "Alles aus Build, plus",
-      "features": [
-        "Priorisierter Support mit SLA",
-        "Sicherheits- und Architektur-Reviews",
-        "Unterstützung bei Compliance-Dokumentation"
-      ],
-      "cta": "Vertrieb kontaktieren",
-      "featured": false,
-      "href": "/contact"
+      "featured": false
     }
   ],
-  "compareNote": "Keine Seats, keine Miete, keine Produktionslizenz. Das Framework ist MIT — in Produktion kostenlos, für immer.",
+  "compareNote": "Kein Lock-in. 30-tägiges Export-Escrow. Jederzeit kündbar. Das Framework ist MIT — in Produktion kostenlos, für immer. Operated misst sich an Gehaltskosten, nicht an Tools: Ein Senior Engineer kostet ~18k $ im Monat, inklusive Nebenkosten.",
   "finalCta": {
     "title": "Hören Sie auf, Logins zu debuggen. Bauen Sie Ihr Produkt.",
-    "lede": "Fonderies Playbook lebt in Ihrem Repo und gibt jeder KI den Kontext, um korrekt zu bauen. Sie konzentrieren sich darauf, was Ihr Produkt einzigartig macht.",
+    "lede": "Fonderies Playbook lebt in Ihrem Repo und gibt jeder KI den Kontext, um korrekt zu bauen. Sie konzentrieren sich darauf, was Ihr Produkt einzigartig macht — oder überspringen das Bauen komplett und lassen Fonderie Operated es für Sie betreiben.",
     "getStarted": "Loslegen — kostenlos",
     "star": "Auf GitHub mit Stern versehen",
     "prompts": "Anweisungen für Claude Code und Cursor werden mit dem Repo ausgeliefert —",

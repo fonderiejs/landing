@@ -88,7 +88,7 @@ const jsonLd = {
       applicationCategory: 'DeveloperApplication',
       operatingSystem: 'Any',
       description:
-        'Fonderie directs AI assistants to build secure SaaS infrastructure — auth, billing, workspaces, permissions — as self-hosted TypeScript modules. Founders focus on their product, not infrastructure.',
+        'Fonderie is the end-to-end standard for AI-built SaaS — backend modules (auth, billing, workspaces, permissions) and frontend screens for React, Vue, and React Native, composed by any AI assistant, self-hosted on your own database. Fonderie Operated builds and runs it for you.',
       downloadUrl: 'https://github.com/fonderiejs/fonderie',
       isAccessibleForFree: true,
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
@@ -127,7 +127,15 @@ const jsonLd = {
           name: 'How much does Fonderie cost?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Free to start, with no usage limits and no vendor lock-in. Compare that to hiring a developer for three months ($30,000–$60,000). Paid plans add priority support, team features, and enterprise options as you grow.',
+            text: 'The framework is free and MIT-licensed — free in production, forever, with no vendor lock-in. Compare that to hiring a developer for three months ($30,000–$60,000). If you would rather not build or run any of it yourself, Fonderie Operated delivers and operates your product for you from $3,500/month — priced against hiring an engineer (~$18k/month loaded), not against software.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can Fonderie build and run my product for me?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes — that is Fonderie Operated. We architect, build, deploy, and operate your stack end to end: upgrades, security, and incident response included, with a monthly operations report. You never log in. Start with a $499 pilot, credited in full against your first quarter.',
           },
         },
       ],

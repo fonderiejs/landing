@@ -1,8 +1,8 @@
 {
   "siteTitle": "Fonderie",
   "meta": {
-    "titleSuffix": "La couche de contrôle de l'infrastructure IA pour SaaS",
-    "description": "Fonderie aide les fondateurs à mettre leur SaaS sur le marché plus vite. Il fournit un plan qui vit dans votre repo et guide votre IA pour construire un SaaS de la bonne façon — auth, facturation, équipes, sécurité, permissions, tout testé et documenté. Il donne à votre IA les fondations dont tout SaaS a besoin, pour que vous n'ayez pas à les reconstruire ou à les réexpliquer à chaque session. Concentrez-vous sur votre produit et vos clients — Fonderie donne à votre IA le contexte et les briques nécessaires pour transformer votre idée en SaaS prêt pour la production."
+    "titleSuffix": "Le standard de bout en bout pour le SaaS construit par IA",
+    "description": "Fonderie est le standard de bout en bout pour le SaaS construit par IA : des modules backend (auth, facturation, équipes, sécurité, permissions) et des écrans frontend pour React, Vue et React Native que votre IA compose correctement à chaque session — testés, documentés, auto-hébergés, sous licence MIT. Gratuit pour toujours. Ou laissez Fonderie Operated le construire et l'opérer pour vous."
   },
   "nav": {
     "solution": "Comment ça marche",
@@ -18,7 +18,7 @@
     "contactSales": "Contacter les ventes"
   },
   "footer": {
-    "tagline": "La couche de contrôle pour le SaaS construit par IA.",
+    "tagline": "Le standard de bout en bout pour le SaaS construit par IA.",
     "product": "Produit",
     "github": "GitHub",
     "docs": "Docs",

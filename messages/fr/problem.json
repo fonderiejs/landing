@@ -12,7 +12,7 @@
     { "title": "Sécurité", "text": "L'IA omet la limitation de débit dans certaines sessions. Elle code en dur des secrets dans d'autres. Aucun build ne gère les connexions de la même façon." }
   ],
   "byHandTitle": "Embaucher un développeur",
-  "byHandText": "2 à 3 mois et 30 000 à 60 000 $. Et vous risquez quand même de mal gérer l'auth.",
+  "byHandText": "2 à 3 mois et 30 000 à 60 000 $ pour le construire — puis ~18k $/mois, pour toujours, pour le faire tourner et le maintenir. Et vous devez quand même réussir l'auth.",
   "withAiTitle": "L'IA seule",
   "withAiText": "Votre assistant improvise depuis zéro à chaque session — flux de connexion différents, logique de facturation différente, bugs différents. Il gaspille des heures (et votre budget IA) à déboguer les mêmes problèmes encore et encore.",
   "withFonderieTitle": "Avec Fonderie",

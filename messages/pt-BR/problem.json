@@ -12,7 +12,7 @@
     { "title": "Segurança", "text": "A IA pula o rate limiting em algumas sessões. Em outras, deixa segredos fixos no código. Nenhum build trata os logins da mesma forma." }
   ],
   "byHandTitle": "Contratar um desenvolvedor",
-  "byHandText": "2–3 meses e US$ 30.000–60.000. E mesmo assim a auth pode sair errada.",
+  "byHandText": "2–3 meses e US$ 30.000–60.000 para construir — depois ~US$ 18k/mês, para sempre, para operar e manter. E você ainda precisa acertar a auth.",
   "withAiTitle": "IA sozinha",
   "withAiText": "Seu assistente improvisa tudo do zero a cada sessão — fluxos de login diferentes, lógica de cobrança diferente, bugs diferentes. Ele desperdiça horas (e seu orçamento de IA) depurando os mesmos problemas repetidamente.",
   "withFonderieTitle": "Com a Fonderie",
