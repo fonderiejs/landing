@@ -1,20 +1,54 @@
 {
   "eyebrow": "Preços",
-  "title": "Comece grátis. O framework é MIT — para sempre.",
-  "lede": "Todo módulo de backend é gratuito e self-hosted, em desenvolvimento e em produção. Os produtos pagos ficam em cima do framework — nunca dentro dele.",
+  "title": "Construa de graça. Ou deixe a operação com a gente.",
+  "lede": "Cada módulo e cada tela — backend e frontend — é licenciado sob MIT e self-hosted, grátis em produção, para sempre. E se você preferir não operar nada disso: o Fonderie Operated constrói e opera seu produto para você, com preço calculado contra o engenheiro que ele substitui — não contra software.",
   "tiers": [
     {
       "name": "Build",
       "price": "Grátis",
       "period": "",
-      "desc": "O framework completo, rodando na sua infra",
+      "desc": "O stack completo, rodando na sua infra",
       "features": [
-        "Todos os módulos de backend — licença MIT",
+        "Todos os módulos de backend + telas de frontend — licença MIT",
+        "React, Vue e React Native incluídos",
         "Uso em produção incluído, para sempre",
         "Suporte da comunidade"
       ],
       "cta": "Começar — grátis",
       "featured": false
+    },
+    {
+      "name": "Operated",
+      "price": "US$ 3.500",
+      "period": "/mês",
+      "desc": "A gente constrói e opera seu produto. Você nunca precisa fazer login.",
+      "features": [
+        "Arquitetamos, construímos, implantamos e operamos seu stack de ponta a ponta",
+        "Upgrades, postura de segurança e resposta a incidentes — para sempre",
+        "Relatório mensal de operações: tudo o que fizemos, tudo o que evitamos",
+        "Um canal no Slack que se comporta como um engenheiro sênior",
+        "Escrow de exportação de 30 dias — sem lock-in",
+        "Ou US$ 9.900/trimestre pré-pago · US$ 7.500 de setup"
+      ],
+      "cta": "Comece com um piloto de US$ 499",
+      "href": "/contact",
+      "featured": true
+    },
+    {
+      "name": "Enterprise",
+      "price": "A partir de US$ 10K",
+      "period": "/mês",
+      "desc": "Para organizações com necessidades de conformidade",
+      "featuresLead": "Tudo do Operated, mais",
+      "features": [
+        "Infraestrutura dedicada e suporte on-prem",
+        "Evidências de conformidade: testemunho da cadeia de auditoria, roadmap SOC 2",
+        "SLA contratual"
+      ],
+      "cta": "Falar com vendas",
+      "featured": false,
+      "href": "/contact",
+      "hidden": true
     },
     {
       "name": "Console",
@@ -28,28 +62,13 @@
       ],
       "cta": "Entrar na lista de espera",
       "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
-      "featured": true
-    },
-    {
-      "name": "Enterprise",
-      "price": "Personalizado",
-      "period": "",
-      "desc": "Para organizações com necessidades de conformidade",
-      "featuresLead": "Tudo do Build, mais",
-      "features": [
-        "Suporte prioritário com SLA",
-        "Revisões de segurança e arquitetura",
-        "Apoio na documentação de conformidade"
-      ],
-      "cta": "Falar com vendas",
-      "featured": false,
-      "href": "/contact"
+      "featured": false
     }
   ],
-  "compareNote": "Sem assentos, sem aluguel, sem licença de produção. O framework é MIT — grátis em produção, para sempre.",
+  "compareNote": "Sem lock-in. Escrow de exportação de 30 dias. Cancele quando quiser. O framework é MIT — grátis em produção, para sempre. O Operated se compara à folha de pagamento, não a ferramentas: um engenheiro sênior custa ~US$ 18k/mês, com todos os encargos.",
   "finalCta": {
     "title": "Pare de depurar logins. Comece a construir seu produto.",
-    "lede": "O playbook da Fonderie vive no seu repositório e dá a qualquer IA o contexto para construir corretamente. Você foca no que torna seu produto único.",
+    "lede": "O playbook da Fonderie vive no seu repositório e dá a qualquer IA o contexto para construir corretamente. Você foca no que torna seu produto único — ou pula a construção por completo e deixa o Fonderie Operated rodar tudo para você.",
     "getStarted": "Começar — grátis",
     "star": "Dar estrela no GitHub",
     "prompts": "Instruções para Claude Code e Cursor vêm com o repositório —",

@@ -12,7 +12,7 @@
     { "title": "Sicherheit", "text": "Die KI lässt in manchen Sitzungen Rate-Limiting weg. In anderen hartcodiert sie Secrets. Keine zwei Builds behandeln Logins gleich." }
   ],
   "byHandTitle": "Entwickler einstellen",
-  "byHandText": "2–3 Monate und 30.000–60.000 $. Und die Auth ist trotzdem oft falsch.",
+  "byHandText": "2–3 Monate und 30.000–60.000 $, um es zu bauen — danach ~18k $ im Monat, für immer, für Betrieb und Wartung. Und die Auth müssen Sie trotzdem richtig hinbekommen.",
   "withAiTitle": "KI allein",
   "withAiText": "Ihr Assistent improvisiert bei jeder Sitzung alles von Grund auf neu — andere Login-Flows, andere Abrechnungslogik, andere Bugs. Er verschwendet Stunden (und Ihr KI-Budget) beim wiederholten Debuggen derselben Probleme.",
   "withFonderieTitle": "Mit Fonderie",

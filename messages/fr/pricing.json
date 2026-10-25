@@ -1,20 +1,54 @@
 {
   "eyebrow": "Tarifs",
-  "title": "Démarrez gratuitement. Le framework est MIT — pour toujours.",
-  "lede": "Chaque module backend est gratuit et auto-hébergé, en développement comme en production. Les produits payants se construisent au-dessus du framework — jamais à l'intérieur.",
+  "title": "Construisez gratuitement. Ou laissez-nous le faire tourner.",
+  "lede": "Chaque module et chaque écran — backend comme frontend — est sous licence MIT et auto-hébergé, gratuit en production, pour toujours. Et si vous préférez ne rien faire tourner vous-même : Fonderie Operated construit et opère votre produit pour vous, tarifé par rapport à l'ingénieur qu'il remplace — pas par rapport à un logiciel.",
   "tiers": [
     {
       "name": "Build",
       "price": "Gratuit",
       "period": "",
-      "desc": "Le framework complet, à faire tourner chez vous",
+      "desc": "Le stack complet, à faire tourner chez vous",
       "features": [
-        "Tous les modules backend — licence MIT",
+        "Tous les modules backend + écrans frontend — licence MIT",
+        "React, Vue et React Native inclus",
         "Usage en production inclus, pour toujours",
         "Support communautaire"
       ],
       "cta": "Commencer — gratuit",
       "featured": false
+    },
+    {
+      "name": "Operated",
+      "price": "3 500 $",
+      "period": "/mois",
+      "desc": "Nous construisons et opérons votre produit. Vous ne vous connectez jamais.",
+      "features": [
+        "Nous concevons, construisons, déployons et opérons votre stack de bout en bout",
+        "Mises à jour, posture de sécurité et réponse aux incidents — pour toujours",
+        "Rapport d'opérations mensuel : tout ce que nous avons fait, tout ce que nous avons évité",
+        "Un canal Slack qui se comporte comme un ingénieur senior",
+        "Escrow d'export de 30 jours — sans lock-in",
+        "Ou 9 900 $/trimestre prépayé · 7 500 $ de mise en place"
+      ],
+      "cta": "Démarrer avec un pilote à 499 $",
+      "href": "/contact",
+      "featured": true
+    },
+    {
+      "name": "Enterprise",
+      "price": "À partir de 10K $",
+      "period": "/mois",
+      "desc": "Pour les organisations avec des besoins de conformité",
+      "featuresLead": "Tout ce qui est dans Operated, plus",
+      "features": [
+        "Infrastructure dédiée et support on-prem",
+        "Preuves de conformité : témoin de chaîne d'audit, feuille de route SOC 2",
+        "SLA contractuel"
+      ],
+      "cta": "Contacter les ventes",
+      "featured": false,
+      "href": "/contact",
+      "hidden": true
     },
     {
       "name": "Console",
@@ -28,28 +62,13 @@
       ],
       "cta": "Rejoindre la liste d'attente",
       "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
-      "featured": true
-    },
-    {
-      "name": "Enterprise",
-      "price": "Sur mesure",
-      "period": "",
-      "desc": "Pour les organisations avec des besoins de conformité",
-      "featuresLead": "Tout ce qui est dans Build, plus",
-      "features": [
-        "Support prioritaire avec SLA",
-        "Revues de sécurité et d'architecture",
-        "Accompagnement sur la documentation de conformité"
-      ],
-      "cta": "Contacter les ventes",
-      "featured": false,
-      "href": "/contact"
+      "featured": false
     }
   ],
-  "compareNote": "Pas de sièges, pas de loyer, pas de licence de production. Le framework est MIT — gratuit en production, pour toujours.",
+  "compareNote": "Pas de lock-in. Escrow d'export de 30 jours. Résiliable à tout moment. Le framework est MIT — gratuit en production, pour toujours. Operated se compare à la masse salariale, pas aux outils : un ingénieur senior coûte ~18k $/mois, charges comprises.",
   "finalCta": {
     "title": "Arrêtez de déboguer les connexions. Construisez votre produit.",
-    "lede": "Le plan de Fonderie vit dans votre repo et donne à toute IA le contexte nécessaire pour construire correctement. Vous vous concentrez sur ce qui rend votre produit unique.",
+    "lede": "Le plan de Fonderie vit dans votre repo et donne à toute IA le contexte nécessaire pour construire correctement. Vous vous concentrez sur ce qui rend votre produit unique — ou vous sautez carrément l'étape de construction et laissez Fonderie Operated l'opérer pour vous.",
     "getStarted": "Commencer — gratuit",
     "star": "Mettre une étoile sur GitHub",
     "prompts": "Les instructions pour Claude Code et Cursor sont fournies avec le repo —",

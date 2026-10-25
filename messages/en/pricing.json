@@ -1,20 +1,54 @@
 {
   "eyebrow": "Pricing",
-  "title": "Start free. The framework is MIT — forever.",
-  "lede": "Every backend module is free and self-hosted, in development and in production. Paid products live on top of the framework — never inside it.",
+  "title": "Build it free. Or let us run it.",
+  "lede": "Every module and every screen — backend and frontend — is MIT-licensed and self-hosted, free in production, forever. And if you'd rather not run any of it: Fonderie Operated builds and operates your product for you, priced against the engineer it replaces — not against software.",
   "tiers": [
     {
       "name": "Build",
       "price": "Free",
       "period": "",
-      "desc": "The complete framework, yours to run",
+      "desc": "The complete stack, yours to run",
       "features": [
-        "All backend modules — MIT licensed",
+        "All backend modules + frontend screens — MIT licensed",
+        "React, Vue & React Native included",
         "Production use included, forever",
         "Community support"
       ],
       "cta": "Start building — free",
       "featured": false
+    },
+    {
+      "name": "Operated",
+      "price": "$3,500",
+      "period": "/mo",
+      "desc": "We build & run your product. You never log in.",
+      "features": [
+        "We architect, build, deploy & operate your stack end to end",
+        "Upgrades, security posture & incident response — forever",
+        "Monthly ops report: everything we did, everything we prevented",
+        "A Slack channel that behaves like a senior engineer",
+        "30-day export escrow — no lock-in",
+        "Or $9,900/quarter prepaid · $7,500 setup"
+      ],
+      "cta": "Start with a $499 pilot",
+      "href": "/contact",
+      "featured": true
+    },
+    {
+      "name": "Enterprise",
+      "price": "From $10K",
+      "period": "/mo",
+      "desc": "For organizations with compliance needs",
+      "featuresLead": "Everything in Operated, plus",
+      "features": [
+        "Dedicated infrastructure & on-prem support",
+        "Compliance evidence: audit-chain witness, SOC 2 roadmap",
+        "Contractual SLA"
+      ],
+      "cta": "Contact sales",
+      "featured": false,
+      "href": "/contact",
+      "hidden": true
     },
     {
       "name": "Console",
@@ -28,28 +62,13 @@
       ],
       "cta": "Join the waitlist",
       "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
-      "featured": true
-    },
-    {
-      "name": "Enterprise",
-      "price": "Custom",
-      "period": "",
-      "desc": "For organizations with compliance needs",
-      "featuresLead": "Everything in Build, plus",
-      "features": [
-        "Priority support with an SLA",
-        "Security & architecture reviews",
-        "Compliance documentation support"
-      ],
-      "cta": "Contact sales",
-      "featured": false,
-      "href": "/contact"
+      "featured": false
     }
   ],
-  "compareNote": "No seats, no rent, no production license. The framework is MIT — free in production, forever.",
+  "compareNote": "No lock-in. 30-day export escrow. Cancel anytime. The framework is MIT — free in production, forever. Operated compares to payroll, not to tools: one senior engineer is ~$18k/month, loaded.",
   "finalCta": {
     "title": "Stop debugging logins. Start building your product.",
-    "lede": "Fonderie's playbook lives in your repo and gives any AI the context it needs to build correctly. You focus on what makes your product unique.",
+    "lede": "Fonderie's playbook lives in your repo and gives any AI the context it needs to build correctly. You focus on what makes your product unique — or skip the building entirely, and let Fonderie Operated run it for you.",
     "getStarted": "Start building — free",
     "star": "Star on GitHub",
     "prompts": "Instructions for Claude Code and Cursor ship with the repo —",

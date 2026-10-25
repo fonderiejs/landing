@@ -2,6 +2,6 @@
   "title": "Get in touch.",
   "lede": "Tell us what you're building. We'll tell you how fast Fonderie can help you build it.",
   "email": { "label": "Email", "value": "hello@fonderiejs.com" },
-  "fit": { "label": "Fit", "value": "Agencies, studios, and teams building SaaS with AI." },
+  "fit": { "label": "Fit", "value": "Founders who want their product built and operated for them (Fonderie Operated); agencies, studios, and teams building SaaS with AI." },
   "response": { "label": "Response", "value": "Within one business day. A human, not a funnel." }
 }

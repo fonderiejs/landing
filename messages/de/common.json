@@ -1,8 +1,8 @@
 {
   "siteTitle": "Fonderie",
   "meta": {
-    "titleSuffix": "Die KI-Infrastruktur-Kontrollschicht für SaaS",
-    "description": "Fonderie hilft Gründern, ihr SaaS schneller auf den Markt zu bringen. Es liefert ein Playbook, das in Ihrem Repo liegt und Ihre KI anleitet, ein SaaS richtig zu bauen — Auth, Abrechnung, Teams, Sicherheit, Berechtigungen, alles getestet und dokumentiert. Es gibt Ihrer KI die Grundlagen, die jedes SaaS braucht, damit Sie sie nicht bei jeder Sitzung neu bauen oder erklären müssen. Konzentrieren Sie sich auf Ihr Produkt und Ihre Kunden — Fonderie gibt Ihrer KI den Kontext und die Bausteine, um aus Ihrer Idee ein produktionsreifes SaaS zu machen."
+    "titleSuffix": "Der End-to-End-Standard für KI-gebautes SaaS",
+    "description": "Fonderie ist der End-to-End-Standard für KI-gebautes SaaS: Backend-Module (Auth, Abrechnung, Teams, Sicherheit, Berechtigungen) und Frontend-Screens für React, Vue und React Native, die Ihre KI in jeder Sitzung korrekt zusammensetzt — getestet, dokumentiert, self-hosted, MIT. Für immer kostenlos. Oder lassen Sie es von Fonderie Operated bauen und betreiben."
   },
   "nav": {
     "solution": "So funktioniert's",
@@ -18,7 +18,7 @@
     "contactSales": "Vertrieb kontaktieren"
   },
   "footer": {
-    "tagline": "Die Kontrollschicht für KI-gebautes SaaS.",
+    "tagline": "Der End-to-End-Standard für KI-gebautes SaaS.",
     "product": "Produkt",
     "github": "GitHub",
     "docs": "Docs",

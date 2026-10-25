@@ -1,8 +1,8 @@
 {
   "siteTitle": "Fonderie",
   "meta": {
-    "titleSuffix": "The AI Infrastructure Control Layer for SaaS",
-    "description": "Fonderie helps founders ship SaaS to market faster. It ships a playbook that lives in your repo and guides your AI to build a SaaS the right way — auth, billing, teams, security, permissions, all tested and documented. It gives your AI the foundations every SaaS needs, so you're not rebuilding or re-explaining them every session. Focus on your product and your customers — Fonderie gives your AI the context and building blocks to turn your idea into a production-ready SaaS."
+    "titleSuffix": "The End-to-End Standard for AI-Built SaaS",
+    "description": "Fonderie is the end-to-end standard for AI-built SaaS: backend modules (auth, billing, teams, security, permissions) and frontend screens for React, Vue, and React Native that your AI composes correctly every session — tested, documented, self-hosted, MIT. Free forever. Or let Fonderie Operated build and run it for you."
   },
   "nav": {
     "solution": "How it works",
@@ -18,7 +18,7 @@
     "contactSales": "Contact sales"
   },
   "footer": {
-    "tagline": "The control layer for AI-built SaaS.",
+    "tagline": "The end-to-end standard for AI-built SaaS.",
     "product": "Product",
     "github": "GitHub",
     "docs": "Docs",

@@ -1,8 +1,8 @@
 {
   "siteTitle": "Fonderie",
   "meta": {
-    "titleSuffix": "面向 SaaS 的 AI 基础设施控制层",
-    "description": "Fonderie 帮助创始人更快地将 SaaS 推向市场。它提供一份存放在你代码仓库中的操作手册，指导你的 AI 以正确的方式构建 SaaS——认证、计费、团队、安全、权限，全部经过测试并有文档记录。它为你的 AI 提供每个 SaaS 都需要的基础，让你不必在每次会话中重新搭建或重新讲解。专注于你的产品和客户——Fonderie 为你的 AI 提供上下文和构建模块，把你的想法变成可用于生产的 SaaS。"
+    "titleSuffix": "AI 构建 SaaS 的端到端标准",
+    "description": "Fonderie 是 AI 构建 SaaS 的端到端标准：后端模块（认证、计费、团队、安全、权限）以及适用于 React、Vue 和 React Native 的前端界面，让你的 AI 在每次会话中都能正确地组合它们——经过测试、文档齐全、自托管、MIT 许可。永久免费。或者让 Fonderie Operated 为你构建并运营一切。"
   },
   "nav": {
     "solution": "工作原理",
@@ -18,7 +18,7 @@
     "contactSales": "联系销售"
   },
   "footer": {
-    "tagline": "AI 构建 SaaS 的控制层。",
+    "tagline": "AI 构建 SaaS 的端到端标准。",
     "product": "产品",
     "github": "GitHub",
     "docs": "文档",

@@ -1,20 +1,54 @@
 {
   "eyebrow": "价格",
-  "title": "免费开始。框架永远是 MIT 许可。",
-  "lede": "每个后端模块都免费且自托管 — 开发和生产环境皆是如此。付费产品建立在框架之上，绝不进入框架内部。",
+  "title": "免费构建，或交给我们运营。",
+  "lede": "每一个模块、每一个界面——无论后端还是前端——都采用 MIT 许可并可自托管，生产环境永久免费。如果你不想自己运维任何部分：Fonderie Operated 为你构建并运营产品，定价对标它所替代的工程师——而不是软件。",
   "tiers": [
     {
       "name": "Build",
       "price": "免费",
       "period": "",
-      "desc": "完整的框架，在你自己的环境中运行",
+      "desc": "完整的技术栈，由你自己运行",
       "features": [
-        "全部后端模块 — MIT 许可",
+        "全部后端模块 + 前端界面 — MIT 许可",
+        "包含 React、Vue 与 React Native",
         "生产环境使用永久免费",
         "社区支持"
       ],
       "cta": "开始构建 — 免费",
       "featured": false
+    },
+    {
+      "name": "Operated",
+      "price": "3,500 美元",
+      "period": "/月",
+      "desc": "我们构建并运营你的产品，你无需登录。",
+      "features": [
+        "我们端到端地为你完成架构设计、构建、部署与运营",
+        "升级、安全态势与事故响应——永久覆盖",
+        "每月运营报告：我们做了什么、预防了什么，全部透明",
+        "一个像资深工程师一样行事的 Slack 频道",
+        "30 天导出托管——绝不锁定",
+        "或按季度预付 9,900 美元 · 部署费 7,500 美元"
+      ],
+      "cta": "从 499 美元试点开始",
+      "href": "/contact",
+      "featured": true
+    },
+    {
+      "name": "Enterprise",
+      "price": "1 万美元起",
+      "period": "/月",
+      "desc": "适合有合规需求的组织",
+      "featuresLead": "包含 Operated 的全部，另加",
+      "features": [
+        "专属基础设施与本地化部署支持",
+        "合规证据：审计链见证、SOC 2 路线图",
+        "具有合同约束力的 SLA"
+      ],
+      "cta": "联系销售",
+      "featured": false,
+      "href": "/contact",
+      "hidden": true
     },
     {
       "name": "Console",
@@ -28,28 +62,13 @@
       ],
       "cta": "加入候补名单",
       "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
-      "featured": true
-    },
-    {
-      "name": "Enterprise",
-      "price": "定制",
-      "period": "",
-      "desc": "适合有合规需求的组织",
-      "featuresLead": "包含 Build 的全部，另加",
-      "features": [
-        "带 SLA 的优先支持",
-        "安全与架构评审",
-        "合规文档支持"
-      ],
-      "cta": "联系销售",
-      "featured": false,
-      "href": "/contact"
+      "featured": false
     }
   ],
-  "compareNote": "没有席位费，没有租金，无需生产许可。框架采用 MIT 许可 — 生产环境永久免费。",
+  "compareNote": "无锁定。30 天导出托管。随时可取消。框架采用 MIT 许可——生产环境永久免费。Operated 对标的是薪酬成本而非工具：一名资深工程师的全成本约为每月 1.8 万美元。",
   "finalCta": {
     "title": "别再调试登录系统了，去构建你的产品。",
-    "lede": "Fonderie 的操作手册存放在你的代码仓库中，为任何 AI 提供正确构建所需的上下文。你只需专注于让你的产品与众不同的部分。",
+    "lede": "Fonderie 的操作手册存放在你的代码仓库中，为任何 AI 提供正确构建所需的上下文。你只需专注于让产品与众不同的部分——或者干脆跳过构建环节，让 Fonderie Operated 为你全权运营。",
     "getStarted": "开始构建 — 免费",
     "star": "在 GitHub 上点星",
     "prompts": "适用于 Claude Code 和 Cursor 的指令随仓库一起提供 —",
