@@ -156,6 +156,14 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
 
+  // Tiers flagged `hidden` are kept in messages for later re-enabling but
+  // must not ship to the client — the provider serializes the whole bundle
+  // into the page payload.
+  const pricing = messages.pricing as { tiers?: { hidden?: boolean }[] } | undefined;
+  if (pricing?.tiers) {
+    pricing.tiers = pricing.tiers.filter((tier) => !tier.hidden);
+  }
+
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
