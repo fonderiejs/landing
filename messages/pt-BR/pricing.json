@@ -49,20 +49,6 @@
       "featured": false,
       "href": "/contact",
       "hidden": true
-    },
-    {
-      "name": "Console",
-      "price": "Lista de espera",
-      "period": "",
-      "desc": "Painel hospedado para o seu app self-hosted",
-      "features": [
-        "Logs de auditoria, análises de billing e gestão de equipe",
-        "Conecta à sua infra — seu app continua seu",
-        "Preço early-access para a lista de espera"
-      ],
-      "cta": "Entrar na lista de espera",
-      "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
-      "featured": false
     }
   ],
   "compareNote": "Sem lock-in. Escrow de exportação de 30 dias. Cancele quando quiser. O framework é MIT — grátis em produção, para sempre. O Operated se compara à folha de pagamento, não a ferramentas: um engenheiro sênior custa ~US$ 18k/mês, com todos os encargos.",

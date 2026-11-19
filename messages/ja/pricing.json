@@ -49,20 +49,6 @@
       "featured": false,
       "href": "/contact",
       "hidden": true
-    },
-    {
-      "name": "Console",
-      "price": "ウェイトリスト",
-      "period": "",
-      "desc": "セルフホストアプリのためのホスト型ダッシュボード",
-      "features": [
-        "監査ログ、課金分析、チーム管理",
-        "あなたのインフラに接続 — アプリの所有権はそのまま",
-        "ウェイトリスト限定の早期アクセス価格"
-      ],
-      "cta": "ウェイトリストに登録",
-      "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
-      "featured": false
     }
   ],
   "compareNote": "ロックインなし。30日間のエクスポート・エスクロー。いつでも解約可能。フレームワークはMIT — 本番環境でも永遠に無料です。Operatedの比較対象はツールではなく人件費です。シニアエンジニア1人のコストは、諸経費込みで月約1.8万ドル。",

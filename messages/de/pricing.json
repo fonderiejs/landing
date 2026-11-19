@@ -49,20 +49,6 @@
       "featured": false,
       "href": "/contact",
       "hidden": true
-    },
-    {
-      "name": "Console",
-      "price": "Warteliste",
-      "period": "",
-      "desc": "Gehostetes Dashboard für Ihre self-hosted App",
-      "features": [
-        "Audit-Logs, Billing-Analysen und Team-Verwaltung",
-        "Verbindet sich mit Ihrer Infrastruktur — Ihre App bleibt Ihre",
-        "Early-Access-Preis für die Warteliste"
-      ],
-      "cta": "Auf die Warteliste",
-      "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
-      "featured": false
     }
   ],
   "compareNote": "Kein Lock-in. 30-tägiges Export-Escrow. Jederzeit kündbar. Das Framework ist MIT — in Produktion kostenlos, für immer. Operated misst sich an Gehaltskosten, nicht an Tools: Ein Senior Engineer kostet ~18k $ im Monat, inklusive Nebenkosten.",

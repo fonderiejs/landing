@@ -18,7 +18,8 @@ export default function Pricing() {
         {t('lede')}
       </p>
 
-      <div className="pricing__grid" data-reveal="">
+      {/* data-tiers: the grid lays out two cards as a pair and three as a row (globals.css) */}
+      <div className="pricing__grid" data-tiers={tiers.length} data-reveal="">
         {tiers.map((tier: any) => (
           <PricingCard key={tier.name} tier={tier} />
         ))}

@@ -49,20 +49,6 @@
       "featured": false,
       "href": "/contact",
       "hidden": true
-    },
-    {
-      "name": "Console",
-      "price": "Liste d'attente",
-      "period": "",
-      "desc": "Tableau de bord hébergé pour votre app auto-hébergée",
-      "features": [
-        "Journaux d'audit, analytique de facturation et gestion d'équipe",
-        "Se connecte à votre infra — votre app reste la vôtre",
-        "Tarif early-access pour la liste d'attente"
-      ],
-      "cta": "Rejoindre la liste d'attente",
-      "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
-      "featured": false
     }
   ],
   "compareNote": "Pas de lock-in. Escrow d'export de 30 jours. Résiliable à tout moment. Le framework est MIT — gratuit en production, pour toujours. Operated se compare à la masse salariale, pas aux outils : un ingénieur senior coûte ~18k $/mois, charges comprises.",

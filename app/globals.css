@@ -1663,13 +1663,16 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* Two tiers (Build, Operated) sit side by side from 700px up. The three-tier
+   rules below apply only when a third tier is shown: with two cards they
+   would leave an empty cell showing the grid's line colour. */
 @media (min-width: 700px) and (max-width: 1099px) {
-  .pricing__tier:last-child {
+  .pricing__grid[data-tiers='3'] .pricing__tier:last-child {
     grid-column: 1 / -1;
   }
 }
 @media (min-width: 1100px) {
-  .pricing__grid {
+  .pricing__grid[data-tiers='3'] {
     grid-template-columns: repeat(3, 1fr);
   }
 }

@@ -49,20 +49,6 @@
       "featured": false,
       "href": "/contact",
       "hidden": true
-    },
-    {
-      "name": "Console",
-      "price": "Waitlist",
-      "period": "",
-      "desc": "Hosted dashboard for your self-hosted app",
-      "features": [
-        "Audit logs, billing analytics & team admin",
-        "Connects to your infra — your app stays yours",
-        "Early-access pricing for waitlist members"
-      ],
-      "cta": "Join the waitlist",
-      "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
-      "featured": false
     }
   ],
   "compareNote": "No lock-in. 30-day export escrow. Cancel anytime. The framework is MIT — free in production, forever. Operated compares to payroll, not to tools: one senior engineer is ~$18k/month, loaded.",

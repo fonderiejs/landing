@@ -49,20 +49,6 @@
       "featured": false,
       "href": "/contact",
       "hidden": true
-    },
-    {
-      "name": "Console",
-      "price": "候补名单",
-      "period": "",
-      "desc": "为你的自托管应用提供的托管仪表盘",
-      "features": [
-        "审计日志、账单分析与团队管理",
-        "连接你的基础设施 — 应用所有权仍归你",
-        "候补名单专享早鸟价格"
-      ],
-      "cta": "加入候补名单",
-      "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
-      "featured": false
     }
   ],
   "compareNote": "无锁定。30 天导出托管。随时可取消。框架采用 MIT 许可——生产环境永久免费。Operated 对标的是薪酬成本而非工具：一名资深工程师的全成本约为每月 1.8 万美元。",
