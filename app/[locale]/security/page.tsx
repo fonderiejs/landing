@@ -1,6 +1,4 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import { locales } from '@/lib/i18n';
 
 export function generateStaticParams() {
@@ -16,7 +14,6 @@ export default async function SecurityPage({ params }: { params: Promise<{ local
 
   return (
     <>
-      <Navbar />
       <main className="page__card--flush">
         <section className="subhero container">
           <h1 className="subhero__title">{t('title')}</h1>
@@ -68,7 +65,6 @@ export default async function SecurityPage({ params }: { params: Promise<{ local
           </p>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

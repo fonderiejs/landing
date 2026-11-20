@@ -1,18 +1,8 @@
-import { useTranslations } from 'next-intl';
 import { Link } from '@/lib/navigation';
 
 export default function NotFound() {
-  const t = useTranslations('common');
-
   return (
     <div className="page__card--flush">
-      <nav className="nav">
-        <div className="nav__inner container">
-          <Link href="/" className="nav__logo">
-            {t('siteTitle')}
-          </Link>
-        </div>
-      </nav>
       <main className="notfound">
         <p className="eyebrow">Error 404</p>
         <p className="notfound__num">

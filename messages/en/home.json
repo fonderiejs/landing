@@ -1,0 +1,215 @@
+{
+  "hero": {
+    "badge": "For founders",
+    "pill": "Building your product with AI",
+    "title1": "Ship your idea",
+    "title2": "this month.",
+    "title3": "Not next quarter.",
+    "lead": "Sign-up, payments and team accounts for your product, working in 48 hours.",
+    "sub": "We build them. You build what makes it yours, and you own all of it.",
+    "beside": "Two seats a week · Fixed price · Refunded in full if we miss the 48 hours"
+  },
+  "idea": {
+    "title": "Your idea",
+    "chip1": "One call",
+    "chip2": "Plain words",
+    "start": "Get me started",
+    "line1": "An app where freelancers send invoices",
+    "line2": "They pay me a monthly fee",
+    "line3": "Agencies add their whole team",
+    "line4": "I want it live this month",
+    "listening": "Listening",
+    "building": "Building your foundation",
+    "tabIdea": "Your idea",
+    "tabBuild": "What we build",
+    "doneHead": "Done in 48 hours",
+    "done1": "Your customers sign up, log in and reset their password",
+    "done1a": "Protected from day one",
+    "paidHead": "Getting paid",
+    "paid1": "Monthly subscriptions, paid by card",
+    "paid1a": "Through your own Stripe account",
+    "teamsHead": "Teams",
+    "teams1": "Customers invite teammates and decide who sees what",
+    "yoursHead": "Yours to build",
+    "yours1": "The invoices: the part that makes it yours",
+    "yours2": "You own all of it",
+    "yours3": "When it sticks, we can run it for you"
+  },
+  "proof": {
+    "title": "What every product needs, done in two days.",
+    "row1a": "From one 30-minute call, ",
+    "row1b": "working in 48 hours",
+    "row2a": "Refunded in full",
+    "row2b": " if we miss the 48 hours",
+    "row3a": "You own it all: ",
+    "row3b1": "the code",
+    "row3b2": "the data",
+    "row3b3": "the customers",
+    "row3sep": ", ",
+    "row3c": " from day one.",
+    "row4a": "Built by our founder, who spent ",
+    "row4b": "three years on identity and security at PayPal",
+    "row5a": "Write to ",
+    "row5b": ": a person answers within one business day"
+  },
+  "band": {
+    "headline": "For founders who ship",
+    "heading": "Works with the AI you already build with",
+    "any": "Any AI"
+  },
+  "steps": {
+    "title": "From idea to shipped product in three steps.",
+    "tab1": "You tell us",
+    "tab2": "We build it",
+    "tab3": "When it sticks",
+    "s1Title": "You tell us what you are building",
+    "s1Text": "One 30-minute call, in plain words: who your customers are and what they should be able to do. We agree a fixed scope on that call.",
+    "s2Title": "We build what every product needs",
+    "s2Text": "Logins, payments and team accounts, working in your product within 48 hours of our call, for a fixed price. Refunded in full if we miss. You build what makes it yours.",
+    "s3Title": "When it sticks, we keep it running",
+    "s3Text": "Once customers depend on it, we keep it running: updates, security and the 2am problems. You never log in.",
+    "winTitle": "Your product",
+    "winChip1": "This week",
+    "winChip2": "You and Fonderie",
+    "winPrompt": "What are you building?",
+    "heard": "What we heard",
+    "heardA": "You told us ",
+    "heardB": "who your customers are",
+    "heardC": " and ",
+    "heardD": "what they should be able to do",
+    "heardE": ". That is all we need to start.",
+    "heard1": "Freelancers send invoices and pay you monthly.",
+    "heard2": "Agencies add their whole team.",
+    "heard3": "Fixed scope agreed on the call. Working in 48 hours.",
+    "note1": "freelancers send invoices",
+    "note2": "they pay me monthly",
+    "note3": "agencies add their team",
+    "note4": "live this month",
+    "listening": "Listening",
+    "building": "Building your foundation",
+    "g1": "Sign-up and login",
+    "g1a": "Customers create an account and log in",
+    "g1b": "Password reset included",
+    "g1c": "Protected from day one",
+    "g2": "Payments",
+    "g2a": "Monthly subscriptions, paid by card",
+    "g2b": "Through your own Stripe account",
+    "g2c": "Ready for your first paying customer",
+    "g3": "Teams",
+    "g3a": "Customers invite teammates",
+    "g3b": "They decide who sees what",
+    "g3c": "A record of who changed what",
+    "g4": "Yours",
+    "g4a": "Working before we hand it over",
+    "g4b": "Yours to keep",
+    "g4c": "Ready for what makes it yours",
+    "run1": "Read your monthly report",
+    "run2": "Ask for a change in Slack",
+    "run3": "Leave whenever you want"
+  },
+  "cast": {
+    "eyebrow": "While you keep building",
+    "title1": "Same build,",
+    "title2": "every time.",
+    "lede": "Ask your AI assistant for sign-up, payments or team accounts and you get the Fonderie part: cast from one mould, owned by you, the same in every product.",
+    "p1": "Add sign-in with Google to my app.",
+    "c1": "Logins",
+    "p2": "Add a yearly plan and a checkout page.",
+    "c2": "Payments",
+    "p3": "Let customers invite their teammates.",
+    "c3": "Teams",
+    "p4": "Show me who changed what on this account.",
+    "c4": "Record"
+  },
+  "faq": {
+    "title": "Fair questions.",
+    "open": "“",
+    "close": "”",
+    "items": [
+      {
+        "q": "Why not just vibe-code it?",
+        "a": "Vibe-code what makes it yours.",
+        "d": "Anyone can buy steel and concrete and put up a building. The parts that hold it up are the ones you want done the same way every time: who logs in, who gets charged, who sees what."
+      },
+      {
+        "q": "I can't code. Is this for me?",
+        "a": "Yes, if you are building with AI or with a developer.",
+        "d": "We build the foundation and set it up so your AI keeps building on it. We do not build your whole product."
+      },
+      {
+        "q": "What do you need from me?",
+        "a": "A 30-minute call and accounts in your own name.",
+        "d": "Stripe for payments, and a place for your product and its data to live. Already building? We work inside your project. If not, we start a fresh one."
+      },
+      {
+        "q": "What if you miss the 48 hours?",
+        "a": "You get all of your money back.",
+        "d": "The clock is two working days from our call, for the scope we agreed on it."
+      },
+      {
+        "q": "Will I be locked in?",
+        "a": "No. It is yours from day one.",
+        "d": "Your code, your data, your Stripe account. Any developer you hire can take it over. If we run it later, cancel anytime and take it all with you."
+      },
+      {
+        "q": "What won't you do?",
+        "a": "Build the part that makes it yours.",
+        "d": "Your features, your design and a phone app are yours to build. It runs on your own accounts. You put it online with our written steps, or you have us run it."
+      }
+    ]
+  },
+  "parts": {
+    "eyebrow": "What you get",
+    "title": "The parts you can't afford to get wrong.",
+    "items": [
+      {
+        "t": "Sign-up and login",
+        "d": "Your customers create an account, log in and reset their password. Protected from day one."
+      },
+      {
+        "t": "Payments",
+        "d": "Monthly subscriptions paid by card, through your own Stripe account."
+      },
+      {
+        "t": "Team accounts",
+        "d": "Your customers invite their teammates and decide who can see what."
+      },
+      {
+        "t": "A record of who did what",
+        "d": "When a customer asks who changed something, you have the answer. It cannot be quietly edited."
+      },
+      {
+        "t": "A written handover",
+        "d": "What we built and why, in writing, so you and your AI can keep building on it."
+      }
+    ]
+  },
+  "run": {
+    "eyebrow": "When it sticks",
+    "title1": "We run it.",
+    "title2": "You never log in.",
+    "status": "Now opening to our first clients.",
+    "items": [
+      {
+        "t": "A product that is live",
+        "d": "Your customers can sign up, log in and pay, on the web and on their phones."
+      },
+      {
+        "t": "A report every month",
+        "d": "Everything we did and everything we prevented, in plain words."
+      },
+      {
+        "t": "A Slack channel",
+        "d": "Ask for a change or flag a problem. It answers like a senior engineer."
+      },
+      {
+        "t": "No lock-in",
+        "d": "Cancel anytime. You leave with everything: your code, your data, your settings."
+      }
+    ],
+    "hireTitle": "By then you would be hiring. Hire us instead.",
+    "hireText": "Once customers depend on your product, someone has to keep it running. A senior engineer takes months to hire. We start this month, for a fixed monthly price, and what you paid for the pilot counts toward the first quarter if you continue within 30 days.",
+    "strip": "Standard tools, so any developer you hire can take over",
+    "logo": "{name} logo"
+  }
+}

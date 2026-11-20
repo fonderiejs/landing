@@ -1,65 +1,43 @@
 {
+  "metaTitle": "Preise — Fonderie",
+  "metaDescription": "499 $ zum Start. 3.500 $ im Monat, wenn es ankommt. Du zahlst für ein Ergebnis, nicht für Stunden.",
   "eyebrow": "Preise",
-  "title": "Kostenlos bauen. Oder von uns betreiben lassen.",
-  "lede": "Jedes Modul und jeder Screen — Backend wie Frontend — sind MIT-lizenziert und self-hosted, in Produktion für immer kostenlos. Und wenn Sie lieber nichts davon selbst betreiben: Fonderie Operated baut und betreibt Ihr Produkt für Sie — kalkuliert anhand des Engineers, den es ersetzt, nicht anhand von Software.",
-  "tiers": [
-    {
-      "name": "Build",
-      "price": "Kostenlos",
-      "period": "",
-      "desc": "Der komplette Stack, bei Ihnen betrieben",
-      "features": [
-        "Alle Backend-Module + Frontend-Screens — MIT-lizenziert",
-        "React, Vue & React Native inklusive",
-        "Produktionseinsatz inklusive, für immer",
-        "Community-Support"
-      ],
-      "cta": "Loslegen — kostenlos",
-      "featured": false
-    },
-    {
-      "name": "Operated",
-      "price": "3.500 $",
-      "period": "/Monat",
-      "desc": "Wir bauen und betreiben Ihr Produkt. Sie loggen sich nie ein.",
-      "features": [
-        "Wir entwerfen, bauen, deployen und betreiben Ihren Stack von Anfang bis Ende",
-        "Upgrades, Sicherheitsstatus und Incident Response — für immer",
-        "Monatlicher Ops-Report: alles, was wir getan haben — alles, was wir verhindert haben",
-        "Ein Slack-Kanal, der sich wie ein Senior Engineer verhält",
-        "30-tägiges Export-Escrow — kein Lock-in",
-        "Oder 9.900 $/Quartal, im Voraus bezahlt · 7.500 $ Einrichtung"
-      ],
-      "cta": "Mit einem Pilotprojekt für 499 $ starten",
-      "href": "/contact",
-      "featured": true
-    },
-    {
-      "name": "Enterprise",
-      "price": "Ab 10K $",
-      "period": "/Monat",
-      "desc": "Für Organisationen mit Compliance-Anforderungen",
-      "featuresLead": "Alles aus Operated, plus",
-      "features": [
-        "Dedizierte Infrastruktur und On-Prem-Support",
-        "Compliance-Nachweise: Audit-Chain-Witness, SOC-2-Roadmap",
-        "Vertraglich zugesichertes SLA"
-      ],
-      "cta": "Vertrieb kontaktieren",
-      "featured": false,
-      "href": "/contact",
-      "hidden": true
-    }
-  ],
-  "compareNote": "Kein Lock-in. 30-tägiges Export-Escrow. Jederzeit kündbar. Das Framework ist MIT — in Produktion kostenlos, für immer. Operated misst sich an Gehaltskosten, nicht an Tools: Ein Senior Engineer kostet ~18k $ im Monat, inklusive Nebenkosten.",
-  "finalCta": {
-    "title": "Hören Sie auf, Logins zu debuggen. Bauen Sie Ihr Produkt.",
-    "lede": "Fonderies Playbook lebt in Ihrem Repo und gibt jeder KI den Kontext, um korrekt zu bauen. Sie konzentrieren sich darauf, was Ihr Produkt einzigartig macht — oder überspringen das Bauen komplett und lassen Fonderie Operated es für Sie betreiben.",
-    "getStarted": "Loslegen — kostenlos",
-    "star": "Auf GitHub mit Stern versehen",
-    "prompts": "Anweisungen für Claude Code und Cursor werden mit dem Repo ausgeliefert —",
-    "promptsLink": "auf GitHub holen →",
-    "tag": "Für Gründer, die ausliefern wollen, nicht Logins neu bauen",
-    "team": "Gebaut von einem Gründer, der jahrelang als Auftragnehmer bei PayPal an internen Audit-Tools und kundenseitigen Händler-Tools gearbeitet hat — und es leid war, zuzusehen, wie KI dieselben Bugs immer wieder einführt."
+  "title1": "499 $ zum Start.",
+  "title2": "3.500 $ im Monat, wenn es ankommt.",
+  "lede": "Du zahlst für ein Ergebnis, nicht für Stunden.",
+  "asOf": "Preise Stand November 2026.",
+  "pilot": {
+    "kicker": "Zum Start",
+    "name": "Der Pilot",
+    "price": "499 $",
+    "per": "einmalig",
+    "desc": "Was jedes Produkt braucht, innerhalb von 48 Stunden nach unserem Gespräch in deinem Produkt.",
+    "items": [
+      "Registrierung und Login",
+      "Zahlungen, über dein eigenes Stripe-Konto",
+      "Team-Konten",
+      "Ein Protokoll, wer was getan hat",
+      "Eine schriftliche Übergabe"
+    ],
+    "terms": [
+      "Volle Erstattung, wenn wir die 48 Stunden nicht einhalten: zwei Werktage ab unserem Gespräch, für den dort vereinbarten Umfang.",
+      "Wird auf dein erstes Quartal angerechnet, wenn du innerhalb von 30 Tagen weitermachst."
+    ]
+  },
+  "run": {
+    "kicker": "Wenn es ankommt",
+    "name": "Wir betreiben es",
+    "price": "3.500 $",
+    "per": "im Monat",
+    "fee": "Plus einmalig 7.500 $ für die Einrichtung. Oder 9.900 $ pro Quartal im Voraus.",
+    "desc": "Wir halten es am Laufen: Updates, Sicherheit und die Probleme um 2 Uhr nachts. Du loggst dich nie ein.",
+    "items": [
+      "Ein Produkt, das live ist, auf deinen eigenen Konten",
+      "Jeden Monat ein Bericht: was wir getan und was wir verhindert haben",
+      "Ein Slack-Kanal, der wie ein Senior-Entwickler antwortet",
+      "Keine Bindung: jederzeit kündigen und alles mitnehmen"
+    ],
+    "compare": "Ein Senior-Entwickler kostet etwa 18.000 $ im Monat, und ihn einzustellen dauert Monate.",
+    "status": "Jetzt offen für unsere ersten Kunden."
   }
 }

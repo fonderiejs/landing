@@ -3,7 +3,13 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales, type Locale } from '@/lib/i18n';
+import { LINKS } from '@/lib/site';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import SeatProvider from './components/SeatProvider';
 import '../globals.css';
+import '../founder.css';
+import '../founder-sections.css';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -18,6 +24,8 @@ export async function generateMetadata({
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'common' });
 
+  // The title is the motto. The description carries the promise, and no
+  // price: prices are on the pricing page only.
   const title = `${t('siteTitle')} — ${t('meta.titleSuffix')}`;
   const description = t('meta.description');
   const ogImage = `/images/og-image-${locale}.png`;
@@ -62,87 +70,6 @@ export async function generateMetadata({
   };
 }
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'Organization',
-      '@id': 'https://fonderiejs.com/#organization',
-      name: 'Fonderie',
-      url: 'https://fonderiejs.com/',
-      logo: 'https://fonderiejs.com/images/icon.svg',
-      sameAs: ['https://github.com/fonderiejs/fonderie', 'https://x.com/fonderiejs'],
-    },
-    {
-      '@type': 'WebSite',
-      '@id': 'https://fonderiejs.com/#website',
-      url: 'https://fonderiejs.com/',
-      name: 'Fonderie',
-      publisher: { '@id': 'https://fonderiejs.com/#organization' },
-    },
-    {
-      '@type': 'SoftwareApplication',
-      '@id': 'https://fonderiejs.com/#software',
-      name: 'Fonderie',
-      url: 'https://fonderiejs.com/',
-      applicationCategory: 'DeveloperApplication',
-      operatingSystem: 'Any',
-      description:
-        'Fonderie is the end-to-end standard for AI-built SaaS — backend modules (auth, billing, workspaces, permissions) and frontend screens for React, Vue, and React Native, composed by any AI assistant, self-hosted on your own database. Fonderie Operated builds and runs it for you.',
-      downloadUrl: 'https://github.com/fonderiejs/fonderie',
-      isAccessibleForFree: true,
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      publisher: { '@id': 'https://fonderiejs.com/#organization' },
-    },
-    {
-      '@type': 'FAQPage',
-      '@id': 'https://fonderiejs.com/#faq',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: 'Is Fonderie a service? Do you host my data?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'No. Fonderie is not a hosted service — your data stays on your own servers. Fonderie ships instructions that direct your AI assistant to build correctly, and everything runs in your process, against your database.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Can I swap Stripe for another payment provider?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Yes. Payments, subscriptions, and invoices work the same way no matter which provider is behind them. Start on Stripe, move to another processor later, and your product keeps working without a rewrite.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Is Fonderie only for new products?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'It works best when you\'re starting a new SaaS, where it saves you two to three months of work. You can also add a single piece — like billing or team management — to a product you\'ve already started.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'How much does Fonderie cost?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'The framework is free and MIT-licensed — free in production, forever, with no vendor lock-in. Compare that to hiring a developer for three months ($30,000–$60,000). If you would rather not build or run any of it yourself, Fonderie Operated delivers and operates your product for you from $3,500/month — priced against hiring an engineer (~$18k/month loaded), not against software.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Can Fonderie build and run my product for me?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Yes — that is Fonderie Operated. We architect, build, deploy, and operate your stack end to end: upgrades, security, and incident response included, with a monthly operations report. You never log in. Start with a $499 pilot, credited in full against your first quarter.',
-          },
-        },
-      ],
-    },
-  ],
-};
-
 export default async function LocaleLayout({
   children,
   params,
@@ -155,42 +82,59 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   const messages = await getMessages();
+  const home = await getTranslations({ locale, namespace: 'home' });
+  const questions = home.raw('faq.items') as { q: string; a: string; d: string }[];
 
-  // Tiers flagged `hidden` are kept in messages for later re-enabling but
-  // must not ship to the client — the provider serializes the whole bundle
-  // into the page payload.
-  const pricing = messages.pricing as { tiers?: { hidden?: boolean }[] } | undefined;
-  if (pricing?.tiers) {
-    pricing.tiers = pricing.tiers.filter((tier) => !tier.hidden);
-  }
+  // What search engines are told: who we are, and the page's own six
+  // questions in the reader's language. Nothing here that the page does
+  // not say.
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': 'https://fonderiejs.com/#organization',
+        name: 'Fonderie',
+        url: 'https://fonderiejs.com/',
+        logo: 'https://fonderiejs.com/images/icon.svg',
+        sameAs: [LINKS.github, LINKS.x],
+      },
+      {
+        '@type': 'WebSite',
+        '@id': 'https://fonderiejs.com/#website',
+        url: 'https://fonderiejs.com/',
+        name: 'Fonderie',
+        publisher: { '@id': 'https://fonderiejs.com/#organization' },
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://fonderiejs.com/#faq',
+        mainEntity: questions.map((item) => ({
+          '@type': 'Question',
+          name: item.q,
+          acceptedAnswer: { '@type': 'Answer', text: `${item.a} ${item.d}` },
+        })),
+      },
+    ],
+  };
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        {/* Manrope for headings, Inter for text, JetBrains Mono for labels:
+            the brand's set, asked for as variable fonts
+            because the page uses in-between weights (430 on buttons).
+            Instrument Serif is still used by the contact and security
+            pages. */}
         <link
           rel="preload"
           as="style"
-          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&family=JetBrains+Mono:wght@400..700&family=Manrope:wght@200..800&display=swap"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
-        {/* Separate request on purpose: `text=` is scoped to the whole
-            css2 call, so folding Noto Serif JP into the link above would
-            subset Inter/Instrument Serif/JetBrains Mono to these glyphs
-            too. Subsetting matters here - the full family is 248
-            @font-face blocks (~59KB gzipped CSS); restricted to the
-            characters .numeral can contain it is ~0.9KB CSS + 4.4KB
-            font. All four weights resolve to the same variable file, so
-            requesting the range costs nothing extra.
-            IMPORTANT: only these characters render in Noto Serif JP.
-            Putting any other glyph inside .numeral silently falls back
-            to var(--serif) - extend `text=` first. */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&text=0123456789.%2C-%E2%80%93&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@100..900&family=JetBrains+Mono:wght@400..700&family=Manrope:wght@200..800&display=swap"
           rel="stylesheet"
         />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -204,9 +148,17 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <div className="page">
-            <div className="page__card">{children}</div>
-          </div>
+          <SeatProvider>
+            <div className="page">
+              {/* outside the card: the card clips what it holds, and the
+                  bar has to stay fixed to the window */}
+              <Header />
+              <div className="page__card">
+                {children}
+                <Footer />
+              </div>
+            </div>
+          </SeatProvider>
         </NextIntlClientProvider>
       </body>
     </html>

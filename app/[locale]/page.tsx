@@ -1,41 +1,26 @@
 import { setRequestLocale } from 'next-intl/server';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import ScrollReveal from './components/ScrollReveal';
-import Hero from './sections/Hero';
-import Problem from './sections/Problem';
-import Control from './sections/Control';
-import Proof from './sections/Proof';
-import Packages from './sections/Packages';
-import Difference from './sections/Difference';
-import Pricing from './sections/Pricing';
-import FinalCta from './sections/FinalCta';
+import Top from './sections/Top';
+import Band from './sections/Band';
+import Steps from './sections/Steps';
+import Cast from './sections/Cast';
+import Questions from './sections/Questions';
+import Parts from './sections/Parts';
+import RunIt from './sections/RunIt';
 
+// The founder page. The bar, the footer and the seat form come from the
+// layout, so every page of the site carries the same ones.
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
   return (
-    <>
-      <ScrollReveal />
-      <Navbar />
-      <main>
-        <Hero />
-        {/* Every section from Problem through the first Pricing section
-            shares this single .container (max-width:1080px) - each
-            section's own border-bottom is drawn on an unconstrained
-            full-width element, so it only appears inset because it's a
-            child of this shared wrapper, not because it has its own. */}
-        <div className="container">
-          <Problem />
-          <Control />
-          <Proof />
-          <Packages />
-          <Difference />
-          <Pricing />
-        </div>
-        <FinalCta />
-      </main>
-      <Footer />
-    </>
+    <main>
+      <Top />
+      <Band />
+      <Steps />
+      <Cast />
+      <Questions />
+      <Parts />
+      <RunIt />
+    </main>
   );
 }

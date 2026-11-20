@@ -1,0 +1,1999 @@
+/* founder.css — the founder page (home and pricing), part 1: tokens, the
+   page frame, the bar, the seat form, the first two screens and the band.
+
+   Written for this project. Component classes follow BEM with an
+   "f-" prefix so they cannot collide with home.css. */
+
+:root {
+  --f-pad: clamp(10px, 3vw, 44px);
+  --f-radius: clamp(16px, 2vw, 24px);
+  --f-ground: #ffffff;
+  --f-paper: #f7f7f2;
+  --f-card: #ffffff;
+  --f-ink: #292929;
+  --f-ink-strong: #0e0f0c;
+  --f-soft: #72726e;
+  --f-faint: #acada8;
+  --f-muted: oklch(45% 0.015 40);
+  --f-line: oklch(90% 0.005 40);
+  --f-rule: #eaebe5;
+  /* the small windows of the pictures: their surface, edge and inks */
+  --f-window: #f7f7f2;
+  --f-window-line: rgba(71, 67, 42, 0.2);
+  --f-win-ink: #292929;
+  --f-win-soft: #72726e;
+  --f-win-faint: #acada8;
+  --f-win-raise: #ffffff;
+  --f-win-dot: #d5d5d2;
+  --f-win-mark: rgba(98, 90, 34, 0.06);
+  --f-accent: #c2410c;
+  --f-button: #f65501;
+  --f-dark: #292929;
+  --f-stage: oklch(66% 0.21 41);
+  --f-white: #fff;
+  --f-tile: #ff7237;
+  /* mixed by the browser from a named colour, so that the build leaves the mix alone */
+  --f-tint: color-mix(in srgb, var(--f-stage) 6%, #fff);
+  --f-display: Manrope, "Segoe UI", Helvetica, Arial, sans-serif;
+  --f-text: Inter, -apple-system, "Helvetica Neue", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+
+:root[data-theme="dark"] {
+  --f-ground: #292929;
+  --f-paper: #292929;
+  --f-card: #26221e;
+  --f-ink: #fcfcf8;
+  --f-ink-strong: #fcfcf8;
+  --f-soft: #9e9e99;
+  --f-window: #292929;
+  --f-window-line: rgba(255, 255, 255, 0.15);
+  --f-win-ink: #fcfcf8;
+  --f-win-soft: #9e9e99;
+  --f-win-faint: #818179;
+  --f-win-raise: #363635;
+  --f-win-dot: #4a4a48;
+  --f-win-mark: rgba(255, 255, 255, 0.1);
+  --f-faint: #8d877d;
+  --f-muted: #b3ab9c;
+  --f-line: #3b362f;
+  --f-rule: #3b362f;
+  --f-tint: color-mix(in srgb, #c2410c 22%, #26221e);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* The base sheet hides sideways overflow on html and on body. On body that
+   makes a scroll container, and position: sticky then has nothing to stick
+   to. html alone is enough: its overflow is the window's. */
+body {
+  overflow-x: visible;
+}
+
+/* The base sheet sizes boxes by their content. The founder page is measured
+   border to border, so its own blocks say so. The theme and language
+   controls in the footer keep the base sizing they were built with. */
+:is(.f-header, .f-seat, .f-top, .f-band, .f-steps-wrap, .f-cast, .f-faq, .f-parts, .f-run, .f-pricing, .f-footer__inner) {
+  box-sizing: border-box;
+}
+:is(.f-header, .f-seat, .f-top, .f-band, .f-steps-wrap, .f-cast, .f-faq, .f-parts, .f-run, .f-pricing) *,
+:is(.f-header, .f-seat, .f-top, .f-band, .f-steps-wrap, .f-cast, .f-faq, .f-parts, .f-run, .f-pricing) *::before,
+:is(.f-header, .f-seat, .f-top, .f-band, .f-steps-wrap, .f-cast, .f-faq, .f-parts, .f-run, .f-pricing) *::after,
+.f-footer__inner > *,
+.f-footer__cols *,
+.f-footer__meta * {
+  box-sizing: border-box;
+}
+
+/* Japanese: a line never starts with a long-vowel mark or a small kana,
+   and headings break between phrases where the browser knows how. */
+:lang(ja) :is(.f-top, .f-band, .f-steps-wrap, .f-cast, .f-faq, .f-parts, .f-run, .f-pricing, .f-seat, .f-footer) {
+  line-break: strict;
+}
+:lang(ja)
+  :is(
+    .f-hero__title,
+    .f-hero__copy,
+    .f-hero__beside,
+    .f-proof__title,
+    .f-band__headline,
+    .f-steps__title,
+    .f-step__title,
+    .f-cast__head,
+    .f-faq__title,
+    .f-display,
+    .f-pricing__title,
+    .f-faq__card blockquote
+  ) {
+  word-break: auto-phrase;
+}
+
+/* ---------------------------------------------------------------- frame */
+
+.page {
+  padding: var(--f-pad) 0;
+}
+.page__card {
+  position: relative;
+  isolation: isolate;
+  width: calc(100% - 2 * var(--f-pad));
+  max-width: 1440px;
+  /* once it has risen into place no transform is left on it */
+  animation-fill-mode: backwards;
+  background: var(--f-ground);
+  color: var(--f-ink);
+  border-radius: var(--f-radius);
+  font-family: var(--f-text);
+}
+/* the sky behind the first screen: the landing's own image and drift */
+.page__card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -4%;
+  width: 108%;
+  height: min(100svh, 920px);
+  background: url("/images/cloud-hero.webp") center top / 100% 100% no-repeat;
+  pointer-events: none;
+  transform-origin: 20% 10%;
+  animation: cloudGrow 18s ease-in-out infinite alternate;
+}
+:root[data-theme="dark"] .page__card::before {
+  opacity: 0.14;
+  filter: brightness(0.5) saturate(0.6);
+  -webkit-mask-image: linear-gradient(#000 55%, transparent);
+  mask-image: linear-gradient(#000 55%, transparent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .page__card::before {
+    animation: none;
+  }
+}
+
+.f-wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+@media (min-width: 768px) {
+  .f-wrap {
+    padding: 0 40px;
+  }
+}
+
+.f-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+main h2[id] {
+  scroll-margin-top: 120px;
+}
+
+.f-eyebrow {
+  margin: 0 0 20px;
+  font-family: var(--f-mono);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  color: var(--f-accent);
+}
+
+.f-display {
+  margin: 0;
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 0.97;
+  letter-spacing: -0.035em;
+  color: var(--f-ink);
+  text-wrap: balance;
+}
+/* French, Portuguese and German have longer words: on a phone their
+   large headings follow the width, so that no word is cut */
+@media (max-width: 767px) {
+  :lang(fr) .f-display,
+  :lang(pt) .f-display,
+  :lang(de) .f-display {
+    font-size: min(60px, 13.5vw);
+    overflow-wrap: break-word;
+  }
+}
+@media (min-width: 768px) {
+  .f-display {
+    font-size: 72px;
+  }
+}
+@media (min-width: 1024px) {
+  .f-display {
+    font-size: min(7.5vw, 120px);
+  }
+}
+.f-display > span {
+  display: block;
+}
+
+.f-reach {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.f-reach:hover {
+  color: var(--f-accent);
+}
+.f-reach:focus-visible {
+  outline: 2px solid var(--f-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.f-status {
+  margin: 16px 0 0;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: var(--f-muted);
+}
+
+/* ---------------------------------------------------------------- buttons */
+
+.f-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 48px;
+  padding: 9px 24px;
+  border-radius: 999px;
+  font-family: var(--f-text);
+  font-size: 16px;
+  font-weight: 430;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #fcfcf8;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.15s ease;
+}
+.f-btn:hover {
+  color: #fcfcf8;
+}
+.f-btn:focus-visible {
+  outline: 2px solid var(--f-accent);
+  outline-offset: 3px;
+}
+@media (min-width: 1024px) {
+  .f-btn {
+    min-height: 56px;
+  }
+}
+.f-btn--accent {
+  background: var(--f-button);
+}
+.f-btn--accent:hover {
+  background: color-mix(in oklab, var(--f-button) 90%, #000);
+}
+.f-btn--dark {
+  background: #292929;
+}
+.f-btn--dark:hover {
+  background: #3d3d3d;
+}
+:root[data-theme="dark"] .f-btn--dark {
+  background: #fcfcf8;
+  color: #292929;
+}
+
+/* ---------------------------------------------------------------- the bar */
+
+.f-header {
+  position: fixed;
+  z-index: 50;
+  top: calc(var(--f-pad) + 8px);
+  left: var(--f-pad);
+  right: var(--f-pad);
+  transition: top 0.25s ease;
+}
+.f-header[data-scrolled="true"] {
+  top: 8px;
+}
+/* on a phone the bar is a strip as wide as the page: once scrolled it sits
+   flush with the top, so the page cannot be seen passing above it */
+@media (max-width: 767px) {
+  .f-header[data-scrolled="true"] {
+    top: 0;
+  }
+}
+.f-header__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.f-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  height: 56px;
+  margin: 0 -16px;
+  padding: 0 16px;
+  border-bottom: 0.5px solid transparent;
+  transition:
+    background-color 0.3s ease-out,
+    border-color 0.3s ease-out,
+    box-shadow 0.3s ease-out;
+}
+.f-bar[data-scrolled="true"] {
+  background-color: #fff;
+  border-bottom-color: #d5d5d2;
+}
+@media (min-width: 768px) {
+  .f-header__inner {
+    padding: 0 40px;
+  }
+  @media (min-width: 1536px) {
+    .f-header__inner {
+      padding: 0;
+    }
+  }
+  .f-bar {
+    margin: 0 -8.5px;
+    padding: 0 8px;
+    border: 0.5px solid transparent;
+    border-radius: 9999px;
+  }
+  .f-bar[data-scrolled="true"] {
+    border-color: #d5d5d2;
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.04),
+      0 6px 20px rgba(0, 0, 0, 0.06);
+  }
+}
+.f-bar__logo {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  min-width: 0;
+  color: #292929;
+}
+.f-bar__logo:hover {
+  color: #292929;
+}
+.f-bar__mark {
+  display: block;
+  height: 28px;
+  width: auto;
+}
+@media (min-width: 768px) {
+  .f-bar__mark {
+    margin-left: 4px;
+  }
+}
+.f-bar__end {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: max-content;
+}
+.f-bar__cta {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-left: 4px;
+  padding: 0 12px;
+  border: 0.5px solid transparent;
+  border-radius: 999px;
+  background: rgba(98, 90, 34, 0.06);
+  color: #292929;
+  font-family: var(--f-text);
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+  transition:
+    background-color 0.3s ease-out,
+    color 0.3s ease-out;
+}
+.f-bar__cta:hover {
+  color: #292929;
+  background: rgba(98, 90, 34, 0.12);
+}
+.f-bar[data-scrolled="true"] .f-bar__cta {
+  background: var(--f-button);
+  color: #fff;
+}
+.f-bar__cta:focus-visible {
+  outline: 2px solid var(--f-accent);
+  outline-offset: 2px;
+}
+/* the narrowest phones: the button gives room back to the menu button */
+@media (max-width: 349px) {
+  .f-bar__cta {
+    margin-left: 0;
+    padding: 0 8px;
+    font-size: 13px;
+  }
+  /* languages whose words for the button are longer */
+  :lang(fr) .f-bar__cta,
+  :lang(pt) .f-bar__cta,
+  :lang(de) .f-bar__cta {
+    padding: 0 6px;
+    font-size: 12px;
+  }
+}
+
+/* menus on a wide window */
+.f-nav {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+@media (min-width: 1024px) {
+  .f-nav {
+    display: flex;
+  }
+}
+.f-nav__dd {
+  position: relative;
+  display: flex;
+}
+.f-nav__link {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  cursor: pointer;
+  font-family: var(--f-text);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #48474d;
+  text-decoration: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: color 0.15s ease;
+}
+.f-nav__link:hover,
+.f-nav__link[aria-current="page"],
+.f-nav__dd[data-open] > .f-nav__link {
+  color: #18171c;
+}
+.f-nav__link:focus-visible {
+  outline: 2px solid var(--f-accent);
+  outline-offset: 2px;
+}
+.f-nav__chev {
+  flex: none;
+  width: 16.5px;
+  height: 16.5px;
+  margin: 0 3px 0 10px;
+  color: #8d8d8d;
+  transition: transform 0.2s ease;
+}
+.f-nav__dd[data-open] .f-nav__chev {
+  transform: rotate(180deg);
+}
+.f-nav__menu {
+  position: absolute;
+  top: 100%;
+  left: -10px;
+  z-index: 60;
+  padding-top: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease,
+    visibility 0s linear 0.15s;
+}
+.f-nav__dd[data-open] .f-nav__menu {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition-delay: 0s;
+}
+@media (hover: hover) and (pointer: fine) {
+  .f-nav__dd:not([data-shut]):hover .f-nav__menu {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition-delay: 0s;
+  }
+  .f-nav__dd:not([data-shut]):hover > .f-nav__link {
+    color: #18171c;
+  }
+  .f-nav__dd:not([data-shut]):hover .f-nav__chev {
+    transform: rotate(180deg);
+  }
+}
+.f-nav__panel {
+  width: max-content;
+  min-width: 260px;
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid oklch(90% 0.005 40);
+  border-radius: 16px;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 16px 40px -12px rgba(0, 0, 0, 0.2);
+}
+.f-nav__entry {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+.f-nav__entry:hover {
+  background: var(--f-tint);
+}
+.f-nav__entry:focus-visible {
+  outline: 2px solid var(--f-accent);
+  outline-offset: -2px;
+}
+.f-nav__title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  color: oklch(20% 0.01 40);
+}
+.f-nav__note {
+  font-size: 13px;
+  line-height: 18px;
+  white-space: nowrap;
+  color: oklch(45% 0.015 40);
+}
+.f-nav__out {
+  flex: none;
+  color: #8d8d8d;
+}
+
+/* the menu button and its panel, below 1024px */
+.f-mnav {
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+}
+@media (max-width: 349px) {
+  .f-mnav {
+    margin-left: 2px;
+  }
+}
+@media (min-width: 1024px) {
+  .f-mnav {
+    display: none;
+  }
+}
+.f-mnav__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 -8px 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: #18171c;
+  cursor: pointer;
+}
+.f-mnav__toggle:focus-visible {
+  outline: 2px solid var(--f-accent);
+  outline-offset: 2px;
+}
+.f-mnav__icon--close,
+.f-mnav[data-open] .f-mnav__icon--open {
+  display: none;
+}
+.f-mnav[data-open] .f-mnav__icon--close {
+  display: block;
+}
+.f-mnav__panel {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 60;
+  max-height: calc(100vh - 96px);
+  max-height: calc(100dvh - 96px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 4px 20px 12px;
+  background: #fff;
+  border-top: 1px solid #ebe8e3;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 28px 40px -28px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .f-mnav__panel {
+    top: calc(100% + 8px);
+    border: 1px solid #ebe8e3;
+    border-radius: 20px;
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.04),
+      0 16px 40px -12px rgba(0, 0, 0, 0.2);
+  }
+}
+.f-mnav[data-open] .f-mnav__panel {
+  display: block;
+}
+.f-mnav__group {
+  padding: 14px 0 8px;
+  border-bottom: 1px solid #ebe8e3;
+}
+.f-mnav__head {
+  margin: 0 0 2px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b6862;
+}
+.f-mnav__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.f-mnav__link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  font-family: var(--f-text);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #18171c;
+  text-decoration: none;
+}
+.f-mnav__link:hover,
+.f-mnav__link[aria-current="page"] {
+  color: var(--f-accent);
+}
+.f-mnav__link:focus-visible {
+  outline: 2px solid var(--f-accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+.f-mnav__link--top {
+  border-bottom: 1px solid #ebe8e3;
+}
+.f-mnav__link--top:last-child {
+  border-bottom: 0;
+}
+html.f-mnav-open,
+html.f-seat-open {
+  overflow: hidden;
+}
+/* while the phone menu is open the bar is white, and the page behind dims */
+html.f-mnav-open .f-bar {
+  background-color: #fff;
+  border-bottom-color: #ebe8e3;
+}
+.f-header::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.45);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  touch-action: none;
+  transition:
+    opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    visibility 0s linear 0.35s;
+}
+@media (max-width: 1023px) {
+  html.f-mnav-open .f-header::before {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition:
+      opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+      visibility 0s;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .f-header::before,
+  html.f-mnav-open .f-header::before {
+    transition: none;
+  }
+}
+
+/* dark theme: light words over the dark page until the bar turns white */
+:root[data-theme="dark"] .f-bar:not([data-scrolled="true"]) .f-bar__logo,
+:root[data-theme="dark"] .f-bar:not([data-scrolled="true"]) .f-mnav__toggle {
+  color: #f5f2ea;
+}
+/* on the dark bar the mark gives up its own greys for the bar's ink */
+:root[data-theme="dark"]:not(.f-mnav-open) .f-bar:not([data-scrolled="true"]) .f-bar__mark :is(circle, text) {
+  fill: currentColor;
+}
+:root[data-theme="dark"]:not(.f-mnav-open) .f-bar:not([data-scrolled="true"]) .f-bar__mark circle {
+  fill-opacity: var(--f-dot, 1);
+}
+:root[data-theme="dark"] .f-bar:not([data-scrolled="true"]) .f-nav__link {
+  color: #cfc8bc;
+}
+:root[data-theme="dark"] .f-bar:not([data-scrolled="true"]) .f-nav__link:hover,
+:root[data-theme="dark"] .f-bar:not([data-scrolled="true"]) .f-nav__dd[data-open] > .f-nav__link {
+  color: #f5f2ea;
+}
+:root[data-theme="dark"] .f-bar:not([data-scrolled="true"]) .f-bar__cta {
+  background: rgba(255, 255, 255, 0.12);
+  color: #f5f2ea;
+}
+:root[data-theme="dark"].f-mnav-open .f-bar .f-bar__logo,
+:root[data-theme="dark"].f-mnav-open .f-bar .f-mnav__toggle {
+  color: #18171c;
+}
+:root[data-theme="dark"].f-mnav-open .f-bar .f-bar__cta {
+  background: rgba(98, 90, 34, 0.06);
+  color: #292929;
+}
+
+/* ---------------------------------------------------------------- the seat form */
+
+.f-seat {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: max(24px, 10vh) 16px 24px;
+  background: rgba(0, 0, 0, 0.45);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  overflow-y: auto;
+}
+.f-seat[hidden] {
+  display: none;
+}
+.f-seat__card {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  padding: 28px 28px 24px;
+  border-radius: 24px;
+  background: #fff;
+  color: #18171c;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.3);
+  font-family: var(--f-text);
+  text-align: left;
+}
+.f-seat__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: #f3f1ec;
+  color: #18171c;
+  cursor: pointer;
+}
+.f-seat__close:focus-visible,
+.f-seat__submit:focus-visible,
+.f-seat__ok:focus-visible {
+  outline: 2px solid #c2410c;
+  outline-offset: 2px;
+}
+.f-seat__seats {
+  margin: 0 44px 10px 0;
+  font-family: var(--f-mono);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #c2410c;
+}
+.f-seat__title {
+  margin: 0 44px 8px 0;
+  font-family: var(--f-text);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #18171c;
+  outline: 0;
+}
+.f-seat__lede {
+  margin: 0 0 18px;
+  font-size: 16px;
+  line-height: 1.45;
+  color: #48474d;
+}
+.f-seat__form {
+  margin: 0;
+}
+.f-seat__label {
+  display: block;
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #48474d;
+}
+.f-seat__row {
+  display: flex;
+  gap: 8px;
+}
+/* 16px in the field: a smaller size makes phones zoom the page on focus */
+.f-seat__input {
+  flex: 1;
+  min-width: 0;
+  height: 48px;
+  margin: 0;
+  padding: 0 14px;
+  border: 1px solid #d8d4cc;
+  border-radius: 12px;
+  background: #fff;
+  color: #18171c;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.f-seat__input::placeholder {
+  color: #8d8d8d;
+}
+.f-seat__input:focus {
+  outline: 2px solid #c2410c;
+  outline-offset: 1px;
+  border-color: transparent;
+}
+.f-seat__input[aria-invalid="true"] {
+  border-color: #b42318;
+}
+.f-seat__submit {
+  flex: none;
+  height: 48px;
+  margin: 0;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--f-button);
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.f-seat__submit[disabled] {
+  opacity: 0.6;
+  cursor: default;
+}
+.f-seat__error {
+  min-height: 18px;
+  margin: 6px 0 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: #b42318;
+}
+.f-seat__next {
+  margin: 10px 0 0;
+  padding: 16px 0 0;
+  border-top: 1px solid #ebe8e3;
+  list-style: none;
+  counter-reset: f-seat;
+}
+.f-seat__next li {
+  position: relative;
+  margin: 0 0 8px;
+  padding: 0 0 0 30px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #48474d;
+  counter-increment: f-seat;
+}
+.f-seat__next li::before {
+  content: counter(f-seat);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: #fff1e8;
+  color: #c2410c;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+.f-seat__small {
+  margin: 12px 0 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6b6862;
+}
+.f-seat__done .f-seat__lede {
+  margin-bottom: 0;
+  overflow-wrap: anywhere;
+}
+.f-seat__preview {
+  margin: 14px 0 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fff7e6;
+  color: #7a4b00;
+  font-size: 13px;
+  line-height: 19px;
+}
+.f-seat__ok {
+  height: 44px;
+  margin: 18px 0 0;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 999px;
+  background: #18171c;
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  cursor: pointer;
+}
+@media (max-width: 479px) {
+  .f-seat {
+    padding-top: max(16px, 6vh);
+  }
+  .f-seat__card {
+    padding: 24px 20px 20px;
+    border-radius: 20px;
+  }
+  .f-seat__row {
+    flex-direction: column;
+  }
+  /* stacked: the field must not take its height from the column */
+  .f-seat__input {
+    flex: none;
+    width: 100%;
+  }
+  .f-seat__submit {
+    width: 100%;
+  }
+}
+
+/* ---------------------------------------------------------------- small moving parts */
+
+.f-caret {
+  display: inline-block;
+  width: 1px;
+  height: 1em;
+  margin-left: 1px;
+  vertical-align: middle;
+  background: #f55500;
+  animation: f-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes f-pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+.f-spinner {
+  display: block;
+  flex: none;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #f55500;
+  border-top-color: transparent;
+  border-radius: 999px;
+  animation: f-spin 1s linear infinite;
+}
+@keyframes f-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* the bars that move while we listen: each is two halves that part and meet (Bars.tsx) */
+.f-bars {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 4px;
+}
+.f-bars > span {
+  position: relative;
+  width: 4px;
+}
+.f-bars i {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-bars i::before {
+  content: "";
+  width: 4px;
+  height: var(--f-bar);
+  border-radius: 999px;
+  background: var(--f-win-ink);
+  animation: f-bar-up var(--f-time) ease-in-out var(--f-wait) infinite alternate;
+}
+.f-bars i + i::before {
+  animation-name: f-bar-down;
+}
+@keyframes f-bar-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-1 * var(--f-reach)));
+  }
+}
+@keyframes f-bar-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(var(--f-reach));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .f-caret,
+  .f-spinner,
+  .f-bars i::before {
+    animation: none;
+  }
+}
+
+/* ---------------------------------------------------------------- first two screens */
+
+/* How the block is built.
+   Phone and tablet: the hero, then the card. The stage is two screens tall,
+   so the card stays under the bar, growing smaller, while the rest of that
+   height passes; the five commitments follow.
+   Wide window: the hero and the commitments are one screen each and the card
+   lies over both in a layer that stays put for the first screen. The card
+   and the editor behind it follow the scroll position: an animation tied to
+   scrolling where the browser has one; where it has none the card keeps its
+   own size and the editor fades once the page has left the top. */
+
+.f-top {
+  position: relative;
+}
+.f-top__stage {
+  position: relative;
+  min-height: 200vh;
+}
+.f-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 96px 16px 0;
+  color: var(--f-ink-strong);
+}
+.f-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+  padding: 6px 12px 6px 6px;
+  border-radius: 999px;
+  background: #f7f7f2;
+  color: #292929;
+  text-decoration: none;
+}
+.f-pill:hover {
+  color: #292929;
+}
+.f-pill:focus-visible {
+  outline: 2px solid var(--f-accent);
+  outline-offset: 2px;
+}
+.f-pill__badge {
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: #ff9a6f;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.f-pill__text {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+}
+.f-pill__arrow {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  color: #72726e;
+  transition: transform 0.2s ease;
+}
+.f-pill:hover .f-pill__arrow {
+  transform: translateX(2px);
+}
+.f-hero__title {
+  margin: 0;
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(38px, 5vw, 84px);
+  line-height: 0.93;
+  letter-spacing: -0.035em;
+  color: var(--f-ink);
+}
+.f-hero__title > span {
+  display: block;
+}
+/* Japanese phrases do not break in the middle: on a narrow phone the
+   headline follows the width instead */
+@media (max-width: 767px) {
+  :lang(ja) .f-hero__title {
+    font-size: min(38px, 9.2vw);
+  }
+}
+.f-hero__copy {
+  font-size: 16px;
+  line-height: 20px;
+  text-wrap: balance;
+}
+.f-hero__copy p {
+  margin: 0;
+}
+.f-hero__copy .f-hero__lead {
+  margin-bottom: 0.4em;
+  font-weight: 600;
+}
+.f-hero__act {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.f-hero__beside {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+  color: var(--f-soft);
+}
+.f-hero__beside svg {
+  flex: none;
+}
+.f-hero__beside span {
+  margin-top: 4px;
+}
+
+/* the layer that carries the card. What reaches past the layer is cut off:
+   the card's shadow below it on a phone, the editor on a short window. */
+.f-top__layer {
+  position: sticky;
+  top: 96px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 48px;
+  pointer-events: none;
+}
+.f-top__clip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  margin-top: -40px;
+  padding: 40px 0 32px;
+  overflow: hidden;
+}
+.f-top__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.f-top__col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.f-top__card {
+  position: relative;
+  z-index: 0;
+  isolation: isolate;
+  display: grid;
+  width: 100%;
+  max-width: 384px;
+  aspect-ratio: 4 / 6;
+  max-height: 75vh;
+  transform-origin: center;
+}
+.f-top__card > * {
+  grid-area: 1 / 1;
+}
+.f-editor {
+  display: none;
+}
+/* the card settles as the first screen is scrolled */
+@supports (animation-timeline: scroll()) {
+  .f-top__card {
+    animation: f-card linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100vh;
+  }
+  @keyframes f-card {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.8);
+    }
+  }
+}
+
+/* the card: drawn at 384 by 576 and scaled by the layer */
+.f-idea {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 0.5px solid var(--f-idea-edge, #e3e3e3);
+  border-radius: 12px;
+  background: var(--f-window);
+  color: var(--f-win-ink);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  font-family: var(--f-text);
+  -webkit-user-select: none;
+  user-select: none;
+}
+.f-idea__bar {
+  display: flex;
+  flex: none;
+  align-items: center;
+  background: var(--f-window);
+  gap: 6.5px;
+  height: 44px;
+  padding-left: 15.5px;
+}
+.f-idea__bar i {
+  width: 10px;
+  height: 10px;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.f-idea__bar i:nth-child(1) {
+  background: #ff736a;
+}
+.f-idea__bar i:nth-child(2) {
+  background: #febc2e;
+}
+.f-idea__bar i:nth-child(3) {
+  background: #19c332;
+}
+.f-idea__main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  padding: 0 8px 64px;
+}
+.f-idea__title {
+  padding: 12px 16px 0;
+  font-family: var(--f-display);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.035em;
+}
+.f-idea__meta {
+  display: flex;
+  margin: 8px 12px 0;
+  padding: 4px 0;
+}
+.f-idea__chips {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 24px;
+  padding: 0 8px;
+  border: 0.5px solid var(--f-window-line);
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 430;
+  line-height: 15px;
+  color: var(--f-win-soft);
+}
+.f-idea__body {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  margin-top: 16px;
+}
+/* the notes and the list are two sheets of one pile, each cut to the body */
+.f-idea__pile,
+.f-notes__pile {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template: minmax(0, 1fr) / minmax(0, 1fr);
+  min-height: 0;
+}
+.f-idea__sheet,
+.f-notes__layer {
+  grid-area: 1 / 1;
+  min-height: 0;
+  padding: 0 16px;
+  overflow: hidden;
+}
+.f-idea__notes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 24px;
+  font-size: 10px;
+  line-height: 16.25px;
+}
+.f-idea__notes p {
+  min-height: 1.1em;
+  margin: 0;
+}
+/* what gets built: written over the notes from the top down, in a frame
+   that scrolls if the list is longer than the card (IdeaDemo.tsx, motion.ts) */
+.f-idea__pad {
+  position: relative;
+  padding-bottom: 24px;
+}
+.f-idea__list,
+.f-write {
+  display: flex;
+  flex-direction: column;
+  background: var(--f-window);
+}
+.f-idea__list {
+  font-size: 10px;
+  line-height: 15px;
+  clip-path: inset(0 0 100% 0);
+}
+.f-write__row {
+  --c: var(--f-win-soft);
+  margin: 0;
+  color: transparent;
+  background-image: linear-gradient(90deg, var(--c) 0, var(--c) 33.33%, #febe29 40%, #ff91e0 45%, #cebef8 50%, #d2e4f8 55%, #ff9a6f 60%, transparent 66.67%, transparent);
+  background-size: 300% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  will-change: background-position;
+}
+.f-write__row--head {
+  font-weight: 600;
+}
+.f-write__row--strong {
+  --c: var(--f-win-ink);
+}
+.f-idea__list .f-write__row--head:not(:first-child) {
+  margin-top: 15px;
+}
+.f-idea__list .f-write__row--item {
+  padding-left: 12px;
+}
+.f-idea__list .f-write__row--sub {
+  padding-left: 28px;
+}
+/* a row lights up as the writing line reaches it */
+.f-write__row[data-on] {
+  animation: f-write 0.4s ease-in-out forwards;
+}
+@keyframes f-write {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .f-write__row[data-on] {
+    animation: none;
+    background-position: 0 0;
+  }
+}
+/* the line that does the writing: it travels down with the list, lands
+   where the tabs are and gives way to them */
+.f-idea__status,
+.f-status-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 0.5px solid var(--f-window-line);
+  border-radius: 999px;
+  background: var(--f-win-raise);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  color: var(--f-win-soft);
+}
+.f-idea__statusbox,
+.f-notes__statusbox {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  right: 8px;
+  pointer-events: none;
+}
+.f-idea__status {
+  font-size: 10px;
+  line-height: 15px;
+  opacity: 0;
+  visibility: hidden;
+}
+/* at the foot: "Listening", then "Get me started", then the two tabs, one at a time */
+.f-idea__foot {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 16px;
+  display: grid;
+  place-items: center;
+}
+.f-idea__foot > span {
+  grid-area: 1 / 1;
+  opacity: 0;
+  visibility: hidden;
+}
+.f-idea__listen,
+.f-idea__start {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 999px;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+}
+.f-idea__listen {
+  gap: 12px;
+  border: 0.5px solid var(--f-window-line);
+  background: var(--f-win-raise);
+  color: var(--f-win-soft);
+}
+.f-idea__start {
+  gap: 6px;
+  background: var(--f-win-ink);
+  font-weight: 500;
+  color: #fff;
+}
+/* on the dark theme the button is light: its words take the window's colour to stay readable */
+:root[data-theme="dark"] .f-idea__start {
+  color: var(--f-window);
+}
+.f-idea__tabs {
+  position: relative;
+  display: flex;
+  width: 192px;
+  padding: 2px;
+  border: 0.5px solid var(--f-window-line);
+  border-radius: 999px;
+  background: var(--f-win-raise);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+  color: var(--f-win-ink);
+  text-align: center;
+}
+.f-idea__tabs > span {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  padding: 4px 0;
+}
+.f-idea__mark {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  width: calc(50% - 2px);
+  border-radius: 999px;
+  background: var(--f-win-mark);
+}
+
+/* the five commitments, ruled like a notepad */
+/* below 1024 the block is as wide as its widest line asks for, the title counting for no more than
+   its own limit, and never wider than 672px or than the page: no width is written down for it */
+.f-proof {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  width: fit-content;
+  max-width: 672px;
+  margin: 0 auto;
+  color: var(--f-ink-strong);
+}
+.f-proof__edge {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: repeating-linear-gradient(to bottom, #dedede 0, #dedede 8px, transparent 8px, transparent 22px);
+  pointer-events: none;
+}
+.f-proof__edge--left {
+  left: 0;
+}
+.f-proof__edge--right {
+  right: 0;
+}
+.f-proof__title {
+  grid-area: 1 / 1;
+  max-width: 24ch;
+  margin: 0 0 64px;
+  padding-left: 16px;
+  font-family: var(--f-display);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+/* lines every 80px, faint in the middle where the card comes to rest */
+.f-proof__lines {
+  grid-area: 2 / 1;
+  height: 560px;
+  background: repeating-linear-gradient(to bottom, #dedede 0, #dedede 1px, transparent 1px, transparent 80px);
+  -webkit-mask-image: linear-gradient(to right, #000 0%, transparent 32%, transparent 68%, #000 100%);
+  mask-image: linear-gradient(to right, #000 0%, transparent 32%, transparent 68%, #000 100%);
+  pointer-events: none;
+}
+.f-proof__rows {
+  grid-area: 2 / 1;
+  position: relative;
+  align-self: start;
+  margin: 0;
+  padding: 0 32px 0 16px;
+  list-style: none;
+}
+.f-proof__rows li {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  font-size: 16px;
+  line-height: 1.35;
+  color: var(--f-ink);
+}
+.f-proof__rows {
+  text-wrap: pretty;
+}
+.f-proof__rows strong {
+  font-weight: 600;
+}
+:root[data-theme="dark"] .f-proof__edge {
+  background: repeating-linear-gradient(to bottom, #3b362f 0, #3b362f 8px, transparent 8px, transparent 22px);
+}
+:root[data-theme="dark"] .f-proof__lines {
+  background: repeating-linear-gradient(to bottom, #3b362f 0, #3b362f 1px, transparent 1px, transparent 80px);
+}
+
+@media (min-width: 768px) {
+  .f-hero {
+    padding: 120px 40px 0;
+  }
+  .f-idea {
+    --f-idea-edge: var(--f-window-line);
+  }
+  .f-top__grid {
+    padding: 0 40px;
+  }
+  .f-proof__title {
+    padding-left: 40px;
+  }
+  .f-proof__rows {
+    padding: 0 0 0 40px;
+  }
+  .f-proof__rows li {
+    font-size: 14px;
+    letter-spacing: 0.01em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .f-top {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto 100vh;
+  }
+  /* the hero and the layer become two items of the same pile */
+  .f-top__stage {
+    display: contents;
+  }
+  .f-hero {
+    grid-area: 1 / 1;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .f-hero__copy {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .f-hero__copy p,
+  .f-hero__beside {
+    max-width: min(36vw, 560px);
+  }
+  .f-hero__title,
+  .f-pill {
+    max-width: 60%;
+  }
+  .f-top__layer {
+    grid-area: 1 / 1 / 3 / 2;
+    align-self: start;
+    top: 48px;
+    height: 100vh;
+    margin: 0;
+  }
+  .f-top__clip {
+    margin-top: 0;
+    padding: 40px 0 0;
+  }
+  .f-top__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .f-top__col {
+    grid-column: 2;
+    justify-content: safe center;
+  }
+  /* large beside the hero, its own size beside the commitments. On a short
+     window it is set lower, so that it does not rise under the bar. */
+  .f-top__card {
+    top: max(0px, calc(48px + min(27vw, 345.6px, 45vh) - 44vh));
+    width: 30vw;
+  }
+  @supports (animation-timeline: scroll()) {
+    .f-top__card {
+      animation-name: f-card-wide;
+    }
+    @keyframes f-card-wide {
+      from {
+        transform: translateY(-6vh) scale(1.2);
+      }
+      to {
+        transform: translateY(0) scale(1);
+      }
+    }
+  }
+  /* behind the card: an editor showing a basic Fonderie app. Our own
+     picture (public/images/hero-editor.svg), drawn from the product's
+     Quickstart. The complexity is ours; the plain words are yours. It
+     peeks out to the left and below, then tucks behind the card and fades. */
+  .f-editor {
+    display: block;
+    position: absolute;
+    left: -19.7%;
+    top: 19%;
+    width: 95%;
+    height: 92%;
+    border-radius: 8px;
+    background: #1e1e1e url("/images/hero-editor.svg") left top / auto 100% no-repeat;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+    overflow: hidden;
+  }
+  /* it tucks behind the card, slowly then fast, between 12% and 62% of the
+     first screen, and fades between 60% and 80% */
+  @supports (animation-timeline: scroll()) {
+    .f-editor {
+      animation-name: f-editor, f-editor-fade;
+      animation-timing-function: cubic-bezier(0.7, 0, 0.84, 0), linear;
+      animation-fill-mode: both, both;
+      animation-timeline: scroll(root), scroll(root);
+      animation-range:
+        12vh 62vh,
+        60vh 80vh;
+    }
+    @keyframes f-editor {
+      from {
+        transform: translate(0, 0) scale(1);
+      }
+      to {
+        transform: translate(17%, -3%) scale(0.72);
+      }
+    }
+    @keyframes f-editor-fade {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+  }
+  @supports not (animation-timeline: scroll()) {
+    .f-editor {
+      transition: opacity 0.5s;
+    }
+    .f-top[data-scrolled] .f-editor {
+      opacity: 0;
+    }
+  }
+  .f-proof {
+    grid-area: 2 / 1;
+    grid-template-rows: 1fr auto 96px 400px 1fr;
+    width: 100%;
+    max-width: 1280px;
+    height: 100vh;
+  }
+  .f-proof__title {
+    grid-area: 2 / 1;
+    width: 50%;
+    margin: 0;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .f-proof__lines {
+    grid-area: 4 / 1 / 6 / 2;
+    height: auto;
+  }
+  .f-proof__rows {
+    grid-area: 4 / 1;
+    width: 50%;
+  }
+  .f-proof__edge {
+    display: none;
+  }
+}
+@media (min-width: 1280px) {
+  .f-proof__edge {
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  @supports (animation-timeline: scroll()) {
+    .f-top__card {
+      animation-name: f-card-wider;
+    }
+    @keyframes f-card-wider {
+      from {
+        transform: translate(25%, -6vh) scale(1.2);
+      }
+      to {
+        transform: translate(0) scale(1);
+      }
+    }
+  }
+  .f-editor {
+    left: -28%;
+    width: 103%;
+  }
+}
+@media (min-width: 1536px) {
+  .f-hero {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .f-top__grid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 1920px) {
+  .f-hero__copy {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .f-proof__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+/* ---------------------------------------------------------------- the band */
+
+.f-band {
+  position: relative;
+  /* cut at the sides only, and without making the band a scroller of its own:
+     the headline's slide is measured against the page */
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+.f-band__top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 16px;
+}
+.f-band__mark {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  pointer-events: none;
+}
+.f-band__headline {
+  margin: 0;
+  font-family: var(--f-display);
+  font-size: clamp(40px, 8vw, 112px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  text-align: center;
+  text-wrap: balance;
+  color: var(--f-ink);
+}
+/* the line slides down under the dark band while the middle of its block
+   travels from the middle of the window to the top */
+@supports (animation-timeline: view()) {
+  .f-band {
+    timeline-scope: --f-band;
+  }
+  .f-band__mark {
+    view-timeline-name: --f-band;
+  }
+  .f-band__headline {
+    animation: f-band-slide linear both;
+    animation-timeline: --f-band;
+    animation-range: cover 50%;
+  }
+  @keyframes f-band-slide {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(130%);
+    }
+  }
+}
+.f-band__dark {
+  position: relative;
+  z-index: 1;
+  padding: 16px 0;
+  background: #292929;
+}
+.f-band__heading {
+  margin: 0;
+  padding-top: 48px;
+  font-family: var(--f-display);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  text-align: center;
+  text-wrap: pretty;
+  color: #fcfcf8;
+}
+.f-band__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.f-band__cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96px;
+  padding: 0 12px;
+}
+.f-band__item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--f-display);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+  color: #fcfcf8;
+}
+/* the width limit is what lets Safari count the mark as squeezable when a name is wider than its cell */
+.f-band__logo {
+  flex: none;
+  width: 24px;
+  max-width: 100%;
+  height: 24px;
+}
+@media (min-width: 768px) {
+  .f-band__top {
+    padding: 24px 40px;
+  }
+  .f-band__grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .f-band__cell {
+    height: 200px;
+  }
+  .f-band__item {
+    flex-direction: row;
+    gap: 10px;
+    font-size: clamp(15px, 1.3vw, 19px);
+  }
+}
+:root[data-theme="dark"] .f-band__dark {
+  background: #212121;
+}

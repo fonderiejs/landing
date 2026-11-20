@@ -1,0 +1,215 @@
+{
+  "hero": {
+    "badge": "Para fundadores",
+    "pill": "Construindo com IA",
+    "title1": "Lance sua ideia",
+    "title2": "este mês.",
+    "title3": "Não no próximo trimestre.",
+    "lead": "Cadastro, pagamentos e contas de equipe para o seu produto, funcionando em 48 horas.",
+    "sub": "Nós construímos isso. Você constrói o que o torna seu, e tudo é seu.",
+    "beside": "Duas vagas por semana · Preço fixo · Reembolso total se passarmos das 48 horas"
+  },
+  "idea": {
+    "title": "Sua ideia",
+    "chip1": "Uma chamada",
+    "chip2": "Palavras simples",
+    "start": "Vamos começar",
+    "line1": "Um app em que freelancers enviam faturas",
+    "line2": "Eles me pagam uma mensalidade",
+    "line3": "Agências adicionam o time inteiro",
+    "line4": "Quero no ar este mês",
+    "listening": "Ouvindo",
+    "building": "Construindo sua base",
+    "tabIdea": "Sua ideia",
+    "tabBuild": "O que construímos",
+    "doneHead": "Pronto em 48 horas",
+    "done1": "Seus clientes se cadastram, fazem login e redefinem a senha",
+    "done1a": "Protegido desde o primeiro dia",
+    "paidHead": "Recebendo",
+    "paid1": "Assinaturas mensais, pagas no cartão",
+    "paid1a": "Pela sua própria conta Stripe",
+    "teamsHead": "Equipes",
+    "teams1": "Clientes convidam colegas e decidem quem vê o quê",
+    "yoursHead": "Seu para construir",
+    "yours1": "As faturas: a parte que o torna seu",
+    "yours2": "Tudo é seu",
+    "yours3": "Quando pegar, podemos operar para você"
+  },
+  "proof": {
+    "title": "O que todo produto precisa, pronto em dois dias.",
+    "row1a": "A partir de uma chamada de 30 minutos, ",
+    "row1b": "funcionando em 48 horas",
+    "row2a": "Reembolso total",
+    "row2b": " se passarmos das 48 horas",
+    "row3a": "Tudo é seu: ",
+    "row3b1": "o código",
+    "row3b2": "os dados",
+    "row3b3": "os clientes",
+    "row3sep": ", ",
+    "row3c": " desde o primeiro dia.",
+    "row4a": "Construído pelo nosso fundador, que passou ",
+    "row4b": "três anos em identidade e segurança no PayPal",
+    "row5a": "Escreva para ",
+    "row5b": ": uma pessoa responde em até um dia útil"
+  },
+  "band": {
+    "headline": "Para fundadores que entregam",
+    "heading": "Funciona com a IA que você já usa para construir",
+    "any": "Qualquer IA"
+  },
+  "steps": {
+    "title": "Da ideia ao produto no ar em três passos.",
+    "tab1": "Você conta",
+    "tab2": "Nós construímos",
+    "tab3": "Quando pegar",
+    "s1Title": "Você nos conta o que está construindo",
+    "s1Text": "Uma chamada de 30 minutos, em palavras simples: quem são seus clientes e o que eles devem conseguir fazer. Fechamos um escopo fixo nessa chamada.",
+    "s2Title": "Construímos o que todo produto precisa",
+    "s2Text": "Logins, pagamentos e contas de equipe, funcionando no seu produto em até 48 horas após nossa chamada, por um preço fixo. Reembolso total se não cumprirmos. Você constrói o que o torna seu.",
+    "s3Title": "Quando pegar, mantemos no ar",
+    "s3Text": "Quando clientes passarem a depender dele, mantemos no ar: atualizações, segurança e os problemas das 2 da manhã. Você nunca faz login.",
+    "winTitle": "Seu produto",
+    "winChip1": "Esta semana",
+    "winChip2": "Você e a Fonderie",
+    "winPrompt": "O que você está construindo?",
+    "heard": "O que ouvimos",
+    "heardA": "Você nos contou ",
+    "heardB": "quem são seus clientes",
+    "heardC": " e ",
+    "heardD": "o que eles devem conseguir fazer",
+    "heardE": ". É tudo de que precisamos para começar.",
+    "heard1": "Freelancers enviam faturas e pagam você todo mês.",
+    "heard2": "Agências adicionam o time inteiro.",
+    "heard3": "Escopo fechado na chamada. Funcionando em 48 horas.",
+    "note1": "freelancers enviam faturas",
+    "note2": "eles me pagam todo mês",
+    "note3": "agências adicionam o time",
+    "note4": "no ar este mês",
+    "listening": "Ouvindo",
+    "building": "Construindo sua base",
+    "g1": "Cadastro e login",
+    "g1a": "Clientes criam uma conta e fazem login",
+    "g1b": "Redefinição de senha incluída",
+    "g1c": "Protegido desde o primeiro dia",
+    "g2": "Pagamentos",
+    "g2a": "Assinaturas mensais, pagas no cartão",
+    "g2b": "Pela sua própria conta Stripe",
+    "g2c": "Pronto para seu primeiro cliente pagante",
+    "g3": "Equipes",
+    "g3a": "Clientes convidam colegas",
+    "g3b": "Eles decidem quem vê o quê",
+    "g3c": "Um registro de quem mudou o quê",
+    "g4": "Seu",
+    "g4a": "Funcionando antes da entrega",
+    "g4b": "Seu para ficar",
+    "g4c": "Pronto para o que o torna seu",
+    "run1": "Ler seu relatório mensal",
+    "run2": "Pedir uma mudança no Slack",
+    "run3": "Sair quando quiser"
+  },
+  "cast": {
+    "eyebrow": "Enquanto você continua construindo",
+    "title1": "Mesma construção,",
+    "title2": "toda vez.",
+    "lede": "Peça ao seu assistente de IA cadastro, pagamentos ou contas de equipe e você recebe a peça da Fonderie: fundida em um só molde, sua, igual em todo produto.",
+    "p1": "Adicione login com Google ao meu app.",
+    "c1": "Logins",
+    "p2": "Adicione um plano anual e uma página de pagamento.",
+    "c2": "Pagamentos",
+    "p3": "Deixe os clientes convidarem os colegas.",
+    "c3": "Equipes",
+    "p4": "Mostre quem mudou o quê nesta conta.",
+    "c4": "Registro"
+  },
+  "faq": {
+    "title": "Perguntas justas.",
+    "open": "“",
+    "close": "”",
+    "items": [
+      {
+        "q": "Por que não fazer tudo no vibe coding?",
+        "a": "Faça no vibe coding o que o torna seu.",
+        "d": "Qualquer um pode comprar aço e concreto e levantar um prédio. As peças que o sustentam são as que você quer feitas do mesmo jeito toda vez: quem faz login, quem é cobrado, quem vê o quê."
+      },
+      {
+        "q": "Não sei programar. Isso é para mim?",
+        "a": "Sim, se você constrói com IA ou com um desenvolvedor.",
+        "d": "Construímos a base e a deixamos pronta para sua IA continuar construindo em cima. Não construímos seu produto inteiro."
+      },
+      {
+        "q": "O que vocês precisam de mim?",
+        "a": "Uma chamada de 30 minutos e contas no seu nome.",
+        "d": "Stripe para pagamentos e um lugar para seu produto e seus dados ficarem. Já está construindo? Trabalhamos dentro do seu projeto. Se não, começamos um novo."
+      },
+      {
+        "q": "E se vocês passarem das 48 horas?",
+        "a": "Você recebe todo o seu dinheiro de volta.",
+        "d": "O prazo é de dois dias úteis a partir da nossa chamada, para o escopo que combinamos nela."
+      },
+      {
+        "q": "Vou ficar preso a vocês?",
+        "a": "Não. É seu desde o primeiro dia.",
+        "d": "Seu código, seus dados, sua conta Stripe. Qualquer desenvolvedor que você contratar pode assumir. Se operarmos depois, cancele quando quiser e leve tudo com você."
+      },
+      {
+        "q": "O que vocês não fazem?",
+        "a": "Construir a parte que o torna seu.",
+        "d": "Seus recursos, seu design e um app de celular são seus para construir. Ele roda nas suas próprias contas. Você coloca no ar com nossos passos por escrito, ou deixa a operação com a gente."
+      }
+    ]
+  },
+  "parts": {
+    "eyebrow": "O que você recebe",
+    "title": "As peças em que você não pode errar.",
+    "items": [
+      {
+        "t": "Cadastro e login",
+        "d": "Seus clientes criam uma conta, fazem login e redefinem a senha. Protegido desde o primeiro dia."
+      },
+      {
+        "t": "Pagamentos",
+        "d": "Assinaturas mensais pagas no cartão, pela sua própria conta Stripe."
+      },
+      {
+        "t": "Contas de equipe",
+        "d": "Seus clientes convidam os colegas e decidem quem pode ver o quê."
+      },
+      {
+        "t": "Um registro de quem fez o quê",
+        "d": "Quando um cliente perguntar quem mudou algo, você tem a resposta. Ele não pode ser alterado às escondidas."
+      },
+      {
+        "t": "Uma entrega por escrito",
+        "d": "O que construímos e por quê, por escrito, para você e sua IA continuarem construindo em cima."
+      }
+    ]
+  },
+  "run": {
+    "eyebrow": "Quando pegar",
+    "title1": "Nós operamos.",
+    "title2": "Você nunca faz login.",
+    "status": "Abrindo agora para nossos primeiros clientes.",
+    "items": [
+      {
+        "t": "Um produto no ar",
+        "d": "Seus clientes podem se cadastrar, fazer login e pagar, na web e no celular."
+      },
+      {
+        "t": "Um relatório todo mês",
+        "d": "Tudo o que fizemos e tudo o que evitamos, em palavras simples."
+      },
+      {
+        "t": "Um canal no Slack",
+        "d": "Peça uma mudança ou avise sobre um problema. Ele responde como um engenheiro sênior."
+      },
+      {
+        "t": "Sem amarras",
+        "d": "Cancele quando quiser. Você sai com tudo: seu código, seus dados, suas configurações."
+      }
+    ],
+    "hireTitle": "A essa altura você estaria contratando. Contrate a gente.",
+    "hireText": "Quando clientes dependem do seu produto, alguém precisa mantê-lo no ar. Contratar um engenheiro sênior leva meses. Começamos este mês, por um preço mensal fixo, e o que você pagou pelo piloto é abatido do primeiro trimestre se você continuar em até 30 dias.",
+    "strip": "Ferramentas padrão, para que qualquer desenvolvedor que você contratar possa assumir",
+    "logo": "Logo do {name}"
+  }
+}
