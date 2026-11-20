@@ -98,6 +98,11 @@ To connect a service, set the two variables in the `env` of the build step in `.
 ## Pictures and marks
 
 - `cloud-hero.webp`, `hero-editor.svg`, `icon.svg`, `band/any.svg` and the share images (`og-image-*.png`) are Fonderie's own.
+- **The favicon** is the mark from the brand set (`favicon-dark.svg` and `avatar-square-dark.svg`), in four files:
+  - `images/icon.svg` is `favicon-dark.svg` as it stands: the F in the dot lattice on the orange rounded tile. Browsers that take a drawing use it.
+  - `favicon-96x96.png` and `favicon.ico` (16, 32 and 48px) are that drawing as pictures, with clear corners. Safari before version 26 shows no SVG favicon, and every browser asks for `/favicon.ico` at the site's root on pages that name no icon (the 404 page, the bare `/`).
+  - `apple-touch-icon.png` (180px) is `avatar-square-dark.svg`, square to the edges, because iOS rounds the corners itself.
+  - When the mark changes, redraw all four from the brand folder; `app/[locale]/layout.tsx` and `public/manifest.json` name them.
 - `band/*.svg`: [@lobehub/icons-static-svg](https://github.com/lobehub/lobe-icons) (MIT), recoloured. `tools/*.svg`: [simple-icons](https://simpleicons.org) (CC0). The marks belong to their owners and are shown only to name what the parts work with.
 - `icons/*.svg`: [Phosphor](https://phosphoricons.com) (MIT).
 - Drawings written into the components: [Lucide](https://lucide.dev) (ISC) for the small icons of the pictures and the prompt card (`circle-check-big`, `feather`, `list-checks`, `mail`, `pencil-line`, `users`, `user`, `user-plus`, `phone`, `paperclip`, `sliders-horizontal`); [Heroicons](https://heroicons.com) (MIT) for the sparkles on "Get me started"; simple-icons (CC0) for the GitHub mark in the footer.

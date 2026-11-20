@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -14,6 +14,10 @@ import '../founder-sections.css';
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
+
+// The colour a browser gives its own bar around the page (phones, Safari's
+// coloured tab bar): white, whatever the page's first screen is painted with.
+export const viewport: Viewport = { themeColor: '#ffffff' };
 
 export async function generateMetadata({
   params,
@@ -66,7 +70,18 @@ export async function generateMetadata({
       description,
       images: [{ url: ogImage, alt: title }],
     },
-    icons: { icon: '/images/icon.svg' },
+    // The mark (the brand set's favicon-dark.svg) in the forms browsers ask for:
+    // the drawing for those that take one, a 96px picture and the .ico at the site's
+    // root for those that do not (Safari before 26 among them), and a full square
+    // that iOS rounds by itself (avatar-square-dark.svg).
+    icons: {
+      icon: [
+        { url: '/favicon-96x96.png', type: 'image/png', sizes: '96x96' },
+        { url: '/images/icon.svg', type: 'image/svg+xml' },
+      ],
+      shortcut: '/favicon.ico',
+      apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
+    },
   };
 }
 
