@@ -1,0 +1,2322 @@
+/* home.css: the founder home page, section by section. Loaded by that page only. */
+
+@layer components {
+  .f-sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .f-eyebrow {
+    margin: 0 0 20px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+    color: var(--color-accent);
+  }
+
+  .f-display {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 0.97;
+    letter-spacing: -0.035em;
+    color: var(--color-ink);
+    text-wrap: balance;
+  }
+  /* French, Portuguese and German have longer words: on a phone their
+   large headings follow the width, so that no word is cut */
+  @media (max-width: 767px) {
+    :lang(fr) .f-display,
+    :lang(pt) .f-display,
+    :lang(de) .f-display {
+      font-size: min(60px, 13.5vw);
+      overflow-wrap: break-word;
+    }
+  }
+  @media (min-width: 768px) {
+    .f-display {
+      font-size: 72px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .f-display {
+      font-size: min(7.5vw, 120px);
+    }
+  }
+  .f-display > span {
+    display: block;
+  }
+
+  .f-reach {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+  .f-reach:hover {
+    color: var(--color-accent);
+  }
+  .f-reach:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  .f-status {
+    margin: 16px 0 0;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: var(--color-muted);
+  }
+
+  /* ---------------------------------------------------------------- buttons */
+
+  .f-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    min-height: 48px;
+    padding: 9px 24px;
+    border-radius: 999px;
+    font-family: var(--font-sans);
+    font-size: 16px;
+    font-weight: 430;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #fcfcf8;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.15s ease;
+  }
+  .f-btn:hover {
+    color: #fcfcf8;
+  }
+  .f-btn:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+  @media (min-width: 1024px) {
+    .f-btn {
+      min-height: 56px;
+    }
+  }
+  .f-btn--accent {
+    background: var(--color-button);
+  }
+  .f-btn--accent:hover {
+    background: color-mix(in oklab, var(--color-button) 90%, #000);
+  }
+  .f-btn--dark {
+    background: #292929;
+  }
+  .f-btn--dark:hover {
+    background: #3d3d3d;
+  }
+  :root[data-theme="dark"] .f-btn--dark {
+    background: #fcfcf8;
+    color: #292929;
+  }
+
+  /* ---------------------------------------------------------------- small moving parts */
+
+  .f-caret {
+    display: inline-block;
+    width: 1px;
+    height: 1em;
+    margin-left: 1px;
+    vertical-align: middle;
+    background: #f55500;
+    animation: f-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  .f-spinner {
+    display: block;
+    flex: none;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #f55500;
+    border-top-color: transparent;
+    border-radius: 999px;
+    animation: f-spin 1s linear infinite;
+  }
+  /* the bars that move while we listen: each is two halves that part and meet (Bars.tsx) */
+  .f-bars {
+    display: flex;
+    flex: none;
+    align-items: center;
+    gap: 4px;
+  }
+  .f-bars > span {
+    position: relative;
+    width: 4px;
+  }
+  .f-bars i {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .f-bars i::before {
+    content: "";
+    width: 4px;
+    height: var(--f-bar);
+    border-radius: 999px;
+    background: var(--color-win-ink);
+    animation: f-bar-up var(--f-time) ease-in-out var(--f-wait) infinite alternate;
+  }
+  .f-bars i + i::before {
+    animation-name: f-bar-down;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .f-caret,
+    .f-spinner,
+    .f-bars i::before {
+      animation: none;
+    }
+  }
+
+  /* ---------------------------------------------------------------- first two screens */
+
+  /* How the block is built.
+   Phone and tablet: the hero, then the card. The stage is two screens tall,
+   so the card stays under the bar, growing smaller, while the rest of that
+   height passes; the five commitments follow.
+   Wide window: the hero and the commitments are one screen each and the card
+   lies over both in a layer that stays put for the first screen. The card
+   and the editor behind it follow the scroll position: an animation tied to
+   scrolling where the browser has one; where it has none the card keeps its
+   own size and the editor fades once the page has left the top. */
+
+  .f-top {
+    position: relative;
+  }
+  .f-top__stage {
+    position: relative;
+    min-height: 200vh;
+  }
+  .f-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 96px 16px 0;
+    color: var(--color-ink-strong);
+  }
+  .f-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 100%;
+    padding: 6px 12px 6px 6px;
+    border-radius: 999px;
+    background: #f7f7f2;
+    color: #292929;
+    text-decoration: none;
+  }
+  .f-pill:hover {
+    color: #292929;
+  }
+  .f-pill:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+  .f-pill__badge {
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: #ff9a6f;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+  .f-pill__text {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+  }
+  .f-pill__arrow {
+    flex: none;
+    width: 16px;
+    height: 16px;
+    color: #72726e;
+    transition: transform 0.2s ease;
+  }
+  .f-pill:hover .f-pill__arrow {
+    transform: translateX(2px);
+  }
+  .f-hero__title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(38px, 5vw, 84px);
+    line-height: 0.93;
+    letter-spacing: -0.035em;
+    color: var(--color-ink);
+  }
+  .f-hero__title > span {
+    display: block;
+  }
+  /* Japanese phrases do not break in the middle: on a narrow phone the
+   headline follows the width instead */
+  @media (max-width: 767px) {
+    :lang(ja) .f-hero__title {
+      font-size: min(38px, 9.2vw);
+    }
+  }
+  .f-hero__copy {
+    font-size: 16px;
+    line-height: 20px;
+    text-wrap: balance;
+  }
+  .f-hero__copy p {
+    margin: 0;
+  }
+  .f-hero__copy .f-hero__lead {
+    margin-bottom: 0.4em;
+    font-weight: 600;
+  }
+  .f-hero__beside {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-wrap: balance;
+    color: var(--color-soft);
+  }
+  .f-hero__beside svg {
+    flex: none;
+  }
+  .f-hero__beside span {
+    margin-top: 4px;
+  }
+
+  /* the layer that carries the card. What reaches past the layer is cut off:
+   the card's shadow below it on a phone, the editor on a short window. */
+  .f-top__layer {
+    position: sticky;
+    top: 96px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 48px;
+    pointer-events: none;
+  }
+  .f-top__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  .f-top__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .f-top__card {
+    position: relative;
+    z-index: 0;
+    isolation: isolate;
+    display: grid;
+    width: 100%;
+    max-width: 384px;
+    aspect-ratio: 4 / 6;
+    max-height: 75vh;
+    transform-origin: center;
+  }
+  .f-top__card > * {
+    grid-area: 1 / 1;
+  }
+  .f-editor {
+    display: none;
+  }
+  /* the card settles as the first screen is scrolled */
+  @supports (animation-timeline: scroll()) {
+    .f-top__card {
+      animation: f-card linear both;
+      animation-timeline: scroll(root);
+      animation-range: 0 100vh;
+    }
+  }
+
+  /* the card: drawn at 384 by 576 and scaled by the layer */
+  .f-idea {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 0.5px solid var(--f-idea-edge, #e3e3e3);
+    border-radius: 12px;
+    background: var(--color-window);
+    color: var(--color-win-ink);
+    box-shadow:
+      0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    font-family: var(--font-sans);
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .f-idea__bar {
+    display: flex;
+    flex: none;
+    align-items: center;
+    background: var(--color-window);
+    gap: 6.5px;
+    height: 44px;
+    padding-left: 15.5px;
+  }
+  .f-idea__bar i {
+    width: 10px;
+    height: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+  .f-idea__bar i:nth-child(1) {
+    background: #ff736a;
+  }
+  .f-idea__bar i:nth-child(2) {
+    background: #febc2e;
+  }
+  .f-idea__bar i:nth-child(3) {
+    background: #19c332;
+  }
+  .f-idea__title {
+    padding: 12px 16px 0;
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.035em;
+  }
+  .f-idea__chips {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 24px;
+    padding: 0 8px;
+    border: 0.5px solid var(--color-window-line);
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 430;
+    line-height: 15px;
+    color: var(--color-win-soft);
+  }
+  /* the notes and the list are two sheets of one pile, each cut to the body */
+  .f-idea__pile,
+  .f-notes__pile {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template: minmax(0, 1fr) / minmax(0, 1fr);
+    min-height: 0;
+  }
+  .f-idea__sheet,
+  .f-notes__layer {
+    grid-area: 1 / 1;
+    min-height: 0;
+    padding: 0 16px;
+    overflow: hidden;
+  }
+  .f-idea__notes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 24px;
+    font-size: 10px;
+    line-height: 16.25px;
+  }
+  .f-idea__notes p {
+    min-height: 1.1em;
+    margin: 0;
+  }
+  .f-idea__list,
+  .f-write {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-window);
+  }
+  .f-idea__list {
+    font-size: 10px;
+    line-height: 15px;
+    clip-path: inset(0 0 100% 0);
+  }
+  .f-write__row {
+    --c: var(--color-win-soft);
+    margin: 0;
+    color: transparent;
+    background-image: linear-gradient(90deg, var(--c) 0, var(--c) 33.33%, #febe29 40%, #ff91e0 45%, #cebef8 50%, #d2e4f8 55%, #ff9a6f 60%, transparent 66.67%, transparent);
+    background-size: 300% 100%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    will-change: background-position;
+  }
+  .f-write__row--head {
+    font-weight: 600;
+  }
+  .f-write__row--strong {
+    --c: var(--color-win-ink);
+  }
+  .f-idea__list .f-write__row--head:not(:first-child) {
+    margin-top: 15px;
+  }
+  .f-idea__list .f-write__row--item {
+    padding-left: 12px;
+  }
+  .f-idea__list .f-write__row--sub {
+    padding-left: 28px;
+  }
+  /* a row lights up as the writing line reaches it */
+  .f-write__row[data-on] {
+    animation: f-write 0.4s ease-in-out forwards;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .f-write__row[data-on] {
+      animation: none;
+      background-position: 0 0;
+    }
+  }
+  /* the line that does the writing: it travels down with the list, lands
+   where the tabs are and gives way to them */
+  .f-idea__status,
+  .f-status-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border: 0.5px solid var(--color-window-line);
+    border-radius: 999px;
+    background: var(--color-win-raise);
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    color: var(--color-win-soft);
+  }
+  .f-idea__status {
+    font-size: 10px;
+    line-height: 15px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* at the foot: "Listening", then "Get me started", then the two tabs, one at a time */
+  .f-idea__foot {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 16px;
+    display: grid;
+    place-items: center;
+  }
+  .f-idea__foot > span {
+    grid-area: 1 / 1;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .f-idea__listen,
+  .f-idea__start {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 999px;
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+  }
+  .f-idea__listen {
+    gap: 12px;
+    border: 0.5px solid var(--color-window-line);
+    background: var(--color-win-raise);
+    color: var(--color-win-soft);
+  }
+  .f-idea__start {
+    gap: 6px;
+    background: var(--color-win-ink);
+    font-weight: 500;
+    color: #fff;
+  }
+  /* on the dark theme the button is light: its words take the window's colour to stay readable */
+  :root[data-theme="dark"] .f-idea__start {
+    color: var(--color-window);
+  }
+  .f-idea__tabs {
+    position: relative;
+    display: flex;
+    width: 192px;
+    padding: 2px;
+    border: 0.5px solid var(--color-window-line);
+    border-radius: 999px;
+    background: var(--color-win-raise);
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+    color: var(--color-win-ink);
+    text-align: center;
+  }
+  .f-idea__tabs > span {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    padding: 4px 0;
+  }
+  .f-idea__mark {
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    width: calc(50% - 2px);
+    border-radius: 999px;
+    background: var(--color-win-mark);
+  }
+
+  /* the five commitments, ruled like a notepad */
+  /* below 1024 the block is as wide as its widest line asks for, the title counting for no more than
+   its own limit, and never wider than 672px or than the page: no width is written down for it */
+  .f-proof {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: fit-content;
+    max-width: 672px;
+    margin: 0 auto;
+    color: var(--color-ink-strong);
+  }
+  .f-proof__edge {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: repeating-linear-gradient(to bottom, #dedede 0, #dedede 8px, transparent 8px, transparent 22px);
+    pointer-events: none;
+  }
+  .f-proof__edge--left {
+    left: 0;
+  }
+  .f-proof__edge--right {
+    right: 0;
+  }
+  .f-proof__title {
+    grid-area: 1 / 1;
+    max-width: 24ch;
+    margin: 0 0 64px;
+    padding-left: 16px;
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+  }
+  /* lines every 80px, faint in the middle where the card comes to rest */
+  .f-proof__lines {
+    grid-area: 2 / 1;
+    height: 560px;
+    background: repeating-linear-gradient(to bottom, #dedede 0, #dedede 1px, transparent 1px, transparent 80px);
+    -webkit-mask-image: linear-gradient(to right, #000 0%, transparent 32%, transparent 68%, #000 100%);
+    mask-image: linear-gradient(to right, #000 0%, transparent 32%, transparent 68%, #000 100%);
+    pointer-events: none;
+  }
+  .f-proof__rows {
+    grid-area: 2 / 1;
+    position: relative;
+    align-self: start;
+    margin: 0;
+    padding: 0 32px 0 16px;
+    list-style: none;
+  }
+  .f-proof__rows li {
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    font-size: 16px;
+    line-height: 1.35;
+    color: var(--color-ink);
+  }
+  .f-proof__rows {
+    text-wrap: pretty;
+  }
+  .f-proof__rows strong {
+    font-weight: 600;
+  }
+  :root[data-theme="dark"] .f-proof__edge {
+    background: repeating-linear-gradient(to bottom, #3b362f 0, #3b362f 8px, transparent 8px, transparent 22px);
+  }
+  :root[data-theme="dark"] .f-proof__lines {
+    background: repeating-linear-gradient(to bottom, #3b362f 0, #3b362f 1px, transparent 1px, transparent 80px);
+  }
+
+  @media (min-width: 768px) {
+    .f-hero {
+      padding: 120px 40px 0;
+    }
+    .f-idea {
+      --f-idea-edge: var(--color-window-line);
+    }
+    .f-top__grid {
+      padding: 0 40px;
+    }
+    .f-proof__title {
+      padding-left: 40px;
+    }
+    .f-proof__rows {
+      padding: 0 0 0 40px;
+    }
+    .f-proof__rows li {
+      font-size: 14px;
+      letter-spacing: 0.01em;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .f-top {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      grid-template-rows: auto 100vh;
+    }
+    /* the hero and the layer become two items of the same pile */
+    .f-top__stage {
+      display: contents;
+    }
+    .f-hero {
+      grid-area: 1 / 1;
+      justify-content: center;
+      width: 100%;
+      min-height: 100vh;
+    }
+    .f-hero__copy {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    .f-hero__copy p,
+    .f-hero__beside {
+      max-width: min(36vw, 560px);
+    }
+    .f-hero__title,
+    .f-pill {
+      max-width: 60%;
+    }
+    .f-top__layer {
+      grid-area: 1 / 1 / 3 / 2;
+      align-self: start;
+      top: 48px;
+      height: 100vh;
+      margin: 0;
+    }
+    .f-top__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .f-top__col {
+      grid-column: 2;
+      justify-content: safe center;
+    }
+    /* large beside the hero, its own size beside the commitments. On a short
+     window it is set lower, so that it does not rise under the bar. */
+    .f-top__card {
+      top: max(0px, calc(48px + min(27vw, 345.6px, 45vh) - 44vh));
+      width: 30vw;
+    }
+    @supports (animation-timeline: scroll()) {
+      .f-top__card {
+        animation-name: f-card-wide;
+      }
+    }
+    /* behind the card: an editor showing a basic Fonderie app. Our own
+     picture (public/images/hero-editor.svg), drawn from the product's
+     Quickstart. The complexity is ours; the plain words are yours. It
+     peeks out to the left and below, then tucks behind the card and fades. */
+    .f-editor {
+      display: block;
+      position: absolute;
+      left: -19.7%;
+      top: 19%;
+      width: 95%;
+      height: 92%;
+      border-radius: 8px;
+      background: #1e1e1e url("/images/hero-editor.svg") left top / auto 100% no-repeat;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+      overflow: hidden;
+    }
+    @supports (animation-timeline: scroll()) {
+      .f-editor {
+        animation-name: f-editor, f-editor-fade;
+        animation-timing-function: cubic-bezier(0.7, 0, 0.84, 0), linear;
+        animation-fill-mode: both, both;
+        animation-timeline: scroll(root), scroll(root);
+        animation-range:
+          12vh 62vh,
+          60vh 80vh;
+      }
+    }
+    @supports not (animation-timeline: scroll()) {
+      .f-editor {
+        transition: opacity 0.5s;
+      }
+      .f-top[data-scrolled] .f-editor {
+        opacity: 0;
+      }
+    }
+    .f-proof {
+      grid-area: 2 / 1;
+      grid-template-rows: 1fr auto 96px 400px 1fr;
+      width: 100%;
+      max-width: 1280px;
+      height: 100vh;
+    }
+    .f-proof__title {
+      grid-area: 2 / 1;
+      width: 50%;
+      margin: 0;
+      font-size: 48px;
+      line-height: 48px;
+    }
+    .f-proof__lines {
+      grid-area: 4 / 1 / 6 / 2;
+      height: auto;
+    }
+    .f-proof__rows {
+      grid-area: 4 / 1;
+      width: 50%;
+    }
+    .f-proof__edge {
+      display: none;
+    }
+  }
+  @media (min-width: 1280px) {
+    .f-proof__edge {
+      display: block;
+    }
+  }
+  @media (min-width: 1440px) {
+    @supports (animation-timeline: scroll()) {
+      .f-top__card {
+        animation-name: f-card-wider;
+      }
+    }
+    .f-editor {
+      left: -28%;
+      width: 103%;
+    }
+  }
+  @media (min-width: 1536px) {
+    .f-hero {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .f-top__grid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @media (min-width: 1920px) {
+    .f-hero__copy {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    .f-proof__title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
+
+  /* ---------------------------------------------------------------- the band */
+
+  .f-band {
+    position: relative;
+    /* cut at the sides only, and without making the band a scroller of its own:
+     the headline's slide is measured against the page */
+    overflow-x: hidden;
+    overflow-x: clip;
+  }
+  .f-band__mark {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    pointer-events: none;
+  }
+  .f-band__headline {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(40px, 8vw, 112px);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.035em;
+    text-align: center;
+    text-wrap: balance;
+    color: var(--color-ink);
+  }
+  /* the line slides down under the dark band while the middle of its block
+   travels from the middle of the window to the top */
+  @supports (animation-timeline: view()) {
+    .f-band {
+      timeline-scope: --f-band;
+    }
+    .f-band__mark {
+      view-timeline-name: --f-band;
+    }
+    .f-band__headline {
+      animation: f-band-slide linear both;
+      animation-timeline: --f-band;
+      animation-range: cover 50%;
+    }
+  }
+  .f-band__dark {
+    position: relative;
+    z-index: 1;
+    padding: 16px 0;
+    background: #292929;
+  }
+  .f-band__heading {
+    margin: 0;
+    padding-top: 48px;
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+    text-align: center;
+    text-wrap: pretty;
+    color: #fcfcf8;
+  }
+  .f-band__cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96px;
+    padding: 0 12px;
+  }
+  .f-band__item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.035em;
+    white-space: nowrap;
+    color: #fcfcf8;
+  }
+  /* the width limit is what lets Safari count the mark as squeezable when a name is wider than its cell */
+  .f-band__logo {
+    flex: none;
+    width: 24px;
+    max-width: 100%;
+    height: 24px;
+  }
+  @media (min-width: 768px) {
+    .f-band__cell {
+      height: 200px;
+    }
+    .f-band__item {
+      flex-direction: row;
+      gap: 10px;
+      font-size: clamp(15px, 1.3vw, 19px);
+    }
+  }
+  :root[data-theme="dark"] .f-band__dark {
+    background: #212121;
+  }
+  /* ---------------------------------------------------------------- the three steps */
+
+  .f-steps-wrap {
+    padding-top: 72px;
+  }
+  .f-steps__title {
+    max-width: min(22ch, calc(100% - 32px));
+    margin: 0 auto;
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.6vw, 40px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+    text-align: center;
+    text-wrap: balance;
+    color: var(--color-soft);
+  }
+  /* below 768 the three steps keep to a column of 448px in the middle of the page, however wide the window */
+  .f-steps {
+    position: relative;
+    max-width: 448px;
+    margin: 96px auto 0;
+    padding: 0 16px;
+  }
+  .f-step {
+    display: flex;
+    flex-direction: column;
+    scroll-margin-top: 110px;
+  }
+  .f-step__label {
+    margin: 0 0 8px;
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.035em;
+    color: #9e9e99;
+  }
+  .f-step__title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+    color: var(--color-ink);
+  }
+  .f-step__text {
+    max-width: 448px;
+    margin: 8px 0 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-ink-strong);
+  }
+
+  /* The picture beside each step: a panel with the same window on it.
+   Everything in it is laid out at its base size and then enlarged as one
+   piece, so a hairline grows with the window it belongs to. On a phone the
+   whole scene is drawn 448 wide and scaled to the panel; from 768px up the
+   scene is the panel. The window is then shown larger again: 1.5 times in
+   the first and third pictures (1.05 on a phone), 1.1 in the second. */
+  .f-demo {
+    position: relative;
+    aspect-ratio: 1;
+    width: 100%;
+    min-height: 0;
+    margin-top: 24px;
+    overflow: hidden;
+    border-radius: 16px;
+    /* behind each window: our own sky, the picture that is behind the hero,
+     seen close and deepened. A different part of it for each step. */
+    background: #bcdcea url("/images/cloud-hero.webp") var(--f-sky, 0% 12%) / 420% auto no-repeat;
+    background-blend-mode: multiply;
+    container-type: inline-size;
+    font-family: var(--font-sans);
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .f-step:nth-child(2) .f-demo {
+    --f-sky: 100% 4%;
+  }
+  .f-step:nth-child(3) .f-demo {
+    --f-sky: 52% 26%;
+  }
+  :root[data-theme="dark"] .f-demo {
+    --f-heard: #363635;
+    background-color: #33474f;
+  }
+  /* The scene. Scene.tsx sets --f-stage to the panel's width in whole pixels
+   over 448; until it has run, the style sheet works the same ratio out
+   from the panel's own width. */
+  .f-demo__scene {
+    --f-stage: tan(atan2(100cqw, 448px));
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 448px;
+    height: 448px;
+    transform: scale(var(--f-stage));
+    transform-origin: 0 0;
+  }
+  .f-win {
+    position: absolute;
+    left: 7%;
+    top: 6.5%;
+    width: 96.4%;
+    height: 87.3%;
+    transform: scale(1.05);
+    transform-origin: 0 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 0.5px solid var(--color-window-line);
+    border-radius: 24px;
+    background: var(--color-window);
+    color: var(--color-win-ink);
+    box-shadow:
+      0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  }
+  .f-win--side {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 60%;
+    height: auto;
+    aspect-ratio: 3 / 4.7;
+    transform: translate(35%, 4%) scale(1.1);
+    transform-origin: 50% 50%;
+  }
+  .f-win__bar {
+    display: flex;
+    flex: none;
+    align-items: center;
+    background: var(--color-window);
+    gap: 8px;
+    height: 44px;
+    padding-left: 15.5px;
+  }
+  .f-win__bar i {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--color-win-dot);
+  }
+  .f-win__main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: 0;
+    padding: 0 8px 24px;
+  }
+  .f-win__title {
+    padding: 12px 16px 0;
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.035em;
+    white-space: nowrap;
+  }
+  .f-win__meta {
+    display: flex;
+    margin: 8px 12px 0;
+    padding: 4px 0;
+  }
+  .f-win__chips {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 28px;
+    padding: 0 10px;
+    border: 0.5px solid var(--color-window-line);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 430;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: var(--color-win-soft);
+  }
+  .f-win__body {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+    margin-top: 16px;
+    padding: 0 16px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+  }
+  .f-win__prompt {
+    margin: 0;
+    line-height: 19.5px;
+    color: var(--color-win-faint);
+  }
+  .f-win .f-write__row--head:not(:first-child) {
+    margin-top: 18px;
+  }
+  .f-win .f-write__row--item {
+    padding-left: 12px;
+  }
+  .f-write--on .f-write__row,
+  .f-write__row[data-on] {
+    background-position: 0 0;
+  }
+
+  /* what we heard on the call */
+  .f-heard {
+    --hf: 13;
+    position: absolute;
+    left: 3.5%;
+    top: 50%;
+    width: 93%;
+    padding: 16px 24px 20px;
+    border-radius: 28px;
+    background: var(--f-heard, linear-gradient(147deg, #fff 30%, #faf7f5 72%));
+    box-shadow: 0 0 0 6px rgba(71, 67, 42, 0.05);
+    font-size: calc(var(--hf) * 1px);
+    line-height: 1.625;
+    letter-spacing: 0.01em;
+    color: var(--color-win-ink);
+  }
+  .f-heard p {
+    margin: 0;
+  }
+  .f-heard__label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-win-soft);
+  }
+  .f-heard__label svg {
+    flex: none;
+    width: 18px;
+    height: 18px;
+  }
+  .f-heard .f-heard__text {
+    margin-top: 16px;
+  }
+  .f-heard__text strong {
+    font-weight: 500;
+  }
+  .f-heard ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 16px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .f-heard li {
+    display: flex;
+    gap: 8px;
+  }
+  .f-heard li::before {
+    content: "•";
+    color: var(--color-win-faint);
+  }
+
+  /* the three things left for the founder once we run it */
+  .f-ours {
+    --of: 16;
+    --ol: 20;
+    --oi: 44;
+    --or: 12;
+    position: absolute;
+    left: 3.5%;
+    top: 50%;
+    width: 117%;
+    padding: 20px;
+    border-radius: 28px;
+    background: var(--color-win-raise);
+    box-shadow: 0 0 0 8px rgba(71, 67, 42, 0.05);
+    color: var(--color-win-ink);
+  }
+  .f-ours p {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+    padding: 10px 0;
+    font-size: calc(var(--of) * 1px);
+    line-height: calc(var(--ol) * 1px);
+  }
+  .f-ours p + p {
+    border-top: 0.5px solid var(--color-window-line);
+  }
+  .f-ours__ico {
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    width: calc(var(--oi) * 1px);
+    height: calc(var(--oi) * 1px);
+    border-radius: calc(var(--or) * 1px);
+    background: rgba(255, 114, 55, 0.2);
+    background: color-mix(in oklab, var(--color-tile) 20%, transparent);
+  }
+  .f-ours__ico svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  /* the second picture: it plays each time its step becomes the current one
+   (NotesDemo.tsx sets what moves). Three sheets lie on one another in the
+   window: the question, the notes being typed, and the list in a frame that
+   scrolls; the line that writes the list rides over them. */
+  .f-notes__body {
+    padding: 0;
+    overflow: visible;
+  }
+  .f-notes__typed {
+    margin: 0;
+    line-height: 19.5px;
+    white-space: pre-line;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .f-notes__list {
+    clip-path: inset(0 0 100% 0);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .f-notes__status {
+    font-size: 12px;
+    line-height: 16px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .f-notes__pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border: 0.5px solid var(--color-window-line);
+    border-radius: 999px;
+    background: var(--color-win-raise);
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--color-win-soft);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .f-notes__field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 36px;
+    padding: 0 4px 0 14px;
+    border: 0.5px solid var(--color-window-line);
+    border-radius: 999px;
+    background: var(--color-window);
+    box-shadow:
+      0 1px 3px 0 rgba(0, 0, 0, 0.1),
+      0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--color-win-faint);
+  }
+  .f-notes__field > span {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .f-notes__field > i {
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    background: #f55500;
+    color: #fff;
+  }
+  .f-notes__field svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  /* a browser without container units: on a phone the panel is the window's width less the page's margins */
+  @supports not (width: 1cqw) {
+    .f-demo__scene {
+      --f-stage: tan(atan2(94vw - 32px, 448px));
+    }
+  }
+  @media (min-width: 768px) {
+    .f-steps {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 1280px;
+      padding: 0 40px;
+    }
+    @media (min-width: 1536px) {
+      .f-steps {
+        padding: 0;
+      }
+    }
+    .f-steps__tabs {
+      position: sticky;
+      top: 96px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      max-width: 320px;
+      padding: 48px 0;
+    }
+    .f-steps__tabs button {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: none;
+      cursor: pointer;
+      font-family: var(--font-sans);
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      text-align: left;
+      color: #9e9e99;
+      transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .f-steps__tabs button[data-active] {
+      color: var(--color-ink);
+    }
+    /* the line under each name fills while the middle of the window passes
+     through its step; a step left behind gives its line up to the right */
+    .f-steps__line {
+      position: relative;
+      display: block;
+      width: 174px;
+      height: 1px;
+      margin-top: 6px;
+      background: var(--color-rule);
+    }
+    .f-steps__fill {
+      position: absolute;
+      left: 0;
+      top: -1px;
+      width: 100%;
+      height: 3px;
+      background: var(--color-ink);
+      transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .f-steps__fill[data-passed] {
+      background: #9e9e99;
+    }
+    @supports (animation-timeline: view()) {
+      .f-steps {
+        timeline-scope: --f-step-0, --f-step-1, --f-step-2;
+      }
+      .f-step[data-step="0"] {
+        view-timeline-name: --f-step-0;
+      }
+      .f-step[data-step="1"] {
+        view-timeline-name: --f-step-1;
+      }
+      .f-step[data-step="2"] {
+        view-timeline-name: --f-step-2;
+      }
+      .f-steps__fill {
+        transform-origin: 0;
+        animation: f-step-fill linear both;
+        animation-range: cover 50vh cover calc(100% - 50vh);
+      }
+      .f-steps__fill[data-step="0"] {
+        animation-timeline: --f-step-0;
+      }
+      .f-steps__fill[data-step="1"] {
+        animation-timeline: --f-step-1;
+      }
+      .f-steps__fill[data-step="2"] {
+        animation-timeline: --f-step-2;
+      }
+      .f-steps__fill[data-passed] {
+        transform-origin: 100%;
+        animation: f-step-out 0.5s both;
+      }
+    }
+    @supports not (animation-timeline: view()) {
+      .f-steps__line {
+        display: none;
+      }
+    }
+    .f-steps__tabs button:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 4px;
+    }
+    .f-step__label {
+      display: none;
+    }
+    .f-demo__scene {
+      width: 100%;
+      height: 100%;
+      transform: none;
+    }
+    .f-win {
+      width: 70.7%;
+      height: 64%;
+      transform: scale(1.5);
+    }
+    .f-win--side {
+      width: 60%;
+      height: auto;
+      aspect-ratio: 3 / 4;
+      transform: translate(30%, 0%) scale(1.1);
+    }
+    .f-heard {
+      top: 55%;
+    }
+    .f-ours {
+      top: 56%;
+    }
+  }
+  @media (min-width: 1024px) {
+    .f-heard {
+      --hf: 14;
+    }
+    .f-ours {
+      --of: 20;
+      --ol: 28;
+      --oi: 48;
+    }
+  }
+  @media (min-width: 1280px) {
+    .f-heard {
+      --hf: 17;
+    }
+    .f-ours {
+      --of: 24;
+      --ol: 32;
+      --oi: 56;
+      --or: 16;
+    }
+  }
+
+  /* ---------------------------------------------------------------- the orange panel */
+
+  .f-cast {
+    position: relative;
+    width: calc(100% - 48px);
+    max-width: 1280px;
+    margin: 24px auto max(24px, calc((100% - 1280px) / 2));
+    padding: clamp(28px, 6vw, 88px);
+    overflow: hidden;
+    border-radius: 32px;
+    background: linear-gradient(180deg, #f65501 0%, #e04d00 100%);
+    color: #1a1410;
+  }
+  @media (min-width: 768px) {
+    .f-cast {
+      width: 100%;
+    }
+  }
+  .f-cast__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: clamp(32px, 5vw, 64px);
+  }
+  .f-cast__left {
+    display: flex;
+    flex: 1 1 380px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    text-align: left;
+  }
+  .f-cast__right {
+    flex: 1 1 420px;
+    max-width: 100%;
+  }
+  .f-cast__eyebrow {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: oklch(20% 0.01 40);
+  }
+  .f-cast__head {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(44px, 5.4vw, 72px);
+    font-weight: 800;
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+    color: #1a1410;
+  }
+  .f-cast__head > span {
+    display: block;
+  }
+  .f-cast__lede {
+    max-width: 30rem;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #1a1410;
+  }
+  .f-cast__btn {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 22px;
+    border-radius: 999px;
+    background: #1a1410;
+    color: #fffdf5;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+  .f-cast__btn:hover {
+    background: #2a211b;
+    color: #fffdf5;
+  }
+  .f-cast__link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    color: #1a1410;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .f-cast__link:hover {
+    color: #1a1410;
+  }
+  .f-cast a:focus-visible {
+    outline: 2px solid #1a1410;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  .f-prompt {
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    gap: 32px;
+    height: 100%;
+    min-height: 360px;
+    padding: 24px 20px 16px;
+    border-radius: 28px;
+    background: #fff;
+    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.05);
+    color: #292929;
+  }
+  /* room for three lines on a phone, two from 768px up */
+  .f-prompt__text {
+    min-height: 82.8px;
+    margin: 0;
+    padding: 0 12px;
+    font-size: 24px;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: #4e4d4b;
+  }
+  @media (min-width: 768px) {
+    .f-prompt__text {
+      min-height: 90.672px;
+      font-size: 39.43px;
+      line-height: 45.336px;
+    }
+  }
+  /* shown selected for a moment before the next request */
+  .f-prompt__typed[data-picked] > span {
+    background: #b8d5ff;
+  }
+  .f-prompt__caret {
+    display: inline-block;
+    width: 0.07em;
+    min-width: 2.5px;
+    height: 1.02em;
+    margin-left: 0.04em;
+    border-radius: 1px;
+    background: currentColor;
+    vertical-align: -0.12em;
+  }
+  .f-prompt__caret[data-rest] {
+    animation: f-caret 1.1s step-end infinite;
+  }
+  .f-prompt__caret[data-picked] {
+    visibility: hidden;
+  }
+  .f-prompt__chip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    padding: 8px 12px 8px 8px;
+    border-radius: 12px;
+    background: rgba(98, 90, 34, 0.06);
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #4e4d4b;
+    white-space: nowrap;
+    transform-origin: left center;
+  }
+  /* a part that takes over while the card is in view springs in from half size */
+  .f-prompt__chip[data-pop] {
+    animation: f-pop 0.56s linear both;
+  }
+  .f-prompt__ico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: #ff9a6f;
+    color: #72726e;
+  }
+  .f-prompt__tools {
+    display: flex;
+    align-items: center;
+    color: #4e4d4b;
+  }
+  .f-prompt__tools span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .f-prompt__chip[data-pop],
+    .f-prompt__caret[data-rest] {
+      animation: none;
+    }
+  }
+
+  /* ---------------------------------------------------------------- fair questions */
+
+  .f-faq {
+    padding: 80px 0;
+    background: #292929;
+    color: #fff;
+  }
+  .f-faq__title {
+    max-width: 24ch;
+    margin: 0 auto 48px;
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.035em;
+    text-align: center;
+    text-wrap: balance;
+    color: #fff;
+  }
+  .f-faq__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  /* a hairline: half a pixel where the screen can draw one */
+  .f-faq__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    margin: 0;
+    padding: 36px 32px;
+    border: 0.5px solid #fff;
+    background: #292929;
+  }
+  .f-faq__card blockquote {
+    position: relative;
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.035em;
+    overflow-wrap: break-word;
+    color: #fff;
+  }
+  /* German compounds may be longer than a card is wide */
+  :lang(de) .f-faq__card blockquote {
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+  .f-faq__card blockquote > span {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    margin-right: 4px;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .f-faq__card figcaption {
+    max-width: 605.6px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+  }
+  .f-faq__card figcaption span {
+    display: block;
+  }
+  .f-faq__card figcaption span:first-child {
+    font-weight: 600;
+  }
+  .f-faq__card figcaption span:last-child {
+    color: rgba(255, 255, 255, 0.7);
+    color: color-mix(in oklab, var(--color-white) 70%, transparent);
+  }
+  @media (min-width: 768px) {
+    .f-faq {
+      padding: 112px 0;
+    }
+    .f-faq__title {
+      margin-bottom: 64px;
+    }
+    .f-faq__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      padding: 0;
+    }
+    .f-faq__card {
+      gap: 52px;
+      padding: 36px 56px;
+    }
+    .f-faq__card blockquote {
+      font-size: 36px;
+      line-height: 1.1;
+    }
+    .f-faq__card:first-child,
+    .f-faq__card:last-child {
+      grid-column: 1 / -1;
+    }
+  }
+  @media (min-width: 1024px) {
+    .f-faq__title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+  }
+  :root[data-theme="dark"] .f-faq {
+    background: #212121;
+  }
+
+  /* ---------------------------------------------------------------- cards */
+
+  .f-cards {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    counter-reset: f-card;
+  }
+  .f-card {
+    position: relative;
+    padding: 72px 24px 24px;
+    border: 1px solid var(--color-line);
+    border-radius: 16px;
+    background: var(--color-card);
+    counter-increment: f-card;
+  }
+  .f-card h3 {
+    margin: 0 0 6px;
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    color: var(--color-ink);
+  }
+  .f-card p {
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: var(--color-muted);
+  }
+  .f-card::before {
+    content: counter(f-card, decimal-leading-zero);
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--color-tint);
+    color: var(--color-accent);
+    font: 600 12px/1.5 var(--font-mono);
+  }
+  .f-card::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 24px;
+    height: 24px;
+    background: var(--color-accent);
+    -webkit-mask: var(--f-ico) center / contain no-repeat;
+    mask: var(--f-ico) center / contain no-repeat;
+  }
+  @media (min-width: 640px) {
+    .f-cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 1024px) {
+    .f-cards--five {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .f-cards--four {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 1280px) {
+    .f-cards--five {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+
+  /* ---------------------------------------------------------------- what you get */
+
+  .f-parts {
+    position: relative;
+    isolation: isolate;
+    padding: 80px 16px;
+    background: var(--color-ground);
+  }
+  :root[data-theme="dark"] .f-parts {
+    background: #212121;
+  }
+  .f-parts .f-display {
+    max-width: 15ch;
+  }
+  .f-parts__act,
+  .f-run__act {
+    margin-top: 32px;
+  }
+  /* on a phone the button takes the whole line; from 640 it is as wide as its words */
+  @media (max-width: 639px) {
+    .f-parts__act .f-btn,
+    .f-run__act .f-btn {
+      display: flex;
+      width: 100%;
+    }
+  }
+  .f-parts .f-cards {
+    margin-top: 56px;
+  }
+  .f-parts .f-card h3 {
+    text-wrap: pretty;
+  }
+  /* five faint columns behind the cards */
+  .f-parts__lines {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: calc(1280px + 32px);
+    margin: 0 auto;
+    padding: 0 16px;
+    pointer-events: none;
+  }
+  .f-parts__lines span {
+    border-left: 1px solid var(--color-rule);
+  }
+  .f-parts__lines span:nth-child(n + 2) {
+    display: none;
+  }
+  @media (min-width: 640px) {
+    .f-parts__lines {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .f-parts__lines span:nth-child(2) {
+      display: block;
+    }
+  }
+  @media (min-width: 768px) {
+    .f-parts {
+      padding: 128px 40px;
+    }
+    .f-parts__lines {
+      max-width: calc(1280px + 80px);
+      padding: 0 40px;
+    }
+    .f-parts__act,
+    .f-run__act {
+      margin-top: 40px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .f-parts__lines {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .f-parts__lines span:nth-child(3) {
+      display: block;
+    }
+  }
+  @media (min-width: 1280px) {
+    .f-parts__lines {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+    .f-parts__lines span:nth-child(n + 2) {
+      display: block;
+    }
+  }
+
+  /* ---------------------------------------------------------------- we run it */
+
+  .f-run {
+    padding: 80px 0;
+    background: var(--color-paper);
+  }
+  .f-run .f-display {
+    max-width: 17ch;
+  }
+  .f-run .f-cards {
+    margin-top: 48px;
+  }
+  .f-run .f-card h3 {
+    font-family: var(--font-sans);
+    font-weight: 400;
+  }
+  .f-hire {
+    display: grid;
+    gap: 12px;
+    margin-top: 80px;
+    padding-top: 16px;
+    border-top: 0.5px solid #d9d9d9;
+  }
+  :root[data-theme="dark"] .f-hire {
+    border-top-color: var(--color-line);
+  }
+  .f-hire__title {
+    max-width: 30ch;
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+    color: var(--color-ink);
+  }
+  .f-hire__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.35;
+    color: var(--color-ink);
+  }
+  .f-strip__label {
+    margin: 80px 0 0;
+    padding: 0 16px;
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.035em;
+    text-align: center;
+    color: var(--color-muted);
+  }
+  .f-strip__row {
+    --f-disc: 112px;
+    display: flex;
+    align-items: center;
+    width: 130vw;
+    margin: 0 -15vw;
+    padding: 0 65vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+  .f-strip__row::-webkit-scrollbar {
+    display: none;
+  }
+  .f-strip__item {
+    flex: none;
+    width: calc(var(--f-disc) + 24px);
+    height: var(--f-disc);
+    padding: 0 12px;
+  }
+  /* a disc keeps its full size in the layout; Strip.tsx makes it smaller and
+   moves it with scale and translate, so its edge thins with it */
+  .f-strip__disc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--f-disc);
+    height: var(--f-disc);
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 999px;
+    background: #fff;
+    will-change: transform;
+  }
+  .f-strip__disc img {
+    display: block;
+    width: 55%;
+    height: 55%;
+    object-fit: contain;
+    -webkit-user-drag: none;
+  }
+  @media (min-width: 768px) {
+    .f-run {
+      padding: 128px 0;
+    }
+    .f-hire {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: 128px;
+    }
+    .f-hire__title {
+      font-size: 32px;
+    }
+    .f-hire__text {
+      font-size: 22px;
+    }
+    .f-strip__label {
+      margin-top: 128px;
+    }
+    .f-strip__row {
+      --f-disc: 154px;
+    }
+    .f-strip__item {
+      width: calc(var(--f-disc) + 44px);
+      padding: 0 22px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .f-hire {
+      grid-template-columns: 1fr 28rem;
+    }
+  }
+  @keyframes f-pulse {
+    50% {
+      opacity: 0.5;
+    }
+  }
+  @keyframes f-spin {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  @keyframes f-bar-up {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-1 * var(--f-reach)));
+    }
+  }
+  @keyframes f-bar-down {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(var(--f-reach));
+    }
+  }
+  @supports (animation-timeline: scroll()) {
+    @keyframes f-card {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(0.8);
+      }
+    }
+  }
+  @keyframes f-write {
+    from {
+      background-position: 100% 0;
+    }
+    to {
+      background-position: 0 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    @supports (animation-timeline: scroll()) {
+      @keyframes f-card-wide {
+        from {
+          transform: translateY(-6vh) scale(1.2);
+        }
+        to {
+          transform: translateY(0) scale(1);
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    @supports (animation-timeline: scroll()) {
+      @keyframes f-editor {
+        from {
+          transform: translate(0, 0) scale(1);
+        }
+        to {
+          transform: translate(17%, -3%) scale(0.72);
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    @supports (animation-timeline: scroll()) {
+      @keyframes f-editor-fade {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  @media (min-width: 1440px) {
+    @supports (animation-timeline: scroll()) {
+      @keyframes f-card-wider {
+        from {
+          transform: translate(25%, -6vh) scale(1.2);
+        }
+        to {
+          transform: translate(0) scale(1);
+        }
+      }
+    }
+  }
+  @supports (animation-timeline: view()) {
+    @keyframes f-band-slide {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(130%);
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    @supports (animation-timeline: view()) {
+      @keyframes f-step-fill {
+        from {
+          transform: scaleX(0);
+        }
+        to {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    @supports (animation-timeline: view()) {
+      @keyframes f-step-out {
+        from {
+          transform: scaleX(1);
+        }
+        to {
+          transform: scaleX(0);
+        }
+      }
+    }
+  }
+  @keyframes f-caret {
+    0%,
+    70%,
+    100% {
+      opacity: 1;
+    }
+    20%,
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes f-pop {
+    0% {
+      transform: scale(0.5);
+    }
+    4% {
+      transform: scale(0.583);
+    }
+    8% {
+      transform: scale(0.761);
+    }
+    12% {
+      transform: scale(0.941);
+    }
+    16% {
+      transform: scale(1.067);
+    }
+    20% {
+      transform: scale(1.123);
+    }
+    24% {
+      transform: scale(1.118);
+    }
+    28% {
+      transform: scale(1.08);
+    }
+    32% {
+      transform: scale(1.032);
+    }
+    36% {
+      transform: scale(0.994);
+    }
+    40% {
+      transform: scale(0.972);
+    }
+    44% {
+      transform: scale(0.968);
+    }
+    48% {
+      transform: scale(0.975);
+    }
+    52% {
+      transform: scale(0.987);
+    }
+    56% {
+      transform: scale(0.998);
+    }
+    60% {
+      transform: scale(1.005);
+    }
+    64% {
+      transform: scale(1.008);
+    }
+    68% {
+      transform: scale(1.007);
+    }
+    72% {
+      transform: scale(1.004);
+    }
+    76% {
+      transform: scale(1.001);
+    }
+    80% {
+      transform: scale(0.999);
+    }
+    84% {
+      transform: scale(0.998);
+    }
+    88% {
+      transform: scale(0.998);
+    }
+    92% {
+      transform: scale(0.999);
+    }
+    96% {
+      transform: scale(0.999);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

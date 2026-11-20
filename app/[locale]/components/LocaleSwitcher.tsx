@@ -35,7 +35,7 @@ export default function LocaleSwitcher() {
   }
 
   return (
-    <div className="locale-switch" ref={rootRef}>
+    <div className="relative inline-flex" ref={rootRef}>
       <button
         type="button"
         className="locale-switch__trigger"
@@ -45,7 +45,7 @@ export default function LocaleSwitcher() {
         onClick={() => setOpen((v) => !v)}
       >
         <svg
-          className="locale-switch__globe"
+          className="flex-none opacity-85"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -57,7 +57,7 @@ export default function LocaleSwitcher() {
           <circle cx="12" cy="12" r="9" />
           <path d="M3 12h18M12 3c2.5 2.5 3.75 5.5 3.75 9S14.5 18.5 12 21c-2.5-2.5-3.75-5.5-3.75-9S9.5 5.5 12 3z" />
         </svg>
-        <span className="locale-switch__current">{localeNames[locale as Locale]}</span>
+        <span className="whitespace-nowrap">{localeNames[locale as Locale]}</span>
         <svg
           className="locale-switch__chevron"
           data-open={open ? '' : undefined}
@@ -85,7 +85,7 @@ export default function LocaleSwitcher() {
                 data-active={l === locale ? '' : undefined}
                 onClick={() => select(l)}
               >
-                <span className="locale-switch__option-name">{localeNames[l]}</span>
+                <span>{localeNames[l]}</span>
                 <svg
                   className="locale-switch__check"
                   viewBox="0 0 24 24"

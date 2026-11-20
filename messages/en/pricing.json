@@ -1,79 +1,43 @@
 {
+  "metaTitle": "Pricing — Fonderie",
+  "metaDescription": "$499 to start. $3,500 a month when it sticks. You pay for a result, not for hours.",
   "eyebrow": "Pricing",
-  "title": "Build it free. Or let us run it.",
-  "lede": "Every module and every screen — backend and frontend — is MIT-licensed and self-hosted, free in production, forever. And if you'd rather not run any of it: Fonderie Operated builds and operates your product for you, priced against the engineer it replaces — not against software.",
-  "tiers": [
-    {
-      "name": "Build",
-      "price": "Free",
-      "period": "",
-      "desc": "The complete stack, yours to run",
-      "features": [
-        "All backend modules + frontend screens — MIT licensed",
-        "React, Vue & React Native included",
-        "Production use included, forever",
-        "Community support"
-      ],
-      "cta": "Start building — free",
-      "featured": false
-    },
-    {
-      "name": "Operated",
-      "price": "$3,500",
-      "period": "/mo",
-      "desc": "We build & run your product. You never log in.",
-      "features": [
-        "We architect, build, deploy & operate your stack end to end",
-        "Upgrades, security posture & incident response — forever",
-        "Monthly ops report: everything we did, everything we prevented",
-        "A Slack channel that behaves like a senior engineer",
-        "30-day export escrow — no lock-in",
-        "Or $9,900/quarter prepaid · $7,500 setup"
-      ],
-      "cta": "Start with a $499 pilot",
-      "href": "/contact",
-      "featured": true
-    },
-    {
-      "name": "Enterprise",
-      "price": "From $10K",
-      "period": "/mo",
-      "desc": "For organizations with compliance needs",
-      "featuresLead": "Everything in Operated, plus",
-      "features": [
-        "Dedicated infrastructure & on-prem support",
-        "Compliance evidence: audit-chain witness, SOC 2 roadmap",
-        "Contractual SLA"
-      ],
-      "cta": "Contact sales",
-      "featured": false,
-      "href": "/contact",
-      "hidden": true
-    },
-    {
-      "name": "Console",
-      "price": "Waitlist",
-      "period": "",
-      "desc": "Hosted dashboard for your self-hosted app",
-      "features": [
-        "Audit logs, billing analytics & team admin",
-        "Connects to your infra — your app stays yours",
-        "Early-access pricing for waitlist members"
-      ],
-      "cta": "Join the waitlist",
-      "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
-      "featured": false
-    }
-  ],
-  "compareNote": "No lock-in. 30-day export escrow. Cancel anytime. The framework is MIT — free in production, forever. Operated compares to payroll, not to tools: one senior engineer is ~$18k/month, loaded.",
-  "finalCta": {
-    "title": "Stop debugging logins. Start building your product.",
-    "lede": "Fonderie's playbook lives in your repo and gives any AI the context it needs to build correctly. You focus on what makes your product unique — or skip the building entirely, and let Fonderie Operated run it for you.",
-    "getStarted": "Start building — free",
-    "star": "Star on GitHub",
-    "prompts": "Instructions for Claude Code and Cursor ship with the repo —",
-    "promptsLink": "grab them on GitHub →",
-    "tag": "For founders who want to ship, not rebuild logins",
-    "team": "Built by a founder who spent years as a contractor at PayPal working on internal auditing and merchant-facing tools — and got tired of watching AI reintroduce the same bugs every session."
+  "title1": "$499 to start.",
+  "title2": "$3,500 a month when it sticks.",
+  "lede": "You pay for a result, not for hours.",
+  "asOf": "Prices as of November 2026.",
+  "pilot": {
+    "kicker": "To start",
+    "name": "The pilot",
+    "price": "$499",
+    "per": "one time",
+    "desc": "What every product needs, working in your product within 48 hours of our call.",
+    "items": [
+      "Sign-up and login",
+      "Payments, through your own Stripe account",
+      "Team accounts",
+      "A record of who did what",
+      "A written handover"
+    ],
+    "terms": [
+      "Refunded in full if we miss the 48 hours: two working days from our call, for the scope we agree on it.",
+      "Counts toward your first quarter if you continue within 30 days."
+    ]
+  },
+  "run": {
+    "kicker": "When it sticks",
+    "name": "We run it",
+    "price": "$3,500",
+    "per": "a month",
+    "fee": "Plus a one-time $7,500 setup. Or $9,900 a quarter, prepaid.",
+    "desc": "We keep it running: updates, security and the 2am problems. You never log in.",
+    "items": [
+      "A product that is live, on your own accounts",
+      "A report every month: what we did and what we prevented",
+      "A Slack channel that answers like a senior engineer",
+      "No lock-in: cancel anytime and leave with everything"
+    ],
+    "compare": "A senior engineer costs about $18,000 a month and takes months to hire.",
+    "status": "Now opening to our first clients."
   }
 }

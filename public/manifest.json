@@ -1,10 +1,14 @@
 {
   "name": "Fonderie",
   "short_name": "Fonderie",
-  "description": "The standard library for AI-built SaaS.",
+  "description": "The standard for end-to-end AI-built SaaS.",
   "start_url": "/en",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#c2410c",
-  "icons": [{ "src": "/images/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "/images/icon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/favicon-96x96.png", "sizes": "96x96", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
 }

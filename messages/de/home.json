@@ -1,0 +1,215 @@
+{
+  "hero": {
+    "badge": "Für Gründer",
+    "pill": "Du baust dein Produkt mit KI",
+    "title1": "Bring deine Idee",
+    "title2": "diesen Monat live.",
+    "title3": "Nicht nächstes Quartal.",
+    "lead": "Registrierung, Zahlungen und Team-Konten für dein Produkt, fertig in 48 Stunden.",
+    "sub": "Wir bauen sie. Du baust, was es zu deinem macht, und alles gehört dir.",
+    "beside": "Zwei Plätze pro Woche · Festpreis · Volle Erstattung, wenn wir die 48 Stunden nicht einhalten"
+  },
+  "idea": {
+    "title": "Deine Idee",
+    "chip1": "Ein Gespräch",
+    "chip2": "Einfache Worte",
+    "start": "Los geht's",
+    "line1": "Eine App, mit der Freelancer Rechnungen verschicken",
+    "line2": "Sie zahlen mir eine Monatsgebühr",
+    "line3": "Agenturen holen ihr ganzes Team dazu",
+    "line4": "Ich will diesen Monat live gehen",
+    "listening": "Hört zu",
+    "building": "Dein Fundament entsteht",
+    "tabIdea": "Deine Idee",
+    "tabBuild": "Was wir bauen",
+    "doneHead": "Fertig in 48 Stunden",
+    "done1": "Deine Kunden registrieren sich, loggen sich ein und setzen ihr Passwort zurück",
+    "done1a": "Vom ersten Tag an geschützt",
+    "paidHead": "Bezahlt werden",
+    "paid1": "Monatsabos, per Karte bezahlt",
+    "paid1a": "Über dein eigenes Stripe-Konto",
+    "teamsHead": "Teams",
+    "teams1": "Kunden laden Kollegen ein und legen fest, wer was sieht",
+    "yoursHead": "Deins zum Bauen",
+    "yours1": "Die Rechnungen: der Teil, der es zu deinem macht",
+    "yours2": "Alles gehört dir",
+    "yours3": "Wenn es ankommt, betreiben wir es für dich"
+  },
+  "proof": {
+    "title": "Was jedes Produkt braucht, in zwei Tagen fertig.",
+    "row1a": "Nach einem 30-Minuten-Gespräch, ",
+    "row1b": "fertig in 48 Stunden",
+    "row2a": "Volle Erstattung",
+    "row2b": ", wenn wir die 48 Stunden nicht einhalten",
+    "row3a": "Alles gehört dir: ",
+    "row3b1": "der Code",
+    "row3b2": "die Daten",
+    "row3b3": "die Kunden",
+    "row3sep": ", ",
+    "row3c": " vom ersten Tag an.",
+    "row4a": "Gebaut von unserem Gründer, der ",
+    "row4b": "drei Jahre bei PayPal an Identität und Sicherheit gearbeitet hat",
+    "row5a": "Schreib an ",
+    "row5b": ": Ein Mensch antwortet innerhalb eines Werktags"
+  },
+  "band": {
+    "headline": "Für Gründer, die liefern",
+    "heading": "Funktioniert mit der KI, mit der du schon baust",
+    "any": "Jede KI"
+  },
+  "steps": {
+    "title": "Von der Idee zum fertigen Produkt in drei Schritten.",
+    "tab1": "Du erzählst",
+    "tab2": "Wir bauen",
+    "tab3": "Wenn es ankommt",
+    "s1Title": "Du erzählst uns, was du baust",
+    "s1Text": "Ein 30-Minuten-Gespräch in einfachen Worten: wer deine Kunden sind und was sie tun können sollen. In diesem Gespräch legen wir einen festen Umfang fest.",
+    "s2Title": "Wir bauen, was jedes Produkt braucht",
+    "s2Text": "Logins, Zahlungen und Team-Konten, innerhalb von 48 Stunden nach unserem Gespräch in deinem Produkt, zum Festpreis. Volle Erstattung, wenn wir es nicht schaffen. Du baust, was es zu deinem macht.",
+    "s3Title": "Wenn es ankommt, halten wir es am Laufen",
+    "s3Text": "Sobald Kunden darauf angewiesen sind, halten wir es am Laufen: Updates, Sicherheit und die Probleme um 2 Uhr nachts. Du loggst dich nie ein.",
+    "winTitle": "Dein Produkt",
+    "winChip1": "Diese Woche",
+    "winChip2": "Du und Fonderie",
+    "winPrompt": "Was baust du?",
+    "heard": "Was wir gehört haben",
+    "heardA": "Du hast uns gesagt, ",
+    "heardB": "wer deine Kunden sind",
+    "heardC": " und ",
+    "heardD": "was sie tun können sollen",
+    "heardE": ". Mehr brauchen wir nicht, um anzufangen.",
+    "heard1": "Freelancer senden Rechnungen und zahlen monatlich.",
+    "heard2": "Agenturen holen ihr ganzes Team dazu.",
+    "heard3": "Fester Umfang vereinbart. Fertig in 48 Stunden.",
+    "note1": "freelancer verschicken rechnungen",
+    "note2": "sie zahlen mir monatlich",
+    "note3": "agenturen holen ihr team dazu",
+    "note4": "diesen monat live",
+    "listening": "Hört zu",
+    "building": "Dein Fundament entsteht",
+    "g1": "Registrierung und Login",
+    "g1a": "Kunden legen ein Konto an und loggen sich ein",
+    "g1b": "Passwort zurücksetzen inklusive",
+    "g1c": "Vom ersten Tag an geschützt",
+    "g2": "Zahlungen",
+    "g2a": "Monatsabos, per Karte bezahlt",
+    "g2b": "Über dein eigenes Stripe-Konto",
+    "g2c": "Bereit für deinen ersten zahlenden Kunden",
+    "g3": "Teams",
+    "g3a": "Kunden laden Kollegen ein",
+    "g3b": "Sie legen fest, wer was sieht",
+    "g3c": "Ein Protokoll, wer was geändert hat",
+    "g4": "Deins",
+    "g4a": "Funktioniert, bevor wir übergeben",
+    "g4b": "Gehört dir",
+    "g4c": "Bereit für das, was es zu deinem macht",
+    "run1": "Deinen Monatsbericht lesen",
+    "run2": "In Slack eine Änderung anfragen",
+    "run3": "Gehen, wann immer du willst"
+  },
+  "cast": {
+    "eyebrow": "Während du weiterbaust",
+    "title1": "Gleich gebaut,",
+    "title2": "jedes Mal.",
+    "lede": "Bitte deinen KI-Assistenten um Registrierung, Zahlungen oder Team-Konten und du bekommst das Fonderie-Teil: aus einer Form gegossen, in deinem Besitz, in jedem Produkt gleich.",
+    "p1": "Füge meiner App die Anmeldung mit Google hinzu.",
+    "c1": "Logins",
+    "p2": "Füge einen Jahrestarif und eine Bezahlseite hinzu.",
+    "c2": "Zahlungen",
+    "p3": "Lass Kunden ihre Kollegen einladen.",
+    "c3": "Teams",
+    "p4": "Zeig mir, wer was an diesem Konto geändert hat.",
+    "c4": "Protokoll"
+  },
+  "faq": {
+    "title": "Berechtigte Fragen.",
+    "open": "„",
+    "close": "“",
+    "items": [
+      {
+        "q": "Warum nicht einfach vibe-coden?",
+        "a": "Vibe-code das, was es zu deinem macht.",
+        "d": "Jeder kann Stahl und Beton kaufen und ein Gebäude hochziehen. Die Teile, die es tragen, willst du jedes Mal gleich gebaut haben: wer sich einloggt, wer belastet wird, wer was sieht."
+      },
+      {
+        "q": "Ich kann nicht programmieren. Ist das etwas für mich?",
+        "a": "Ja, wenn du mit KI oder mit einem Entwickler baust.",
+        "d": "Wir bauen das Fundament und richten es so ein, dass deine KI darauf weiterbaut. Wir bauen nicht dein ganzes Produkt."
+      },
+      {
+        "q": "Was braucht ihr von mir?",
+        "a": "Ein 30-Minuten-Gespräch und Konten auf deinen Namen.",
+        "d": "Stripe für Zahlungen und einen Ort, an dem dein Produkt und seine Daten leben. Du baust schon? Wir arbeiten in deinem Projekt. Wenn nicht, starten wir ein neues."
+      },
+      {
+        "q": "Und wenn ihr die 48 Stunden nicht schafft?",
+        "a": "Du bekommst dein ganzes Geld zurück.",
+        "d": "Die Uhr läuft zwei Werktage ab unserem Gespräch, für den dort vereinbarten Umfang."
+      },
+      {
+        "q": "Bin ich dann an euch gebunden?",
+        "a": "Nein. Es gehört dir vom ersten Tag an.",
+        "d": "Dein Code, deine Daten, dein Stripe-Konto. Jeder Entwickler, den du einstellst, kann es übernehmen. Wenn wir es später betreiben, kannst du jederzeit kündigen und alles mitnehmen."
+      },
+      {
+        "q": "Was macht ihr nicht?",
+        "a": "Den Teil bauen, der es zu deinem macht.",
+        "d": "Deine Funktionen, dein Design und eine Handy-App baust du selbst. Es läuft auf deinen eigenen Konten. Du bringst es mit unserer schriftlichen Anleitung online, oder wir betreiben es für dich."
+      }
+    ]
+  },
+  "parts": {
+    "eyebrow": "Was du bekommst",
+    "title": "Die Teile, bei denen du dir keinen Fehler leisten kannst.",
+    "items": [
+      {
+        "t": "Registrierung und Login",
+        "d": "Deine Kunden legen ein Konto an, loggen sich ein und setzen ihr Passwort zurück. Vom ersten Tag an geschützt."
+      },
+      {
+        "t": "Zahlungen",
+        "d": "Monatsabos per Karte, über dein eigenes Stripe-Konto."
+      },
+      {
+        "t": "Team-Konten",
+        "d": "Deine Kunden laden ihre Kollegen ein und legen fest, wer was sehen darf."
+      },
+      {
+        "t": "Ein Protokoll, wer was getan hat",
+        "d": "Wenn ein Kunde fragt, wer etwas geändert hat, hast du die Antwort. Es lässt sich nicht unbemerkt ändern."
+      },
+      {
+        "t": "Eine schriftliche Übergabe",
+        "d": "Was wir gebaut haben und warum, schriftlich, damit du und deine KI darauf weiterbauen könnt."
+      }
+    ]
+  },
+  "run": {
+    "eyebrow": "Wenn es ankommt",
+    "title1": "Wir betreiben es.",
+    "title2": "Du loggst dich nie ein.",
+    "status": "Jetzt offen für unsere ersten Kunden.",
+    "items": [
+      {
+        "t": "Ein Produkt, das live ist",
+        "d": "Deine Kunden können sich registrieren, einloggen und bezahlen, im Web und auf dem Handy."
+      },
+      {
+        "t": "Jeden Monat ein Bericht",
+        "d": "Alles, was wir getan haben, und alles, was wir verhindert haben, in einfachen Worten."
+      },
+      {
+        "t": "Ein Slack-Kanal",
+        "d": "Frag nach einer Änderung oder melde ein Problem. Er antwortet wie ein Senior-Entwickler."
+      },
+      {
+        "t": "Keine Bindung",
+        "d": "Jederzeit kündbar. Du gehst mit allem: deinem Code, deinen Daten, deinen Einstellungen."
+      }
+    ],
+    "hireTitle": "Bis dahin würdest du jemanden einstellen. Stell stattdessen uns ein.",
+    "hireText": "Sobald Kunden auf dein Produkt angewiesen sind, muss es jemand am Laufen halten. Einen Senior-Entwickler einzustellen dauert Monate. Wir fangen diesen Monat an, zu einem festen Monatspreis, und was du für den Piloten bezahlt hast, wird auf das erste Quartal angerechnet, wenn du innerhalb von 30 Tagen weitermachst.",
+    "strip": "Standardwerkzeuge, damit jeder Entwickler, den du einstellst, übernehmen kann",
+    "logo": "{name}-Logo"
+  }
+}

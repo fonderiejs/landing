@@ -1,0 +1,215 @@
+{
+  "hero": {
+    "badge": "Fondateurs",
+    "pill": "Vous construisez avec l'IA",
+    "title1": "Lancez votre idée",
+    "title2": "ce mois-ci.",
+    "title3": "Pas au prochain trimestre.",
+    "lead": "Inscription, paiements et comptes d'équipe pour votre produit, opérationnels en 48 heures.",
+    "sub": "Nous les construisons. Vous construisez ce qui le rend unique, et tout vous appartient.",
+    "beside": "Deux places par semaine · Prix fixe · Remboursement intégral si nous dépassons les 48 heures"
+  },
+  "idea": {
+    "title": "Votre idée",
+    "chip1": "Un appel",
+    "chip2": "Des mots simples",
+    "start": "C'est parti",
+    "line1": "Une appli où les freelances envoient des factures",
+    "line2": "Ils me paient un abonnement mensuel",
+    "line3": "Les agences ajoutent toute leur équipe",
+    "line4": "Je la veux en ligne ce mois-ci",
+    "listening": "Écoute",
+    "building": "Construction de vos fondations",
+    "tabIdea": "Votre idée",
+    "tabBuild": "Notre part",
+    "doneHead": "Fait en 48 heures",
+    "done1": "Vos clients s'inscrivent, se connectent et réinitialisent leur mot de passe",
+    "done1a": "Protégé dès le premier jour",
+    "paidHead": "Être payé",
+    "paid1": "Abonnements mensuels, payés par carte",
+    "paid1a": "Via votre propre compte Stripe",
+    "teamsHead": "Équipes",
+    "teams1": "Les clients invitent leurs collègues et décident qui voit quoi",
+    "yoursHead": "À vous de construire",
+    "yours1": "Les factures : la partie qui le rend unique",
+    "yours2": "Tout vous appartient",
+    "yours3": "Quand ça prend, nous pouvons l'exploiter pour vous"
+  },
+  "proof": {
+    "title": "Ce dont tout produit a besoin, fait en deux jours.",
+    "row1a": "Après un appel de 30 minutes, ",
+    "row1b": "opérationnel en 48 heures",
+    "row2a": "Remboursement intégral",
+    "row2b": " si nous dépassons les 48 heures",
+    "row3a": "Tout vous appartient : ",
+    "row3b1": "le code",
+    "row3b2": "les données",
+    "row3b3": "les clients",
+    "row3sep": ", ",
+    "row3c": " dès le premier jour.",
+    "row4a": "Construit par notre fondateur, qui a passé ",
+    "row4b": "trois ans sur l'identité et la sécurité chez PayPal",
+    "row5a": "Écrivez à ",
+    "row5b": " : une personne répond sous un jour ouvré"
+  },
+  "band": {
+    "headline": "Pour les fondateurs qui livrent",
+    "heading": "Fonctionne avec l'IA que vous utilisez déjà",
+    "any": "Toute IA"
+  },
+  "steps": {
+    "title": "De l'idée au produit en ligne en trois étapes.",
+    "tab1": "Vous nous dites",
+    "tab2": "Nous construisons",
+    "tab3": "Quand ça prend",
+    "s1Title": "Vous nous dites ce que vous construisez",
+    "s1Text": "Un appel de 30 minutes, en mots simples : qui sont vos clients et ce qu'ils doivent pouvoir faire. Nous fixons un périmètre précis pendant cet appel.",
+    "s2Title": "Nous construisons ce dont tout produit a besoin",
+    "s2Text": "Connexions, paiements et comptes d'équipe, opérationnels dans votre produit sous 48 heures après notre appel, à prix fixe. Remboursement intégral si nous dépassons. Vous construisez ce qui le rend unique.",
+    "s3Title": "Quand ça prend, nous le faisons tourner",
+    "s3Text": "Dès que des clients en dépendent, nous le faisons tourner : mises à jour, sécurité et problèmes de 2 heures du matin. Vous ne vous connectez jamais.",
+    "winTitle": "Votre produit",
+    "winChip1": "Cette semaine",
+    "winChip2": "Vous et Fonderie",
+    "winPrompt": "Que construisez-vous ?",
+    "heard": "Ce que nous avons entendu",
+    "heardA": "Vous nous avez dit ",
+    "heardB": "qui sont vos clients",
+    "heardC": " et ",
+    "heardD": "ce qu'ils doivent pouvoir faire",
+    "heardE": ". C'est tout ce qu'il nous faut pour commencer.",
+    "heard1": "Les freelances facturent et vous paient chaque mois.",
+    "heard2": "Les agences ajoutent toute leur équipe.",
+    "heard3": "Périmètre fixé à l'appel. Opérationnel en 48 heures.",
+    "note1": "les freelances envoient des factures",
+    "note2": "ils me paient chaque mois",
+    "note3": "les agences ajoutent leur équipe",
+    "note4": "en ligne ce mois-ci",
+    "listening": "Écoute",
+    "building": "Construction de vos fondations",
+    "g1": "Inscription et connexion",
+    "g1a": "Les clients créent un compte et se connectent",
+    "g1b": "Réinitialisation du mot de passe incluse",
+    "g1c": "Protégé dès le premier jour",
+    "g2": "Paiements",
+    "g2a": "Abonnements mensuels, payés par carte",
+    "g2b": "Via votre propre compte Stripe",
+    "g2c": "Prêt pour votre premier client payant",
+    "g3": "Équipes",
+    "g3a": "Les clients invitent leurs collègues",
+    "g3b": "Ils décident qui voit quoi",
+    "g3c": "Un registre de qui a modifié quoi",
+    "g4": "À vous",
+    "g4a": "Fonctionnel avant la remise",
+    "g4b": "À vous pour de bon",
+    "g4c": "Prêt pour ce qui le rend unique",
+    "run1": "Lire votre rapport mensuel",
+    "run2": "Demander un changement dans Slack",
+    "run3": "Partir quand vous voulez"
+  },
+  "cast": {
+    "eyebrow": "Pendant que vous continuez à construire",
+    "title1": "Même fabrication,",
+    "title2": "à chaque fois.",
+    "lede": "Demandez à votre assistant IA l'inscription, les paiements ou les comptes d'équipe et vous obtenez la pièce Fonderie : coulée dans un seul moule, à vous, identique dans chaque produit.",
+    "p1": "Ajoute la connexion avec Google à mon appli.",
+    "c1": "Connexions",
+    "p2": "Ajoute une offre annuelle et une page de paiement.",
+    "c2": "Paiements",
+    "p3": "Permets aux clients d'inviter leurs collègues.",
+    "c3": "Équipes",
+    "p4": "Montre-moi qui a modifié quoi sur ce compte.",
+    "c4": "Registre"
+  },
+  "faq": {
+    "title": "Des questions légitimes.",
+    "open": "« ",
+    "close": " »",
+    "items": [
+      {
+        "q": "Pourquoi ne pas tout vibe-coder ?",
+        "a": "Vibe-codez ce qui le rend unique.",
+        "d": "N'importe qui peut acheter de l'acier et du béton et monter un bâtiment. Les pièces qui le font tenir sont celles que vous voulez faites de la même façon à chaque fois : qui se connecte, qui est débité, qui voit quoi."
+      },
+      {
+        "q": "Je ne sais pas coder. Est-ce pour moi ?",
+        "a": "Oui, si vous construisez avec l'IA ou avec un développeur.",
+        "d": "Nous construisons les fondations et les préparons pour que votre IA continue à bâtir dessus. Nous ne construisons pas tout votre produit."
+      },
+      {
+        "q": "Que vous faut-il de ma part ?",
+        "a": "Un appel de 30 minutes et des comptes à votre nom.",
+        "d": "Stripe pour les paiements, et un endroit où votre produit et ses données vivront. Vous construisez déjà ? Nous travaillons dans votre projet. Sinon, nous en démarrons un nouveau."
+      },
+      {
+        "q": "Et si vous dépassez les 48 heures ?",
+        "a": "Vous récupérez la totalité de votre argent.",
+        "d": "Le délai est de deux jours ouvrés à compter de notre appel, pour le périmètre convenu pendant celui-ci."
+      },
+      {
+        "q": "Serai-je enfermé ?",
+        "a": "Non. C'est à vous dès le premier jour.",
+        "d": "Votre code, vos données, votre compte Stripe. Tout développeur que vous recrutez peut prendre la suite. Si nous l'exploitons plus tard, vous résiliez quand vous voulez et repartez avec tout."
+      },
+      {
+        "q": "Que ne ferez-vous pas ?",
+        "a": "Construire la partie qui le rend unique.",
+        "d": "Vos fonctionnalités, votre design et une appli mobile restent à construire par vous. Il tourne sur vos propres comptes. Vous le mettez en ligne avec nos étapes écrites, ou vous nous confiez son exploitation."
+      }
+    ]
+  },
+  "parts": {
+    "eyebrow": "Ce que vous obtenez",
+    "title": "Les pièces sur lesquelles vous n'avez pas droit à l'erreur.",
+    "items": [
+      {
+        "t": "Inscription et connexion",
+        "d": "Vos clients créent un compte, se connectent et réinitialisent leur mot de passe. Protégé dès le premier jour."
+      },
+      {
+        "t": "Paiements",
+        "d": "Abonnements mensuels payés par carte, via votre propre compte Stripe."
+      },
+      {
+        "t": "Comptes d'équipe",
+        "d": "Vos clients invitent leurs collègues et décident qui peut voir quoi."
+      },
+      {
+        "t": "Un registre de qui a fait quoi",
+        "d": "Quand un client demande qui a modifié quelque chose, vous avez la réponse. Il ne peut pas être modifié en douce."
+      },
+      {
+        "t": "Une remise écrite",
+        "d": "Ce que nous avons construit et pourquoi, par écrit, pour que vous et votre IA puissiez continuer à bâtir dessus."
+      }
+    ]
+  },
+  "run": {
+    "eyebrow": "Quand ça prend",
+    "title1": "Nous l'exploitons.",
+    "title2": "Vous ne vous connectez jamais.",
+    "status": "Ouverture en cours pour nos premiers clients.",
+    "items": [
+      {
+        "t": "Un produit en ligne",
+        "d": "Vos clients peuvent s'inscrire, se connecter et payer, sur le web et sur leur téléphone."
+      },
+      {
+        "t": "Un rapport chaque mois",
+        "d": "Tout ce que nous avons fait et tout ce que nous avons évité, en mots simples."
+      },
+      {
+        "t": "Un canal Slack",
+        "d": "Demandez un changement ou signalez un problème. Il répond comme un ingénieur senior."
+      },
+      {
+        "t": "Aucun enfermement",
+        "d": "Résiliez quand vous voulez. Vous repartez avec tout : votre code, vos données, vos réglages."
+      }
+    ],
+    "hireTitle": "À ce stade, vous recruteriez. Recrutez-nous plutôt.",
+    "hireText": "Dès que des clients dépendent de votre produit, quelqu'un doit le faire tourner. Recruter un ingénieur senior prend des mois. Nous commençons ce mois-ci, pour un prix mensuel fixe, et ce que vous avez payé pour le pilote est déduit du premier trimestre si vous continuez dans les 30 jours.",
+    "strip": "Des outils standards, pour que tout développeur que vous recrutez puisse prendre la suite",
+    "logo": "Logo {name}"
+  }
+}

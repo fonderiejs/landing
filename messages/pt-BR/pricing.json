@@ -1,79 +1,43 @@
 {
+  "metaTitle": "Preços — Fonderie",
+  "metaDescription": "US$ 499 para começar. US$ 3.500 por mês quando pegar. Você paga por um resultado, não por horas.",
   "eyebrow": "Preços",
-  "title": "Construa de graça. Ou deixe a operação com a gente.",
-  "lede": "Cada módulo e cada tela — backend e frontend — é licenciado sob MIT e self-hosted, grátis em produção, para sempre. E se você preferir não operar nada disso: o Fonderie Operated constrói e opera seu produto para você, com preço calculado contra o engenheiro que ele substitui — não contra software.",
-  "tiers": [
-    {
-      "name": "Build",
-      "price": "Grátis",
-      "period": "",
-      "desc": "O stack completo, rodando na sua infra",
-      "features": [
-        "Todos os módulos de backend + telas de frontend — licença MIT",
-        "React, Vue e React Native incluídos",
-        "Uso em produção incluído, para sempre",
-        "Suporte da comunidade"
-      ],
-      "cta": "Começar — grátis",
-      "featured": false
-    },
-    {
-      "name": "Operated",
-      "price": "US$ 3.500",
-      "period": "/mês",
-      "desc": "A gente constrói e opera seu produto. Você nunca precisa fazer login.",
-      "features": [
-        "Arquitetamos, construímos, implantamos e operamos seu stack de ponta a ponta",
-        "Upgrades, postura de segurança e resposta a incidentes — para sempre",
-        "Relatório mensal de operações: tudo o que fizemos, tudo o que evitamos",
-        "Um canal no Slack que se comporta como um engenheiro sênior",
-        "Escrow de exportação de 30 dias — sem lock-in",
-        "Ou US$ 9.900/trimestre pré-pago · US$ 7.500 de setup"
-      ],
-      "cta": "Comece com um piloto de US$ 499",
-      "href": "/contact",
-      "featured": true
-    },
-    {
-      "name": "Enterprise",
-      "price": "A partir de US$ 10K",
-      "period": "/mês",
-      "desc": "Para organizações com necessidades de conformidade",
-      "featuresLead": "Tudo do Operated, mais",
-      "features": [
-        "Infraestrutura dedicada e suporte on-prem",
-        "Evidências de conformidade: testemunho da cadeia de auditoria, roadmap SOC 2",
-        "SLA contratual"
-      ],
-      "cta": "Falar com vendas",
-      "featured": false,
-      "href": "/contact",
-      "hidden": true
-    },
-    {
-      "name": "Console",
-      "price": "Lista de espera",
-      "period": "",
-      "desc": "Painel hospedado para o seu app self-hosted",
-      "features": [
-        "Logs de auditoria, análises de billing e gestão de equipe",
-        "Conecta à sua infra — seu app continua seu",
-        "Preço early-access para a lista de espera"
-      ],
-      "cta": "Entrar na lista de espera",
-      "href": "mailto:hello@fonderiejs.com?subject=Fonderie%20Console%20waitlist",
-      "featured": false
-    }
-  ],
-  "compareNote": "Sem lock-in. Escrow de exportação de 30 dias. Cancele quando quiser. O framework é MIT — grátis em produção, para sempre. O Operated se compara à folha de pagamento, não a ferramentas: um engenheiro sênior custa ~US$ 18k/mês, com todos os encargos.",
-  "finalCta": {
-    "title": "Pare de depurar logins. Comece a construir seu produto.",
-    "lede": "O playbook da Fonderie vive no seu repositório e dá a qualquer IA o contexto para construir corretamente. Você foca no que torna seu produto único — ou pula a construção por completo e deixa o Fonderie Operated rodar tudo para você.",
-    "getStarted": "Começar — grátis",
-    "star": "Dar estrela no GitHub",
-    "prompts": "Instruções para Claude Code e Cursor vêm com o repositório —",
-    "promptsLink": "pegue no GitHub →",
-    "tag": "Para fundadores que querem lançar, não reconstruir logins",
-    "team": "Construído por um fundador que passou anos como contratado na PayPal trabalhando em ferramentas internas de auditoria e ferramentas voltadas a lojistas — e cansou de ver a IA reintroduzir os mesmos bugs a cada sessão."
+  "title1": "US$ 499 para começar.",
+  "title2": "US$ 3.500 por mês quando pegar.",
+  "lede": "Você paga por um resultado, não por horas.",
+  "asOf": "Preços de novembro de 2026.",
+  "pilot": {
+    "kicker": "Para começar",
+    "name": "O piloto",
+    "price": "US$ 499",
+    "per": "uma vez",
+    "desc": "O que todo produto precisa, funcionando no seu produto em até 48 horas após nossa chamada.",
+    "items": [
+      "Cadastro e login",
+      "Pagamentos, pela sua própria conta Stripe",
+      "Contas de equipe",
+      "Um registro de quem fez o quê",
+      "Uma entrega por escrito"
+    ],
+    "terms": [
+      "Reembolso total se passarmos das 48 horas: dois dias úteis a partir da nossa chamada, para o escopo que combinamos nela.",
+      "Abatido do seu primeiro trimestre se você continuar em até 30 dias."
+    ]
+  },
+  "run": {
+    "kicker": "Quando pegar",
+    "name": "Nós operamos",
+    "price": "US$ 3.500",
+    "per": "por mês",
+    "fee": "Mais US$ 7.500 de implantação, uma única vez. Ou US$ 9.900 por trimestre, pagos antecipadamente.",
+    "desc": "Nós mantemos no ar: atualizações, segurança e os problemas das 2 da manhã. Você nunca faz login.",
+    "items": [
+      "Um produto no ar, nas suas próprias contas",
+      "Um relatório todo mês: o que fizemos e o que evitamos",
+      "Um canal no Slack que responde como um engenheiro sênior",
+      "Sem amarras: cancele quando quiser e leve tudo"
+    ],
+    "compare": "Um engenheiro sênior custa cerca de US$ 18.000 por mês e leva meses para contratar.",
+    "status": "Abrindo agora para nossos primeiros clientes."
   }
 }
