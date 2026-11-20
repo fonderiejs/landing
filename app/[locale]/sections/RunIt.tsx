@@ -29,7 +29,7 @@ export default async function RunIt() {
   const items = t.raw('items') as Item[];
   return (
     <section className="f-run">
-      <div className="f-wrap">
+      <div className="max-w-7xl mx-auto px-4 md:px-10">
         <p className="f-eyebrow">{t('eyebrow')}</p>
         <h2 className="f-display" id="we-run-it">
           <span>{t('title1')}</span> <span>{t('title2')}</span>

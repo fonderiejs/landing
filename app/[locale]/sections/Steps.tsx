@@ -67,7 +67,7 @@ export default async function Steps() {
       </h2>
       <section className="f-steps">
         <StepsNav labels={[t('tab1'), t('tab2'), t('tab3')]} />
-        <div className="f-steps__list">
+        <div className="flex flex-col gap-24 py-12">
           <article className="f-step" data-step="0">
             <p className="f-step__label">{t('tab1')}</p>
             <h3 className="f-step__title">{t('s1Title')}</h3>
@@ -113,7 +113,7 @@ export default async function Steps() {
             <p className="f-step__text">{t('s2Text')}</p>
             <div className="f-demo" aria-hidden="true">
               <Scene>
-                <div className="f-demo__mid">
+                <div className="absolute inset-0 flex items-center justify-center">
                   <NotesDemo
                     words={{ title: t('winTitle'), chip1: t('winChip1'), chip2: t('winChip2'), prompt: t('winPrompt'), listening: t('listening'), building: t('building') }}
                     notes={[t('note1'), t('note2'), t('note3'), t('note4')]}

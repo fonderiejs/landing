@@ -7,9 +7,7 @@ import { LINKS } from '@/lib/site';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import SeatProvider from './components/SeatProvider';
-import '../globals.css';
-import '../founder.css';
-import '../founder-sections.css';
+import '../styles/tailwind.css';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));

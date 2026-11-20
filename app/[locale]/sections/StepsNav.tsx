@@ -38,7 +38,7 @@ export default function StepsNav({ labels }: { labels: string[] }) {
   }, [active]);
 
   return (
-    <div className="f-steps__nav">
+    <div className="hidden md:block md:relative">
       <div className="f-steps__tabs">
         {labels.map((label, k) => (
           <button

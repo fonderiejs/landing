@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { locales } from '@/lib/i18n';
 import { mailto } from '@/lib/site';
 import SeatButton from '../components/SeatButton';
+import '../../styles/pricing.css';
 
 // The one page of the site that shows a price. Every number comes from the
 // messages; the page is dated so that an archived copy cannot pass for
@@ -40,7 +41,7 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
 
   return (
     <main className="f-pricing">
-      <div className="f-pricing__wrap">
+      <div className="max-w-7xl mx-auto px-4 md:px-10">
         <p className="f-pricing__eyebrow">{t('eyebrow')}</p>
         <h1 className="f-pricing__title">
           <span>{t('title1')}</span> <span>{t('title2')}</span>
@@ -65,7 +66,7 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
                 <li key={term}>{term}</li>
               ))}
             </ul>
-            <p className="f-plan__cta">
+            <p className="mt-auto pt-2">
               <SeatButton className="f-plan__btn" />
             </p>
           </section>
@@ -85,7 +86,7 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
             </ul>
             <p className="f-plan__compare">{t('run.compare')}</p>
             <p className="f-plan__status">{t('run.status')}</p>
-            <p className="f-plan__cta">
+            <p className="mt-auto pt-2">
               <SeatButton className="f-plan__btn" />
             </p>
           </section>

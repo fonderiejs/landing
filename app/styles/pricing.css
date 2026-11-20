@@ -1,0 +1,204 @@
+/* pricing.css: the pricing page. Loaded by that page only. */
+
+@layer components {
+  /* on the pricing page the last row follows the columns with no rule between them */
+  .page__card:has(> .f-pricing) .f-footer__bottom {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  /* ---------------------------------------------------------------- pricing page */
+
+  .f-pricing {
+    padding: clamp(112px, 12vw, 168px) 0 clamp(56px, 7vw, 104px);
+  }
+  .f-pricing__eyebrow,
+  .f-plan__kicker {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+    color: var(--color-accent);
+  }
+  .f-pricing__title {
+    max-width: 15ch;
+    margin: 18px 0 0;
+    font-family: var(--font-display);
+    font-size: clamp(40px, 6.2vw, 96px);
+    font-weight: 700;
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+    color: var(--color-ink);
+  }
+  .f-pricing__title > span {
+    display: block;
+  }
+  .f-pricing__lede {
+    max-width: 40ch;
+    margin: 20px 0 0;
+    font-size: clamp(18px, 1.6vw, 22px);
+    line-height: 1.4;
+    color: var(--color-muted);
+  }
+  .f-plans {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    margin-top: clamp(40px, 5vw, 64px);
+  }
+  @media (min-width: 900px) {
+    .f-plans {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .f-plan {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: clamp(24px, 3vw, 40px);
+    border: 1px solid var(--color-line);
+    border-radius: 24px;
+    background: var(--color-card);
+    color: var(--color-ink);
+  }
+  .f-plan--featured {
+    background: var(--color-tint);
+    box-shadow: inset 0 3px 0 var(--color-button);
+  }
+  .f-plan__name {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+  }
+  .f-plan__price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 10px;
+    margin: 4px 0 0;
+    font-family: var(--font-display);
+    font-size: clamp(44px, 5vw, 64px);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.035em;
+  }
+  .f-plan__per {
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--color-muted);
+  }
+  .f-plan__fee {
+    margin: -4px 0 0;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .f-plan__desc {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .f-plan__list,
+  .f-plan__terms {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .f-plan__list li {
+    position: relative;
+    padding-left: 26px;
+    font-size: 15.5px;
+    line-height: 1.45;
+  }
+  .f-plan__list li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* the text face has no check mark: naming it alone leaves the mark to the
+     browser's own choice of face, where a system face named here would take it */
+    font-family: Inter;
+    font-weight: 700;
+    color: var(--color-accent);
+  }
+  .f-plan__terms {
+    gap: 8px;
+    padding-top: 16px;
+    border-top: 1px solid var(--color-line);
+  }
+  .f-plan__terms li,
+  .f-plan__status {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-muted);
+  }
+  .f-plan__compare {
+    margin: 0;
+    padding-top: 16px;
+    border-top: 1px solid var(--color-line);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .f-plan__status {
+    margin: 0;
+  }
+  .f-plan__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 24px;
+    border-radius: 999px;
+    background: var(--color-button);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: background-color 0.15s ease;
+  }
+  .f-plan__btn:hover {
+    background: color-mix(in oklab, var(--color-button) 88%, #000);
+    color: #fff;
+  }
+  .f-plan__btn:focus-visible,
+  .f-pricing__ask:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+  .f-pricing__foot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px 24px;
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-muted);
+  }
+  .f-pricing__foot p {
+    margin: 0;
+  }
+  .f-pricing__ask {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .f-pricing__ask:hover {
+    color: var(--color-accent);
+  }
+  :root[data-theme="dark"] .f-plan--featured {
+    background: color-mix(in srgb, #c2410c 14%, #26221e);
+  }
+}

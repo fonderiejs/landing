@@ -153,7 +153,7 @@ export default function Strip({ tools }: { tools: Tool[] }) {
   }, [count]);
 
   return (
-    <div className="f-strip">
+    <div className="f-strip mt-8 md:mt-10 overflow-hidden">
       <div className="f-strip__row" ref={root}>
         {Array.from({ length: COPIES }, (_, copy) =>
           tools.map((tool) => (

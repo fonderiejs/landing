@@ -19,7 +19,7 @@ export default async function Parts() {
         <span />
         <span />
       </div>
-      <div className="f-parts__inner">
+      <div className="max-w-7xl mx-auto">
         <p className="f-eyebrow">{t('eyebrow')}</p>
         <h2 className="f-display" id="features">
           {t('title')}

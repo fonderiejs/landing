@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { locales } from '@/lib/i18n';
+import '../../styles/pages.css';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -14,11 +15,11 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
   return (
     <>
       <main className="page__card--flush">
-        <section className="subhero container">
+        <section className="subhero page__wrap">
           <h1 className="subhero__title">{t('title')}</h1>
           <p className="subhero__lede">{t('lede')}</p>
         </section>
-        <section className="contact-cells container">
+        <section className="contact-cells page__wrap">
           <div className="contact-cells__grid">
             {cells.map((key) => (
               <div key={key} className="contact-cells__cell">

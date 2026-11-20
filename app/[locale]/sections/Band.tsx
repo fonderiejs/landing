@@ -19,14 +19,14 @@ export default async function Band() {
     <section className="f-band">
       {/* the line slides down behind the dark band as the band comes up the window; the mark across
           the middle of this block is what the style sheet measures that by */}
-      <div className="f-band__top">
+      <div className="relative flex items-center justify-center px-4 py-5 md:px-10 md:py-6">
         <span className="f-band__mark" aria-hidden="true" />
         <h2 className="f-band__headline">{t('headline')}</h2>
       </div>
       <div className="f-band__dark">
-        <div className="f-wrap">
+        <div className="max-w-7xl mx-auto px-4 md:px-10">
           <p className="f-band__heading">{t('heading')}</p>
-          <div className="f-band__grid">
+          <div className="grid grid-cols-3 md:grid-cols-6">
             {/* each name sits in a cell as wide as its column. A name wider than its cell runs over it:
                 how far is decided between the cell and the name, and browsers decide it differently,
                 so the cell is kept as a box of its own */}

@@ -1,0 +1,131 @@
+/* tailwind.css: the entry every page loads.
+
+   1. Tailwind: its reset, its utilities, and the theme below.
+   2. shared.css: the components every page carries (frame, bar and menus, seat form, footer, controls).
+   The home, pricing and older pages add a sheet of their own (home.css, pricing.css, pages.css), loaded by those
+   pages only.
+
+   How the two kinds of rule share the work:
+   - a part with a look of its own is a component, written in these sheets in BEM (block__element--modifier, "f-"
+     prefix). Its rule holds everything about it: sizes, type, colours, states, pseudo-elements, motion;
+   - an element that only arranges what it contains (a row, a grid, a centred column, a gap) has no name and no rule:
+     it takes utilities in the markup;
+   - an element is one or the other. Components sit in the "components" layer, so a utility added to one would win
+     over its rule at every width and in every state.
+   Why not more utilities: the framework writes every class name twice in a page (the markup, and the data it
+   hydrates from), so a declaration costs more as a utility than in a rule. Measured on the home page, compressed:
+   utilities on every element that could take them added about 3 KB.
+
+   Classes are looked for in the components under app/ and nowhere else: not in the translated messages, where an
+   ordinary word could be taken for a utility. */
+@import "tailwindcss" source(none);
+@import "./shared.css";
+@source "../**/*.{ts,tsx}";
+/* The scripts write the word "transform" (element.style.transform). Read as a class it would bring five registered
+   variables with it, and Tailwind 4 has no use for that class. Remove this line if it is ever wanted. */
+@source not inline("transform");
+
+/* dark: when the visitor's choice (or their system's) has put data-theme="dark" on <html> */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* The theme, in two parts. Lengths are in pixels, as the page was drawn.
+
+   1. What Tailwind's utilities and variants are built from: one step of spacing is 4px, the breakpoints are the widths
+      the layout changes at, and the widths it names. Tailwind writes out only the ones a utility uses. */
+@theme {
+  --spacing: 4px;
+  --breakpoint-*: initial;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1920px;
+  /* the widths Tailwind names, in pixels like everything else */
+  --container-xs: 320px;
+  --container-sm: 384px;
+  --container-md: 448px;
+  --container-2xl: 672px;
+  --container-7xl: 1280px;
+  --radius-pill: 999px;
+}
+
+/* 2. What the components read as well: colours, fonts, the frame's radius. "static": every one is written out, because
+      Tailwind does not see the pages' own sheets read them. */
+@theme static {
+  /* colours: the founder page's, then the older pages' ("old-") */
+  --color-accent: #c2410c;
+  --color-button: #f65501;
+  --color-card: #ffffff;
+  --color-ground: #ffffff;
+  --color-ink: #292929;
+  --color-ink-strong: #0e0f0c;
+  --color-line: oklch(90% 0.005 40);
+  --color-muted: oklch(45% 0.015 40);
+  /* darkened from oklch(60% 0.2 41) (#dc4500, 4.29:1 on white) to meet WCAG AA 4.5:1 for the small accent-colored text that uses this token */
+  --color-old-accent: #c2410c;
+  --color-old-bg: #ffffff;
+  --color-old-dark: #161311;
+  --color-old-ink: oklch(20% 0.01 40);
+  --color-old-line: oklch(90% 0.005 40);
+  --color-old-muted: oklch(45% 0.015 40);
+  /* darkened from oklch(62% 0.012 40) (#8d8481, 3.65:1 on white) to meet WCAG AA 4.5:1 — used as text color for small uppercase labels */
+  --color-old-muted2: #7d7573;
+  --color-old-tint: color-mix(in srgb, oklch(66% 0.21 41) 6%, #fff);
+  --color-paper: #f7f7f2;
+  --color-rule: #eaebe5;
+  --color-soft: #72726e;
+  --color-stage: oklch(66% 0.21 41);
+  --color-stage-grid: oklch(72% 0.19 41);
+  --color-tile: #ff7237;
+  /* mixed by the browser from a named colour, so that the build leaves the mix alone */
+  --color-tint: color-mix(in srgb, var(--color-stage) 6%, #fff);
+  /* Tailwind's own white, named here because only the pages' sheets read it and Tailwind leaves out what it does not see used */
+  --color-white: #fff;
+  --color-win-dot: #d5d5d2;
+  --color-win-faint: #acada8;
+  --color-win-ink: #292929;
+  --color-win-mark: rgba(98, 90, 34, 0.06);
+  --color-win-raise: #ffffff;
+  --color-win-soft: #72726e;
+  /* the small windows of the pictures: their surface, edge and inks */
+  --color-window: #f7f7f2;
+  --color-window-line: rgba(71, 67, 42, 0.2);
+
+  --font-display: Manrope, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --font-sans: Inter, -apple-system, "Helvetica Neue", system-ui, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+
+  --radius-frame: clamp(16px, 2vw, 24px);
+}
+
+@layer base {
+  :root[data-theme="dark"] {
+    --color-card: #26221e;
+    --color-ground: #292929;
+    --color-ink: #fcfcf8;
+    --color-ink-strong: #fcfcf8;
+    --color-line: #3b362f;
+    --color-muted: #b3ab9c;
+    --color-old-accent: oklch(70% 0.18 41);
+    --color-old-bg: oklch(18% 0.008 40);
+    --color-old-ink: oklch(94% 0.005 40);
+    --color-old-line: oklch(30% 0.008 40);
+    --color-old-muted: oklch(70% 0.012 40);
+    --color-old-muted2: oklch(55% 0.01 40);
+    --color-old-tint: color-mix(in srgb, oklch(66% 0.21 41) 10%, oklch(18% 0.008 40));
+    --color-paper: #292929;
+    --color-rule: #3b362f;
+    --color-soft: #9e9e99;
+    --color-tint: color-mix(in srgb, #c2410c 22%, #26221e);
+    --color-win-dot: #4a4a48;
+    --color-win-faint: #818179;
+    --color-win-ink: #fcfcf8;
+    --color-win-mark: rgba(255, 255, 255, 0.1);
+    --color-win-raise: #363635;
+    --color-win-soft: #9e9e99;
+    --color-window: #292929;
+    --color-window-line: rgba(255, 255, 255, 0.15);
+  }
+}

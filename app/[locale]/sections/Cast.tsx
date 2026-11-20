@@ -16,7 +16,7 @@ export default async function Cast() {
             <span>{t('title1')}</span> <span>{t('title2')}</span>
           </h2>
           <p className="f-cast__lede">{t('lede')}</p>
-          <div className="f-cast__ctas">
+          <div className="flex flex-wrap items-center gap-y-3 gap-x-5 mt-2">
             <SeatButton className="f-cast__btn" />
             <a className="f-cast__link" href={mailto(c('askSubject'))}>
               {c('ask')}

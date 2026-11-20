@@ -165,15 +165,15 @@ export default function IdeaDemo({ words }: { words: Words }) {
         <i />
         <i />
       </div>
-      <div className="f-idea__main">
+      <div className="flex flex-1 flex-col min-h-0 px-2 pb-16">
         <div className="f-idea__title">{words.title}</div>
-        <div className="f-idea__meta">
+        <div className="flex mx-3 mt-2 py-1">
           <span className="f-idea__chips">
             <span>{words.chip1}</span>
             <span>{words.chip2}</span>
           </span>
         </div>
-        <div className="f-idea__body">
+        <div className="relative flex-1 min-h-0 mt-4">
           <div className="f-idea__pile">
             <div className="f-idea__sheet">
               <div className="f-idea__notes">
@@ -190,7 +190,7 @@ export default function IdeaDemo({ words }: { words: Words }) {
               </div>
             </div>
             <div className="f-idea__sheet f-idea__scroll">
-              <div className="f-idea__pad">
+              <div className="relative pb-6">
                 <div className="f-idea__list">
                   {words.list.map((row) => (
                     <p key={`${row.kind}-${row.text}`} className={`f-write__row f-write__row--${row.kind}${row.strong ? ' f-write__row--strong' : ''}`}>
@@ -203,7 +203,7 @@ export default function IdeaDemo({ words }: { words: Words }) {
               </div>
             </div>
           </div>
-          <div className="f-idea__statusbox">
+          <div className="absolute top-0 left-2 right-2 pointer-events-none">
             <div className="f-idea__status">
               <span className="f-spinner" />
               <span>{words.building}</span>

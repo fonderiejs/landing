@@ -186,7 +186,7 @@ export default function NotesDemo({ words, notes, rows }: { words: Words; notes:
               </p>
             </div>
             <div className="f-notes__layer f-notes__scroll">
-              <div className="f-notes__pad">
+              <div className="relative pb-16">
                 <div className="f-write f-notes__list">
                   {rows.map((row) => (
                     <p key={`${row.kind}-${row.text}`} className={`f-write__row f-write__row--${row.kind}${row.strong ? ' f-write__row--strong' : ''}`}>
@@ -198,7 +198,7 @@ export default function NotesDemo({ words, notes, rows }: { words: Words; notes:
               </div>
             </div>
           </div>
-          <div className="f-notes__statusbox">
+          <div className="absolute top-0 left-2 right-2 pointer-events-none">
             <div className="f-status-pill f-notes__status">
               <span className="f-spinner" />
               <span>{words.building}</span>
@@ -206,13 +206,13 @@ export default function NotesDemo({ words, notes, rows }: { words: Words; notes:
           </div>
         </div>
       </div>
-      <div className="f-notes__listen">
+      <div className="absolute left-0 right-0 bottom-4 grid place-items-center pointer-events-none">
         <span className="f-notes__pill">
           <Bars />
           <span>{words.listening}</span>
         </span>
       </div>
-      <div className="f-notes__ask">
+      <div className="f-notes__ask absolute left-0 right-0 bottom-0 px-4 pb-6 opacity-0 invisible">
         <span className="f-notes__field">
           <span>{words.prompt}</span>
           <i>

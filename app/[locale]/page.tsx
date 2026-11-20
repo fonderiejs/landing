@@ -6,6 +6,7 @@ import Cast from './sections/Cast';
 import Questions from './sections/Questions';
 import Parts from './sections/Parts';
 import RunIt from './sections/RunIt';
+import '../styles/home.css';
 
 // The founder page. The bar, the footer and the seat form come from the
 // layout, so every page of the site carries the same ones.

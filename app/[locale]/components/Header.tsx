@@ -172,7 +172,7 @@ export default function Header() {
 
   return (
     <header className="f-header" data-scrolled={scrolled}>
-      <div className="f-header__inner">
+      <div className="max-w-7xl mx-auto px-4 md:px-10 2xl:px-0">
         <nav className="f-bar" data-scrolled={scrolled} aria-label={t('main')}>
           <Link className="f-bar__logo" href="/" aria-label={t('home')}>
             <Logo className="f-bar__mark" />
@@ -242,7 +242,7 @@ export default function Header() {
             </Link>
           </div>
 
-          <div className="f-bar__end">
+          <div className="flex flex-1 items-center justify-end min-w-max">
             <SeatButton className="f-bar__cta" />
             <div className="f-mnav" data-open={phone ? '' : undefined} ref={phoneMenu}>
               <button
@@ -254,10 +254,10 @@ export default function Header() {
                 aria-controls="f-mnav-panel"
                 onClick={() => setPhone((v) => !v)}
               >
-                <svg className="f-mnav__icon f-mnav__icon--open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" aria-hidden="true">
+                <svg className="f-mnav__icon--open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" aria-hidden="true">
                   <path d="M4 7h16M4 12h16M4 17h16" />
                 </svg>
-                <svg className="f-mnav__icon f-mnav__icon--close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" aria-hidden="true">
+                <svg className="f-mnav__icon--close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" aria-hidden="true">
                   <path d="M6 6l12 12M18 6 6 18" />
                 </svg>
               </button>

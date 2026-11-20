@@ -54,9 +54,12 @@ Six locales, every one of them prefixed (no middleware — GitHub Pages can't ru
 app/
   layout.tsx              # minimal root layout (Next.js requires one to exist)
   page.tsx                # "/" -> static redirect to "/en"
-  globals.css             # base sheet: the stage, the contact, security and 404 pages, the theme and language controls
-  founder.css             # the founder page: tokens, frame, bar, seat form, first two screens, band
-  founder-sections.css    # the founder page: steps, orange panel, questions, cards, "We run it", footer, pricing
+  styles/                 # Tailwind's entry and the components' sheets (see "Styles")
+    tailwind.css           # the entry every page loads: reset, utilities, theme, and shared.css
+    shared.css             # components every page carries: frame, bar and menus, seat form, footer, controls
+    home.css               # the home page's components, loaded by that page only
+    pricing.css            # the pricing page's
+    pages.css              # the contact and security pages'
   [locale]/
     layout.tsx             # <html lang>, fonts, metadata, structured data; the bar, the footer and the seat form for every page
     page.tsx                # the founder page: composes the sections
@@ -68,13 +71,10 @@ app/
                              # and their moving parts: TopFrame, IdeaDemo, StepsNav, Scene, NotesDemo, CastPrompt, Strip, Bars;
                              # motion.ts holds the timing tools the two timed pictures share
     components/              # Header, Footer, Logo, SeatProvider, SeatButton, LocaleSwitcher, ThemeSwitcher
-components/
-  ui/                       # CodeBlock, StatCounter, CopyButton, Grid, Numerals: from the earlier page, not used by the current one
 lib/
   i18n.ts                    # next-intl request config + locale list
   navigation.ts               # next-intl Link/router wrappers (locale-aware, no middleware)
   site.ts                     # addresses, outside links and the seat form's settings
-  utils.ts                    # cn() class merge helper
 messages/
   en/*.json                  # source of truth: common, home, pricing, contact, security
   de/ fr/ pt-BR/ ja/ zh/*.json  # same keys, translated
@@ -82,6 +82,32 @@ public/
   images/                     # share images, icon, the sky behind the hero, the editor picture, marks and icons
   CNAME                       # custom-domain binding; must live in public/ so it's copied into out/
 ```
+
+## Styles
+
+Tailwind CSS v4 for the reset, the theme and the utilities; components written in BEM for every part with a look of its own.
+
+**Where the rules are.** `app/styles/tailwind.css` is the entry every page loads: Tailwind's reset and utilities, the theme, and `shared.css`. The home, pricing, contact and security pages each import a sheet of their own, so no page downloads another page's rules. The not-found page has none: Next.js keeps that page ready inside every other one, so a sheet of its own would be fetched by all of them. Its few rules are in `shared.css`.
+
+**Who does what.**
+
+- **A part with a look of its own is a component**, named `f-block__element--modifier`. Its rule holds everything about it: sizes, type, colours, states, pseudo-elements, motion.
+- **An element that only arranges what it contains** (a row, a grid, a centred column, a gap) **has no name and no rule.** It takes utilities in the markup, such as `max-w-7xl mx-auto px-4 md:px-10`.
+- **An element is one or the other.** Components sit in Tailwind's `components` layer, so a utility added to a component's element wins over its rule at every width and in every state.
+- Seven names have no rule and stay in the markup. Four are read by the components' own scripts (`f-idea__typed`, `f-idea__scroll`, `f-notes__scroll`, `f-notes__ask`). Three are handles for tests and for reading the markup: the roots of two blocks (`f-notes`, `f-strip`) and the button that opens a menu (`f-nav__trigger`).
+
+**Why utilities stop there.** Next.js writes every class name twice in a page: once in the markup, once in the data the page starts from. A declaration therefore costs more as a utility than inside a rule. Measured on the home page, compressed: giving utilities to every element that could take them saved about 0.2 KB of CSS and added about 2.7 KB of HTML. Weigh that before spreading utilities over a component.
+
+**The theme** (`tailwind.css`), in two parts.
+
+- `@theme` holds what only utilities are built from. Lengths are in pixels, as the page was drawn: one spacing step is 4px (`p-4` is 16px); the breakpoints are `sm` 640, `md` 768, `lg` 1024, `xl` 1280, `2xl` 1536, `3xl` 1920. Tailwind writes out the ones in use.
+- `@theme static` holds what the components read too, and writes all of it out, because Tailwind does not see the pages' own sheets read them.
+  - Colours: `ink`, `ground`, `paper`, `line`, `accent`, `button` and the others for the founder page; `old-*` for the contact, security and not-found pages. The dark theme redefines them under `[data-theme="dark"]`; `dark:` is the variant for it.
+  - Fonts: `font-display` (Manrope), `font-sans` (Inter), `font-mono` (JetBrains Mono), `font-serif` (Instrument Serif).
+
+**Where Tailwind looks for classes.** In `app/**/*.{ts,tsx}` only, never in the translated messages, where an ordinary word could be taken for a utility. One word of the scripts, `transform`, is excluded by name in `tailwind.css`: read as a class it would bring five registered variables with it.
+
+**Browsers.** `browserslist` in `package.json` names the browsers the framework builds for: Chrome, Edge and Firefox 111, Safari and iOS Safari 16.4. The prefixer reads it, so a new rule gets the `-webkit-` forms Safari 16.4 to 17 need, and no prefix is written for a browser the site cannot run on. Tailwind 4 itself asks for Safari 16.4, Chrome 111 and Firefox 128.
 
 ## The seat form
 

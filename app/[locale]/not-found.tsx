@@ -6,10 +6,10 @@ export default function NotFound() {
       <main className="notfound">
         <p className="eyebrow">Error 404</p>
         <p className="notfound__num">
-          4<span className="notfound__num-accent">0</span>4
+          4<span className="text-old-accent">0</span>4
         </p>
         <h1 className="notfound__title">This page didn&rsquo;t compose. It may have moved, or never existed.</h1>
-        <div className="notfound__row">
+        <div className="flex flex-wrap gap-3 justify-center items-center mt-2">
           <Link href="/" className="btn btn--dark">
             Back home
             <span className="btn__chip">

@@ -160,13 +160,13 @@ export default function SeatProvider({ children }: { children: ReactNode }) {
               </svg>
             </button>
             {phase !== 'done' ? (
-              <div className="f-seat__ask">
+              <div>
                 <p className="f-seat__seats">{t('seats')}</p>
                 <h2 className="f-seat__title" id="f-seat-title">
                   {t('title')}
                 </h2>
                 <p className="f-seat__lede">{t('lede')}</p>
-                <form className="f-seat__form" noValidate onSubmit={submit}>
+                <form noValidate onSubmit={submit}>
                   <label className="f-seat__label" htmlFor="f-seat-email">
                     {t('fieldLabel')}
                   </label>

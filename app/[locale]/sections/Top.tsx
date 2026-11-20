@@ -41,7 +41,7 @@ export default async function Top() {
             <p className="f-hero__lead">{t('hero.lead')}</p>
             <p>{t('hero.sub')}</p>
           </div>
-          <div className="f-hero__act">
+          <div className="flex flex-col items-start gap-6">
             <SeatButton className="f-btn f-btn--accent" />
             <p className="f-hero__beside">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -54,7 +54,7 @@ export default async function Top() {
         </section>
 
         <div className="f-top__layer">
-          <div className="f-top__clip">
+          <div className="flex items-center justify-center w-full h-full max-w-screen -mt-10 lg:mt-0 pt-10 pb-8 lg:pb-0 overflow-hidden">
             <div className="f-top__grid">
               <div className="f-top__col">
                 <div className="f-top__card">
